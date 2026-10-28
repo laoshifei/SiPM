@@ -1,0 +1,431 @@
+{
+  "scope": "Geant4 energy-deposition library for source-distance and exit-foil scenarios.\n\nScintillation and digitization are disabled. No waveform matching or actual\nsource encapsulation/distance is inferred by this scan alone.\n",
+  "events_per_scenario": 10000,
+  "executable_sha256": "ffe25ba7d96586806506de9c5428c7b8ed81d0996869f85046d4a2d85510ac2f",
+  "source_sha256": {
+    "main.cc": "7530f893c8ccda91d25ce3f3124ee342cff37af469662f33d4d1cbaa1f013129",
+    "CMakeLists.txt": "eaa7861866c736e416d9042bde82d044addfd2bf58ee974ff4f76fd9c7cb941a",
+    "vendor/SiPMResponse.cc": "c2226e528dab87e0a350251716c0b35b3a0f23543c25b9f64ce7ab6f72163274",
+    "vendor/SiPMResponse.hh": "9522000dfbbffce5c97351996653d9ecf979af95dcf8404567396cbcb172246e",
+    "include/ActionInitialization.hh": "40791a7e36ce9271dec4d358a47f75d51dd438849d1c2a8e1068b888b0417101",
+    "include/Constants.hh": "95305b4a23ae19abbf49d40e35402424259bdc9f223c96f002d6073fc56c08db",
+    "include/DataStructure.hh": "d6ef3ccd354923c0239fd9f2ff7cbfe4c48ee805a71ac663c2d4432739aaaef3",
+    "include/DetectorConstruction.hh": "561a53103436371cbd2ccb716468aa4e78698cacadd59980ef2de5297c40555a",
+    "include/EventAction.hh": "de3a6169e90e7c90d00d87e41af345c62f9c3f1d316627dc281df90c9476f2c3",
+    "include/PhysicsList.hh": "add28eb69ecef42ca58643d579a557d4a13be6f325e8566cf96972b4f69ab778",
+    "include/PrimaryGeneratorAction.hh": "4aa05b10fa191356ac669375d4c886806119a1df266067dbc59db2aea2837224",
+    "include/RootIO.hh": "73c4e16da5b7503fe1439e443bbaeb1df85615728ebbf325711a2a565e031efe",
+    "include/RunAction.hh": "e458d9dc7a6386551b5f8cfae12fa4743f9140b8e6c1a71e59636d35440ff50c",
+    "include/RunConfig.hh": "c2f1a767f64882d5ec09cac1b64ed59156f927734b68c8bbc1a4a0bf8144ac13",
+    "include/SiPMDigitizer.hh": "7e0bc8e461b08898390d34321798e3744f5465b1d7ddecf00ec5664b725a6bc0",
+    "include/SiPMHit.hh": "aaa3de1a3684ebc4c821a9d9bf77e954cf6220978524028f06ea58f8def14a54",
+    "include/SiPMSD.hh": "4287efdecf8776ad622da2a56ed4337d503e6f801b6f9e4c87855d21ea15953b",
+    "include/StackingAction.hh": "15ad01044d6b91bddd240abf451a1046fc2ebe78741eab5b9e7e23935903f4b5",
+    "include/SteppingAction.hh": "0c183785ec639663babedfcd76525a5d94822572f927f5d38e9f7a910317811c",
+    "include/TrackInformation.hh": "10657cbfec09c4fbfdc34c81a4b1919c9232da2dcf7842fb707a472019873e23",
+    "include/TrackingAction.hh": "4cb509354a85afac8f8209a79c3257554c4e5ba94df555a38d33eed30b54cb5c",
+    "src/ActionInitialization.cc": "1b72f9c4978b91c46bae5ccec7c5652a039f29389f350d32e84380450be9f5f1",
+    "src/DataStructure.cc": "ac10fc4de4f6783a72832bfdd06a8c0bb52e0b1004f3001352cc95aa27114acf",
+    "src/DetectorConstruction.cc": "72ce1d3c26cc4a717e0b58c9acc848e971656997f1f8000e0e493132e476a11a",
+    "src/EventAction.cc": "66351889764c3fe811576a4a97c4313bdebc0fec977d10c0d002515e17460125",
+    "src/PhysicsList.cc": "395292db03b6604647c8a8b1461957210a36bf7ac9a0032db069031b4af9bdfc",
+    "src/PrimaryGeneratorAction.cc": "c36fb54975b5ca37b6388269ad501a7980e44a23248bbeea1cd560fff845d70c",
+    "src/RootIO.cc": "bd1bc7d30c8473d27313ef192e4cd90b62f6101a7d474d3222edb76fc00ad304",
+    "src/RunAction.cc": "a556559fff68f7479bc1586859694fbf6aae7563a6e4ff23aa5406ea6c98ad61",
+    "src/RunConfig.cc": "e3dd8c6904a440e42b0345978c0c524bba456b02440db2d529e0bfa88422b6c0",
+    "src/SiPMDigitizer.cc": "02ed8b819259862f4839167bfc0e606ccd542e6c10b75a86c07c3c3eda63dace",
+    "src/SiPMHit.cc": "65b8d7878a9177e14460c031155a69c0b3b231fd7c119e7849aadc2cddbe1889",
+    "src/SiPMSD.cc": "eb386d4fcd7ae5195ad86d53a69e02f2515e18d1763d5ae71c1aa50d910a1e96",
+    "src/StackingAction.cc": "558cc438a8f5db1c19c2c3d198f21a06373863d28931d4d2db285c2736106050",
+    "src/SteppingAction.cc": "b70fc73bee05a55d79584831e3c2424955570b941dc62062d17dd5eddc9ea5d5",
+    "src/TrackInformation.cc": "49be9d6734d55e1986be730e3eaaec2268bccadafbbf69c02797eae445ff82e7",
+    "src/TrackingAction.cc": "6906406f3dccf71d3601331e1326d4ad26f61f0ba9d3a016b5a64cc1cc38ca73"
+  },
+  "scenarios": [
+    {
+      "name": "Co60_gap1_Al0",
+      "source": "Co60",
+      "gap_mm": 1.0,
+      "foil_Al_mm": 0.0,
+      "seed": 281000,
+      "root_sha256": "771175b3079c005de8b65b0f7cdd24e96833e28f940bec45840a1199550819ad",
+      "deposits_sha256": "0754f22b24ee75461e13a4990501f50c74142613bb862e5295b116eae9a3425c",
+      "validation": {
+        "passed": true,
+        "source": "Co60",
+        "events": 10000,
+        "zero_deposit_events": 6277,
+        "deposited_events": 3723,
+        "alpha_deposit_events": 0,
+        "alpha_deposit_median_MeV": null,
+        "energy_deposit_p05_p50_p95_MeV": [
+          0.0017612972440996728,
+          0.07031234035141627,
+          1.033468944049141
+        ],
+        "decay_product_counts": {
+          "1000280609": 19983,
+          "-12": 10000,
+          "11": 11078,
+          "22": 19981,
+          "1000280600": 10000
+        },
+        "max_relative_charge_balance_error": 0.0,
+        "prompt_gamma_lines_counts": {
+          "0.05954": 0,
+          "1.17323": 9982,
+          "1.33249": 9999
+        },
+        "ancestry_checks": true,
+        "scope": "Numerical and source-physics checks, not validation against experimental waveform",
+        "source_gap_mm": 1.0,
+        "transport_only": true,
+        "digitization_enabled": false
+      },
+      "elapsed_seconds": 32.463613207997696
+    },
+    {
+      "name": "Co60_gap1_Al0.25",
+      "source": "Co60",
+      "gap_mm": 1.0,
+      "foil_Al_mm": 0.25,
+      "seed": 281001,
+      "root_sha256": "0701e9b1bbdea38a448e8d9f7e21ad3afceb15fd18ff0308829a91a5b6ad57df",
+      "deposits_sha256": "dd7b147b4009ac1e97b5206f0f48c66fae3725fc734de9e1ae4e5407a640aada",
+      "validation": {
+        "passed": true,
+        "source": "Co60",
+        "events": 10000,
+        "zero_deposit_events": 8979,
+        "deposited_events": 1021,
+        "alpha_deposit_events": 0,
+        "alpha_deposit_median_MeV": null,
+        "energy_deposit_p05_p50_p95_MeV": [
+          0.04549806651522403,
+          0.5975165477490404,
+          1.3018762931528833
+        ],
+        "decay_product_counts": {
+          "1000280609": 19986,
+          "-12": 10000,
+          "11": 10151,
+          "22": 19982,
+          "1000280600": 10000
+        },
+        "max_relative_charge_balance_error": 0.0,
+        "prompt_gamma_lines_counts": {
+          "0.05954": 0,
+          "1.17323": 9984,
+          "1.33249": 9998
+        },
+        "ancestry_checks": true,
+        "scope": "Numerical and source-physics checks, not validation against experimental waveform",
+        "source_gap_mm": 1.0,
+        "transport_only": true,
+        "digitization_enabled": false
+      },
+      "elapsed_seconds": 32.153570843001944
+    },
+    {
+      "name": "Co60_gap1_Al0.5",
+      "source": "Co60",
+      "gap_mm": 1.0,
+      "foil_Al_mm": 0.5,
+      "seed": 281002,
+      "root_sha256": "22ad5f4bfc855d6edcaa55107e2d3a0ad54c8bb2c56e331e0f0c09570d5de55e",
+      "deposits_sha256": "d17d918739f87c6869e044a24b7b091d0fcdc9536d335a3c19ab995c5a9390d8",
+      "validation": {
+        "passed": true,
+        "source": "Co60",
+        "events": 10000,
+        "zero_deposit_events": 8998,
+        "deposited_events": 1002,
+        "alpha_deposit_events": 0,
+        "alpha_deposit_median_MeV": null,
+        "energy_deposit_p05_p50_p95_MeV": [
+          0.04224256076917937,
+          0.5588115068087182,
+          1.3320498789965898
+        ],
+        "decay_product_counts": {
+          "1000280609": 19996,
+          "-12": 10000,
+          "11": 10054,
+          "22": 19992,
+          "1000280600": 10000
+        },
+        "max_relative_charge_balance_error": 0.0,
+        "prompt_gamma_lines_counts": {
+          "0.05954": 0,
+          "1.17323": 9992,
+          "1.33249": 9998
+        },
+        "ancestry_checks": true,
+        "scope": "Numerical and source-physics checks, not validation against experimental waveform",
+        "source_gap_mm": 1.0,
+        "transport_only": true,
+        "digitization_enabled": false
+      },
+      "elapsed_seconds": 13.62086152700067
+    },
+    {
+      "name": "Am241_gap1_Al0",
+      "source": "Am241",
+      "gap_mm": 1.0,
+      "foil_Al_mm": 0.0,
+      "seed": 281003,
+      "root_sha256": "bf80e5fd47fefea267a3ef47a7c1151ca5c8e2766fe55355a0d17e642ed4c968",
+      "deposits_sha256": "36cc35397c24442c928e90bf93264d0d4ed9288a2f2e978e088bed1ed8e20914",
+      "validation": {
+        "passed": true,
+        "source": "Am241",
+        "events": 10000,
+        "zero_deposit_events": 3319,
+        "deposited_events": 6681,
+        "alpha_deposit_events": 4038,
+        "alpha_deposit_median_MeV": 3.887038110084939,
+        "energy_deposit_p05_p50_p95_MeV": [
+          0.008600218821006485,
+          3.327758347025677,
+          4.799179966030032
+        ],
+        "decay_product_counts": {
+          "1000932371": 9942,
+          "1000020040": 10000,
+          "1000932370": 10000,
+          "11": 120449,
+          "22": 8463,
+          "1000932379": 3780
+        },
+        "max_relative_charge_balance_error": 0.0,
+        "prompt_gamma_lines_counts": {
+          "0.05954": 3583,
+          "1.17323": 0,
+          "1.33249": 0
+        },
+        "ancestry_checks": true,
+        "scope": "Numerical and source-physics checks, not validation against experimental waveform",
+        "source_gap_mm": 1.0,
+        "transport_only": true,
+        "digitization_enabled": false
+      },
+      "elapsed_seconds": 29.03262691100099
+    },
+    {
+      "name": "Am241_gap10_Al0",
+      "source": "Am241",
+      "gap_mm": 10.0,
+      "foil_Al_mm": 0.0,
+      "seed": 281004,
+      "root_sha256": "05231281c97f03d3c83e7870f778747a7ce6209c47316e5c6a0cfc25f31a0ffa",
+      "deposits_sha256": "1dee0649aa789c7c2191cbf04501e36259096130689570a8aa1d727393518ca9",
+      "validation": {
+        "passed": true,
+        "source": "Am241",
+        "events": 10000,
+        "zero_deposit_events": 8730,
+        "deposited_events": 1270,
+        "alpha_deposit_events": 614,
+        "alpha_deposit_median_MeV": 3.4678218699021324,
+        "energy_deposit_p05_p50_p95_MeV": [
+          0.0041774720070906985,
+          0.05954091195937611,
+          3.921146201407543
+        ],
+        "decay_product_counts": {
+          "1000932371": 9952,
+          "1000020040": 10000,
+          "1000932370": 10000,
+          "22": 8487,
+          "11": 120189,
+          "1000932379": 3797
+        },
+        "max_relative_charge_balance_error": 0.0,
+        "prompt_gamma_lines_counts": {
+          "0.05954": 3720,
+          "1.17323": 0,
+          "1.33249": 0
+        },
+        "ancestry_checks": true,
+        "scope": "Numerical and source-physics checks, not validation against experimental waveform",
+        "source_gap_mm": 10.0,
+        "transport_only": true,
+        "digitization_enabled": false
+      },
+      "elapsed_seconds": 34.04866267499892
+    },
+    {
+      "name": "Am241_gap20_Al0",
+      "source": "Am241",
+      "gap_mm": 20.0,
+      "foil_Al_mm": 0.0,
+      "seed": 281005,
+      "root_sha256": "7a9247cd3b15029376f72ea802d77b7c3ab45a5a5939a87d7b26a5cf9bf65b06",
+      "deposits_sha256": "51080d4f81e3e5e245aa0c250384a585960f909249d1080a42ab15e5daa19be5",
+      "validation": {
+        "passed": true,
+        "source": "Am241",
+        "events": 10000,
+        "zero_deposit_events": 9651,
+        "deposited_events": 349,
+        "alpha_deposit_events": 190,
+        "alpha_deposit_median_MeV": 2.567221565460149,
+        "energy_deposit_p05_p50_p95_MeV": [
+          0.013766802921607419,
+          2.5342371137846875,
+          2.7534269777074556
+        ],
+        "decay_product_counts": {
+          "1000932371": 9938,
+          "1000020040": 10000,
+          "1000932370": 10000,
+          "11": 123507,
+          "1000932379": 3851,
+          "22": 8432
+        },
+        "max_relative_charge_balance_error": 0.0,
+        "prompt_gamma_lines_counts": {
+          "0.05954": 3554,
+          "1.17323": 0,
+          "1.33249": 0
+        },
+        "ancestry_checks": true,
+        "scope": "Numerical and source-physics checks, not validation against experimental waveform",
+        "source_gap_mm": 20.0,
+        "transport_only": true,
+        "digitization_enabled": false
+      },
+      "elapsed_seconds": 26.24852433000342
+    },
+    {
+      "name": "Am241_gap25_Al0",
+      "source": "Am241",
+      "gap_mm": 25.0,
+      "foil_Al_mm": 0.0,
+      "seed": 281006,
+      "root_sha256": "5a016b5055e8f9cff7dddbf2a018525416f0e90ab644bafa37a76edce2f567d0",
+      "deposits_sha256": "3c382411c2301481d618d74f24eeb273047dbefde99759141603fbe311c73b69",
+      "validation": {
+        "passed": true,
+        "source": "Am241",
+        "events": 10000,
+        "zero_deposit_events": 9765,
+        "deposited_events": 235,
+        "alpha_deposit_events": 136,
+        "alpha_deposit_median_MeV": 1.893286652534326,
+        "energy_deposit_p05_p50_p95_MeV": [
+          0.013955716427179195,
+          1.794713599758049,
+          1.9927448707491122
+        ],
+        "decay_product_counts": {
+          "1000932371": 9936,
+          "1000020040": 10000,
+          "1000932370": 10000,
+          "11": 119729,
+          "22": 8512,
+          "1000932379": 3818
+        },
+        "max_relative_charge_balance_error": 0.0,
+        "prompt_gamma_lines_counts": {
+          "0.05954": 3692,
+          "1.17323": 0,
+          "1.33249": 0
+        },
+        "ancestry_checks": true,
+        "scope": "Numerical and source-physics checks, not validation against experimental waveform",
+        "source_gap_mm": 25.0,
+        "transport_only": true,
+        "digitization_enabled": false
+      },
+      "elapsed_seconds": 29.809461343000294
+    },
+    {
+      "name": "Am241_gap30_Al0",
+      "source": "Am241",
+      "gap_mm": 30.0,
+      "foil_Al_mm": 0.0,
+      "seed": 281007,
+      "root_sha256": "838345bbe505e53d7b7612f9b4ae6a2355d3dfaabbff617d0148d1c21c48fb00",
+      "deposits_sha256": "255a009524ab45f4f518f122fb3353d825eeeeb6a95885efb76d6b6671e8727f",
+      "validation": {
+        "passed": true,
+        "source": "Am241",
+        "events": 10000,
+        "zero_deposit_events": 9837,
+        "deposited_events": 163,
+        "alpha_deposit_events": 89,
+        "alpha_deposit_median_MeV": 0.9159000132578826,
+        "energy_deposit_p05_p50_p95_MeV": [
+          0.013957895991269412,
+          0.7453143706730747,
+          1.0467088535856366
+        ],
+        "decay_product_counts": {
+          "1000932371": 9906,
+          "1000020040": 10000,
+          "1000932370": 10000,
+          "22": 8323,
+          "1000932379": 3734,
+          "11": 121395
+        },
+        "max_relative_charge_balance_error": 0.0,
+        "prompt_gamma_lines_counts": {
+          "0.05954": 3555,
+          "1.17323": 0,
+          "1.33249": 0
+        },
+        "ancestry_checks": true,
+        "scope": "Numerical and source-physics checks, not validation against experimental waveform",
+        "source_gap_mm": 30.0,
+        "transport_only": true,
+        "digitization_enabled": false
+      },
+      "elapsed_seconds": 26.126329064005404
+    },
+    {
+      "name": "Am241_gap35_Al0",
+      "source": "Am241",
+      "gap_mm": 35.0,
+      "foil_Al_mm": 0.0,
+      "seed": 281008,
+      "root_sha256": "f46efb56992f5b4f06377b2f9c244f4d8c269f566df7c9869fdeafe81a0de6fe",
+      "deposits_sha256": "a2f240be46314d5fd2af56b15184f1870c7262d3b15ab38709e7d4c144dbed7f",
+      "validation": {
+        "passed": true,
+        "source": "Am241",
+        "events": 10000,
+        "zero_deposit_events": 9932,
+        "deposited_events": 68,
+        "alpha_deposit_events": 20,
+        "alpha_deposit_median_MeV": 0.03424677574432225,
+        "energy_deposit_p05_p50_p95_MeV": [
+          0.003433222669363768,
+          0.01773340344558193,
+          0.09073375673357964
+        ],
+        "decay_product_counts": {
+          "1000932371": 9931,
+          "1000020040": 10000,
+          "1000932370": 10000,
+          "11": 122246,
+          "22": 8394,
+          "1000932379": 3867
+        },
+        "max_relative_charge_balance_error": 0.0,
+        "prompt_gamma_lines_counts": {
+          "0.05954": 3485,
+          "1.17323": 0,
+          "1.33249": 0
+        },
+        "ancestry_checks": true,
+        "scope": "Numerical and source-physics checks, not validation against experimental waveform",
+        "source_gap_mm": 35.0,
+        "transport_only": true,
+        "digitization_enabled": false
+      },
+      "elapsed_seconds": 28.38036686200212
+    }
+  ],
+  "completed": true
+}

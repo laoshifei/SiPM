@@ -1,0 +1,493 @@
+{
+  "channel_mask": {
+    "active_mm": 3.0,
+    "array_and_connection_status": "Hypothesis: actual number and positions of summed channels not confirmed",
+    "array_nx": 4,
+    "array_ny": 4,
+    "implementation": "Scoring mask on Sensor, not individual physical volumes",
+    "pitch_mm": 3.2,
+    "summed_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  "config": {
+    "acquisition": {
+      "amplitude_threshold_adc": 120.0,
+      "pretrigger_ns": 1000.0,
+      "sample_period_ns": 2.0,
+      "samples": 2496
+    },
+    "evidence": {
+      "assumptions": [
+        "4x4 array and all 16 summed channels are an explicit initial hypothesis, not confirmed wiring.",
+        "50 ohm effective load, 3 V overvoltage and 29 ns recovery are placeholders; 53.2 V bias is NOT converted using typical breakdown voltage.",
+        "Constant PDE 0.30 and disabled dark/XT/AP are uncalibrated switches; zero does not mean absent in device.",
+        "Lowpass 256 ns = 50 ohm * 16 * 320 pF only if directly parallel; alternative summing networks require calibration.",
+        "Gamma decay times 679/3340 ns and approximate integrated fractions are literature starting values, not this crystal measurements; alpha fraction, light yield, spectrum, optics are hypotheses.",
+        "Source is a point in air; encapsulation and source active layer unspecified.",
+        "Microcells are uniformly mapped to 3584 effective cells/channel; exact masked-cell layout and electronic inter-channel coupling not represented."
+      ],
+      "confirmed": "User 2026-10-27: 10 mm cube CsI(Tl), external PTFE tape, 5 um front Mylar, S13361-3050 series, multiple summed channels, no preamplifier; source distance unknown and authorized to scan.",
+      "fit_policy": "Shared tau_fast/tau_slow and passive RC; separate source-dominant fractions. Am-dominant -> alpha is a testable hypothesis, not truth. No source distance was fitted. No preamplifier added.",
+      "links": {
+        "gamma_times_note": "/media/sf_works/papers/sources/1993_Valentine_NIMA_Temperature-dependence-of-CsI(Tl)-gamma-ray-excited-scintillation-characteristics.md",
+        "sensor_datasheet": "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/s13361-3050_series_kapd1054e.pdf"
+      }
+    },
+    "geometry": {
+      "array_nx": 4,
+      "array_ny": 4,
+      "channel_active_mm": 3.0,
+      "channel_pitch_mm": 3.2,
+      "crystal_mm": [
+        10.0,
+        10.0,
+        10.0
+      ],
+      "grease_mm": 0.1,
+      "material": "CsI(Tl)",
+      "mylar_um": 5.0,
+      "ptfe_side_mm": 0.1,
+      "source_gap_mm": 1.0,
+      "source_radius_mm": 0.0,
+      "summed_channels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "world_material": "G4_AIR"
+    },
+    "optical": {
+      "absorption_mm": 500.0,
+      "alpha_fast_fraction": 0.1211480326285705,
+      "alpha_light_yield_ratio": 0.5,
+      "alpha_tau_ns": [
+        478.76494123873897,
+        1372.5347670910692
+      ],
+      "charged_step_um": 2.0,
+      "electron_fast_fraction": 0.6231465946460957,
+      "electron_tau_ns": [
+        478.76494123873897,
+        1372.5347670910692
+      ],
+      "emission_relative": [
+        0.02,
+        0.15,
+        0.55,
+        1.0,
+        0.65,
+        0.2,
+        0.05,
+        0.01
+      ],
+      "ion_light_yield_ratio": 0.05,
+      "photon_energy_eV": [
+        1.77,
+        1.91,
+        2.07,
+        2.21,
+        2.38,
+        2.58,
+        2.82,
+        3.1
+      ],
+      "ptfe_reflectivity": 0.95,
+      "rindex": 1.8,
+      "yield_photons_per_MeV": 54000.0
+    },
+    "schema_version": 1,
+    "sipm": {
+      "readout": {
+        "adc_bits": 14,
+        "adc_max_mV": 2000.0,
+        "adc_min_mV": 0.0,
+        "aperture_ns": 2.0,
+        "baseline_mV": 370.7294464111328,
+        "decay_ns": 29.0,
+        "internal_dt_ns": 0.5,
+        "lowpass_ns": 94.47173460998194,
+        "max_internal_bins": 5000000,
+        "model": "double_exponential",
+        "noise_rms_mV": 0.4104191463520683,
+        "rise_ns": 2.0,
+        "sample_period_ns": 2.0,
+        "template_csv": null,
+        "transimpedance_ohm": 50.0
+      },
+      "schema_version": 1,
+      "sensor": {
+        "afterpulse_delay_ns": 60.0,
+        "afterpulse_probability": 0.0,
+        "cells_x": 57344,
+        "cells_y": 1,
+        "constant_pde": 0.3,
+        "crosstalk_delay_ns": 0.0,
+        "crosstalk_probability": 0.0,
+        "dark_rate_hz": 0.0,
+        "gain_electrons": 1700000.0,
+        "max_candidates": 10000000,
+        "name": "S13361-3050_series_array_effective",
+        "overvoltage_V": 3.0,
+        "parameter_source": "User confirms S13361-3050 series and multiple summed channels. Manufacturer KAPD1054E PDF p2: 3584 cells/channel, 3x3 mm2, 320 pF/channel, gain 1.7e6 at 3 V overvoltage. Number of summed channels, unit breakdown voltage and recovery remain unconfirmed.",
+        "parameter_status": "hypothetical",
+        "pde_mode": "constant",
+        "pde_overvoltage_V": [],
+        "pde_probabilities": [],
+        "pde_wavelength_nm": [],
+        "recovery_enabled": true,
+        "recovery_ns": 29.0,
+        "temperature_C": 25.0,
+        "transit_delay_mean_ns": 0.0,
+        "transit_delay_sigma_ns": 0.0,
+        "trigger_scale_V": 2.4,
+        "trigger_threshold_V": 0.0,
+        "x_max_mm": 57344.0,
+        "x_min_mm": 0.0,
+        "y_max_mm": 1.0,
+        "y_min_mm": 0.0
+      }
+    },
+    "status": "Effective mean-shape initialization fit to run3/run12 training only; optical and particle interpretation remain hypotheses"
+  },
+  "provenance": "Traversed initialized G4 physical placements; dimensions read from G4Box",
+  "schema_version": 1,
+  "source": {
+    "center_mm": [
+      0.0,
+      0.0,
+      -6.005
+    ],
+    "isotope": "Am241",
+    "kind": "Generator position, not a physical volume",
+    "radius_mm": 0.0
+  },
+  "units": "mm",
+  "volumes": [
+    {
+      "center_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "copy": 0,
+      "material": "G4_AIR",
+      "name": "World",
+      "path": "/World[0]",
+      "rotation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "size_mm": [
+        200.0,
+        200.0,
+        200.0
+      ]
+    },
+    {
+      "center_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "copy": 0,
+      "material": "G4_CESIUM_IODIDE",
+      "name": "CsI",
+      "path": "/World[0]/CsI[0]",
+      "rotation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "size_mm": [
+        10.0,
+        10.0,
+        10.0
+      ]
+    },
+    {
+      "center_mm": [
+        0.0,
+        0.0,
+        -5.0025
+      ],
+      "copy": 0,
+      "material": "G4_MYLAR",
+      "name": "Mylar",
+      "path": "/World[0]/Mylar[0]",
+      "rotation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "size_mm": [
+        10.0,
+        10.0,
+        0.005
+      ]
+    },
+    {
+      "center_mm": [
+        0.0,
+        0.0,
+        5.05
+      ],
+      "copy": 0,
+      "material": "CouplingGrease",
+      "name": "Grease",
+      "path": "/World[0]/Grease[0]",
+      "rotation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "size_mm": [
+        10.0,
+        10.0,
+        0.1
+      ]
+    },
+    {
+      "center_mm": [
+        0.0,
+        0.0,
+        5.1499999999999995
+      ],
+      "copy": 0,
+      "material": "VirtualEpoxyEntrance",
+      "name": "Sensor",
+      "path": "/World[0]/Sensor[0]",
+      "rotation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "size_mm": [
+        12.8,
+        12.8,
+        0.1
+      ]
+    },
+    {
+      "center_mm": [
+        -5.05,
+        0.0,
+        0.0
+      ],
+      "copy": 0,
+      "material": "G4_TEFLON",
+      "name": "PTFE",
+      "path": "/World[0]/PTFE[0]",
+      "rotation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "size_mm": [
+        0.1,
+        10.2,
+        10.0
+      ]
+    },
+    {
+      "center_mm": [
+        5.05,
+        0.0,
+        0.0
+      ],
+      "copy": 1,
+      "material": "G4_TEFLON",
+      "name": "PTFE",
+      "path": "/World[0]/PTFE[1]",
+      "rotation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "size_mm": [
+        0.1,
+        10.2,
+        10.0
+      ]
+    },
+    {
+      "center_mm": [
+        0.0,
+        -5.05,
+        0.0
+      ],
+      "copy": 2,
+      "material": "G4_TEFLON",
+      "name": "PTFE",
+      "path": "/World[0]/PTFE[2]",
+      "rotation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "size_mm": [
+        10.0,
+        0.1,
+        10.0
+      ]
+    },
+    {
+      "center_mm": [
+        0.0,
+        5.05,
+        0.0
+      ],
+      "copy": 3,
+      "material": "G4_TEFLON",
+      "name": "PTFE",
+      "path": "/World[0]/PTFE[3]",
+      "rotation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "size_mm": [
+        10.0,
+        0.1,
+        10.0
+      ]
+    }
+  ]
+}

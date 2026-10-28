@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "placements_including_world": 10,
+  "overlap_check": "Geant4 placed mode; 10000 sampled surface points per placement; zero tolerance",
+  "scope": "Initialized geometry and randomized overlap check; not verification of unknown apparatus parameters",
+  "executable_sha256": "ffe25ba7d96586806506de9c5428c7b8ed81d0996869f85046d4a2d85510ac2f",
+  "artifacts_sha256": {
+    "geometry.json": "363920bb626c256ad1fc00bfb68cf78e5454d16dc96829a1e7932efadc8997fe",
+    "geometry.wrl": "49e626ed56a517bd7ce2e7aee78aba4c27868d3fc0508f4ff9c3726e859e706a",
+    "config.json": "540df2c412020ab82f4e0127983f96d47b5c4cb54fb1b27aab578ab7ef376838"
+  }
+}

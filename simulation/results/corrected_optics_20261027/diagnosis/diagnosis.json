@@ -1,0 +1,838 @@
+{
+  "scope": "Source/response diagnostics, not a fitted spectrum or experimental particle identification",
+  "selection": "MC basic quality + primary pretrigger veto, complete 3 us integral. Measured phase2 eligible_primary also requires 4 us support. No common-charge or ratio cut in these spectra.",
+  "origin_definition": "At least 90% of realized in-window avalanche charge from one decay ancestry; otherwise mixed/other. This is not a classification of measured events.",
+  "electron_definition": "Decay electrons include beta, conversion and atomic relaxation; secondary electrons descending from alpha/gamma stay in the respective family.",
+  "trigger_definition": "80/120/160/200 ADC noiseless peak flags are sensitivity scenarios, not an emulation of the hardware trigger or confirmed run-specific thresholds.",
+  "normalization": "Counts divided by total selected events, including out-of-plot-range events. Raw ADC charge, no source-dependent scale.",
+  "scripts_sha256": {
+    "simulation/diagnose_origin.py": "e2c109affc56e1f2e6064520fc08983878b6f57a45ed73ae98dcc2cf0e9330ed",
+    "simulation/reference.py": "fe7ebd20af44ffc2ade2b758dd8fa6bde1d269cc8cb02e7a37bd591d4fe0d1bb",
+    "analysis/paper_baseline/prepare.py": "9ebe888c46f8964ecea7141f1c3da5095a0d5546bacb87d77e9874a156fab9c9",
+    "analysis/paper_baseline/refine_waveforms.py": "2c4e7e4be126df0fec83cc2eedb093eca1fa95833bcad27a7b0c6c5289781941"
+  },
+  "simulation": {
+    "Co60": {
+      "source": "Co60",
+      "input": "/media/sf_works/SiPM/simulation/results/corrected_optics_20261027/co60/events.root",
+      "input_sha256": "206ac70b1067d2999c33bc24fb544f2e65cce3899657ab73ff3ad87eec1ac2ac",
+      "run_info": {
+        "architecture": "DetectorConstruction/PhysicsList/ActionInitialization; G4DigiManager SiPMDigitizer",
+        "avalanche_origin_definition": "Photon avalanches inherit photon ancestry; AP/XT descendants inherit their triggering avalanche ancestry; primary dark avalanches use unknown=0. charge_by_origin_C sums realized in-window avalanche charge, not the finite-gate ADC integral.",
+        "completed": true,
+        "config": {
+          "acquisition": {
+            "amplitude_threshold_adc": 120.0,
+            "pretrigger_ns": 1000.0,
+            "sample_period_ns": 2.0,
+            "samples": 2496
+          },
+          "evidence": {
+            "assumptions": [
+              "4x4 array and all 16 summed channels are an explicit initial hypothesis, not confirmed wiring.",
+              "50 ohm effective load, 3 V overvoltage and 29 ns recovery are placeholders; 53.2 V bias is NOT converted using typical breakdown voltage.",
+              "Constant PDE 0.30 and disabled dark/XT/AP are uncalibrated switches; zero does not mean absent in device.",
+              "Lowpass 256 ns = 50 ohm * 16 * 320 pF only if directly parallel; alternative summing networks require calibration.",
+              "Gamma decay times 679/3340 ns and approximate integrated fractions are literature starting values, not this crystal measurements; alpha fraction, light yield, spectrum, optics are hypotheses.",
+              "Source is a point in air; encapsulation and source active layer unspecified.",
+              "Microcells are uniformly mapped to 3584 effective cells/channel; exact masked-cell layout and electronic inter-channel coupling not represented."
+            ],
+            "confirmed": "User 2026-10-27: 10 mm cube CsI(Tl), external PTFE tape, 5 um front Mylar, S13361-3050 series, multiple summed channels, no preamplifier; source distance unknown and authorized to scan.",
+            "fit_policy": "Shared tau_fast/tau_slow and passive RC; separate source-dominant fractions. Am-dominant -> alpha is a testable hypothesis, not truth. No source distance was fitted. No preamplifier added.",
+            "links": {
+              "gamma_times_note": "/media/sf_works/papers/sources/1993_Valentine_NIMA_Temperature-dependence-of-CsI(Tl)-gamma-ray-excited-scintillation-characteristics.md",
+              "sensor_datasheet": "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/s13361-3050_series_kapd1054e.pdf"
+            }
+          },
+          "geometry": {
+            "array_nx": 4,
+            "array_ny": 4,
+            "channel_active_mm": 3.0,
+            "channel_pitch_mm": 3.2,
+            "crystal_mm": [
+              10.0,
+              10.0,
+              10.0
+            ],
+            "grease_mm": 0.1,
+            "material": "CsI(Tl)",
+            "mylar_um": 5.0,
+            "ptfe_side_mm": 0.1,
+            "source_gap_mm": 1.0,
+            "source_radius_mm": 0.0,
+            "summed_channels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "world_material": "G4_AIR"
+          },
+          "optical": {
+            "absorption_mm": 500.0,
+            "alpha_fast_fraction": 0.1211480326285705,
+            "alpha_light_yield_ratio": 0.5,
+            "alpha_tau_ns": [
+              478.76494123873897,
+              1372.5347670910692
+            ],
+            "charged_step_um": 2.0,
+            "electron_fast_fraction": 0.6231465946460957,
+            "electron_tau_ns": [
+              478.76494123873897,
+              1372.5347670910692
+            ],
+            "emission_relative": [
+              0.02,
+              0.15,
+              0.55,
+              1.0,
+              0.65,
+              0.2,
+              0.05,
+              0.01
+            ],
+            "ion_light_yield_ratio": 0.05,
+            "photon_energy_eV": [
+              1.77,
+              1.91,
+              2.07,
+              2.21,
+              2.38,
+              2.58,
+              2.82,
+              3.1
+            ],
+            "ptfe_reflectivity": 0.95,
+            "rindex": 1.8,
+            "yield_photons_per_MeV": 54000.0
+          },
+          "schema_version": 1,
+          "sipm": {
+            "readout": {
+              "adc_bits": 14,
+              "adc_max_mV": 2000.0,
+              "adc_min_mV": 0.0,
+              "aperture_ns": 2.0,
+              "baseline_mV": 370.7294464111328,
+              "decay_ns": 29.0,
+              "internal_dt_ns": 0.5,
+              "lowpass_ns": 94.47173460998194,
+              "max_internal_bins": 5000000,
+              "model": "double_exponential",
+              "noise_rms_mV": 0.4104191463520683,
+              "rise_ns": 2.0,
+              "sample_period_ns": 2.0,
+              "template_csv": null,
+              "transimpedance_ohm": 50.0
+            },
+            "schema_version": 1,
+            "sensor": {
+              "afterpulse_delay_ns": 60.0,
+              "afterpulse_probability": 0.0,
+              "cells_x": 57344,
+              "cells_y": 1,
+              "constant_pde": 0.3,
+              "crosstalk_delay_ns": 0.0,
+              "crosstalk_probability": 0.0,
+              "dark_rate_hz": 0.0,
+              "gain_electrons": 1700000.0,
+              "max_candidates": 10000000,
+              "name": "S13361-3050_series_array_effective",
+              "overvoltage_V": 3.0,
+              "parameter_source": "User confirms S13361-3050 series and multiple summed channels. Manufacturer KAPD1054E PDF p2: 3584 cells/channel, 3x3 mm2, 320 pF/channel, gain 1.7e6 at 3 V overvoltage. Number of summed channels, unit breakdown voltage and recovery remain unconfirmed.",
+              "parameter_status": "hypothetical",
+              "pde_mode": "constant",
+              "pde_overvoltage_V": [],
+              "pde_probabilities": [],
+              "pde_wavelength_nm": [],
+              "recovery_enabled": true,
+              "recovery_ns": 29.0,
+              "temperature_C": 25.0,
+              "transit_delay_mean_ns": 0.0,
+              "transit_delay_sigma_ns": 0.0,
+              "trigger_scale_V": 2.4,
+              "trigger_threshold_V": 0.0,
+              "x_max_mm": 57344.0,
+              "x_min_mm": 0.0,
+              "y_max_mm": 1.0,
+              "y_min_mm": 0.0
+            }
+          },
+          "status": "Effective mean-shape initialization fit to run3/run12 training only; optical and particle interpretation remain hypotheses"
+        },
+        "config_file": "/media/sf_works/SiPM/simulation/results/corrected_optics_20261027/co60/config.json",
+        "decay_products": "All in-window particles born through RadioactiveDecay, including prompt daughter de-excitations; not all secondary tracks",
+        "events_completed": 400,
+        "events_requested": 400,
+        "geant4": "$Name: geant4-11-04-patch-02 [MT]$",
+        "limitations": [
+          "Scintillation yield ratios are constant hypotheses; no Birks double correction",
+          "Sensor entrance records optical photons; direct ionizing SiPM charge is not modeled",
+          "No source capsule or backing without dimensions",
+          "Uniform effective microcell mapping; XT/AP disabled by default"
+        ],
+        "optical_hit_collection": "SiPM/OpticalArrivals; entrance steps forwarded to SiPMSD by SteppingAction; photon_boundary_status uses G4OpBoundaryProcessStatus codes",
+        "origin_categories": [
+          "unknown",
+          "alpha_descendants",
+          "gamma_descendants",
+          "decay_electron_descendants",
+          "recoil_descendants",
+          "other"
+        ],
+        "origin_definition": "Ancestry resets at each RadioactiveDecay product, including prompt daughter de-excitation. All transport descendants inherit it. Decay electrons include beta/conversion/atomic-relaxation electrons; optical emitter PDG records the immediate scintillation/Cerenkov parent. This diagnostic does not alter the light-yield model.",
+        "parent_clock": "Parent lifetime set to zero; conditional isolated decay at pretrigger. Nuclear branches unchanged; no absolute activity or exposure.",
+        "particle_truth": "Simulation only; no experimental truth inferred",
+        "schema_version": 4,
+        "seed": 271103,
+        "sensor_entry_policy": "Only Transmission(1), FresnelRefraction(2), SameMaterial(12) are accepted; reflected tracks continue. Supersedes legacy post-volume scoring in schema <=3.",
+        "source": "Co60",
+        "trigger": "Approximate amplitude flag only; all events saved, PHA hardware trigger NOT emulated"
+      },
+      "events": 400,
+      "transmitted_boundary_counts": [
+        0,
+        0,
+        725015,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "quality_subsets": {
+        "quality": {
+          "n": 125,
+          "charge_p10_p50_p90_adc_samples": [
+            4788.15,
+            38090.25,
+            291444.95
+          ],
+          "short_long_ratio_p10_p50_p90": [
+            0.44066316402303496,
+            0.4636261129903962,
+            0.5180012306562907
+          ],
+          "by_dominant_charge_ancestry": {
+            "alpha_family": {
+              "n": 0,
+              "charge_p10_p50_p90_adc_samples": [],
+              "short_long_ratio_p10_p50_p90": []
+            },
+            "gamma_family": {
+              "n": 36,
+              "charge_p10_p50_p90_adc_samples": [
+                63177.9375,
+                229768.3125,
+                440199.6875
+              ],
+              "short_long_ratio_p10_p50_p90": [
+                0.4420509768361482,
+                0.4590087448666581,
+                0.4749037117511127
+              ]
+            },
+            "decay_electron_family": {
+              "n": 84,
+              "charge_p10_p50_p90_adc_samples": [
+                4086.375,
+                18177.125,
+                59952.1875
+              ],
+              "short_long_ratio_p10_p50_p90": [
+                0.4406496183425235,
+                0.47001019381524656,
+                0.5554673894400312
+              ]
+            },
+            "mixed_or_other": {
+              "n": 5,
+              "charge_p10_p50_p90_adc_samples": [
+                156375.825,
+                217380.375,
+                261542.0
+              ],
+              "short_long_ratio_p10_p50_p90": [
+                0.45242677244171337,
+                0.4597744289413751,
+                0.46485367421448276
+              ]
+            }
+          }
+        },
+        "quality_and_peak120": {
+          "n": 52,
+          "charge_p10_p50_p90_adc_samples": [
+            59480.8125,
+            133800.1875,
+            422620.625
+          ],
+          "short_long_ratio_p10_p50_p90": [
+            0.44826939233935104,
+            0.45911547816849246,
+            0.47234039706766384
+          ],
+          "by_dominant_charge_ancestry": {
+            "alpha_family": {
+              "n": 0,
+              "charge_p10_p50_p90_adc_samples": [],
+              "short_long_ratio_p10_p50_p90": []
+            },
+            "gamma_family": {
+              "n": 32,
+              "charge_p10_p50_p90_adc_samples": [
+                108962.9125,
+                239921.0625,
+                444871.03750000003
+              ],
+              "short_long_ratio_p10_p50_p90": [
+                0.44082849111598205,
+                0.4589191273695042,
+                0.46658454343418926
+              ]
+            },
+            "decay_electron_family": {
+              "n": 15,
+              "charge_p10_p50_p90_adc_samples": [
+                54019.1,
+                61476.0,
+                77080.675
+              ],
+              "short_long_ratio_p10_p50_p90": [
+                0.4495853553767014,
+                0.4627381708542074,
+                0.48015857884779567
+              ]
+            },
+            "mixed_or_other": {
+              "n": 5,
+              "charge_p10_p50_p90_adc_samples": [
+                156375.825,
+                217380.375,
+                261542.0
+              ],
+              "short_long_ratio_p10_p50_p90": [
+                0.45242677244171337,
+                0.4597744289413751,
+                0.46485367421448276
+              ]
+            }
+          }
+        }
+      },
+      "peak_flag_sensitivity": {
+        "80": {
+          "n": 69,
+          "charge_p10_p50_p90_adc_samples": [
+            38821.05,
+            95227.5,
+            387560.6500000001
+          ],
+          "short_long_ratio_p10_p50_p90": [
+            0.4429850634492825,
+            0.4596608131165814,
+            0.4743508220263478
+          ]
+        },
+        "120": {
+          "n": 52,
+          "charge_p10_p50_p90_adc_samples": [
+            59480.8125,
+            133800.1875,
+            422620.625
+          ],
+          "short_long_ratio_p10_p50_p90": [
+            0.44826939233935104,
+            0.45911547816849246,
+            0.47234039706766384
+          ]
+        },
+        "160": {
+          "n": 41,
+          "charge_p10_p50_p90_adc_samples": [
+            84869.75,
+            229366.125,
+            434360.5
+          ],
+          "short_long_ratio_p10_p50_p90": [
+            0.44357908398635587,
+            0.4596608131165814,
+            0.4677957434170791
+          ]
+        },
+        "200": {
+          "n": 36,
+          "charge_p10_p50_p90_adc_samples": [
+            111002.1875,
+            239921.0625,
+            440199.6875
+          ],
+          "short_long_ratio_p10_p50_p90": [
+            0.4420509768361482,
+            0.4589191273695042,
+            0.4648021251435572
+          ]
+        }
+      },
+      "all_event_avalanche_charge_fractions": [
+        0.0,
+        0.0,
+        0.7815589653375481,
+        0.21844103466245188,
+        0.0,
+        0.0
+      ],
+      "alpha_family_charge_from_secondary_electron_fraction": null
+    },
+    "Am241": {
+      "source": "Am241",
+      "input": "/media/sf_works/SiPM/simulation/results/corrected_optics_20261027/am241/events.root",
+      "input_sha256": "22b90f145e4f107dff81079afc76051f0939150421e99c335c77df636beb90a9",
+      "run_info": {
+        "architecture": "DetectorConstruction/PhysicsList/ActionInitialization; G4DigiManager SiPMDigitizer",
+        "avalanche_origin_definition": "Photon avalanches inherit photon ancestry; AP/XT descendants inherit their triggering avalanche ancestry; primary dark avalanches use unknown=0. charge_by_origin_C sums realized in-window avalanche charge, not the finite-gate ADC integral.",
+        "completed": true,
+        "config": {
+          "acquisition": {
+            "amplitude_threshold_adc": 120.0,
+            "pretrigger_ns": 1000.0,
+            "sample_period_ns": 2.0,
+            "samples": 2496
+          },
+          "evidence": {
+            "assumptions": [
+              "4x4 array and all 16 summed channels are an explicit initial hypothesis, not confirmed wiring.",
+              "50 ohm effective load, 3 V overvoltage and 29 ns recovery are placeholders; 53.2 V bias is NOT converted using typical breakdown voltage.",
+              "Constant PDE 0.30 and disabled dark/XT/AP are uncalibrated switches; zero does not mean absent in device.",
+              "Lowpass 256 ns = 50 ohm * 16 * 320 pF only if directly parallel; alternative summing networks require calibration.",
+              "Gamma decay times 679/3340 ns and approximate integrated fractions are literature starting values, not this crystal measurements; alpha fraction, light yield, spectrum, optics are hypotheses.",
+              "Source is a point in air; encapsulation and source active layer unspecified.",
+              "Microcells are uniformly mapped to 3584 effective cells/channel; exact masked-cell layout and electronic inter-channel coupling not represented."
+            ],
+            "confirmed": "User 2026-10-27: 10 mm cube CsI(Tl), external PTFE tape, 5 um front Mylar, S13361-3050 series, multiple summed channels, no preamplifier; source distance unknown and authorized to scan.",
+            "fit_policy": "Shared tau_fast/tau_slow and passive RC; separate source-dominant fractions. Am-dominant -> alpha is a testable hypothesis, not truth. No source distance was fitted. No preamplifier added.",
+            "links": {
+              "gamma_times_note": "/media/sf_works/papers/sources/1993_Valentine_NIMA_Temperature-dependence-of-CsI(Tl)-gamma-ray-excited-scintillation-characteristics.md",
+              "sensor_datasheet": "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/s13361-3050_series_kapd1054e.pdf"
+            }
+          },
+          "geometry": {
+            "array_nx": 4,
+            "array_ny": 4,
+            "channel_active_mm": 3.0,
+            "channel_pitch_mm": 3.2,
+            "crystal_mm": [
+              10.0,
+              10.0,
+              10.0
+            ],
+            "grease_mm": 0.1,
+            "material": "CsI(Tl)",
+            "mylar_um": 5.0,
+            "ptfe_side_mm": 0.1,
+            "source_gap_mm": 1.0,
+            "source_radius_mm": 0.0,
+            "summed_channels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "world_material": "G4_AIR"
+          },
+          "optical": {
+            "absorption_mm": 500.0,
+            "alpha_fast_fraction": 0.1211480326285705,
+            "alpha_light_yield_ratio": 0.5,
+            "alpha_tau_ns": [
+              478.76494123873897,
+              1372.5347670910692
+            ],
+            "charged_step_um": 2.0,
+            "electron_fast_fraction": 0.6231465946460957,
+            "electron_tau_ns": [
+              478.76494123873897,
+              1372.5347670910692
+            ],
+            "emission_relative": [
+              0.02,
+              0.15,
+              0.55,
+              1.0,
+              0.65,
+              0.2,
+              0.05,
+              0.01
+            ],
+            "ion_light_yield_ratio": 0.05,
+            "photon_energy_eV": [
+              1.77,
+              1.91,
+              2.07,
+              2.21,
+              2.38,
+              2.58,
+              2.82,
+              3.1
+            ],
+            "ptfe_reflectivity": 0.95,
+            "rindex": 1.8,
+            "yield_photons_per_MeV": 54000.0
+          },
+          "schema_version": 1,
+          "sipm": {
+            "readout": {
+              "adc_bits": 14,
+              "adc_max_mV": 2000.0,
+              "adc_min_mV": 0.0,
+              "aperture_ns": 2.0,
+              "baseline_mV": 370.7294464111328,
+              "decay_ns": 29.0,
+              "internal_dt_ns": 0.5,
+              "lowpass_ns": 94.47173460998194,
+              "max_internal_bins": 5000000,
+              "model": "double_exponential",
+              "noise_rms_mV": 0.4104191463520683,
+              "rise_ns": 2.0,
+              "sample_period_ns": 2.0,
+              "template_csv": null,
+              "transimpedance_ohm": 50.0
+            },
+            "schema_version": 1,
+            "sensor": {
+              "afterpulse_delay_ns": 60.0,
+              "afterpulse_probability": 0.0,
+              "cells_x": 57344,
+              "cells_y": 1,
+              "constant_pde": 0.3,
+              "crosstalk_delay_ns": 0.0,
+              "crosstalk_probability": 0.0,
+              "dark_rate_hz": 0.0,
+              "gain_electrons": 1700000.0,
+              "max_candidates": 10000000,
+              "name": "S13361-3050_series_array_effective",
+              "overvoltage_V": 3.0,
+              "parameter_source": "User confirms S13361-3050 series and multiple summed channels. Manufacturer KAPD1054E PDF p2: 3584 cells/channel, 3x3 mm2, 320 pF/channel, gain 1.7e6 at 3 V overvoltage. Number of summed channels, unit breakdown voltage and recovery remain unconfirmed.",
+              "parameter_status": "hypothetical",
+              "pde_mode": "constant",
+              "pde_overvoltage_V": [],
+              "pde_probabilities": [],
+              "pde_wavelength_nm": [],
+              "recovery_enabled": true,
+              "recovery_ns": 29.0,
+              "temperature_C": 25.0,
+              "transit_delay_mean_ns": 0.0,
+              "transit_delay_sigma_ns": 0.0,
+              "trigger_scale_V": 2.4,
+              "trigger_threshold_V": 0.0,
+              "x_max_mm": 57344.0,
+              "x_min_mm": 0.0,
+              "y_max_mm": 1.0,
+              "y_min_mm": 0.0
+            }
+          },
+          "status": "Effective mean-shape initialization fit to run3/run12 training only; optical and particle interpretation remain hypotheses"
+        },
+        "config_file": "/media/sf_works/SiPM/simulation/results/corrected_optics_20261027/am241/config.json",
+        "decay_products": "All in-window particles born through RadioactiveDecay, including prompt daughter de-excitations; not all secondary tracks",
+        "events_completed": 240,
+        "events_requested": 240,
+        "geant4": "$Name: geant4-11-04-patch-02 [MT]$",
+        "limitations": [
+          "Scintillation yield ratios are constant hypotheses; no Birks double correction",
+          "Sensor entrance records optical photons; direct ionizing SiPM charge is not modeled",
+          "No source capsule or backing without dimensions",
+          "Uniform effective microcell mapping; XT/AP disabled by default"
+        ],
+        "optical_hit_collection": "SiPM/OpticalArrivals; entrance steps forwarded to SiPMSD by SteppingAction; photon_boundary_status uses G4OpBoundaryProcessStatus codes",
+        "origin_categories": [
+          "unknown",
+          "alpha_descendants",
+          "gamma_descendants",
+          "decay_electron_descendants",
+          "recoil_descendants",
+          "other"
+        ],
+        "origin_definition": "Ancestry resets at each RadioactiveDecay product, including prompt daughter de-excitation. All transport descendants inherit it. Decay electrons include beta/conversion/atomic-relaxation electrons; optical emitter PDG records the immediate scintillation/Cerenkov parent. This diagnostic does not alter the light-yield model.",
+        "parent_clock": "Parent lifetime set to zero; conditional isolated decay at pretrigger. Nuclear branches unchanged; no absolute activity or exposure.",
+        "particle_truth": "Simulation only; no experimental truth inferred",
+        "schema_version": 4,
+        "seed": 271112,
+        "sensor_entry_policy": "Only Transmission(1), FresnelRefraction(2), SameMaterial(12) are accepted; reflected tracks continue. Supersedes legacy post-volume scoring in schema <=3.",
+        "source": "Am241",
+        "trigger": "Approximate amplitude flag only; all events saved, PHA hardware trigger NOT emulated"
+      },
+      "events": 240,
+      "transmitted_boundary_counts": [
+        0,
+        0,
+        4064202,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "quality_subsets": {
+        "quality": {
+          "n": 146,
+          "charge_p10_p50_p90_adc_samples": [
+            6655.4375,
+            564155.0,
+            847401.6875
+          ],
+          "short_long_ratio_p10_p50_p90": [
+            0.3356976040253667,
+            0.3522469033397886,
+            0.4935109789712492
+          ],
+          "by_dominant_charge_ancestry": {
+            "alpha_family": {
+              "n": 92,
+              "charge_p10_p50_p90_adc_samples": [
+                316218.02499999997,
+                742512.75,
+                854761.4375
+              ],
+              "short_long_ratio_p10_p50_p90": [
+                0.3298273517661665,
+                0.3454819369062048,
+                0.35588445988732037
+              ]
+            },
+            "gamma_family": {
+              "n": 39,
+              "charge_p10_p50_p90_adc_samples": [
+                4944.4,
+                10301.375,
+                20959.075
+              ],
+              "short_long_ratio_p10_p50_p90": [
+                0.44569064850980156,
+                0.4825994629148545,
+                0.5596307558906672
+              ]
+            },
+            "decay_electron_family": {
+              "n": 10,
+              "charge_p10_p50_p90_adc_samples": [
+                6146.775,
+                11179.4375,
+                16533.024999999998
+              ],
+              "short_long_ratio_p10_p50_p90": [
+                0.4475727290324745,
+                0.47006208967329166,
+                0.5133324472095908
+              ]
+            },
+            "mixed_or_other": {
+              "n": 5,
+              "charge_p10_p50_p90_adc_samples": [
+                8303.05,
+                16935.125,
+                108143.17500000002
+              ],
+              "short_long_ratio_p10_p50_p90": [
+                0.3815697594352831,
+                0.46237743495881817,
+                0.4930812400931831
+              ]
+            }
+          }
+        },
+        "quality_and_peak120": {
+          "n": 92,
+          "charge_p10_p50_p90_adc_samples": [
+            316218.02499999997,
+            742512.75,
+            854761.4375
+          ],
+          "short_long_ratio_p10_p50_p90": [
+            0.3298273517661665,
+            0.3454819369062048,
+            0.35588445988732037
+          ],
+          "by_dominant_charge_ancestry": {
+            "alpha_family": {
+              "n": 91,
+              "charge_p10_p50_p90_adc_samples": [
+                346810.375,
+                745403.5,
+                855058.625
+              ],
+              "short_long_ratio_p10_p50_p90": [
+                0.32971627940007997,
+                0.34554434986371574,
+                0.3558986252236783
+              ]
+            },
+            "gamma_family": {
+              "n": 0,
+              "charge_p10_p50_p90_adc_samples": [],
+              "short_long_ratio_p10_p50_p90": []
+            },
+            "decay_electron_family": {
+              "n": 0,
+              "charge_p10_p50_p90_adc_samples": [],
+              "short_long_ratio_p10_p50_p90": []
+            },
+            "mixed_or_other": {
+              "n": 1,
+              "charge_p10_p50_p90_adc_samples": [
+                165130.875,
+                165130.875,
+                165130.875
+              ],
+              "short_long_ratio_p10_p50_p90": [
+                0.3402822723188501,
+                0.3402822723188501,
+                0.3402822723188501
+              ]
+            }
+          }
+        }
+      },
+      "peak_flag_sensitivity": {
+        "80": {
+          "n": 93,
+          "charge_p10_p50_p90_adc_samples": [
+            302587.675,
+            739622.0,
+            854464.25
+          ],
+          "short_long_ratio_p10_p50_p90": [
+            0.329938424132253,
+            0.3454195239486939,
+            0.3558702945509624
+          ]
+        },
+        "120": {
+          "n": 92,
+          "charge_p10_p50_p90_adc_samples": [
+            316218.02499999997,
+            742512.75,
+            854761.4375
+          ],
+          "short_long_ratio_p10_p50_p90": [
+            0.3298273517661665,
+            0.3454819369062048,
+            0.35588445988732037
+          ]
+        },
+        "160": {
+          "n": 91,
+          "charge_p10_p50_p90_adc_samples": [
+            346810.375,
+            745403.5,
+            855058.625
+          ],
+          "short_long_ratio_p10_p50_p90": [
+            0.3308270030609452,
+            0.34554434986371574,
+            0.3558986252236783
+          ]
+        },
+        "200": {
+          "n": 90,
+          "charge_p10_p50_p90_adc_samples": [
+            435428.65,
+            749405.625,
+            855066.1125
+          ],
+          "short_long_ratio_p10_p50_p90": [
+            0.33377803550039076,
+            0.34556732592491146,
+            0.3559789732891732
+          ]
+        }
+      },
+      "all_event_avalanche_charge_fractions": [
+        0.0,
+        0.9805197005474818,
+        0.015603824660191303,
+        0.003876474792326972,
+        0.0,
+        0.0
+      ],
+      "alpha_family_charge_from_secondary_electron_fraction": 0.18866709376641658
+    }
+  },
+  "measured": {
+    "Co60": {
+      "n": 2862,
+      "charge_p10_p50_p90_adc_samples": [
+        251826.5,
+        357353.125,
+        409845.9
+      ],
+      "short_long_ratio_p10_p50_p90": [
+        0.45092554117909683,
+        0.46514868726717673,
+        0.47721980775539297
+      ],
+      "run": 3,
+      "source": "Co60",
+      "role": "Previously explored training portion (first 60%); no particle truth assigned",
+      "features_sha256": "554c37bc0e513fcd93988c8e5689fa73f96f003fd4a3553c4674f684306c082c",
+      "phase2_sha256": "3d488ac67fa99fc61c7b54e015196a8672c35d4a315331c891261a2eaac2bd18"
+    },
+    "Am241": {
+      "n": 4462,
+      "charge_p10_p50_p90_adc_samples": [
+        140523.525,
+        204444.0,
+        545517.675
+      ],
+      "short_long_ratio_p10_p50_p90": [
+        0.30376064075900894,
+        0.3265988604962934,
+        0.35261039547792516
+      ],
+      "run": 12,
+      "source": "Am241",
+      "role": "Previously explored training portion (first 60%); no particle truth assigned",
+      "features_sha256": "1fa71845db07435102a6d34c6c515b0de3d0247bc0a934bea4beaf07fc4f1584",
+      "phase2_sha256": "02e1cf961958d4075aacfeed398f1fa089881b90854e03efafdfaacddfe824ce"
+    }
+  }
+}

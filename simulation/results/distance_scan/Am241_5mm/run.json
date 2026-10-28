@@ -1,0 +1,21 @@
+{
+  "source": "Am241",
+  "events": 1000,
+  "seed": 272003,
+  "config_sha256": "4647c10d32a5b68d6ee350e0171cc0e982f9e6f22c6cdfc8fbc9eebabbbfb6ef",
+  "source_sha256": {
+    "main.cc": "db4d1bb7ce1aa0cdfe34c6c86622364558a1b69bc9dfe9f624fe9397e5856185",
+    "vendor/SiPMResponse.cc": "c2226e528dab87e0a350251716c0b35b3a0f23543c25b9f64ce7ab6f72163274",
+    "vendor/SiPMResponse.hh": "9522000dfbbffce5c97351996653d9ecf979af95dcf8404567396cbcb172246e",
+    "CMakeLists.txt": "195c807f36218cdbb0cd68f85727c0d007f1c176b1c5ceb45147e1e9cc5f0e39"
+  },
+  "platform": "Linux-6.12.111+deb13-amd64-x86_64-with-glibc2.41",
+  "start_utc": "2026-10-27T09:31:15Z",
+  "mode": "transport-only",
+  "executable_sha256": "fca92c06f32871bd95e024969234e8bd8be87fca84a3109aa697fc3f0f996b63",
+  "geant4_data_dir": "/opt/geant4/11.4.2/share/Geant4/data",
+  "exit_code": 0,
+  "elapsed_seconds": 24.19966049499999,
+  "status": "completed; transport integrity checks passed",
+  "validation_file": "events_validation.json"
+}

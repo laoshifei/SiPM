@@ -1,0 +1,12 @@
+{
+  "tests_run": 6,
+  "passed": true,
+  "failures": 0,
+  "errors": 0,
+  "code_sha256": {
+    "refine_waveforms.py": "2c4e7e4be126df0fec83cc2eedb093eca1fa95833bcad27a7b0c6c5289781941",
+    "shape_mixture.py": "ea4f4422e943964829e5732c4447cbde7a8e139048499885412cd6fc0ed98e4a",
+    "compare_methods.py": "f59290c6797e5e426832c76db5d7ef9ddcf4e5d3203feb37061167c98187323a",
+    "test_phase2.py": "8b8cfb991726c218b21661ec018dc0938248d06def186aede8cbd37ac3af47a1"
+  }
+}

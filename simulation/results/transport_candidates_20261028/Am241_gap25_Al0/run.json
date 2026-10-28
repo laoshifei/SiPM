@@ -1,0 +1,11 @@
+{
+  "source": "Am241",
+  "events": 10000,
+  "seed": 281006,
+  "status": "completed and numerically validated",
+  "config_sha256": "30c66ed8720201990e9262c6f10e9042db1f4d8b9985e4fbd4875547f7ae84f5",
+  "executable_sha256": "ffe25ba7d96586806506de9c5428c7b8ed81d0996869f85046d4a2d85510ac2f",
+  "source_manifest": "../summary.json",
+  "exit_code": 0,
+  "elapsed_seconds": 29.809461343000294
+}

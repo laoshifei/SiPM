@@ -1,0 +1,11 @@
+{
+  "source": "Co60",
+  "events": 10000,
+  "seed": 281001,
+  "status": "completed and numerically validated",
+  "config_sha256": "a03829c6b08e3dd6ca3db0e0a461bd5647fa0442347306179666d1f86078ba26",
+  "executable_sha256": "ffe25ba7d96586806506de9c5428c7b8ed81d0996869f85046d4a2d85510ac2f",
+  "source_manifest": "../summary.json",
+  "exit_code": 0,
+  "elapsed_seconds": 32.153570843001944
+}

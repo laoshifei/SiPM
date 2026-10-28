@@ -1,0 +1,4 @@
+[ 18%] Built target sipm_response
+[ 18%] Built target test_sipm
+[ 81%] Built target csi_sources
+gmake: jobserver mkfifo: /tmp/GMfifo4: File exists

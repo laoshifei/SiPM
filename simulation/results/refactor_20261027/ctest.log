@@ -1,0 +1,59 @@
+Start testing: Oct 27 18:14 CST
+----------------------------------------------------------
+1/2 Testing: inherited_sensor_charge_recovery_rng
+1/2 Test: inherited_sensor_charge_recovery_rng
+Command: "/media/sf_works/SiPM/simulation/build/test_sipm" "/media/sf_works/SiPM/simulation/tests/vendor_fixture.json"
+Directory: /media/sf_works/SiPM/simulation/build
+"inherited_sensor_charge_recovery_rng" start time: Oct 27 18:14 CST
+Output:
+----------------------------------------------------------
+PASS cell boundaries
+PASS bilinear PDE and no extrapolation
+PASS recovery and trigger
+PASS single electron charge and fractional-bin integral
+PASS empty input still produces baseline ADC
+PASS gate uses avalanche charge and half-open endpoints
+PASS PDE binomial statistics
+PASS same-time cell saturation
+PASS dark count Poisson statistics
+PASS recursive secondary ancestry and charge
+PASS independent reproducible electronics RNG
+PASS ADC clipping explicitly marked
+PASS invalid config/input and candidate limit reject
+PASS readout time-step convergence
+14 tests passed
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"inherited_sensor_charge_recovery_rng" end time: Oct 27 18:14 CST
+"inherited_sensor_charge_recovery_rng" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: csi_application_workflow
+2/2 Test: csi_application_workflow
+Command: "/usr/bin/python3" "/media/sf_works/SiPM/simulation/tests/test_workflow.py"
+Directory: /media/sf_works/SiPM/simulation/build
+"csi_application_workflow" start time: Oct 27 18:14 CST
+Output:
+----------------------------------------------------------
+test_alignment_preserves_shape_under_adc_scaling_and_offset (__main__.WorkflowChecks.test_alignment_preserves_shape_under_adc_scaling_and_offset) ... ok
+test_am_pilot_replay (__main__.WorkflowChecks.test_am_pilot_replay) ... ok
+test_effective_forward_model_area_and_causality (__main__.WorkflowChecks.test_effective_forward_model_area_and_causality) ... ok
+test_geant4_seed_replay_and_output_guards (__main__.WorkflowChecks.test_geant4_seed_replay_and_output_guards) ... ok
+test_macro_errors_and_post_initialization_config_lock (__main__.WorkflowChecks.test_macro_errors_and_post_initialization_config_lock) ... ok
+test_training_split_isolation (__main__.WorkflowChecks.test_training_split_isolation) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 54.455s
+
+OK
+<end of output>
+Test time =  64.92 sec
+----------------------------------------------------------
+Test Passed.
+"csi_application_workflow" end time: Oct 27 18:15 CST
+"csi_application_workflow" time elapsed: 00:01:04
+----------------------------------------------------------
+
+End testing: Oct 27 18:15 CST

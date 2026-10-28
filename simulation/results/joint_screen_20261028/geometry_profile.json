@@ -1,0 +1,80 @@
+[
+  {
+    "am_scenario": "Am241_gap10_Al0",
+    "co_scenario": "Co60_gap1_Al0.25",
+    "net_adc_scale": "1.1206028069334182",
+    "alpha_light_yield_ratio": "0.1",
+    "alpha_fast_fraction": "0.0",
+    "co_loss": "7.407875328515854",
+    "am_loss": "12.97885196826651",
+    "joint_loss": "20.386727296782365",
+    "co_n": "801",
+    "am_n": "614",
+    "interpretation": "candidate ranking, not confidence interval"
+  },
+  {
+    "am_scenario": "Am241_gap1_Al0",
+    "co_scenario": "Co60_gap1_Al0",
+    "net_adc_scale": "0.8760609429186079",
+    "alpha_light_yield_ratio": "0.15",
+    "alpha_fast_fraction": "0.0",
+    "co_loss": "10.089351971838184",
+    "am_loss": "9.631409370804363",
+    "joint_loss": "19.720761342642547",
+    "co_n": "777",
+    "am_n": "3646",
+    "interpretation": "candidate ranking, not confidence interval"
+  },
+  {
+    "am_scenario": "Am241_gap20_Al0",
+    "co_scenario": "Co60_gap1_Al0.5",
+    "net_adc_scale": "1.6211671193173833",
+    "alpha_light_yield_ratio": "0.15",
+    "alpha_fast_fraction": "0.025",
+    "co_loss": "6.732399343868783",
+    "am_loss": "8.57653211459565",
+    "joint_loss": "15.308931458464434",
+    "co_n": "835",
+    "am_n": "190",
+    "interpretation": "candidate ranking, not confidence interval"
+  },
+  {
+    "am_scenario": "Am241_gap25_Al0",
+    "co_scenario": "Co60_gap1_Al0.25",
+    "net_adc_scale": "1.4334055878846814",
+    "alpha_light_yield_ratio": "0.3",
+    "alpha_fast_fraction": "0.15",
+    "co_loss": "6.469522416234055",
+    "am_loss": "9.43702939858912",
+    "joint_loss": "15.906551814823175",
+    "co_n": "845",
+    "am_n": "136",
+    "interpretation": "candidate ranking, not confidence interval"
+  },
+  {
+    "am_scenario": "Am241_gap30_Al0",
+    "co_scenario": "Co60_gap1_Al0.25",
+    "net_adc_scale": "1.3478443620890446",
+    "alpha_light_yield_ratio": "0.65",
+    "alpha_fast_fraction": "0.15",
+    "co_loss": "6.693808224369292",
+    "am_loss": "7.065781344538774",
+    "joint_loss": "13.759589568908066",
+    "co_n": "835",
+    "am_n": "89",
+    "interpretation": "candidate ranking, not confidence interval"
+  },
+  {
+    "am_scenario": "Am241_gap35_Al0",
+    "co_scenario": "Co60_gap1_Al0.25",
+    "net_adc_scale": "1.524398244463844",
+    "alpha_light_yield_ratio": "0.03",
+    "alpha_fast_fraction": "0.0",
+    "co_loss": "6.4250271255733",
+    "am_loss": "1000000.0",
+    "joint_loss": "1000006.4250271256",
+    "co_n": "852",
+    "am_n": "0",
+    "interpretation": "inadequate accepted MC count"
+  }
+]

@@ -1,0 +1,114 @@
+{
+  "date": "2026-10-27",
+  "scope": "PHA board 0 channel 0; source-level provenance, not per-event truth",
+  "confirmed_runs": [
+    {
+      "run": "3",
+      "source_or_background": "60Co",
+      "bias_voltage_V": "53.2",
+      "particle_content": "γ 源测量；逐事件类别未标记",
+      "detector_setup": "D1：用户确认 run 3、12、18 为同一晶体、SiPM 和接线",
+      "notes": "；同一探测器已确认，放大器增益及温度未单独确认；阈值不同，不先定义为同条件重复"
+    },
+    {
+      "run": "7",
+      "source_or_background": "60Co",
+      "bias_voltage_V": "53.4",
+      "particle_content": "γ 源测量；逐事件类别未标记",
+      "detector_setup": "",
+      "notes": ""
+    },
+    {
+      "run": "10",
+      "source_or_background": "241Am",
+      "bias_voltage_V": "52.4",
+      "particle_content": "α/γ 混合源；用户确认可见 α，逐事件类别未标记",
+      "detector_setup": "",
+      "notes": "用户进一步确认 241Am、52.4 V 适用于与 2022-12-06 23:38:59 能谱完全匹配的这份 BIN；最新 run.info 为另一轮采集"
+    },
+    {
+      "run": "11",
+      "source_or_background": "241Am",
+      "bias_voltage_V": "52.8",
+      "particle_content": "α/γ 混合源；用户确认可见 α，逐事件类别未标记",
+      "detector_setup": "",
+      "notes": ""
+    },
+    {
+      "run": "12",
+      "source_or_background": "241Am",
+      "bias_voltage_V": "53.2",
+      "particle_content": "α/γ 混合源；用户确认可见 α，逐事件类别未标记",
+      "detector_setup": "D1：用户确认 run 3、12、18 为同一晶体、SiPM 和接线",
+      "notes": "与 run 18 / 12 同为 53.2 V；采集阈值不同，同条件重复关系待确认；同一探测器已确认，放大器增益及温度未单独确认；阈值不同，不先定义为同条件重复"
+    },
+    {
+      "run": "13",
+      "source_or_background": "241Am",
+      "bias_voltage_V": "53.6",
+      "particle_content": "α/γ 混合源；用户确认可见 α，逐事件类别未标记",
+      "detector_setup": "",
+      "notes": ""
+    },
+    {
+      "run": "14",
+      "source_or_background": "241Am",
+      "bias_voltage_V": "54.0",
+      "particle_content": "α/γ 混合源；用户确认可见 α，逐事件类别未标记",
+      "detector_setup": "",
+      "notes": ""
+    },
+    {
+      "run": "18",
+      "source_or_background": "241Am",
+      "bias_voltage_V": "53.2",
+      "particle_content": "α/γ 混合源；用户确认可见 α，逐事件类别未标记",
+      "detector_setup": "D1：用户确认 run 3、12、18 为同一晶体、SiPM 和接线",
+      "notes": "与 run 18 / 12 同为 53.2 V；采集阈值不同，同条件重复关系待确认；同一探测器已确认，放大器增益及温度未单独确认；阈值不同，不先定义为同条件重复"
+    }
+  ],
+  "excluded_runs": [
+    9,
+    21,
+    22,
+    24,
+    25
+  ],
+  "source_caveat": "User explicitly confirms 241Am contains gamma rays; keep alpha/gamma mixture.",
+  "same_hardware_confirmed_runs": [
+    3,
+    12,
+    18
+  ],
+  "same_hardware_scope": "Same crystal, SiPM and wiring; amplifier gain and temperature were not separately specified.",
+  "alpha_observation_confirmation": {
+    "user_statement": "确认可以看到alpha",
+    "scope": "User confirms alpha signals can be observed in the 241Am measurements; no per-event truth labels or specific PSD-band identity supplied.",
+    "not_specified": [
+      "entry-window and source encapsulation details",
+      "whether SiPM can receive direct irradiation"
+    ]
+  },
+  "apparatus_confirmation_20261027": {
+    "crystal_mm": [
+      10,
+      10,
+      10
+    ],
+    "material": "CsI(Tl)",
+    "wrapping": "PTFE tape (user: 生胶带)",
+    "front_mylar_um": 5,
+    "sipm_series": "S13361-3050 / KAPD1054E",
+    "readout": "Multiple SiPM channels connected in parallel or summed; no preamplifier",
+    "source_gap_mm": null,
+    "source_gap_policy": "User authorizes simulation scan; not a measured distance",
+    "unconfirmed": [
+      "Full device suffix",
+      "Number and positions of connected channels",
+      "Passive parallel versus summing circuit",
+      "Load/termination",
+      "Source encapsulation",
+      "Temperature and unit breakdown voltage"
+    ]
+  }
+}

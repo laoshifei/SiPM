@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "comparison": "New chunked features vs frozen schema4 comparison arrays",
+  "checks": {
+    "Co60": {
+      "common_count": 17,
+      "all_saved_curves_exactly_equal": true
+    },
+    "Am241": {
+      "common_count": 8,
+      "all_saved_curves_exactly_equal": true
+    }
+  },
+  "code_sha256": "07e781de9ab9d9587c3291fdb53009156d9f7e9904e2f49d268625dd3d0520a5"
+}

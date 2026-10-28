@@ -1,0 +1,6392 @@
+[
+  {
+    "configuration": "qdc_1000ns",
+    "charge_bin": 0,
+    "charge_low": 201824.1125,
+    "charge_high": 237975.62708333333,
+    "two_core": {
+      "background_center": 0.5695211345192874,
+      "background_scale": 0.11589241946557627,
+      "sigma_floor": 0.0011589241946557626,
+      "means": [
+        0.5459564462935371,
+        0.6238061725669294
+      ],
+      "sigmas": [
+        0.02270237030381043,
+        0.010469424148216687
+      ],
+      "weights": [
+        [
+          0.144472112899957,
+          0.8555278870990428,
+          9.999999999993065e-13
+        ],
+        [
+          0.9999985741489968,
+          9.99999999999186e-13,
+          1.4258500030830092e-06
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1573.4508771222754,
+      "bic": -3095.0246723594687,
+      "free_parameters": 8,
+      "n": 655,
+      "converged": true,
+      "iterations": 35,
+      "at_sigma_floor": false,
+      "history_min_step": 5.3885820307186805e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 0.9966218403720767
+    },
+    "one_core": {
+      "background_center": 0.5695211345192874,
+      "background_scale": 0.11589241946557627,
+      "sigma_floor": 0.0011589241946557626,
+      "means": [
+        0.546070826661288
+      ],
+      "sigmas": [
+        0.02283996732356329
+      ],
+      "weights": [
+        [
+          2.7911633074807374e-05,
+          0.9999720883669252
+        ],
+        [
+          0.9999999999669761,
+          3.302396349654112e-11
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1406.4212903491964,
+      "bic": -2786.904039755852,
+      "free_parameters": 4,
+      "n": 655,
+      "converged": true,
+      "iterations": 54,
+      "at_sigma_floor": false,
+      "history_min_step": 5.6490166798539576e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 308.12063260361674,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "qdc_1000ns",
+    "charge_bin": 1,
+    "charge_low": 237975.62708333333,
+    "charge_high": 274127.14166666666,
+    "two_core": {
+      "background_center": 0.572797420047066,
+      "background_scale": 0.12023171395046772,
+      "sigma_floor": 0.0012023171395046772,
+      "means": [
+        0.5444504244150664,
+        0.6246504785396102
+      ],
+      "sigmas": [
+        0.021170299178166655,
+        0.009575873267867251
+      ],
+      "weights": [
+        [
+          0.060903641236573484,
+          0.9390963239747914,
+          3.478863511428294e-08
+        ],
+        [
+          0.9999999758892775,
+          9.999999999990052e-13,
+          2.4109722646893415e-08
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1411.300987452259,
+      "bic": -2772.151772608934,
+      "free_parameters": 8,
+      "n": 548,
+      "converged": true,
+      "iterations": 15,
+      "at_sigma_floor": false,
+      "history_min_step": 1.9375436977497884e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 1.1077094957398617
+    },
+    "one_core": {
+      "background_center": 0.572797420047066,
+      "background_scale": 0.12023171395046772,
+      "sigma_floor": 0.0012023171395046772,
+      "means": [
+        0.5443084531102489
+      ],
+      "sigmas": [
+        0.02120608730451401
+      ],
+      "weights": [
+        [
+          2.0548764962866276e-07,
+          0.9999997945123503
+        ],
+        [
+          0.9999999999825533,
+          1.744670730683853e-11
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1096.4465916916463,
+      "bic": -2167.6680822355006,
+      "free_parameters": 4,
+      "n": 548,
+      "converged": true,
+      "iterations": 19,
+      "at_sigma_floor": false,
+      "history_min_step": 3.3440187507949304e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 604.4836903734335,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "qdc_1000ns",
+    "charge_bin": 2,
+    "charge_low": 274127.14166666666,
+    "charge_high": 310278.65625,
+    "two_core": {
+      "background_center": 0.5791294949058805,
+      "background_scale": 0.11597411423194892,
+      "sigma_floor": 0.0011597411423194893,
+      "means": [
+        0.5450183862748517,
+        0.6236832452288091
+      ],
+      "sigmas": [
+        0.020639495723242685,
+        0.009737838453070241
+      ],
+      "weights": [
+        [
+          0.013711265784958302,
+          0.9862887339633032,
+          2.51738505997099e-10
+        ],
+        [
+          0.9999999109562727,
+          3.6523312752948154e-09,
+          8.539139597435775e-08
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1522.8157567646335,
+      "bic": -2995.313788961995,
+      "free_parameters": 8,
+      "n": 539,
+      "converged": true,
+      "iterations": 16,
+      "at_sigma_floor": false,
+      "history_min_step": 2.496300794518902e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 1.0996978740530086
+    },
+    "one_core": {
+      "background_center": 0.5791294949058805,
+      "background_scale": 0.11597411423194892,
+      "sigma_floor": 0.0011597411423194893,
+      "means": [
+        0.5871942270278973
+      ],
+      "sigmas": [
+        0.04227755771044994
+      ],
+      "weights": [
+        [
+          0.999999959544757,
+          4.045524296334854e-08
+        ],
+        [
+          0.9999997795660011,
+          2.2043399902722911e-07
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 940.3179768729793,
+      "bic": -1855.4770914623227,
+      "free_parameters": 4,
+      "n": 539,
+      "converged": true,
+      "iterations": 19,
+      "at_sigma_floor": false,
+      "history_min_step": 3.38796065761926e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 1139.8366974996725,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "qdc_1000ns",
+    "charge_bin": 3,
+    "charge_low": 310278.65625,
+    "charge_high": 346430.17083333334,
+    "two_core": {
+      "background_center": 0.5836353743330784,
+      "background_scale": 0.10818506520188198,
+      "sigma_floor": 0.0010818506520188199,
+      "means": [
+        0.543620834263383,
+        0.6249856018231098
+      ],
+      "sigmas": [
+        0.01601499142445296,
+        0.008781208033715016
+      ],
+      "weights": [
+        [
+          0.0018587438276186149,
+          0.9981411583675466,
+          9.780483476919177e-08
+        ],
+        [
+          0.9999999991173025,
+          9.99999999999e-13,
+          8.816975351801678e-10
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2282.471866758528,
+      "bic": -4512.2654023779705,
+      "free_parameters": 8,
+      "n": 724,
+      "converged": true,
+      "iterations": 14,
+      "at_sigma_floor": false,
+      "history_min_step": 5.4005182846594835e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 1.3934569081932413
+    },
+    "one_core": {
+      "background_center": 0.5836353743330784,
+      "background_scale": 0.10818506520188198,
+      "sigma_floor": 0.0010818506520188199,
+      "means": [
+        0.6249853916686193
+      ],
+      "sigmas": [
+        0.008764779159681537
+      ],
+      "weights": [
+        [
+          0.9975480255928532,
+          0.0024519744071468783
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1953.6029100592107,
+      "bic": -3880.8666545488786,
+      "free_parameters": 4,
+      "n": 724,
+      "converged": true,
+      "iterations": 9,
+      "at_sigma_floor": false,
+      "history_min_step": 6.681344757453189e-06,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 631.3987478290919,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "qdc_1000ns",
+    "charge_bin": 4,
+    "charge_low": 346430.17083333334,
+    "charge_high": 382581.6854166667,
+    "two_core": {
+      "background_center": 0.5880746921524491,
+      "background_scale": 0.10507683547269198,
+      "sigma_floor": 0.0010507683547269198,
+      "means": [
+        0.5434896015770196,
+        0.6265342323573475
+      ],
+      "sigmas": [
+        0.01650967250477855,
+        0.0087386148833715
+      ],
+      "weights": [
+        [
+          0.001263000758650344,
+          0.9987369898075237,
+          9.433825915831611e-09
+        ],
+        [
+          0.9999998998172461,
+          9.999999999990003e-13,
+          1.0018175384631231e-07
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2962.9533267106685,
+      "bic": -5871.320364442491,
+      "free_parameters": 8,
+      "n": 919,
+      "converged": true,
+      "iterations": 13,
+      "at_sigma_floor": false,
+      "history_min_step": 3.517141567499493e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 1.3967603868392475
+    },
+    "one_core": {
+      "background_center": 0.5880746921524491,
+      "background_scale": 0.10507683547269198,
+      "sigma_floor": 0.0010507683547269198,
+      "means": [
+        0.6265346534695148
+      ],
+      "sigmas": [
+        0.008736863192747895
+      ],
+      "weights": [
+        [
+          0.9985300998273023,
+          0.0014699001726976738
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2738.249387501701,
+      "bic": -5449.2056305139795,
+      "free_parameters": 4,
+      "n": 919,
+      "converged": true,
+      "iterations": 7,
+      "at_sigma_floor": false,
+      "history_min_step": 2.5363669919897802e-06,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 422.11473392851167,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "qdc_1000ns",
+    "charge_bin": 5,
+    "charge_low": 382581.6854166667,
+    "charge_high": 418733.2,
+    "two_core": {
+      "background_center": 0.5906753890801526,
+      "background_scale": 0.09815631425164972,
+      "sigma_floor": 0.0009815631425164973,
+      "means": [
+        0.5459032796976726,
+        0.6270008931429226
+      ],
+      "sigmas": [
+        0.015284053001170236,
+        0.008360494673594834
+      ],
+      "weights": [
+        [
+          9.999999999990088e-13,
+          0.9999999576131728,
+          4.238582726302969e-08
+        ],
+        [
+          0.9999999986172436,
+          9.99999999999e-13,
+          1.3817563405782175e-09
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2523.6170722715387,
+      "bic": -4994.0838266778965,
+      "free_parameters": 8,
+      "n": 768,
+      "converged": true,
+      "iterations": 14,
+      "at_sigma_floor": false,
+      "history_min_step": 3.2254303732770495e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 1.4565296828218128
+    },
+    "one_core": {
+      "background_center": 0.5906753890801526,
+      "background_scale": 0.09815631425164972,
+      "sigma_floor": 0.0009815631425164973,
+      "means": [
+        0.6270008930305452
+      ],
+      "sigmas": [
+        0.008360494873858725
+      ],
+      "weights": [
+        [
+          0.9999999631027008,
+          3.689729914155454e-08
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2343.0965120228084,
+      "bic": -4659.617865113026,
+      "free_parameters": 4,
+      "n": 768,
+      "converged": true,
+      "iterations": 13,
+      "at_sigma_floor": false,
+      "history_min_step": 2.7780944037658628e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 334.46596156487067,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "negative_mean_time_1000ns",
+    "charge_bin": 0,
+    "charge_low": 201824.1125,
+    "charge_high": 237975.62708333333,
+    "two_core": {
+      "background_center": -0.46466005448523506,
+      "background_scale": 0.07017704270878589,
+      "sigma_floor": 0.0007017704270878589,
+      "means": [
+        -0.4804758148591031,
+        -0.4317819768869402
+      ],
+      "sigmas": [
+        0.012610222135300556,
+        0.006123741558961176
+      ],
+      "weights": [
+        [
+          0.14349178528707607,
+          0.8565082144368039,
+          2.761200995458738e-10
+        ],
+        [
+          0.9986806113320289,
+          0.0013192715305529953,
+          1.1713741815340358e-07
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1950.2637126546208,
+      "bic": -3848.6503434241595,
+      "free_parameters": 8,
+      "n": 655,
+      "converged": true,
+      "iterations": 17,
+      "at_sigma_floor": false,
+      "history_min_step": 5.136608547218202e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 1.1037903885262201
+    },
+    "one_core": {
+      "background_center": -0.46466005448523506,
+      "background_scale": 0.07017704270878589,
+      "sigma_floor": 0.0007017704270878589,
+      "means": [
+        -0.48034363513055206
+      ],
+      "sigmas": [
+        0.01276629816948793
+      ],
+      "weights": [
+        [
+          4.158272117772204e-05,
+          0.9999584172788223
+        ],
+        [
+          0.999999999999,
+          9.999999999994781e-13
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1779.9733015060092,
+      "bic": -3534.0080620694775,
+      "free_parameters": 4,
+      "n": 655,
+      "converged": true,
+      "iterations": 55,
+      "at_sigma_floor": false,
+      "history_min_step": 6.13516592693486e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 314.6422813546819,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "negative_mean_time_1000ns",
+    "charge_bin": 1,
+    "charge_low": 237975.62708333333,
+    "charge_high": 274127.14166666666,
+    "two_core": {
+      "background_center": -0.4628259382117879,
+      "background_scale": 0.07399863137694496,
+      "sigma_floor": 0.0007399863137694495,
+      "means": [
+        -0.4817050135511103,
+        -0.4313027787877663
+      ],
+      "sigmas": [
+        0.011932680319811945,
+        0.005847956356404425
+      ],
+      "weights": [
+        [
+          0.05514818972707584,
+          0.9448518069207523,
+          3.35217185372735e-09
+        ],
+        [
+          0.9999999752051265,
+          9.999999999990005e-13,
+          2.479387350583094e-08
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1716.7415904767668,
+      "bic": -3383.0329786579496,
+      "free_parameters": 8,
+      "n": 548,
+      "converged": true,
+      "iterations": 14,
+      "at_sigma_floor": false,
+      "history_min_step": 1.7152356122096535e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 1.2037734516279415
+    },
+    "one_core": {
+      "background_center": -0.4628259382117879,
+      "background_scale": 0.07399863137694496,
+      "sigma_floor": 0.0007399863137694495,
+      "means": [
+        -0.4817192326959293
+      ],
+      "sigmas": [
+        0.012000983980203241
+      ],
+      "weights": [
+        [
+          1.7606843401650242e-07,
+          0.9999998239315661
+        ],
+        [
+          0.9999999999934286,
+          6.571411533017948e-12
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1396.4858992530985,
+      "bic": -2767.746697358405,
+      "free_parameters": 4,
+      "n": 548,
+      "converged": true,
+      "iterations": 19,
+      "at_sigma_floor": false,
+      "history_min_step": 2.4550203306716867e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 615.2862812995445,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "negative_mean_time_1000ns",
+    "charge_bin": 2,
+    "charge_low": 274127.14166666666,
+    "charge_high": 310278.65625,
+    "two_core": {
+      "background_center": -0.4595712758301479,
+      "background_scale": 0.07101948785061335,
+      "sigma_floor": 0.0007101948785061335,
+      "means": [
+        -0.48083262432291096,
+        -0.43164234983402344
+      ],
+      "sigmas": [
+        0.01148566013790497,
+        0.005485593549513865
+      ],
+      "weights": [
+        [
+          0.013667392035481923,
+          0.9863326073136484,
+          6.50869636247974e-10
+        ],
+        [
+          0.9999999324097402,
+          9.999999999990272e-13,
+          6.758925991335479e-08
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1835.1554667715623,
+      "bic": -3619.9932089758527,
+      "free_parameters": 8,
+      "n": 539,
+      "converged": true,
+      "iterations": 14,
+      "at_sigma_floor": false,
+      "history_min_step": 2.384331401117379e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 1.230856990740024
+    },
+    "one_core": {
+      "background_center": -0.4595712758301479,
+      "background_scale": 0.07101948785061335,
+      "sigma_floor": 0.0007101948785061335,
+      "means": [
+        -0.4544582891941173
+      ],
+      "sigmas": [
+        0.02605912825350341
+      ],
+      "weights": [
+        [
+          0.9999999454324457,
+          5.456755424308133e-08
+        ],
+        [
+          0.9999998419960324,
+          1.5800396754359938e-07
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1201.133769147313,
+      "bic": -2377.1086760109897,
+      "free_parameters": 4,
+      "n": 539,
+      "converged": true,
+      "iterations": 19,
+      "at_sigma_floor": false,
+      "history_min_step": 3.221358815608255e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 1242.884532964863,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "negative_mean_time_1000ns",
+    "charge_bin": 3,
+    "charge_low": 310278.65625,
+    "charge_high": 346430.17083333334,
+    "two_core": {
+      "background_center": -0.4567504164943237,
+      "background_scale": 0.06636107300796218,
+      "sigma_floor": 0.0006636107300796218,
+      "means": [
+        -0.4819094322202136,
+        -0.4309014907630682
+      ],
+      "sigmas": [
+        0.008827559194658986,
+        0.005153175552244334
+      ],
+      "weights": [
+        [
+          0.0018770274232525368,
+          0.9981217744244046,
+          1.1981523427419284e-06
+        ],
+        [
+          0.9999999999979999,
+          9.999999999982117e-13,
+          9.999999999982117e-13
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2679.9293288222457,
+      "bic": -5307.180326505406,
+      "free_parameters": 8,
+      "n": 724,
+      "converged": true,
+      "iterations": 27,
+      "at_sigma_floor": false,
+      "history_min_step": 6.091196155466605e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 1.5493519279079482
+    },
+    "one_core": {
+      "background_center": -0.4567504164943237,
+      "background_scale": 0.06636107300796218,
+      "sigma_floor": 0.0006636107300796218,
+      "means": [
+        -0.430885499034983
+      ],
+      "sigmas": [
+        0.005109495232501486
+      ],
+      "weights": [
+        [
+          0.9966067157554973,
+          0.0033932842445027703
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2331.141747458387,
+      "bic": -4635.94432934723,
+      "free_parameters": 4,
+      "n": 724,
+      "converged": true,
+      "iterations": 10,
+      "at_sigma_floor": false,
+      "history_min_step": 1.01006476143084e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 671.2359971581755,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "negative_mean_time_1000ns",
+    "charge_bin": 4,
+    "charge_low": 346430.17083333334,
+    "charge_high": 382581.6854166667,
+    "two_core": {
+      "background_center": -0.45361595394410203,
+      "background_scale": 0.06427406514454942,
+      "sigma_floor": 0.0006427406514454942,
+      "means": [
+        -0.4820607002356634,
+        -0.42980675379434413
+      ],
+      "sigmas": [
+        0.009424547927686985,
+        0.0051551928309142864
+      ],
+      "weights": [
+        [
+          0.0012628038389685986,
+          0.9987371791798246,
+          1.698120676736693e-08
+        ],
+        [
+          0.9999999562582963,
+          9.999999999990003e-13,
+          4.3740703727134715e-08
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 3452.1609658258594,
+      "bic": -6849.735642672873,
+      "free_parameters": 8,
+      "n": 919,
+      "converged": true,
+      "iterations": 12,
+      "at_sigma_floor": false,
+      "history_min_step": 4.076545337738935e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 1.5219891971506048
+    },
+    "one_core": {
+      "background_center": -0.45361595394410203,
+      "background_scale": 0.06427406514454942,
+      "sigma_floor": 0.0006427406514454942,
+      "means": [
+        -0.4298062424233343
+      ],
+      "sigmas": [
+        0.005153616202188221
+      ],
+      "weights": [
+        [
+          0.9985128992199997,
+          0.0014871007800003285
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 3217.2391000963726,
+      "bic": -6407.185055703322,
+      "free_parameters": 4,
+      "n": 919,
+      "converged": true,
+      "iterations": 7,
+      "at_sigma_floor": false,
+      "history_min_step": 3.5335533539182507e-06,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 442.55058696955075,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "negative_mean_time_1000ns",
+    "charge_bin": 5,
+    "charge_low": 382581.6854166667,
+    "charge_high": 418733.2,
+    "two_core": {
+      "background_center": -0.45183442580285654,
+      "background_scale": 0.05966186691218689,
+      "sigma_floor": 0.000596618669121869,
+      "means": [
+        -0.4809188505627519,
+        -0.429420735543507
+      ],
+      "sigmas": [
+        0.00858701923688703,
+        0.004901284243442187
+      ],
+      "weights": [
+        [
+          9.999999999990022e-13,
+          0.9999999556384994,
+          4.436050066641507e-08
+        ],
+        [
+          0.9999999963784679,
+          9.999999999990003e-13,
+          3.6205321929976373e-09
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2938.041019478058,
+      "bic": -5822.931721090935,
+      "free_parameters": 8,
+      "n": 768,
+      "converged": true,
+      "iterations": 13,
+      "at_sigma_floor": false,
+      "history_min_step": 4.0465481106366497e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 1.6213481489117931
+    },
+    "one_core": {
+      "background_center": -0.45183442580285654,
+      "background_scale": 0.05966186691218689,
+      "sigma_floor": 0.000596618669121869,
+      "means": [
+        -0.42942073559667204
+      ],
+      "sigmas": [
+        0.004901284340985521
+      ],
+      "weights": [
+        [
+          0.9999999602145991,
+          3.9785400859630554e-08
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2747.4208101730496,
+      "bic": -5468.266461413508,
+      "free_parameters": 4,
+      "n": 768,
+      "converged": true,
+      "iterations": 12,
+      "at_sigma_floor": false,
+      "history_min_step": 3.544839319147286e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 354.66525967742655,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "pca_projection_1000ns",
+    "charge_bin": 0,
+    "charge_low": 201824.1125,
+    "charge_high": 237975.62708333333,
+    "two_core": {
+      "background_center": -0.30184987379469763,
+      "background_scale": 2.5835603146239894,
+      "sigma_floor": 0.025835603146239894,
+      "means": [
+        -0.880132458102228,
+        0.9294902892830734
+      ],
+      "sigmas": [
+        0.4841125833198813,
+        0.23023594186816795
+      ],
+      "weights": [
+        [
+          0.14379315298122664,
+          0.8562068470177734,
+          9.99999999999337e-13
+        ],
+        [
+          0.9999933686477801,
+          6.631351219790176e-06,
+          9.99999999999427e-13
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": -433.3427214409185,
+      "bic": 918.5625247669191,
+      "free_parameters": 8,
+      "n": 655,
+      "converged": true,
+      "iterations": 33,
+      "at_sigma_floor": false,
+      "history_min_step": 6.324118538714174e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 1.0757718364763467
+    },
+    "one_core": {
+      "background_center": -0.30184987379469763,
+      "background_scale": 2.5835603146239894,
+      "sigma_floor": 0.025835603146239894,
+      "means": [
+        -0.8771493778749504
+      ],
+      "sigmas": [
+        0.4860963263535569
+      ],
+      "weights": [
+        [
+          1.879253006162155e-05,
+          0.9999812074699383
+        ],
+        [
+          0.999999999999,
+          9.999999999994206e-13
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": -601.4070634378176,
+      "bic": 1228.7526678181762,
+      "free_parameters": 4,
+      "n": 655,
+      "converged": true,
+      "iterations": 44,
+      "at_sigma_floor": false,
+      "history_min_step": 5.54132017214215e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 310.1901430512571,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "pca_projection_1000ns",
+    "charge_bin": 1,
+    "charge_low": 237975.62708333333,
+    "charge_high": 274127.14166666666,
+    "two_core": {
+      "background_center": -0.23183826899877313,
+      "background_scale": 2.7594858522662067,
+      "sigma_floor": 0.027594858522662066,
+      "means": [
+        -0.9222827304005816,
+        0.9527033505652154
+      ],
+      "sigmas": [
+        0.4453389262617089,
+        0.22857604757439437
+      ],
+      "weights": [
+        [
+          0.05515890759674186,
+          0.9448410882393917,
+          4.163866383847525e-09
+        ],
+        [
+          0.999999962598779,
+          9.999999999990005e-13,
+          3.740022112972017e-08
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": -273.139892351114,
+      "bic": 596.7299869978121,
+      "free_parameters": 8,
+      "n": 548,
+      "converged": true,
+      "iterations": 14,
+      "at_sigma_floor": false,
+      "history_min_step": 2.4029471774156264e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 1.1815040588400232
+    },
+    "one_core": {
+      "background_center": -0.23183826899877313,
+      "background_scale": 2.7594858522662067,
+      "sigma_floor": 0.027594858522662066,
+      "means": [
+        -0.9231513356582807
+      ],
+      "sigmas": [
+        0.4478935647348833
+      ],
+      "weights": [
+        [
+          2.1424818433450578e-07,
+          0.9999997857518157
+        ],
+        [
+          0.999999999990046,
+          9.954000811594871e-12
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": -587.2470403470434,
+      "bic": 1199.7191818418787,
+      "free_parameters": 4,
+      "n": 548,
+      "converged": true,
+      "iterations": 19,
+      "at_sigma_floor": false,
+      "history_min_step": 2.9937572207927587e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 602.9891948440666,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "pca_projection_1000ns",
+    "charge_bin": 2,
+    "charge_low": 274127.14166666666,
+    "charge_high": 310278.65625,
+    "two_core": {
+      "background_center": -0.09825652090600712,
+      "background_scale": 2.6677668536922483,
+      "sigma_floor": 0.026677668536922484,
+      "means": [
+        -0.9016124211397923,
+        0.9484948233612215
+      ],
+      "sigmas": [
+        0.44236440728570353,
+        0.21296683359231405
+      ],
+      "weights": [
+        [
+          0.013689353446975543,
+          0.9863106452594249,
+          1.2935994850273214e-09
+        ],
+        [
+          0.999999914216258,
+          9.999999999990125e-13,
+          8.578274203166847e-08
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": -135.0436817137481,
+      "bic": 320.40508799476817,
+      "free_parameters": 8,
+      "n": 539,
+      "converged": true,
+      "iterations": 14,
+      "at_sigma_floor": false,
+      "history_min_step": 3.415244498228276e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 1.198887156302986
+    },
+    "one_core": {
+      "background_center": -0.09825652090600712,
+      "background_scale": 2.6677668536922483,
+      "sigma_floor": 0.026677668536922484,
+      "means": [
+        0.09033696180870458
+      ],
+      "sigmas": [
+        0.9830229167399749
+      ],
+      "weights": [
+        [
+          0.9999999446629416,
+          5.533705839107528e-08
+        ],
+        [
+          0.9999998309037349,
+          1.6909626509108058e-07
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": -755.5786978009284,
+      "bic": 1536.3162578854926,
+      "free_parameters": 4,
+      "n": 539,
+      "converged": true,
+      "iterations": 19,
+      "at_sigma_floor": false,
+      "history_min_step": 3.333643667247088e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 1215.9111698907245,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "pca_projection_1000ns",
+    "charge_bin": 3,
+    "charge_low": 310278.65625,
+    "charge_high": 346430.17083333334,
+    "two_core": {
+      "background_center": 0.021542933461790703,
+      "background_scale": 2.4915422514282617,
+      "sigma_floor": 0.024915422514282616,
+      "means": [
+        -0.9331291104348197,
+        0.9799125127190708
+      ],
+      "sigmas": [
+        0.3339051701609082,
+        0.19804889692733843
+      ],
+      "weights": [
+        [
+          0.0018546140200777985,
+          0.9981453259055959,
+          6.007432627141018e-08
+        ],
+        [
+          0.9999999995615679,
+          9.999999999990005e-13,
+          4.3743217337482675e-10
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 41.096333724778205,
+      "bic": -29.514336310470682,
+      "free_parameters": 8,
+      "n": 724,
+      "converged": true,
+      "iterations": 14,
+      "at_sigma_floor": false,
+      "history_min_step": 3.599341245319465e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 1.527188206583857
+    },
+    "one_core": {
+      "background_center": 0.021542933461790703,
+      "background_scale": 2.4915422514282617,
+      "sigma_floor": 0.024915422514282616,
+      "means": [
+        0.9800039869353742
+      ],
+      "sigmas": [
+        0.19764567046531456
+      ],
+      "weights": [
+        [
+          0.9975265434649867,
+          0.0024734565350133493
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": -307.2059142194157,
+      "bic": 640.7509940083743,
+      "free_parameters": 4,
+      "n": 724,
+      "converged": true,
+      "iterations": 9,
+      "at_sigma_floor": false,
+      "history_min_step": 7.38916503451037e-06,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 670.2653303188449,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "pca_projection_1000ns",
+    "charge_bin": 4,
+    "charge_low": 346430.17083333334,
+    "charge_high": 382581.6854166667,
+    "two_core": {
+      "background_center": 0.13040222801925083,
+      "background_scale": 2.4328284343331443,
+      "sigma_floor": 0.024328284343331445,
+      "means": [
+        -0.9384487801782065,
+        1.0232058973840084
+      ],
+      "sigmas": [
+        0.3508490219971651,
+        0.19573810503186967
+      ],
+      "weights": [
+        [
+          0.001262726403128128,
+          0.998737263630401,
+          9.966470846594043e-09
+        ],
+        [
+          0.9999999856734169,
+          9.99999999999e-13,
+          1.4325583105865357e-08
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 112.49245072562681,
+      "bic": -170.39861247240813,
+      "free_parameters": 8,
+      "n": 919,
+      "converged": true,
+      "iterations": 12,
+      "at_sigma_floor": false,
+      "history_min_step": 2.2953992782959176e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 1.5240718267062772
+    },
+    "one_core": {
+      "background_center": 0.13040222801925083,
+      "background_scale": 2.4328284343331443,
+      "sigma_floor": 0.024328284343331445,
+      "means": [
+        1.0232178139616699
+      ],
+      "sigmas": [
+        0.19568543215597506
+      ],
+      "weights": [
+        [
+          0.9985193050226328,
+          0.0014806949773672573
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": -124.23675841044387,
+      "bic": 275.7666613103105,
+      "free_parameters": 4,
+      "n": 919,
+      "converged": true,
+      "iterations": 7,
+      "at_sigma_floor": false,
+      "history_min_step": 3.080765665686158e-06,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 446.1652737827186,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "pca_projection_1000ns",
+    "charge_bin": 5,
+    "charge_low": 382581.6854166667,
+    "charge_high": 418733.2,
+    "two_core": {
+      "background_center": 0.18939742787757963,
+      "background_scale": 2.28878482562487,
+      "sigma_floor": 0.0228878482562487,
+      "means": [
+        -0.8893453617978702,
+        1.039741436824257
+      ],
+      "sigmas": [
+        0.32186246488352527,
+        0.18728490808206447
+      ],
+      "weights": [
+        [
+          9.999999999990003e-13,
+          0.9999999681967517,
+          3.1802248285950265e-08
+        ],
+        [
+          0.9999999309376185,
+          9.999999999990005e-13,
+          6.906138144224288e-08
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 142.0597146157615,
+      "bic": -230.96911136634162,
+      "free_parameters": 8,
+      "n": 768,
+      "converged": true,
+      "iterations": 11,
+      "at_sigma_floor": false,
+      "history_min_step": 6.842609343493677e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 1.6089795997320475
+    },
+    "one_core": {
+      "background_center": 0.18939742787757963,
+      "background_scale": 2.28878482562487,
+      "sigma_floor": 0.0228878482562487,
+      "means": [
+        1.0397414314079176
+      ],
+      "sigmas": [
+        0.18728491786952173
+      ],
+      "weights": [
+        [
+          0.9999999859562492,
+          1.4043750786377955e-08
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": -49.632543354936246,
+      "bic": 125.84024564246317,
+      "free_parameters": 4,
+      "n": 768,
+      "converged": true,
+      "iterations": 11,
+      "at_sigma_floor": false,
+      "history_min_step": 2.240256280572339e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 356.8093570088048,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "qdc_2000ns",
+    "charge_bin": 0,
+    "charge_low": 201824.1125,
+    "charge_high": 237975.62708333333,
+    "two_core": {
+      "background_center": 0.41992234636835013,
+      "background_scale": 0.1548835253536464,
+      "sigma_floor": 0.001548835253536464,
+      "means": [
+        0.3731126463975361,
+        0.49330273812140735
+      ],
+      "sigmas": [
+        0.01960227116045054,
+        0.011487606265562396
+      ],
+      "weights": [
+        [
+          0.1428572561434653,
+          0.8571427422366888,
+          1.6198458509033024e-09
+        ],
+        [
+          0.9999999847714645,
+          9.99999999999001e-13,
+          1.5227535631366004e-08
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1650.488112640031,
+      "bic": -3249.09914339498,
+      "free_parameters": 8,
+      "n": 655,
+      "converged": true,
+      "iterations": 12,
+      "at_sigma_floor": false,
+      "history_min_step": 2.1169213823668542e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 1.6416929484947076
+    },
+    "one_core": {
+      "background_center": 0.41992234636835013,
+      "background_scale": 0.1548835253536464,
+      "sigma_floor": 0.001548835253536464,
+      "means": [
+        0.37318032787827127
+      ],
+      "sigmas": [
+        0.019696712587742436
+      ],
+      "weights": [
+        [
+          0.03865126870932141,
+          0.9613487312906785
+        ],
+        [
+          0.999999999999,
+          9.999999999992392e-13
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1462.1516988879805,
+      "bic": -2898.36485683342,
+      "free_parameters": 4,
+      "n": 655,
+      "converged": true,
+      "iterations": 19,
+      "at_sigma_floor": false,
+      "history_min_step": 3.8606119460382615e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 350.73428656155966,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "qdc_2000ns",
+    "charge_bin": 1,
+    "charge_low": 237975.62708333333,
+    "charge_high": 274127.14166666666,
+    "two_core": {
+      "background_center": 0.422735185752585,
+      "background_scale": 0.15907983805574444,
+      "sigma_floor": 0.0015907983805574443,
+      "means": [
+        0.37088405762776055,
+        0.4934516742553924
+      ],
+      "sigmas": [
+        0.01758350106258232,
+        0.010379968678988919
+      ],
+      "weights": [
+        [
+          0.05479460585379094,
+          0.9452053494944114,
+          4.4651797636044815e-08
+        ],
+        [
+          0.9999999797720216,
+          9.999999999989997e-13,
+          2.0226978384483712e-08
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1478.5044877516261,
+      "bic": -2906.5587732076683,
+      "free_parameters": 8,
+      "n": 548,
+      "converged": true,
+      "iterations": 11,
+      "at_sigma_floor": false,
+      "history_min_step": 3.684635385070578e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 1.8613453511535292
+    },
+    "one_core": {
+      "background_center": 0.422735185752585,
+      "background_scale": 0.15907983805574444,
+      "sigma_floor": 0.0015907983805574443,
+      "means": [
+        0.370775861569671
+      ],
+      "sigmas": [
+        0.01769284477948448
+      ],
+      "weights": [
+        [
+          6.888455072024206e-07,
+          0.9999993111544928
+        ],
+        [
+          0.9999999999989999,
+          9.999999999992144e-13
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1126.87060887885,
+      "bic": -2228.516116609908,
+      "free_parameters": 4,
+      "n": 548,
+      "converged": true,
+      "iterations": 22,
+      "at_sigma_floor": false,
+      "history_min_step": 3.318801623208856e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 678.0426565977605,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "qdc_2000ns",
+    "charge_bin": 2,
+    "charge_low": 274127.14166666666,
+    "charge_high": 310278.65625,
+    "two_core": {
+      "background_center": 0.4287055270130058,
+      "background_scale": 0.15557165480259272,
+      "sigma_floor": 0.0015557165480259271,
+      "means": [
+        0.37188341144579395,
+        0.49331992638581074
+      ],
+      "sigmas": [
+        0.017928118026433296,
+        0.01001632549633385
+      ],
+      "weights": [
+        [
+          0.01365187920315413,
+          0.9863481207031434,
+          9.370256069763638e-11
+        ],
+        [
+          0.9999999448241311,
+          9.99999999999e-13,
+          5.5174868851493966e-08
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1549.8130110526631,
+      "bic": -3049.3082975380544,
+      "free_parameters": 8,
+      "n": 539,
+      "converged": true,
+      "iterations": 14,
+      "at_sigma_floor": false,
+      "history_min_step": 1.831843360378116e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 1.84542374954663
+    },
+    "one_core": {
+      "background_center": 0.4287055270130058,
+      "background_scale": 0.15557165480259272,
+      "sigma_floor": 0.0015557165480259271,
+      "means": [
+        0.49331618210463535
+      ],
+      "sigmas": [
+        0.0099907140001005
+      ],
+      "weights": [
+        [
+          0.9844876251489777,
+          0.015512374851022305
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1045.1307399230786,
+      "bic": -2065.102617562521,
+      "free_parameters": 4,
+      "n": 539,
+      "converged": true,
+      "iterations": 16,
+      "at_sigma_floor": false,
+      "history_min_step": 3.033047505596187e-06,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 984.2056799755333,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "qdc_2000ns",
+    "charge_bin": 3,
+    "charge_low": 310278.65625,
+    "charge_high": 346430.17083333334,
+    "two_core": {
+      "background_center": 0.43414563589513366,
+      "background_scale": 0.1474458823897904,
+      "sigma_floor": 0.001474458823897904,
+      "means": [
+        0.3709417163957199,
+        0.49417741136098897
+      ],
+      "sigmas": [
+        0.013416307552562306,
+        0.00931507060257973
+      ],
+      "weights": [
+        [
+          0.0018518245399343398,
+          0.9981480792309734,
+          9.62290922432112e-08
+        ],
+        [
+          0.9999999999898408,
+          9.999999999990001e-13,
+          9.159197835772634e-12
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2283.414867635788,
+      "bic": -4514.151404132491,
+      "free_parameters": 8,
+      "n": 724,
+      "converged": true,
+      "iterations": 13,
+      "at_sigma_floor": false,
+      "history_min_step": 6.233871954464121e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.3022528945076517
+    },
+    "one_core": {
+      "background_center": 0.43414563589513366,
+      "background_scale": 0.1474458823897904,
+      "sigma_floor": 0.001474458823897904,
+      "means": [
+        0.49417549240156405
+      ],
+      "sigmas": [
+        0.009292307348950035
+      ],
+      "weights": [
+        [
+          0.9975508402258507,
+          0.0024491597741492697
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1858.8787255604993,
+      "bic": -3691.418285551456,
+      "free_parameters": 4,
+      "n": 724,
+      "converged": true,
+      "iterations": 32,
+      "at_sigma_floor": false,
+      "history_min_step": 7.6108244684292e-06,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 822.7331185810349,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "qdc_2000ns",
+    "charge_bin": 4,
+    "charge_low": 346430.17083333334,
+    "charge_high": 382581.6854166667,
+    "two_core": {
+      "background_center": 0.4378109652571328,
+      "background_scale": 0.1438064312646099,
+      "sigma_floor": 0.001438064312646099,
+      "means": [
+        0.3715826412210908,
+        0.49501647149314343
+      ],
+      "sigmas": [
+        0.01566120200445729,
+        0.009124424001053389
+      ],
+      "weights": [
+        [
+          0.0012626191642366466,
+          0.998737364083294,
+          1.6752469328931978e-08
+        ],
+        [
+          0.9999999876669933,
+          9.99999999999e-13,
+          1.2332006660684583e-08
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2935.5315483706822,
+      "bic": -5816.476807762519,
+      "free_parameters": 8,
+      "n": 919,
+      "converged": true,
+      "iterations": 10,
+      "at_sigma_floor": false,
+      "history_min_step": 5.2873326239932794e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.1148354881130933
+    },
+    "one_core": {
+      "background_center": 0.4378109652571328,
+      "background_scale": 0.1438064312646099,
+      "sigma_floor": 0.001438064312646099,
+      "means": [
+        0.4950163309801008
+      ],
+      "sigmas": [
+        0.009122901833692834
+      ],
+      "weights": [
+        [
+          0.9985833450574503,
+          0.0014166549425497867
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2661.497131736309,
+      "bic": -5295.701118983195,
+      "free_parameters": 4,
+      "n": 919,
+      "converged": true,
+      "iterations": 6,
+      "at_sigma_floor": false,
+      "history_min_step": 2.3183857592812274e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 520.7756887793239,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "qdc_2000ns",
+    "charge_bin": 5,
+    "charge_low": 382581.6854166667,
+    "charge_high": 418733.2,
+    "two_core": {
+      "background_center": 0.43882384048188716,
+      "background_scale": 0.1393975715433164,
+      "sigma_floor": 0.0013939757154331639,
+      "means": [
+        0.3730164167170256,
+        0.4955325290290213
+      ],
+      "sigmas": [
+        0.013382110602440314,
+        0.008327974215481508
+      ],
+      "weights": [
+        [
+          9.999999999989993e-13,
+          0.9999999886427736,
+          1.1356226452178833e-08
+        ],
+        [
+          0.9999999997309995,
+          9.99999999999e-13,
+          2.6800059909447064e-10
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2539.638729769625,
+      "bic": -5026.127141674069,
+      "free_parameters": 8,
+      "n": 768,
+      "converged": true,
+      "iterations": 11,
+      "at_sigma_floor": false,
+      "history_min_step": 2.0702555502793984e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.3964808508535786
+    },
+    "one_core": {
+      "background_center": 0.43882384048188716,
+      "background_scale": 0.1393975715433164,
+      "sigma_floor": 0.0013939757154331639,
+      "means": [
+        0.4955325293303521
+      ],
+      "sigmas": [
+        0.00832797368163834
+      ],
+      "weights": [
+        [
+          0.9999999729126701,
+          2.7087329961155316e-08
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2309.8549925839557,
+      "bic": -4593.13482623532,
+      "free_parameters": 4,
+      "n": 768,
+      "converged": true,
+      "iterations": 10,
+      "at_sigma_floor": false,
+      "history_min_step": 4.904141133010853e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 432.99231543874885,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "negative_mean_time_2000ns",
+    "charge_bin": 0,
+    "charge_low": 201824.1125,
+    "charge_high": 237975.62708333333,
+    "two_core": {
+      "background_center": -0.7221255156121038,
+      "background_scale": 0.1848960530690602,
+      "sigma_floor": 0.0018489605306906021,
+      "means": [
+        -0.7806242384472099,
+        -0.6322148876058834
+      ],
+      "sigmas": [
+        0.02157654817213439,
+        0.012736639310987287
+      ],
+      "weights": [
+        [
+          0.14285715848301989,
+          0.8571428327555909,
+          8.761389265500027e-09
+        ],
+        [
+          0.9999999781085671,
+          9.99999999999e-13,
+          2.1890432970289176e-08
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1587.0674862239578,
+      "bic": -3122.2578905628334,
+      "free_parameters": 8,
+      "n": 655,
+      "converged": true,
+      "iterations": 11,
+      "at_sigma_floor": false,
+      "history_min_step": 3.694927067954268e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 1.8367179834011784
+    },
+    "one_core": {
+      "background_center": -0.7221255156121038,
+      "background_scale": 0.1848960530690602,
+      "sigma_floor": 0.0018489605306906021,
+      "means": [
+        -0.7806111554765611
+      ],
+      "sigmas": [
+        0.021669764198286767
+      ],
+      "weights": [
+        [
+          0.04552529584130191,
+          0.9544747041586981
+        ],
+        [
+          0.9999999999960536,
+          3.946409828887622e-12
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1391.6198885777517,
+      "bic": -2757.3012362129625,
+      "free_parameters": 4,
+      "n": 655,
+      "converged": true,
+      "iterations": 16,
+      "at_sigma_floor": false,
+      "history_min_step": 3.9862439734861255e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 364.95665434987086,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "negative_mean_time_2000ns",
+    "charge_bin": 1,
+    "charge_low": 237975.62708333333,
+    "charge_high": 274127.14166666666,
+    "two_core": {
+      "background_center": -0.7187032601996557,
+      "background_scale": 0.1899164535290998,
+      "sigma_floor": 0.001899164535290998,
+      "means": [
+        -0.7835903258446731,
+        -0.6322004355586921
+      ],
+      "sigmas": [
+        0.01985866937125936,
+        0.010940252233843026
+      ],
+      "weights": [
+        [
+          0.054794515675659586,
+          0.9452054748200082,
+          9.504332226523267e-09
+        ],
+        [
+          0.9999999878716719,
+          9.999999999990007e-13,
+          1.212732816567797e-08
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1421.3609305046348,
+      "bic": -2792.2716587136856,
+      "free_parameters": 8,
+      "n": 548,
+      "converged": true,
+      "iterations": 10,
+      "at_sigma_floor": false,
+      "history_min_step": 2.4607795694464585e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.087390198457367
+    },
+    "one_core": {
+      "background_center": -0.7187032601996557,
+      "background_scale": 0.1899164535290998,
+      "sigma_floor": 0.001899164535290998,
+      "means": [
+        -0.783742160427521
+      ],
+      "sigmas": [
+        0.019995025864576025
+      ],
+      "weights": [
+        [
+          1.1752527818657747e-06,
+          0.9999988247472182
+        ],
+        [
+          0.9999999999989999,
+          9.999999999991696e-13
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1050.7516560520262,
+      "bic": -2076.2782109562604,
+      "free_parameters": 4,
+      "n": 548,
+      "converged": true,
+      "iterations": 24,
+      "at_sigma_floor": false,
+      "history_min_step": 3.8847560063004494e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 715.9934477574252,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "negative_mean_time_2000ns",
+    "charge_bin": 2,
+    "charge_low": 274127.14166666666,
+    "charge_high": 310278.65625,
+    "two_core": {
+      "background_center": -0.7111488238300536,
+      "background_scale": 0.18850455891704232,
+      "sigma_floor": 0.0018850455891704233,
+      "means": [
+        -0.7817934106780927,
+        -0.631628295883617
+      ],
+      "sigmas": [
+        0.01954130179399804,
+        0.010665186427048893
+      ],
+      "weights": [
+        [
+          0.0136518718496918,
+          0.9863481097813876,
+          1.8368920570916537e-08
+        ],
+        [
+          0.999999968294787,
+          9.999999999989997e-13,
+          3.170421311087548e-08
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1510.1329218207002,
+      "bic": -2969.9481190741285,
+      "free_parameters": 8,
+      "n": 539,
+      "converged": true,
+      "iterations": 12,
+      "at_sigma_floor": false,
+      "history_min_step": 2.6373035325377714e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.1111111080571807
+    },
+    "one_core": {
+      "background_center": -0.7111488238300536,
+      "background_scale": 0.18850455891704232,
+      "sigma_floor": 0.0018850455891704233,
+      "means": [
+        -0.6315918678853879
+      ],
+      "sigmas": [
+        0.010573604440800027
+      ],
+      "weights": [
+        [
+          0.9835247532264875,
+          0.016475246773512562
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 978.1725077045382,
+      "bic": -1931.1861531254406,
+      "free_parameters": 4,
+      "n": 539,
+      "converged": true,
+      "iterations": 12,
+      "at_sigma_floor": false,
+      "history_min_step": 2.612219964248652e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 1038.761965948688,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "negative_mean_time_2000ns",
+    "charge_bin": 3,
+    "charge_low": 310278.65625,
+    "charge_high": 346430.17083333334,
+    "two_core": {
+      "background_center": -0.705971917969924,
+      "background_scale": 0.1801839442864661,
+      "sigma_floor": 0.0018018394428646611,
+      "means": [
+        -0.782587046171456,
+        -0.6310754492687666
+      ],
+      "sigmas": [
+        0.016616526366436377,
+        0.01004499538419064
+      ],
+      "weights": [
+        [
+          0.0018518457917923628,
+          0.9981481350236063,
+          1.9184601250414013e-08
+        ],
+        [
+          0.9999999998388654,
+          9.999999999990003e-13,
+          1.601345369701932e-10
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2203.175883859446,
+      "bic": -4353.673436579807,
+      "free_parameters": 8,
+      "n": 724,
+      "converged": true,
+      "iterations": 12,
+      "at_sigma_floor": false,
+      "history_min_step": 2.043716358457459e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.413255016902374
+    },
+    "one_core": {
+      "background_center": -0.705971917969924,
+      "background_scale": 0.1801839442864661,
+      "sigma_floor": 0.0018018394428646611,
+      "means": [
+        -0.6310817235879063
+      ],
+      "sigmas": [
+        0.010029625536758256
+      ],
+      "weights": [
+        [
+          0.9977470483055787,
+          0.0022529516944213277
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1781.4706033268603,
+      "bic": -3536.602041084178,
+      "free_parameters": 4,
+      "n": 724,
+      "converged": true,
+      "iterations": 7,
+      "at_sigma_floor": false,
+      "history_min_step": 5.360528575693024e-06,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 817.0713954956286,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "negative_mean_time_2000ns",
+    "charge_bin": 4,
+    "charge_low": 346430.17083333334,
+    "charge_high": 382581.6854166667,
+    "two_core": {
+      "background_center": -0.7016833658620902,
+      "background_scale": 0.17326156017921834,
+      "sigma_floor": 0.0017326156017921834,
+      "means": [
+        -0.7817248213859174,
+        -0.6310649759688705
+      ],
+      "sigmas": [
+        0.01846343107793595,
+        0.009752234382972914
+      ],
+      "weights": [
+        [
+          0.0012626174287217028,
+          0.9987373577255383,
+          2.484574004668192e-08
+        ],
+        [
+          0.9999999905290896,
+          9.999999999990001e-13,
+          9.469910511774952e-09
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2861.8275586292093,
+      "bic": -5669.068828279573,
+      "free_parameters": 8,
+      "n": 919,
+      "converged": true,
+      "iterations": 10,
+      "at_sigma_floor": false,
+      "history_min_step": 6.860868143121479e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.2675114878647844
+    },
+    "one_core": {
+      "background_center": -0.7016833658620902,
+      "background_scale": 0.17326156017921834,
+      "sigma_floor": 0.0017326156017921834,
+      "means": [
+        -0.6310653509341294
+      ],
+      "sigmas": [
+        0.009748309594594388
+      ],
+      "weights": [
+        [
+          0.9985516476046241,
+          0.0014483523953758369
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2584.9182081939807,
+      "bic": -5142.5432718985385,
+      "free_parameters": 4,
+      "n": 919,
+      "converged": true,
+      "iterations": 6,
+      "at_sigma_floor": false,
+      "history_min_step": 1.1179457942489535e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 526.5255563810342,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "negative_mean_time_2000ns",
+    "charge_bin": 5,
+    "charge_low": 382581.6854166667,
+    "charge_high": 418733.2,
+    "two_core": {
+      "background_center": -0.7017723006282407,
+      "background_scale": 0.16819950807022077,
+      "sigma_floor": 0.0016819950807022077,
+      "means": [
+        -0.7804894179451844,
+        -0.6304297339192095
+      ],
+      "sigmas": [
+        0.015095913632061614,
+        0.008427608603363149
+      ],
+      "weights": [
+        [
+          9.99999999999001e-13,
+          0.9999999834392598,
+          1.6559740347992568e-08
+        ],
+        [
+          0.9999999898179865,
+          9.999999999990001e-13,
+          1.0181013400354832e-08
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2519.535172117755,
+      "bic": -4985.920026370329,
+      "free_parameters": 8,
+      "n": 768,
+      "converged": true,
+      "iterations": 9,
+      "at_sigma_floor": false,
+      "history_min_step": 5.8041374359163456e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.708968489329017
+    },
+    "one_core": {
+      "background_center": -0.7017723006282407,
+      "background_scale": 0.16819950807022077,
+      "sigma_floor": 0.0016819950807022077,
+      "means": [
+        -0.6304297339954572
+      ],
+      "sigmas": [
+        0.008427608760785353
+      ],
+      "weights": [
+        [
+          0.9999999889870295,
+          1.1012970430752358e-08
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2283.3144913049264,
+      "bic": -4540.053823677262,
+      "free_parameters": 4,
+      "n": 768,
+      "converged": true,
+      "iterations": 9,
+      "at_sigma_floor": false,
+      "history_min_step": 3.483937234705081e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 445.86620269306695,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "pca_projection_2000ns",
+    "charge_bin": 0,
+    "charge_low": 201824.1125,
+    "charge_high": 237975.62708333333,
+    "two_core": {
+      "background_center": -0.1745172496786126,
+      "background_scale": 2.449490537922057,
+      "sigma_floor": 0.024494905379220572,
+      "means": [
+        -0.9264185773457131,
+        0.9965079139808952
+      ],
+      "sigmas": [
+        0.29070010339121244,
+        0.17098493462727948
+      ],
+      "weights": [
+        [
+          0.1428571485324468,
+          0.8571428452927712,
+          6.1747820698289295e-09
+        ],
+        [
+          0.9999999644296306,
+          9.999999999990007e-13,
+          3.556936934451388e-08
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": -116.10111214846593,
+      "bic": 284.07930618201385,
+      "free_parameters": 8,
+      "n": 655,
+      "converged": true,
+      "iterations": 11,
+      "at_sigma_floor": false,
+      "history_min_step": 5.336537357436555e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 1.7687202908334496
+    },
+    "one_core": {
+      "background_center": -0.1745172496786126,
+      "background_scale": 2.449490537922057,
+      "sigma_floor": 0.024494905379220572,
+      "means": [
+        -0.9253881088631049
+      ],
+      "sigmas": [
+        0.29177068106682646
+      ],
+      "weights": [
+        [
+          0.04321223302160321,
+          0.9567877669783967
+        ],
+        [
+          0.9999999999912816,
+          8.718458542209297e-12
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": -309.587580792198,
+      "bic": 645.113702526937,
+      "free_parameters": 4,
+      "n": 655,
+      "converged": true,
+      "iterations": 16,
+      "at_sigma_floor": false,
+      "history_min_step": 4.11984009929256e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 361.03439634492315,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "pca_projection_2000ns",
+    "charge_bin": 1,
+    "charge_low": 237975.62708333333,
+    "charge_high": 274127.14166666666,
+    "two_core": {
+      "background_center": -0.12638212648872849,
+      "background_scale": 2.5312632200329075,
+      "sigma_floor": 0.025312632200329074,
+      "means": [
+        -0.962654980374118,
+        1.0004610324574816
+      ],
+      "sigmas": [
+        0.2624287095710239,
+        0.15688378928889626
+      ],
+      "weights": [
+        [
+          0.05479451948733856,
+          0.9452054780630299,
+          2.4496315351873277e-09
+        ],
+        [
+          0.9999999891975813,
+          9.999999999989997e-13,
+          1.0801418736794831e-08
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": -4.489775705513878,
+      "bic": 59.42975370661188,
+      "free_parameters": 8,
+      "n": 548,
+      "converged": true,
+      "iterations": 11,
+      "at_sigma_floor": false,
+      "history_min_step": 1.4468165321801507e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 1.9881558869884455
+    },
+    "one_core": {
+      "background_center": -0.12638212648872849,
+      "background_scale": 2.5312632200329075,
+      "sigma_floor": 0.025312632200329074,
+      "means": [
+        -0.9642928876859935
+      ],
+      "sigmas": [
+        0.2641141194137361
+      ],
+      "weights": [
+        [
+          1.1359660057882796e-06,
+          0.9999988640339943
+        ],
+        [
+          0.9999999999989999,
+          9.999999999991999e-13
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": -363.86736448316066,
+      "bic": 752.9598301141134,
+      "free_parameters": 4,
+      "n": 548,
+      "converged": true,
+      "iterations": 25,
+      "at_sigma_floor": false,
+      "history_min_step": 4.081138393985384e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 693.5300764075015,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "pca_projection_2000ns",
+    "charge_bin": 2,
+    "charge_low": 274127.14166666666,
+    "charge_high": 310278.65625,
+    "two_core": {
+      "background_center": -0.02933342917433701,
+      "background_scale": 2.461320106874976,
+      "sigma_floor": 0.02461320106874976,
+      "means": [
+        -0.9428755227578909,
+        1.0038767814038103
+      ],
+      "sigmas": [
+        0.2701042586406856,
+        0.1497723202171616
+      ],
+      "weights": [
+        [
+          0.013651879566795169,
+          0.9863481197125913,
+          7.206135323129096e-10
+        ],
+        [
+          0.999999872871149,
+          9.99999999999e-13,
+          1.2712785112714596e-07
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 89.98743217368566,
+      "bic": -129.65713978009933,
+      "free_parameters": 8,
+      "n": 539,
+      "converged": true,
+      "iterations": 13,
+      "at_sigma_floor": false,
+      "history_min_step": 4.185116505084352e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 1.9689347476621746
+    },
+    "one_core": {
+      "background_center": -0.02933342917433701,
+      "background_scale": 2.461320106874976,
+      "sigma_floor": 0.02461320106874976,
+      "means": [
+        1.0041193467640979
+      ],
+      "sigmas": [
+        0.14911219561281117
+      ],
+      "weights": [
+        [
+          0.9841936200164974,
+          0.015806379983502664
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": -427.5626006391683,
+      "bic": 880.2840635619726,
+      "free_parameters": 4,
+      "n": 539,
+      "converged": true,
+      "iterations": 13,
+      "at_sigma_floor": false,
+      "history_min_step": 2.000257995860011e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 1009.941203342072,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "pca_projection_2000ns",
+    "charge_bin": 3,
+    "charge_low": 310278.65625,
+    "charge_high": 346430.17083333334,
+    "two_core": {
+      "background_center": 0.048005358954798294,
+      "background_scale": 2.334706556107789,
+      "sigma_floor": 0.02334706556107789,
+      "means": [
+        -0.9563058218210603,
+        1.014979079544529
+      ],
+      "sigmas": [
+        0.20224324035300267,
+        0.1413396174469342
+      ],
+      "weights": [
+        [
+          0.0018518200217624758,
+          0.9981479979040496,
+          1.8207418792335346e-07
+        ],
+        [
+          0.9999999999979999,
+          9.999999999981459e-13,
+          9.999999999981459e-13
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 315.6817331840818,
+      "bic": -578.6851352290779,
+      "free_parameters": 8,
+      "n": 724,
+      "converged": true,
+      "iterations": 17,
+      "at_sigma_floor": false,
+      "history_min_step": 5.0098781002816395e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.436465037908419
+    },
+    "one_core": {
+      "background_center": 0.048005358954798294,
+      "background_scale": 2.334706556107789,
+      "sigma_floor": 0.02334706556107789,
+      "means": [
+        1.0148255730741886
+      ],
+      "sigmas": [
+        0.14050520669944955
+      ],
+      "weights": [
+        [
+          0.9970898185607119,
+          0.0029101814392881774
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": -117.85333705250292,
+      "bic": 262.0458396745487,
+      "free_parameters": 4,
+      "n": 724,
+      "converged": true,
+      "iterations": 9,
+      "at_sigma_floor": false,
+      "history_min_step": 1.3571607070161917e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 840.7309749036266,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "pca_projection_2000ns",
+    "charge_bin": 4,
+    "charge_low": 346430.17083333334,
+    "charge_high": 382581.6854166667,
+    "two_core": {
+      "background_center": 0.11205820966495494,
+      "background_scale": 2.2908294093363457,
+      "sigma_floor": 0.02290829409336346,
+      "means": [
+        -0.9483993879620923,
+        1.0290743802498097
+      ],
+      "sigmas": [
+        0.23398612512610756,
+        0.13919348317316635
+      ],
+      "weights": [
+        [
+          0.0012626229996914738,
+          0.9987373686310391,
+          8.369269284308013e-09
+        ],
+        [
+          0.9999999956370687,
+          9.999999999990001e-13,
+          4.361931460407515e-09
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 434.0059768463201,
+      "bic": -813.4256647137947,
+      "free_parameters": 8,
+      "n": 919,
+      "converged": true,
+      "iterations": 10,
+      "at_sigma_floor": false,
+      "history_min_step": 2.8870143069070764e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.25027244721953
+    },
+    "one_core": {
+      "background_center": 0.11205820966495494,
+      "background_scale": 2.2908294093363457,
+      "sigma_floor": 0.02290829409336346,
+      "means": [
+        1.029070727703567
+      ],
+      "sigmas": [
+        0.1391695039670125
+      ],
+      "weights": [
+        [
+          0.9985879772769314,
+          0.0014120227230685076
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 151.62912416979424,
+      "bic": -275.96510385016575,
+      "free_parameters": 4,
+      "n": 919,
+      "converged": true,
+      "iterations": 6,
+      "at_sigma_floor": false,
+      "history_min_step": 1.6619720327071263e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 537.460560863629,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "pca_projection_2000ns",
+    "charge_bin": 5,
+    "charge_low": 382581.6854166667,
+    "charge_high": 418733.2,
+    "two_core": {
+      "background_center": 0.12884744659530112,
+      "background_scale": 2.209080669356302,
+      "sigma_floor": 0.02209080669356302,
+      "means": [
+        -0.929079524711585,
+        1.0397035173536069
+      ],
+      "sigmas": [
+        0.19378302064822686,
+        0.12468548455531064
+      ],
+      "weights": [
+        [
+          9.999999999990001e-13,
+          0.9999999849777111,
+          1.5021288820077406e-08
+        ],
+        [
+          0.9999999999184396,
+          9.999999999990003e-13,
+          8.056047649971279e-11
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 464.6656661999303,
+      "bic": -876.1810145346792,
+      "free_parameters": 8,
+      "n": 768,
+      "converged": true,
+      "iterations": 11,
+      "at_sigma_floor": false,
+      "history_min_step": 2.528567193849085e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.6252680097748606
+    },
+    "one_core": {
+      "background_center": 0.12884744659530112,
+      "background_scale": 2.209080669356302,
+      "sigma_floor": 0.02209080669356302,
+      "means": [
+        1.039703523574721
+      ],
+      "sigmas": [
+        0.12468547324063356
+      ],
+      "weights": [
+        [
+          0.99999996522269,
+          3.4777310055362464e-08
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 225.32338902135817,
+      "bic": -424.07161911012565,
+      "free_parameters": 4,
+      "n": 768,
+      "converged": true,
+      "iterations": 10,
+      "at_sigma_floor": false,
+      "history_min_step": 5.8424955483360463e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 452.10939542455355,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "qdc_3000ns",
+    "charge_bin": 0,
+    "charge_low": 201824.1125,
+    "charge_high": 237975.62708333333,
+    "two_core": {
+      "background_center": 0.38120738287579603,
+      "background_scale": 0.17269280830855355,
+      "sigma_floor": 0.0017269280830855356,
+      "means": [
+        0.3240574862875001,
+        0.4647257385383325
+      ],
+      "sigmas": [
+        0.018310740050093303,
+        0.011869826183562584
+      ],
+      "weights": [
+        [
+          0.14285714178362433,
+          0.857142855993619,
+          2.222756783255777e-09
+        ],
+        [
+          0.9999999860122957,
+          9.99999999999001e-13,
+          1.3986704284716956e-08
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1687.2619520442504,
+      "bic": -3322.6468222034187,
+      "free_parameters": 8,
+      "n": 655,
+      "converged": true,
+      "iterations": 11,
+      "at_sigma_floor": false,
+      "history_min_step": 2.377408395659586e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 1.9792970801160148
+    },
+    "one_core": {
+      "background_center": 0.38120738287579603,
+      "background_scale": 0.17269280830855355,
+      "sigma_floor": 0.0017269280830855356,
+      "means": [
+        0.3241100247663357
+      ],
+      "sigmas": [
+        0.01838366022362901
+      ],
+      "weights": [
+        [
+          0.058880424466743825,
+          0.9411195755332562
+        ],
+        [
+          0.9999999999428115,
+          5.7188437115356464e-11
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1490.6621314051397,
+      "bic": -2955.3857218677385,
+      "free_parameters": 4,
+      "n": 655,
+      "converged": true,
+      "iterations": 14,
+      "at_sigma_floor": false,
+      "history_min_step": 2.5175287419187953e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 367.2611003356801,
+    "bootstrap": {
+      "draws": 128,
+      "successful": 128,
+      "failures": 0,
+      "fom_interval_95": [
+        1.8908832800841877,
+        2.107173663771704
+      ],
+      "block_size_events": 64,
+      "scope": "Exploratory within-model block-bootstrap interval; fixed PCA and fixed Cauchy nuisance shape; not particle efficiency uncertainty"
+    }
+  },
+  {
+    "configuration": "qdc_3000ns",
+    "charge_bin": 1,
+    "charge_low": 237975.62708333333,
+    "charge_high": 274127.14166666666,
+    "two_core": {
+      "background_center": 0.38410992663223714,
+      "background_scale": 0.17689188249890309,
+      "sigma_floor": 0.0017689188249890308,
+      "means": [
+        0.3219440087527093,
+        0.4644504789902017
+      ],
+      "sigmas": [
+        0.01683068568445063,
+        0.010322870158888607
+      ],
+      "weights": [
+        [
+          0.05479451188195775,
+          0.9452054691317564,
+          1.8986285896187626e-08
+        ],
+        [
+          0.9999999917320173,
+          9.999999999990001e-13,
+          8.266982861754138e-09
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1497.2060697885818,
+      "bic": -2943.9619372815796,
+      "free_parameters": 8,
+      "n": 548,
+      "converged": true,
+      "iterations": 10,
+      "at_sigma_floor": false,
+      "history_min_step": 2.319459485988773e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.2286924878843752
+    },
+    "one_core": {
+      "background_center": 0.38410992663223714,
+      "background_scale": 0.17689188249890309,
+      "sigma_floor": 0.0017689188249890308,
+      "means": [
+        0.3218266112886294
+      ],
+      "sigmas": [
+        0.01692415464375692
+      ],
+      "weights": [
+        [
+          1.7415088970450034e-06,
+          0.999998258491103
+        ],
+        [
+          0.9999999999989999,
+          9.999999999991623e-13
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1128.195997298934,
+      "bic": -2231.166893450076,
+      "free_parameters": 4,
+      "n": 548,
+      "converged": true,
+      "iterations": 26,
+      "at_sigma_floor": false,
+      "history_min_step": 4.6725872607567e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 712.7950438315038,
+    "bootstrap": {
+      "draws": 128,
+      "successful": 128,
+      "failures": 0,
+      "fom_interval_95": [
+        2.103653905197074,
+        2.3463673531565834
+      ],
+      "block_size_events": 64,
+      "scope": "Exploratory within-model block-bootstrap interval; fixed PCA and fixed Cauchy nuisance shape; not particle efficiency uncertainty"
+    }
+  },
+  {
+    "configuration": "qdc_3000ns",
+    "charge_bin": 2,
+    "charge_low": 274127.14166666666,
+    "charge_high": 310278.65625,
+    "two_core": {
+      "background_center": 0.39007003716006167,
+      "background_scale": 0.17427059813506207,
+      "sigma_floor": 0.0017427059813506208,
+      "means": [
+        0.3225582182664489,
+        0.464368012093322
+      ],
+      "sigmas": [
+        0.01682398790680592,
+        0.01025320005622745
+      ],
+      "weights": [
+        [
+          0.013651877034947302,
+          0.9863481227130226,
+          2.5203011669434455e-10
+        ],
+        [
+          0.9999999330949403,
+          9.999999999990003e-13,
+          6.690405976715167e-08
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1558.9491795499325,
+      "bic": -3067.580634532593,
+      "free_parameters": 8,
+      "n": 539,
+      "converged": true,
+      "iterations": 13,
+      "at_sigma_floor": false,
+      "history_min_step": 2.3084822032615193e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.2240520240865496
+    },
+    "one_core": {
+      "background_center": 0.39007003716006167,
+      "background_scale": 0.17427059813506207,
+      "sigma_floor": 0.0017427059813506208,
+      "means": [
+        0.464360095751567
+      ],
+      "sigmas": [
+        0.010218626328787263
+      ],
+      "weights": [
+        [
+          0.9844245351072316,
+          0.015575464892768296
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1007.1027092348988,
+      "bic": -1989.0465561861618,
+      "free_parameters": 4,
+      "n": 539,
+      "converged": true,
+      "iterations": 10,
+      "at_sigma_floor": false,
+      "history_min_step": 1.0246365491184406e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 1078.5340783464314,
+    "bootstrap": {
+      "draws": 128,
+      "successful": 128,
+      "failures": 0,
+      "fom_interval_95": [
+        2.0997140917267973,
+        2.372204717478085
+      ],
+      "block_size_events": 64,
+      "scope": "Exploratory within-model block-bootstrap interval; fixed PCA and fixed Cauchy nuisance shape; not particle efficiency uncertainty"
+    }
+  },
+  {
+    "configuration": "qdc_3000ns",
+    "charge_bin": 3,
+    "charge_low": 310278.65625,
+    "charge_high": 346430.17083333334,
+    "two_core": {
+      "background_center": 0.39389836574946,
+      "background_scale": 0.16907646204484206,
+      "sigma_floor": 0.0016907646204484207,
+      "means": [
+        0.3214679452697554,
+        0.46512977092570995
+      ],
+      "sigmas": [
+        0.0128238990702045,
+        0.009419950847275945
+      ],
+      "weights": [
+        [
+          0.0018518428267049936,
+          0.9981481187973014,
+          3.8375993592497555e-08
+        ],
+        [
+          0.9999999999847885,
+          9.999999999989997e-13,
+          1.4211611176256166e-11
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2285.73484918595,
+      "bic": -4518.791367232815,
+      "free_parameters": 8,
+      "n": 724,
+      "converged": true,
+      "iterations": 12,
+      "at_sigma_floor": false,
+      "history_min_step": 3.56912360075512e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.7426709146893815
+    },
+    "one_core": {
+      "background_center": 0.39389836574946,
+      "background_scale": 0.16907646204484206,
+      "sigma_floor": 0.0016907646204484207,
+      "means": [
+        0.4651355457793878
+      ],
+      "sigmas": [
+        0.009400341845639787
+      ],
+      "weights": [
+        [
+          0.9976483266550794,
+          0.0023516733449204918
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1827.7902879221192,
+      "bic": -3629.2414102746957,
+      "free_parameters": 4,
+      "n": 724,
+      "converged": true,
+      "iterations": 7,
+      "at_sigma_floor": false,
+      "history_min_step": 2.1494917518793955e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 889.5499569581193,
+    "bootstrap": {
+      "draws": 128,
+      "successful": 128,
+      "failures": 0,
+      "fom_interval_95": [
+        2.5706284515421047,
+        2.9209457786106108
+      ],
+      "block_size_events": 64,
+      "scope": "Exploratory within-model block-bootstrap interval; fixed PCA and fixed Cauchy nuisance shape; not particle efficiency uncertainty"
+    }
+  },
+  {
+    "configuration": "qdc_3000ns",
+    "charge_bin": 4,
+    "charge_low": 346430.17083333334,
+    "charge_high": 382581.6854166667,
+    "two_core": {
+      "background_center": 0.3986688695485836,
+      "background_scale": 0.16371583962623998,
+      "sigma_floor": 0.0016371583962623997,
+      "means": [
+        0.32222131736766185,
+        0.466020162767851
+      ],
+      "sigmas": [
+        0.014653689506179244,
+        0.009154092744318935
+      ],
+      "weights": [
+        [
+          0.0012626225055237398,
+          0.9987373647234825,
+          1.2770993703779441e-08
+        ],
+        [
+          0.9999999995908473,
+          9.99999999999e-13,
+          4.081526538732661e-10
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2941.474984510143,
+      "bic": -5828.36368004144,
+      "free_parameters": 8,
+      "n": 919,
+      "converged": true,
+      "iterations": 11,
+      "at_sigma_floor": false,
+      "history_min_step": 2.7653294637275394e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.5649489937701273
+    },
+    "one_core": {
+      "background_center": 0.3986688695485836,
+      "background_scale": 0.16371583962623998,
+      "sigma_floor": 0.0016371583962623997,
+      "means": [
+        0.46601661732725547
+      ],
+      "sigmas": [
+        0.009147092366904195
+      ],
+      "weights": [
+        [
+          0.9985058715065582,
+          0.0014941284934416816
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2642.034755684299,
+      "bic": -5256.776366879175,
+      "free_parameters": 4,
+      "n": 919,
+      "converged": true,
+      "iterations": 7,
+      "at_sigma_floor": false,
+      "history_min_step": 2.508535089873476e-06,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 571.5873131622648,
+    "bootstrap": {
+      "draws": 128,
+      "successful": 128,
+      "failures": 0,
+      "fom_interval_95": [
+        2.4019506134510826,
+        2.790310626882037
+      ],
+      "block_size_events": 64,
+      "scope": "Exploratory within-model block-bootstrap interval; fixed PCA and fixed Cauchy nuisance shape; not particle efficiency uncertainty"
+    }
+  },
+  {
+    "configuration": "qdc_3000ns",
+    "charge_bin": 5,
+    "charge_low": 382581.6854166667,
+    "charge_high": 418733.2,
+    "two_core": {
+      "background_center": 0.39948835636501256,
+      "background_scale": 0.1604609821262985,
+      "sigma_floor": 0.001604609821262985,
+      "means": [
+        0.3230246641846302,
+        0.466577416444605
+      ],
+      "sigmas": [
+        0.011791589429750294,
+        0.008437877707180318
+      ],
+      "weights": [
+        [
+          9.999999999989995e-13,
+          0.9999999764171901,
+          2.3581809899348783e-08
+        ],
+        [
+          0.9999999967689109,
+          9.99999999999e-13,
+          3.2300890012488567e-09
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2543.673699551128,
+      "bic": -5034.197081237075,
+      "free_parameters": 8,
+      "n": 768,
+      "converged": true,
+      "iterations": 9,
+      "at_sigma_floor": false,
+      "history_min_step": 7.21634496585466e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 3.0134872352411572
+    },
+    "one_core": {
+      "background_center": 0.39948835636501256,
+      "background_scale": 0.1604609821262985,
+      "sigma_floor": 0.001604609821262985,
+      "means": [
+        0.4665774163060429
+      ],
+      "sigmas": [
+        0.008437877954879913
+      ],
+      "weights": [
+        [
+          0.9999999853287612,
+          1.4671238826614433e-08
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2286.7418079713507,
+      "bic": -4546.90845701011,
+      "free_parameters": 4,
+      "n": 768,
+      "converged": true,
+      "iterations": 9,
+      "at_sigma_floor": false,
+      "history_min_step": 4.355043984105578e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 487.2886242269642,
+    "bootstrap": {
+      "draws": 128,
+      "successful": 128,
+      "failures": 0,
+      "fom_interval_95": [
+        2.750731230954783,
+        3.2662454803405474
+      ],
+      "block_size_events": 64,
+      "scope": "Exploratory within-model block-bootstrap interval; fixed PCA and fixed Cauchy nuisance shape; not particle efficiency uncertainty"
+    }
+  },
+  {
+    "configuration": "negative_mean_time_3000ns",
+    "charge_bin": 0,
+    "charge_low": 201824.1125,
+    "charge_high": 237975.62708333333,
+    "two_core": {
+      "background_center": -0.8932557936775373,
+      "background_scale": 0.31900191973730574,
+      "sigma_floor": 0.0031900191973730577,
+      "means": [
+        -1.000195898654519,
+        -0.7354625717956574
+      ],
+      "sigmas": [
+        0.032784358436559434,
+        0.018807556721233933
+      ],
+      "weights": [
+        [
+          0.14285714175899566,
+          0.857142856123551,
+          2.117453228806781e-09
+        ],
+        [
+          0.9999999599346115,
+          9.999999999990003e-13,
+          4.00643885476383e-08
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1315.2801054901574,
+      "bic": -2578.6831290952327,
+      "free_parameters": 8,
+      "n": 655,
+      "converged": true,
+      "iterations": 11,
+      "at_sigma_floor": false,
+      "history_min_step": 5.497908864526835e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.1790602759785362
+    },
+    "one_core": {
+      "background_center": -0.8932557936775373,
+      "background_scale": 0.31900191973730574,
+      "sigma_floor": 0.0031900191973730577,
+      "means": [
+        -1.0001737838821925
+      ],
+      "sigmas": [
+        0.03289639463226716
+      ],
+      "weights": [
+        [
+          0.057649989572887826,
+          0.9423500104271122
+        ],
+        [
+          0.9999999998173302,
+          1.826697857821249e-10
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1106.232994021722,
+      "bic": -2186.5274471009034,
+      "free_parameters": 4,
+      "n": 655,
+      "converged": true,
+      "iterations": 14,
+      "at_sigma_floor": false,
+      "history_min_step": 2.6686044975576806e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 392.15568199432937,
+    "bootstrap": {
+      "draws": 128,
+      "successful": 128,
+      "failures": 0,
+      "fom_interval_95": [
+        2.0311311412396567,
+        2.3552118820541716
+      ],
+      "block_size_events": 64,
+      "scope": "Exploratory within-model block-bootstrap interval; fixed PCA and fixed Cauchy nuisance shape; not particle efficiency uncertainty"
+    }
+  },
+  {
+    "configuration": "negative_mean_time_3000ns",
+    "charge_bin": 1,
+    "charge_low": 237975.62708333333,
+    "charge_high": 274127.14166666666,
+    "two_core": {
+      "background_center": -0.8888997643754308,
+      "background_scale": 0.33059010701761526,
+      "sigma_floor": 0.0033059010701761526,
+      "means": [
+        -1.0036940980281353,
+        -0.7372719846470019
+      ],
+      "sigmas": [
+        0.03118114028409512,
+        0.01654802765396629
+      ],
+      "weights": [
+        [
+          0.054794517280357516,
+          0.945205476525227,
+          6.194415362809734e-09
+        ],
+        [
+          0.9999999949461924,
+          9.999999999989993e-13,
+          5.052807721247575e-09
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1179.2732032526487,
+      "bic": -2308.0962042097135,
+      "free_parameters": 8,
+      "n": 548,
+      "converged": true,
+      "iterations": 10,
+      "at_sigma_floor": false,
+      "history_min_step": 1.2883481758763082e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.370438442034503
+    },
+    "one_core": {
+      "background_center": -0.8888997643754308,
+      "background_scale": 0.33059010701761526,
+      "sigma_floor": 0.0033059010701761526,
+      "means": [
+        -1.0039126867321189
+      ],
+      "sigmas": [
+        0.03135946996213304
+      ],
+      "weights": [
+        [
+          2.0863404164814183e-06,
+          0.9999979136595836
+        ],
+        [
+          0.999999999999,
+          9.999999999991534e-13
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 788.5777714241214,
+      "bic": -1551.9304417004507,
+      "free_parameters": 4,
+      "n": 548,
+      "converged": true,
+      "iterations": 26,
+      "at_sigma_floor": false,
+      "history_min_step": 4.840605288336519e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 756.1657625092628,
+    "bootstrap": {
+      "draws": 128,
+      "successful": 128,
+      "failures": 0,
+      "fom_interval_95": [
+        2.258712928336058,
+        2.510989448009887
+      ],
+      "block_size_events": 64,
+      "scope": "Exploratory within-model block-bootstrap interval; fixed PCA and fixed Cauchy nuisance shape; not particle efficiency uncertainty"
+    }
+  },
+  {
+    "configuration": "negative_mean_time_3000ns",
+    "charge_bin": 2,
+    "charge_low": 274127.14166666666,
+    "charge_high": 310278.65625,
+    "two_core": {
+      "background_center": -0.8786151112282368,
+      "background_scale": 0.3259140570069782,
+      "sigma_floor": 0.003259140570069782,
+      "means": [
+        -1.003230593480256,
+        -0.7364492411322169
+      ],
+      "sigmas": [
+        0.029532973454839292,
+        0.015698845323311478
+      ],
+      "weights": [
+        [
+          0.01365187319978488,
+          0.9863481180037506,
+          8.796464663905186e-09
+        ],
+        [
+          0.9999999867614366,
+          9.999999999989995e-13,
+          1.3237563418045376e-08
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1295.16059415899,
+      "bic": -2540.0034637507083,
+      "free_parameters": 8,
+      "n": 539,
+      "converged": true,
+      "iterations": 10,
+      "at_sigma_floor": false,
+      "history_min_step": 2.2305408037937013e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.5046883430758684
+    },
+    "one_core": {
+      "background_center": -0.8786151112282368,
+      "background_scale": 0.3259140570069782,
+      "sigma_floor": 0.003259140570069782,
+      "means": [
+        -0.736432231197742
+      ],
+      "sigmas": [
+        0.015660186017965712
+      ],
+      "weights": [
+        [
+          0.9848870834873044,
+          0.015112916512695612
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 728.3896647511602,
+      "bic": -1431.6204672186846,
+      "free_parameters": 4,
+      "n": 539,
+      "converged": true,
+      "iterations": 10,
+      "at_sigma_floor": false,
+      "history_min_step": 9.013620001496747e-07,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 1108.3829965320238,
+    "bootstrap": {
+      "draws": 128,
+      "successful": 128,
+      "failures": 0,
+      "fom_interval_95": [
+        2.381388467393064,
+        2.6921940336136254
+      ],
+      "block_size_events": 64,
+      "scope": "Exploratory within-model block-bootstrap interval; fixed PCA and fixed Cauchy nuisance shape; not particle efficiency uncertainty"
+    }
+  },
+  {
+    "configuration": "negative_mean_time_3000ns",
+    "charge_bin": 3,
+    "charge_low": 310278.65625,
+    "charge_high": 346430.17083333334,
+    "two_core": {
+      "background_center": -0.8714010963549387,
+      "background_scale": 0.31314270127275123,
+      "sigma_floor": 0.0031314270127275126,
+      "means": [
+        -1.0048329213171754,
+        -0.736053350981586
+      ],
+      "sigmas": [
+        0.02625118859752359,
+        0.014401339914952769
+      ],
+      "weights": [
+        [
+          0.0018518482004321267,
+          0.9981481430926503,
+          8.706917534043915e-09
+        ],
+        [
+          0.9999999956952865,
+          9.999999999990003e-13,
+          4.30371351650862e-09
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1924.3999345015798,
+      "bic": -3796.1215378640736,
+      "free_parameters": 8,
+      "n": 724,
+      "converged": true,
+      "iterations": 9,
+      "at_sigma_floor": false,
+      "history_min_step": 3.0650858434455586e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.807701721284117
+    },
+    "one_core": {
+      "background_center": -0.8714010963549387,
+      "background_scale": 0.31314270127275123,
+      "sigma_floor": 0.0031314270127275126,
+      "means": [
+        -0.7360526354231962
+      ],
+      "sigmas": [
+        0.014398620582450528
+      ],
+      "weights": [
+        [
+          0.9979879593628257,
+          0.0020120406371743767
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1484.9713030575977,
+      "bic": -2943.6034405456526,
+      "free_parameters": 4,
+      "n": 724,
+      "converged": true,
+      "iterations": 5,
+      "at_sigma_floor": false,
+      "history_min_step": 8.04871501713933e-06,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 852.518097318421,
+    "bootstrap": {
+      "draws": 128,
+      "successful": 128,
+      "failures": 0,
+      "fom_interval_95": [
+        2.6502061572527777,
+        2.9845293504399604
+      ],
+      "block_size_events": 64,
+      "scope": "Exploratory within-model block-bootstrap interval; fixed PCA and fixed Cauchy nuisance shape; not particle efficiency uncertainty"
+    }
+  },
+  {
+    "configuration": "negative_mean_time_3000ns",
+    "charge_bin": 4,
+    "charge_low": 346430.17083333334,
+    "charge_high": 382581.6854166667,
+    "two_core": {
+      "background_center": -0.8633585631294217,
+      "background_scale": 0.2964471632340253,
+      "sigma_floor": 0.0029644716323402533,
+      "means": [
+        -1.0026208450422596,
+        -0.7356671106276309
+      ],
+      "sigmas": [
+        0.02631517331410323,
+        0.013195462977757833
+      ],
+      "weights": [
+        [
+          0.0011774104888902545,
+          0.9973575760220634,
+          0.0014650134890462684
+        ],
+        [
+          0.9999998912748104,
+          9.999999999990003e-13,
+          1.0872418955155458e-07
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2566.9929188971832,
+      "bic": -5079.399548815521,
+      "free_parameters": 8,
+      "n": 919,
+      "converged": true,
+      "iterations": 8,
+      "at_sigma_floor": false,
+      "history_min_step": 8.104059497782146e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.869222664902349
+    },
+    "one_core": {
+      "background_center": -0.8633585631294217,
+      "background_scale": 0.2964471632340253,
+      "sigma_floor": 0.0029644716323402533,
+      "means": [
+        -0.7356744573496351
+      ],
+      "sigmas": [
+        0.013178983643027917
+      ],
+      "weights": [
+        [
+          0.997124068042969,
+          0.002875931957030989
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2267.4564932386393,
+      "bic": -4507.619841987856,
+      "free_parameters": 4,
+      "n": 919,
+      "converged": true,
+      "iterations": 7,
+      "at_sigma_floor": false,
+      "history_min_step": 2.7180740289622918e-06,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 571.779706827665,
+    "bootstrap": {
+      "draws": 128,
+      "successful": 128,
+      "failures": 0,
+      "fom_interval_95": [
+        2.6817087857402897,
+        3.1251832787183473
+      ],
+      "block_size_events": 64,
+      "scope": "Exploratory within-model block-bootstrap interval; fixed PCA and fixed Cauchy nuisance shape; not particle efficiency uncertainty"
+    }
+  },
+  {
+    "configuration": "negative_mean_time_3000ns",
+    "charge_bin": 5,
+    "charge_low": 382581.6854166667,
+    "charge_high": 418733.2,
+    "two_core": {
+      "background_center": -0.8630209826005929,
+      "background_scale": 0.2969455478568015,
+      "sigma_floor": 0.002969455478568015,
+      "means": [
+        -1.0042080878361066,
+        -0.7347403026337204
+      ],
+      "sigmas": [
+        0.02171071111448784,
+        0.01277972866771837
+      ],
+      "weights": [
+        [
+          9.999999999980861e-13,
+          0.9999999999979999,
+          9.999999999980861e-13
+        ],
+        [
+          0.9999356279860637,
+          9.999999999990005e-13,
+          6.437201293636957e-05
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2205.0896229375967,
+      "bic": -4357.028928010012,
+      "free_parameters": 8,
+      "n": 768,
+      "converged": true,
+      "iterations": 50,
+      "at_sigma_floor": false,
+      "history_min_step": 7.079717261149199e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 3.3178014819890524
+    },
+    "one_core": {
+      "background_center": -0.8630209826005929,
+      "background_scale": 0.2969455478568015,
+      "sigma_floor": 0.002969455478568015,
+      "means": [
+        -0.7347403026560138
+      ],
+      "sigmas": [
+        0.012779728588708655
+      ],
+      "weights": [
+        [
+          0.9999999964818593,
+          3.5181406502917026e-09
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1947.7642513423887,
+      "bic": -3868.953343752187,
+      "free_parameters": 4,
+      "n": 768,
+      "converged": true,
+      "iterations": 8,
+      "at_sigma_floor": false,
+      "history_min_step": 2.325174250472628e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 488.07558425782554,
+    "bootstrap": {
+      "draws": 128,
+      "successful": 128,
+      "failures": 0,
+      "fom_interval_95": [
+        3.0079087685233876,
+        3.850386581875688
+      ],
+      "block_size_events": 64,
+      "scope": "Exploratory within-model block-bootstrap interval; fixed PCA and fixed Cauchy nuisance shape; not particle efficiency uncertainty"
+    }
+  },
+  {
+    "configuration": "pca_projection_3000ns",
+    "charge_bin": 0,
+    "charge_low": 201824.1125,
+    "charge_high": 237975.62708333333,
+    "two_core": {
+      "background_center": -0.13536114300764246,
+      "background_scale": 2.347905790364763,
+      "sigma_floor": 0.02347905790364763,
+      "means": [
+        -0.9320261376830915,
+        1.0138177357705729
+      ],
+      "sigmas": [
+        0.23330887679698464,
+        0.15152225922561072
+      ],
+      "weights": [
+        [
+          0.1428571427145524,
+          0.8571428570108712,
+          2.745762866094922e-10
+        ],
+        [
+          0.9999999443484971,
+          9.99999999999001e-13,
+          5.56505029562612e-08
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 20.223534434206186,
+      "bic": 11.43001301666964,
+      "free_parameters": 8,
+      "n": 655,
+      "converged": true,
+      "iterations": 12,
+      "at_sigma_floor": false,
+      "history_min_step": 5.2498736874184715e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.147237407505462
+    },
+    "one_core": {
+      "background_center": -0.13536114300764246,
+      "background_scale": 2.347905790364763,
+      "sigma_floor": 0.02347905790364763,
+      "means": [
+        -0.9314070866264815
+      ],
+      "sigmas": [
+        0.2340577003527399
+      ],
+      "weights": [
+        [
+          0.06250258268366525,
+          0.9374974173163347
+        ],
+        [
+          0.9999999941136754,
+          5.886324699942615e-09
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": -181.8564391150951,
+      "bic": 389.6514191727312,
+      "free_parameters": 4,
+      "n": 655,
+      "converged": true,
+      "iterations": 13,
+      "at_sigma_floor": false,
+      "history_min_step": 2.2210366324770803e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 378.22140615606156,
+    "bootstrap": {
+      "draws": 128,
+      "successful": 128,
+      "failures": 0,
+      "fom_interval_95": [
+        2.0295761804816004,
+        2.2532060834606376
+      ],
+      "block_size_events": 64,
+      "scope": "Exploratory within-model block-bootstrap interval; fixed PCA and fixed Cauchy nuisance shape; not particle efficiency uncertainty"
+    }
+  },
+  {
+    "configuration": "pca_projection_3000ns",
+    "charge_bin": 1,
+    "charge_low": 237975.62708333333,
+    "charge_high": 274127.14166666666,
+    "two_core": {
+      "background_center": -0.09597889391121839,
+      "background_scale": 2.4316046408110736,
+      "sigma_floor": 0.024316046408110737,
+      "means": [
+        -0.960807648910896,
+        1.0101373577689048
+      ],
+      "sigmas": [
+        0.21661979260017178,
+        0.1336512296878662
+      ],
+      "weights": [
+        [
+          0.05479451795538522,
+          0.9452054768007804,
+          5.243834475615746e-09
+        ],
+        [
+          0.9999999966695207,
+          9.999999999990007e-13,
+          3.3294794519944514e-09
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 96.28038410377182,
+      "bic": -142.11056591195953,
+      "free_parameters": 8,
+      "n": 548,
+      "converged": true,
+      "iterations": 10,
+      "at_sigma_floor": false,
+      "history_min_step": 9.68374699539254e-06,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.389530470444425
+    },
+    "one_core": {
+      "background_center": -0.09597889391121839,
+      "background_scale": 2.4316046408110736,
+      "sigma_floor": 0.024316046408110737,
+      "means": [
+        -0.962406111615043
+      ],
+      "sigmas": [
+        0.21788818724572284
+      ],
+      "weights": [
+        [
+          3.0353516611830257e-06,
+          0.9999969646483389
+        ],
+        [
+          0.999999999999,
+          9.999999999991463e-13
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": -281.70183806178034,
+      "bic": 588.6287772713528,
+      "free_parameters": 4,
+      "n": 548,
+      "converged": true,
+      "iterations": 29,
+      "at_sigma_floor": false,
+      "history_min_step": 5.254160288359344e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 730.7393431833123,
+    "bootstrap": {
+      "draws": 128,
+      "successful": 128,
+      "failures": 0,
+      "fom_interval_95": [
+        2.2761108779570765,
+        2.497763983904387
+      ],
+      "block_size_events": 64,
+      "scope": "Exploratory within-model block-bootstrap interval; fixed PCA and fixed Cauchy nuisance shape; not particle efficiency uncertainty"
+    }
+  },
+  {
+    "configuration": "pca_projection_3000ns",
+    "charge_bin": 2,
+    "charge_low": 274127.14166666666,
+    "charge_high": 310278.65625,
+    "two_core": {
+      "background_center": -0.021509512597361224,
+      "background_scale": 2.3969467976783383,
+      "sigma_floor": 0.023969467976783385,
+      "means": [
+        -0.9495206059023946,
+        1.0130155993512684
+      ],
+      "sigmas": [
+        0.2191958898150064,
+        0.13071767355062253
+      ],
+      "weights": [
+        [
+          0.013651876621089937,
+          0.9863481219687836,
+          1.4101264803575143e-09
+        ],
+        [
+          0.9999999103805978,
+          9.999999999989995e-13,
+          8.96184022389079e-08
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 181.52409252028932,
+      "bic": -312.73046047330666,
+      "free_parameters": 8,
+      "n": 539,
+      "converged": true,
+      "iterations": 12,
+      "at_sigma_floor": false,
+      "history_min_step": 3.638490343860212e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.3817664667584957
+    },
+    "one_core": {
+      "background_center": -0.021509512597361224,
+      "background_scale": 2.3969467976783383,
+      "sigma_floor": 0.023969467976783385,
+      "means": [
+        1.0131426183285097
+      ],
+      "sigmas": [
+        0.13013320323735575
+      ],
+      "weights": [
+        [
+          0.98431624052291,
+          0.015683759477089974
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": -383.6372767858603,
+      "bic": 792.4334158553567,
+      "free_parameters": 4,
+      "n": 539,
+      "converged": true,
+      "iterations": 10,
+      "at_sigma_floor": false,
+      "history_min_step": 1.1909424301848048e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 1105.1638763286633,
+    "bootstrap": {
+      "draws": 128,
+      "successful": 128,
+      "failures": 0,
+      "fom_interval_95": [
+        2.2696195396220458,
+        2.558093958648446
+      ],
+      "block_size_events": 64,
+      "scope": "Exploratory within-model block-bootstrap interval; fixed PCA and fixed Cauchy nuisance shape; not particle efficiency uncertainty"
+    }
+  },
+  {
+    "configuration": "pca_projection_3000ns",
+    "charge_bin": 3,
+    "charge_low": 310278.65625,
+    "charge_high": 346430.17083333334,
+    "two_core": {
+      "background_center": 0.04415444279458791,
+      "background_scale": 2.303856689460043,
+      "sigma_floor": 0.02303856689460043,
+      "means": [
+        -0.9631880816512262,
+        1.0200580841282414
+      ],
+      "sigmas": [
+        0.16915370120873996,
+        0.12233427402666336
+      ],
+      "weights": [
+        [
+          0.0018518457038691901,
+          0.9981481215781469,
+          3.271798393086578e-08
+        ],
+        [
+          0.9999999999979998,
+          9.99999999998446e-13,
+          9.99999999998446e-13
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 426.57100398329305,
+      "bic": -800.4636768275004,
+      "free_parameters": 8,
+      "n": 724,
+      "converged": true,
+      "iterations": 13,
+      "at_sigma_floor": false,
+      "history_min_step": 2.4901682536437875e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.8893373775947517
+    },
+    "one_core": {
+      "background_center": 0.04415444279458791,
+      "background_scale": 2.303856689460043,
+      "sigma_floor": 0.02303856689460043,
+      "means": [
+        1.0201406846893686
+      ],
+      "sigmas": [
+        0.12197706638606617
+      ],
+      "weights": [
+        [
+          0.9975411175139298,
+          0.0024588824860702664
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": -38.47308871381023,
+      "bic": 103.28534299716333,
+      "free_parameters": 4,
+      "n": 724,
+      "converged": true,
+      "iterations": 8,
+      "at_sigma_floor": false,
+      "history_min_step": 4.649595041428256e-06,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 903.7490198246637,
+    "bootstrap": {
+      "draws": 128,
+      "successful": 128,
+      "failures": 0,
+      "fom_interval_95": [
+        2.7298177258104714,
+        3.0574731845313394
+      ],
+      "block_size_events": 64,
+      "scope": "Exploratory within-model block-bootstrap interval; fixed PCA and fixed Cauchy nuisance shape; not particle efficiency uncertainty"
+    }
+  },
+  {
+    "configuration": "pca_projection_3000ns",
+    "charge_bin": 4,
+    "charge_low": 346430.17083333334,
+    "charge_high": 382581.6854166667,
+    "two_core": {
+      "background_center": 0.096682397517593,
+      "background_scale": 2.240748386264302,
+      "sigma_floor": 0.02240748386264302,
+      "means": [
+        -0.9551420579326954,
+        1.0310551132339443
+      ],
+      "sigmas": [
+        0.1909245360314244,
+        0.1183084159198653
+      ],
+      "weights": [
+        [
+          0.0012626187439161974,
+          0.9987373409671804,
+          4.028890348581801e-08
+        ],
+        [
+          0.9999999999753538,
+          9.999999999990001e-13,
+          2.3646284478707306e-11
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 588.63181352795,
+      "bic": -1122.6773380770546,
+      "free_parameters": 8,
+      "n": 919,
+      "converged": true,
+      "iterations": 12,
+      "at_sigma_floor": false,
+      "history_min_step": 5.20579565090884e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.7275886132082467
+    },
+    "one_core": {
+      "background_center": 0.096682397517593,
+      "background_scale": 2.240748386264302,
+      "sigma_floor": 0.02240748386264302,
+      "means": [
+        1.0309435548080101
+      ],
+      "sigmas": [
+        0.1180872622292538
+      ],
+      "weights": [
+        [
+          0.9983701341807126,
+          0.0016298658192874318
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 282.79372851321904,
+      "bic": -538.2943125370153,
+      "free_parameters": 4,
+      "n": 919,
+      "converged": true,
+      "iterations": 7,
+      "at_sigma_floor": false,
+      "history_min_step": 8.475116658246407e-06,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 584.3830255400393,
+    "bootstrap": {
+      "draws": 128,
+      "successful": 128,
+      "failures": 0,
+      "fom_interval_95": [
+        2.5676810923355076,
+        2.9320730382092903
+      ],
+      "block_size_events": 64,
+      "scope": "Exploratory within-model block-bootstrap interval; fixed PCA and fixed Cauchy nuisance shape; not particle efficiency uncertainty"
+    }
+  },
+  {
+    "configuration": "pca_projection_3000ns",
+    "charge_bin": 5,
+    "charge_low": 382581.6854166667,
+    "charge_high": 418733.2,
+    "two_core": {
+      "background_center": 0.10792014883801238,
+      "background_scale": 2.202964294417589,
+      "sigma_floor": 0.022029642944175892,
+      "means": [
+        -0.9470003578453953,
+        1.0403018260571233
+      ],
+      "sigmas": [
+        0.14665771875491027,
+        0.10745758554503038
+      ],
+      "weights": [
+        [
+          9.99999999999001e-13,
+          0.9999999961583999,
+          3.840600107484712e-09
+        ],
+        [
+          0.9999999987253688,
+          9.99999999999e-13,
+          1.2736311981504056e-09
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 591.98983084237,
+      "bic": -1130.8293438195585,
+      "free_parameters": 8,
+      "n": 768,
+      "converged": true,
+      "iterations": 9,
+      "at_sigma_floor": false,
+      "history_min_step": 1.7122558915616537e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 3.3210496180036513
+    },
+    "one_core": {
+      "background_center": 0.10792014883801238,
+      "background_scale": 2.202964294417589,
+      "sigma_floor": 0.022029642944175892,
+      "means": [
+        1.040301825920979
+      ],
+      "sigmas": [
+        0.10745758581337507
+      ],
+      "weights": [
+        [
+          0.9999999971125564,
+          2.8874435638678753e-09
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 324.9464977186708,
+      "bic": -623.3178365047509,
+      "free_parameters": 4,
+      "n": 768,
+      "converged": true,
+      "iterations": 9,
+      "at_sigma_floor": false,
+      "history_min_step": 1.212134111483465e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 507.51150731480766,
+    "bootstrap": {
+      "draws": 128,
+      "successful": 128,
+      "failures": 0,
+      "fom_interval_95": [
+        3.14529971700206,
+        3.673032084348749
+      ],
+      "block_size_events": 64,
+      "scope": "Exploratory within-model block-bootstrap interval; fixed PCA and fixed Cauchy nuisance shape; not particle efficiency uncertainty"
+    }
+  },
+  {
+    "configuration": "qdc_4000ns",
+    "charge_bin": 0,
+    "charge_low": 201824.1125,
+    "charge_high": 237975.62708333333,
+    "two_core": {
+      "background_center": 0.36344669728259527,
+      "background_scale": 0.18504625223956345,
+      "sigma_floor": 0.0018504625223956345,
+      "means": [
+        0.3001197305673346,
+        0.4540883939755202
+      ],
+      "sigmas": [
+        0.017764633726467943,
+        0.011891036018976182
+      ],
+      "weights": [
+        [
+          0.14285714249744416,
+          0.8571428567600006,
+          7.425552659944333e-10
+        ],
+        [
+          0.999999968174378,
+          9.99999999999e-13,
+          3.1824622054316213e-08
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1704.5931599699982,
+      "bic": -3357.309238054914,
+      "free_parameters": 8,
+      "n": 655,
+      "converged": true,
+      "iterations": 11,
+      "at_sigma_floor": false,
+      "history_min_step": 4.374078775981616e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.2047882161533328
+    },
+    "one_core": {
+      "background_center": 0.36344669728259527,
+      "background_scale": 0.18504625223956345,
+      "sigma_floor": 0.0018504625223956345,
+      "means": [
+        0.3001627693193071
+      ],
+      "sigmas": [
+        0.017836247198425303
+      ],
+      "weights": [
+        [
+          0.07104870813547534,
+          0.9289512918645246
+        ],
+        [
+          0.9999999974136621,
+          2.5863378681830637e-09
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1501.2779324312594,
+      "bic": -2976.617323919978,
+      "free_parameters": 4,
+      "n": 655,
+      "converged": true,
+      "iterations": 12,
+      "at_sigma_floor": false,
+      "history_min_step": 2.301139625160431e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 380.69191413493627,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "qdc_4000ns",
+    "charge_bin": 1,
+    "charge_low": 237975.62708333333,
+    "charge_high": 274127.14166666666,
+    "two_core": {
+      "background_center": 0.36824295182946315,
+      "background_scale": 0.18903841460504922,
+      "sigma_floor": 0.0018903841460504922,
+      "means": [
+        0.29832264990660184,
+        0.4534948578276334
+      ],
+      "sigmas": [
+        0.016329832523089175,
+        0.010911849322223693
+      ],
+      "weights": [
+        [
+          0.05479451473950867,
+          0.945205472035009,
+          1.322548222572817e-08
+        ],
+        [
+          0.9999999952552909,
+          9.999999999989987e-13,
+          4.743709000796576e-09
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1501.934944701114,
+      "bic": -2953.4196871066442,
+      "free_parameters": 8,
+      "n": 548,
+      "converged": true,
+      "iterations": 10,
+      "at_sigma_floor": false,
+      "history_min_step": 1.556443430672516e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.4189244213061123
+    },
+    "one_core": {
+      "background_center": 0.36824295182946315,
+      "background_scale": 0.18903841460504922,
+      "sigma_floor": 0.0018903841460504922,
+      "means": [
+        0.2982095188498073
+      ],
+      "sigmas": [
+        0.016419176900630873
+      ],
+      "weights": [
+        [
+          3.208369413515024e-06,
+          0.9999967916305865
+        ],
+        [
+          0.9999999999989999,
+          9.999999999991526e-13
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1130.9124678011299,
+      "bic": -2236.599834454468,
+      "free_parameters": 4,
+      "n": 548,
+      "converged": true,
+      "iterations": 31,
+      "at_sigma_floor": false,
+      "history_min_step": 4.4857442617285415e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 716.8198526521765,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "qdc_4000ns",
+    "charge_bin": 2,
+    "charge_low": 274127.14166666666,
+    "charge_high": 310278.65625,
+    "two_core": {
+      "background_center": 0.3734403828189946,
+      "background_scale": 0.18656862376402766,
+      "sigma_floor": 0.0018656862376402767,
+      "means": [
+        0.2990420168653033,
+        0.4534111304636795
+      ],
+      "sigmas": [
+        0.016472224508780674,
+        0.010426941188231858
+      ],
+      "weights": [
+        [
+          0.01365187713302444,
+          0.9863481228659756,
+          9.999999999991989e-13
+        ],
+        [
+          0.999999714072834,
+          9.999999999990003e-13,
+          2.859261661642222e-07
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1559.3752914036404,
+      "bic": -3068.432858240009,
+      "free_parameters": 8,
+      "n": 539,
+      "converged": true,
+      "iterations": 18,
+      "at_sigma_floor": false,
+      "history_min_step": 2.9801319215039257e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.4370468390549336
+    },
+    "one_core": {
+      "background_center": 0.3734403828189946,
+      "background_scale": 0.18656862376402766,
+      "sigma_floor": 0.0018656862376402767,
+      "means": [
+        0.4533978310535274
+      ],
+      "sigmas": [
+        0.010385238169097531
+      ],
+      "weights": [
+        [
+          0.9843738730126916,
+          0.015626126987308468
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 983.5550079807456,
+      "bic": -1941.9511536778552,
+      "free_parameters": 4,
+      "n": 539,
+      "converged": true,
+      "iterations": 9,
+      "at_sigma_floor": false,
+      "history_min_step": 4.2535529246379156e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 1126.4817045621537,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "qdc_4000ns",
+    "charge_bin": 3,
+    "charge_low": 310278.65625,
+    "charge_high": 346430.17083333334,
+    "two_core": {
+      "background_center": 0.3767839061970064,
+      "background_scale": 0.1824829585772007,
+      "sigma_floor": 0.001824829585772007,
+      "means": [
+        0.2973058687423039,
+        0.45390139709914584
+      ],
+      "sigmas": [
+        0.012351115639080548,
+        0.00972461821472107
+      ],
+      "weights": [
+        [
+          0.001851840292102556,
+          0.9981481179374208,
+          4.1770476653015255e-08
+        ],
+        [
+          0.9999999999785295,
+          9.999999999989995e-13,
+          2.0470467732542575e-11
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2275.527442220965,
+      "bic": -4498.3765533028445,
+      "free_parameters": 8,
+      "n": 724,
+      "converged": true,
+      "iterations": 11,
+      "at_sigma_floor": false,
+      "history_min_step": 4.9329949433740694e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 3.0123573001443584
+    },
+    "one_core": {
+      "background_center": 0.3767839061970064,
+      "background_scale": 0.1824829585772007,
+      "sigma_floor": 0.001824829585772007,
+      "means": [
+        0.45390256594634026
+      ],
+      "sigmas": [
+        0.009710175470183999
+      ],
+      "weights": [
+        [
+          0.9977409993185088,
+          0.002259000681491195
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1795.6461224510897,
+      "bic": -3564.9530793326367,
+      "free_parameters": 4,
+      "n": 724,
+      "converged": true,
+      "iterations": 7,
+      "at_sigma_floor": false,
+      "history_min_step": 5.433311798697105e-06,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 933.4234739702079,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "qdc_4000ns",
+    "charge_bin": 4,
+    "charge_low": 346430.17083333334,
+    "charge_high": 382581.6854166667,
+    "two_core": {
+      "background_center": 0.38161326703690207,
+      "background_scale": 0.1750726187058007,
+      "sigma_floor": 0.001750726187058007,
+      "means": [
+        0.29844028734231814,
+        0.4548147925284763
+      ],
+      "sigmas": [
+        0.014248526608815508,
+        0.009321880337348572
+      ],
+      "weights": [
+        [
+          0.0012626129494992284,
+          0.9987372792704814,
+          1.0778001936647428e-07
+        ],
+        [
+          0.9999999999979999,
+          9.999999999981206e-13,
+          9.999999999981206e-13
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2930.6962498608173,
+      "bic": -5806.806210742789,
+      "free_parameters": 8,
+      "n": 919,
+      "converged": true,
+      "iterations": 16,
+      "at_sigma_floor": false,
+      "history_min_step": 4.983766939403722e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.817352211338682
+    },
+    "one_core": {
+      "background_center": 0.38161326703690207,
+      "background_scale": 0.1750726187058007,
+      "sigma_floor": 0.001750726187058007,
+      "means": [
+        0.45479637606725726
+      ],
+      "sigmas": [
+        0.009284469073063255
+      ],
+      "weights": [
+        [
+          0.9981106799459903,
+          0.001889320054009613
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2618.678118390036,
+      "bic": -5210.063092290649,
+      "free_parameters": 4,
+      "n": 919,
+      "converged": true,
+      "iterations": 6,
+      "at_sigma_floor": false,
+      "history_min_step": 2.922296062024543e-06,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 596.7431184521392,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "qdc_4000ns",
+    "charge_bin": 5,
+    "charge_low": 382581.6854166667,
+    "charge_high": 418733.2,
+    "two_core": {
+      "background_center": 0.38223471242289986,
+      "background_scale": 0.17302722984373659,
+      "sigma_floor": 0.001730272298437366,
+      "means": [
+        0.29925997567839435,
+        0.4551393198161897
+      ],
+      "sigmas": [
+        0.01099361706103669,
+        0.008601289060627066
+      ],
+      "weights": [
+        [
+          9.999999999990011e-13,
+          0.999999995743687,
+          4.2553130399736425e-09
+        ],
+        [
+          0.9999999985365575,
+          9.999999999990001e-13,
+          1.4624425221610207e-09
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2537.9570927977384,
+      "bic": -5022.763867730296,
+      "free_parameters": 8,
+      "n": 768,
+      "converged": true,
+      "iterations": 9,
+      "at_sigma_floor": false,
+      "history_min_step": 1.8673760223464342e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 3.378217899305428
+    },
+    "one_core": {
+      "background_center": 0.38223471242289986,
+      "background_scale": 0.17302722984373659,
+      "sigma_floor": 0.001730272298437366,
+      "means": [
+        0.45513931980354716
+      ],
+      "sigmas": [
+        0.008601289085194646
+      ],
+      "weights": [
+        [
+          0.9999999968419241,
+          3.1580759258644263e-09
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2266.168124179855,
+      "bic": -4505.761089427119,
+      "free_parameters": 4,
+      "n": 768,
+      "converged": true,
+      "iterations": 9,
+      "at_sigma_floor": false,
+      "history_min_step": 1.3029481124249287e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 517.0027783031765,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "negative_mean_time_4000ns",
+    "charge_bin": 0,
+    "charge_low": 201824.1125,
+    "charge_high": 237975.62708333333,
+    "two_core": {
+      "background_center": -1.0201458247762119,
+      "background_scale": 0.4594284362724399,
+      "sigma_floor": 0.004594284362724399,
+      "means": [
+        -1.1828277282674524,
+        -0.7972843279846704
+      ],
+      "sigmas": [
+        0.04292647642256976,
+        0.0258638034817462
+      ],
+      "weights": [
+        [
+          0.14285709627426413,
+          0.8571427717998764,
+          1.3192585960096903e-07
+        ],
+        [
+          0.9977761306688827,
+          9.999999999990005e-13,
+          0.0022238693301172654
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1125.1861927466614,
+      "bic": -2198.4953036082406,
+      "free_parameters": 8,
+      "n": 655,
+      "converged": true,
+      "iterations": 9,
+      "at_sigma_floor": false,
+      "history_min_step": 3.5870388501280104e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.3800631082821937
+    },
+    "one_core": {
+      "background_center": -1.0201458247762119,
+      "background_scale": 0.4594284362724399,
+      "sigma_floor": 0.004594284362724399,
+      "means": [
+        -1.1827941182384234
+      ],
+      "sigmas": [
+        0.043105978271206644
+      ],
+      "weights": [
+        [
+          0.07506192058714642,
+          0.9249380794128537
+        ],
+        [
+          0.997784956632891,
+          0.002215043367108961
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 911.5213351189624,
+      "bic": -1797.1041292953837,
+      "free_parameters": 4,
+      "n": 655,
+      "converged": true,
+      "iterations": 11,
+      "at_sigma_floor": false,
+      "history_min_step": 3.0610230965066876e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 401.39117431285695,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "negative_mean_time_4000ns",
+    "charge_bin": 1,
+    "charge_low": 237975.62708333333,
+    "charge_high": 274127.14166666666,
+    "two_core": {
+      "background_center": -1.0136826636716163,
+      "background_scale": 0.4659904197275696,
+      "sigma_floor": 0.004659904197275696,
+      "means": [
+        -1.184379962324039,
+        -0.8008817643855071
+      ],
+      "sigmas": [
+        0.040200331555502206,
+        0.02471404179550919
+      ],
+      "weights": [
+        [
+          0.0547945145592493,
+          0.9452054734186386,
+          1.2022112137807877e-08
+        ],
+        [
+          0.9999999978339905,
+          9.99999999999e-13,
+          2.16500953574517e-09
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1019.7554195451983,
+      "bic": -1989.0606367948124,
+      "free_parameters": 8,
+      "n": 548,
+      "converged": true,
+      "iterations": 10,
+      "at_sigma_floor": false,
+      "history_min_step": 1.0885500159929506e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.508792452783419
+    },
+    "one_core": {
+      "background_center": -1.0136826636716163,
+      "background_scale": 0.4659904197275696,
+      "sigma_floor": 0.004659904197275696,
+      "means": [
+        -1.1846319141494532
+      ],
+      "sigmas": [
+        0.040387630301489376
+      ],
+      "weights": [
+        [
+          2.887771130967865e-06,
+          0.999997112228869
+        ],
+        [
+          0.9999999999989999,
+          9.999999999991405e-13
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 636.8122832363905,
+      "bic": -1248.399465324989,
+      "free_parameters": 4,
+      "n": 548,
+      "converged": true,
+      "iterations": 31,
+      "at_sigma_floor": false,
+      "history_min_step": 4.131763932946342e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 740.6611714698233,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "negative_mean_time_4000ns",
+    "charge_bin": 2,
+    "charge_low": 274127.14166666666,
+    "charge_high": 310278.65625,
+    "two_core": {
+      "background_center": -1.00412904247004,
+      "background_scale": 0.4624241298533044,
+      "sigma_floor": 0.004624241298533044,
+      "means": [
+        -1.1828741198852697,
+        -0.8002292126975978
+      ],
+      "sigmas": [
+        0.04045010231384063,
+        0.021341466154787186
+      ],
+      "weights": [
+        [
+          0.013651876953978789,
+          0.986348122687626,
+          3.5839529539962574e-10
+        ],
+        [
+          0.9999999827938292,
+          9.999999999990003e-13,
+          1.7205170796895488e-08
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1127.7784216914492,
+      "bic": -2205.2391188156266,
+      "free_parameters": 8,
+      "n": 539,
+      "converged": true,
+      "iterations": 11,
+      "at_sigma_floor": false,
+      "history_min_step": 1.2141398428866523e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.629716881265729
+    },
+    "one_core": {
+      "background_center": -1.00412904247004,
+      "background_scale": 0.4624241298533044,
+      "sigma_floor": 0.004624241298533044,
+      "means": [
+        -0.8002283745595291
+      ],
+      "sigmas": [
+        0.02131858486385568
+      ],
+      "weights": [
+        [
+          0.9852446905506347,
+          0.014755309449365287
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 551.4822407515769,
+      "bic": -1077.805619219518,
+      "free_parameters": 4,
+      "n": 539,
+      "converged": true,
+      "iterations": 9,
+      "at_sigma_floor": false,
+      "history_min_step": 3.860388915200019e-07,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 1127.4334995961087,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "negative_mean_time_4000ns",
+    "charge_bin": 3,
+    "charge_low": 310278.65625,
+    "charge_high": 346430.17083333334,
+    "two_core": {
+      "background_center": -0.9966364173775727,
+      "background_scale": 0.4538978595915035,
+      "sigma_floor": 0.004538978595915035,
+      "means": [
+        -1.1897733406383033,
+        -0.8013064482268416
+      ],
+      "sigmas": [
+        0.03438046999490074,
+        0.02019979920945221
+      ],
+      "weights": [
+        [
+          0.0018518473035779987,
+          0.9981481428697695,
+          9.826652507517068e-09
+        ],
+        [
+          0.9999999942860633,
+          9.999999999990001e-13,
+          5.712936645430421e-09
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1692.1197023039442,
+      "bic": -3331.5610734688025,
+      "free_parameters": 8,
+      "n": 724,
+      "converged": true,
+      "iterations": 9,
+      "at_sigma_floor": false,
+      "history_min_step": 3.4545802691354766e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 3.0224603618195567
+    },
+    "one_core": {
+      "background_center": -0.9966364173775727,
+      "background_scale": 0.4538978595915035,
+      "sigma_floor": 0.004538978595915035,
+      "means": [
+        -0.8013070694538114
+      ],
+      "sigmas": [
+        0.020196638850638354
+      ],
+      "weights": [
+        [
+          0.9979987129434219,
+          0.002001287056577991
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1234.1386417885192,
+      "bic": -2441.9381180074956,
+      "free_parameters": 4,
+      "n": 724,
+      "converged": true,
+      "iterations": 5,
+      "at_sigma_floor": false,
+      "history_min_step": 1.2713864634861238e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 889.6229554613069,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "negative_mean_time_4000ns",
+    "charge_bin": 4,
+    "charge_low": 346430.17083333334,
+    "charge_high": 382581.6854166667,
+    "two_core": {
+      "background_center": -0.985362902217183,
+      "background_scale": 0.4286920853066839,
+      "sigma_floor": 0.004286920853066839,
+      "means": [
+        -1.1843764153571494,
+        -0.8006927422900482
+      ],
+      "sigmas": [
+        0.03582550965902744,
+        0.01813868444907592
+      ],
+      "weights": [
+        [
+          0.0011813208710879646,
+          0.9973356271017038,
+          0.0014830520272083396
+        ],
+        [
+          0.9999999513835337,
+          9.999999999989997e-13,
+          4.861546624192674e-08
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 2275.2778029693263,
+      "bic": -4495.969316959807,
+      "free_parameters": 8,
+      "n": 919,
+      "converged": true,
+      "iterations": 8,
+      "at_sigma_floor": false,
+      "history_min_step": 3.7569594496744685e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 3.019325252014991
+    },
+    "one_core": {
+      "background_center": -0.985362902217183,
+      "background_scale": 0.4286920853066839,
+      "sigma_floor": 0.004286920853066839,
+      "means": [
+        -0.8006970758870183
+      ],
+      "sigmas": [
+        0.0181295333040898
+      ],
+      "weights": [
+        [
+          0.997188906617254,
+          0.002811093382745992
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1968.6149459296676,
+      "bic": -3909.936747369912,
+      "free_parameters": 4,
+      "n": 919,
+      "converged": true,
+      "iterations": 6,
+      "at_sigma_floor": false,
+      "history_min_step": 1.0909407365033985e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 586.0325695898946,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "negative_mean_time_4000ns",
+    "charge_bin": 5,
+    "charge_low": 382581.6854166667,
+    "charge_high": 418733.2,
+    "two_core": {
+      "background_center": -0.9830632665204955,
+      "background_scale": 0.4206126746557527,
+      "sigma_floor": 0.004206126746557527,
+      "means": [
+        -1.1848712224790217,
+        -0.8011206353743395
+      ],
+      "sigmas": [
+        0.028983808781152132,
+        0.017877944063891243
+      ],
+      "weights": [
+        [
+          9.99999999998582e-13,
+          0.9999999999979998,
+          9.99999999998582e-13
+        ],
+        [
+          0.9999988426116686,
+          9.999999999990001e-13,
+          1.1573873315024924e-06
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1952.0304247717127,
+      "bic": -3850.910531678244,
+      "free_parameters": 8,
+      "n": 768,
+      "converged": true,
+      "iterations": 17,
+      "at_sigma_floor": false,
+      "history_min_step": 4.539090741673135e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 3.4775453297603938
+    },
+    "one_core": {
+      "background_center": -0.9830632665204955,
+      "background_scale": 0.4206126746557527,
+      "sigma_floor": 0.004206126746557527,
+      "means": [
+        -0.8011206361150788
+      ],
+      "sigmas": [
+        0.017877942679525367
+      ],
+      "weights": [
+        [
+          0.9999999851266221,
+          1.4873377819444607e-08
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 1688.3773736035664,
+      "bic": -3350.1795882745423,
+      "free_parameters": 4,
+      "n": 768,
+      "converged": true,
+      "iterations": 10,
+      "at_sigma_floor": false,
+      "history_min_step": 2.913734715548344e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 500.73094340370153,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "pca_projection_4000ns",
+    "charge_bin": 0,
+    "charge_low": 201824.1125,
+    "charge_high": 237975.62708333333,
+    "two_core": {
+      "background_center": -0.11422744426743314,
+      "background_scale": 2.3253117515433193,
+      "sigma_floor": 0.023253117515433193,
+      "means": [
+        -0.9379981590981066,
+        1.024347812193306
+      ],
+      "sigmas": [
+        0.20853608353925274,
+        0.1402292273394907
+      ],
+      "weights": [
+        [
+          0.14285714285694986,
+          0.8571428571420502,
+          9.999999999991568e-13
+        ],
+        [
+          0.9999998183203663,
+          9.99999999999e-13,
+          1.8167863361980573e-07
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 91.0333608904302,
+      "bic": -130.18963989577838,
+      "free_parameters": 8,
+      "n": 655,
+      "converged": true,
+      "iterations": 18,
+      "at_sigma_floor": false,
+      "history_min_step": 4.1022397667234145e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.3893764103515145
+    },
+    "one_core": {
+      "background_center": -0.11422744426743314,
+      "background_scale": 2.3253117515433193,
+      "sigma_floor": 0.023253117515433193,
+      "means": [
+        -0.937574190557709
+      ],
+      "sigmas": [
+        0.20928409846637366
+      ],
+      "weights": [
+        [
+          0.0754730864496443,
+          0.9245269135503558
+        ],
+        [
+          0.9999998138312781,
+          1.861687218771767e-07
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": -117.57948736969877,
+      "bic": 261.09751568193855,
+      "free_parameters": 4,
+      "n": 655,
+      "converged": true,
+      "iterations": 16,
+      "at_sigma_floor": false,
+      "history_min_step": 4.878238428318582e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 391.28715557771693,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "pca_projection_4000ns",
+    "charge_bin": 1,
+    "charge_low": 237975.62708333333,
+    "charge_high": 274127.14166666666,
+    "two_core": {
+      "background_center": -0.06508628258793614,
+      "background_scale": 2.392933696089496,
+      "sigma_floor": 0.02392933696089496,
+      "means": [
+        -0.9599763746018056,
+        1.0159906412332276
+      ],
+      "sigmas": [
+        0.19351660670440782,
+        0.13000761474031258
+      ],
+      "weights": [
+        [
+          0.05479450887351622,
+          0.9452054647573327,
+          2.636915118052338e-08
+        ],
+        [
+          0.9999999869550036,
+          9.999999999989997e-13,
+          1.3043996329601212e-08
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 146.33473251132912,
+      "bic": -242.21926272707412,
+      "free_parameters": 8,
+      "n": 548,
+      "converged": true,
+      "iterations": 9,
+      "at_sigma_floor": false,
+      "history_min_step": 4.444810790005249e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.5936726710978415
+    },
+    "one_core": {
+      "background_center": -0.06508628258793614,
+      "background_scale": 2.392933696089496,
+      "sigma_floor": 0.02392933696089496,
+      "means": [
+        -0.9613949304393282
+      ],
+      "sigmas": [
+        0.1947287001526658
+      ],
+      "weights": [
+        [
+          6.460079620126866e-06,
+          0.99999353992038
+        ],
+        [
+          0.9999999999989999,
+          9.999999999991364e-13
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": -233.96023896760042,
+      "bic": 493.1455790829929,
+      "free_parameters": 4,
+      "n": 548,
+      "converged": true,
+      "iterations": 37,
+      "at_sigma_floor": false,
+      "history_min_step": 4.511149094810207e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 735.364841810067,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "pca_projection_4000ns",
+    "charge_bin": 2,
+    "charge_low": 274127.14166666666,
+    "charge_high": 310278.65625,
+    "two_core": {
+      "background_center": -0.007435588058994469,
+      "background_scale": 2.3558217342359686,
+      "sigma_floor": 0.02355821734235969,
+      "means": [
+        -0.9485230288813524,
+        1.0184634266512285
+      ],
+      "sigmas": [
+        0.1980283849882057,
+        0.12189261433188013
+      ],
+      "weights": [
+        [
+          0.01365187713284715,
+          0.9863481228661528,
+          9.99999999999696e-13
+        ],
+        [
+          0.9999996122596491,
+          9.99999999999e-13,
+          3.8773935086265904e-07
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 227.11342957457245,
+      "bic": -403.90913458187293,
+      "free_parameters": 8,
+      "n": 539,
+      "converged": true,
+      "iterations": 16,
+      "at_sigma_floor": false,
+      "history_min_step": 4.980000778687099e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 2.6109640834855234
+    },
+    "one_core": {
+      "background_center": -0.007435588058994469,
+      "background_scale": 2.3558217342359686,
+      "sigma_floor": 0.02355821734235969,
+      "means": [
+        1.0184398329830275
+      ],
+      "sigmas": [
+        0.12143641459364946
+      ],
+      "weights": [
+        [
+          0.984507025442583,
+          0.015492974557417001
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": -361.02035802325076,
+      "bic": 747.1995783301376,
+      "free_parameters": 4,
+      "n": 539,
+      "converged": true,
+      "iterations": 9,
+      "at_sigma_floor": false,
+      "history_min_step": 8.96516041848372e-06,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 1151.1087129120106,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "pca_projection_4000ns",
+    "charge_bin": 3,
+    "charge_low": 310278.65625,
+    "charge_high": 346430.17083333334,
+    "two_core": {
+      "background_center": 0.04699561621842796,
+      "background_scale": 2.306496476989618,
+      "sigma_floor": 0.023064964769896182,
+      "means": [
+        -0.9694177267056807,
+        1.020830133375053
+      ],
+      "sigmas": [
+        0.15112559342253434,
+        0.11559448248238799
+      ],
+      "weights": [
+        [
+          0.0018518422739616644,
+          0.9981481180960771,
+          3.962996130048926e-08
+        ],
+        [
+          0.9999999999898497,
+          9.999999999990005e-13,
+          9.150318426738646e-12
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 477.96446777315026,
+      "bic": -903.2506044072148,
+      "free_parameters": 8,
+      "n": 724,
+      "converged": true,
+      "iterations": 11,
+      "at_sigma_floor": false,
+      "history_min_step": 4.6886981067473243e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 3.1687920187637264
+    },
+    "one_core": {
+      "background_center": 0.04699561621842796,
+      "background_scale": 2.306496476989618,
+      "sigma_floor": 0.023064964769896182,
+      "means": [
+        1.020832467780705
+      ],
+      "sigmas": [
+        0.11539472383441013
+      ],
+      "weights": [
+        [
+          0.9977207203223266,
+          0.0022792796776733345
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": -8.572730254751434,
+      "bic": 43.48462607904573,
+      "free_parameters": 4,
+      "n": 724,
+      "converged": true,
+      "iterations": 7,
+      "at_sigma_floor": false,
+      "history_min_step": 7.611819512476359e-06,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 946.7352304862605,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "pca_projection_4000ns",
+    "charge_bin": 4,
+    "charge_low": 346430.17083333334,
+    "charge_high": 382581.6854166667,
+    "two_core": {
+      "background_center": 0.092873717348822,
+      "background_scale": 2.2154024947703554,
+      "sigma_floor": 0.022154024947703556,
+      "means": [
+        -0.9568894151455372,
+        1.0302138328966408
+      ],
+      "sigmas": [
+        0.17151648608196104,
+        0.1093356827483032
+      ],
+      "weights": [
+        [
+          0.0012357534991824582,
+          0.998241481278719,
+          0.000522765222098433
+        ],
+        [
+          0.9999999999979998,
+          9.99999999998112e-13,
+          9.99999999998112e-13
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 661.234730917623,
+      "bic": -1267.8831728564005,
+      "free_parameters": 8,
+      "n": 919,
+      "converged": true,
+      "iterations": 14,
+      "at_sigma_floor": false,
+      "history_min_step": 9.047336766343506e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 3.004587991993262
+    },
+    "one_core": {
+      "background_center": 0.092873717348822,
+      "background_scale": 2.2154024947703554,
+      "sigma_floor": 0.022154024947703556,
+      "means": [
+        1.0299487250190886
+      ],
+      "sigmas": [
+        0.10875441236320565
+      ],
+      "weights": [
+        [
+          0.9975571110506756,
+          0.002442888949324426
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 343.62622190114394,
+      "bic": -659.9592993128651,
+      "free_parameters": 4,
+      "n": 919,
+      "converged": true,
+      "iterations": 7,
+      "at_sigma_floor": false,
+      "history_min_step": 5.797360927317641e-06,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 607.9238735435354,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  },
+  {
+    "configuration": "pca_projection_4000ns",
+    "charge_bin": 5,
+    "charge_low": 382581.6854166667,
+    "charge_high": 418733.2,
+    "two_core": {
+      "background_center": 0.1039795398804218,
+      "background_scale": 2.1785304399737337,
+      "sigma_floor": 0.02178530439973734,
+      "means": [
+        -0.9496745659843759,
+        1.0357270520625532
+      ],
+      "sigmas": [
+        0.12528477710117752,
+        0.10037344466744223
+      ],
+      "weights": [
+        [
+          9.999999999989995e-13,
+          0.9999999920355744,
+          7.96342551659117e-09
+        ],
+        [
+          0.9999999510843618,
+          9.99999999999e-13,
+          4.891463813504669e-08
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 653.3869548940346,
+      "bic": -1253.6235919228877,
+      "free_parameters": 8,
+      "n": 768,
+      "converged": true,
+      "iterations": 8,
+      "at_sigma_floor": false,
+      "history_min_step": 7.301628045297548e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data",
+      "shape_fom_fwhm": 3.7362806090516987
+    },
+    "one_core": {
+      "background_center": 0.1039795398804218,
+      "background_scale": 2.1785304399737337,
+      "sigma_floor": 0.02178530439973734,
+      "means": [
+        1.035727052012875
+      ],
+      "sigmas": [
+        0.10037344485473924
+      ],
+      "weights": [
+        [
+          0.9999999929978693,
+          7.002130762556103e-09
+        ],
+        [
+          9.99999999999e-13,
+          0.9999999999989999
+        ]
+      ],
+      "groups": [
+        3,
+        12
+      ],
+      "log_likelihood": 371.2437592787463,
+      "bic": -715.9123596249019,
+      "free_parameters": 4,
+      "n": 768,
+      "converged": true,
+      "iterations": 8,
+      "at_sigma_floor": false,
+      "history_min_step": 3.9174938819996896e-05,
+      "background_policy": "Fixed broad Cauchy nuisance; center/scale estimated once from training data"
+    },
+    "delta_bic_one_minus_two": 537.7112322979858,
+    "bootstrap": {
+      "fom_interval_95": [
+        null,
+        null
+      ],
+      "successful": 0,
+      "failures": 0
+    }
+  }
+]

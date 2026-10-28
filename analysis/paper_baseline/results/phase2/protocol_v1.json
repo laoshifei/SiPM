@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "scope": "Exploratory continuation; first-phase distributions have already been inspected.",
+  "sample_period_ns": 2,
+  "baseline": "First 128 samples, unchanged from phase 1",
+  "alignment": "First-phase t10; anchor is floor(t10)+1, checked against first-phase QDC",
+  "pretrigger": "Range of 32-sample moving means in [0, anchor-64)",
+  "noise_scale": "MAD of first differences in first 128 samples / sqrt(2), Gaussian factor 1.4826022185; floor 1 ADC",
+  "pretrigger_thresholds": {
+    "loose": {
+      "noise_multiplier": 12.0,
+      "amplitude_fraction": 0.05
+    },
+    "primary": {
+      "noise_multiplier": 8.0,
+      "amplitude_fraction": 0.03
+    },
+    "strict": {
+      "noise_multiplier": 5.0,
+      "amplitude_fraction": 0.015
+    }
+  },
+  "pretrigger_rule": "Flag only when moving-mean span exceeds BOTH thresholds (their maximum)",
+  "secondary_rise": "Maximum 32-sample-lag rise of 16-sample means after peak+80; flag above max(8*noise, 0.15*amplitude). Diagnostic only in primary analysis.",
+  "negative_tail_policy": "Report, never reject an event solely for a negative tail",
+  "alternative_baseline": "Mean over [anchor-192, anchor-64), sensitivity only",
+  "integration_start_offset_samples": -20,
+  "long_end_offsets_samples": [
+    500,
+    1000,
+    1500,
+    2000
+  ],
+  "short_end_offsets_samples": [
+    100,
+    150,
+    250,
+    400
+  ],
+  "block_width_samples": 20,
+  "benchmark_runs": [
+    3,
+    12,
+    18
+  ],
+  "training": "First 60% of original event indices of runs 3 and 12",
+  "validation": "Next 20% of original event indices of runs 3 and 12",
+  "temporal_check": "Last 20% of original event indices of runs 3 and 12",
+  "external_run_check": "All eligible run 18 events; already inspected in exploratory phase, not a blind test",
+  "labels": "Source provenance only; no event-level alpha/gamma labels"
+}

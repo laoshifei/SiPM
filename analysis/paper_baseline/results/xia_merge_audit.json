@@ -1,0 +1,53 @@
+{
+  "merged_path": "data/XIA/rootfile/data_all.root",
+  "entries": 1164024,
+  "source_concatenation": [
+    "data/XIA/rootfile/data_C1_0002_wave.root",
+    "data/XIA/rootfile/data_C1_0003_wave.root"
+  ],
+  "ordered_scalar_keys_equal": true,
+  "source_key_sha256": "12601cdb2315881acd337d4b22982636a3524e5fe1974e8690ebe884446e5f75",
+  "merged_key_sha256": "12601cdb2315881acd337d4b22982636a3524e5fe1974e8690ebe884446e5f75",
+  "sample_waveform_checks": [
+    {
+      "source": "data/XIA/rootfile/data_C1_0002_wave.root",
+      "entry": 0,
+      "equal_waveform": true
+    },
+    {
+      "source": "data/XIA/rootfile/data_C1_0002_wave.root",
+      "entry": 560611,
+      "equal_waveform": true
+    },
+    {
+      "source": "data/XIA/rootfile/data_C1_0002_wave.root",
+      "entry": 1121222,
+      "equal_waveform": true
+    },
+    {
+      "source": "data/XIA/rootfile/data_C1_0003_wave.root",
+      "entry": 0,
+      "equal_waveform": true
+    },
+    {
+      "source": "data/XIA/rootfile/data_C1_0003_wave.root",
+      "entry": 21400,
+      "equal_waveform": true
+    },
+    {
+      "source": "data/XIA/rootfile/data_C1_0003_wave.root",
+      "entry": 42800,
+      "equal_waveform": true
+    }
+  ],
+  "key_fields": [
+    "crate",
+    "slot",
+    "channel",
+    "timestamp",
+    "energy",
+    "samples"
+  ],
+  "scope": "All scalar event keys and six waveforms; not a full waveform byte comparison.",
+  "use_as_additional_sample": false
+}

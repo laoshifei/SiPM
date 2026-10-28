@@ -1,0 +1,4 @@
+build/
+results/**/*.root
+results/**/*.npz
+__pycache__/

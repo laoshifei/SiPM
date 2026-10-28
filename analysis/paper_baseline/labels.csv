@@ -1,0 +1,54 @@
+﻿key,priority,system,run,crate,slot,board,channel,events,path,analysis_status,source_or_background,particle_content,label_basis,detector_setup,bias_voltage_V,temperature_C,repeat_group,run_reused_or_changed,notes
+PHA:1:B0:CH0,2,PHA,1,,,0,0,469,data/DT5730_DPP_PHA/DAQ/run_1/UNFILTERED/Data_run_1.BIN,unconfirmed,,,,,,,,,
+PHA:2:B0:CH0,2,PHA,2,,,0,0,57,data/DT5730_DPP_PHA/DAQ/run_2/UNFILTERED/Data_run_2.BIN,unconfirmed,,,,,,,,,
+PHA:3:B0:CH0,1,PHA,3,,,0,0,4776,data/DT5730_DPP_PHA/DAQ/run_3/UNFILTERED/Data_run_3.BIN,include,60Co,γ 源测量；逐事件类别未标记,用户于 2026-10-27 提供源名称与偏压；无逐事件独立标签,D1：用户确认 run 3、12、18 为同一晶体、SiPM 和接线,53.2,,,,；同一探测器已确认，放大器增益及温度未单独确认；阈值不同，不先定义为同条件重复
+PHA:4:B0:CH0,2,PHA,4,,,0,0,18,data/DT5730_DPP_PHA/DAQ/run_4/UNFILTERED/Data_run_4.BIN,unconfirmed,,,,,,,,,
+PHA:5:B0:CH0,2,PHA,5,,,0,0,66,data/DT5730_DPP_PHA/DAQ/run_5/UNFILTERED/Data_run_5.BIN,unconfirmed,,,,,,,,,
+PHA:6:B0:CH0,2,PHA,6,,,0,0,36,data/DT5730_DPP_PHA/DAQ/run_6/UNFILTERED/Data_run_6.BIN,unconfirmed,,,,,,,,,
+PHA:7:B0:CH0,1,PHA,7,,,0,0,4747,data/DT5730_DPP_PHA/DAQ/run_7/UNFILTERED/Data_run_7.BIN,include,60Co,γ 源测量；逐事件类别未标记,用户于 2026-10-27 提供源名称与偏压；无逐事件独立标签,,53.4,,,,
+PHA:8:B0:CH0,2,PHA,8,,,0,0,37,data/DT5730_DPP_PHA/DAQ/run_8/UNFILTERED/Data_run_8.BIN,unconfirmed,,,,,,,,,
+PHA:9:B0:CH0,excluded,PHA,9,,,0,0,4700,data/DT5730_DPP_PHA/DAQ/run_9/UNFILTERED/Data_run_9.BIN,exclude_user,,,,,,,,,用户于 2026-10-27 明确要求不使用
+PHA:10:B0:CH0,1,PHA,10,,,0,0,4961,data/DT5730_DPP_PHA/DAQ/run_10/UNFILTERED/Data_run_10.BIN,include,241Am,α/γ 混合源；用户确认可见 α，逐事件类别未标记,用户于 2026-10-27 提供源名称与偏压；无逐事件独立标签,,52.4,,,目录包含多次采集；当前 BIN 与较早能谱匹配,用户进一步确认 241Am、52.4 V 适用于与 2022-12-06 23:38:59 能谱完全匹配的这份 BIN；最新 run.info 为另一轮采集
+PHA:11:B0:CH0,1,PHA,11,,,0,0,96632,data/DT5730_DPP_PHA/DAQ/run_11/UNFILTERED/Data_run_11.BIN,include,241Am,α/γ 混合源；用户确认可见 α，逐事件类别未标记,用户于 2026-10-27 提供源名称与偏压；无逐事件独立标签,,52.8,,,,
+PHA:12:B0:CH0,1,PHA,12,,,0,0,7516,data/DT5730_DPP_PHA/DAQ/run_12/UNFILTERED/Data_run_12.BIN,include,241Am,α/γ 混合源；用户确认可见 α，逐事件类别未标记,用户于 2026-10-27 提供源名称与偏压；无逐事件独立标签,D1：用户确认 run 3、12、18 为同一晶体、SiPM 和接线,53.2,,,,与 run 18 / 12 同为 53.2 V；采集阈值不同，同条件重复关系待确认；同一探测器已确认，放大器增益及温度未单独确认；阈值不同，不先定义为同条件重复
+PHA:13:B0:CH0,1,PHA,13,,,0,0,80649,data/DT5730_DPP_PHA/DAQ/run_13/UNFILTERED/Data_run_13.BIN,include,241Am,α/γ 混合源；用户确认可见 α，逐事件类别未标记,用户于 2026-10-27 提供源名称与偏压；无逐事件独立标签,,53.6,,,,
+PHA:14:B0:CH0,1,PHA,14,,,0,0,112249,data/DT5730_DPP_PHA/DAQ/run_14/UNFILTERED/Data_run_14.BIN,include,241Am,α/γ 混合源；用户确认可见 α，逐事件类别未标记,用户于 2026-10-27 提供源名称与偏压；无逐事件独立标签,,54.0,,,,
+PHA:15:B0:CH0,2,PHA,15,,,0,0,1697,data/DT5730_DPP_PHA/DAQ/run_15/UNFILTERED/Data_run_15.BIN,unconfirmed,,,,,,,,,
+PHA:16:B0:CH0,2,PHA,16,,,0,0,1254,data/DT5730_DPP_PHA/DAQ/run_16/UNFILTERED/Data_run_16.BIN,unconfirmed,,,,,,,,,
+PHA:17:B0:CH0,2,PHA,17,,,0,0,1059,data/DT5730_DPP_PHA/DAQ/run_17/UNFILTERED/Data_run_17.BIN,unconfirmed,,,,,,,,,
+PHA:18:B0:CH0,1,PHA,18,,,0,0,156966,data/DT5730_DPP_PHA/DAQ/run_18/UNFILTERED/Data_run_18.BIN,include,241Am,α/γ 混合源；用户确认可见 α，逐事件类别未标记,用户于 2026-10-27 提供源名称与偏压；无逐事件独立标签,D1：用户确认 run 3、12、18 为同一晶体、SiPM 和接线,53.2,,,,与 run 18 / 12 同为 53.2 V；采集阈值不同，同条件重复关系待确认；同一探测器已确认，放大器增益及温度未单独确认；阈值不同，不先定义为同条件重复
+PHA:19:B0:CH0,2,PHA,19,,,0,0,468,data/DT5730_DPP_PHA/DAQ/run_19/UNFILTERED/Data_run_19.BIN,unconfirmed,,,,,,,,,
+PHA:20:B0:CH0,2,PHA,20,,,0,0,7738,data/DT5730_DPP_PHA/DAQ/run_20/UNFILTERED/Data_run_20.BIN,unconfirmed,,,,,,,,,
+PHA:21:B0:CH0,excluded,PHA,21,,,0,0,150880,data/DT5730_DPP_PHA/DAQ/run_21/UNFILTERED/Data_run_21.BIN,exclude_user,,,,,,,,,用户于 2026-10-27 明确要求不使用
+PHA:22:B0:CH0,excluded,PHA,22,,,0,0,137298,data/DT5730_DPP_PHA/DAQ/run_22/UNFILTERED/Data_run_22.BIN,exclude_user,,,,,,,,,用户于 2026-10-27 明确要求不使用
+PHA:24:B0:CH0,excluded,PHA,24,,,0,0,6541,data/DT5730_DPP_PHA/DAQ/run_24/UNFILTERED/Data_run_24.BIN,exclude_user,,,,,,,,,用户于 2026-10-27 明确要求不使用
+PHA:25:B0:CH0,excluded,PHA,25,,,0,0,5703,data/DT5730_DPP_PHA/DAQ/run_25/UNFILTERED/Data_run_25.BIN,exclude_user,,,,,,,,,用户于 2026-10-27 明确要求不使用
+PSD_DT5730:1:C:S:B0:CH0,3,PSD_DT5730,1,,,0,0,3334,data/DT5730_DPP_PSD/DAQ/run_1/UNFILTERED/Data_run_1.root,unconfirmed,,,,,,,,,
+PSD_DT5730:2:C:S:B0:CH0,3,PSD_DT5730,2,,,0,0,3555,data/DT5730_DPP_PSD/DAQ/run_2/UNFILTERED/Data_run_2.root,unconfirmed,,,,,,,,,
+PSD_DT5730:3:C:S:B0:CH0,3,PSD_DT5730,3,,,0,0,2317,data/DT5730_DPP_PSD/DAQ/run_3/UNFILTERED/Data_run_3.root,unconfirmed,,,,,,,,,
+PSD_DT5730:4:C:S:B0:CH0,3,PSD_DT5730,4,,,0,0,452,data/DT5730_DPP_PSD/DAQ/run_4/UNFILTERED/Data_run_4.root,unconfirmed,,,,,,,,,
+PSD_DT5730:5:C:S:B0:CH0,3,PSD_DT5730,5,,,0,0,183412,data/DT5730_DPP_PSD/DAQ/run_5/UNFILTERED/Data_run_5.root,unconfirmed,,,,,,,,,
+PSD_legacy:6:C:S:B0:CH0,3,PSD_legacy,6,,,0,0,444340,DT5720_DPP_PSD/raw2root/run0006.root,unconfirmed,,,,,,,,,
+PSD_legacy:21:C:S:B0:CH0,3,PSD_legacy,21,,,0,0,23530,DT5720_DPP_PSD/raw2root/run0021.root,unconfirmed,,,,,,,,,
+PSD_legacy:28:C:S:B0:CH2,3,PSD_legacy,28,,,0,2,1033760,DT5720_DPP_PSD/raw2root/run0028.root,unconfirmed,,,,,,,,,
+PSD_legacy:30:C:S:B0:CH2,3,PSD_legacy,30,,,0,2,1042080,DT5720_DPP_PSD/raw2root/run0030.root,unconfirmed,,,,,,,,,
+PSD_legacy:31:C:S:B0:CH2,3,PSD_legacy,31,,,0,2,1009580,DT5720_DPP_PSD/raw2root/run0031.root,unconfirmed,,,,,,,,,
+PSD_legacy:32:C:S:B0:CH2,3,PSD_legacy,32,,,0,2,1031940,DT5720_DPP_PSD/raw2root/run0032.root,unconfirmed,,,,,,,,,
+PSD_legacy:33:C:S:B0:CH2,3,PSD_legacy,33,,,0,2,1273220,DT5720_DPP_PSD/raw2root/run0033.root,unconfirmed,,,,,,,,,
+PSD_legacy:35:C:S:B0:CH2,3,PSD_legacy,35,,,0,2,129610,DT5720_DPP_PSD/raw2root/run0035.root,unconfirmed,,,,,,,,,
+PSD_legacy:36:C:S:B0:CH2,3,PSD_legacy,36,,,0,2,140530,DT5720_DPP_PSD/raw2root/run0036.root,unconfirmed,,,,,,,,,
+PSD_legacy:37:C:S:B0:CH2,3,PSD_legacy,37,,,0,2,181740,DT5720_DPP_PSD/raw2root/run0037.root,unconfirmed,,,,,,,,,
+PSD_legacy:38:C:S:B0:CH2,3,PSD_legacy,38,,,0,2,224900,DT5720_DPP_PSD/raw2root/run0038.root,unconfirmed,,,,,,,,,
+PSD_legacy:39:C:S:B0:CH2,3,PSD_legacy,39,,,0,2,188630,DT5720_DPP_PSD/raw2root/run0039.root,unconfirmed,,,,,,,,,
+XIA:2:C0:S2:B:CH0,3,XIA,2,0,2,,0,745674,data/XIA/rootfile/data_C1_0002_wave.root,unconfirmed,,,,,,,,,
+XIA:2:C0:S2:B:CH2,3,XIA,2,0,2,,2,144820,data/XIA/rootfile/data_C1_0002_wave.root,unconfirmed,,,,,,,,,
+XIA:2:C0:S2:B:CH3,3,XIA,2,0,2,,3,858,data/XIA/rootfile/data_C1_0002_wave.root,unconfirmed,,,,,,,,,
+XIA:2:C0:S2:B:CH4,3,XIA,2,0,2,,4,228302,data/XIA/rootfile/data_C1_0002_wave.root,unconfirmed,,,,,,,,,
+XIA:2:C0:S2:B:CH5,3,XIA,2,0,2,,5,1177,data/XIA/rootfile/data_C1_0002_wave.root,unconfirmed,,,,,,,,,
+XIA:2:C0:S2:B:CH6,3,XIA,2,0,2,,6,392,data/XIA/rootfile/data_C1_0002_wave.root,unconfirmed,,,,,,,,,
+XIA:3:C0:S2:B:CH0,3,XIA,3,0,2,,0,9716,data/XIA/rootfile/data_C1_0003_wave.root,unconfirmed,,,,,,,,,
+XIA:3:C0:S2:B:CH2,3,XIA,3,0,2,,2,8393,data/XIA/rootfile/data_C1_0003_wave.root,unconfirmed,,,,,,,,,
+XIA:3:C0:S2:B:CH3,3,XIA,3,0,2,,3,5788,data/XIA/rootfile/data_C1_0003_wave.root,unconfirmed,,,,,,,,,
+XIA:3:C0:S2:B:CH4,3,XIA,3,0,2,,4,5800,data/XIA/rootfile/data_C1_0003_wave.root,unconfirmed,,,,,,,,,
+XIA:3:C0:S2:B:CH5,3,XIA,3,0,2,,5,6984,data/XIA/rootfile/data_C1_0003_wave.root,unconfirmed,,,,,,,,,
+XIA:3:C0:S2:B:CH6,3,XIA,3,0,2,,6,6120,data/XIA/rootfile/data_C1_0003_wave.root,unconfirmed,,,,,,,,,

@@ -1,0 +1,15 @@
+{
+  "sample": "co60_rebuilt/events.root",
+  "source": "Co60",
+  "events": 6,
+  "seed": 271103,
+  "boundary_counts": {
+    "FresnelRefraction": 15933,
+    "FresnelReflection": 191
+  },
+  "reflection_fraction_of_legacy_hits": 0.011845695857107418,
+  "adc_matches_original_pilot_first_six": true,
+  "finding": "Legacy post-volume check counted and killed reflected photons. Corrected model records only transmitted arrivals; reflected tracks continue. Audit file intentionally demonstrates the old error and must not enter production comparisons.",
+  "excluded_stale_attempt": "co60/run.json",
+  "corrected_schema_version": 4
+}

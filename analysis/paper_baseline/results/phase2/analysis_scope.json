@@ -1,0 +1,26 @@
+{
+  "trained_runs": [
+    3,
+    12
+  ],
+  "external_check_run": 18,
+  "components": "Statistical low-score L and high-score H shape cores, not particle truth labels",
+  "uniform_comparison_support": "Same pretrigger-quality and complete 4.04 us record support for all window/method comparisons",
+  "reference_charge": "Frozen first-phase 3.04 us charge range and six bins; not recomputed to improve separation",
+  "FOM": "Gaussian core centroid separation / sum of FWHM; source-constrained exploratory model",
+  "BIC_scope": "One versus two cores for the SAME observable and SAME events; not a ranking across observables",
+  "background": "Fixed Cauchy nuisance density; it is not a measured physical background spectrum",
+  "transfer_scope": "Shape parameters frozen; source weights fitted separately on check samples. Frozen training-weight diagnostics also supplied for runs 3/12.",
+  "blindness": "All runs were explored in phase 1. Temporal splits and run18 checks are internal consistency checks, not untouched blind validation.",
+  "bootstrap": "128 draws by default, 64-event blocks, conditional on learned PCA and background density",
+  "uncomputed_claims": [
+    "alpha acceptance",
+    "gamma leakage",
+    "true component purity",
+    "keVee threshold",
+    "temperature stability",
+    "online throughput"
+  ],
+  "labels_sha256": "c1824cc1b98bd97ac9f316bbf1187ca72a5f009df1d79e677eada24b4db84f34",
+  "protocol_sha256": "c9de014eb67554783f249c9f02703f5b858a7433fe6b723a324c51a45fe65858"
+}

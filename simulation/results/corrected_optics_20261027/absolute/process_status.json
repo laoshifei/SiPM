@@ -1,0 +1,5 @@
+{
+  "status": "superseded",
+  "tool_exit_code": 143,
+  "note": "All artifacts emitted, but process did not report a successful exit. Clean rerun in ../absolute_verified returned 0 and reproduced identical numerical curves."
+}

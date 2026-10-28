@@ -1,0 +1,335 @@
+[
+  {
+    "run": 1,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_1/UNFILTERED/Hcompass_run_1_20221206_213450.root",
+    "waveform_events": 469,
+    "histogram_entries": 469,
+    "histogram_sum_including_flow": 469.0,
+    "all_bin_counts_equal": true,
+    "sum_absolute_bin_difference": 0.0
+  },
+  {
+    "run": 2,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_2/UNFILTERED/Hcompass_run_2_20221206_213501.root",
+    "waveform_events": 57,
+    "histogram_entries": 25,
+    "histogram_sum_including_flow": 25.0,
+    "all_bin_counts_equal": false,
+    "sum_absolute_bin_difference": 74.0
+  },
+  {
+    "run": 2,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_2/UNFILTERED/Hcompass_run_2_20221206_213513.root",
+    "waveform_events": 57,
+    "histogram_entries": 25,
+    "histogram_sum_including_flow": 25.0,
+    "all_bin_counts_equal": false,
+    "sum_absolute_bin_difference": 62.0
+  },
+  {
+    "run": 2,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_2/UNFILTERED/Hcompass_run_2_20221206_213531.root",
+    "waveform_events": 57,
+    "histogram_entries": 57,
+    "histogram_sum_including_flow": 57.0,
+    "all_bin_counts_equal": true,
+    "sum_absolute_bin_difference": 0.0
+  },
+  {
+    "run": 3,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_3/UNFILTERED/Hcompass_run_3_20221206_220545.root",
+    "waveform_events": 4776,
+    "histogram_entries": 4776,
+    "histogram_sum_including_flow": 4776.0,
+    "all_bin_counts_equal": true,
+    "sum_absolute_bin_difference": 0.0
+  },
+  {
+    "run": 4,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_4/UNFILTERED/Hcompass_run_4_20221206_220553.root",
+    "waveform_events": 18,
+    "histogram_entries": 18,
+    "histogram_sum_including_flow": 18.0,
+    "all_bin_counts_equal": true,
+    "sum_absolute_bin_difference": 0.0
+  },
+  {
+    "run": 5,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_5/UNFILTERED/Hcompass_run_5_20221206_220722.root",
+    "waveform_events": 66,
+    "histogram_entries": 66,
+    "histogram_sum_including_flow": 66.0,
+    "all_bin_counts_equal": true,
+    "sum_absolute_bin_difference": 0.0
+  },
+  {
+    "run": 6,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_6/UNFILTERED/Hcompass_run_6_20221206_220749.root",
+    "waveform_events": 36,
+    "histogram_entries": 36,
+    "histogram_sum_including_flow": 36.0,
+    "all_bin_counts_equal": true,
+    "sum_absolute_bin_difference": 0.0
+  },
+  {
+    "run": 7,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_7/UNFILTERED/Hcompass_run_7_20221206_223753.root",
+    "waveform_events": 4747,
+    "histogram_entries": 4747,
+    "histogram_sum_including_flow": 4747.0,
+    "all_bin_counts_equal": true,
+    "sum_absolute_bin_difference": 0.0
+  },
+  {
+    "run": 8,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_8/UNFILTERED/Hcompass_run_8_20221206_223851.root",
+    "waveform_events": 37,
+    "histogram_entries": 37,
+    "histogram_sum_including_flow": 37.0,
+    "all_bin_counts_equal": true,
+    "sum_absolute_bin_difference": 0.0
+  },
+  {
+    "run": 9,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_9/UNFILTERED/Hcompass_run_9_20221206_230842.root",
+    "waveform_events": 4700,
+    "histogram_entries": 4700,
+    "histogram_sum_including_flow": 4700.0,
+    "all_bin_counts_equal": true,
+    "sum_absolute_bin_difference": 0.0
+  },
+  {
+    "run": 10,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_10/UNFILTERED/Hcompass_run_10_20221206_233859.root",
+    "waveform_events": 4961,
+    "histogram_entries": 4961,
+    "histogram_sum_including_flow": 4961.0,
+    "all_bin_counts_equal": true,
+    "sum_absolute_bin_difference": 0.0
+  },
+  {
+    "run": 10,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_10/UNFILTERED/Hcompass_run_10_20221207_153705.root",
+    "waveform_events": 4961,
+    "histogram_entries": 865,
+    "histogram_sum_including_flow": 865.0,
+    "all_bin_counts_equal": false,
+    "sum_absolute_bin_difference": 5336.0
+  },
+  {
+    "run": 10,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_10/UNFILTERED/Hcompass_run_10_20221207_153729.root",
+    "waveform_events": 4961,
+    "histogram_entries": 1737,
+    "histogram_sum_including_flow": 1737.0,
+    "all_bin_counts_equal": false,
+    "sum_absolute_bin_difference": 6230.0
+  },
+  {
+    "run": 10,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_10/UNFILTERED/Hcompass_run_10_20221207_153805.root",
+    "waveform_events": 4961,
+    "histogram_entries": 3935,
+    "histogram_sum_including_flow": 3935.0,
+    "all_bin_counts_equal": false,
+    "sum_absolute_bin_difference": 8430.0
+  },
+  {
+    "run": 10,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_10/UNFILTERED/Hcompass_run_10_20221207_153837.root",
+    "waveform_events": 4961,
+    "histogram_entries": 4504,
+    "histogram_sum_including_flow": 4504.0,
+    "all_bin_counts_equal": false,
+    "sum_absolute_bin_difference": 8973.0
+  },
+  {
+    "run": 10,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_10/UNFILTERED/Hcompass_run_10_20221207_153849.root",
+    "waveform_events": 4961,
+    "histogram_entries": 2773,
+    "histogram_sum_including_flow": 2773.0,
+    "all_bin_counts_equal": false,
+    "sum_absolute_bin_difference": 5896.0
+  },
+  {
+    "run": 10,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_10/UNFILTERED/Hcompass_run_10_20221207_153928.root",
+    "waveform_events": 4961,
+    "histogram_entries": 6661,
+    "histogram_sum_including_flow": 6661.0,
+    "all_bin_counts_equal": false,
+    "sum_absolute_bin_difference": 10714.0
+  },
+  {
+    "run": 10,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_10/UNFILTERED/Hcompass_run_10_20221207_154020.root",
+    "waveform_events": 4961,
+    "histogram_entries": 8108,
+    "histogram_sum_including_flow": 8108.0,
+    "all_bin_counts_equal": false,
+    "sum_absolute_bin_difference": 12357.0
+  },
+  {
+    "run": 11,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_11/UNFILTERED/Hcompass_run_11_20221207_155100.root",
+    "waveform_events": 96632,
+    "histogram_entries": 96632,
+    "histogram_sum_including_flow": 96632.0,
+    "all_bin_counts_equal": true,
+    "sum_absolute_bin_difference": 0.0
+  },
+  {
+    "run": 11,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_11/UNFILTERED/Hcompass_run_11_20221207_155722.root",
+    "waveform_events": 96632,
+    "histogram_entries": 53,
+    "histogram_sum_including_flow": 53.0,
+    "all_bin_counts_equal": false,
+    "sum_absolute_bin_difference": 96591.0
+  },
+  {
+    "run": 11,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_11/UNFILTERED/Hcompass_run_11_20221207_155749.root",
+    "waveform_events": 96632,
+    "histogram_entries": 44,
+    "histogram_sum_including_flow": 44.0,
+    "all_bin_counts_equal": false,
+    "sum_absolute_bin_difference": 96590.0
+  },
+  {
+    "run": 11,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_11/UNFILTERED/Hcompass_run_11_20221207_155832.root",
+    "waveform_events": 96632,
+    "histogram_entries": 94,
+    "histogram_sum_including_flow": 94.0,
+    "all_bin_counts_equal": false,
+    "sum_absolute_bin_difference": 96560.0
+  },
+  {
+    "run": 12,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_12/UNFILTERED/Hcompass_run_12_20221207_172832.root",
+    "waveform_events": 7516,
+    "histogram_entries": 7516,
+    "histogram_sum_including_flow": 7516.0,
+    "all_bin_counts_equal": true,
+    "sum_absolute_bin_difference": 0.0
+  },
+  {
+    "run": 12,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_12/UNFILTERED/Hcompass_run_12_20221207_173252.root",
+    "waveform_events": 7516,
+    "histogram_entries": 1205,
+    "histogram_sum_including_flow": 1205.0,
+    "all_bin_counts_equal": false,
+    "sum_absolute_bin_difference": 6353.0
+  },
+  {
+    "run": 13,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_13/UNFILTERED/Hcompass_run_13_20221207_174327.root",
+    "waveform_events": 80649,
+    "histogram_entries": 80649,
+    "histogram_sum_including_flow": 80649.0,
+    "all_bin_counts_equal": true,
+    "sum_absolute_bin_difference": 0.0
+  },
+  {
+    "run": 14,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_14/UNFILTERED/Hcompass_run_14_20221207_175336.root",
+    "waveform_events": 112249,
+    "histogram_entries": 112249,
+    "histogram_sum_including_flow": 112249.0,
+    "all_bin_counts_equal": true,
+    "sum_absolute_bin_difference": 0.0
+  },
+  {
+    "run": 15,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_15/UNFILTERED/Hcompass_run_15_20221207_175401.root",
+    "waveform_events": 1697,
+    "histogram_entries": 1697,
+    "histogram_sum_including_flow": 1697.0,
+    "all_bin_counts_equal": true,
+    "sum_absolute_bin_difference": 0.0
+  },
+  {
+    "run": 16,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_16/UNFILTERED/Hcompass_run_16_20221207_175420.root",
+    "waveform_events": 1254,
+    "histogram_entries": 1254,
+    "histogram_sum_including_flow": 1254.0,
+    "all_bin_counts_equal": true,
+    "sum_absolute_bin_difference": 0.0
+  },
+  {
+    "run": 17,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_17/UNFILTERED/Hcompass_run_17_20221207_175432.root",
+    "waveform_events": 1059,
+    "histogram_entries": 1059,
+    "histogram_sum_including_flow": 1059.0,
+    "all_bin_counts_equal": true,
+    "sum_absolute_bin_difference": 0.0
+  },
+  {
+    "run": 18,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_18/UNFILTERED/Hcompass_run_18_20221207_180711.root",
+    "waveform_events": 156966,
+    "histogram_entries": 156966,
+    "histogram_sum_including_flow": 156966.0,
+    "all_bin_counts_equal": true,
+    "sum_absolute_bin_difference": 0.0
+  },
+  {
+    "run": 19,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_19/UNFILTERED/Hcompass_run_19_20221207_180715.root",
+    "waveform_events": 468,
+    "histogram_entries": 468,
+    "histogram_sum_including_flow": 468.0,
+    "all_bin_counts_equal": true,
+    "sum_absolute_bin_difference": 0.0
+  },
+  {
+    "run": 20,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_20/UNFILTERED/Hcompass_run_20_20221207_180815.root",
+    "waveform_events": 7738,
+    "histogram_entries": 7738,
+    "histogram_sum_including_flow": 7738.0,
+    "all_bin_counts_equal": true,
+    "sum_absolute_bin_difference": 0.0
+  },
+  {
+    "run": 21,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_21/UNFILTERED/Hcompass_run_21_20221207_181932.root",
+    "waveform_events": 150880,
+    "histogram_entries": 150880,
+    "histogram_sum_including_flow": 150880.0,
+    "all_bin_counts_equal": true,
+    "sum_absolute_bin_difference": 0.0
+  },
+  {
+    "run": 22,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_22/UNFILTERED/Hcompass_run_22_20221207_183015.root",
+    "waveform_events": 137298,
+    "histogram_entries": 137298,
+    "histogram_sum_including_flow": 137298.0,
+    "all_bin_counts_equal": true,
+    "sum_absolute_bin_difference": 0.0
+  },
+  {
+    "run": 24,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_24/UNFILTERED/Hcompass_run_24_20221207_191047.root",
+    "waveform_events": 6541,
+    "histogram_entries": 6541,
+    "histogram_sum_including_flow": 6541.0,
+    "all_bin_counts_equal": true,
+    "sum_absolute_bin_difference": 0.0
+  },
+  {
+    "run": 25,
+    "snapshot": "data/DT5730_DPP_PHA/DAQ/run_25/UNFILTERED/Hcompass_run_25_20221207_194115.root",
+    "waveform_events": 5703,
+    "histogram_entries": 5703,
+    "histogram_sum_including_flow": 5703.0,
+    "all_bin_counts_equal": true,
+    "sum_absolute_bin_difference": 0.0
+  }
+]

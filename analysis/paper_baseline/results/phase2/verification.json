@@ -1,0 +1,13 @@
+{
+  "phase2_tests_passed": 6,
+  "unit_checks_match_current_code": true,
+  "all_confirmed_waveforms_checked_against_phase1_charge": true,
+  "raw_files_full_sha256": "source_sha256.json",
+  "no_per_event_particle_truth_assigned": true,
+  "quality_noise_revision_preserved": [
+    "protocol_v1.json",
+    "quality_counts_v1.csv",
+    "per-event pretrigger_flag_primary_v1"
+  ],
+  "sampling_reference_scope": "2000 multinomial draws, fixed fitted model; diagnostic sampling scale only"
+}

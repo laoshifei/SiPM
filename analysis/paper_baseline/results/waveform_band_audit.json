@@ -1,0 +1,109 @@
+{
+  "charge_range_adc_samples": [
+    201824.1125,
+    418733.2
+  ],
+  "groups": [
+    {
+      "run": 3,
+      "ratio_low": 0.28,
+      "ratio_high": 0.38,
+      "candidates": 42,
+      "inspected_event_indices": [
+        171,
+        1486,
+        2929,
+        4754
+      ],
+      "hardware_flags": {
+        "0": 42
+      },
+      "tail_to_amplitude_median": 0.0789088137129794
+    },
+    {
+      "run": 3,
+      "ratio_low": 0.43,
+      "ratio_high": 0.6,
+      "candidates": 4214,
+      "inspected_event_indices": [
+        0,
+        1647,
+        3206,
+        4775
+      ],
+      "hardware_flags": {
+        "0": 4083,
+        "2048": 3,
+        "32768": 127,
+        "34816": 1
+      },
+      "tail_to_amplitude_median": 0.014115301521139722
+    },
+    {
+      "run": 12,
+      "ratio_low": 0.28,
+      "ratio_high": 0.38,
+      "candidates": 2721,
+      "inspected_event_indices": [
+        0,
+        2498,
+        5004,
+        7509
+      ],
+      "hardware_flags": {
+        "0": 2576,
+        "2048": 6,
+        "32768": 138,
+        "34816": 1
+      },
+      "tail_to_amplitude_median": 0.07534021970814887
+    },
+    {
+      "run": 12,
+      "ratio_low": 0.43,
+      "ratio_high": 0.6,
+      "candidates": 0,
+      "inspected_event_indices": [],
+      "hardware_flags": {},
+      "tail_to_amplitude_median": null
+    },
+    {
+      "run": 18,
+      "ratio_low": 0.28,
+      "ratio_high": 0.38,
+      "candidates": 108177,
+      "inspected_event_indices": [
+        1,
+        52233,
+        104445,
+        156965
+      ],
+      "hardware_flags": {
+        "0": 107996,
+        "512": 3,
+        "2048": 103,
+        "32768": 75
+      },
+      "tail_to_amplitude_median": 0.07638748738647831
+    },
+    {
+      "run": 18,
+      "ratio_low": 0.43,
+      "ratio_high": 0.6,
+      "candidates": 13,
+      "inspected_event_indices": [
+        8681,
+        79618,
+        102064,
+        152826
+      ],
+      "hardware_flags": {
+        "0": 13
+      },
+      "tail_to_amplitude_median": -0.09301330071854456
+    }
+  ],
+  "example_rule": "At most four equally spaced positions in the time-ordered candidate list",
+  "scope": "Exploratory PSD bands for raw waveform inspection only; not truth labels or a validated selection",
+  "raw_waveforms_inspected": 20
+}

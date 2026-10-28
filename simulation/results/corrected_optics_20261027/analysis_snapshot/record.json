@@ -1,0 +1,15 @@
+{
+  "files_sha256": {
+    "simulation/run.py": "b4c3337b56d3101b7bab18cfac65a8e34cadde371dd67e70016c9051d17a8c4b",
+    "simulation/reference.py": "fe7ebd20af44ffc2ade2b758dd8fa6bde1d269cc8cb02e7a37bd591d4fe0d1bb",
+    "simulation/calibrate.py": "b169edf40d01018e622332b541c0d4f111df27ec531bbf30d22fde50cf0ecb43",
+    "simulation/compare.py": "96c4e4ba3b0a89439d5745fed9cb4feaad06040f885eb422da94028f7aef7f6b",
+    "simulation/compare_absolute.py": "81521726dab12744b486e41a9a4f5c31959437ca2d3370ffaf73a298dabc8a02",
+    "simulation/diagnose_origin.py": "e2c109affc56e1f2e6064520fc08983878b6f57a45ed73ae98dcc2cf0e9330ed",
+    "simulation/inspect_geometry.py": "5b26de0553b4fbcf296596d19d37e2b1d3288beb1f5033bae69d9327a59dc8c9",
+    "simulation/validate.py": "9307aad31a05d089785e6961acd43ab848ae6ee97399441bfc320cf371493de8",
+    "simulation/tests/test_workflow.py": "6ae6089b3f19bd152013333ceb5e6d9a62ab27271722a1f238b1253fb7dd027b",
+    "analysis/paper_baseline/prepare.py": "9ebe888c46f8964ecea7141f1c3da5095a0d5546bacb87d77e9874a156fab9c9",
+    "analysis/paper_baseline/refine_waveforms.py": "2c4e7e4be126df0fec83cc2eedb093eca1fa95833bcad27a7b0c6c5289781941"
+  }
+}

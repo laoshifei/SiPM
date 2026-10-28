@@ -1,0 +1,4 @@
+# Regenerable event-level arrays remain available locally.
+results/*.npz
+results/**/*.npz
+__pycache__/

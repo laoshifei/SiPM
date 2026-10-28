@@ -1,0 +1,231 @@
+{
+  "python": "3.13.5",
+  "numpy": "2.2.4",
+  "ROOT": "6.34.10",
+  "source_file_stats": [
+    {
+      "path": "data/DT5730_DPP_PHA/DAQ/run_1/UNFILTERED/Data_run_1.BIN",
+      "bytes": 2352037,
+      "mtime_ns": 1670304890000000000
+    },
+    {
+      "path": "data/DT5730_DPP_PHA/DAQ/run_2/UNFILTERED/Data_run_2.BIN",
+      "bytes": 285857,
+      "mtime_ns": 1670304930000000000
+    },
+    {
+      "path": "data/DT5730_DPP_PHA/DAQ/run_3/UNFILTERED/Data_run_3.BIN",
+      "bytes": 23951642,
+      "mtime_ns": 1670306744000000000
+    },
+    {
+      "path": "data/DT5730_DPP_PHA/DAQ/run_4/UNFILTERED/Data_run_4.BIN",
+      "bytes": 90272,
+      "mtime_ns": 1670306752000000000
+    },
+    {
+      "path": "data/DT5730_DPP_PHA/DAQ/run_5/UNFILTERED/Data_run_5.BIN",
+      "bytes": 330992,
+      "mtime_ns": 1670306842000000000
+    },
+    {
+      "path": "data/DT5730_DPP_PHA/DAQ/run_6/UNFILTERED/Data_run_6.BIN",
+      "bytes": 180542,
+      "mtime_ns": 1670306868000000000
+    },
+    {
+      "path": "data/DT5730_DPP_PHA/DAQ/run_7/UNFILTERED/Data_run_7.BIN",
+      "bytes": 23806207,
+      "mtime_ns": 1670308672000000000
+    },
+    {
+      "path": "data/DT5730_DPP_PHA/DAQ/run_8/UNFILTERED/Data_run_8.BIN",
+      "bytes": 185557,
+      "mtime_ns": 1670308730000000000
+    },
+    {
+      "path": "data/DT5730_DPP_PHA/DAQ/run_9/UNFILTERED/Data_run_9.BIN",
+      "bytes": 23570502,
+      "mtime_ns": 1670310522000000000
+    },
+    {
+      "path": "data/DT5730_DPP_PHA/DAQ/run_10/UNFILTERED/Data_run_10.BIN",
+      "bytes": 24879417,
+      "mtime_ns": 1670312338000000000
+    },
+    {
+      "path": "data/DT5730_DPP_PHA/DAQ/run_11/UNFILTERED/Data_run_11.BIN",
+      "bytes": 484609482,
+      "mtime_ns": 1670370660000000000
+    },
+    {
+      "path": "data/DT5730_DPP_PHA/DAQ/run_12/UNFILTERED/Data_run_12.BIN",
+      "bytes": 37692742,
+      "mtime_ns": 1670376512000000000
+    },
+    {
+      "path": "data/DT5730_DPP_PHA/DAQ/run_13/UNFILTERED/Data_run_13.BIN",
+      "bytes": 404454737,
+      "mtime_ns": 1670377406000000000
+    },
+    {
+      "path": "data/DT5730_DPP_PHA/DAQ/run_14/UNFILTERED/Data_run_14.BIN",
+      "bytes": 562928737,
+      "mtime_ns": 1670378016000000000
+    },
+    {
+      "path": "data/DT5730_DPP_PHA/DAQ/run_15/UNFILTERED/Data_run_15.BIN",
+      "bytes": 8510457,
+      "mtime_ns": 1670378040000000000
+    },
+    {
+      "path": "data/DT5730_DPP_PHA/DAQ/run_16/UNFILTERED/Data_run_16.BIN",
+      "bytes": 6288812,
+      "mtime_ns": 1670378060000000000
+    },
+    {
+      "path": "data/DT5730_DPP_PHA/DAQ/run_17/UNFILTERED/Data_run_17.BIN",
+      "bytes": 5310887,
+      "mtime_ns": 1670378072000000000
+    },
+    {
+      "path": "data/DT5730_DPP_PHA/DAQ/run_18/UNFILTERED/Data_run_18.BIN",
+      "bytes": 787184492,
+      "mtime_ns": 1670378830000000000
+    },
+    {
+      "path": "data/DT5730_DPP_PHA/DAQ/run_19/UNFILTERED/Data_run_19.BIN",
+      "bytes": 2347022,
+      "mtime_ns": 1670378834000000000
+    },
+    {
+      "path": "data/DT5730_DPP_PHA/DAQ/run_20/UNFILTERED/Data_run_20.BIN",
+      "bytes": 38806072,
+      "mtime_ns": 1670378894000000000
+    },
+    {
+      "path": "data/DT5730_DPP_PHA/DAQ/run_21/UNFILTERED/Data_run_21.BIN",
+      "bytes": 756663202,
+      "mtime_ns": 1670379572000000000
+    },
+    {
+      "path": "data/DT5730_DPP_PHA/DAQ/run_22/UNFILTERED/Data_run_22.BIN",
+      "bytes": 688549472,
+      "mtime_ns": 1670380214000000000
+    },
+    {
+      "path": "data/DT5730_DPP_PHA/DAQ/run_23/UNFILTERED/Data_run_23.BIN",
+      "bytes": 2,
+      "mtime_ns": 1670380534000000000
+    },
+    {
+      "path": "data/DT5730_DPP_PHA/DAQ/run_24/UNFILTERED/Data_run_24.BIN",
+      "bytes": 32803117,
+      "mtime_ns": 1670382646000000000
+    },
+    {
+      "path": "data/DT5730_DPP_PHA/DAQ/run_25/UNFILTERED/Data_run_25.BIN",
+      "bytes": 28600547,
+      "mtime_ns": 1670384474000000000
+    },
+    {
+      "path": "data/DT5730_DPP_PSD/DAQ/run_1/UNFILTERED/Data_run_1.root",
+      "bytes": 9430392,
+      "mtime_ns": 1670387130000000000
+    },
+    {
+      "path": "data/DT5730_DPP_PSD/DAQ/run_2/UNFILTERED/Data_run_2.root",
+      "bytes": 10358234,
+      "mtime_ns": 1670387574000000000
+    },
+    {
+      "path": "data/DT5730_DPP_PSD/DAQ/run_3/UNFILTERED/Data_run_3.root",
+      "bytes": 6741857,
+      "mtime_ns": 1670387596000000000
+    },
+    {
+      "path": "data/DT5730_DPP_PSD/DAQ/run_4/UNFILTERED/Data_run_4.root",
+      "bytes": 1233525,
+      "mtime_ns": 1670387622000000000
+    },
+    {
+      "path": "data/DT5730_DPP_PSD/DAQ/run_5/UNFILTERED/Data_run_5.root",
+      "bytes": 528175112,
+      "mtime_ns": 1670388192000000000
+    },
+    {
+      "path": "DT5720_DPP_PSD/raw2root/run0006.root",
+      "bytes": 524719439,
+      "mtime_ns": 1679023924000000000
+    },
+    {
+      "path": "DT5720_DPP_PSD/raw2root/run0021.root",
+      "bytes": 34871572,
+      "mtime_ns": 1679023932000000000
+    },
+    {
+      "path": "DT5720_DPP_PSD/raw2root/run0028.root",
+      "bytes": 613992422,
+      "mtime_ns": 1681461246000000000
+    },
+    {
+      "path": "DT5720_DPP_PSD/raw2root/run0030.root",
+      "bytes": 632467964,
+      "mtime_ns": 1681461252000000000
+    },
+    {
+      "path": "DT5720_DPP_PSD/raw2root/run0031.root",
+      "bytes": 632449476,
+      "mtime_ns": 1681461500000000000
+    },
+    {
+      "path": "DT5720_DPP_PSD/raw2root/run0032.root",
+      "bytes": 660488420,
+      "mtime_ns": 1681461518000000000
+    },
+    {
+      "path": "DT5720_DPP_PSD/raw2root/run0033.root",
+      "bytes": 829094470,
+      "mtime_ns": 1681461782000000000
+    },
+    {
+      "path": "DT5720_DPP_PSD/raw2root/run0035.root",
+      "bytes": 78978381,
+      "mtime_ns": 1681461550000000000
+    },
+    {
+      "path": "DT5720_DPP_PSD/raw2root/run0036.root",
+      "bytes": 85612378,
+      "mtime_ns": 1681461586000000000
+    },
+    {
+      "path": "DT5720_DPP_PSD/raw2root/run0037.root",
+      "bytes": 110153848,
+      "mtime_ns": 1681461630000000000
+    },
+    {
+      "path": "DT5720_DPP_PSD/raw2root/run0038.root",
+      "bytes": 136022717,
+      "mtime_ns": 1681461684000000000
+    },
+    {
+      "path": "DT5720_DPP_PSD/raw2root/run0039.root",
+      "bytes": 117110113,
+      "mtime_ns": 1681461732000000000
+    },
+    {
+      "path": "data/XIA/rootfile/data_C1_0002_wave.root",
+      "bytes": 1982135207,
+      "mtime_ns": 1683352498000000000
+    },
+    {
+      "path": "data/XIA/rootfile/data_C1_0003_wave.root",
+      "bytes": 71137645,
+      "mtime_ns": 1683352504000000000
+    }
+  ],
+  "source_fingerprint_scope": "Paths, sizes and mtimes; not full-file cryptographic hashes.",
+  "source_data_modified": false,
+  "run_info_duration_policy": "Do not infer exposure/rates from a reused run's latest run.info.",
+  "histogram_association_scope": "All hardware-energy bin contents, including underflow and overflow; no absolute waveform timestamps inferred."
+}

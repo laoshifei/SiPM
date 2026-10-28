@@ -1,0 +1,31 @@
+
+**************************************************************
+ Geant4 version Name: geant4-11-04-patch-02 [MT]   (12-June-2026)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+Checking overlaps for volume CsI:0 (G4Box) ... OK! 
+Checking overlaps for volume SourceExitFoil:0 (G4Box) ... OK! 
+Checking overlaps for volume Mylar:0 (G4Box) ... OK! 
+Checking overlaps for volume Grease:0 (G4Box) ... OK! 
+Checking overlaps for volume Sensor:0 (G4Box) ... OK! 
+Checking overlaps for volume PTFE:0 (G4Box) ... OK! 
+Checking overlaps for volume PTFE:1 (G4Box) ... OK! 
+Checking overlaps for volume PTFE:2 (G4Box) ... OK! 
+Checking overlaps for volume PTFE:3 (G4Box) ... OK! 
+### Birks coefficients used in run time
+Running geometry overlaps check...
+Checking overlaps for volume CsI:0 (G4Box) ... OK! 
+Checking overlaps for volume SourceExitFoil:0 (G4Box) ... OK! 
+Checking overlaps for volume Mylar:0 (G4Box) ... OK! 
+Checking overlaps for volume Grease:0 (G4Box) ... OK! 
+Checking overlaps for volume Sensor:0 (G4Box) ... OK! 
+Checking overlaps for volume PTFE:0 (G4Box) ... OK! 
+Checking overlaps for volume PTFE:1 (G4Box) ... OK! 
+Checking overlaps for volume PTFE:2 (G4Box) ... OK! 
+Checking overlaps for volume PTFE:3 (G4Box) ... OK! 
+Geometry overlaps check completed !

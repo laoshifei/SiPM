@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "source": "Am241",
+  "events": 1000,
+  "zero_deposit_events": 697,
+  "deposited_events": 303,
+  "alpha_deposit_events": 161,
+  "alpha_deposit_median_MeV": 3.743493653791763,
+  "energy_deposit_p05_p50_p95_MeV": [
+    0.004844704290916899,
+    3.783379798203738,
+    4.404129372905482
+  ],
+  "decay_product_counts": {
+    "1000932371": 996,
+    "1000020040": 1000,
+    "1000932370": 1000,
+    "11": 12288,
+    "22": 839,
+    "1000932379": 376
+  },
+  "max_relative_charge_balance_error": 0.0,
+  "prompt_gamma_lines_counts": {
+    "0.05954": 363,
+    "1.17323": 0,
+    "1.33249": 0
+  },
+  "scope": "Numerical and source-physics checks, not validation against experimental waveform",
+  "source_gap_mm": 5.0,
+  "transport_only": true,
+  "run_folder": "simulation/results/distance_scan/Am241_5mm",
+  "alpha_deposit_fraction": 0.161,
+  "alpha_deposit_fraction_wilson95": [
+    0.13952453255948763,
+    0.18507000969371865
+  ]
+}

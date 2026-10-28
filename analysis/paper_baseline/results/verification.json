@@ -1,0 +1,17 @@
+{
+  "parser_feature_and_provenance_tests_passed": 6,
+  "raw_root_parity": {
+    "run": 3,
+    "channel": 0,
+    "entries": 4776,
+    "event_indices": [
+      0,
+      2388,
+      4775
+    ],
+    "all_samples_equal": true,
+    "scope": "Three complete waveforms and their stored scalar fields"
+  },
+  "raw_path": "data/DT5730_DPP_PHA/DAQ/run_3/UNFILTERED/Data_run_3.BIN",
+  "root_path": "DT5730_DPP_PHA/raw2root/run0003.root"
+}

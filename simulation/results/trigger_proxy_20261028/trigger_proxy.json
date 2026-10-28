@@ -1,0 +1,37 @@
+{
+  "scope": "Check a declared FIR timing proxy against recorded training pulses.\n\nThis does not implement or validate CAEN firmware: decimation, integer arithmetic,\narming/zero crossing, baseline recovery and dead time are not reproduced.\n",
+  "formula": "4-sample causal moving average, followed by y[n]-2*y[n-48]+y[n-96]; 2 ns ADC samples",
+  "setting_status": "Current settings use 96 ns TTF delay and smoothing 4; equivalence of this FIR to the actual firmware and configuration-to-BIN association are unconfirmed.",
+  "interpretation": "Fractions below nominal thresholds demonstrate that this proxy cannot simply be assumed to reproduce all recorded triggers. They are not trigger inefficiencies.",
+  "script_sha256": "523e3dfc76cdd40ed7e9252a7d6b879d95ed47bc01fa10cff438d0d055e33e5f",
+  "runs": [
+    {
+      "run": 3,
+      "n": 2862,
+      "nominal_threshold_adc": 120.0,
+      "peak_p01_p10_p50_p90_adc": [
+        133.5,
+        420.55,
+        618.25,
+        724.0
+      ],
+      "recorded_fraction_below_nominal_threshold": 0.0034940600978336828,
+      "input_sha256": "2afbb146fb8b79a7b133672b60cc6fffffa3b0e42b51f4ebb4f8e3b719676581",
+      "phase_sha256": "3d488ac67fa99fc61c7b54e015196a8672c35d4a315331c891261a2eaac2bd18"
+    },
+    {
+      "run": 12,
+      "n": 4462,
+      "nominal_threshold_adc": 160.0,
+      "peak_p01_p10_p50_p90_adc": [
+        144.305,
+        160.0,
+        210.5,
+        532.0
+      ],
+      "recorded_fraction_below_nominal_threshold": 0.09614522635589422,
+      "input_sha256": "aa778158a28560a2929b76038468e33875cd3a043ad80262661cd177f4e0044f",
+      "phase_sha256": "02e1cf961958d4075aacfeed398f1fa089881b90854e03efafdfaacddfe824ce"
+    }
+  ]
+}

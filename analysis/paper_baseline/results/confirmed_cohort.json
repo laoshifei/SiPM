@@ -1,0 +1,31 @@
+{
+  "included_pha_runs": [
+    3,
+    7,
+    10,
+    11,
+    12,
+    13,
+    14,
+    18
+  ],
+  "matched_bias_runs": [
+    3,
+    12,
+    18
+  ],
+  "bias_voltage_V": 53.2,
+  "common_charge_range_adc_samples": [
+    201824.1125,
+    418733.2
+  ],
+  "overlap_rule": "Intersection of per-run 5th-95th charge percentiles after pilot diagnostic flags == 0",
+  "binning": "Six equal charge bins within that intersection; no PSD optimization",
+  "particle_label_policy": "Source identity only; 241Am alpha/gamma mixture and source/background contamination retained",
+  "event_counts_in_common_range": {
+    "3": 4257,
+    "12": 2741,
+    "18": 108352
+  },
+  "performance_claim": "No alpha efficiency, gamma leakage, energy threshold, FOM or independent run validation claimed"
+}

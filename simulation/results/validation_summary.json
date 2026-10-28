@@ -1,0 +1,85 @@
+{
+  "date_utc": "2026-10-27T09:52:10Z",
+  "build": "passed; Geant4 11.4.2 / ROOT 6.34.10",
+  "tests": {
+    "vendor_cases": 14,
+    "workflow_cases": 4,
+    "passed": true,
+    "seed_replay": "6 Co events reproduce each other and saved pilot bit-for-bit in ADC, photons, avalanches and decay PDG"
+  },
+  "physics_checks": {
+    "optical_co60": {
+      "passed": true,
+      "source": "Co60",
+      "events": 400,
+      "zero_deposit_events": 241,
+      "deposited_events": 159,
+      "alpha_deposit_events": 0,
+      "alpha_deposit_median_MeV": null,
+      "energy_deposit_p05_p50_p95_MeV": [
+        0.002171013032196487,
+        0.06928756333054074,
+        0.8284475597618147
+      ],
+      "decay_product_counts": {
+        "1000280609": 800,
+        "-12": 400,
+        "11": 439,
+        "22": 800,
+        "1000280600": 400
+      },
+      "max_relative_charge_balance_error": 1.5350330082135732e-13,
+      "prompt_gamma_lines_counts": {
+        "0.05954": 0,
+        "1.17323": 400,
+        "1.33249": 400
+      },
+      "scope": "Numerical and source-physics checks, not validation against experimental waveform",
+      "source_gap_mm": 1.0,
+      "transport_only": false
+    },
+    "optical_am241": {
+      "passed": true,
+      "source": "Am241",
+      "events": 240,
+      "zero_deposit_events": 79,
+      "deposited_events": 161,
+      "alpha_deposit_events": 102,
+      "alpha_deposit_median_MeV": 3.8978814528456116,
+      "energy_deposit_p05_p50_p95_MeV": [
+        0.0033060772754366064,
+        3.5749232745972486,
+        4.8194878452392995
+      ],
+      "decay_product_counts": {
+        "1000932371": 239,
+        "1000020040": 240,
+        "1000932370": 240,
+        "11": 2929,
+        "22": 201,
+        "1000932379": 94
+      },
+      "max_relative_charge_balance_error": 1.993765157255319e-13,
+      "prompt_gamma_lines_counts": {
+        "0.05954": 84,
+        "1.17323": 0,
+        "1.33249": 0
+      },
+      "scope": "Numerical and source-physics checks, not validation against experimental waveform",
+      "source_gap_mm": 1.0,
+      "transport_only": false
+    }
+  },
+  "distance_scan_events": 6000,
+  "final_source_sha256": {
+    "main.cc": "5b171e08b9374322830a1527cb4151527de58f4558922f6b7fc5dd89fc6b4a7f",
+    "compare.py": "84122b3677ec85634224d05f97493fabde95187e7351af00b7555208c21cb974",
+    "run.py": "2512976bd02e3cef4e28a2fcb6e5620aa0ae0ee9d6b5f32c4c88637f5880c376",
+    "scan_distance.py": "9453b1b4c48e6f58107ee8289a489b4c833da40bb40765e11a7bf321eb377daa",
+    "validate.py": "e06e96b82013d7c8f9f000926f1c98428eb62ea251a9ffb132e213ca15106bfc",
+    "tests/test_workflow.py": "ec7a32b798ecfdf826e8e8070f759f766e2b4219c5ca691d3a0fa114b9080ca3",
+    "build/csi_sources": "e8da167c0b0b56e0f1dbab29c1ab0472377fda585e9e38b117a0de32ea82306f"
+  },
+  "scope": "Numerical checks passed. Normalized mean agreement is conditional and low-statistics; charge spectra not validated.",
+  "source_revision_note": "Pilot transport predates IO-only streaming/log flush and cell-map validation changes. Exact saved-event replay after those changes passed; original run hashes retained."
+}

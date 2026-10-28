@@ -1,0 +1,82 @@
+{
+  "normalization": "Each event divided by aligned integral [-40,3000) ns; units 1/ns",
+  "selection": "Existing phase2 eligible_primary and frozen common charge; deterministic evenly spaced sample up to 1200 per group",
+  "particle_labels": "Source names only; dominant Am shape is not per-event alpha truth",
+  "groups": {
+    "run3_train": {
+      "source": "Co60",
+      "n_available": 2529,
+      "n_used": 1200,
+      "baseline_adc": 3037.015625,
+      "baseline_rms_adc": 3.3621536469161435,
+      "charge_adc_samples_median": 356873.375,
+      "ratio_median": 0.4658597367767112,
+      "role": "calibration"
+    },
+    "run3_middle": {
+      "source": "Co60",
+      "n_available": 879,
+      "n_used": 879,
+      "baseline_adc": 3036.65625,
+      "baseline_rms_adc": 3.3305815464420023,
+      "charge_adc_samples_median": 353361.25,
+      "ratio_median": 0.4652091705648763,
+      "role": "previously explored check"
+    },
+    "run3_late": {
+      "source": "Co60",
+      "n_available": 849,
+      "n_used": 849,
+      "baseline_adc": 3036.796875,
+      "baseline_rms_adc": 3.3124631483799183,
+      "charge_adc_samples_median": 349011.75,
+      "ratio_median": 0.4653247679352987,
+      "role": "previously explored check"
+    },
+    "run12_train": {
+      "source": "Am241",
+      "n_available": 1624,
+      "n_used": 1200,
+      "baseline_adc": 3042.5,
+      "baseline_rms_adc": 3.169661327226728,
+      "charge_adc_samples_median": 256836.25,
+      "ratio_median": 0.32270590386138515,
+      "role": "calibration"
+    },
+    "run12_middle": {
+      "source": "Am241",
+      "n_available": 495,
+      "n_used": 495,
+      "baseline_adc": 3062.28125,
+      "baseline_rms_adc": 4.43254564979313,
+      "charge_adc_samples_median": 256023.5,
+      "ratio_median": 0.32379287386532757,
+      "role": "previously explored check"
+    },
+    "run12_late": {
+      "source": "Am241",
+      "n_available": 430,
+      "n_used": 430,
+      "baseline_adc": 3069.171875,
+      "baseline_rms_adc": 5.683674904968383,
+      "charge_adc_samples_median": 259709.5,
+      "ratio_median": 0.32491784183908157,
+      "role": "previously explored check"
+    },
+    "run18_check": {
+      "source": "Am241",
+      "n_available": 108276,
+      "n_used": 1200,
+      "baseline_adc": 3057.1484375,
+      "baseline_rms_adc": 4.950030722190666,
+      "charge_adc_samples_median": 316600.75,
+      "ratio_median": 0.3232206456290503,
+      "role": "previously explored check"
+    }
+  },
+  "inputs_sha256": {
+    "data/DT5730_DPP_PHA/DAQ/run_3/UNFILTERED/Data_run_3.BIN": "2afbb146fb8b79a7b133672b60cc6fffffa3b0e42b51f4ebb4f8e3b719676581",
+    "data/DT5730_DPP_PHA/DAQ/run_12/UNFILTERED/Data_run_12.BIN": "aa778158a28560a2929b76038468e33875cd3a043ad80262661cd177f4e0044f",
+    "data/DT5730_DPP_PHA/DAQ/run_18/UNFILTERED/Data_run_18.BIN": "400fde218588655a76476bd243c75588900bb2a9552fe0fd7b97e17a3bbada5a"
+  }
+}

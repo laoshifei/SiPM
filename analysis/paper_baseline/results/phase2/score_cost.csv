@@ -1,0 +1,13 @@
+﻿configuration,input_window_samples,pca_blocks,elapsed_score_seconds,events_scored,scope
+qdc_1000ns,520,0,0.0013792370000373921,169258,"One NumPy score pass after feature extraction; excludes I/O, preprocessing and training; not online throughput"
+negative_mean_time_1000ns,520,0,0.0008361059999515419,169258,"One NumPy score pass after feature extraction; excludes I/O, preprocessing and training; not online throughput"
+pca_projection_1000ns,520,26,0.06303371099966171,169258,"One NumPy score pass after feature extraction; excludes I/O, preprocessing and training; not online throughput"
+qdc_2000ns,1020,0,0.00153905300066981,169258,"One NumPy score pass after feature extraction; excludes I/O, preprocessing and training; not online throughput"
+negative_mean_time_2000ns,1020,0,0.00027546900037123123,169258,"One NumPy score pass after feature extraction; excludes I/O, preprocessing and training; not online throughput"
+pca_projection_2000ns,1020,51,0.07960254499994335,169258,"One NumPy score pass after feature extraction; excludes I/O, preprocessing and training; not online throughput"
+qdc_3000ns,1520,0,0.0009105469998758053,169258,"One NumPy score pass after feature extraction; excludes I/O, preprocessing and training; not online throughput"
+negative_mean_time_3000ns,1520,0,0.0002516900003683986,169258,"One NumPy score pass after feature extraction; excludes I/O, preprocessing and training; not online throughput"
+pca_projection_3000ns,1520,76,0.18444187600016448,169258,"One NumPy score pass after feature extraction; excludes I/O, preprocessing and training; not online throughput"
+qdc_4000ns,2020,0,0.0009944420007741428,169258,"One NumPy score pass after feature extraction; excludes I/O, preprocessing and training; not online throughput"
+negative_mean_time_4000ns,2020,0,0.0004121669999221922,169258,"One NumPy score pass after feature extraction; excludes I/O, preprocessing and training; not online throughput"
+pca_projection_4000ns,2020,101,0.34037402200010547,169258,"One NumPy score pass after feature extraction; excludes I/O, preprocessing and training; not online throughput"

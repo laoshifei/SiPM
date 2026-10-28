@@ -1,0 +1,90 @@
+[
+  {
+    "run": 3,
+    "candidate_event_index": 779,
+    "fraction": 0.163107202680067,
+    "timestamp_raw_uint64": 278602488056000,
+    "rms_median_before": 3.4901857378046515,
+    "rms_median_after": 3.314268395890713,
+    "after_over_before": 0.949596567309168,
+    "relative_log_rms_SSE_reduction": 0.00963392883174262,
+    "scope": "Best one-change description of log baseline RMS, excluding edge 10%; exploratory, always returns a candidate, no significance or physical cause claimed"
+  },
+  {
+    "run": 7,
+    "candidate_event_index": 486,
+    "fraction": 0.10238045081103855,
+    "timestamp_raw_uint64": 174801539532000,
+    "rms_median_before": 3.815412563602676,
+    "rms_median_after": 3.612552713715746,
+    "after_over_before": 0.9468314771980043,
+    "relative_log_rms_SSE_reduction": 0.017940211634292363,
+    "scope": "Best one-change description of log baseline RMS, excluding edge 10%; exploratory, always returns a candidate, no significance or physical cause claimed"
+  },
+  {
+    "run": 10,
+    "candidate_event_index": 505,
+    "fraction": 0.10179399314654304,
+    "timestamp_raw_uint64": 166789792500000,
+    "rms_median_before": 5.886603401739835,
+    "rms_median_after": 4.684777742363578,
+    "after_over_before": 0.7958371615419093,
+    "relative_log_rms_SSE_reduction": 0.06452060659954394,
+    "scope": "Best one-change description of log baseline RMS, excluding edge 10%; exploratory, always returns a candidate, no significance or physical cause claimed"
+  },
+  {
+    "run": 11,
+    "candidate_event_index": 28160,
+    "fraction": 0.2914148522228661,
+    "timestamp_raw_uint64": 175345027126000,
+    "rms_median_before": 3.3819373146171707,
+    "rms_median_after": 3.8228279657291173,
+    "after_over_before": 1.1303662989867849,
+    "relative_log_rms_SSE_reduction": 0.09555097015597674,
+    "scope": "Best one-change description of log baseline RMS, excluding edge 10%; exploratory, always returns a candidate, no significance or physical cause claimed"
+  },
+  {
+    "run": 12,
+    "candidate_event_index": 5029,
+    "fraction": 0.6691059073975519,
+    "timestamp_raw_uint64": 3532637917436000,
+    "rms_median_before": 3.1719904535638186,
+    "rms_median_after": 5.860020797744664,
+    "after_over_before": 1.8474269968753434,
+    "relative_log_rms_SSE_reduction": 0.5388991514430514,
+    "scope": "Best one-change description of log baseline RMS, excluding edge 10%; exploratory, always returns a candidate, no significance or physical cause claimed"
+  },
+  {
+    "run": 13,
+    "candidate_event_index": 23811,
+    "fraction": 0.2952423464643083,
+    "timestamp_raw_uint64": 185724978436000,
+    "rms_median_before": 4.255396390173305,
+    "rms_median_after": 4.19635258289863,
+    "after_over_before": 0.986124957145938,
+    "relative_log_rms_SSE_reduction": 0.00025462550520576304,
+    "scope": "Best one-change description of log baseline RMS, excluding edge 10%; exploratory, always returns a candidate, no significance or physical cause claimed"
+  },
+  {
+    "run": 14,
+    "candidate_event_index": 16051,
+    "fraction": 0.14299459237944212,
+    "timestamp_raw_uint64": 81892867298000,
+    "rms_median_before": 4.64512092818906,
+    "rms_median_after": 4.726917600297259,
+    "after_over_before": 1.0176091588082914,
+    "relative_log_rms_SSE_reduction": 0.0005133928706228347,
+    "scope": "Best one-change description of log baseline RMS, excluding edge 10%; exploratory, always returns a candidate, no significance or physical cause claimed"
+  },
+  {
+    "run": 18,
+    "candidate_event_index": 36978,
+    "fraction": 0.23557967967585336,
+    "timestamp_raw_uint64": 178902227980000,
+    "rms_median_before": 4.925296428850427,
+    "rms_median_after": 4.949352861738593,
+    "after_over_before": 1.004884260924328,
+    "relative_log_rms_SSE_reduction": 0.0002471077259387237,
+    "scope": "Best one-change description of log baseline RMS, excluding edge 10%; exploratory, always returns a candidate, no significance or physical cause claimed"
+  }
+]

@@ -1,0 +1,1793 @@
+{
+  "scope": "Pilot full optical transport + SiPM ADC, with mean-shape parameters frozen from training. No source-specific amplitude rescaling.",
+  "selection": "MC basic QC, primary pretrigger veto, full 3 us integral and aligned [-200,3800] ns support; common Q uses frozen measured interval. Measured reference additionally required 4 us support. No ratio cut or MC truth cut for primary comparison.",
+  "uncertainties": "Finite MC sample; no calibrated source capsule, absolute gain/light yield/PDE, or hardware trigger. Event distribution agreement is not established by mean-shape agreement.",
+  "mc": {
+    "Co60": {
+      "source": "Co60",
+      "files": [
+        "simulation/results/optical_co60/events.root"
+      ],
+      "file_sha256": {
+        "simulation/results/optical_co60/events.root": "7bf9a3308dc2950203e025713aeeb39bb3895c1c587024b8eeb83b9b237d9ff3"
+      },
+      "config": {
+        "acquisition": {
+          "amplitude_threshold_adc": 120.0,
+          "pretrigger_ns": 1000.0,
+          "sample_period_ns": 2.0,
+          "samples": 2496
+        },
+        "evidence": {
+          "assumptions": [
+            "4x4 array and all 16 summed channels are an explicit initial hypothesis, not confirmed wiring.",
+            "50 ohm effective load, 3 V overvoltage and 29 ns recovery are placeholders; 53.2 V bias is NOT converted using typical breakdown voltage.",
+            "Constant PDE 0.30 and disabled dark/XT/AP are uncalibrated switches; zero does not mean absent in device.",
+            "Lowpass 256 ns = 50 ohm * 16 * 320 pF only if directly parallel; alternative summing networks require calibration.",
+            "Gamma decay times 679/3340 ns and approximate integrated fractions are literature starting values, not this crystal measurements; alpha fraction, light yield, spectrum, optics are hypotheses.",
+            "Source is a point in air; encapsulation and source active layer unspecified.",
+            "Microcells are uniformly mapped to 3584 effective cells/channel; exact masked-cell layout and electronic inter-channel coupling not represented."
+          ],
+          "confirmed": "User 2026-10-27: 10 mm cube CsI(Tl), external PTFE tape, 5 um front Mylar, S13361-3050 series, multiple summed channels, no preamplifier; source distance unknown and authorized to scan.",
+          "fit_policy": "Shared tau_fast/tau_slow and passive RC; separate source-dominant fractions. Am-dominant -> alpha is a testable hypothesis, not truth. No source distance was fitted. No preamplifier added.",
+          "links": {
+            "gamma_times_note": "/media/sf_works/papers/sources/1993_Valentine_NIMA_Temperature-dependence-of-CsI(Tl)-gamma-ray-excited-scintillation-characteristics.md",
+            "sensor_datasheet": "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/s13361-3050_series_kapd1054e.pdf"
+          }
+        },
+        "geometry": {
+          "array_nx": 4,
+          "array_ny": 4,
+          "channel_active_mm": 3.0,
+          "channel_pitch_mm": 3.2,
+          "crystal_mm": [
+            10.0,
+            10.0,
+            10.0
+          ],
+          "grease_mm": 0.1,
+          "material": "CsI(Tl)",
+          "mylar_um": 5.0,
+          "ptfe_side_mm": 0.1,
+          "source_gap_mm": 1.0,
+          "source_radius_mm": 0.0,
+          "summed_channels": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "world_material": "G4_AIR"
+        },
+        "optical": {
+          "absorption_mm": 500.0,
+          "alpha_fast_fraction": 0.1211480326285705,
+          "alpha_light_yield_ratio": 0.5,
+          "alpha_tau_ns": [
+            478.76494123873897,
+            1372.5347670910692
+          ],
+          "charged_step_um": 2.0,
+          "electron_fast_fraction": 0.6231465946460957,
+          "electron_tau_ns": [
+            478.76494123873897,
+            1372.5347670910692
+          ],
+          "emission_relative": [
+            0.02,
+            0.15,
+            0.55,
+            1.0,
+            0.65,
+            0.2,
+            0.05,
+            0.01
+          ],
+          "ion_light_yield_ratio": 0.05,
+          "photon_energy_eV": [
+            1.77,
+            1.91,
+            2.07,
+            2.21,
+            2.38,
+            2.58,
+            2.82,
+            3.1
+          ],
+          "ptfe_reflectivity": 0.95,
+          "rindex": 1.8,
+          "yield_photons_per_MeV": 54000.0
+        },
+        "schema_version": 1,
+        "sipm": {
+          "readout": {
+            "adc_bits": 14,
+            "adc_max_mV": 2000.0,
+            "adc_min_mV": 0.0,
+            "aperture_ns": 2.0,
+            "baseline_mV": 370.7294464111328,
+            "decay_ns": 29.0,
+            "internal_dt_ns": 0.5,
+            "lowpass_ns": 94.47173460998194,
+            "max_internal_bins": 5000000,
+            "model": "double_exponential",
+            "noise_rms_mV": 0.4104191463520683,
+            "rise_ns": 2.0,
+            "sample_period_ns": 2.0,
+            "template_csv": null,
+            "transimpedance_ohm": 50.0
+          },
+          "schema_version": 1,
+          "sensor": {
+            "afterpulse_delay_ns": 60.0,
+            "afterpulse_probability": 0.0,
+            "cells_x": 57344,
+            "cells_y": 1,
+            "constant_pde": 0.3,
+            "crosstalk_delay_ns": 0.0,
+            "crosstalk_probability": 0.0,
+            "dark_rate_hz": 0.0,
+            "gain_electrons": 1700000.0,
+            "max_candidates": 10000000,
+            "name": "S13361-3050_series_array_effective",
+            "overvoltage_V": 3.0,
+            "parameter_source": "User confirms S13361-3050 series and multiple summed channels. Manufacturer KAPD1054E PDF p2: 3584 cells/channel, 3x3 mm2, 320 pF/channel, gain 1.7e6 at 3 V overvoltage. Number of summed channels, unit breakdown voltage and recovery remain unconfirmed.",
+            "parameter_status": "hypothetical",
+            "pde_mode": "constant",
+            "pde_overvoltage_V": [],
+            "pde_probabilities": [],
+            "pde_wavelength_nm": [],
+            "recovery_enabled": true,
+            "recovery_ns": 29.0,
+            "temperature_C": 25.0,
+            "transit_delay_mean_ns": 0.0,
+            "transit_delay_sigma_ns": 0.0,
+            "trigger_scale_V": 2.4,
+            "trigger_threshold_V": 0.0,
+            "x_max_mm": 57344.0,
+            "x_min_mm": 0.0,
+            "y_max_mm": 1.0,
+            "y_min_mm": 0.0
+          }
+        },
+        "status": "Effective mean-shape initialization fit to run3/run12 training only; optical and particle interpretation remain hypotheses"
+      },
+      "parent_decays": 400,
+      "positive_deposit_events": 159,
+      "approximate_trigger_events": 44,
+      "quality_events": 134,
+      "common_charge_events": 14,
+      "common_charge_range_adc_samples": [
+        201824.1125,
+        418733.2
+      ],
+      "groups": {
+        "quality": {
+          "n": 133,
+          "event_ids": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              9
+            ],
+            [
+              0,
+              14
+            ],
+            [
+              0,
+              15
+            ],
+            [
+              0,
+              16
+            ],
+            [
+              0,
+              17
+            ],
+            [
+              0,
+              19
+            ],
+            [
+              0,
+              21
+            ],
+            [
+              0,
+              24
+            ],
+            [
+              0,
+              25
+            ],
+            [
+              0,
+              27
+            ],
+            [
+              0,
+              29
+            ],
+            [
+              0,
+              38
+            ],
+            [
+              0,
+              39
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              42
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              46
+            ],
+            [
+              0,
+              50
+            ],
+            [
+              0,
+              51
+            ],
+            [
+              0,
+              54
+            ],
+            [
+              0,
+              59
+            ],
+            [
+              0,
+              62
+            ],
+            [
+              0,
+              68
+            ],
+            [
+              0,
+              69
+            ],
+            [
+              0,
+              76
+            ],
+            [
+              0,
+              80
+            ],
+            [
+              0,
+              82
+            ],
+            [
+              0,
+              83
+            ],
+            [
+              0,
+              86
+            ],
+            [
+              0,
+              92
+            ],
+            [
+              0,
+              94
+            ],
+            [
+              0,
+              98
+            ],
+            [
+              0,
+              103
+            ],
+            [
+              0,
+              105
+            ],
+            [
+              0,
+              106
+            ],
+            [
+              0,
+              119
+            ],
+            [
+              0,
+              121
+            ],
+            [
+              0,
+              122
+            ],
+            [
+              0,
+              124
+            ],
+            [
+              0,
+              127
+            ],
+            [
+              0,
+              128
+            ],
+            [
+              0,
+              131
+            ],
+            [
+              0,
+              134
+            ],
+            [
+              0,
+              137
+            ],
+            [
+              0,
+              138
+            ],
+            [
+              0,
+              141
+            ],
+            [
+              0,
+              142
+            ],
+            [
+              0,
+              144
+            ],
+            [
+              0,
+              146
+            ],
+            [
+              0,
+              147
+            ],
+            [
+              0,
+              151
+            ],
+            [
+              0,
+              156
+            ],
+            [
+              0,
+              164
+            ],
+            [
+              0,
+              165
+            ],
+            [
+              0,
+              169
+            ],
+            [
+              0,
+              172
+            ],
+            [
+              0,
+              174
+            ],
+            [
+              0,
+              175
+            ],
+            [
+              0,
+              178
+            ],
+            [
+              0,
+              186
+            ],
+            [
+              0,
+              196
+            ],
+            [
+              0,
+              199
+            ],
+            [
+              0,
+              200
+            ],
+            [
+              0,
+              201
+            ],
+            [
+              0,
+              204
+            ],
+            [
+              0,
+              205
+            ],
+            [
+              0,
+              207
+            ],
+            [
+              0,
+              208
+            ],
+            [
+              0,
+              209
+            ],
+            [
+              0,
+              211
+            ],
+            [
+              0,
+              212
+            ],
+            [
+              0,
+              213
+            ],
+            [
+              0,
+              217
+            ],
+            [
+              0,
+              222
+            ],
+            [
+              0,
+              223
+            ],
+            [
+              0,
+              226
+            ],
+            [
+              0,
+              229
+            ],
+            [
+              0,
+              232
+            ],
+            [
+              0,
+              235
+            ],
+            [
+              0,
+              237
+            ],
+            [
+              0,
+              239
+            ],
+            [
+              0,
+              240
+            ],
+            [
+              0,
+              241
+            ],
+            [
+              0,
+              243
+            ],
+            [
+              0,
+              251
+            ],
+            [
+              0,
+              253
+            ],
+            [
+              0,
+              257
+            ],
+            [
+              0,
+              261
+            ],
+            [
+              0,
+              262
+            ],
+            [
+              0,
+              263
+            ],
+            [
+              0,
+              264
+            ],
+            [
+              0,
+              267
+            ],
+            [
+              0,
+              273
+            ],
+            [
+              0,
+              274
+            ],
+            [
+              0,
+              275
+            ],
+            [
+              0,
+              276
+            ],
+            [
+              0,
+              279
+            ],
+            [
+              0,
+              280
+            ],
+            [
+              0,
+              284
+            ],
+            [
+              0,
+              287
+            ],
+            [
+              0,
+              289
+            ],
+            [
+              0,
+              300
+            ],
+            [
+              0,
+              301
+            ],
+            [
+              0,
+              307
+            ],
+            [
+              0,
+              308
+            ],
+            [
+              0,
+              310
+            ],
+            [
+              0,
+              312
+            ],
+            [
+              0,
+              314
+            ],
+            [
+              0,
+              317
+            ],
+            [
+              0,
+              319
+            ],
+            [
+              0,
+              320
+            ],
+            [
+              0,
+              323
+            ],
+            [
+              0,
+              335
+            ],
+            [
+              0,
+              342
+            ],
+            [
+              0,
+              344
+            ],
+            [
+              0,
+              345
+            ],
+            [
+              0,
+              348
+            ],
+            [
+              0,
+              350
+            ],
+            [
+              0,
+              354
+            ],
+            [
+              0,
+              362
+            ],
+            [
+              0,
+              366
+            ],
+            [
+              0,
+              368
+            ],
+            [
+              0,
+              371
+            ],
+            [
+              0,
+              377
+            ],
+            [
+              0,
+              378
+            ],
+            [
+              0,
+              385
+            ],
+            [
+              0,
+              386
+            ],
+            [
+              0,
+              390
+            ],
+            [
+              0,
+              391
+            ],
+            [
+              0,
+              395
+            ]
+          ],
+          "alpha_truth_fraction": 0.0,
+          "charge_adc_samples_p10_p50_p90": [
+            6013.700000000001,
+            29902.0,
+            232180.52499999997
+          ],
+          "ratio_p10_p50_p90": [
+            0.43788089753821974,
+            0.46146199724728554,
+            0.5129423928001627
+          ],
+          "baseline_rms_adc_median": 3.319779368963207,
+          "amplitude_adc_median": 73.75
+        },
+        "common": {
+          "n": 14,
+          "event_ids": [
+            [
+              0,
+              19
+            ],
+            [
+              0,
+              39
+            ],
+            [
+              0,
+              51
+            ],
+            [
+              0,
+              69
+            ],
+            [
+              0,
+              119
+            ],
+            [
+              0,
+              172
+            ],
+            [
+              0,
+              204
+            ],
+            [
+              0,
+              217
+            ],
+            [
+              0,
+              229
+            ],
+            [
+              0,
+              235
+            ],
+            [
+              0,
+              241
+            ],
+            [
+              0,
+              257
+            ],
+            [
+              0,
+              279
+            ],
+            [
+              0,
+              314
+            ]
+          ],
+          "alpha_truth_fraction": 0.0,
+          "charge_adc_samples_p10_p50_p90": [
+            224484.65,
+            293556.1875,
+            389469.18750000006
+          ],
+          "ratio_p10_p50_p90": [
+            0.4477109963664748,
+            0.45682102261314883,
+            0.462602490614185
+          ],
+          "baseline_rms_adc_median": 3.3081128574376555,
+          "amplitude_adc_median": 673.5234375
+        },
+        "common_no_alpha_truth": {
+          "n": 14,
+          "event_ids": [
+            [
+              0,
+              19
+            ],
+            [
+              0,
+              39
+            ],
+            [
+              0,
+              51
+            ],
+            [
+              0,
+              69
+            ],
+            [
+              0,
+              119
+            ],
+            [
+              0,
+              172
+            ],
+            [
+              0,
+              204
+            ],
+            [
+              0,
+              217
+            ],
+            [
+              0,
+              229
+            ],
+            [
+              0,
+              235
+            ],
+            [
+              0,
+              241
+            ],
+            [
+              0,
+              257
+            ],
+            [
+              0,
+              279
+            ],
+            [
+              0,
+              314
+            ]
+          ],
+          "alpha_truth_fraction": 0.0,
+          "charge_adc_samples_p10_p50_p90": [
+            224484.65,
+            293556.1875,
+            389469.18750000006
+          ],
+          "ratio_p10_p50_p90": [
+            0.4477109963664748,
+            0.45682102261314883,
+            0.462602490614185
+          ],
+          "baseline_rms_adc_median": 3.3081128574376555,
+          "amplitude_adc_median": 673.5234375
+        }
+      }
+    },
+    "Am241": {
+      "source": "Am241",
+      "files": [
+        "simulation/results/optical_am241/events.root"
+      ],
+      "file_sha256": {
+        "simulation/results/optical_am241/events.root": "056563057ba4d5a802d9723ee289cad3fe4c3499a74da94e67c20f2b38c69184"
+      },
+      "config": {
+        "acquisition": {
+          "amplitude_threshold_adc": 120.0,
+          "pretrigger_ns": 1000.0,
+          "sample_period_ns": 2.0,
+          "samples": 2496
+        },
+        "evidence": {
+          "assumptions": [
+            "4x4 array and all 16 summed channels are an explicit initial hypothesis, not confirmed wiring.",
+            "50 ohm effective load, 3 V overvoltage and 29 ns recovery are placeholders; 53.2 V bias is NOT converted using typical breakdown voltage.",
+            "Constant PDE 0.30 and disabled dark/XT/AP are uncalibrated switches; zero does not mean absent in device.",
+            "Lowpass 256 ns = 50 ohm * 16 * 320 pF only if directly parallel; alternative summing networks require calibration.",
+            "Gamma decay times 679/3340 ns and approximate integrated fractions are literature starting values, not this crystal measurements; alpha fraction, light yield, spectrum, optics are hypotheses.",
+            "Source is a point in air; encapsulation and source active layer unspecified.",
+            "Microcells are uniformly mapped to 3584 effective cells/channel; exact masked-cell layout and electronic inter-channel coupling not represented."
+          ],
+          "confirmed": "User 2026-10-27: 10 mm cube CsI(Tl), external PTFE tape, 5 um front Mylar, S13361-3050 series, multiple summed channels, no preamplifier; source distance unknown and authorized to scan.",
+          "fit_policy": "Shared tau_fast/tau_slow and passive RC; separate source-dominant fractions. Am-dominant -> alpha is a testable hypothesis, not truth. No source distance was fitted. No preamplifier added.",
+          "links": {
+            "gamma_times_note": "/media/sf_works/papers/sources/1993_Valentine_NIMA_Temperature-dependence-of-CsI(Tl)-gamma-ray-excited-scintillation-characteristics.md",
+            "sensor_datasheet": "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/s13361-3050_series_kapd1054e.pdf"
+          }
+        },
+        "geometry": {
+          "array_nx": 4,
+          "array_ny": 4,
+          "channel_active_mm": 3.0,
+          "channel_pitch_mm": 3.2,
+          "crystal_mm": [
+            10.0,
+            10.0,
+            10.0
+          ],
+          "grease_mm": 0.1,
+          "material": "CsI(Tl)",
+          "mylar_um": 5.0,
+          "ptfe_side_mm": 0.1,
+          "source_gap_mm": 1.0,
+          "source_radius_mm": 0.0,
+          "summed_channels": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "world_material": "G4_AIR"
+        },
+        "optical": {
+          "absorption_mm": 500.0,
+          "alpha_fast_fraction": 0.1211480326285705,
+          "alpha_light_yield_ratio": 0.5,
+          "alpha_tau_ns": [
+            478.76494123873897,
+            1372.5347670910692
+          ],
+          "charged_step_um": 2.0,
+          "electron_fast_fraction": 0.6231465946460957,
+          "electron_tau_ns": [
+            478.76494123873897,
+            1372.5347670910692
+          ],
+          "emission_relative": [
+            0.02,
+            0.15,
+            0.55,
+            1.0,
+            0.65,
+            0.2,
+            0.05,
+            0.01
+          ],
+          "ion_light_yield_ratio": 0.05,
+          "photon_energy_eV": [
+            1.77,
+            1.91,
+            2.07,
+            2.21,
+            2.38,
+            2.58,
+            2.82,
+            3.1
+          ],
+          "ptfe_reflectivity": 0.95,
+          "rindex": 1.8,
+          "yield_photons_per_MeV": 54000.0
+        },
+        "schema_version": 1,
+        "sipm": {
+          "readout": {
+            "adc_bits": 14,
+            "adc_max_mV": 2000.0,
+            "adc_min_mV": 0.0,
+            "aperture_ns": 2.0,
+            "baseline_mV": 370.7294464111328,
+            "decay_ns": 29.0,
+            "internal_dt_ns": 0.5,
+            "lowpass_ns": 94.47173460998194,
+            "max_internal_bins": 5000000,
+            "model": "double_exponential",
+            "noise_rms_mV": 0.4104191463520683,
+            "rise_ns": 2.0,
+            "sample_period_ns": 2.0,
+            "template_csv": null,
+            "transimpedance_ohm": 50.0
+          },
+          "schema_version": 1,
+          "sensor": {
+            "afterpulse_delay_ns": 60.0,
+            "afterpulse_probability": 0.0,
+            "cells_x": 57344,
+            "cells_y": 1,
+            "constant_pde": 0.3,
+            "crosstalk_delay_ns": 0.0,
+            "crosstalk_probability": 0.0,
+            "dark_rate_hz": 0.0,
+            "gain_electrons": 1700000.0,
+            "max_candidates": 10000000,
+            "name": "S13361-3050_series_array_effective",
+            "overvoltage_V": 3.0,
+            "parameter_source": "User confirms S13361-3050 series and multiple summed channels. Manufacturer KAPD1054E PDF p2: 3584 cells/channel, 3x3 mm2, 320 pF/channel, gain 1.7e6 at 3 V overvoltage. Number of summed channels, unit breakdown voltage and recovery remain unconfirmed.",
+            "parameter_status": "hypothetical",
+            "pde_mode": "constant",
+            "pde_overvoltage_V": [],
+            "pde_probabilities": [],
+            "pde_wavelength_nm": [],
+            "recovery_enabled": true,
+            "recovery_ns": 29.0,
+            "temperature_C": 25.0,
+            "transit_delay_mean_ns": 0.0,
+            "transit_delay_sigma_ns": 0.0,
+            "trigger_scale_V": 2.4,
+            "trigger_threshold_V": 0.0,
+            "x_max_mm": 57344.0,
+            "x_min_mm": 0.0,
+            "y_max_mm": 1.0,
+            "y_min_mm": 0.0
+          }
+        },
+        "status": "Effective mean-shape initialization fit to run3/run12 training only; optical and particle interpretation remain hypotheses"
+      },
+      "parent_decays": 240,
+      "positive_deposit_events": 161,
+      "approximate_trigger_events": 99,
+      "quality_events": 148,
+      "common_charge_events": 6,
+      "common_charge_range_adc_samples": [
+        201824.1125,
+        418733.2
+      ],
+      "groups": {
+        "quality": {
+          "n": 135,
+          "event_ids": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              0,
+              8
+            ],
+            [
+              0,
+              10
+            ],
+            [
+              0,
+              11
+            ],
+            [
+              0,
+              15
+            ],
+            [
+              0,
+              16
+            ],
+            [
+              0,
+              17
+            ],
+            [
+              0,
+              21
+            ],
+            [
+              0,
+              23
+            ],
+            [
+              0,
+              24
+            ],
+            [
+              0,
+              25
+            ],
+            [
+              0,
+              26
+            ],
+            [
+              0,
+              28
+            ],
+            [
+              0,
+              30
+            ],
+            [
+              0,
+              31
+            ],
+            [
+              0,
+              32
+            ],
+            [
+              0,
+              33
+            ],
+            [
+              0,
+              34
+            ],
+            [
+              0,
+              35
+            ],
+            [
+              0,
+              36
+            ],
+            [
+              0,
+              38
+            ],
+            [
+              0,
+              39
+            ],
+            [
+              0,
+              41
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              45
+            ],
+            [
+              0,
+              47
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              50
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              53
+            ],
+            [
+              0,
+              55
+            ],
+            [
+              0,
+              56
+            ],
+            [
+              0,
+              59
+            ],
+            [
+              0,
+              61
+            ],
+            [
+              0,
+              62
+            ],
+            [
+              0,
+              63
+            ],
+            [
+              0,
+              64
+            ],
+            [
+              0,
+              65
+            ],
+            [
+              0,
+              67
+            ],
+            [
+              0,
+              68
+            ],
+            [
+              0,
+              70
+            ],
+            [
+              0,
+              75
+            ],
+            [
+              0,
+              77
+            ],
+            [
+              0,
+              79
+            ],
+            [
+              0,
+              81
+            ],
+            [
+              0,
+              84
+            ],
+            [
+              0,
+              86
+            ],
+            [
+              0,
+              87
+            ],
+            [
+              0,
+              88
+            ],
+            [
+              0,
+              89
+            ],
+            [
+              0,
+              90
+            ],
+            [
+              0,
+              92
+            ],
+            [
+              0,
+              93
+            ],
+            [
+              0,
+              94
+            ],
+            [
+              0,
+              96
+            ],
+            [
+              0,
+              98
+            ],
+            [
+              0,
+              100
+            ],
+            [
+              0,
+              102
+            ],
+            [
+              0,
+              103
+            ],
+            [
+              0,
+              104
+            ],
+            [
+              0,
+              109
+            ],
+            [
+              0,
+              111
+            ],
+            [
+              0,
+              114
+            ],
+            [
+              0,
+              116
+            ],
+            [
+              0,
+              117
+            ],
+            [
+              0,
+              120
+            ],
+            [
+              0,
+              121
+            ],
+            [
+              0,
+              122
+            ],
+            [
+              0,
+              128
+            ],
+            [
+              0,
+              130
+            ],
+            [
+              0,
+              132
+            ],
+            [
+              0,
+              135
+            ],
+            [
+              0,
+              138
+            ],
+            [
+              0,
+              140
+            ],
+            [
+              0,
+              141
+            ],
+            [
+              0,
+              144
+            ],
+            [
+              0,
+              145
+            ],
+            [
+              0,
+              147
+            ],
+            [
+              0,
+              148
+            ],
+            [
+              0,
+              151
+            ],
+            [
+              0,
+              152
+            ],
+            [
+              0,
+              154
+            ],
+            [
+              0,
+              155
+            ],
+            [
+              0,
+              156
+            ],
+            [
+              0,
+              157
+            ],
+            [
+              0,
+              158
+            ],
+            [
+              0,
+              161
+            ],
+            [
+              0,
+              164
+            ],
+            [
+              0,
+              165
+            ],
+            [
+              0,
+              166
+            ],
+            [
+              0,
+              167
+            ],
+            [
+              0,
+              168
+            ],
+            [
+              0,
+              169
+            ],
+            [
+              0,
+              170
+            ],
+            [
+              0,
+              174
+            ],
+            [
+              0,
+              175
+            ],
+            [
+              0,
+              177
+            ],
+            [
+              0,
+              179
+            ],
+            [
+              0,
+              181
+            ],
+            [
+              0,
+              182
+            ],
+            [
+              0,
+              183
+            ],
+            [
+              0,
+              184
+            ],
+            [
+              0,
+              186
+            ],
+            [
+              0,
+              188
+            ],
+            [
+              0,
+              190
+            ],
+            [
+              0,
+              191
+            ],
+            [
+              0,
+              194
+            ],
+            [
+              0,
+              195
+            ],
+            [
+              0,
+              196
+            ],
+            [
+              0,
+              197
+            ],
+            [
+              0,
+              199
+            ],
+            [
+              0,
+              200
+            ],
+            [
+              0,
+              202
+            ],
+            [
+              0,
+              204
+            ],
+            [
+              0,
+              206
+            ],
+            [
+              0,
+              207
+            ],
+            [
+              0,
+              208
+            ],
+            [
+              0,
+              210
+            ],
+            [
+              0,
+              211
+            ],
+            [
+              0,
+              212
+            ],
+            [
+              0,
+              216
+            ],
+            [
+              0,
+              218
+            ],
+            [
+              0,
+              220
+            ],
+            [
+              0,
+              221
+            ],
+            [
+              0,
+              222
+            ],
+            [
+              0,
+              223
+            ],
+            [
+              0,
+              227
+            ],
+            [
+              0,
+              228
+            ],
+            [
+              0,
+              234
+            ],
+            [
+              0,
+              238
+            ],
+            [
+              0,
+              239
+            ]
+          ],
+          "alpha_truth_fraction": 0.7481481481481481,
+          "charge_adc_samples_p10_p50_p90": [
+            8653.1,
+            722502.0,
+            863890.25
+          ],
+          "ratio_p10_p50_p90": [
+            0.3364521748520101,
+            0.3511394885662215,
+            0.48096303224968623
+          ],
+          "baseline_rms_adc_median": 3.332038119131255,
+          "amplitude_adc_median": 1186.640625
+        },
+        "common": {
+          "n": 6,
+          "event_ids": [
+            [
+              0,
+              116
+            ],
+            [
+              0,
+              135
+            ],
+            [
+              0,
+              166
+            ],
+            [
+              0,
+              190
+            ],
+            [
+              0,
+              199
+            ],
+            [
+              0,
+              200
+            ]
+          ],
+          "alpha_truth_fraction": 1.0,
+          "charge_adc_samples_p10_p50_p90": [
+            213964.9375,
+            289835.25,
+            384143.9375
+          ],
+          "ratio_p10_p50_p90": [
+            0.321246000312448,
+            0.32642228789176003,
+            0.33321949524135697
+          ],
+          "baseline_rms_adc_median": 3.2134156087676127,
+          "amplitude_adc_median": 460.140625
+        },
+        "common_alpha_truth": {
+          "n": 6,
+          "event_ids": [
+            [
+              0,
+              116
+            ],
+            [
+              0,
+              135
+            ],
+            [
+              0,
+              166
+            ],
+            [
+              0,
+              190
+            ],
+            [
+              0,
+              199
+            ],
+            [
+              0,
+              200
+            ]
+          ],
+          "alpha_truth_fraction": 1.0,
+          "charge_adc_samples_p10_p50_p90": [
+            213964.9375,
+            289835.25,
+            384143.9375
+          ],
+          "ratio_p10_p50_p90": [
+            0.321246000312448,
+            0.32642228789176003,
+            0.33321949524135697
+          ],
+          "baseline_rms_adc_median": 3.2134156087676127,
+          "amplitude_adc_median": 460.140625
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "run3_train": {
+      "mc_mean": {
+        "nrmse_peak": 0.014046776117954372,
+        "max_abs_residual_over_peak": 0.08495977312976138,
+        "integral_short_long_predicted": 0.45444253724362704,
+        "integral_short_long_measured_mean": 0.46364989005695095
+      },
+      "analytic_mean": {
+        "nrmse_peak": 0.011555164194066804,
+        "max_abs_residual_over_peak": 0.07023028478929064,
+        "integral_short_long_predicted": 0.462493537398825,
+        "integral_short_long_measured_mean": 0.46364989005695095
+      }
+    },
+    "run3_middle": {
+      "mc_mean": {
+        "nrmse_peak": 0.014151455395569279,
+        "max_abs_residual_over_peak": 0.08518330979389188,
+        "integral_short_long_predicted": 0.45444253724362704,
+        "integral_short_long_measured_mean": 0.46299993345432255
+      },
+      "analytic_mean": {
+        "nrmse_peak": 0.011895918031503146,
+        "max_abs_residual_over_peak": 0.07079193355100867,
+        "integral_short_long_predicted": 0.462493537398825,
+        "integral_short_long_measured_mean": 0.46299993345432255
+      }
+    },
+    "run3_late": {
+      "mc_mean": {
+        "nrmse_peak": 0.014356603985831232,
+        "max_abs_residual_over_peak": 0.08610627933497703,
+        "integral_short_long_predicted": 0.45444253724362704,
+        "integral_short_long_measured_mean": 0.4638579673765863
+      },
+      "analytic_mean": {
+        "nrmse_peak": 0.011833464938718124,
+        "max_abs_residual_over_peak": 0.07106638897462149,
+        "integral_short_long_predicted": 0.462493537398825,
+        "integral_short_long_measured_mean": 0.4638579673765863
+      }
+    },
+    "run12_train": {
+      "mc_mean": {
+        "nrmse_peak": 0.016181201412216552,
+        "max_abs_residual_over_peak": 0.051691931886770036,
+        "integral_short_long_predicted": 0.32667162329170957,
+        "integral_short_long_measured_mean": 0.3225266388551846
+      },
+      "analytic_mean": {
+        "nrmse_peak": 0.01493745678196246,
+        "max_abs_residual_over_peak": 0.036818462818191865,
+        "integral_short_long_predicted": 0.3227671262160178,
+        "integral_short_long_measured_mean": 0.3225266388551846
+      }
+    },
+    "run12_middle": {
+      "mc_mean": {
+        "nrmse_peak": 0.016599100168125554,
+        "max_abs_residual_over_peak": 0.05440186113851569,
+        "integral_short_long_predicted": 0.32667162329170957,
+        "integral_short_long_measured_mean": 0.32148208522035376
+      },
+      "analytic_mean": {
+        "nrmse_peak": 0.015162359591829553,
+        "max_abs_residual_over_peak": 0.04133312646730447,
+        "integral_short_long_predicted": 0.3227671262160178,
+        "integral_short_long_measured_mean": 0.32148208522035376
+      }
+    },
+    "run12_late": {
+      "mc_mean": {
+        "nrmse_peak": 0.014735714540413523,
+        "max_abs_residual_over_peak": 0.045754545113670365,
+        "integral_short_long_predicted": 0.32667162329170957,
+        "integral_short_long_measured_mean": 0.32325340528230234
+      },
+      "analytic_mean": {
+        "nrmse_peak": 0.013603127233017289,
+        "max_abs_residual_over_peak": 0.030228682405177752,
+        "integral_short_long_predicted": 0.3227671262160178,
+        "integral_short_long_measured_mean": 0.32325340528230234
+      }
+    },
+    "run18_check": {
+      "mc_mean": {
+        "nrmse_peak": 0.015860590712270358,
+        "max_abs_residual_over_peak": 0.04803329827925436,
+        "integral_short_long_predicted": 0.32667162329170957,
+        "integral_short_long_measured_mean": 0.32292449471126783
+      },
+      "analytic_mean": {
+        "nrmse_peak": 0.015118789771605289,
+        "max_abs_residual_over_peak": 0.03468906726311884,
+        "integral_short_long_predicted": 0.3227671262160178,
+        "integral_short_long_measured_mean": 0.32292449471126783
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+/csi/config /media/sf_works/SiPM/simulation/results/joint_optical_20261028/geometry_co/config.json
+/csi/source Co60
+/csi/seed 271027
+/run/initialize
+/geometry/test/resolution 10000
+/geometry/test/tolerance 0 mm
+/geometry/test/run placed
+/csi/exportGeometry /media/sf_works/SiPM/simulation/results/joint_optical_20261028/geometry_co/geometry.json
+/vis/open VRML2FILE
+/vis/drawVolume
+/vis/viewer/set/style surface
+/vis/viewer/set/viewpointThetaPhi 70 35 deg
+/vis/viewer/flush

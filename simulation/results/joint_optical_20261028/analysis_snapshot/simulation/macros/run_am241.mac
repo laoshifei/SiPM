@@ -1,0 +1,11 @@
+# Run from the SiPM project root. Keep this output path new for every run.
+/control/verbose 1
+/run/verbose 0
+/event/verbose 0
+/tracking/verbose 0
+/csi/config simulation/configs/csi_tl_initial.json
+/csi/source Am241
+/csi/seed 280241
+/csi/output simulation/results/macro_am241/events.root
+/run/initialize
+/run/beamOn 100

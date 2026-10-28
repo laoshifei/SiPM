@@ -1,0 +1,12 @@
+/csi/config /media/sf_works/SiPM/simulation/results/geometry_20261027/config.json
+/csi/seed 271027
+/run/initialize
+/geometry/test/resolution 10000
+/geometry/test/tolerance 0 mm
+/geometry/test/run placed
+/csi/exportGeometry /media/sf_works/SiPM/simulation/results/geometry_20261027/geometry.json
+/vis/open VRML2FILE
+/vis/drawVolume
+/vis/viewer/set/style surface
+/vis/viewer/set/viewpointThetaPhi 70 35 deg
+/vis/viewer/flush
