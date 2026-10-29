@@ -1,0 +1,42 @@
+[  2%] Building CXX object CMakeFiles/sipm_response.dir/vendor/SiPMResponse.cc.o
+[  5%] Linking CXX static library libsipm_response.a
+[  5%] Built target sipm_response
+[ 11%] Building CXX object CMakeFiles/readout_noise.dir/src/ReadoutNoise.cc.o
+[ 14%] Building CXX object CMakeFiles/readout_noise.dir/src/ReadoutResponse.cc.o
+[ 14%] Building CXX object CMakeFiles/test_sipm.dir/tests/test_vendor_sipm.cc.o
+[ 17%] Building CXX object CMakeFiles/readout_noise.dir/src/SignalDependentNoise.cc.o
+[ 20%] Linking CXX static library libreadout_noise.a
+[ 20%] Built target readout_noise
+[ 23%] Building CXX object CMakeFiles/replay_response.dir/replay_response.cc.o
+[ 26%] Building CXX object CMakeFiles/csi_sources.dir/main.cc.o
+[ 29%] Linking CXX executable test_sipm
+[ 29%] Built target test_sipm
+[ 32%] Building CXX object CMakeFiles/test_noise.dir/tests/test_readout_noise.cc.o
+[ 35%] Linking CXX executable test_noise
+[ 38%] Building CXX object CMakeFiles/csi_sources.dir/src/DetectorConstruction.cc.o
+[ 38%] Built target test_noise
+[ 41%] Building CXX object CMakeFiles/test_response.dir/tests/test_readout_response.cc.o
+[ 44%] Linking CXX executable replay_response
+[ 44%] Built target replay_response
+[ 47%] Building CXX object CMakeFiles/test_signal_noise.dir/tests/test_signal_dependent_noise.cc.o
+[ 50%] Linking CXX executable test_response
+[ 50%] Built target test_response
+[ 52%] Building CXX object CMakeFiles/csi_sources.dir/src/PhysicsList.cc.o
+[ 55%] Building CXX object CMakeFiles/csi_sources.dir/src/ActionInitialization.cc.o
+[ 58%] Linking CXX executable test_signal_noise
+[ 58%] Built target test_signal_noise
+[ 61%] Building CXX object CMakeFiles/csi_sources.dir/src/PrimaryGeneratorAction.cc.o
+[ 64%] Building CXX object CMakeFiles/csi_sources.dir/src/RunAction.cc.o
+[ 67%] Building CXX object CMakeFiles/csi_sources.dir/src/EventAction.cc.o
+[ 70%] Building CXX object CMakeFiles/csi_sources.dir/src/StackingAction.cc.o
+[ 73%] Building CXX object CMakeFiles/csi_sources.dir/src/TrackingAction.cc.o
+[ 76%] Building CXX object CMakeFiles/csi_sources.dir/src/TrackInformation.cc.o
+[ 79%] Building CXX object CMakeFiles/csi_sources.dir/src/SteppingAction.cc.o
+[ 82%] Building CXX object CMakeFiles/csi_sources.dir/src/SiPMDigitizer.cc.o
+[ 85%] Building CXX object CMakeFiles/csi_sources.dir/src/SiPMSD.cc.o
+[ 88%] Building CXX object CMakeFiles/csi_sources.dir/src/SiPMHit.cc.o
+[ 91%] Building CXX object CMakeFiles/csi_sources.dir/src/RootIO.cc.o
+[ 94%] Building CXX object CMakeFiles/csi_sources.dir/src/RunConfig.cc.o
+[ 97%] Building CXX object CMakeFiles/csi_sources.dir/src/DataStructure.cc.o
+[100%] Linking CXX executable csi_sources
+[100%] Built target csi_sources

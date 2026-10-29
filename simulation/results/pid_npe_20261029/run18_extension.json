@@ -1,0 +1,7 @@
+{
+  "scope": "Additional first60-only state fit; this file links the standard fit output to its separately frozen run18 inputs.",
+  "protocol_sha256": "b7ead9bab3d30bddb6305d394e2db06eb9cc097451c2873aee9f5edf92c1953b",
+  "fit_sha256": "ecfe5d4836b913356507e0039b67b5f4df8fe8c876c28aa03cb376c67569bc79",
+  "extraction_sha256": "9372e2237f31c54d9fea18e3198411d16179ddc8fb61e2d48ec41a729077f267",
+  "config_sha256": "e8adc2fe9c2705da758fe2afa0531e5d9941cb034a5482e2af9780b35381dd3f"
+}

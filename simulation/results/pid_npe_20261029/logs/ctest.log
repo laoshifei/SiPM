@@ -1,0 +1,16 @@
+Internal ctest changing into directory: /media/sf_works/SiPM/simulation/build/npe_20261029
+Test project /media/sf_works/SiPM/simulation/build/npe_20261029
+    Start 1: inherited_sensor_charge_recovery_rng
+1/5 Test #1: inherited_sensor_charge_recovery_rng ...   Passed    0.02 sec
+    Start 2: stationary_readout_noise
+2/5 Test #2: stationary_readout_noise ...............   Passed    0.38 sec
+    Start 3: parallel_readout_response
+3/5 Test #3: parallel_readout_response ..............   Passed    0.24 sec
+    Start 4: signal_dependent_readout_noise
+4/5 Test #4: signal_dependent_readout_noise .........   Passed    0.19 sec
+    Start 5: csi_application_workflow
+5/5 Test #5: csi_application_workflow ...............   Passed  114.99 sec
+
+100% tests passed, 0 tests failed out of 5
+
+Total Test time (real) = 115.96 sec

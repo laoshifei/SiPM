@@ -1,0 +1,335 @@
+{
+  "scope": "Run independent native profile/extraction/fit jobs with bounded concurrency.",
+  "code_sha256": "088c981e7c6a82de6d5718c859520dcf64027c436abc6a789e36f870c0e0eb05",
+  "workers": 3,
+  "jobs": [
+    {
+      "key": "s1.5_run3_Co60",
+      "steps": [
+        {
+          "stage": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+            "/media/sf_works/SiPM/simulation/results/pid_bandwidth_20261029/validation/new_run3_Co60/events.root",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/profile/s1.5_run3_Co60/config.json",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/profile/s1.5_run3_Co60/events.root"
+          ],
+          "log": "simulation/results/pid_npe_20261029/logs/s1.5_run3_Co60_replay.log",
+          "exit": 0
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/extract_npe_profile.py",
+            "--keys",
+            "s1.5_run3_Co60"
+          ],
+          "log": "simulation/results/pid_npe_20261029/logs/s1.5_run3_Co60_extract.log",
+          "exit": 0
+        },
+        {
+          "stage": "fit",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/fit_npe_profile.py",
+            "--keys",
+            "s1.5_run3_Co60"
+          ],
+          "log": "simulation/results/pid_npe_20261029/logs/s1.5_run3_Co60_fit.log",
+          "exit": 0
+        }
+      ],
+      "seconds": 86.00983595848083
+    },
+    {
+      "key": "s2_run3_Co60",
+      "steps": [
+        {
+          "stage": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+            "/media/sf_works/SiPM/simulation/results/pid_bandwidth_20261029/validation/new_run3_Co60/events.root",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/profile/s2_run3_Co60/config.json",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/profile/s2_run3_Co60/events.root"
+          ],
+          "log": "simulation/results/pid_npe_20261029/logs/s2_run3_Co60_replay.log",
+          "exit": 0
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/extract_npe_profile.py",
+            "--keys",
+            "s2_run3_Co60"
+          ],
+          "log": "simulation/results/pid_npe_20261029/logs/s2_run3_Co60_extract.log",
+          "exit": 0
+        },
+        {
+          "stage": "fit",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/fit_npe_profile.py",
+            "--keys",
+            "s2_run3_Co60"
+          ],
+          "log": "simulation/results/pid_npe_20261029/logs/s2_run3_Co60_fit.log",
+          "exit": 0
+        }
+      ],
+      "seconds": 86.11800789833069
+    },
+    {
+      "key": "s1_run3_Co60",
+      "steps": [
+        {
+          "stage": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+            "/media/sf_works/SiPM/simulation/results/pid_bandwidth_20261029/validation/new_run3_Co60/events.root",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/profile/s1_run3_Co60/config.json",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/profile/s1_run3_Co60/events.root"
+          ],
+          "log": "simulation/results/pid_npe_20261029/logs/s1_run3_Co60_replay.log",
+          "exit": 0
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/extract_npe_profile.py",
+            "--keys",
+            "s1_run3_Co60"
+          ],
+          "log": "simulation/results/pid_npe_20261029/logs/s1_run3_Co60_extract.log",
+          "exit": 0
+        },
+        {
+          "stage": "fit",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/fit_npe_profile.py",
+            "--keys",
+            "s1_run3_Co60"
+          ],
+          "log": "simulation/results/pid_npe_20261029/logs/s1_run3_Co60_fit.log",
+          "exit": 0
+        }
+      ],
+      "seconds": 86.12099146842957
+    },
+    {
+      "key": "s3_run3_Co60",
+      "steps": [
+        {
+          "stage": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+            "/media/sf_works/SiPM/simulation/results/pid_bandwidth_20261029/validation/new_run3_Co60/events.root",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/profile/s3_run3_Co60/config.json",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/profile/s3_run3_Co60/events.root"
+          ],
+          "log": "simulation/results/pid_npe_20261029/logs/s3_run3_Co60_replay.log",
+          "exit": 0
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/extract_npe_profile.py",
+            "--keys",
+            "s3_run3_Co60"
+          ],
+          "log": "simulation/results/pid_npe_20261029/logs/s3_run3_Co60_extract.log",
+          "exit": 0
+        },
+        {
+          "stage": "fit",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/fit_npe_profile.py",
+            "--keys",
+            "s3_run3_Co60"
+          ],
+          "log": "simulation/results/pid_npe_20261029/logs/s3_run3_Co60_fit.log",
+          "exit": 0
+        }
+      ],
+      "seconds": 51.390445709228516
+    },
+    {
+      "key": "s1.5_run12_Am241",
+      "steps": [
+        {
+          "stage": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+            "/media/sf_works/SiPM/simulation/results/pid_bandwidth_20261029/validation/new_run12_Am241/events.root",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/profile/s1.5_run12_Am241/config.json",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/profile/s1.5_run12_Am241/events.root"
+          ],
+          "log": "simulation/results/pid_npe_20261029/logs/s1.5_run12_Am241_replay.log",
+          "exit": 0
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/extract_npe_profile.py",
+            "--keys",
+            "s1.5_run12_Am241"
+          ],
+          "log": "simulation/results/pid_npe_20261029/logs/s1.5_run12_Am241_extract.log",
+          "exit": 0
+        },
+        {
+          "stage": "fit",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/fit_npe_profile.py",
+            "--keys",
+            "s1.5_run12_Am241"
+          ],
+          "log": "simulation/results/pid_npe_20261029/logs/s1.5_run12_Am241_fit.log",
+          "exit": 0
+        }
+      ],
+      "seconds": 211.8390190601349
+    },
+    {
+      "key": "s1_run12_Am241",
+      "steps": [
+        {
+          "stage": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+            "/media/sf_works/SiPM/simulation/results/pid_bandwidth_20261029/validation/new_run12_Am241/events.root",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/profile/s1_run12_Am241/config.json",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/profile/s1_run12_Am241/events.root"
+          ],
+          "log": "simulation/results/pid_npe_20261029/logs/s1_run12_Am241_replay.log",
+          "exit": 0
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/extract_npe_profile.py",
+            "--keys",
+            "s1_run12_Am241"
+          ],
+          "log": "simulation/results/pid_npe_20261029/logs/s1_run12_Am241_extract.log",
+          "exit": 0
+        },
+        {
+          "stage": "fit",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/fit_npe_profile.py",
+            "--keys",
+            "s1_run12_Am241"
+          ],
+          "log": "simulation/results/pid_npe_20261029/logs/s1_run12_Am241_fit.log",
+          "exit": 0
+        }
+      ],
+      "seconds": 212.9924771785736
+    },
+    {
+      "key": "s2_run12_Am241",
+      "steps": [
+        {
+          "stage": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+            "/media/sf_works/SiPM/simulation/results/pid_bandwidth_20261029/validation/new_run12_Am241/events.root",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/profile/s2_run12_Am241/config.json",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/profile/s2_run12_Am241/events.root"
+          ],
+          "log": "simulation/results/pid_npe_20261029/logs/s2_run12_Am241_replay.log",
+          "exit": 0
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/extract_npe_profile.py",
+            "--keys",
+            "s2_run12_Am241"
+          ],
+          "log": "simulation/results/pid_npe_20261029/logs/s2_run12_Am241_extract.log",
+          "exit": 0
+        },
+        {
+          "stage": "fit",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/fit_npe_profile.py",
+            "--keys",
+            "s2_run12_Am241"
+          ],
+          "log": "simulation/results/pid_npe_20261029/logs/s2_run12_Am241_fit.log",
+          "exit": 0
+        }
+      ],
+      "seconds": 332.9121081829071
+    },
+    {
+      "key": "s3_run12_Am241",
+      "steps": [
+        {
+          "stage": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+            "/media/sf_works/SiPM/simulation/results/pid_bandwidth_20261029/validation/new_run12_Am241/events.root",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/profile/s3_run12_Am241/config.json",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/profile/s3_run12_Am241/events.root"
+          ],
+          "log": "simulation/results/pid_npe_20261029/logs/s3_run12_Am241_replay.log",
+          "exit": 0
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/extract_npe_profile.py",
+            "--keys",
+            "s3_run12_Am241"
+          ],
+          "log": "simulation/results/pid_npe_20261029/logs/s3_run12_Am241_extract.log",
+          "exit": 0
+        },
+        {
+          "stage": "fit",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/fit_npe_profile.py",
+            "--keys",
+            "s3_run12_Am241"
+          ],
+          "log": "simulation/results/pid_npe_20261029/logs/s3_run12_Am241_fit.log",
+          "exit": 0
+        }
+      ],
+      "seconds": 279.27432346343994
+    }
+  ]
+}

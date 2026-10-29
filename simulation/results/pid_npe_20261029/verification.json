@@ -1,0 +1,105 @@
+{
+  "scope": "Verify and archive the photon-statistics/passive-transfer candidate.",
+  "parent_archive": {
+    "record_sha256": "51785e50b5e2513ff8a34437bf81ce8934eb925e67f0e9095f129ff60920c320",
+    "unchanged_outputs": 110,
+    "unchanged_source_snapshots": 157
+  },
+  "frozen_native_source_files": 58,
+  "profiles": {
+    "s1_run3_Co60": {
+      "mothers": 8000,
+      "same_energy_deposits": true,
+      "common_events": 257,
+      "legacy_exact_signal_deposited_events": 808,
+      "scope": "Every nonzero-energy-deposit mother checked for bit-exact signal; all mothers checked for identical avalanche histories by native replay metadata."
+    },
+    "s1.5_run3_Co60": {
+      "mothers": 8000,
+      "same_energy_deposits": true,
+      "common_events": 254
+    },
+    "s2_run3_Co60": {
+      "mothers": 8000,
+      "same_energy_deposits": true,
+      "common_events": 257
+    },
+    "s3_run3_Co60": {
+      "mothers": 8000,
+      "same_energy_deposits": true,
+      "common_events": 257
+    },
+    "s1_run12_Am241": {
+      "mothers": 48000,
+      "same_energy_deposits": true,
+      "common_events": 359,
+      "legacy_exact_signal_deposited_events": 764,
+      "scope": "Every nonzero-energy-deposit mother checked for bit-exact signal; all mothers checked for identical avalanche histories by native replay metadata."
+    },
+    "s1.5_run12_Am241": {
+      "mothers": 48000,
+      "same_energy_deposits": true,
+      "common_events": 360
+    },
+    "s2_run12_Am241": {
+      "mothers": 48000,
+      "same_energy_deposits": true,
+      "common_events": 358
+    },
+    "s3_run12_Am241": {
+      "mothers": 48000,
+      "same_energy_deposits": true,
+      "common_events": 360
+    },
+    "s2_run18_Am241": {
+      "mothers": 48000,
+      "same_energy_deposits": true,
+      "common_events": 358
+    }
+  },
+  "new_transport": {
+    "run3_Co60": {
+      "mothers": 8000,
+      "common": 280,
+      "independent_ADC_scores": true,
+      "native_full_source_ancestry_charge_check": true
+    },
+    "run12_Am241": {
+      "mothers": 24000,
+      "common": 206,
+      "independent_ADC_scores": true,
+      "native_full_source_ancestry_charge_check": true
+    },
+    "run18_Am241": {
+      "mothers": 24000,
+      "common": 208,
+      "independent_ADC_scores": true,
+      "native_full_source_ancestry_charge_check": false
+    },
+    "run12_Co60": {
+      "mothers": 8000,
+      "common": 277,
+      "independent_ADC_scores": true,
+      "native_full_source_ancestry_charge_check": false
+    }
+  },
+  "common_response_PID_independently_reproduced": true,
+  "new_independent_mothers": 32000,
+  "tests": {
+    "ctest_targets": 5,
+    "response_replay_integration_tests": 3,
+    "passed": true
+  },
+  "notebook": {
+    "executed_code_cells": 7,
+    "embedded_images": 4,
+    "valid": true
+  },
+  "versions": {
+    "Python": "3.13.5",
+    "NumPy": "2.5.4",
+    "SciPy": "1.18.1",
+    "ROOT": "6.34.10"
+  },
+  "caveat": "Engineering/analysis consistency checks do not establish unique physical parameters or full experimental bandwidth agreement; see decision.json."
+}

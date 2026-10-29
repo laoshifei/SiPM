@@ -1,5 +1,6 @@
 """Re-digitization reproduces the native G4Digitizer, and preserves transport."""
 import json
+import os
 import subprocess
 import tempfile
 import unittest
@@ -8,11 +9,48 @@ import numpy as np
 import ROOT
 import sys
 HERE=Path(__file__).resolve().parents[1]
+BUILD=Path(os.environ.get("CSI_TEST_BUILD_DIR",str(HERE/"build")))
 sys.path.insert(0,str(HERE))
 from validate import check
 
 
 class ReplayTests(unittest.TestCase):
+    def test_passive_signal_transfer_native_and_replay(self):
+        with tempfile.TemporaryDirectory(prefix='csi-transfer-') as directory:
+            folder=Path(directory)
+            for source in ['Co60','Am241']:
+                config=json.loads((HERE/'configs/csi_tl_initial.json').read_text())
+                config['electronics_noise']={'model':'gaussian_fir','coefficients':[.8,.6]}
+                config['readout_response']={'model':'parallel_paths','prompt_charge_fraction':.12,
+                    'prompt_decay_ns':5.,'prompt_lowpass_ns':0.,'signal_transmission':1.}
+                files=[]
+                for transmission in [1.,.5]:
+                    config['readout_response']['signal_transmission']=transmission
+                    cfg=folder/f'{source}_{transmission}.json';cfg.write_text(json.dumps(config))
+                    path=folder/f'{source}_{transmission}.root'
+                    subprocess.run([str(BUILD/'csi_sources'),str(cfg),source,'6','281103',str(path)],
+                        check=True,stdout=subprocess.DEVNULL,stderr=subprocess.PIPE)
+                    files.append(ROOT.TFile.Open(str(path)))
+                a,b=[f.Get('Events') for f in files]
+                info=json.loads(str(files[1].Get('RunInfo').GetString().Data()))
+                cfg.write_text(json.dumps(info['config']));out=folder/f'{source}_replay.root'
+                subprocess.run([str(BUILD/'replay_response'),str(folder/f'{source}_1.0.root'),str(cfg),str(out)],
+                    check=True,stdout=subprocess.DEVNULL,stderr=subprocess.PIPE)
+                self.assertTrue(check(out)['passed'])
+                replay=ROOT.TFile.Open(str(out));c=replay.Get('Events');photons=0
+                for i in range(6):
+                    a.GetEntry(i);b.GetEntry(i);c.GetEntry(i);photons+=len(a.photon_t_ns)
+                    for name in ['photon_t_ns','avalanche_t_ns','avalanche_q_C','charge_by_origin_C']:
+                        np.testing.assert_array_equal(np.array(getattr(a,name)),np.array(getattr(b,name)))
+                    np.testing.assert_array_equal(.5*np.array(a.signal_mV),np.array(b.signal_mV))
+                    np.testing.assert_allclose(np.array(a.analog_mV)-np.array(a.signal_mV),
+                        np.array(b.analog_mV)-np.array(b.signal_mV),atol=1e-12,rtol=0)
+                    for name in ['adc','signal_mV','analog_mV']:
+                        np.testing.assert_array_equal(np.array(getattr(b,name)),np.array(getattr(c,name)))
+                self.assertGreater(photons,0)
+                replay.Close()
+                for f in files:f.Close()
+
     def test_signal_dependent_native_digitizer_and_replay(self):
         with tempfile.TemporaryDirectory(prefix='csi-signal-noise-') as directory:
             directory=Path(directory)
@@ -34,7 +72,7 @@ class ReplayTests(unittest.TestCase):
                           'coefficients':[.8,.6],'variance_per_signal_adc':.5,'sample_period_ns':2.,'event_variance_cv':.25}
                     cfg=directory/f'{source}_{enabled}.json';cfg.write_text(json.dumps(config))
                     path=directory/f'{source}_{enabled}.root'
-                    subprocess.run([str(HERE/'build/csi_sources'),str(cfg),source,'6','281103',str(path)],check=True,stdout=subprocess.DEVNULL,stderr=subprocess.PIPE)
+                    subprocess.run([str(BUILD/'csi_sources'),str(cfg),source,'6','281103',str(path)],check=True,stdout=subprocess.DEVNULL,stderr=subprocess.PIPE)
                     self.assertTrue(check(path)['passed']);files.append(path)
                 original=ROOT.TFile.Open(str(files[0]));modified=ROOT.TFile.Open(str(files[1]))
                 a=original.Get('Events');b=modified.Get('Events');changed=0
@@ -42,7 +80,7 @@ class ReplayTests(unittest.TestCase):
                 self.assertEqual(info['schema_version'],9)
                 self.assertEqual(info['signal_dependent_noise']['model'],'gaussian_fir_signal_variance')
                 cfg.write_text(json.dumps(info['config']));output=directory/f'{source}_replayed.root'
-                subprocess.run([str(HERE/'build/replay_response'),str(files[1]),str(cfg),str(output)],check=True,stdout=subprocess.DEVNULL,stderr=subprocess.PIPE)
+                subprocess.run([str(BUILD/'replay_response'),str(files[1]),str(cfg),str(output)],check=True,stdout=subprocess.DEVNULL,stderr=subprocess.PIPE)
                 replay=ROOT.TFile.Open(str(output));c=replay.Get('Events')
                 for i in range(6):
                     a.GetEntry(i);b.GetEntry(i);c.GetEntry(i)
@@ -64,7 +102,7 @@ class ReplayTests(unittest.TestCase):
                 base['electronics_noise']={'model':'gaussian_fir','coefficients':[.8,.6]}
                 cfg=directory/(source+'.json');cfg.write_text(json.dumps(base))
                 parent=directory/(source+'.root')
-                subprocess.run([str(HERE/'build/csi_sources'),str(cfg),source,'6','281103',str(parent)],check=True,stdout=subprocess.DEVNULL,stderr=subprocess.PIPE)
+                subprocess.run([str(BUILD/'csi_sources'),str(cfg),source,'6','281103',str(parent)],check=True,stdout=subprocess.DEVNULL,stderr=subprocess.PIPE)
                 original=ROOT.TFile.Open(str(parent));tree=original.Get('Events')
                 info=json.loads(str(original.Get('RunInfo').GetString().Data()))
                 for name in ['same','zero','fast','afterpulse']:
@@ -73,7 +111,7 @@ class ReplayTests(unittest.TestCase):
                         config['readout_response']={'model':'parallel_paths','prompt_charge_fraction':.12 if name=='fast' else 0.,'prompt_decay_ns':5.,'prompt_lowpass_ns':0.}
                     if name=='afterpulse': config['sipm']['sensor']['afterpulse_probability']=.15
                     cfg.write_text(json.dumps(config));out=directory/(source+'_'+name+'.root')
-                    subprocess.run([str(HERE/'build/replay_response'),str(parent),str(cfg),str(out)],check=True,stdout=subprocess.DEVNULL,stderr=subprocess.PIPE)
+                    subprocess.run([str(BUILD/'replay_response'),str(parent),str(cfg),str(out)],check=True,stdout=subprocess.DEVNULL,stderr=subprocess.PIPE)
                     report=check(out);self.assertTrue(report['passed'])
                     replay=ROOT.TFile.Open(str(out));other=replay.Get('Events');changed=0
                     for i in range(6):
@@ -93,7 +131,7 @@ class ReplayTests(unittest.TestCase):
                 original.Close()
                 config['geometry']['source_gap_mm']+=1.;cfg.write_text(json.dumps(config))
                 bad=directory/(source+'_invalid.root')
-                r=subprocess.run([str(HERE/'build/replay_response'),str(parent),str(cfg),str(bad)],capture_output=True)
+                r=subprocess.run([str(BUILD/'replay_response'),str(parent),str(cfg),str(bad)],capture_output=True)
                 self.assertNotEqual(r.returncode,0);self.assertFalse(bad.exists())
 
 

@@ -1,0 +1,37 @@
+{
+  "key": "s3_run3_Co60",
+  "n_parent": 8000,
+  "n_selected": 682,
+  "n_common": 257,
+  "root_sha256": "5f659b82f37f6e5ee0bc4cf6a997a1c475ad638b93f35925275cc10b862682c9",
+  "replay": {
+    "equal_original_adc_events": 7191,
+    "equal_original_avalanche_events": 7191,
+    "max_relative_charge_balance": 1.9235820948432905e-13,
+    "parent_file": "/media/sf_works/SiPM/simulation/results/pid_bandwidth_20261029/validation/new_run3_Co60/events.root",
+    "scope": "Original Geant4 optical histories; all entries retained. Native PDE/recovery/AP and readout regenerated, candidate selections must be recomputed.",
+    "unchanged_zero_photon_events": 7191
+  },
+  "source": "Co60",
+  "common_avalanches_p10_p50_p90": [
+    3074.0,
+    4234.0,
+    5431.6
+  ],
+  "common_truth_counts": [
+    0,
+    257,
+    0,
+    0,
+    0
+  ],
+  "common_Q_bins": [
+    43,
+    41,
+    45,
+    34,
+    41,
+    53
+  ],
+  "code_sha256": "b904cceab0aa8594ace28d1ad26dbcbcde1e69a53f31a21825b5754d5a35dd03"
+}

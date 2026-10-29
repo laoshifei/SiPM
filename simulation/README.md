@@ -2,7 +2,9 @@
 
 已实现并运行 **核衰变 → 能量沉积 → 闪烁光输运 → SiPM 雪崩 → 被动读出响应 → ADC → 实测对照**。只支持 `Am241` 和 `Co60`。本目录参考 GAGG_pileup 的 SiPM 数值内核，新建 CsI 几何、源、材料参数和本项目波形对照；未修改参考项目。
 
-最新参数、笔记、图和复现命令见 [codex_0001 notebook](../jupyter/codex_0001_csi_geant4_waveform_calibration.ipynb)。2026-10-29 新种子完整输运的后段平均形状 NRMSE 为 **1.03% / 1.18%（Co / Am）**；另有前触发状态条件化和 run 18 单独读出校准。当前配置为 [run 3](configs/csi_tl_run3_waveform_20261029.json)、[run 12](configs/csi_tl_run12_waveform_20261029.json)、[run 18](configs/csi_tl_run18_waveform_20261029.json)；[未缩放 ADC 对照](results/waveform_refit_20261029/figures/unscaled_individual_waveforms.png)。峰值时间、电荷谱及装置参数退化仍限制解释，详细数值和适用边界写在 notebook。
+最新的 [PID 光电子统计笔记](../jupyter/codex_0001_csi_pid_photon_statistics.ipynb)在共同有效光电子规模与被动电压传输系数上扫描，只用实验前60%拟合。选出的“2倍光产额、0.5电压传输”候选以名义 PDE=0.3 重新运行 **8000 Co / 24000 Am 完整 Geant4 母衰变**。最后20%的 QDC 带宽比（MC/实测）从 run3 的1.468降到1.168，run12为0.897，run18为0.948；run12平均时间带仍偏窄（0.822），Co平均时间中心也有残差。未按单条实测波形缩放，平均 ADC 波形峰值归一化 RMSE 为 **0.96% / 1.17% / 0.96%（run3/12/18）**。这套候选尚未替换默认配置；参数不唯一，不能作为实测光产额/PDE。见[带宽与区间](results/pid_npe_20261029/figures/npe_bandwidth_validation.png)、[原始 ADC 均波形](results/pid_npe_20261029/figures/npe_waveform_validation.png)、[数值表](results/pid_npe_20261029/validation_table.csv)、[结论边界](results/pid_npe_20261029/decision.json)和[实际配置/命令](results/pid_npe_20261029/validation/protocol.json)。本阶段使用独立构建目录 `simulation/build/npe_20261029`，原构建及冻结结果保留。
+
+此前平均波形校准的参数、笔记、图和复现命令见 [codex_0001 notebook](../jupyter/codex_0001_csi_geant4_waveform_calibration.ipynb)。2026-10-29 新种子完整输运的后段平均形状 NRMSE 为 **1.03% / 1.18%（Co / Am）**；另有前触发状态条件化和 run 18 单独读出校准。默认配置为 [run 3](configs/csi_tl_run3_waveform_20261029.json)、[run 12](configs/csi_tl_run12_waveform_20261029.json)、[run 18](configs/csi_tl_run18_waveform_20261029.json)；[未缩放 ADC 对照](results/waveform_refit_20261029/figures/unscaled_individual_waveforms.png)。峰值时间、电荷谱及装置参数退化仍限制解释，详细数值和适用边界写在 notebook。
 
 [PID notebook](../jupyter/codex_0001_csi_geant4_pid.ipynb)在同一读出状态下对两源应用长短门、平均时间和冻结 PCA，使用沉积祖先真值检查测试母事件。提供 [PID 图](results/pid_20261029/figures/pid_truth_and_measurement.png)、[固定分类分区配置](results/pid_20261029/pid_classifier.json)和 [完整数值](results/pid_20261029/pid.json)。主场景长短门为92/92 α保留、0/62 γ误判；γ泄漏率单侧95%上限仍为4.72%。实验真值缺失、带宽不完全吻合，不能称为已测实验效率。重放没有增加独立输运历史。
 
@@ -70,7 +72,7 @@ simulation/
 | [TrackingAction](src/TrackingAction.cc)、[TrackInformation](include/TrackInformation.hh) | `G4UserTrackingAction` / `G4VUserTrackInformation`；保存 α、γ、衰变电子及其后代的来源，记录实际发光粒子 |
 | [SiPMSD](src/SiPMSD.cc)、[SiPMHit](include/SiPMHit.hh) | `G4VSensitiveDetector` / `G4VHit`；只记录透入 SiPM 的光子，生成当前事件的 `SiPM/OpticalArrivals` 命中集合 |
 | [SiPMDigitizer](src/SiPMDigitizer.cc) | `G4VDigitizerModule`；生成 `SiPMDigiCollection`，所有权交给当前 `G4Event` |
-| [ReadoutResponse](src/ReadoutResponse.cc) | 可选快慢双路径响应；相同雪崩电荷驱动两支原生 `BuildReadout`，保持积分与有限窗尾部电荷守恒，先于电子噪声执行 |
+| [ReadoutResponse](src/ReadoutResponse.cc) | 可选快慢双路径及 `signal_transmission` 被动电压传输；相同雪崩电荷驱动原生 `BuildReadout`，传输系数只作用于输出信号电压，先于电子噪声执行；保存的 SiPM 雪崩电荷、物理电流及有限窗尾部电荷不衰减 |
 | [ReadoutNoise](src/ReadoutNoise.cc) | 可选平稳 Gaussian FIR 电子噪声；由数字化模块调用，带随机前历史并重新量化 ADC，保持光子、雪崩与无噪声信号不变 |
 | [SignalDependentNoise](src/SignalDependentNoise.cc) | 可选信号相关 Gaussian FIR 残差及均值为 1 的事件间方差乘子；使用独立随机流，在原生数字化及重放中同样执行，不改变光子、雪崩电荷或无噪声信号 |
 | [RootIO](src/RootIO.cc) | ROOT 事件树、运行元数据和完成标记 |
@@ -122,6 +124,8 @@ ctest --test-dir simulation/build --output-on-failure
 ```
 
 `ctest` 的 5 个目标覆盖继承 SiPM 内核、平稳电子噪声、双路径响应、信号相关残差及 Python/PyROOT 工作流。新增 5 项残差检查验证关闭/零信号退化、方差与信号成比例、FIR 协方差、事件间方差乘子的矩、种子复现与异常配置。另运行 `python3 simulation/tests/test_response_replay.py` 的 2 项双源集成检查，验证相同种子下光子/雪崩/无噪声信号保留，原生数字化与重放的 ADC 逐元素一致。本阶段全部通过；[测试日志](results/signal_fluctuations_20261028/logs/sipm_signal_final_ctest.log)。
+
+2026-10-29 光电子统计阶段在独立构建上通过5个 CTest 目标和3个双源重放集成测试。新增测试检查 `signal_transmission=1` 的逐元素旧路径一致性、0.5传输的信号电压减半、下游噪声保持，以及原生数字化与重放逐元素一致；系数必须在 `(0,1]`，省略时为1。测试使用 `CSI_TEST_BUILD_DIR=simulation/build/npe_20261029`，日志在 [本轮 logs](results/pid_npe_20261029/logs)。实际 SiPM 电荷守恒对应传输前的电流，不能把衰减后的 ADC 积分直接当成全部雪崩电荷。
 
 和 GAGG 项目一样，可以直接交给 Geant4 执行宏。在 **SiPM 项目根目录**执行：
 

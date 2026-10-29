@@ -3,6 +3,7 @@
 #include <iostream>
 #include <cmath>
 #include <stdexcept>
+#include <limits>
 
 void check(bool ok, const char* text) { if (!ok) throw std::runtime_error(text); }
 int main(int argc, char** argv) {
@@ -17,6 +18,26 @@ int main(int argc, char** argv) {
   nlohmann::json c = {{"readout_response", {{"model", "parallel_paths"}, {"prompt_charge_fraction", 0.}, {"prompt_decay_ns", 5.}, {"prompt_lowpass_ns", 0.}}}};
   auto zero = slow; ReadoutResponse::Apply(c, cfg, 1000., zero);
   check(zero.adc_counts == slow.adc_counts && zero.signal_mV == slow.signal_mV, "Zero fraction changed legacy output");
+  c["readout_response"]["signal_transmission"] = 1.;
+  auto unit = slow; ReadoutResponse::Apply(c, cfg, 1000., unit);
+  check(unit.adc_counts == slow.adc_counts && unit.analog_mV == slow.analog_mV, "Unit transfer changed legacy output");
+  c["readout_response"]["signal_transmission"] = .5;
+  auto attenuated = slow; ReadoutResponse::Apply(c, cfg, 1000., attenuated);
+  check(attenuated.avalanche_charge_C == slow.avalanche_charge_C && attenuated.current_A == slow.current_A,
+        "Voltage transfer changed physical SiPM charge/current");
+  check(attenuated.current_integral_C == slow.current_integral_C && attenuated.current_tail_C == slow.current_tail_C,
+        "Voltage transfer changed physical charge accounting");
+  for (std::size_t i=0; i<slow.signal_mV.size(); ++i) {
+    check(attenuated.signal_mV[i] == .5*slow.signal_mV[i], "Incorrect voltage attenuation");
+    check(std::abs((attenuated.analog_mV[i]-attenuated.signal_mV[i])-(slow.analog_mV[i]-slow.signal_mV[i]))<1e-12,
+          "Voltage transfer attenuated downstream noise");
+  }
+  for (double bad : {0., -1., 1.1, std::numeric_limits<double>::infinity()}) {
+    c["readout_response"]["signal_transmission"] = bad;
+    bool rejected=false; try { ReadoutResponse::Validate(c,cfg); } catch (const std::exception&) { rejected=true; }
+    check(rejected,"Invalid transmission accepted");
+  }
+  c["readout_response"]["signal_transmission"] = 1.;
   auto fastcfg = cfg; fastcfg.readout.decay_ns = 5.; fastcfg.readout.lowpass_ns = 0.;
   auto fast = slow; sipm::BuildReadout(fastcfg, 1000., fast);
   c["readout_response"]["prompt_charge_fraction"] = .2;
@@ -30,5 +51,5 @@ int main(int argc, char** argv) {
   c["readout_response"]["prompt_charge_fraction"] = 1.1;
   bool rejected = false; try { ReadoutResponse::Validate(c, cfg); } catch (const std::exception&) { rejected=true; }
   check(rejected, "Invalid charge fraction accepted");
-  std::cout << "5 parallel-path checks passed: zero replay, avalanche invariance, mixture/noise, finite-window charge, validation\n";
+  std::cout << "Parallel paths and voltage transfer checks passed: legacy/unit replay, physical charge/current, downstream noise, mixture, bounds\n";
 }

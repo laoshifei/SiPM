@@ -1,10 +1,11 @@
 """Integration checks for independent seeds, overwrite guards and data isolation."""
-import json,subprocess,sys,tempfile,unittest
+import json,subprocess,sys,tempfile,unittest,os
 from pathlib import Path
 import numpy as np
 import ROOT
 
 HERE=Path(__file__).resolve().parents[1]
+BUILD=Path(os.environ.get("CSI_TEST_BUILD_DIR",str(HERE/"build")))
 sys.path.insert(0,str(HERE))
 from reference import TIME_NS,aligned_shapes
 from calibrate import expectation
@@ -37,7 +38,7 @@ class WorkflowChecks(unittest.TestCase):
             self.assertLess(np.max(np.abs(y[TIME_NS<-100])),1e-13)
 
     def test_geant4_seed_replay_and_output_guards(self):
-        binary=HERE/'build/csi_sources'
+        binary=BUILD/'csi_sources'
         if not binary.exists():self.skipTest('Geant4 build required')
         config=HERE/'results/calibration/csi_tl_effective.json'
         if not config.exists():config=HERE/'configs/csi_tl_initial.json'
@@ -70,7 +71,7 @@ class WorkflowChecks(unittest.TestCase):
             self.assertNotEqual(r.returncode,0);self.assertFalse(bad.exists())
 
     def test_am_transport_replay_and_boundary(self):
-        binary=HERE/'build/csi_sources';config=HERE/'results/calibration/csi_tl_effective.json'
+        binary=BUILD/'csi_sources';config=HERE/'results/calibration/csi_tl_effective.json'
         if not binary.exists() or not config.exists():self.skipTest('Built simulation and effective config required')
         with tempfile.TemporaryDirectory(prefix='csi-am-replay-') as directory:
             paths=[Path(directory)/f'am{i}.root' for i in range(2)]
@@ -87,7 +88,7 @@ class WorkflowChecks(unittest.TestCase):
             for f in files:f.Close()
 
     def test_initialized_geometry_export(self):
-        binary=HERE/'build/csi_sources'
+        binary=BUILD/'csi_sources'
         if not binary.exists():self.skipTest('Geant4 build required')
         with tempfile.TemporaryDirectory(prefix='csi-geometry-') as directory:
             path=Path(directory)/'geometry.json';macro=Path(directory)/'geometry.mac'
@@ -104,7 +105,7 @@ class WorkflowChecks(unittest.TestCase):
             self.assertNotEqual(result.returncode,0);self.assertEqual(path.read_bytes(),old)
 
     def test_macro_errors_and_post_initialization_config_lock(self):
-        binary=HERE/'build/csi_sources'
+        binary=BUILD/'csi_sources'
         if not binary.exists():self.skipTest('Geant4 build required')
         with tempfile.TemporaryDirectory(prefix='csi-macro-guards-') as directory:
             path=Path(directory)/'forbidden.root';macro=Path(directory)/'bad.mac'
@@ -116,7 +117,7 @@ class WorkflowChecks(unittest.TestCase):
             self.assertNotEqual(result.returncode,0)
 
     def test_transport_only_energy_matrix_and_exit_foil(self):
-        binary=HERE/'build/csi_sources'
+        binary=BUILD/'csi_sources'
         if not binary.exists():self.skipTest('Geant4 build required')
         from validate import check
         with tempfile.TemporaryDirectory(prefix='csi-transport-') as directory:
@@ -135,7 +136,7 @@ class WorkflowChecks(unittest.TestCase):
             self.assertNotEqual(result.returncode,0);self.assertIn(b'foil must lie strictly',result.stderr)
 
     def test_finite_rise_macro_config_and_zero_default_replay(self):
-        binary=HERE/'build/csi_sources'
+        binary=BUILD/'csi_sources'
         if not binary.exists():self.skipTest('Geant4 build required')
         with tempfile.TemporaryDirectory(prefix='csi-rise-') as directory:
             folder=Path(directory);base=json.loads((HERE/'configs/csi_tl_initial.json').read_text())
@@ -167,7 +168,7 @@ class WorkflowChecks(unittest.TestCase):
                 self.assertNotEqual(result.returncode,0);self.assertFalse(invalid.exists())
 
     def test_colored_noise_preserves_transport_and_avalanche_stream(self):
-        binary=HERE/'build/csi_sources'
+        binary=BUILD/'csi_sources'
         if not binary.exists():self.skipTest('Geant4 build required')
         with tempfile.TemporaryDirectory(prefix='csi-noise-') as directory:
             folder=Path(directory);config=json.loads((HERE/'configs/csi_tl_initial.json').read_text());files=[]

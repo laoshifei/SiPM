@@ -1,0 +1,74 @@
+{
+  "scope": "Choose shared effective-photon scale using only experimental first60 joint covariance/F profiles.",
+  "code_sha256": "f1f78e99aa3f671c3fbfe25de7e865a8364adee0d2b5d010e0e1bcc763a1e5f0",
+  "grid": [
+    {
+      "scale": 1.0,
+      "joint_score": 23.704696868688917,
+      "Co_score": 23.533277708899377,
+      "Am_score": 0.17141915978954098,
+      "Co_SD_ratio": [
+        1.2833103075502663,
+        1.077421488584954,
+        1.2807617936991145
+      ],
+      "Am_SD_ratio": [
+        0.9910486342341288,
+        0.9764461996514223,
+        0.9834609738395653
+      ]
+    },
+    {
+      "scale": 1.5,
+      "joint_score": 4.275585922685686,
+      "Co_score": 4.05389225028944,
+      "Am_score": 0.22169367239624524,
+      "Co_SD_ratio": [
+        1.1249899489869812,
+        0.9282693527012227,
+        1.1175236756148366
+      ],
+      "Am_SD_ratio": [
+        0.9905470361732559,
+        0.9704038911796894,
+        0.9810765393998486
+      ]
+    },
+    {
+      "scale": 2.0,
+      "joint_score": 1.328112713776059,
+      "Co_score": 1.0717112764489116,
+      "Am_score": 0.2564014373271474,
+      "Co_SD_ratio": [
+        1.0269563678005225,
+        0.8886327904245661,
+        1.0169631885399582
+      ],
+      "Am_SD_ratio": [
+        0.9921676851924942,
+        0.9662523131248086,
+        0.9809649067524039
+      ]
+    },
+    {
+      "scale": 3.0,
+      "joint_score": 1.5046910180148412,
+      "Co_score": 1.22883312597053,
+      "Am_score": 0.27585789204431116,
+      "Co_SD_ratio": [
+        0.9800440243340425,
+        0.8914360589323429,
+        0.980038267736421
+      ],
+      "Am_SD_ratio": [
+        0.9924273792941211,
+        0.9649116892523191,
+        0.9810852258854239
+      ]
+    }
+  ],
+  "chosen_scale": 2.0,
+  "criterion": "Minimum sum of actual-combined-FIR training residual scores, equal run3/run12 weight; no later-segment selection.",
+  "parameter_is_not_measured": "Yield/PDE/coupling remain degenerate; the chosen grid point is a conditional model candidate, not a measured SiPM PDE or intrinsic CsI yield.",
+  "fresh_transport_required": true
+}

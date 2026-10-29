@@ -1,0 +1,177 @@
+{
+  "scope": "Condition run18 on first60, then freeze nominal-PDE full-transport checks.",
+  "code_sha256": "26a65a818a5b03a1fc0a7eae73913f191e740f38861a8903d5576c6d861c814a",
+  "selection_sha256": "129574762e0d8f203e9697cf17a0452bd4066448be9b0c8973e35775d43ee3c1",
+  "run18_extension_sha256": "e696a78989baf73d5a4654bc0a6cfd65835bcda56583c6ade65205b04de762a9",
+  "q_edges": [
+    201824.1125,
+    237975.62708333333,
+    274127.14166666666,
+    310278.65625,
+    346430.17083333334,
+    382581.6854166667,
+    418733.2
+  ],
+  "chosen_scale": 2.0,
+  "entries": {
+    "run3_Co60": {
+      "key": "run3_Co60",
+      "run": 3,
+      "source": "Co60",
+      "events": 8000,
+      "seed": 301029203,
+      "native": true,
+      "config": "simulation/results/pid_npe_20261029/validation/run3_Co60/config.json",
+      "config_sha256": "14f8734a4f97d5f1c456aaa354fafbe776dcfcca0c4849e6f8eece0e17ecef66",
+      "path": "simulation/results/pid_npe_20261029/validation/run3_Co60/events.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run3_Co60/config.json",
+        "Co60",
+        "8000",
+        "301029203",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run3_Co60/events.root"
+      ]
+    },
+    "run12_Am241": {
+      "key": "run12_Am241",
+      "run": 12,
+      "source": "Am241",
+      "events": 24000,
+      "seed": 301029212,
+      "native": true,
+      "config": "simulation/results/pid_npe_20261029/validation/run12_Am241/config.json",
+      "config_sha256": "329cfb0997f0d04c1a4360834cd9f5792ec804d20d3c33c267bb2097fd0cbd5f",
+      "path": "simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/config.json",
+        "Am241",
+        "24000",
+        "301029212",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root"
+      ]
+    },
+    "run18_Am241": {
+      "key": "run18_Am241",
+      "run": 18,
+      "source": "Am241",
+      "events": 24000,
+      "seed": 301029212,
+      "native": false,
+      "config": "simulation/results/pid_npe_20261029/validation/run18_Am241/config.json",
+      "config_sha256": "648cd31cb0449f17e687f08982940a393487393eae2ff4810ca22df64e5c3a34",
+      "path": "simulation/results/pid_npe_20261029/validation/run18_Am241/events.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run18_Am241/config.json",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run18_Am241/events.root"
+      ]
+    },
+    "run12_Co60": {
+      "key": "run12_Co60",
+      "run": 12,
+      "source": "Co60",
+      "events": 8000,
+      "seed": 301029203,
+      "native": false,
+      "config": "simulation/results/pid_npe_20261029/validation/run12_Co60/config.json",
+      "config_sha256": "f0d23f4ea30d9751b9490ce125bed5e0ed8a7902b06bb6542712da5c2fcfb64b",
+      "path": "simulation/results/pid_npe_20261029/validation/run12_Co60/events.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run3_Co60/events.root",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Co60/config.json",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Co60/events.root"
+      ]
+    }
+  },
+  "native_jobs": [
+    {
+      "key": "run3_Co60",
+      "run": 3,
+      "source": "Co60",
+      "events": 8000,
+      "seed": 301029203,
+      "native": true,
+      "config": "simulation/results/pid_npe_20261029/validation/run3_Co60/config.json",
+      "config_sha256": "14f8734a4f97d5f1c456aaa354fafbe776dcfcca0c4849e6f8eece0e17ecef66",
+      "path": "simulation/results/pid_npe_20261029/validation/run3_Co60/events.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run3_Co60/config.json",
+        "Co60",
+        "8000",
+        "301029203",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run3_Co60/events.root"
+      ]
+    },
+    {
+      "key": "run12_Am241",
+      "run": 12,
+      "source": "Am241",
+      "events": 24000,
+      "seed": 301029212,
+      "native": true,
+      "config": "simulation/results/pid_npe_20261029/validation/run12_Am241/config.json",
+      "config_sha256": "329cfb0997f0d04c1a4360834cd9f5792ec804d20d3c33c267bb2097fd0cbd5f",
+      "path": "simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/config.json",
+        "Am241",
+        "24000",
+        "301029212",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root"
+      ]
+    }
+  ],
+  "replay_jobs": [
+    {
+      "key": "run18_Am241",
+      "run": 18,
+      "source": "Am241",
+      "events": 24000,
+      "seed": 301029212,
+      "native": false,
+      "config": "simulation/results/pid_npe_20261029/validation/run18_Am241/config.json",
+      "config_sha256": "648cd31cb0449f17e687f08982940a393487393eae2ff4810ca22df64e5c3a34",
+      "path": "simulation/results/pid_npe_20261029/validation/run18_Am241/events.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run18_Am241/config.json",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run18_Am241/events.root"
+      ]
+    },
+    {
+      "key": "run12_Co60",
+      "run": 12,
+      "source": "Co60",
+      "events": 8000,
+      "seed": 301029203,
+      "native": false,
+      "config": "simulation/results/pid_npe_20261029/validation/run12_Co60/config.json",
+      "config_sha256": "f0d23f4ea30d9751b9490ce125bed5e0ed8a7902b06bb6542712da5c2fcfb64b",
+      "path": "simulation/results/pid_npe_20261029/validation/run12_Co60/events.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run3_Co60/events.root",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Co60/config.json",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Co60/events.root"
+      ]
+    }
+  ],
+  "binary_sha256": {
+    "csi_sources": "ecce63e1944a1d4ec3587f465f8e660337a5fb76926b1b30fface9ea7c06f735",
+    "replay_response": "1005a9e9060b8cb764f25ee619fcdccc6102d8a0bd9a3463d6d157bef4775a4e"
+  },
+  "independent_new_mothers": 32000,
+  "detector_PDE": 0.3,
+  "validation": "Fresh optical and readout seeds. Frozen measured first60 closure and middle20/last20 checks, previously explored experimental data. No validation-driven refit.",
+  "selection": "Same native ADC criteria and frozen experimental IDs, Q bins and PCA. No PID-score cut in MC.",
+  "uncertainty": "512 whole-mother MC bootstrap and original-index block64 experimental bootstrap; fixed fitted model. Parameter degeneracy remains.",
+  "check_scope": "Native optical yield changed, PDE restored to0.3; this full transport tests the replay approximation. Compare PID widths, full covariance, average waveforms, short-scale F and baseline.",
+  "earlier_results": "Previous bandwidth archive is preserved; earlier MC may now serve calibration and cannot count as independent validation for the new profile."
+}

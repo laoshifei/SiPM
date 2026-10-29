@@ -1,0 +1,37 @@
+{
+  "key": "s2_run18_Am241",
+  "n_parent": 48000,
+  "n_selected": 400,
+  "n_common": 358,
+  "root_sha256": "06e38069cbda778e4de38ba384db6b647a896db3a3eaf8e38f2d3d737b875f23",
+  "replay": {
+    "equal_original_adc_events": 47237,
+    "equal_original_avalanche_events": 47237,
+    "max_relative_charge_balance": 5.092512152429042e-14,
+    "parent_file": "/media/sf_works/SiPM/simulation/results/pid_bandwidth_20261029/validation/new_run18_Am241/events.root",
+    "scope": "Original Geant4 optical histories; all entries retained. Native PDE/recovery/AP and readout regenerated, candidate selections must be recomputed.",
+    "unchanged_zero_photon_events": 47236
+  },
+  "source": "Am241",
+  "common_avalanches_p10_p50_p90": [
+    2096.8,
+    2473.5,
+    2867.3
+  ],
+  "common_truth_counts": [
+    358,
+    0,
+    0,
+    0,
+    0
+  ],
+  "common_Q_bins": [
+    117,
+    153,
+    74,
+    13,
+    1,
+    0
+  ],
+  "code_sha256": "b904cceab0aa8594ace28d1ad26dbcbcde1e69a53f31a21825b5754d5a35dd03"
+}

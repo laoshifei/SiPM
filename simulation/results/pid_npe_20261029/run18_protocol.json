@@ -1,0 +1,34 @@
+{
+  "scope": "Run18 first60 state extension at the frozen shared scale; no reselecting scale.",
+  "code_sha256": "26a65a818a5b03a1fc0a7eae73913f191e740f38861a8903d5576c6d861c814a",
+  "parent_profile_protocol_sha256": "7adb907574bee9fb2c641c15cca26a509c61bb08efa9a560118a80901206c9e2",
+  "selection_sha256": "129574762e0d8f203e9697cf17a0452bd4066448be9b0c8973e35775d43ee3c1",
+  "entry": {
+    "key": "s2_run18_Am241",
+    "source": "Am241",
+    "run": 18,
+    "scale": 2.0,
+    "events": 48000,
+    "seed": 291029912,
+    "parent": "simulation/results/pid_bandwidth_20261029/validation/new_run18_Am241/events.root",
+    "parent_sha256": "b1256188ce2d46dc87667a3f9ee49de07ff5b0ea4f0015ada56302d3ebee2b5b",
+    "config": "simulation/results/pid_npe_20261029/profile/s2_run18_Am241/config.json",
+    "config_sha256": "4f22139145dfc0c7eb0de5a0ffe1ed3087f5016a4e0e5a4f4fd32f1af81e59fd",
+    "path": "simulation/results/pid_npe_20261029/profile/s2_run18_Am241/events.root",
+    "command": [
+      "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+      "/media/sf_works/SiPM/simulation/results/pid_bandwidth_20261029/validation/new_run18_Am241/events.root",
+      "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/profile/s2_run18_Am241/config.json",
+      "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/profile/s2_run18_Am241/events.root"
+    ]
+  },
+  "q_edges": [
+    201824.1125,
+    237975.62708333333,
+    274127.14166666666,
+    310278.65625,
+    346430.17083333334,
+    382581.6854166667,
+    418733.2
+  ]
+}
