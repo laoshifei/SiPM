@@ -1,0 +1,20 @@
+{
+  "conclusion_zh": "后段基线RMS中位数：实验 5.677 ADC，原模型 3.174，三个新对照 5.516–5.588。QDC带宽比由 0.897 变为 0.928–0.953，PCA由 0.858 变为 0.902–0.945；平均时间由 0.822 变为 0.817–0.846。三个新对照的三种带宽配对变化95%区间均包含0；现有统计量尚不能确认改善。噪声漂移应作为采集条件记录，但未完成三种PID带宽的一致性验证。",
+  "promoted_to_default": false,
+  "all_predeclared_variants_reported": true,
+  "last20_new_width_ratio_min": [
+    0.9284655285113305,
+    0.8169294521843432,
+    0.9018720808248649
+  ],
+  "last20_new_width_ratio_max": [
+    0.9533476459658569,
+    0.8458648750645099,
+    0.9449672140641118
+  ],
+  "new_independent_mothers": 0,
+  "all_last20_reselected_paired_delta_intervals_include_zero": true,
+  "interpretation": "Conditional evidence from paired replays. No pure experimental particle labels, no unique noise mechanism, no updated alpha acceptance or gamma leakage.",
+  "next_work": "Joint two-source first60 mean-time/tail constraints and slow-component bound sensitivity; retain waveform amplitude, F and PID checks. Freeze before increasing independent MC statistics.",
+  "uncertainty": "Pointwise block64 and128 data / whole-mother MC intervals, with fits, fold assignments and all response parameters held fixed; not full calibration uncertainty."
+}

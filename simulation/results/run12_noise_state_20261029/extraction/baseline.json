@@ -1,0 +1,16 @@
+{
+  "key": "baseline",
+  "n_parent": 24000,
+  "common_n_all_mothers": 206,
+  "fixed_n": 206,
+  "newly_selected": 0,
+  "lost_from_original": 0,
+  "all_energy_equal_parent": true,
+  "all_replay_avalanches_equal_parent": true,
+  "exact_signal_preserved_checked_parent_ids": 206,
+  "replay": null,
+  "root_sha256": "fe6e429503e71ab9e701f69c549f5116068be2f1da6a020a82a3015b46a217be",
+  "config_sha256": "329cfb0997f0d04c1a4360834cd9f5792ec804d20d3c33c267bb2097fd0cbd5f",
+  "code_sha256": "9d0d84322d3e34bb64c6ca9b54814e0d90f97f494049a40f8eee970a79cb8c5b",
+  "protocol_sha256": "8dadfb075797c9ea9c11486d952cb9765de8462b3f52eebdecd2df6cf55c1f02"
+}

@@ -1,0 +1,547 @@
+{
+  "scope": "Run frozen native noise replays with bounded process concurrency.",
+  "code_sha256": "89f099e2c440e8b6f408caabe3376e46707405b802066042872cf7a01e5d2f23",
+  "workers": 3,
+  "jobs": [
+    {
+      "key": "baseline",
+      "seconds": 22.730151891708374,
+      "stages": [
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/extract_run12_noise_state.py",
+            "--key",
+            "baseline"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/baseline_extract.log"
+        }
+      ]
+    },
+    {
+      "key": "last20_eval0_scale",
+      "seconds": 138.56474351882935,
+      "stages": [
+        {
+          "stage": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/last20_eval0_scale.json",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/last20_eval0_scale.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/last20_eval0_scale_replay.log"
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/extract_run12_noise_state.py",
+            "--key",
+            "last20_eval0_scale"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/last20_eval0_scale_extract.log"
+        }
+      ]
+    },
+    {
+      "key": "last20_eval0_spectrum_states",
+      "seconds": 139.48005533218384,
+      "stages": [
+        {
+          "stage": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/last20_eval0_spectrum_states.json",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/last20_eval0_spectrum_states.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/last20_eval0_spectrum_states_replay.log"
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/extract_run12_noise_state.py",
+            "--key",
+            "last20_eval0_spectrum_states"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/last20_eval0_spectrum_states_extract.log"
+        }
+      ]
+    },
+    {
+      "key": "last20_eval0_states",
+      "seconds": 127.41910028457642,
+      "stages": [
+        {
+          "stage": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/last20_eval0_states.json",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/last20_eval0_states.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/last20_eval0_states_replay.log"
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/extract_run12_noise_state.py",
+            "--key",
+            "last20_eval0_states"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/last20_eval0_states_extract.log"
+        }
+      ]
+    },
+    {
+      "key": "last20_eval1_scale",
+      "seconds": 154.95688128471375,
+      "stages": [
+        {
+          "stage": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/last20_eval1_scale.json",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/last20_eval1_scale.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/last20_eval1_scale_replay.log"
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/extract_run12_noise_state.py",
+            "--key",
+            "last20_eval1_scale"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/last20_eval1_scale_extract.log"
+        }
+      ]
+    },
+    {
+      "key": "last20_eval1_spectrum_states",
+      "seconds": 159.26616287231445,
+      "stages": [
+        {
+          "stage": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/last20_eval1_spectrum_states.json",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/last20_eval1_spectrum_states.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/last20_eval1_spectrum_states_replay.log"
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/extract_run12_noise_state.py",
+            "--key",
+            "last20_eval1_spectrum_states"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/last20_eval1_spectrum_states_extract.log"
+        }
+      ]
+    },
+    {
+      "key": "last20_eval1_states",
+      "seconds": 188.95418453216553,
+      "stages": [
+        {
+          "stage": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/last20_eval1_states.json",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/last20_eval1_states.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/last20_eval1_states_replay.log"
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/extract_run12_noise_state.py",
+            "--key",
+            "last20_eval1_states"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/last20_eval1_states_extract.log"
+        }
+      ]
+    },
+    {
+      "key": "middle20_eval0_scale",
+      "seconds": 262.0232253074646,
+      "stages": [
+        {
+          "stage": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/middle20_eval0_scale.json",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/middle20_eval0_scale.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/middle20_eval0_scale_replay.log"
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/extract_run12_noise_state.py",
+            "--key",
+            "middle20_eval0_scale"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/middle20_eval0_scale_extract.log"
+        }
+      ]
+    },
+    {
+      "key": "middle20_eval0_spectrum_states",
+      "seconds": 265.48096323013306,
+      "stages": [
+        {
+          "stage": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/middle20_eval0_spectrum_states.json",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/middle20_eval0_spectrum_states.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/middle20_eval0_spectrum_states_replay.log"
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/extract_run12_noise_state.py",
+            "--key",
+            "middle20_eval0_spectrum_states"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/middle20_eval0_spectrum_states_extract.log"
+        }
+      ]
+    },
+    {
+      "key": "middle20_eval0_states",
+      "seconds": 248.52782225608826,
+      "stages": [
+        {
+          "stage": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/middle20_eval0_states.json",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/middle20_eval0_states.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/middle20_eval0_states_replay.log"
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/extract_run12_noise_state.py",
+            "--key",
+            "middle20_eval0_states"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/middle20_eval0_states_extract.log"
+        }
+      ]
+    },
+    {
+      "key": "middle20_eval1_scale",
+      "seconds": 192.7174825668335,
+      "stages": [
+        {
+          "stage": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/middle20_eval1_scale.json",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/middle20_eval1_scale.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/middle20_eval1_scale_replay.log"
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/extract_run12_noise_state.py",
+            "--key",
+            "middle20_eval1_scale"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/middle20_eval1_scale_extract.log"
+        }
+      ]
+    },
+    {
+      "key": "middle20_eval1_spectrum_states",
+      "seconds": 186.82455039024353,
+      "stages": [
+        {
+          "stage": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/middle20_eval1_spectrum_states.json",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/middle20_eval1_spectrum_states.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/middle20_eval1_spectrum_states_replay.log"
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/extract_run12_noise_state.py",
+            "--key",
+            "middle20_eval1_spectrum_states"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/middle20_eval1_spectrum_states_extract.log"
+        }
+      ]
+    },
+    {
+      "key": "middle20_eval1_states",
+      "seconds": 184.97937440872192,
+      "stages": [
+        {
+          "stage": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/middle20_eval1_states.json",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/middle20_eval1_states.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/middle20_eval1_states_replay.log"
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/extract_run12_noise_state.py",
+            "--key",
+            "middle20_eval1_states"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/middle20_eval1_states_extract.log"
+        }
+      ]
+    },
+    {
+      "key": "first60_eval0_scale",
+      "seconds": 169.70686721801758,
+      "stages": [
+        {
+          "stage": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/first60_eval0_scale.json",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/first60_eval0_scale.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/first60_eval0_scale_replay.log"
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/extract_run12_noise_state.py",
+            "--key",
+            "first60_eval0_scale"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/first60_eval0_scale_extract.log"
+        }
+      ]
+    },
+    {
+      "key": "first60_eval0_spectrum_states",
+      "seconds": 175.44557547569275,
+      "stages": [
+        {
+          "stage": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/first60_eval0_spectrum_states.json",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/first60_eval0_spectrum_states.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/first60_eval0_spectrum_states_replay.log"
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/extract_run12_noise_state.py",
+            "--key",
+            "first60_eval0_spectrum_states"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/first60_eval0_spectrum_states_extract.log"
+        }
+      ]
+    },
+    {
+      "key": "first60_eval0_states",
+      "seconds": 173.60683846473694,
+      "stages": [
+        {
+          "stage": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/first60_eval0_states.json",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/first60_eval0_states.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/first60_eval0_states_replay.log"
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/extract_run12_noise_state.py",
+            "--key",
+            "first60_eval0_states"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/first60_eval0_states_extract.log"
+        }
+      ]
+    },
+    {
+      "key": "first60_eval1_scale",
+      "seconds": 138.2514612674713,
+      "stages": [
+        {
+          "stage": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/first60_eval1_scale.json",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/first60_eval1_scale.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/first60_eval1_scale_replay.log"
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/extract_run12_noise_state.py",
+            "--key",
+            "first60_eval1_scale"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/first60_eval1_scale_extract.log"
+        }
+      ]
+    },
+    {
+      "key": "first60_eval1_spectrum_states",
+      "seconds": 132.62734150886536,
+      "stages": [
+        {
+          "stage": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/first60_eval1_spectrum_states.json",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/first60_eval1_spectrum_states.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/first60_eval1_spectrum_states_replay.log"
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/extract_run12_noise_state.py",
+            "--key",
+            "first60_eval1_spectrum_states"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/first60_eval1_spectrum_states_extract.log"
+        }
+      ]
+    },
+    {
+      "key": "first60_eval1_states",
+      "seconds": 122.92087292671204,
+      "stages": [
+        {
+          "stage": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+            "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/first60_eval1_states.json",
+            "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/first60_eval1_states.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/first60_eval1_states_replay.log"
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/extract_run12_noise_state.py",
+            "--key",
+            "first60_eval1_states"
+          ],
+          "exit": 0,
+          "log": "simulation/results/run12_noise_state_20261029/logs/first60_eval1_states_extract.log"
+        }
+      ]
+    }
+  ]
+}

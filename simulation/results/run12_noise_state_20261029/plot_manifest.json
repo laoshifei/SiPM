@@ -1,0 +1,11 @@
+{
+  "code_sha256": "d36a683484ce3fa1903d0c206607a9cd544c7b49efa9696c2408805fde2bbc1d",
+  "assessment_sha256": "93a023232ee827eb2dff118034e8ad461d54fb69c7b7a2989aa2977dfecee615",
+  "figures": [
+    "noise_state_closure",
+    "noise_pid_widths",
+    "noise_pid_paired_controls",
+    "noise_waveform_controls"
+  ],
+  "table_rows": 108
+}

@@ -1,0 +1,505 @@
+{
+  "scope": "Freeze pretrigger-only cross-fitted noise states for the current PID model.",
+  "code_sha256": "9cedb189321ac2dfe06efa91f3cfca83399aa01fc5aea7b34258aec2a91999f1",
+  "checkpoint_commit": "c13601b",
+  "parent_record_sha256": "64703492f79c8b6d7735433bdb56a078fc466dd94ab0b9c7642c77d4af181f19",
+  "parent_ROOT": "simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+  "parent_ROOT_sha256": "fe6e429503e71ab9e701f69c549f5116068be2f1da6a020a82a3015b46a217be",
+  "parent_config": "simulation/results/pid_npe_20261029/validation/run12_Am241/config.json",
+  "parent_config_sha256": "329cfb0997f0d04c1a4360834cd9f5792ec804d20d3c33c267bb2097fd0cbd5f",
+  "binary": "simulation/build/npe_20261029/replay_response",
+  "binary_sha256": "1005a9e9060b8cb764f25ee619fcdccc6102d8a0bd9a3463d6d157bef4775a4e",
+  "source_sha256": {
+    "simulation/prepare_run12_noise_state.py": "9cedb189321ac2dfe06efa91f3cfca83399aa01fc5aea7b34258aec2a91999f1",
+    "simulation/refit_baseline_mixture.py": "f133f12fa37bd5580dd575232920bea472ec07325a084542f2188b64237cb286",
+    "simulation/prepare_noise_model.py": "2ca7cdd0e9a12c6499706e7a95d2c6431479cc88fb54e949fd39650cfdbac32b",
+    "simulation/characterize_readout.py": "0dae99d52406d6c7658bedcc54236b975e1a9853ff1a19064096cf62b2946490",
+    "simulation/src/ReadoutNoise.cc": "681a4f4fd699a2c6688d940e2092c67d607eb4855c781e2786e0f1aa5c48f6ac",
+    "simulation/src/ReadoutResponse.cc": "6c5e1c16428b6a8c8cbd800a0a61cbb4a89919246bf06a6f84af6b70e8abce25",
+    "simulation/src/SignalDependentNoise.cc": "7093433d7986d1002087289c14f1053919c48dd8a0f29968819a24347aa25e96"
+  },
+  "inputs_sha256": {
+    "simulation/results/signal_fluctuations_20261028/run12_first60.npz": "887ce1d2cec395f61ee1a196de2ca9b70d790403d60b83335c76df204816504b",
+    "simulation/results/signal_fluctuations_20261028/run12_middle20.npz": "7ad68fb1e6b6e14fa63c3ac4b4c29333350fae03e7372efcb1a11a477684ade4",
+    "simulation/results/signal_fluctuations_20261028/run12_last20.npz": "f016f8e88ff9c6d27ee6f568e3f12070e6b18c2902b1dc2a28ca57fe877c1237"
+  },
+  "q_edges": [
+    201824.1125,
+    237975.62708333333,
+    274127.14166666666,
+    310278.65625,
+    346430.17083333334,
+    382581.6854166667,
+    418733.2
+  ],
+  "support_bins": [
+    0,
+    1,
+    2
+  ],
+  "groups": {
+    "first60": {
+      "n_measured": 1547,
+      "fold0_fraction": 0.5087265675500969,
+      "MC_mothers_per_fold": [
+        12175,
+        11825
+      ],
+      "folds": {
+        "0": {
+          "fit": "simulation/results/run12_noise_state_20261029/fits/first60_eval0.json",
+          "fit_sha256": "14a783adbd40cfe2d2858ce4dd4a546efed94036030ff99056e1500228692ba5",
+          "evaluation_n": 787,
+          "calibration_n": 760
+        },
+        "1": {
+          "fit": "simulation/results/run12_noise_state_20261029/fits/first60_eval1.json",
+          "fit_sha256": "abf6fa27e7056e8131e075b9a3ac0cc50e4120587639baa27dae0014cf5a6744",
+          "evaluation_n": 760,
+          "calibration_n": 787
+        }
+      },
+      "support_bins": [
+        0,
+        1,
+        2
+      ]
+    },
+    "middle20": {
+      "n_measured": 460,
+      "fold0_fraction": 0.5130434782608696,
+      "MC_mothers_per_fold": [
+        12286,
+        11714
+      ],
+      "folds": {
+        "0": {
+          "fit": "simulation/results/run12_noise_state_20261029/fits/middle20_eval0.json",
+          "fit_sha256": "6371ac7f0fd01f0b5d0f6d08652cf9a7ac074e1e612184af9ee1e86714ebf180",
+          "evaluation_n": 236,
+          "calibration_n": 224
+        },
+        "1": {
+          "fit": "simulation/results/run12_noise_state_20261029/fits/middle20_eval1.json",
+          "fit_sha256": "136fa790a2dbb25bf3e0412b2063f1e5eef7b87c159436cb00fe31997c0307af",
+          "evaluation_n": 224,
+          "calibration_n": 236
+        }
+      },
+      "support_bins": [
+        0,
+        1,
+        2
+      ]
+    },
+    "last20": {
+      "n_measured": 407,
+      "fold0_fraction": 0.5184275184275184,
+      "MC_mothers_per_fold": [
+        12413,
+        11587
+      ],
+      "folds": {
+        "0": {
+          "fit": "simulation/results/run12_noise_state_20261029/fits/last20_eval0.json",
+          "fit_sha256": "daf9b63844e12f384f8c10102624f26db2bc6decb036f3d4d572e51c85afd12c",
+          "evaluation_n": 211,
+          "calibration_n": 196
+        },
+        "1": {
+          "fit": "simulation/results/run12_noise_state_20261029/fits/last20_eval1.json",
+          "fit_sha256": "b51e929d2c7198c63f3d41b013b68b05a0388619fbd0a6f1e01efe9caf5c5521",
+          "evaluation_n": 196,
+          "calibration_n": 211
+        }
+      },
+      "support_bins": [
+        0,
+        1,
+        2
+      ]
+    }
+  },
+  "entries": {
+    "baseline": {
+      "key": "baseline",
+      "variant": "baseline",
+      "segment": null,
+      "eval_fold": null,
+      "config": "simulation/results/pid_npe_20261029/validation/run12_Am241/config.json",
+      "config_sha256": "329cfb0997f0d04c1a4360834cd9f5792ec804d20d3c33c267bb2097fd0cbd5f",
+      "path": "simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+      "source": "Am241",
+      "events": 24000,
+      "seed": 301029212,
+      "parent_existing": true,
+      "command": null
+    },
+    "first60_eval0_scale": {
+      "key": "first60_eval0_scale",
+      "variant": "scale",
+      "segment": "first60",
+      "eval_fold": 0,
+      "source": "Am241",
+      "events": 24000,
+      "seed": 301029212,
+      "parent_existing": false,
+      "config": "simulation/results/run12_noise_state_20261029/configs/first60_eval0_scale.json",
+      "config_sha256": "3ff72f9f2e1d85253fc55bc6fec39d0bf600bd9a7741afb2364bde2fd78f5778",
+      "path": "simulation/results/run12_noise_state_20261029/roots/first60_eval0_scale.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/first60_eval0_scale.json",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/first60_eval0_scale.root"
+      ]
+    },
+    "first60_eval0_states": {
+      "key": "first60_eval0_states",
+      "variant": "states",
+      "segment": "first60",
+      "eval_fold": 0,
+      "source": "Am241",
+      "events": 24000,
+      "seed": 301029212,
+      "parent_existing": false,
+      "config": "simulation/results/run12_noise_state_20261029/configs/first60_eval0_states.json",
+      "config_sha256": "cd21697f71cc69c30e686b5b035b6dce5b91e233ed9e2a1895a109e2ea4387d6",
+      "path": "simulation/results/run12_noise_state_20261029/roots/first60_eval0_states.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/first60_eval0_states.json",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/first60_eval0_states.root"
+      ]
+    },
+    "first60_eval0_spectrum_states": {
+      "key": "first60_eval0_spectrum_states",
+      "variant": "spectrum_states",
+      "segment": "first60",
+      "eval_fold": 0,
+      "source": "Am241",
+      "events": 24000,
+      "seed": 301029212,
+      "parent_existing": false,
+      "config": "simulation/results/run12_noise_state_20261029/configs/first60_eval0_spectrum_states.json",
+      "config_sha256": "837377b7efcfe977fce85cac9cdb612cb366c011983205bd4b8d9268ae3956f1",
+      "path": "simulation/results/run12_noise_state_20261029/roots/first60_eval0_spectrum_states.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/first60_eval0_spectrum_states.json",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/first60_eval0_spectrum_states.root"
+      ]
+    },
+    "first60_eval1_scale": {
+      "key": "first60_eval1_scale",
+      "variant": "scale",
+      "segment": "first60",
+      "eval_fold": 1,
+      "source": "Am241",
+      "events": 24000,
+      "seed": 301029212,
+      "parent_existing": false,
+      "config": "simulation/results/run12_noise_state_20261029/configs/first60_eval1_scale.json",
+      "config_sha256": "a4892d2bdfa8d6d9c115b0d28577f058ae28783545c625f3dc6f4067465b1b68",
+      "path": "simulation/results/run12_noise_state_20261029/roots/first60_eval1_scale.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/first60_eval1_scale.json",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/first60_eval1_scale.root"
+      ]
+    },
+    "first60_eval1_states": {
+      "key": "first60_eval1_states",
+      "variant": "states",
+      "segment": "first60",
+      "eval_fold": 1,
+      "source": "Am241",
+      "events": 24000,
+      "seed": 301029212,
+      "parent_existing": false,
+      "config": "simulation/results/run12_noise_state_20261029/configs/first60_eval1_states.json",
+      "config_sha256": "8a3a780e5b57ed86b21dd087765001cee4eed64ba8772f8debd17942847eef2f",
+      "path": "simulation/results/run12_noise_state_20261029/roots/first60_eval1_states.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/first60_eval1_states.json",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/first60_eval1_states.root"
+      ]
+    },
+    "first60_eval1_spectrum_states": {
+      "key": "first60_eval1_spectrum_states",
+      "variant": "spectrum_states",
+      "segment": "first60",
+      "eval_fold": 1,
+      "source": "Am241",
+      "events": 24000,
+      "seed": 301029212,
+      "parent_existing": false,
+      "config": "simulation/results/run12_noise_state_20261029/configs/first60_eval1_spectrum_states.json",
+      "config_sha256": "e7572fd2888ba8657b13013cc923251adf4d3ba180212a79bae17c7886088a2d",
+      "path": "simulation/results/run12_noise_state_20261029/roots/first60_eval1_spectrum_states.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/first60_eval1_spectrum_states.json",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/first60_eval1_spectrum_states.root"
+      ]
+    },
+    "middle20_eval0_scale": {
+      "key": "middle20_eval0_scale",
+      "variant": "scale",
+      "segment": "middle20",
+      "eval_fold": 0,
+      "source": "Am241",
+      "events": 24000,
+      "seed": 301029212,
+      "parent_existing": false,
+      "config": "simulation/results/run12_noise_state_20261029/configs/middle20_eval0_scale.json",
+      "config_sha256": "8ca5f2c9e526ae36d472791289fbeb6e67fcd936681c1c38d3b30e5cfd94c995",
+      "path": "simulation/results/run12_noise_state_20261029/roots/middle20_eval0_scale.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/middle20_eval0_scale.json",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/middle20_eval0_scale.root"
+      ]
+    },
+    "middle20_eval0_states": {
+      "key": "middle20_eval0_states",
+      "variant": "states",
+      "segment": "middle20",
+      "eval_fold": 0,
+      "source": "Am241",
+      "events": 24000,
+      "seed": 301029212,
+      "parent_existing": false,
+      "config": "simulation/results/run12_noise_state_20261029/configs/middle20_eval0_states.json",
+      "config_sha256": "2562f3d2dd7e8c40dc2fec5d8400f69394f09c80199bb5defeead741e9495110",
+      "path": "simulation/results/run12_noise_state_20261029/roots/middle20_eval0_states.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/middle20_eval0_states.json",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/middle20_eval0_states.root"
+      ]
+    },
+    "middle20_eval0_spectrum_states": {
+      "key": "middle20_eval0_spectrum_states",
+      "variant": "spectrum_states",
+      "segment": "middle20",
+      "eval_fold": 0,
+      "source": "Am241",
+      "events": 24000,
+      "seed": 301029212,
+      "parent_existing": false,
+      "config": "simulation/results/run12_noise_state_20261029/configs/middle20_eval0_spectrum_states.json",
+      "config_sha256": "f068004127d57807f32ce66a911977ea81f405c663a3847fb9b28e7862c2750d",
+      "path": "simulation/results/run12_noise_state_20261029/roots/middle20_eval0_spectrum_states.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/middle20_eval0_spectrum_states.json",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/middle20_eval0_spectrum_states.root"
+      ]
+    },
+    "middle20_eval1_scale": {
+      "key": "middle20_eval1_scale",
+      "variant": "scale",
+      "segment": "middle20",
+      "eval_fold": 1,
+      "source": "Am241",
+      "events": 24000,
+      "seed": 301029212,
+      "parent_existing": false,
+      "config": "simulation/results/run12_noise_state_20261029/configs/middle20_eval1_scale.json",
+      "config_sha256": "c6ad99364d7c910a93ed5bf79b2e2721d3b478a63d9bcc5b8aca90529c5c7cff",
+      "path": "simulation/results/run12_noise_state_20261029/roots/middle20_eval1_scale.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/middle20_eval1_scale.json",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/middle20_eval1_scale.root"
+      ]
+    },
+    "middle20_eval1_states": {
+      "key": "middle20_eval1_states",
+      "variant": "states",
+      "segment": "middle20",
+      "eval_fold": 1,
+      "source": "Am241",
+      "events": 24000,
+      "seed": 301029212,
+      "parent_existing": false,
+      "config": "simulation/results/run12_noise_state_20261029/configs/middle20_eval1_states.json",
+      "config_sha256": "442d568709ef28f790560ebb507ccdd3246415aa4a7192dd6a64944841e935b3",
+      "path": "simulation/results/run12_noise_state_20261029/roots/middle20_eval1_states.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/middle20_eval1_states.json",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/middle20_eval1_states.root"
+      ]
+    },
+    "middle20_eval1_spectrum_states": {
+      "key": "middle20_eval1_spectrum_states",
+      "variant": "spectrum_states",
+      "segment": "middle20",
+      "eval_fold": 1,
+      "source": "Am241",
+      "events": 24000,
+      "seed": 301029212,
+      "parent_existing": false,
+      "config": "simulation/results/run12_noise_state_20261029/configs/middle20_eval1_spectrum_states.json",
+      "config_sha256": "74ffd442c887cec4a36e0b80363549514c9a2a35062d2c4eaffa10659195bb1b",
+      "path": "simulation/results/run12_noise_state_20261029/roots/middle20_eval1_spectrum_states.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/middle20_eval1_spectrum_states.json",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/middle20_eval1_spectrum_states.root"
+      ]
+    },
+    "last20_eval0_scale": {
+      "key": "last20_eval0_scale",
+      "variant": "scale",
+      "segment": "last20",
+      "eval_fold": 0,
+      "source": "Am241",
+      "events": 24000,
+      "seed": 301029212,
+      "parent_existing": false,
+      "config": "simulation/results/run12_noise_state_20261029/configs/last20_eval0_scale.json",
+      "config_sha256": "363c55012b4f9b91b758d4d27ab14695f9778e7a9e1f25e4f5436350ad173301",
+      "path": "simulation/results/run12_noise_state_20261029/roots/last20_eval0_scale.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/last20_eval0_scale.json",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/last20_eval0_scale.root"
+      ]
+    },
+    "last20_eval0_states": {
+      "key": "last20_eval0_states",
+      "variant": "states",
+      "segment": "last20",
+      "eval_fold": 0,
+      "source": "Am241",
+      "events": 24000,
+      "seed": 301029212,
+      "parent_existing": false,
+      "config": "simulation/results/run12_noise_state_20261029/configs/last20_eval0_states.json",
+      "config_sha256": "83f419877e4fbc25b48cce47415137a43a092f0d779270952cafb22f9959a0b0",
+      "path": "simulation/results/run12_noise_state_20261029/roots/last20_eval0_states.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/last20_eval0_states.json",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/last20_eval0_states.root"
+      ]
+    },
+    "last20_eval0_spectrum_states": {
+      "key": "last20_eval0_spectrum_states",
+      "variant": "spectrum_states",
+      "segment": "last20",
+      "eval_fold": 0,
+      "source": "Am241",
+      "events": 24000,
+      "seed": 301029212,
+      "parent_existing": false,
+      "config": "simulation/results/run12_noise_state_20261029/configs/last20_eval0_spectrum_states.json",
+      "config_sha256": "e956e0398634bf01d424f5acbb35266e97a65af4b75bed75abf6ad7c8e2155c9",
+      "path": "simulation/results/run12_noise_state_20261029/roots/last20_eval0_spectrum_states.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/last20_eval0_spectrum_states.json",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/last20_eval0_spectrum_states.root"
+      ]
+    },
+    "last20_eval1_scale": {
+      "key": "last20_eval1_scale",
+      "variant": "scale",
+      "segment": "last20",
+      "eval_fold": 1,
+      "source": "Am241",
+      "events": 24000,
+      "seed": 301029212,
+      "parent_existing": false,
+      "config": "simulation/results/run12_noise_state_20261029/configs/last20_eval1_scale.json",
+      "config_sha256": "56daba6c4baa9f5fdb14388201e31f24ee54b6e40b304b44efde29a654594c0b",
+      "path": "simulation/results/run12_noise_state_20261029/roots/last20_eval1_scale.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/last20_eval1_scale.json",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/last20_eval1_scale.root"
+      ]
+    },
+    "last20_eval1_states": {
+      "key": "last20_eval1_states",
+      "variant": "states",
+      "segment": "last20",
+      "eval_fold": 1,
+      "source": "Am241",
+      "events": 24000,
+      "seed": 301029212,
+      "parent_existing": false,
+      "config": "simulation/results/run12_noise_state_20261029/configs/last20_eval1_states.json",
+      "config_sha256": "8d042a6d6c931cf17c1f350b81bd799a23306606df44e9c996238942a85f25e3",
+      "path": "simulation/results/run12_noise_state_20261029/roots/last20_eval1_states.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/last20_eval1_states.json",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/last20_eval1_states.root"
+      ]
+    },
+    "last20_eval1_spectrum_states": {
+      "key": "last20_eval1_spectrum_states",
+      "variant": "spectrum_states",
+      "segment": "last20",
+      "eval_fold": 1,
+      "source": "Am241",
+      "events": 24000,
+      "seed": 301029212,
+      "parent_existing": false,
+      "config": "simulation/results/run12_noise_state_20261029/configs/last20_eval1_spectrum_states.json",
+      "config_sha256": "4913447e6f28bb0014dfc8b2a64379ab25129f4454707ea9a0f65a610df6ba0d",
+      "path": "simulation/results/run12_noise_state_20261029/roots/last20_eval1_spectrum_states.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+        "/media/sf_works/SiPM/simulation/results/pid_npe_20261029/validation/run12_Am241/events.root",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/configs/last20_eval1_spectrum_states.json",
+        "/media/sf_works/SiPM/simulation/results/run12_noise_state_20261029/roots/last20_eval1_spectrum_states.root"
+      ]
+    }
+  },
+  "mother_fold_sha256": "d8c204e1ff8282533c4c771d177ff5b54a73edfb53dc84f1a95c7f9f89ecdaa2",
+  "MC_mother_fold_seed": 3010291200,
+  "noise_variants": [
+    "baseline",
+    "scale",
+    "states",
+    "spectrum_states"
+  ],
+  "unique_parent_mothers": 24000,
+  "new_native_mothers": 0,
+  "frozen_parameters": [
+    "geometry",
+    "optical",
+    "acquisition",
+    "sipm.sensor",
+    "readout_response",
+    "signal_dependent_noise"
+  ],
+  "experimental_evaluation": "Opposite raw-index64-event block parity within each segment. Existing first60 pulse/signal calibration remains shared; only new pretrigger state estimation is cross-fitted.",
+  "MC_evaluation": "One fixed uniform per mother assigns exactly one evaluation fold per segment, using the measured fold fraction. Same mothers paired across all variants and segments; no duplicated independent MC.",
+  "PID_selection": "Experimental IDs/Q/PCA frozen; main-band0.4 diagnostic only at evaluation. MC has no PID cut. Report reselected and fixed parent IDs/Q, plus fixed-anchor sensitivity.",
+  "uncertainty": "512 paired whole-mother bootstrap plus experimental block64 bootstrap, with block128 check. Noise fits/kernels and MC fold assignment held fixed; no fit/model uncertainty.",
+  "PSD_limits": "First256=512ns; linear detrend, quantization correction, flat extrapolation below first positive Fourier frequency,257-tap FIR. Long correlations and pulse-like transients not uniquely inferred.",
+  "decision": "Compare all frozen variants; do not refit to evaluation PID scores or select an unreported optimum."
+}

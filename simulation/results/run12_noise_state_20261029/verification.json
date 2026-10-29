@@ -1,0 +1,252 @@
+{
+  "scope": "Verify and freeze pretrigger cross-fit, paired native replay and notebook.",
+  "parent_archive": {
+    "record_sha256": "64703492f79c8b6d7735433bdb56a078fc466dd94ab0b9c7642c77d4af181f19",
+    "unchanged_outputs": 145,
+    "unchanged_source_snapshots": 166
+  },
+  "frozen_noise_sources": 7,
+  "frozen_inputs": 3,
+  "other_frozen_analysis_inputs": {
+    "simulation/results/pid_bandwidth_20261029/arrays/measured_run12_first60.npz": "9cc78ea936d98553e23ddd05b35664890f8b9029efae859c1f8592c8d2d25fdc",
+    "simulation/results/pid_bandwidth_20261029/arrays/measured_run12_middle20.npz": "6b9605543d541cdbcfdfb8cbec44e6fb088ca8e108cd85a355ba1aea3e17c9dc",
+    "simulation/results/pid_bandwidth_20261029/arrays/measured_run12_last20.npz": "e34e9bf77176d38bde499b2f5706aa152697e2fc1dc7e4e65f38eec33de453cc",
+    "analysis/paper_baseline/results/publication_20261028/point.json": "a02a7a261de4b016737c9ed553a63aae801ada172006f026ea904778d4ce90c0",
+    "simulation/results/pid_20261029/arrays/measured_run12_first60.npz": "6e155ba2a9104c1331e2b62454d6ec1e6a6b3e00e6253b17d830a12fce9deba4"
+  },
+  "crossfit": {
+    "first60": {
+      "calibration_evaluation_sizes": [
+        [
+          760,
+          787
+        ],
+        [
+          787,
+          760
+        ]
+      ],
+      "disjoint": true,
+      "one_response_assignment_per_mother": true
+    },
+    "middle20": {
+      "calibration_evaluation_sizes": [
+        [
+          224,
+          236
+        ],
+        [
+          236,
+          224
+        ]
+      ],
+      "disjoint": true,
+      "one_response_assignment_per_mother": true
+    },
+    "last20": {
+      "calibration_evaluation_sizes": [
+        [
+          196,
+          211
+        ],
+        [
+          211,
+          196
+        ]
+      ],
+      "disjoint": true,
+      "one_response_assignment_per_mother": true
+    }
+  },
+  "native_replays": {
+    "baseline": {
+      "mothers": 24000,
+      "same_deposited_energy": true,
+      "independent_ADC_score_check": 206,
+      "bit_exact_signal_parent_ids": 206,
+      "same_avalanche_metadata": true,
+      "selected_before_fold_assignment": 206
+    },
+    "first60_eval0_scale": {
+      "mothers": 24000,
+      "same_deposited_energy": true,
+      "independent_ADC_score_check": 206,
+      "bit_exact_signal_parent_ids": 206,
+      "same_avalanche_metadata": true,
+      "selected_before_fold_assignment": 206
+    },
+    "first60_eval0_states": {
+      "mothers": 24000,
+      "same_deposited_energy": true,
+      "independent_ADC_score_check": 206,
+      "bit_exact_signal_parent_ids": 206,
+      "same_avalanche_metadata": true,
+      "selected_before_fold_assignment": 206
+    },
+    "first60_eval0_spectrum_states": {
+      "mothers": 24000,
+      "same_deposited_energy": true,
+      "independent_ADC_score_check": 206,
+      "bit_exact_signal_parent_ids": 206,
+      "same_avalanche_metadata": true,
+      "selected_before_fold_assignment": 206
+    },
+    "first60_eval1_scale": {
+      "mothers": 24000,
+      "same_deposited_energy": true,
+      "independent_ADC_score_check": 206,
+      "bit_exact_signal_parent_ids": 206,
+      "same_avalanche_metadata": true,
+      "selected_before_fold_assignment": 206
+    },
+    "first60_eval1_states": {
+      "mothers": 24000,
+      "same_deposited_energy": true,
+      "independent_ADC_score_check": 206,
+      "bit_exact_signal_parent_ids": 206,
+      "same_avalanche_metadata": true,
+      "selected_before_fold_assignment": 206
+    },
+    "first60_eval1_spectrum_states": {
+      "mothers": 24000,
+      "same_deposited_energy": true,
+      "independent_ADC_score_check": 206,
+      "bit_exact_signal_parent_ids": 206,
+      "same_avalanche_metadata": true,
+      "selected_before_fold_assignment": 206
+    },
+    "middle20_eval0_scale": {
+      "mothers": 24000,
+      "same_deposited_energy": true,
+      "independent_ADC_score_check": 206,
+      "bit_exact_signal_parent_ids": 206,
+      "same_avalanche_metadata": true,
+      "selected_before_fold_assignment": 205
+    },
+    "middle20_eval0_states": {
+      "mothers": 24000,
+      "same_deposited_energy": true,
+      "independent_ADC_score_check": 206,
+      "bit_exact_signal_parent_ids": 206,
+      "same_avalanche_metadata": true,
+      "selected_before_fold_assignment": 206
+    },
+    "middle20_eval0_spectrum_states": {
+      "mothers": 24000,
+      "same_deposited_energy": true,
+      "independent_ADC_score_check": 207,
+      "bit_exact_signal_parent_ids": 206,
+      "same_avalanche_metadata": true,
+      "selected_before_fold_assignment": 206
+    },
+    "middle20_eval1_scale": {
+      "mothers": 24000,
+      "same_deposited_energy": true,
+      "independent_ADC_score_check": 206,
+      "bit_exact_signal_parent_ids": 206,
+      "same_avalanche_metadata": true,
+      "selected_before_fold_assignment": 205
+    },
+    "middle20_eval1_states": {
+      "mothers": 24000,
+      "same_deposited_energy": true,
+      "independent_ADC_score_check": 206,
+      "bit_exact_signal_parent_ids": 206,
+      "same_avalanche_metadata": true,
+      "selected_before_fold_assignment": 206
+    },
+    "middle20_eval1_spectrum_states": {
+      "mothers": 24000,
+      "same_deposited_energy": true,
+      "independent_ADC_score_check": 207,
+      "bit_exact_signal_parent_ids": 206,
+      "same_avalanche_metadata": true,
+      "selected_before_fold_assignment": 206
+    },
+    "last20_eval0_scale": {
+      "mothers": 24000,
+      "same_deposited_energy": true,
+      "independent_ADC_score_check": 207,
+      "bit_exact_signal_parent_ids": 206,
+      "same_avalanche_metadata": true,
+      "selected_before_fold_assignment": 206
+    },
+    "last20_eval0_states": {
+      "mothers": 24000,
+      "same_deposited_energy": true,
+      "independent_ADC_score_check": 207,
+      "bit_exact_signal_parent_ids": 206,
+      "same_avalanche_metadata": true,
+      "selected_before_fold_assignment": 207
+    },
+    "last20_eval0_spectrum_states": {
+      "mothers": 24000,
+      "same_deposited_energy": true,
+      "independent_ADC_score_check": 207,
+      "bit_exact_signal_parent_ids": 206,
+      "same_avalanche_metadata": true,
+      "selected_before_fold_assignment": 206
+    },
+    "last20_eval1_scale": {
+      "mothers": 24000,
+      "same_deposited_energy": true,
+      "independent_ADC_score_check": 207,
+      "bit_exact_signal_parent_ids": 206,
+      "same_avalanche_metadata": true,
+      "selected_before_fold_assignment": 206
+    },
+    "last20_eval1_states": {
+      "mothers": 24000,
+      "same_deposited_energy": true,
+      "independent_ADC_score_check": 207,
+      "bit_exact_signal_parent_ids": 206,
+      "same_avalanche_metadata": true,
+      "selected_before_fold_assignment": 207
+    },
+    "last20_eval1_spectrum_states": {
+      "mothers": 24000,
+      "same_deposited_energy": true,
+      "independent_ADC_score_check": 208,
+      "bit_exact_signal_parent_ids": 206,
+      "same_avalanche_metadata": true,
+      "selected_before_fold_assignment": 207
+    }
+  },
+  "paired_analysis": {
+    "first60": {
+      "fixed_common_ids": 206,
+      "old_baseline_reproduced": true,
+      "duplicate_mothers": 0
+    },
+    "middle20": {
+      "fixed_common_ids": 206,
+      "old_baseline_reproduced": true,
+      "duplicate_mothers": 0
+    },
+    "last20": {
+      "fixed_common_ids": 206,
+      "old_baseline_reproduced": true,
+      "duplicate_mothers": 0
+    }
+  },
+  "minimum_valid_bootstrap_draws": 512,
+  "notebook": {
+    "executed_code_cells": 7,
+    "embedded_images": 4,
+    "valid": true
+  },
+  "native_tests": {
+    "reused_unchanged_binary_sha256": "1005a9e9060b8cb764f25ee619fcdccc6102d8a0bd9a3463d6d157bef4775a4e",
+    "parent_ctest_targets": 5,
+    "parent_replay_integration_tests": 3,
+    "rerun_this_phase": false,
+    "reason": "No native source or binary change; new configs exercised by18 complete native replays and independent checks above."
+  },
+  "versions": {
+    "Python": "3.13.5",
+    "NumPy": "2.5.4",
+    "SciPy": "1.18.1",
+    "ROOT": "6.34.10"
+  },
+  "remaining_limits": "Fits, kernels, fold assignment and signal parameters held fixed in intervals; later pretrigger conditioned; all data previously explored. See decision.json."
+}
