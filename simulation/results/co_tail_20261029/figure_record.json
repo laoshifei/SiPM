@@ -1,0 +1,13 @@
+{
+  "code_sha256": "2fc9a3a1efc31449c7fd991690eac9b2580e2897bcb8994ded1e7758c3890e90",
+  "assessment_sha256": "5ba005fa0b1cc6653a9040269ca6cfa3a00c11b7c80cd5ff921b02e15afc35bc",
+  "selection_sha256": "dcae3429eb8288b9146196472266717dd56e8c9a2ca2465f809a972f4cf4399e",
+  "figures": [
+    "tail_training_families",
+    "tail_native_moments",
+    "tail_native_waveforms",
+    "tail_native_pid_controls",
+    "tail_time_contributions"
+  ],
+  "table_rows": 12
+}

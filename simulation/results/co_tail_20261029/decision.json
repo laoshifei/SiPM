@@ -1,0 +1,10 @@
+{
+  "conclusion_zh": "完整Geant4后段检查：Co平均时间差由 -16.21 ns 变为 +6.32 ns，2–3 µs电荷份额差由 -0.957 变为 -0.084 个百分点。新候选Co/Am均ADC波形NRMSE分别为 1.43% / 0.63%。Am平均时间宽度比点估计由 0.822 变为 0.698，仍偏窄。宽度、起伏和参数边界仍需一起评估；本轮不自动替换默认配置。",
+  "promoted_to_default": false,
+  "old_bound_vs_relaxed_bound_max_parameter_difference": 8.413872194523719e-07,
+  "alpha_slow_at_upper_bound": true,
+  "effective_alpha_yield_above_one": true,
+  "parameter_warning": "Alpha slow decay reaches15us and analytic gate-area preservation raises effective alpha normalization above1. These are conditional finite-window parameters, not a measured decay constant or scintillation quenching factor.",
+  "model_scope": "Training-objective sensitivity supported; lowered700ns electron bound is not driving this candidate because old/relaxed-bound optima agree. Full native mean-time and shape results can differ from analytic predictions.",
+  "next_work": "Review joint native mean, PID width and F residuals before a constrained parameter-family study; retain the boundary/normalization tradeoff and run12 noise-state checks. No validation-driven retuning in this record."
+}

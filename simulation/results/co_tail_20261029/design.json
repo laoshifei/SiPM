@@ -1,0 +1,121 @@
+{
+  "scope": "Train a joint two-source tail proposal; native Geant4 must validate it.",
+  "checkpoint_commit": "455da70",
+  "code_sha256": "a71b5b0e8ad284423b796b73beca476f1eae75679097046cf2aebd7d8148a896",
+  "inputs_sha256": {
+    "simulation/results/pid_npe_20261029/validation/run3_Co60/config.json": "14f8734a4f97d5f1c456aaa354fafbe776dcfcca0c4849e6f8eece0e17ecef66",
+    "simulation/results/signal_fluctuations_20261028/run3_first60.npz": "95462fa2ab57243fa669e1b4811469df40f2f3522e005db9dc3e64130865add3",
+    "simulation/results/pid_bandwidth_20261029/arrays/measured_run3_first60.npz": "3524db75f16934f8f2294c0081bd4e394c06d83151aa72285cf56ba6b76e3dcc",
+    "simulation/results/pid_npe_20261029/validation/arrays/run3_Co60.npz": "d1e153ad23865cc5d16358f7c66e3a211fdf05c72b4c74cbde0c364e3d1e106f",
+    "simulation/results/pid_npe_20261029/validation/run12_Am241/config.json": "329cfb0997f0d04c1a4360834cd9f5792ec804d20d3c33c267bb2097fd0cbd5f",
+    "simulation/results/signal_fluctuations_20261028/run12_first60.npz": "887ce1d2cec395f61ee1a196de2ca9b70d790403d60b83335c76df204816504b",
+    "simulation/results/pid_bandwidth_20261029/arrays/measured_run12_first60.npz": "9cc78ea936d98553e23ddd05b35664890f8b9029efae859c1f8592c8d2d25fdc",
+    "simulation/results/pid_npe_20261029/validation/arrays/run12_Am241.npz": "c0f28f7bda392bf594d0723d450d85db10214479c213f2fc0c3d608f5e4b02c7"
+  },
+  "parent_record_sha256": "64703492f79c8b6d7735433bdb56a078fc466dd94ab0b9c7642c77d4af181f19",
+  "noise_state_record_sha256": "dc5a906ea9275263f267555e7c065a9d15f288a98013c4f27effaeb092af1c4b",
+  "q_edges": [
+    201824.1125,
+    237975.62708333333,
+    274127.14166666666,
+    310278.65625,
+    346430.17083333334,
+    382581.6854166667,
+    418733.2
+  ],
+  "support_bins": {
+    "Co60": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "Am241": [
+      0,
+      1,
+      2
+    ]
+  },
+  "counts": {
+    "Co60": {
+      "experimental_first60": 2423,
+      "reused_MC": 280
+    },
+    "Am241": {
+      "experimental_first60": 1547,
+      "reused_MC": 206
+    }
+  },
+  "cases": [
+    {
+      "name": "legacy_objective",
+      "slow_lower_ns": 700.0,
+      "tail_weight": 0.0,
+      "early_weight": 4.0
+    },
+    {
+      "name": "tail_old_bound",
+      "slow_lower_ns": 700.0,
+      "tail_weight": 1.0,
+      "early_weight": 1.0
+    },
+    {
+      "name": "tail_relaxed_bound",
+      "slow_lower_ns": 400.0,
+      "tail_weight": 1.0,
+      "early_weight": 1.0
+    },
+    {
+      "name": "tail_half_weight",
+      "slow_lower_ns": 400.0,
+      "tail_weight": 0.5,
+      "early_weight": 1.0
+    }
+  ],
+  "predeclared_primary": "tail_relaxed_bound",
+  "starts": [
+    [
+      4.54031523282585,
+      6.551080335148821,
+      6.673789821747485,
+      9.040575039308067,
+      4.842734312616784,
+      0.13039785610763194,
+      0.48402879368890916
+    ],
+    [
+      4.605170185988092,
+      6.684611727667927,
+      6.684611727667927,
+      9.104979856318357,
+      4.787491742782046,
+      0.2,
+      0.5
+    ],
+    [
+      4.605170185988092,
+      6.396929655216146,
+      6.551080335043404,
+      9.210340371976184,
+      4.941642422609304,
+      0.1,
+      0.45
+    ]
+  ],
+  "training": "Only frozen run3/run12 first60 and previous MC, now calibration support; no later experimental pulse or new native output enters fitting.",
+  "objective": "Equal-Q mean ADC/Q density, original5 waveform descriptors; tail targets add mean time/5ns, late fraction/0.002 and late contribution/5ns. Descriptive correlated penalties, not a chi-square likelihood.",
+  "closure": "Fixed102ns Savitzky-Golay smoothed discrepancy between previous native mean and exponential convolution. Proposal only; never added to native signal or used as a measured waveform template.",
+  "frozen": [
+    "geometry",
+    "nominal_PDE0.3",
+    "passive_signal_transmission0.5",
+    "electronics_noise",
+    "signal_dependent_noise",
+    "SPE2ns/29ns"
+  ],
+  "normalization": "One source-independent yield multiplier preserves analytic electron3us gate area; alpha relative yield adjusts by the corresponding alpha/electron ratio. No per-event amplitude scaling.",
+  "native_validation": "Full Geant4 required because optical times change. New seeds8000Co/24000Am; all previously explored experimental segments checked, no validation-driven refit.",
+  "limits": "Conditional apparatus and emission/response parameters. First60 main-band separator is diagnostic, not experimental particle truth. Old MC is used by the proposal, so old/new transport comparison is not independent paired validation."
+}

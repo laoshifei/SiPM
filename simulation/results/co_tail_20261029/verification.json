@@ -1,0 +1,67 @@
+{
+  "scope": "Verify native two-source tail checks and freeze an auditable experiment.",
+  "parent_archives": {
+    "pid_npe_20261029": {
+      "record_sha256": "64703492f79c8b6d7735433bdb56a078fc466dd94ab0b9c7642c77d4af181f19",
+      "unchanged_outputs": 145,
+      "unchanged_sources": 166
+    },
+    "run12_noise_state_20261029": {
+      "record_sha256": "dc5a906ea9275263f267555e7c065a9d15f288a98013c4f27effaeb092af1c4b",
+      "unchanged_outputs": 148,
+      "unchanged_sources": 173
+    }
+  },
+  "training_inputs": 8,
+  "analysis_inputs": 16,
+  "fit_families": {
+    "retained": 4,
+    "starts_per_family": 3,
+    "primary_predeclared": "tail_relaxed_bound"
+  },
+  "unchanged_native_sources": 45,
+  "proposal_sources": 2,
+  "native": {
+    "run3_Co60": {
+      "independent_mothers": 8000,
+      "common_events": 247,
+      "physics_and_charge_checks_all_mothers": true,
+      "independent_ADC_scores": 247,
+      "config_changes_limited_to_frozen_timing_and_normalization": true
+    },
+    "run12_Am241": {
+      "independent_mothers": 24000,
+      "common_events": 194,
+      "physics_and_charge_checks_all_mothers": true,
+      "independent_ADC_scores": 194,
+      "config_changes_limited_to_frozen_timing_and_normalization": true
+    }
+  },
+  "independent_mothers": 32000,
+  "independent_formal_moment_aggregates": 12,
+  "minimum_valid_bootstrap_draws": 511,
+  "notebook": {
+    "executed_code_cells": 8,
+    "embedded_images": 5,
+    "byte_identical_PNGs": 5,
+    "valid": true
+  },
+  "native_tests": {
+    "reused_exact_binary_sha256": "ecce63e1944a1d4ec3587f465f8e660337a5fb76926b1b30fface9ea7c06f735",
+    "parent_passed": {
+      "ctest_targets": 5,
+      "response_replay_integration_tests": 3,
+      "passed": true
+    },
+    "new_all_mother_physics_checks": 32000,
+    "rerun_unit_tests": false,
+    "reason": "No native source change; new optical/readout configurations verified with complete native transport."
+  },
+  "versions": {
+    "Python": "3.13.5",
+    "NumPy": "2.5.4",
+    "SciPy": "1.18.1",
+    "ROOT": "6.34.10"
+  },
+  "scientific_limits": "Conditional model and pointwise statistics; old MC used in proposal; alpha slow component at15us bound and effective alpha normalization above1; see decision.json for remaining width and center residuals."
+}

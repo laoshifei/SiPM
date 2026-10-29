@@ -1,0 +1,78 @@
+{
+  "scope": "Train a joint two-source tail proposal; native Geant4 must validate it.",
+  "selection_sha256": "dcae3429eb8288b9146196472266717dd56e8c9a2ca2465f809a972f4cf4399e",
+  "design_sha256": "50c637c21c41f8d1a5a33084a158361b06cb24d8bb05a127d41dadea119fcfc1",
+  "q_edges": [
+    201824.1125,
+    237975.62708333333,
+    274127.14166666666,
+    310278.65625,
+    346430.17083333334,
+    382581.6854166667,
+    418733.2
+  ],
+  "support_bins": {
+    "Co60": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "Am241": [
+      0,
+      1,
+      2
+    ]
+  },
+  "entries": {
+    "run3_Co60": {
+      "key": "run3_Co60",
+      "run": 3,
+      "source": "Co60",
+      "events": 8000,
+      "seed": 301029503,
+      "native": true,
+      "config": "simulation/results/co_tail_20261029/configs/run3_Co60.json",
+      "config_sha256": "d4f0325720a0a9a28f85d0df87dd81f96d8f0c8367f82fd4311223e338719187",
+      "path": "simulation/results/co_tail_20261029/native/run3_Co60.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+        "/media/sf_works/SiPM/simulation/results/co_tail_20261029/configs/run3_Co60.json",
+        "Co60",
+        "8000",
+        "301029503",
+        "/media/sf_works/SiPM/simulation/results/co_tail_20261029/native/run3_Co60.root"
+      ]
+    },
+    "run12_Am241": {
+      "key": "run12_Am241",
+      "run": 12,
+      "source": "Am241",
+      "events": 24000,
+      "seed": 301029512,
+      "native": true,
+      "config": "simulation/results/co_tail_20261029/configs/run12_Am241.json",
+      "config_sha256": "b5a677f96ba5e512f3faeaee5bf84942a5afab11573bb36a63aeb6528a7ccaee",
+      "path": "simulation/results/co_tail_20261029/native/run12_Am241.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+        "/media/sf_works/SiPM/simulation/results/co_tail_20261029/configs/run12_Am241.json",
+        "Am241",
+        "24000",
+        "301029512",
+        "/media/sf_works/SiPM/simulation/results/co_tail_20261029/native/run12_Am241.root"
+      ]
+    }
+  },
+  "binary": "simulation/build/npe_20261029/csi_sources",
+  "binary_sha256": "ecce63e1944a1d4ec3587f465f8e660337a5fb76926b1b30fface9ea7c06f735",
+  "independent_new_mothers": 32000,
+  "source_sha256": {
+    "simulation/fit_co_tail.py": "a71b5b0e8ad284423b796b73beca476f1eae75679097046cf2aebd7d8148a896",
+    "simulation/refit_parallel_shape.py": "3384aaae7fe16ad2e13711c7667ab9147fef4285cf00f93edb0fe7d750d7584b"
+  },
+  "evaluation": "Independent new native seeds. Baseline MC has been used for proposal closure; no same-history comparison or new experimental holdout claim.",
+  "noise": "Original first60 baseline and signal-residual model frozen; run12 cross-fitted later noise variants remain a separate experiment."
+}

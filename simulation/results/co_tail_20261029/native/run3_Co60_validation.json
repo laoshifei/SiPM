@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "source": "Co60",
+  "events": 8000,
+  "zero_deposit_events": 7222,
+  "deposited_events": 778,
+  "alpha_deposit_events": 0,
+  "alpha_deposit_median_MeV": null,
+  "energy_deposit_p05_p50_p95_MeV": [
+    0.030760063815721897,
+    0.6241924339481075,
+    1.332498093152878
+  ],
+  "decay_product_counts": {
+    "1000280609": 15995,
+    "-12": 8000,
+    "11": 8033,
+    "22": 15994,
+    "1000280600": 8000
+  },
+  "max_relative_charge_balance_error": 1.623038699276343e-13,
+  "prompt_gamma_lines_counts": {
+    "0.05954": 0,
+    "1.17323": 7994,
+    "1.33249": 7999
+  },
+  "ancestry_checks": true,
+  "scope": "Numerical and source-physics checks, not validation against experimental waveform",
+  "source_gap_mm": 1.0,
+  "transport_only": false,
+  "digitization_enabled": true
+}

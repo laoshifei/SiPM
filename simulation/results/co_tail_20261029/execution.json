@@ -1,0 +1,92 @@
+{
+  "scope": "Run the frozen two-source Geant4 tail candidate and check every mother.",
+  "code_sha256": "fa862b4f0146afa5c2b5366e547f73679a033e9144f9271064b2be51797a83c0",
+  "protocol_sha256": "704f595d71d3cd01cce2f3c3cdbd7316ed27b316b3d733e73f7dd9beb471caaf",
+  "jobs": [
+    {
+      "key": "run12_Am241",
+      "seconds": 318.56843519210815,
+      "steps": [
+        {
+          "stage": "native",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+            "/media/sf_works/SiPM/simulation/results/co_tail_20261029/configs/run12_Am241.json",
+            "Am241",
+            "24000",
+            "301029512",
+            "/media/sf_works/SiPM/simulation/results/co_tail_20261029/native/run12_Am241.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/co_tail_20261029/logs/run12_Am241_native.log"
+        },
+        {
+          "stage": "validate",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/validate.py",
+            "/media/sf_works/SiPM/simulation/results/co_tail_20261029/native/run12_Am241.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/co_tail_20261029/logs/run12_Am241_validate.log"
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/run_co_tail.py",
+            "--extract",
+            "run12_Am241"
+          ],
+          "exit": 0,
+          "log": "simulation/results/co_tail_20261029/logs/run12_Am241_extract.log"
+        }
+      ]
+    },
+    {
+      "key": "run3_Co60",
+      "seconds": 416.34546518325806,
+      "steps": [
+        {
+          "stage": "native",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+            "/media/sf_works/SiPM/simulation/results/co_tail_20261029/configs/run3_Co60.json",
+            "Co60",
+            "8000",
+            "301029503",
+            "/media/sf_works/SiPM/simulation/results/co_tail_20261029/native/run3_Co60.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/co_tail_20261029/logs/run3_Co60_native.log"
+        },
+        {
+          "stage": "validate",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/validate.py",
+            "/media/sf_works/SiPM/simulation/results/co_tail_20261029/native/run3_Co60.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/co_tail_20261029/logs/run3_Co60_validate.log"
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/run_co_tail.py",
+            "--extract",
+            "run3_Co60"
+          ],
+          "exit": 0,
+          "log": "simulation/results/co_tail_20261029/logs/run3_Co60_extract.log"
+        }
+      ]
+    }
+  ],
+  "new_independent_mothers": 32000
+}
