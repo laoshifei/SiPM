@@ -1,0 +1,18 @@
+{
+  "frozen_input_hashes_checked": 27,
+  "fixed_PID_score_mean_reproduced": {
+    "MC_states": 3,
+    "data_segments": 9
+  },
+  "exact_time_slice_sum": true,
+  "notebook": {
+    "executed_code_cells": 5,
+    "embedded_figures": 2,
+    "errors": 0
+  },
+  "figure_visual_review": "Both PNGs inspected; labels and plotted ranges checked. SVG/PDF format checks passed.",
+  "new_parameters_fitted": false,
+  "new_native_Geant4_mothers": 0,
+  "library_changes": "No writes completed; optional search-cache saving was rejected by read-only filesystem.",
+  "evidence_level": "本轮仅复用既有精读笔记与当前项目已核验文献表，未重新阅读PDF、未作全局新颖性检索。"
+}

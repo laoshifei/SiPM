@@ -1,0 +1,986 @@
+{
+  "scope": "Read-only scientific audit to prioritize the next CsI/SiPM analysis.",
+  "code_sha256": "ebde5d45fc1af8b057904eae2764d7c66fe3fa18216ea2a92184aa1f937cc6ea",
+  "checkpoint_commit": "082607a2a6bdd3bb78fa3e0f92b716aaaefa0a30",
+  "purpose": "Prioritization on existing frozen data; no new parameter fit, native simulation, cohort change, or particle relabeling.",
+  "windows_ns": [
+    -40,
+    0,
+    200,
+    500,
+    1000,
+    1500,
+    2000,
+    3000
+  ],
+  "q_edges": [
+    201824.1125,
+    237975.62708333333,
+    274127.14166666666,
+    310278.65625,
+    346430.17083333334,
+    382581.6854166667,
+    418733.2
+  ],
+  "groups": {
+    "run3_first60": {
+      "run": 3,
+      "segment": "first60",
+      "support_bins": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "n": 2423,
+      "block64_parity_n": [
+        1217,
+        1206
+      ],
+      "block64_parity_supported_bin_counts": [
+        [
+          35,
+          70,
+          137,
+          279,
+          387,
+          309
+        ],
+        [
+          42,
+          67,
+          145,
+          250,
+          377,
+          325
+        ]
+      ],
+      "data": {
+        "mean_time_contributions_ns": [
+          -0.003999394671699556,
+          19.77565202582479,
+          100.82794333525625,
+          199.9989161829254,
+          159.6671915710201,
+          114.19107821813203,
+          141.4747898151272
+        ],
+        "mean_time_ns": 735.9315717536141,
+        "variant_mean_time_ns": {
+          "original": 735.9315717536141,
+          "recent_pretrigger_baseline": 735.9749084116195,
+          "anchor_shift_-1_sample": 737.7730313746339,
+          "anchor_shift_+1_sample": 734.0905030866365
+        },
+        "baseline_RMS_median": 3.3534832054708428,
+        "recent_minus_first128_baseline_mean_ADC": -0.03204962855963681,
+        "recent_minus_first128_baseline_SD_ADC": 2.108283917584343
+      },
+      "MC_minus_data_mean_time_contributions_ns": [
+        -0.0026926887693928475,
+        0.3947159830535547,
+        0.15734914005508926,
+        1.3853275682168373,
+        6.1195004411404454,
+        0.9224821820390474,
+        -24.850563200352596
+      ],
+      "MC_minus_data_mean_time_ns": -15.873880574617015,
+      "MC_minus_data_variant_mean_time_ns": {
+        "original": -15.87388057461692,
+        "recent_pretrigger_baseline": -15.39882180803977,
+        "anchor_shift_-1_sample": -15.811364613442379,
+        "anchor_shift_+1_sample": -15.934720952109615
+      },
+      "bandwidth_ratio": [
+        1.0632704893382885,
+        0.9481248962364732,
+        1.0407029121890334
+      ],
+      "bandwidth_ratio_CI95": [
+        {
+          "estimate95": [
+            0.8738257185744616,
+            1.2421337585017622
+          ],
+          "valid_draws": 512
+        },
+        {
+          "estimate95": [
+            0.7896948314414641,
+            1.0985886519741688
+          ],
+          "valid_draws": 512
+        },
+        {
+          "estimate95": [
+            0.8650588313036971,
+            1.1906212233625628
+          ],
+          "valid_draws": 512
+        }
+      ]
+    },
+    "run3_middle20": {
+      "run": 3,
+      "segment": "middle20",
+      "support_bins": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "n": 843,
+      "block64_parity_n": [
+        407,
+        436
+      ],
+      "block64_parity_supported_bin_counts": [
+        [
+          13,
+          19,
+          59,
+          91,
+          132,
+          93
+        ],
+        [
+          11,
+          22,
+          49,
+          109,
+          164,
+          81
+        ]
+      ],
+      "data": {
+        "mean_time_contributions_ns": [
+          -0.004178636703404868,
+          19.75990729010891,
+          100.53153885825547,
+          200.0678572291397,
+          160.1332182288316,
+          114.35606591138293,
+          142.35437558571792
+        ],
+        "mean_time_ns": 737.1987844667331,
+        "variant_mean_time_ns": {
+          "original": 737.1987844667332,
+          "recent_pretrigger_baseline": 736.9296971372835,
+          "anchor_shift_-1_sample": 739.0344346736817,
+          "anchor_shift_+1_sample": 735.3576456956149
+        },
+        "baseline_RMS_median": 3.3329264074533658,
+        "recent_minus_first128_baseline_mean_ADC": -0.006098013048635825,
+        "recent_minus_first128_baseline_SD_ADC": 2.033784063074303
+      },
+      "MC_minus_data_mean_time_contributions_ns": [
+        -0.002513446737687536,
+        0.4104607187694356,
+        0.4537536170558667,
+        1.3163865220025457,
+        5.6534737833289626,
+        0.7574944887881543,
+        -25.73014897094332
+      ],
+      "MC_minus_data_mean_time_ns": -17.14109328773604,
+      "MC_minus_data_variant_mean_time_ns": {
+        "original": -17.141093287736,
+        "recent_pretrigger_baseline": -16.353610533703772,
+        "anchor_shift_-1_sample": -17.072767912490235,
+        "anchor_shift_+1_sample": -17.201863561087976
+      },
+      "bandwidth_ratio": [
+        1.1483820661001642,
+        1.1208618783374997,
+        1.171187322631689
+      ],
+      "bandwidth_ratio_CI95": [
+        {
+          "estimate95": [
+            0.8564099273827539,
+            1.3749717848349905
+          ],
+          "valid_draws": 512
+        },
+        {
+          "estimate95": [
+            0.8440879079835032,
+            1.331958547155728
+          ],
+          "valid_draws": 512
+        },
+        {
+          "estimate95": [
+            0.8230818107806457,
+            1.451444498811337
+          ],
+          "valid_draws": 512
+        }
+      ]
+    },
+    "run3_last20": {
+      "run": 3,
+      "segment": "last20",
+      "support_bins": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "n": 821,
+      "block64_parity_n": [
+        426,
+        395
+      ],
+      "block64_parity_supported_bin_counts": [
+        [
+          14,
+          25,
+          54,
+          105,
+          143,
+          85
+        ],
+        [
+          14,
+          29,
+          52,
+          104,
+          131,
+          65
+        ]
+      ],
+      "data": {
+        "mean_time_contributions_ns": [
+          -0.004049972308932891,
+          19.77250676097192,
+          100.77564448182056,
+          199.769879293652,
+          160.133695822051,
+          114.57145153258166,
+          141.24478925345133
+        ],
+        "mean_time_ns": 736.2639171722196,
+        "variant_mean_time_ns": {
+          "original": 736.2639171722196,
+          "recent_pretrigger_baseline": 735.7974304280247,
+          "anchor_shift_-1_sample": 738.1053633811172,
+          "anchor_shift_+1_sample": 734.420356983558
+        },
+        "baseline_RMS_median": 3.3171768281740723,
+        "recent_minus_first128_baseline_mean_ADC": 0.043125761266747865,
+        "recent_minus_first128_baseline_SD_ADC": 2.115675840280482
+      },
+      "MC_minus_data_mean_time_contributions_ns": [
+        -0.0026421111321595124,
+        0.39786124790642674,
+        0.20964799349077623,
+        1.6143644574902396,
+        5.652996190109548,
+        0.5421088675894197,
+        -24.62056263867673
+      ],
+      "MC_minus_data_mean_time_ns": -16.206225993222482,
+      "MC_minus_data_variant_mean_time_ns": {
+        "original": -16.20622599322246,
+        "recent_pretrigger_baseline": -15.221343824444943,
+        "anchor_shift_-1_sample": -16.143696619925663,
+        "anchor_shift_+1_sample": -16.264574849031078
+      },
+      "bandwidth_ratio": [
+        1.1683648018301525,
+        0.9540825667021109,
+        1.0355117876537248
+      ],
+      "bandwidth_ratio_CI95": [
+        {
+          "estimate95": [
+            0.8675374970542247,
+            1.3440284041957287
+          ],
+          "valid_draws": 512
+        },
+        {
+          "estimate95": [
+            0.7987962557934543,
+            1.1566597452956073
+          ],
+          "valid_draws": 512
+        },
+        {
+          "estimate95": [
+            0.8275810459230052,
+            1.2528056159430645
+          ],
+          "valid_draws": 512
+        }
+      ]
+    },
+    "run12_first60": {
+      "run": 12,
+      "segment": "first60",
+      "support_bins": [
+        0,
+        1,
+        2
+      ],
+      "n": 1547,
+      "block64_parity_n": [
+        787,
+        760
+      ],
+      "block64_parity_supported_bin_counts": [
+        [
+          284,
+          179,
+          130
+        ],
+        [
+          273,
+          210,
+          102
+        ]
+      ],
+      "data": {
+        "mean_time_contributions_ns": [
+          -0.005792389861008433,
+          12.129473313150683,
+          76.49229369072766,
+          196.00260812755042,
+          205.25931790247316,
+          188.65489045205723,
+          324.06398355875643
+        ],
+        "mean_time_ns": 1002.5967746548545,
+        "variant_mean_time_ns": {
+          "original": 1002.5967746548545,
+          "recent_pretrigger_baseline": 1002.5885357340079,
+          "anchor_shift_-1_sample": 1004.2058354078894,
+          "anchor_shift_+1_sample": 1000.989233961782
+        },
+        "baseline_RMS_median": 3.167214864829982,
+        "recent_minus_first128_baseline_mean_ADC": 0.02340214932126697,
+        "recent_minus_first128_baseline_SD_ADC": 1.7401410337908951
+      },
+      "MC_minus_data_mean_time_contributions_ns": [
+        -0.003316638699855457,
+        -0.21834225841114296,
+        1.7461759259921195,
+        2.1839147532468814,
+        -1.013295957120647,
+        -2.9747317061032845,
+        -6.7601674831889795
+      ],
+      "MC_minus_data_mean_time_ns": -7.039763364284909,
+      "MC_minus_data_variant_mean_time_ns": {
+        "original": -7.039763364284795,
+        "recent_pretrigger_baseline": -7.0026920081849084,
+        "anchor_shift_-1_sample": -7.037937352967674,
+        "anchor_shift_+1_sample": -7.04416319998893
+      },
+      "bandwidth_ratio": [
+        0.955980326654572,
+        0.9644354754823743,
+        0.9421306642519269
+      ],
+      "bandwidth_ratio_CI95": [
+        {
+          "estimate95": [
+            0.8305907547604502,
+            1.2178300726318132
+          ],
+          "valid_draws": 512
+        },
+        {
+          "estimate95": [
+            0.781759798766546,
+            1.1341253940695295
+          ],
+          "valid_draws": 512
+        },
+        {
+          "estimate95": [
+            0.8020906355711607,
+            1.2494567980587334
+          ],
+          "valid_draws": 512
+        }
+      ]
+    },
+    "run12_middle20": {
+      "run": 12,
+      "segment": "middle20",
+      "support_bins": [
+        0,
+        1,
+        2
+      ],
+      "n": 460,
+      "block64_parity_n": [
+        236,
+        224
+      ],
+      "block64_parity_supported_bin_counts": [
+        [
+          97,
+          57,
+          31
+        ],
+        [
+          76,
+          53,
+          39
+        ]
+      ],
+      "data": {
+        "mean_time_contributions_ns": [
+          -0.006490641817442136,
+          12.120732254679448,
+          76.67341513503287,
+          196.1087220576849,
+          204.54780213132997,
+          187.5524595904951,
+          325.97696214300595
+        ],
+        "mean_time_ns": 1002.9736026704109,
+        "variant_mean_time_ns": {
+          "original": 1002.973602670411,
+          "recent_pretrigger_baseline": 1001.0155342673037,
+          "anchor_shift_-1_sample": 1004.5776046841113,
+          "anchor_shift_+1_sample": 1001.3739641291486
+        },
+        "baseline_RMS_median": 4.415092510100388,
+        "recent_minus_first128_baseline_mean_ADC": 0.6941915760869565,
+        "recent_minus_first128_baseline_SD_ADC": 4.597804846534056
+      },
+      "MC_minus_data_mean_time_contributions_ns": [
+        -0.002618386743421754,
+        -0.20960119993990745,
+        1.5650544816869143,
+        2.0778008231123977,
+        -0.3017801859774636,
+        -1.8723008445411438,
+        -8.673146067438495
+      ],
+      "MC_minus_data_mean_time_ns": -7.416591379841119,
+      "MC_minus_data_variant_mean_time_ns": {
+        "original": -7.416591379841293,
+        "recent_pretrigger_baseline": -5.4296905414806815,
+        "anchor_shift_-1_sample": -7.4097066291896,
+        "anchor_shift_+1_sample": -7.428893367355499
+      },
+      "bandwidth_ratio": [
+        1.000165496149178,
+        0.8088642357922986,
+        0.9729888192428795
+      ],
+      "bandwidth_ratio_CI95": [
+        {
+          "estimate95": [
+            0.8046062505479349,
+            1.3143307628542293
+          ],
+          "valid_draws": 512
+        },
+        {
+          "estimate95": [
+            0.6376098387316568,
+            0.9903198988442368
+          ],
+          "valid_draws": 512
+        },
+        {
+          "estimate95": [
+            0.783668567311405,
+            1.3489162837428292
+          ],
+          "valid_draws": 512
+        }
+      ]
+    },
+    "run12_last20": {
+      "run": 12,
+      "segment": "last20",
+      "support_bins": [
+        0,
+        1,
+        2
+      ],
+      "n": 407,
+      "block64_parity_n": [
+        211,
+        196
+      ],
+      "block64_parity_supported_bin_counts": [
+        [
+          73,
+          53,
+          33
+        ],
+        [
+          81,
+          46,
+          30
+        ]
+      ],
+      "data": {
+        "mean_time_contributions_ns": [
+          -0.007234821934935132,
+          12.235913087667669,
+          76.44599734405789,
+          197.09100287230385,
+          205.41900224032278,
+          187.47622215106676,
+          318.8742847758745
+        ],
+        "mean_time_ns": 997.5351876493585,
+        "variant_mean_time_ns": {
+          "original": 997.5351876493587,
+          "recent_pretrigger_baseline": 997.6570142124025,
+          "anchor_shift_-1_sample": 999.1471666438154,
+          "anchor_shift_+1_sample": 995.923157550319
+        },
+        "baseline_RMS_median": 5.6774464715662445,
+        "recent_minus_first128_baseline_mean_ADC": 0.15494471744471744,
+        "recent_minus_first128_baseline_SD_ADC": 6.218090067189602
+      },
+      "MC_minus_data_mean_time_contributions_ns": [
+        -0.0018742066259287583,
+        -0.3247820329281286,
+        1.7924722726618967,
+        1.0955200084934518,
+        -1.172980294970273,
+        -1.7960634051128181,
+        -1.5704687003070603
+      ],
+      "MC_minus_data_mean_time_ns": -1.9781763587888603,
+      "MC_minus_data_variant_mean_time_ns": {
+        "original": -1.9781763587890282,
+        "recent_pretrigger_baseline": -2.07117048657949,
+        "anchor_shift_-1_sample": -1.9792685888936603,
+        "anchor_shift_+1_sample": -1.9780867885259568
+      },
+      "bandwidth_ratio": [
+        0.8969470580431078,
+        0.8220224822978993,
+        0.8579166652913527
+      ],
+      "bandwidth_ratio_CI95": [
+        {
+          "estimate95": [
+            0.7247265955691453,
+            1.149739999466071
+          ],
+          "valid_draws": 512
+        },
+        {
+          "estimate95": [
+            0.6621761031529881,
+            0.9938920612824946
+          ],
+          "valid_draws": 512
+        },
+        {
+          "estimate95": [
+            0.7204281168943942,
+            1.1524468041059388
+          ],
+          "valid_draws": 512
+        }
+      ]
+    },
+    "run18_first60": {
+      "run": 18,
+      "segment": "first60",
+      "support_bins": [
+        0,
+        1,
+        2
+      ],
+      "n": 3000,
+      "block64_parity_n": [
+        1501,
+        1499
+      ],
+      "block64_parity_supported_bin_counts": [
+        [
+          212,
+          221,
+          279
+        ],
+        [
+          205,
+          267,
+          279
+        ]
+      ],
+      "data": {
+        "mean_time_contributions_ns": [
+          -0.004721723471007626,
+          12.22036646748886,
+          76.57171670914354,
+          197.48750101417792,
+          204.8427000363556,
+          187.29229987709095,
+          319.7611186748615
+        ],
+        "mean_time_ns": 998.1709810556474,
+        "variant_mean_time_ns": {
+          "original": 998.1709810556473,
+          "recent_pretrigger_baseline": 998.8756511019368,
+          "anchor_shift_-1_sample": 999.7826814633289,
+          "anchor_shift_+1_sample": 996.5593809846644
+        },
+        "baseline_RMS_median": 4.96511266236729,
+        "recent_minus_first128_baseline_mean_ADC": -0.046473958333333336,
+        "recent_minus_first128_baseline_SD_ADC": 5.272169372965011
+      },
+      "MC_minus_data_mean_time_contributions_ns": [
+        -0.004197899564164073,
+        -0.2927043701882823,
+        1.6314550484199515,
+        1.2063868832307776,
+        -0.2721946964980759,
+        -2.3060583391101943,
+        -3.6061964140300233
+      ],
+      "MC_minus_data_mean_time_ns": -3.643509787740011,
+      "MC_minus_data_variant_mean_time_ns": {
+        "original": -3.643509787739731,
+        "recent_pretrigger_baseline": -4.285322985793073,
+        "anchor_shift_-1_sample": -3.6470073853362237,
+        "anchor_shift_+1_sample": -3.6399439179226647
+      },
+      "bandwidth_ratio": [
+        0.9690756825868507,
+        0.9586355370411762,
+        1.046143972516525
+      ],
+      "bandwidth_ratio_CI95": [
+        {
+          "estimate95": [
+            0.8354130427986843,
+            1.2165858389848594
+          ],
+          "valid_draws": 512
+        },
+        {
+          "estimate95": [
+            0.8036713130207428,
+            1.1048116830209231
+          ],
+          "valid_draws": 512
+        },
+        {
+          "estimate95": [
+            0.867441754897647,
+            1.2741618000622086
+          ],
+          "valid_draws": 512
+        }
+      ]
+    },
+    "run18_middle20": {
+      "run": 18,
+      "segment": "middle20",
+      "support_bins": [
+        0,
+        1,
+        2
+      ],
+      "n": 2999,
+      "block64_parity_n": [
+        1513,
+        1486
+      ],
+      "block64_parity_supported_bin_counts": [
+        [
+          214,
+          249,
+          276
+        ],
+        [
+          237,
+          250,
+          284
+        ]
+      ],
+      "data": {
+        "mean_time_contributions_ns": [
+          -0.005234591282489571,
+          12.250118573557062,
+          76.7590471127924,
+          196.6739791354034,
+          205.19687091538057,
+          187.20954425320951,
+          319.8853399287837
+        ],
+        "mean_time_ns": 997.9696653278443,
+        "variant_mean_time_ns": {
+          "original": 997.9696653278443,
+          "recent_pretrigger_baseline": 997.555049444264,
+          "anchor_shift_-1_sample": 999.5804679766716,
+          "anchor_shift_+1_sample": 996.3597392740958
+        },
+        "baseline_RMS_median": 4.985917668794783,
+        "recent_minus_first128_baseline_mean_ADC": 0.09247874291430477,
+        "recent_minus_first128_baseline_SD_ADC": 5.369369541940754
+      },
+      "MC_minus_data_mean_time_contributions_ns": [
+        -0.0036850317526821276,
+        -0.3224564762564839,
+        1.4441246447710938,
+        2.0199087620052865,
+        -0.6263655755230388,
+        -2.2233027152287548,
+        -3.7304176679522243
+      ],
+      "MC_minus_data_mean_time_ns": -3.4421940599368037,
+      "MC_minus_data_variant_mean_time_ns": {
+        "original": -3.4421940599366962,
+        "recent_pretrigger_baseline": -2.9647213281202767,
+        "anchor_shift_-1_sample": -3.4447938986788813,
+        "anchor_shift_+1_sample": -3.4403022073540797
+      },
+      "bandwidth_ratio": [
+        0.9539936183658463,
+        0.9668667677009873,
+        1.0707750182844438
+      ],
+      "bandwidth_ratio_CI95": [
+        {
+          "estimate95": [
+            0.8206002960180226,
+            1.1818648550972037
+          ],
+          "valid_draws": 512
+        },
+        {
+          "estimate95": [
+            0.797976791643675,
+            1.1000331890860011
+          ],
+          "valid_draws": 512
+        },
+        {
+          "estimate95": [
+            0.8641517699235959,
+            1.2742318536729185
+          ],
+          "valid_draws": 512
+        }
+      ]
+    },
+    "run18_last20": {
+      "run": 18,
+      "segment": "last20",
+      "support_bins": [
+        0,
+        1,
+        2
+      ],
+      "n": 3000,
+      "block64_parity_n": [
+        1505,
+        1495
+      ],
+      "block64_parity_supported_bin_counts": [
+        [
+          221,
+          245,
+          259
+        ],
+        [
+          219,
+          228,
+          251
+        ]
+      ],
+      "data": {
+        "mean_time_contributions_ns": [
+          -0.005237462215194667,
+          12.22748399322897,
+          76.86416909565683,
+          197.02676910410378,
+          204.44437625036912,
+          187.0895447989227,
+          319.67977708672487
+        ],
+        "mean_time_ns": 997.326882866791,
+        "variant_mean_time_ns": {
+          "original": 997.326882866791,
+          "recent_pretrigger_baseline": 997.1787071205149,
+          "anchor_shift_-1_sample": 998.9415950038172,
+          "anchor_shift_+1_sample": 995.7125897518706
+        },
+        "baseline_RMS_median": 4.949537834027815,
+        "recent_minus_first128_baseline_mean_ADC": 0.10140625,
+        "recent_minus_first128_baseline_SD_ADC": 5.313593632069059
+      },
+      "MC_minus_data_mean_time_contributions_ns": [
+        -0.003682160819977032,
+        -0.2998218959283925,
+        1.3390026619066617,
+        1.6671187933049225,
+        0.1261290894884155,
+        -2.103303260941942,
+        -3.524854825893385
+      ],
+      "MC_minus_data_mean_time_ns": -2.7994115988836974,
+      "MC_minus_data_variant_mean_time_ns": {
+        "original": -2.7994115988834665,
+        "recent_pretrigger_baseline": -2.588379004371177,
+        "anchor_shift_-1_sample": -2.8059209258244664,
+        "anchor_shift_+1_sample": -2.7931526851289163
+      },
+      "bandwidth_ratio": [
+        0.9476989965824634,
+        0.9925876636123564,
+        1.087365205967069
+      ],
+      "bandwidth_ratio_CI95": [
+        {
+          "estimate95": [
+            0.8227410415835246,
+            1.1962596979326414
+          ],
+          "valid_draws": 512
+        },
+        {
+          "estimate95": [
+            0.8088409987594202,
+            1.1228221659891076
+          ],
+          "valid_draws": 512
+        },
+        {
+          "estimate95": [
+            0.8749514228769918,
+            1.304679320099091
+          ],
+          "valid_draws": 512
+        }
+      ]
+    }
+  },
+  "MC": {
+    "3": {
+      "mean_time_contributions_ns": [
+        -0.006692083441092404,
+        20.170368008878345,
+        100.98529247531134,
+        201.38424375114224,
+        165.78669201216056,
+        115.11356040017108,
+        116.6242266147746
+      ],
+      "mean_time_ns": 720.0576911789971,
+      "variant_mean_time_ns": {
+        "original": 720.0576911789972,
+        "recent_pretrigger_baseline": 720.5760866035797,
+        "anchor_shift_-1_sample": 721.9616667611915,
+        "anchor_shift_+1_sample": 718.1557821345269
+      },
+      "baseline_RMS_median": 3.3502907888978712,
+      "recent_minus_first128_baseline_mean_ADC": -0.08529575892857143,
+      "recent_minus_first128_baseline_SD_ADC": 1.221787023107816
+    },
+    "12": {
+      "mean_time_contributions_ns": [
+        -0.00910902856086389,
+        11.91113105473954,
+        78.23846961671978,
+        198.1865228807973,
+        204.2460219453525,
+        185.68015874595395,
+        317.30381607556745
+      ],
+      "mean_time_ns": 995.5570112905696,
+      "variant_mean_time_ns": {
+        "original": 995.5570112905697,
+        "recent_pretrigger_baseline": 995.585843725823,
+        "anchor_shift_-1_sample": 997.1678980549217,
+        "anchor_shift_+1_sample": 993.9450707617931
+      },
+      "baseline_RMS_median": 3.1742794019274827,
+      "recent_minus_first128_baseline_mean_ADC": 0.0010239684466019417,
+      "recent_minus_first128_baseline_SD_ADC": 1.0370232690222507
+    },
+    "18": {
+      "mean_time_contributions_ns": [
+        -0.008919623035171699,
+        11.927662097300578,
+        78.2031717575635,
+        198.6938878974087,
+        204.57050533985753,
+        184.98624153798076,
+        316.1549222608315
+      ],
+      "mean_time_ns": 994.5274712679072,
+      "variant_mean_time_ns": {
+        "original": 994.5274712679076,
+        "recent_pretrigger_baseline": 994.5903281161437,
+        "anchor_shift_-1_sample": 996.1356740779927,
+        "anchor_shift_+1_sample": 992.9194370667417
+      },
+      "baseline_RMS_median": 4.8939551793161815,
+      "recent_minus_first128_baseline_mean_ADC": -0.00811298076923077,
+      "recent_minus_first128_baseline_SD_ADC": 1.522092212699717
+    }
+  },
+  "limits": [
+    "Mean-time decomposition is a point estimate with exact additive sample weights, not a causal mechanism or a confidence interval.",
+    "Mean time and earlier median-band displacement are different summaries; do not substitute one for the other.",
+    "Alternative baseline and +/-one-sample anchor retain original IDs and Q bins; they are diagnostics, not a changed official analysis.",
+    "Block-parity counts demonstrate cross-fit feasibility only. Neighboring acquisition blocks may remain correlated; block separation is not proof of statistical independence.",
+    "All measured segments have been explored before. Noise-conditioned comparisons are not blind forecasts."
+  ],
+  "MC_statistics": {
+    "current_common_gamma": 277,
+    "current_leakage_upper95": 0.010756646984320313,
+    "zero_leakage_formula": "upper=1-0.05**(1/n), one-sided95%; conditional on fixed selection and classifier",
+    "gamma_needed_if_zero_for_upper_1e_minus3": 2995,
+    "note": "Independent accepted gamma histories, not total generated mother decays; no experimental efficiency claim."
+  },
+  "manuscript_gap": {
+    "path": "analysis/paper_baseline/MANUSCRIPT_DRAFT.md",
+    "current_stage": "2026-10-28 model discussion; section4.4 still describes f=0.10 and ~81.6%/-25.2% short-scale residuals.",
+    "needed": "Versioned update linking the new waveform, PID, and photon-statistics records; preserve old benchmark and frozen experimental main analysis."
+  },
+  "inputs_sha256": {
+    "simulation/results/pid_npe_20261029/record.json": "64703492f79c8b6d7735433bdb56a078fc466dd94ab0b9c7642c77d4af181f19",
+    "simulation/results/pid_npe_20261029/validation/assessment.json": "0506fab7f9d0f471b95df03ff746951203fe877e91a6af2df78bc5f7c5ee7d55",
+    "simulation/results/pid_npe_20261029/validation/protocol.json": "b3ce7e92e6f8b154ddd4e2b5eef0c9adf7085a7d00a2da0a5237f6f6f6365b1a",
+    "analysis/paper_baseline/MANUSCRIPT_DRAFT.md": "8cec4b57b41efb941e641a04c2a29f25d9db158ac94310b417dc795903ee5ed2",
+    "simulation/results/pid_bandwidth_20261029/covariance_fit/fit.json": "874dbd9f9ff9fcaa79fd0f84df00609f2828e02ce289cc49e3ca68fc5cf55783",
+    "analysis/paper_baseline/results/publication_20261028/point.json": "a02a7a261de4b016737c9ed553a63aae801ada172006f026ea904778d4ce90c0",
+    "simulation/results/pid_npe_20261029/validation/arrays/run3_Co60.npz": "d1e153ad23865cc5d16358f7c66e3a211fdf05c72b4c74cbde0c364e3d1e106f",
+    "simulation/results/signal_fluctuations_20261028/run3_first60.npz": "95462fa2ab57243fa669e1b4811469df40f2f3522e005db9dc3e64130865add3",
+    "simulation/results/pid_bandwidth_20261029/arrays/measured_run3_first60.npz": "3524db75f16934f8f2294c0081bd4e394c06d83151aa72285cf56ba6b76e3dcc",
+    "simulation/results/signal_fluctuations_20261028/run3_middle20.npz": "87d8ca246dd872e8e62f0b0083262b5e0386213340a0f021963e7f3d14cfd1aa",
+    "simulation/results/pid_bandwidth_20261029/arrays/measured_run3_middle20.npz": "5ca98d4e2304650ba788079478d29bc465e719dc9d51f80d2ab33a0d1e1351b1",
+    "simulation/results/signal_fluctuations_20261028/run3_last20.npz": "63873053f70e3cf4d8ff6d1b4d2b7af3b7aa15b24eaa75973740f443daa67033",
+    "simulation/results/pid_bandwidth_20261029/arrays/measured_run3_last20.npz": "fa8a7407568165fd17ef14f77246c8f25bd8df0dde5aa04e3d54b42db3a71579",
+    "simulation/results/pid_npe_20261029/validation/arrays/run12_Am241.npz": "c0f28f7bda392bf594d0723d450d85db10214479c213f2fc0c3d608f5e4b02c7",
+    "simulation/results/signal_fluctuations_20261028/run12_first60.npz": "887ce1d2cec395f61ee1a196de2ca9b70d790403d60b83335c76df204816504b",
+    "simulation/results/pid_bandwidth_20261029/arrays/measured_run12_first60.npz": "9cc78ea936d98553e23ddd05b35664890f8b9029efae859c1f8592c8d2d25fdc",
+    "simulation/results/signal_fluctuations_20261028/run12_middle20.npz": "7ad68fb1e6b6e14fa63c3ac4b4c29333350fae03e7372efcb1a11a477684ade4",
+    "simulation/results/pid_bandwidth_20261029/arrays/measured_run12_middle20.npz": "6b9605543d541cdbcfdfb8cbec44e6fb088ca8e108cd85a355ba1aea3e17c9dc",
+    "simulation/results/signal_fluctuations_20261028/run12_last20.npz": "f016f8e88ff9c6d27ee6f568e3f12070e6b18c2902b1dc2a28ca57fe877c1237",
+    "simulation/results/pid_bandwidth_20261029/arrays/measured_run12_last20.npz": "e34e9bf77176d38bde499b2f5706aa152697e2fc1dc7e4e65f38eec33de453cc",
+    "simulation/results/pid_npe_20261029/validation/arrays/run18_Am241.npz": "aad426af1a2c7fbee683de451a891789e28ee998ccc8d712e559f5acec2258a7",
+    "simulation/results/waveform_refit_20261029/run18/run18_first60.npz": "9061223c0c63b89e3ab4ee589e4af3c7b6fe65c0d7187ce8b19ffc6fa7c6583d",
+    "simulation/results/pid_bandwidth_20261029/arrays/measured_run18_first60.npz": "8514ac32765c5cc53c3e5f376198aae369ec9a7cf376a52c4709cb84ac111484",
+    "simulation/results/waveform_refit_20261029/run18/run18_middle20.npz": "c2572a78fd5eb771a1e1a2bfd99fa2a119145f0951d453b2847a929acbd55b0e",
+    "simulation/results/pid_bandwidth_20261029/arrays/measured_run18_middle20.npz": "67382252472d2b75f444b553c3ade86bbcf9ba3150da61a31c2cc5a669cef5ae",
+    "simulation/results/waveform_refit_20261029/run18/run18_last20.npz": "f091ef07cc99f797c076edab0fc50fab3aa8149bdbdfd4556fefb65cbddc567a",
+    "simulation/results/pid_bandwidth_20261029/arrays/measured_run18_last20.npz": "cb4ec2214b3f215793d28bddac4f145d4520e4f6f4e0f0f5fe9fa07db7ac89e0"
+  }
+}

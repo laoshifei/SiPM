@@ -1,0 +1,22 @@
+{
+  "scope": "Small review artifact; frozen parent models and experimental cohorts retained.",
+  "outputs_sha256": {
+    "analysis/paper_baseline/results/next_steps_20261029/audit.json": "88cb6c81456a081fe59f33a8c15d504e19a63aa2facc62f49cd7e49fc178bd20",
+    "analysis/paper_baseline/results/next_steps_20261029/co_mean_time_review.pdf": "875bf8dadc56c0df924c1cb3f37ce277bec5d9d4929f61e885b53aae45aba502",
+    "analysis/paper_baseline/results/next_steps_20261029/co_mean_time_review.png": "07d282592a171fdfa6099e7529a2c22330bf95f69493617cdd02415dbde40004",
+    "analysis/paper_baseline/results/next_steps_20261029/co_mean_time_review.svg": "6583f72cf6dca87d88f44611a6406a14961c69f511d832b7f9c22e2953577462",
+    "analysis/paper_baseline/results/next_steps_20261029/local_evidence.json": "ce690b5d64a79d277f33ba0fd43da708b80fbae3b52842f4bf8432c688794cda",
+    "analysis/paper_baseline/results/next_steps_20261029/noise_state_review.pdf": "6eea91c4b3d5332bbb89b72458830a883c718973249958ce73620b48668fba11",
+    "analysis/paper_baseline/results/next_steps_20261029/noise_state_review.png": "ec25792a07d1b1799f69a90a5f1482e96bfaabe6a7f9f516645903dbffc663ef",
+    "analysis/paper_baseline/results/next_steps_20261029/noise_state_review.svg": "fd1ee9e14494b6f5b793794b0294e9628ad0dcd27a18382370017930b6a7857b",
+    "analysis/paper_baseline/results/next_steps_20261029/verification.json": "10b664aec0b1240b9c2038e2b69ea7e98bbbec7fe2edc985d2b4ef5c9cd0ff5c",
+    "jupyter/codex_0001_csi_next_steps_review.ipynb": "6ef5aff02918345e65224524724db482c76c542f7e305108bb2c1f3a6a7ee7dc",
+    "jupyter/codex_0001_build_next_steps_notebook.py": "4c9caee66d76ede01faddf529d8d0e5ab95a64e7f9e29a78d16afe80d92d41ac",
+    "simulation/review_next_steps.py": "ebde5d45fc1af8b057904eae2764d7c66fe3fa18216ea2a92184aa1f937cc6ea"
+  },
+  "additional_context_sha256": {
+    "simulation/refit_parallel_shape.py": "3384aaae7fe16ad2e13711c7667ab9147fef4285cf00f93edb0fe7d750d7584b",
+    "simulation/refit_waveform_shape.py": "9a50afc8490f5d3ca08d21fae0ddc5d61d1cb936a05c19050b698fbe4b0286ea"
+  },
+  "parent_npe_record_sha256": "64703492f79c8b6d7735433bdb56a078fc466dd94ab0b9c7642c77d4af181f19"
+}

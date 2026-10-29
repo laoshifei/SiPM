@@ -1,0 +1,45 @@
+{
+  "scope": "本轮仅复用既有精读笔记与当前项目已核验文献表，未重新阅读PDF、未作全局新颖性检索。",
+  "library": "/media/sf_works/papers",
+  "navigation": [
+    "AGENTS.md",
+    "index.md",
+    "vocabulary.json",
+    "topic-index.md",
+    "review-index.md",
+    "global-review.md"
+  ],
+  "retrieval_note": "search-topic/search-review完成源文件检索，但脚本自动保存缓存被只读文件系统拒绝；未授权或执行额外写入，随后用rg核对来源正文与原始审核记录。",
+  "papers": [
+    {
+      "authors": "E. Garutti, R. Klanner, J. Rolph, J. Schwandt",
+      "year": 2021,
+      "title": "Simulation of the response of SiPMs; Part I: Without saturation effects",
+      "doi": "10.1016/j.nima.2021.165853",
+      "base": "2021_Garutti_NIMA_Simulation-of-the-response-of-SiPMs;-Part-I-Without-saturation-effects",
+      "locations": "据既有精读笔记：PDF第4页，§2.9–2.11，式(1)–(3)；第1–2页模型范围。",
+      "relevance": "用分开的放电统计、单位面积单胞响应、门积分和电子学卷积组织本项目敏感性检查。",
+      "limits": "低占据模型；不独立确定本项目PDE、绝对增益或实际求和电路。不能借此把经验信号残差唯一认定为后脉冲或串扰。",
+      "adoption": "笔记为AI草稿；本轮按作者名检索未发现针对本篇具体科学模型的用户采用意见，不代表完整库中所有别名均已排除。",
+      "note": "/media/sf_works/papers/sources/2021_Garutti_NIMA_Simulation-of-the-response-of-SiPMs;-Part-I-Without-saturation-effects.md",
+      "pdf": "/media/sf_works/papers/raw/2021_Garutti_NIMA_Simulation-of-the-response-of-SiPMs;-Part-I-Without-saturation-effects.pdf",
+      "note_sha256": "9383a643c7395f964f6bca6e288e22376c31847427eb32409b6b9bdec2f3a659"
+    },
+    {
+      "authors": "W. Skulski, M. Momayezi",
+      "year": 2001,
+      "title": "Particle identification in CsI(Tl) using digital pulse shape analysis",
+      "doi": "10.1016/S0168-9002(00)00938-4",
+      "doi_scope": "复用当前项目LOCAL_EVIDENCE.md此前对Bendel2013参考文献11的核验；本轮未重新核PDF。原来源笔记首部仅给PII。",
+      "base": "2001_Skulski_NIMA_Particle-identification-in-CsI(Tl)-using-digital-pulse-shape-analysis",
+      "locations": "据既有精读笔记：PDF第4页基线/定时；第9–10页式(4)–(5)、图7–8的权重及带宽比较。",
+      "relevance": "对当前数据固定光输出支持与方法定义，同时检查噪声相关性、时间权重、带中心和宽度。",
+      "limits": "光电二极管及电荷前放、25.6µs记录，与本项目SiPM无前放及约5µs记录不同；不移植最优滤波参数或FOM。",
+      "adoption": "AI草稿；global-review.md第10560–10586行是AI归并索引，明确未新增人工确认。未发现针对本篇具体方法的明确采用答复。",
+      "note": "/media/sf_works/papers/sources/2001_Skulski_NIMA_Particle-identification-in-CsI(Tl)-using-digital-pulse-shape-analysis.md",
+      "pdf": "/media/sf_works/papers/raw/2001_Skulski_NIMA_Particle-identification-in-CsI(Tl)-using-digital-pulse-shape-analysis.pdf",
+      "note_sha256": "4d651ca563ba65f6b75e61f15dfff4b8bdd014846752dbe8c42eef010d0ed148"
+    }
+  ],
+  "method_ownership": "本次交叉估计、固定ID的平均时间分解、参数族比较与样本量规划是针对本项目的分析设计，不声称由两篇论文直接提出。"
+}
