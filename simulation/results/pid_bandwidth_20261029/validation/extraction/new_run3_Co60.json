@@ -1,0 +1,16 @@
+{
+  "key": "new_run3_Co60",
+  "n_parent": 8000,
+  "n_selected": 687,
+  "n_common": 255,
+  "root_sha256": "0ad470f53db800990127b54d35ea9a078424444412d2e0f48fa65f25862ad927",
+  "replay": null,
+  "truth_counts_common": [
+    0,
+    255,
+    0,
+    0,
+    0
+  ],
+  "baseline_RMS_median": 3.3113113285892872
+}

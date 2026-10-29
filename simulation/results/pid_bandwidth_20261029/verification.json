@@ -1,0 +1,62 @@
+{
+  "scope": "Verify and freeze the PID bandwidth response study without replacing parents.",
+  "parents": {
+    "waveform_refit_20261029": {
+      "unchanged_outputs": 220,
+      "unchanged_snapshots": 123
+    },
+    "pid_20261029": {
+      "unchanged_outputs": 90,
+      "unchanged_snapshots": 126
+    }
+  },
+  "only_signal_residual_spectrum_changed": true,
+  "native": {
+    "new_run3_Co60": {
+      "mothers": 8000,
+      "common": 255,
+      "scores_independently_reproduced": true
+    },
+    "new_run12_Am241": {
+      "mothers": 48000,
+      "common": 352,
+      "scores_independently_reproduced": true
+    },
+    "old_run3_Co60": {
+      "mothers": 8000,
+      "common": 256,
+      "scores_independently_reproduced": true
+    },
+    "old_run12_Am241": {
+      "mothers": 48000,
+      "common": 356,
+      "scores_independently_reproduced": true
+    },
+    "new_run18_Am241": {
+      "mothers": 48000,
+      "common": 356,
+      "scores_independently_reproduced": true
+    },
+    "old_run18_Am241": {
+      "mothers": 48000,
+      "common": 359,
+      "scores_independently_reproduced": true
+    },
+    "new_run12_Co60": {
+      "mothers": 8000,
+      "common": 261,
+      "scores_independently_reproduced": true
+    }
+  },
+  "notebook": {
+    "executed_code_cells": 6,
+    "embedded_images": 4,
+    "valid": true
+  },
+  "python": "3.13.5",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "ROOT": "6.34.10",
+  "native_source_changed": false,
+  "unit_tests": "tests/test_pid_bandwidth.py:2 independent waveform/covariance checks passed; log archived"
+}

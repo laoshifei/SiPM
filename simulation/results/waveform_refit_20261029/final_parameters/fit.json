@@ -1,0 +1,124 @@
+{
+  "scope": "One final training-only closure correction before new-seed full transport.\n\nAdjust particle fast fractions for training median integration ratios and\nrecalibrate positive residual spectral components for the three F means.\nNo later measured pulse or new-seed validation output enters this operation.\n",
+  "code_sha256": "275c23af3fffaacc2812e8844390c16f287545e66b10b3aa535ebbb6808fb19b",
+  "training_validation_sha256": "a279ce03ce70a8b221e19ffd412cf804dc32cac9fa2804139604cfc459bf6234",
+  "base_validation_sha256": "ff02b360e0a7a873ae766a1ec0f4fcb6236e5f48448e530838cbe885761b2b40",
+  "ratio_corrections": {
+    "Co60": {
+      "training_median_ratio_difference": 0.005613705921043932,
+      "old_fraction": 0.11952437268968853,
+      "new_fraction": 0.13039785610763194,
+      "old_analytic_ratio": 0.4704501736724205,
+      "target_analytic_ratio": 0.4760638795934644
+    },
+    "Am241": {
+      "training_median_ratio_difference": 0.002199678382109327,
+      "old_fraction": 0.47101027493882375,
+      "new_fraction": 0.48402879368890916,
+      "old_analytic_ratio": 0.32199387898864534,
+      "target_analytic_ratio": 0.32419355737075467
+    }
+  },
+  "sources": {
+    "Co60": {
+      "positive_component_variances": [
+        0.1353452979762108,
+        0.1266766661386608,
+        0.0
+      ],
+      "unit_component_F_contributions": [
+        [
+          0.5258364047081987,
+          0.08304350092843202,
+          0.9609987901245951
+        ],
+        [
+          0.7862835873941172,
+          0.1667143311188283,
+          0.9808129647141312
+        ],
+        [
+          0.9136190493661122,
+          0.3090578062137774,
+          0.9905927401963878
+        ]
+      ],
+      "base_F": [
+        0.006654653833125488,
+        0.036160028729796914,
+        0.13962462367249773
+      ],
+      "target_F": [
+        0.08767428620544643,
+        0.1659913677184826,
+        0.3004893302340671
+      ],
+      "predicted_F": [
+        0.08824989056253764,
+        0.1635838998070478,
+        0.30305352738275404
+      ],
+      "predicted_relative": [
+        0.006565258549609432,
+        -0.014503572953973198,
+        0.008533404985426873
+      ],
+      "variance_per_signal_adc": 0.2613472784695687,
+      "event_variance_cv": 0.1986615852224963,
+      "config_sha256": "d7f8cb284182390f832d4e7db1834162f416e08ebf74e0e4c73de52054cdc485"
+    },
+    "Am241": {
+      "positive_component_variances": [
+        0.5218879520398197,
+        0.9974827368906951,
+        0.011004480269961814
+      ],
+      "unit_component_F_contributions": [
+        [
+          0.23533577607408887,
+          0.08274481640726099,
+          0.9629612974092561
+        ],
+        [
+          0.4639651541601126,
+          0.16591519079078365,
+          0.9829664616329188
+        ],
+        [
+          0.7388707102511911,
+          0.3070444291911149,
+          0.9924694823376093
+        ]
+      ],
+      "base_F": [
+        0.007525334326432153,
+        0.038556782774219624,
+        0.1518452952446387
+      ],
+      "target_F": [
+        0.2234776550749497,
+        0.457009180531486,
+        0.8546461454533566
+      ],
+      "predicted_F": [
+        0.22356540593296523,
+        0.45767242061828384,
+        0.8534301180410964
+      ],
+      "predicted_relative": [
+        0.00039266054579867316,
+        0.00145126206442181,
+        -0.0014228431482776749
+      ],
+      "variance_per_signal_adc": 1.5226521835389124,
+      "event_variance_cv": 0.09048491889007625,
+      "config_sha256": "316587932543353abca9c6ae923c575b8a4c8b414d2543cec9e618287c87ae0f"
+    }
+  },
+  "method": "One-step median-ratio closure using analytic emission/readout dependence. Positive spectral components calibrated to3 F means on training optical histories; their combined1025-tap Gaussian FIR is regenerated in native C++. Event variance scatter calibrated from training F50 variance.",
+  "limits": [
+    "Optical fraction correction is a proposal; fresh full optical transport must check it.",
+    "Low-frequency correction and acquisition-state mixtures are empirical; not a uniquely identified detector mechanism.",
+    "No charge-spectrum matching by per-event weights/amplitude scaling. Shared effective yield is adjusted only to preserve expected3us integral after changing timing fractions."
+  ]
+}

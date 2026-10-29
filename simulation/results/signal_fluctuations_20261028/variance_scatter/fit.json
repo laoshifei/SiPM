@@ -1,0 +1,59 @@
+{
+  "scope": "Second-stage training-only fit of event-to-event residual variance scatter.\n\nMotivated by the too-narrow F50 distribution of the constant-variance model.\nOnly training F50 variance is fitted. Other filter distributions and later\nsegments are checks; this adaptive extension is not a preregistered test.\n",
+  "code_sha256": "876df2f691a936c4558fa00f7cb6c761bdf7078731c437e47ea7336cddd97f43",
+  "parent_fit_sha256": "af0f043f724fd5b6b8918f0bb182685907b52af30d794867b9f91555ca9f7100",
+  "parent_validation_sha256": "8eaae6e2fe90d4bfd61ba837c387848a1deeb657c35b4c115ca141f6492888bc",
+  "method": "Mean-one lognormal residual-variance multiplier. CV^2=max(0,(Var_data(F50)-Var_fixed_model(F50))/E[extra_F50^2]). Model moments from16 antithetic electronics replicas over fixed parent histories. Fixed t10/baseline for this moment estimate. No new transport; no physical gain assigned.",
+  "sources": {
+    "Co60": {
+      "run": 3,
+      "data_F_variance": [
+        0.00047136261259776653,
+        0.0012001628704040464,
+        0.004668472336029377
+      ],
+      "model_fixed_F_variance": [
+        0.00015451665211706138,
+        0.0007760007179338377,
+        0.005308961110647804
+      ],
+      "extra_F_squared_mean": [
+        0.006136069580137719,
+        0.012333476934536637,
+        0.012204400455540046
+      ],
+      "event_variance_cv": 0.22723694894158,
+      "predicted_F_variance": [
+        0.0004713626125977665,
+        0.0014128599149089436,
+        0.005939155233110795
+      ],
+      "config_sha256": "67587ce5ea2cec67868370c353410467c2ff2eb6a99b84cea21d2f97cf5827c2"
+    },
+    "Am241": {
+      "run": 12,
+      "data_F_variance": [
+        0.0011612938273169258,
+        0.005675160648969348,
+        0.032313830112267745
+      ],
+      "model_fixed_F_variance": [
+        0.0007231447210139261,
+        0.005190726271523192,
+        0.031064377592014077
+      ],
+      "extra_F_squared_mean": [
+        0.04584427052614763,
+        0.17054093271882004,
+        0.4173560858605603
+      ],
+      "event_variance_cv": 0.09776162949179595,
+      "predicted_F_variance": [
+        0.0011612938273169258,
+        0.006820643301530519,
+        0.03505319002007146
+      ],
+      "config_sha256": "9f9771b4ca1928a827000f3b54e749cdff2ebfe0168585f0cf346b4ab163cb89"
+    }
+  }
+}

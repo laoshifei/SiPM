@@ -1,0 +1,32 @@
+{
+  "Co60": {
+    "run": 3,
+    "n_training_noise_traces": 2862,
+    "seed": 283103,
+    "events_requested": 2000,
+    "config_sha256": "654f7acb236d7c0be4d0f3640b211a28f17f58c44fd891bacf53aa87abdbef52",
+    "base_config_sha256": "540df2c412020ab82f4e0127983f96d47b5c4cb54fb1b27aab578ab7ef376838",
+    "changes_to_numeric_config": [
+      "electronics_noise",
+      "sipm.readout.noise_rms_mV"
+    ],
+    "target_detrended_variance_adc2": 11.541882374310807,
+    "unit_FIR_projected_variance": 0.9420510780184594,
+    "unprojected_sigma_adc": 3.487706460296101
+  },
+  "Am241": {
+    "run": 12,
+    "n_training_noise_traces": 4458,
+    "seed": 283112,
+    "events_requested": 12000,
+    "config_sha256": "6c4864b59c50a65b678a6e694d482181c4cec11cd6eaab4ff9c02252096da5ec",
+    "base_config_sha256": "716d1058557cf114d7fa978d2552422876db4b79b1c406371df6a35992bfe242",
+    "changes_to_numeric_config": [
+      "electronics_noise",
+      "sipm.readout.noise_rms_mV"
+    ],
+    "target_detrended_variance_adc2": 11.569539803873363,
+    "unit_FIR_projected_variance": 0.9551607018764166,
+    "unprojected_sigma_adc": 3.46786668817976
+  }
+}

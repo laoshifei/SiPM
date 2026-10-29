@@ -1,0 +1,8 @@
+{
+  "equal_original_adc_events": 23616,
+  "equal_original_avalanche_events": 24000,
+  "max_relative_charge_balance": 2.924357996681453e-14,
+  "parent_file": "/media/sf_works/SiPM/simulation/results/waveform_refit_20261029/independent/am241/events.root",
+  "scope": "Original Geant4 optical histories; all entries retained. Native PDE/recovery/AP and readout regenerated, candidate selections must be recomputed.",
+  "unchanged_zero_photon_events": 23616
+}

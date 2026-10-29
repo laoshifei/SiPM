@@ -1,0 +1,18 @@
+{
+  "binary_sha256": "c285d9122eda414a039cb51e5405087f36a33e9e58761ab8d33ff6b467ddbc8a",
+  "parents": {
+    "Co60": {
+      "path": "simulation/results/waveform_refit_20261029/independent/co60/events.root",
+      "sha256": "e37a437085d0c6a1e7f031fddd6b872c2733b7b12d14f63d52df2f81b36e7d69"
+    },
+    "Am241": {
+      "path": "simulation/results/waveform_refit_20261029/independent/am241/events.root",
+      "sha256": "58c23065d89a5fa82ce0795aa8c7382b5f2cb9460a8595fef15d8331b1aaefed"
+    }
+  },
+  "scope": "Fresh optical histories replayed with measured last20 pretrigger state. Optical,SiPM and signal-residual parameters frozen. No new transport.",
+  "config_sha256": {
+    "Co60": "9af0a71ef1494d11516d1c0a403855dea6eea2c9d88b02c73630c3d464dcbb34",
+    "Am241": "172411b9c2f17445e87e0f056b2d5e1ff7e179374d5772607b437fa07ce47143"
+  }
+}

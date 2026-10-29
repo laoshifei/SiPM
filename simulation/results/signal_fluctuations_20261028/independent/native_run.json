@@ -1,0 +1,20 @@
+{
+  "config_sha256": {
+    "Co60": "67587ce5ea2cec67868370c353410467c2ff2eb6a99b84cea21d2f97cf5827c2",
+    "Am241": "9f9771b4ca1928a827000f3b54e749cdff2ebfe0168585f0cf346b4ab163cb89"
+  },
+  "binary_sha256": "3f5de7ce60d415965971c02b8e2797628f084a90b923cc7a903a346fe9b9d6e7",
+  "fit_sha256": "f2007cb1519a59709434cc8e6694e5f8d27f153bfce09bb13e570a34d5c46f87",
+  "new_transport": true,
+  "calibration_record_sha256": "cb559a1a1e2c184046bab7ba7c6ff18e54f44188e05efa935309360506d9ba2b",
+  "sources": {
+    "Co60": {
+      "events": 4000,
+      "seed": 281028403
+    },
+    "Am241": {
+      "events": 24000,
+      "seed": 281028412
+    }
+  }
+}

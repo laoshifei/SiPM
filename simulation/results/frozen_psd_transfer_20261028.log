@@ -1,0 +1,37 @@
+Traceback (most recent call last):
+  File "/media/sf_works/SiPM/simulation/check_frozen_psd_transfer.py", line 99, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/media/sf_works/SiPM/simulation/check_frozen_psd_transfer.py", line 52, in main
+    with np.load(path) as z:data={k:z[k] for k in ['long_charge','short_charge','mean_time_us','block_charge']}
+                                    ~^^^
+  File "/usr/lib/python3/dist-packages/numpy/lib/_npyio_impl.py", line 261, in __getitem__
+    raise KeyError(f"{key} is not a file in the archive")
+KeyError: 'block_charge is not a file in the archive'
+run3_first60 2450
+run3_middle20 853
+run3_last20 826
+run7_first60 356
+run7_middle20 111
+run7_last20 123
+run10_first60 213
+run10_middle20 72
+run10_last20 52
+run11_first60 3000
+run11_middle20 1666
+run11_last20 1659
+run12_first60 1547
+run12_middle20 460
+run12_last20 407
+run13_first60 3000
+run13_middle20 3000
+run13_last20 3000
+run14_first60 3000
+run14_middle20 3000
+run14_last20 3000
+run18_first60 3000
+run18_middle20 3000
+run18_last20 3000
+Info in <TCanvas::Print>: SVG file simulation/results/frozen_psd_transfer_20261028/frozen_psd_transfer.svg has been created
+Info in <TCanvas::Print>: png file simulation/results/frozen_psd_transfer_20261028/frozen_psd_transfer.png has been created
+{'run3_first60': {'qdc': 0.0, 'negative_mean_time': 0.0, 'pca_projection': 0.0}, 'run7_first60': {'qdc': 0.3491, 'negative_mean_time': 0.3341, 'pca_projection': 0.3544}, 'run10_first60': {'qdc': 0.1917, 'negative_mean_time': 0.1716, 'pca_projection': 0.2059}, 'run11_first60': {'qdc': 0.1432, 'negative_mean_time': 0.1578, 'pca_projection': 0.1539}, 'run12_first60': {'qdc': 0.0, 'negative_mean_time': 0.0, 'pca_projection': 0.0}, 'run13_first60': {'qdc': 0.1383, 'negative_mean_time': 0.1681, 'pca_projection': 0.1507}, 'run14_first60': {'qdc': 0.117, 'negative_mean_time': 0.1224, 'pca_projection': 0.128}, 'run18_first60': {'qdc': 0.0882, 'negative_mean_time': 0.1078, 'pca_projection': 0.0984}}

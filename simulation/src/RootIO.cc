@@ -1,4 +1,5 @@
 #include "RootIO.hh"
+#include "G4OpticalParameters.hh"
 #include "RunConfig.hh"
 #include "DataStructure.hh"
 #include "G4Version.hh"
@@ -67,10 +68,17 @@ void RootIO::Open(int requested_events) {
 #undef BRANCH
 
   metadata_ = {
-      {"schema_version", 5}, {"source", config_.Source()}, {"events_requested", requested_events},
+      {"schema_version", 9}, {"source", config_.Source()}, {"events_requested", requested_events},
       {"seed", config_.Seed()}, {"geant4", G4Version}, {"config", config_.Data()},
       {"completed", false}, {"config_file", config_.ConfigFile()},
       {"digitization_enabled", config_.Acquisition().value("digitize", true)},
+      {"electronics_noise", config_.Data().value("electronics_noise", nlohmann::json{{"model", "independent_gaussian"}})},
+      {"readout_response", config_.Data().value("readout_response", nlohmann::json{{"model", "legacy_single_path"}})},
+      {"signal_dependent_noise", config_.Data().value("signal_dependent_noise", nlohmann::json{{"model", "disabled"}})},
+      {"scintillation_time_model", {
+          {"finite_rise_enabled", G4OpticalParameters::Instance()->GetScintFiniteRiseTime()},
+          {"rise_time_ns", config_.Optical().value("rise_time_ns", std::vector<double>{0., 0.})},
+          {"definition", "Geant4 finite rise per component: normalized (1-exp(-t/rise))*exp(-t/decay); zero rise gives exponential. Rise constants shared by all particle types; decay constants remain particle dependent."}}},
       {"architecture", "DetectorConstruction/PhysicsList/ActionInitialization; G4DigiManager SiPMDigitizer"},
       {"optical_hit_collection", "SiPM/OpticalArrivals; entrance steps forwarded to SiPMSD by SteppingAction; photon_boundary_status uses G4OpBoundaryProcessStatus codes"},
       {"sensor_entry_policy", "Only Transmission(1), FresnelRefraction(2), SameMaterial(12) are accepted; reflected tracks continue. Supersedes legacy post-volume scoring in schema <=3."},

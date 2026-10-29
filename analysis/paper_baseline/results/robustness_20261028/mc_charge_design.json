@@ -1,0 +1,801 @@
+{
+  "scope": "Common-supported-Q reweighting of fixed native response candidates.\n\nThis checks whether different within-range charge populations explain the\nrecorded discrepancy. It is an exploratory sensitivity, not detector calibration,\nnew transport, a particle-label measurement or a selection-adjusted test.\n",
+  "parent_record_sha256": "69d1858dafa473c58d795cbfbb40deb1aca5ad6a9a20e1d5920eb67de0bf18e1",
+  "code_sha256": "ac3284183e43732638a3ace851e0e3a13a7e0c1f464c2d39fc10896a8fab3fb3",
+  "q_edges": [
+    201824.1125,
+    237975.62708333333,
+    274127.14166666666,
+    310278.65625,
+    346430.17083333334,
+    382581.6854166667,
+    418733.2
+  ],
+  "common_support": "Same fixed six Q cells. A cell needs>=20 measured and>=10 events in EVERY candidate;>=5 MC is a declared sensitivity. Support intersection is source-specific and identical across candidates. Never extrapolate missing high-Q cells.",
+  "targets": "Equal supported-bin weights (primary sensitivity); measured supported-bin fractions held at original values (secondary). Within-cell Q distributions may still differ. Point weighted KS and weighted mean Q differences reported.",
+  "resampling": "512 full-parent multinomial draws shared across candidates; measured original-index blocks64 shared across all variants. Support and target weights remain fixed. Empty resample cells invalidate the relevant statistic, counted without redefining support.",
+  "metric_order": [
+    "F50 relative residual",
+    "F102 relative residual",
+    "F202 relative residual",
+    "mean_shape_NRMSE"
+  ],
+  "assumptions": "Fixed previously selected candidates. No candidate-selection correction or geometry/circuit/PDE/calibration uncertainty. Sampling intervals are not goodness-of-fit p-values.",
+  "inputs_sha256": {
+    "analysis/paper_baseline/results/publication_20261028/mc/Co60_measured.npz": "bc74d3b05ee11f27d1793cb864ecfadd6b4ad43a6b29ff83343751f3e1637043",
+    "analysis/paper_baseline/results/publication_20261028/mc/Co60_control.npz": "d0f170eaa754dfb4834d9962b77186f908d77cbacc2779b7b8c9b4bdc7fb946d",
+    "analysis/paper_baseline/results/publication_20261028/mc/Co60_native_best.npz": "cf93f2927d54b2ea7dc1843365a476896744605a649079515d087437b2a4b934",
+    "analysis/paper_baseline/results/publication_20261028/mc/Co60_prompt_plus_ap15.npz": "17305ff7b50e0e35b91c6d4b67a663cabf15271498059005d91d0460585858ba",
+    "analysis/paper_baseline/results/publication_20261028/mc/Am241_measured.npz": "2025fd88dfa69d0f9a781b80266b88b85fb398db2cbb677733e100129ec085de",
+    "analysis/paper_baseline/results/publication_20261028/mc/Am241_control.npz": "b6c774c46ff40f55b366b76737e3760732507f7b0f6c936d18078916d0e14aa5",
+    "analysis/paper_baseline/results/publication_20261028/mc/Am241_native_best.npz": "8b39e60cc65e1795dfb130d579a7a31b51b6c60028f6727c04b1b32bf96bc299",
+    "analysis/paper_baseline/results/publication_20261028/mc/Am241_prompt_plus_ap15.npz": "ad28e108ef660eac0bf82d72154cf5237051db973a81de43c17de4efc9721743"
+  },
+  "sources": {
+    "Co60": {
+      "counts_by_bin": {
+        "measured": [
+          90,
+          145,
+          286,
+          530,
+          765,
+          634
+        ],
+        "control": [
+          14,
+          8,
+          10,
+          14,
+          10,
+          16
+        ],
+        "native_best": [
+          14,
+          8,
+          10,
+          14,
+          10,
+          16
+        ],
+        "prompt_plus_ap15": [
+          9,
+          12,
+          8,
+          10,
+          13,
+          9
+        ]
+      },
+      "settings": {
+        "10": {
+          "supported_bins": [
+            3,
+            4
+          ],
+          "selected_n": {
+            "measured": 1295,
+            "control": 24,
+            "native_best": 24,
+            "prompt_plus_ap15": 23
+          },
+          "retained_fraction": {
+            "measured": 0.5285714285714286,
+            "control": 0.3333333333333333,
+            "native_best": 0.3333333333333333,
+            "prompt_plus_ap15": 0.3770491803278688
+          },
+          "targets": {
+            "equal_bins": {
+              "bin_weights": [
+                0.5,
+                0.5
+              ],
+              "measured_F": [
+                0.08668659863817377,
+                0.16451646236421555,
+                0.29879383777369994
+              ],
+              "candidates": {
+                "control": {
+                  "point": [
+                    -0.8788404678322019,
+                    -0.6143406649524061,
+                    -0.189970016877422,
+                    0.012813841862033045
+                  ],
+                  "MC_F": [
+                    0.010502907736218814,
+                    0.06344730947976586,
+                    0.2420319673689605
+                  ],
+                  "weighted_Q_KS": 0.16266846361185974,
+                  "weighted_mean_Q_difference_adc_samples": -3329.301207762677,
+                  "effective_weighted_n": 23.33333333333332
+                },
+                "native_best": {
+                  "point": [
+                    0.8157325428747875,
+                    0.23927396844458237,
+                    0.16067565340661116,
+                    0.01902534512663028
+                  ],
+                  "MC_F": [
+                    0.15739967817845735,
+                    0.2038809691885652,
+                    0.34680273289185815
+                  ],
+                  "weighted_Q_KS": 0.1683288409703503,
+                  "weighted_mean_Q_difference_adc_samples": -3412.9512077627005,
+                  "effective_weighted_n": 23.33333333333332
+                },
+                "prompt_plus_ap15": {
+                  "point": [
+                    0.7906237522634709,
+                    0.2337971007970805,
+                    0.16574468625839578,
+                    0.029822097034464378
+                  ],
+                  "MC_F": [
+                    0.1552230825244442,
+                    0.20297993429836114,
+                    0.3483173286714438
+                  ],
+                  "weighted_Q_KS": 0.12981397687280094,
+                  "weighted_mean_Q_difference_adc_samples": -1991.9661116088391,
+                  "effective_weighted_n": 22.6086956521739
+                }
+              }
+            },
+            "measured_bin_fractions_fixed": {
+              "bin_weights": [
+                0.4092664092664093,
+                0.5907335907335908
+              ],
+              "measured_F": [
+                0.08659739258927587,
+                0.1643673828524682,
+                0.29845543215313824
+              ],
+              "candidates": {
+                "control": {
+                  "point": [
+                    -0.8786983184463439,
+                    -0.6095645598976697,
+                    -0.18381816822707553,
+                    0.01266819008816222
+                  ],
+                  "MC_F": [
+                    0.010504409339241273,
+                    0.06417485146247165,
+                    0.24359390131732814
+                  ],
+                  "weighted_Q_KS": 0.17413127413128937,
+                  "weighted_mean_Q_difference_adc_samples": -3150.331901544181,
+                  "effective_weighted_n": 21.3397835877533
+                },
+                "native_best": {
+                  "point": [
+                    0.8033623363218483,
+                    0.23538468243129396,
+                    0.16159717369053705,
+                    0.018778655016357323
+                  ],
+                  "MC_F": [
+                    0.15616647621917684,
+                    0.20305694706725935,
+                    0.34668498646167323
+                  ],
+                  "weighted_Q_KS": 0.17490347490349012,
+                  "weighted_mean_Q_difference_adc_samples": -3232.0129826252814,
+                  "effective_weighted_n": 21.3397835877533
+                },
+                "prompt_plus_ap15": {
+                  "point": [
+                    0.7915968774269297,
+                    0.22813532851660367,
+                    0.15885456063082115,
+                    0.029992742052276502
+                  ],
+                  "MC_F": [
+                    0.1551476181562606,
+                    0.2018653897369304,
+                    0.3458664386957069
+                  ],
+                  "weighted_Q_KS": 0.15337095337096518,
+                  "weighted_mean_Q_difference_adc_samples": -2478.7073284821818,
+                  "effective_weighted_n": 22.93922526949321
+                }
+              }
+            }
+          },
+          "unweighted_same_support": {
+            "measured_F": [
+              0.08659739258927587,
+              0.1643673828524682,
+              0.29845543215313824
+            ],
+            "control": [
+              -0.8787315842848442,
+              -0.6180561803803051,
+              -0.19385811321714397,
+              0.013203737659601032
+            ],
+            "native_best": [
+              0.8306821382948533,
+              0.24500238599996216,
+              0.16235403519743286,
+              0.019517934070387537
+            ],
+            "prompt_plus_ap15": [
+              0.7918419445283931,
+              0.23004223627861076,
+              0.16116392370507104,
+              0.02997885228696352
+            ]
+          }
+        },
+        "5": {
+          "supported_bins": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "selected_n": {
+            "measured": 2450,
+            "control": 72,
+            "native_best": 72,
+            "prompt_plus_ap15": 61
+          },
+          "retained_fraction": {
+            "measured": 1.0,
+            "control": 1.0,
+            "native_best": 1.0,
+            "prompt_plus_ap15": 1.0
+          },
+          "targets": {
+            "equal_bins": {
+              "bin_weights": [
+                0.16666666666666666,
+                0.16666666666666666,
+                0.16666666666666666,
+                0.16666666666666666,
+                0.16666666666666666,
+                0.16666666666666666
+              ],
+              "measured_F": [
+                0.0910460439086981,
+                0.1703371803361968,
+                0.30693232222947175
+              ],
+              "candidates": {
+                "control": {
+                  "point": [
+                    -0.868498968214664,
+                    -0.6169578978673584,
+                    -0.1943311961857188,
+                    0.010128839657309202
+                  ],
+                  "MC_F": [
+                    0.011972648713966806,
+                    0.06524631162732367,
+                    0.24728579690255803
+                  ],
+                  "weighted_Q_KS": 0.054222821203935734,
+                  "weighted_mean_Q_difference_adc_samples": -402.9419654774247,
+                  "effective_weighted_n": 67.87878787878788
+                },
+                "native_best": {
+                  "point": [
+                    0.7612948953872829,
+                    0.21084332262423833,
+                    0.1430415061769974,
+                    0.016150319833866816
+                  ],
+                  "MC_F": [
+                    0.16035893238159638,
+                    0.2062516374047246,
+                    0.3508363838955789
+                  ],
+                  "weighted_Q_KS": 0.056109613656766255,
+                  "weighted_mean_Q_difference_adc_samples": -475.29762023943476,
+                  "effective_weighted_n": 67.87878787878788
+                },
+                "prompt_plus_ap15": {
+                  "point": [
+                    0.7091038923150201,
+                    0.17450063536154925,
+                    0.0931912692281247,
+                    0.02338288774945924
+                  ],
+                  "MC_F": [
+                    0.15560714802424014,
+                    0.20006112653055794,
+                    0.33553573490517197
+                  ],
+                  "weighted_Q_KS": 0.053927203065134155,
+                  "weighted_mean_Q_difference_adc_samples": -1539.995370926219,
+                  "effective_weighted_n": 59.261343651072835
+                }
+              }
+            },
+            "measured_bin_fractions_fixed": {
+              "bin_weights": [
+                0.036734693877551024,
+                0.05918367346938776,
+                0.11673469387755102,
+                0.2163265306122449,
+                0.3122448979591837,
+                0.2587755102040816
+              ],
+              "measured_F": [
+                0.08767428620544648,
+                0.1659913677184828,
+                0.30048933023406726
+              ],
+              "candidates": {
+                "control": {
+                  "point": [
+                    -0.8759677800593226,
+                    -0.6154135210361684,
+                    -0.18772881564857447,
+                    0.012104216236849256
+                  ],
+                  "MC_F": [
+                    0.010874436349775835,
+                    0.06383803564924191,
+                    0.24407882415419244
+                  ],
+                  "weighted_Q_KS": 0.0920408163265245,
+                  "weighted_mean_Q_difference_adc_samples": -1039.2130586737185,
+                  "effective_weighted_n": 52.1524191141797
+                },
+                "native_best": {
+                  "point": [
+                    0.8098344738323842,
+                    0.23032077527666273,
+                    0.1557536343909507,
+                    0.018443458963170362
+                  ],
+                  "MC_F": [
+                    0.1586759456432641,
+                    0.20422262822063736,
+                    0.3472916355137258
+                  ],
+                  "weighted_Q_KS": 0.09244897959183063,
+                  "weighted_mean_Q_difference_adc_samples": -1120.798111151962,
+                  "effective_weighted_n": 52.1524191141797
+                },
+                "prompt_plus_ap15": {
+                  "point": [
+                    0.7668494465603215,
+                    0.20713927422795742,
+                    0.12613245281817353,
+                    0.026441236639854065
+                  ],
+                  "MC_F": [
+                    0.15490726405966435,
+                    0.2003746991557953,
+                    0.3383907865021803
+                  ],
+                  "weighted_Q_KS": 0.08106750392464046,
+                  "weighted_mean_Q_difference_adc_samples": -1282.414192504133,
+                  "effective_weighted_n": 45.94488324777071
+                }
+              }
+            }
+          },
+          "unweighted_same_support": {
+            "measured_F": [
+              0.08767428620544648,
+              0.1659913677184828,
+              0.30048933023406726
+            ],
+            "control": [
+              -0.86357344567303,
+              -0.611883655545851,
+              -0.18086754691288454,
+              0.012424494798218735
+            ],
+            "native_best": [
+              0.8346556616209206,
+              0.2397439066027769,
+              0.16463913696512056,
+              0.018521346405454307
+            ],
+            "prompt_plus_ap15": [
+              0.7804697676895256,
+              0.20649171380008835,
+              0.12186232082048432,
+              0.026246502585489124
+            ]
+          }
+        }
+      }
+    },
+    "Am241": {
+      "counts_by_bin": {
+        "measured": [
+          557,
+          389,
+          232,
+          171,
+          114,
+          84
+        ],
+        "control": [
+          17,
+          37,
+          25,
+          7,
+          0,
+          0
+        ],
+        "native_best": [
+          17,
+          38,
+          24,
+          7,
+          0,
+          0
+        ],
+        "prompt_plus_ap15": [
+          10,
+          21,
+          34,
+          19,
+          4,
+          0
+        ]
+      },
+      "settings": {
+        "10": {
+          "supported_bins": [
+            0,
+            1,
+            2
+          ],
+          "selected_n": {
+            "measured": 1178,
+            "control": 79,
+            "native_best": 79,
+            "prompt_plus_ap15": 65
+          },
+          "retained_fraction": {
+            "measured": 0.7614738202973497,
+            "control": 0.9186046511627907,
+            "native_best": 0.9186046511627907,
+            "prompt_plus_ap15": 0.7386363636363636
+          },
+          "targets": {
+            "equal_bins": {
+              "bin_weights": [
+                0.3333333333333333,
+                0.3333333333333333,
+                0.3333333333333333
+              ],
+              "measured_F": [
+                0.22410259598952817,
+                0.4582056771197783,
+                0.8594774062229636
+              ],
+              "candidates": {
+                "control": {
+                  "point": [
+                    -0.95008797044995,
+                    -0.8488125644527017,
+                    -0.6903262937199679,
+                    0.01852966120702882
+                  ],
+                  "MC_F": [
+                    0.011185415393272242,
+                    0.06927494127695263,
+                    0.26615755384901385
+                  ],
+                  "weighted_Q_KS": 0.07651867806109941,
+                  "weighted_mean_Q_difference_adc_samples": 1635.024626267812,
+                  "effective_weighted_n": 71.51339060131379
+                },
+                "native_best": {
+                  "point": [
+                    -0.25219414131531537,
+                    -0.5214801378070708,
+                    -0.5628949157528012,
+                    0.015554643306412689
+                  ],
+                  "MC_F": [
+                    0.16758523422741609,
+                    0.21926051747137412,
+                    0.37568194405565253
+                  ],
+                  "weighted_Q_KS": 0.08007486582781342,
+                  "weighted_mean_Q_difference_adc_samples": 1880.7177060309623,
+                  "effective_weighted_n": 70.97456765005084
+                },
+                "prompt_plus_ap15": {
+                  "point": [
+                    -0.25834970335353624,
+                    -0.5337220572647638,
+                    -0.5794115039158148,
+                    0.015049600447529631
+                  ],
+                  "MC_F": [
+                    0.16620575679487617,
+                    0.2136512004770161,
+                    0.36148630970165263
+                  ],
+                  "weighted_Q_KS": 0.14219030520646495,
+                  "weighted_mean_Q_difference_adc_samples": 5324.716916372883,
+                  "effective_weighted_n": 50.838607594936704
+                }
+              }
+            },
+            "measured_bin_fractions_fixed": {
+              "bin_weights": [
+                0.47283531409168084,
+                0.3302207130730051,
+                0.1969439728353141
+              ],
+              "measured_F": [
+                0.2254979973686893,
+                0.46048383961250855,
+                0.8627218360281319
+              ],
+              "candidates": {
+                "control": {
+                  "point": [
+                    -0.9504134040105149,
+                    -0.8516654171903499,
+                    -0.6964396094473797,
+                    0.01849275540097304
+                  ],
+                  "MC_F": [
+                    0.011181678091959179,
+                    0.06830567823950724,
+                    0.2618881774829734
+                  ],
+                  "weighted_Q_KS": 0.09537601118546085,
+                  "weighted_mean_Q_difference_adc_samples": 2251.007169652381,
+                  "effective_weighted_n": 56.6571420620476
+                },
+                "native_best": {
+                  "point": [
+                    -0.25173934421590394,
+                    -0.5235239620122055,
+                    -0.5674956155709946,
+                    0.01563380605368484
+                  ],
+                  "MC_F": [
+                    0.16873127938909582,
+                    0.2194095154559751,
+                    0.37313097662480854
+                  ],
+                  "weighted_Q_KS": 0.09198042544692092,
+                  "weighted_mean_Q_difference_adc_samples": 2412.3324298477964,
+                  "effective_weighted_n": 56.69862203917202
+                },
+                "prompt_plus_ap15": {
+                  "point": [
+                    -0.2632402805622024,
+                    -0.5377357553163205,
+                    -0.5825976398571138,
+                    0.01618054722119973
+                  ],
+                  "MC_F": [
+                    0.16613784127514075,
+                    0.2128652143075169,
+                    0.3601021305049463
+                  ],
+                  "weighted_Q_KS": 0.2016977928692712,
+                  "weighted_mean_Q_difference_adc_samples": 5948.944277082599,
+                  "effective_weighted_n": 34.85441638248905
+                }
+              }
+            }
+          },
+          "unweighted_same_support": {
+            "measured_F": [
+              0.2254979973686893,
+              0.46048383961250855,
+              0.8627218360281319
+            ],
+            "control": [
+              -0.9497878412810279,
+              -0.8485892993281361,
+              -0.6906476871736,
+              0.018489365755074698
+            ],
+            "native_best": [
+              -0.2615043923427385,
+              -0.5255975783998929,
+              -0.5657095751345189,
+              0.01579147402977018
+            ],
+            "prompt_plus_ap15": [
+              -0.26302900733011636,
+              -0.5339762457492342,
+              -0.5790869466834421,
+              0.014439528306573269
+            ]
+          }
+        },
+        "5": {
+          "supported_bins": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "selected_n": {
+            "measured": 1349,
+            "control": 86,
+            "native_best": 86,
+            "prompt_plus_ap15": 84
+          },
+          "retained_fraction": {
+            "measured": 0.8720103425985779,
+            "control": 1.0,
+            "native_best": 1.0,
+            "prompt_plus_ap15": 0.9545454545454546
+          },
+          "targets": {
+            "equal_bins": {
+              "bin_weights": [
+                0.25,
+                0.25,
+                0.25,
+                0.25
+              ],
+              "measured_F": [
+                0.2230989548534447,
+                0.4557458814073955,
+                0.8556840766279676
+              ],
+              "candidates": {
+                "control": {
+                  "point": [
+                    -0.9515493764320465,
+                    -0.8528555694369487,
+                    -0.7005356906043112,
+                    0.02030941496537793
+                  ],
+                  "MC_F": [
+                    0.010809283480008095,
+                    0.06706046820114711,
+                    0.256246841068282
+                  ],
+                  "weighted_Q_KS": 0.07414369256474718,
+                  "weighted_mean_Q_difference_adc_samples": 374.4084289743332,
+                  "effective_weighted_n": 59.544255865846324
+                },
+                "native_best": {
+                  "point": [
+                    -0.2508498363333648,
+                    -0.5280511626830553,
+                    -0.5720677764214226,
+                    0.01698089093320946
+                  ],
+                  "MC_F": [
+                    0.16713461854231335,
+                    0.2150887388422065,
+                    0.3661747895921881
+                  ],
+                  "weighted_Q_KS": 0.08145363408521566,
+                  "weighted_mean_Q_difference_adc_samples": 515.6782387967687,
+                  "effective_weighted_n": 59.333287774209055
+                },
+                "prompt_plus_ap15": {
+                  "point": [
+                    -0.26181294841346503,
+                    -0.5340133309255999,
+                    -0.5777992132393143,
+                    0.014703925603694896
+                  ],
+                  "MC_F": [
+                    0.1646887596953018,
+                    0.2123715052214088,
+                    0.36127049037091885
+                  ],
+                  "weighted_Q_KS": 0.10664272890484681,
+                  "weighted_mean_Q_difference_adc_samples": 3873.6193758765003,
+                  "effective_weighted_n": 69.66747977917566
+                }
+              }
+            },
+            "measured_bin_fractions_fixed": {
+              "bin_weights": [
+                0.4128984432913269,
+                0.2883617494440326,
+                0.17197924388435878,
+                0.1267605633802817
+              ],
+              "measured_F": [
+                0.22481222704035894,
+                0.4589478380902501,
+                0.8603871918919856
+              ],
+              "candidates": {
+                "control": {
+                  "point": [
+                    -0.9511083662745654,
+                    -0.8533477978030178,
+                    -0.7008274666106522,
+                    0.01931117171034428
+                  ],
+                  "MC_F": [
+                    0.010991437061456479,
+                    0.0673057111494792,
+                    0.2574042158940722
+                  ],
+                  "weighted_Q_KS": 0.08328609427462771,
+                  "weighted_mean_Q_difference_adc_samples": 1533.7391979195236,
+                  "effective_weighted_n": 63.47417429116076
+                },
+                "native_best": {
+                  "point": [
+                    -0.25111935821857434,
+                    -0.5265794011487339,
+                    -0.5715489338478467,
+                    0.0162295050414387
+                  ],
+                  "MC_F": [
+                    0.16835752486629557,
+                    0.21727536035018008,
+                    0.3686338096697786
+                  ],
+                  "weighted_Q_KS": 0.08032093489731112,
+                  "weighted_mean_Q_difference_adc_samples": 1652.8119603435625,
+                  "effective_weighted_n": 63.51387000878983
+                },
+                "prompt_plus_ap15": {
+                  "point": [
+                    -0.2643760046599135,
+                    -0.5373853645886502,
+                    -0.5813882822593814,
+                    0.015759448106902538
+                  ],
+                  "MC_F": [
+                    0.16537726865673147,
+                    0.21231598679094826,
+                    0.3601681603199314
+                  ],
+                  "weighted_Q_KS": 0.1761304670126029,
+                  "weighted_mean_Q_difference_adc_samples": 5134.049098149204,
+                  "effective_weighted_n": 44.006802163200575
+                }
+              }
+            }
+          },
+          "unweighted_same_support": {
+            "measured_F": [
+              0.22481222704035894,
+              0.4589478380902501,
+              0.8603871918919856
+            ],
+            "control": [
+              -0.950229121680485,
+              -0.8497328440646151,
+              -0.6936274229342241,
+              0.019097498416664502
+            ],
+            "native_best": [
+              -0.25952195565694736,
+              -0.5268264254329089,
+              -0.5680332041653335,
+              0.016213343177760027
+            ],
+            "prompt_plus_ap15": [
+              -0.2668657319159411,
+              -0.5354051732662493,
+              -0.5786041054019951,
+              0.014164522635355238
+            ]
+          }
+        }
+      }
+    }
+  }
+}

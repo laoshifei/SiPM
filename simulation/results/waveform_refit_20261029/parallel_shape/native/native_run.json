@@ -1,0 +1,20 @@
+{
+  "scope": "New full optical training-validation MC. Candidate optical parameters, baseline states and code frozen before transport. Signal residual not enabled yet.",
+  "sources": {
+    "Co60": {
+      "events": 4000,
+      "seed": 291029103,
+      "config": "simulation/results/waveform_refit_20261029/parallel_shape/Co60_native_candidate.json",
+      "config_sha256": "572d425685579b91181091a4ff50ece7a7dcd17c652ba2785500d2ceab0a6ad3"
+    },
+    "Am241": {
+      "events": 24000,
+      "seed": 291029112,
+      "config": "simulation/results/waveform_refit_20261029/parallel_shape/Am241_native_candidate.json",
+      "config_sha256": "2fff64317f78bc928c414fb5f91554e8e4a0a0c29b0613f911203f99d893001e"
+    }
+  },
+  "binary_sha256": "ed4ce16c88fa618c515eb751d3b25aefc6f7ed23426c6b9fa6100b70a44b3602",
+  "shape_fit_sha256": "69d574e80aa7bcf19caa72f65ebd57795aa2ff588024985a051c0c897fff2a6b",
+  "baseline_sha256": "13798fa2b8de60086f93b36343c767f210c847f420b0d76f2e128fdd30d180ee"
+}

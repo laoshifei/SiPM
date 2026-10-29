@@ -1,0 +1,356 @@
+{
+  "scope": "Exact fluctuation decomposition of saved native Geant4/SiPM waveforms.\n\nNo transport or waveform model is replaced. Stored signal_mV, analog_mV and ADC\nallow signal, electronics, quantization and cross terms to be separated exactly\nfor the frozen event IDs and alignment. A stationary formula predicts moments;\nits comparison with event medians is explicitly distinguished from a mean check.\n",
+  "selection": "Exact event IDs and ADC alignment of prior common-Q fluctuation analysis; no re-selection, no resimulation.",
+  "identity": "Excess variance(total) = sum of three component excess variances + twice the three pairwise excess covariances. All six components divide by the same observed mean. Their event means add; their separate medians generally do not.",
+  "quantization": "ADC minus (analog_mV-adc_min_mV)/LSB, including any clipping; electronics = analog_mV-signal_mV-baseline_mV. Signal stored by native C++ digitizer.",
+  "stationary_comparison": "Independent stationary-avalanche integral estimates an expectation-like variance/mean, not the median of a finite-window estimator. Both event means and intensity-weighted ratio-of-sums are reported with bootstrap intervals.",
+  "limits": "Fixed selected sample; conditional selection, finite nonstationary emission and recovery remain. Bootstrap covers selected-event statistics only. Signal-only output is available only in MC, not recovered from measured data.",
+  "inputs_sha256": {
+    "simulation/results/colored_noise_20261028/fluctuations/metrics.npz": "a3446faf24832a46e986aa0ac065d3d3730775de936d262c05be0c5e02de213f",
+    "simulation/results/colored_noise_20261028/co60/events.root": "0af54e0ba2d07749a8fa5757969f46599b11df0f0e6e4f8a93cec7be0477786f",
+    "simulation/results/colored_noise_20261028/am241/events.root": "6839d20e2b2835f00221844bb6b1a4178ef5387c2ef1778ff7b3452f03e807f4"
+  },
+  "code_sha256": {
+    "simulation/diagnose_mc_components.py": "fe324c39515a9fbfce9bda52f3309c24c8f303a0574e6a31d2242d5cecda9d53",
+    "simulation/diagnose_fluctuations.py": "3f6e7d9527f367806f063734e5a184916557ccd79507c811e0b614326b10eeed",
+    "simulation/profile_signal_response.py": "af78b2db1ef7ec8314d46efb8c372fa8d203f48256f6ecd6118d42c45ebb5a60",
+    "simulation/reference.py": "fe7ebd20af44ffc2ade2b758dd8fa6bde1d269cc8cb02e7a37bd591d4fe0d1bb",
+    "analysis/paper_baseline/prepare.py": "9ebe888c46f8964ecea7141f1c3da5095a0d5546bacb87d77e9874a156fab9c9"
+  },
+  "sources": {
+    "Co60": {
+      "n": 72,
+      "max_absolute_identity_error_ADC": 2.525757381022231e-14,
+      "original_metrics_exact": true,
+      "avalanche_count_in_signal_window_quantiles": [
+        438.7,
+        626.0,
+        766.8
+      ],
+      "avalanche_q2_over_q_over_nominal_quantiles": [
+        0.9995403707433442,
+        0.9999077066411608,
+        0.9999996238911675
+      ],
+      "filters": {
+        "50ns": {
+          "observed_ADC": {
+            "n": 72,
+            "event_median": 0.012593353501273344,
+            "event_median_bootstrap_95": [
+              0.009160096395017239,
+              0.01521908826619586
+            ],
+            "mean_event_ratio": 0.011961100770085666,
+            "mean_event_ratio_bootstrap_95": [
+              0.010138468513386185,
+              0.013701176569591068
+            ],
+            "ratio_of_summed_variance_to_summed_mean": 0.011423141452640813,
+            "ratio_of_sums_bootstrap_95": [
+              0.009642300461321631,
+              0.01318301537985512
+            ]
+          },
+          "native_signal_only": {
+            "n": 72,
+            "event_median": 0.011311641650185309,
+            "event_median_bootstrap_95": [
+              0.010915966407623611,
+              0.011668776413192621
+            ],
+            "mean_event_ratio": 0.011563637290031912,
+            "mean_event_ratio_bootstrap_95": [
+              0.011117543416759443,
+              0.012036206534556037
+            ],
+            "ratio_of_summed_variance_to_summed_mean": 0.011582768197531606,
+            "ratio_of_sums_bootstrap_95": [
+              0.01112872057214721,
+              0.012033393889562101
+            ]
+          },
+          "mean_component_contributions_ADC": {
+            "signal": 0.011570120425363999,
+            "electronics": 0.0006348770181321904,
+            "quantization": 7.07619424508367e-06,
+            "signal_x_electronics": -0.00015440607992557717,
+            "signal_x_quantization": 2.3217938512503357e-05,
+            "electronics_x_quantization": -0.00011978472624228291
+          },
+          "stationary_expectation_ADC": 0.013530810813839287,
+          "stationary_over_full_median_minus1": 0.07444064144400886,
+          "stationary_over_signal_mean_minus1": 0.17011719361892452,
+          "stationary_over_signal_ratio_of_sums_minus1": 0.16818454648197356
+        },
+        "102ns": {
+          "observed_ADC": {
+            "n": 72,
+            "event_median": 0.05732822738244488,
+            "event_median_bootstrap_95": [
+              0.05342245545347806,
+              0.06814320719527601
+            ],
+            "mean_event_ratio": 0.06442396284984198,
+            "mean_event_ratio_bootstrap_95": [
+              0.059466354468144585,
+              0.06934980076013769
+            ],
+            "ratio_of_summed_variance_to_summed_mean": 0.06356665927754315,
+            "ratio_of_sums_bootstrap_95": [
+              0.05868667306464198,
+              0.06840710373948213
+            ]
+          },
+          "native_signal_only": {
+            "n": 72,
+            "event_median": 0.061706580594075675,
+            "event_median_bootstrap_95": [
+              0.05787829972494288,
+              0.06629264137788221
+            ],
+            "mean_event_ratio": 0.06484694162446153,
+            "mean_event_ratio_bootstrap_95": [
+              0.06097858603982832,
+              0.06871909587609698
+            ],
+            "ratio_of_summed_variance_to_summed_mean": 0.06469502003624339,
+            "ratio_of_sums_bootstrap_95": [
+              0.06078796987919064,
+              0.06852421090491041
+            ]
+          },
+          "mean_component_contributions_ADC": {
+            "signal": 0.06488283926088305,
+            "electronics": 0.00017535839543830032,
+            "quantization": 8.840920809034617e-06,
+            "signal_x_electronics": -0.00054221403881957,
+            "signal_x_quantization": 5.507806872826363e-05,
+            "electronics_x_quantization": -0.00015593975719701308
+          },
+          "stationary_expectation_ADC": 0.075836186860536,
+          "stationary_over_full_median_minus1": 0.3228419981420647,
+          "stationary_over_signal_mean_minus1": 0.1694643565415137,
+          "stationary_over_signal_ratio_of_sums_minus1": 0.17221057846571686
+        },
+        "202ns": {
+          "observed_ADC": {
+            "n": 72,
+            "event_median": 0.23107652706970955,
+            "event_median_bootstrap_95": [
+              0.2161337768848476,
+              0.2521707229193003
+            ],
+            "mean_event_ratio": 0.2461405622011359,
+            "mean_event_ratio_bootstrap_95": [
+              0.22650534404140554,
+              0.26472063311601846
+            ],
+            "ratio_of_summed_variance_to_summed_mean": 0.24421419937164962,
+            "ratio_of_sums_bootstrap_95": [
+              0.2254666682819095,
+              0.26259149236702833
+            ]
+          },
+          "native_signal_only": {
+            "n": 72,
+            "event_median": 0.23567078122115684,
+            "event_median_bootstrap_95": [
+              0.21591362903393005,
+              0.26785858426195197
+            ],
+            "mean_event_ratio": 0.248083075973996,
+            "mean_event_ratio_bootstrap_95": [
+              0.229958637915032,
+              0.2668095559712103
+            ],
+            "ratio_of_summed_variance_to_summed_mean": 0.2472180393879606,
+            "ratio_of_sums_bootstrap_95": [
+              0.2297963972954597,
+              0.2656556786778248
+            ]
+          },
+          "mean_component_contributions_ADC": {
+            "signal": 0.2482392037458412,
+            "electronics": 0.00038148491832770676,
+            "quantization": 7.804761968177922e-06,
+            "signal_x_electronics": -0.0022217084925649122,
+            "signal_x_quantization": -6.583758172042111e-05,
+            "electronics_x_quantization": -0.0002003851507146947
+          },
+          "stationary_expectation_ADC": 0.2830737056208694,
+          "stationary_over_full_median_minus1": 0.22502146457945393,
+          "stationary_over_signal_mean_minus1": 0.14104400112541793,
+          "stationary_over_signal_ratio_of_sums_minus1": 0.14503660947104402
+        }
+      }
+    },
+    "Am241": {
+      "n": 86,
+      "max_absolute_identity_error_ADC": 2.070565940925917e-14,
+      "original_metrics_exact": true,
+      "avalanche_count_in_signal_window_quantiles": [
+        562.5,
+        657.5,
+        755.0
+      ],
+      "avalanche_q2_over_q_over_nominal_quantiles": [
+        0.9996381000196066,
+        0.9999694133024166,
+        0.9999999430715214
+      ],
+      "filters": {
+        "50ns": {
+          "observed_ADC": {
+            "n": 86,
+            "event_median": 0.009734142467805865,
+            "event_median_bootstrap_95": [
+              0.007463343631666278,
+              0.0119472612955138
+            ],
+            "mean_event_ratio": 0.01118910199676489,
+            "mean_event_ratio_bootstrap_95": [
+              0.009017074987240884,
+              0.013261667940713097
+            ],
+            "ratio_of_summed_variance_to_summed_mean": 0.011147759762815661,
+            "ratio_of_sums_bootstrap_95": [
+              0.00902946147353274,
+              0.013224623623944307
+            ]
+          },
+          "native_signal_only": {
+            "n": 86,
+            "event_median": 0.012112114083052409,
+            "event_median_bootstrap_95": [
+              0.01159123854226182,
+              0.012834319442516656
+            ],
+            "mean_event_ratio": 0.012334659486621708,
+            "mean_event_ratio_bootstrap_95": [
+              0.011922268750048013,
+              0.01277277836710981
+            ],
+            "ratio_of_summed_variance_to_summed_mean": 0.012326981163495907,
+            "ratio_of_sums_bootstrap_95": [
+              0.011898202393456918,
+              0.012768738302854759
+            ]
+          },
+          "mean_component_contributions_ADC": {
+            "signal": 0.01232318241611426,
+            "electronics": -0.0013632475464212773,
+            "quantization": -8.248696845688447e-06,
+            "signal_x_electronics": 0.00033639781480724023,
+            "signal_x_quantization": -1.1322658794995764e-05,
+            "electronics_x_quantization": -8.76593320948488e-05
+          },
+          "stationary_expectation_ADC": 0.013530810813839287,
+          "stationary_over_full_median_minus1": 0.3900362418764982,
+          "stationary_over_signal_mean_minus1": 0.0969748154389618,
+          "stationary_over_signal_ratio_of_sums_minus1": 0.09765810739682967
+        },
+        "102ns": {
+          "observed_ADC": {
+            "n": 86,
+            "event_median": 0.06510258727493928,
+            "event_median_bootstrap_95": [
+              0.06233281576342378,
+              0.0704180290383837
+            ],
+            "mean_event_ratio": 0.06896478635251536,
+            "mean_event_ratio_bootstrap_95": [
+              0.06527319899442252,
+              0.07297486163407345
+            ],
+            "ratio_of_summed_variance_to_summed_mean": 0.06893753866745257,
+            "ratio_of_sums_bootstrap_95": [
+              0.06537815826740817,
+              0.07284313399554401
+            ]
+          },
+          "native_signal_only": {
+            "n": 86,
+            "event_median": 0.06914964992333564,
+            "event_median_bootstrap_95": [
+              0.0647739622566942,
+              0.07396944473063602
+            ],
+            "mean_event_ratio": 0.0706223982882424,
+            "mean_event_ratio_bootstrap_95": [
+              0.06748259893489247,
+              0.0739027389594917
+            ],
+            "ratio_of_summed_variance_to_summed_mean": 0.0705111674651271,
+            "ratio_of_sums_bootstrap_95": [
+              0.06731620055409145,
+              0.07383599793571619
+            ]
+          },
+          "mean_component_contributions_ADC": {
+            "signal": 0.0705528041362424,
+            "electronics": -0.0016315214482230031,
+            "quantization": -6.504688671126038e-06,
+            "signal_x_electronics": 0.00017635121459847898,
+            "signal_x_quantization": -3.269183670920935e-05,
+            "electronics_x_quantization": -9.36510247224861e-05
+          },
+          "stationary_expectation_ADC": 0.075836186860536,
+          "stationary_over_full_median_minus1": 0.1648720893421165,
+          "stationary_over_signal_mean_minus1": 0.07382627464750957,
+          "stationary_over_signal_ratio_of_sums_minus1": 0.0755202273177864
+        },
+        "202ns": {
+          "observed_ADC": {
+            "n": 86,
+            "event_median": 0.25709726691437984,
+            "event_median_bootstrap_95": [
+              0.23966551948345605,
+              0.26615949558711927
+            ],
+            "mean_event_ratio": 0.26359904125433387,
+            "mean_event_ratio_bootstrap_95": [
+              0.24967792793977292,
+              0.2781762557926302
+            ],
+            "ratio_of_summed_variance_to_summed_mean": 0.2635338890068597,
+            "ratio_of_sums_bootstrap_95": [
+              0.24912348694365724,
+              0.27971469980901226
+            ]
+          },
+          "native_signal_only": {
+            "n": 86,
+            "event_median": 0.2558778050906323,
+            "event_median_bootstrap_95": [
+              0.24671671706796827,
+              0.27003907756794804
+            ],
+            "mean_event_ratio": 0.26506270015315,
+            "mean_event_ratio_bootstrap_95": [
+              0.2500381962926621,
+              0.2794293466466118
+            ],
+            "ratio_of_summed_variance_to_summed_mean": 0.26466110227877093,
+            "ratio_of_sums_bootstrap_95": [
+              0.24968261902478966,
+              0.27988202038017446
+            ]
+          },
+          "mean_component_contributions_ADC": {
+            "signal": 0.2647836891317606,
+            "electronics": -0.001091670712171226,
+            "quantization": -7.967221701568674e-06,
+            "signal_x_electronics": 0.00010695301297745664,
+            "signal_x_quantization": -9.073796929819285e-05,
+            "electronics_x_quantization": -0.0001012249872331432
+          },
+          "stationary_expectation_ADC": 0.2830737056208694,
+          "stationary_over_full_median_minus1": 0.10103739731757022,
+          "stationary_over_signal_mean_minus1": 0.0679499811075377,
+          "stationary_over_signal_ratio_of_sums_minus1": 0.06957049291929662
+        }
+      }
+    }
+  }
+}

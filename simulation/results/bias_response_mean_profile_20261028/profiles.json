@@ -1,0 +1,2261 @@
+{
+  "scope": "Conditional impulse-response identifiability checks, not a SiPM gain fit.\n\nThe independent stationary-avalanche approximation is profiled over a two-pole\nshape and a free effective ADC area. Positive model discrepancies cannot be\nassigned uniquely to gain, excess noise, impedance or unmodeled signal noise.\nThe resulting diagnostic profiles must not be exported as detector calibrations.\n",
+  "statistic": "mean",
+  "assumptions": {
+    "fixed_rise_ns": 2.0,
+    "SPE_decay_grid_ns": [
+      2.5,
+      2.611986383174618,
+      2.728989146355849,
+      2.8512329960451215,
+      2.9789527043712107,
+      3.112393559975523,
+      3.251811839094576,
+      3.397475297744418,
+      3.549663685952221,
+      3.7086692850226495,
+      3.874797468870843,
+      4.048367290500048,
+      4.229712094750259,
+      4.419180158494667,
+      4.617135359513408,
+      4.823957875329227,
+      5.040044913347161,
+      5.265811473700514,
+      5.501691146268165,
+      5.74813694339392,
+      6.005622169907157,
+      6.274641332115639,
+      6.555711087516278,
+      6.849371237047755,
+      7.156185761790649,
+      7.476743906106106,
+      7.8116613092931795,
+      8.161581187938319,
+      8.527175571227605,
+      8.9091465915943,
+      9.308227833180348,
+      9.72518574070162,
+      10.160821091422642,
+      10.61597053306776,
+      11.09150819062239,
+      11.588347345110169,
+      12.107442187570204,
+      12.649789651602916,
+      13.216431328004004,
+      13.808455465163554,
+      14.426999059072134,
+      15.073250036947782,
+      15.748449538677571,
+      16.453894300455364,
+      17.190939145193543,
+      17.960999584491624,
+      18.765554537158835,
+      19.606149169511827,
+      20.484397862902092,
+      21.4019873141726,
+      22.360679774997905,
+      23.362316436329042,
+      24.40882096444322,
+      25.502203195389132,
+      26.644562994923454,
+      27.838094291351346,
+      29.08508928901634,
+      30.387942870531443,
+      31.749157196206532,
+      33.17134650950475,
+      34.65724215775732,
+      36.209697837779004,
+      37.831695076458466,
+      39.52634895684949,
+      41.29691410075965,
+      43.14679091932643,
+      45.07953214358519,
+      47.0988496475708,
+      49.20862157705743,
+      51.41289979762668,
+      53.715917676368775,
+      56.12209821216165,
+      58.63606253014191,
+      61.26263875668244,
+      64.00687129192005,
+      66.87403049764221,
+      69.86962281913829,
+      72.9994013604543,
+      76.26937693336211,
+      79.68582960126164,
+      83.25532074018732,
+      86.98470564008193,
+      90.88114667053854,
+      94.95212703629677,
+      99.20546514890945,
+      103.64932964218234,
+      108.29225506022301,
+      113.14315824823004,
+      118.21135547749911,
+      123.50658033753678,
+      129.03900242964335,
+      134.81924689786592,
+      140.85841483483304,
+      147.16810460165817,
+      153.7604341028596,
+      160.6480640590751,
+      167.84422232226714,
+      175.362729280118,
+      183.218024398402,
+      191.42519395231236,
+      200.0
+    ],
+    "readout_RC_grid_ns": [
+      0.0,
+      0.1,
+      0.10695953503760731,
+      0.11440342135461147,
+      0.12236536754800716,
+      0.1308814281764077,
+      0.13999016702806563,
+      0.1497328317515888,
+      0.16015354064014226,
+      0.17129948241496162,
+      0.18322112991287084,
+      0.19597246864545712,
+      0.20961124126490166,
+      0.22419920904349608,
+      0.23980243155091666,
+      0.25649156579573695,
+      0.27434218618579886,
+      0.2934351267563374,
+      0.3138568472155922,
+      0.33569982446549096,
+      0.359062971370353,
+      0.3840520846699466,
+      0.41078032406521287,
+      0.43936872464612814,
+      0.4699467449821638,
+      0.5026528533572926,
+      0.5376351548042263,
+      0.5750520617773207,
+      0.6150730115011964,
+      0.6578792332434887,
+      0.7036645689862117,
+      0.7526363512120353,
+      0.8050163417804062,
+      0.8610417361450782,
+      0.9209662374605173,
+      0.9850612054411158,
+      1.053616885175667,
+      1.1269437214616145,
+      1.2053737646108509,
+      1.2892621740930692,
+      1.3789888268256942,
+      1.4749600373933185,
+      1.5776103979864124,
+      1.687404746391213,
+      1.8048402709425584,
+      1.9304487619716515,
+      2.0647990199441253,
+      2.208499431193309,
+      2.3622007229125654,
+      2.5265989098822788,
+      2.7024384462753406,
+      2.8905155968136436,
+      3.091682042541393,
+      3.306848737543475,
+      3.5369900340734866,
+      3.7831480947715095,
+      4.046437611951706,
+      4.328050855330406,
+      4.629263071052589,
+      4.951438256465511,
+      5.29603533678972,
+      5.6646147716576625,
+      6.058845621436657,
+      6.480513105335078,
+      6.931526685517606,
+      7.413928713837305,
+      7.929903680340042,
+      8.481788105421819,
+      9.07208112043426,
+      9.703455784651041,
+      10.378771189842558,
+      11.10108540727275,
+      11.873669335746603,
+      12.70002151341753,
+      13.583883960427483,
+      14.529259124121348,
+      15.540428003569337,
+      16.621969535471877,
+      17.778781329233464,
+      19.016101845101044,
+      20.339534115797953,
+      21.755071119072994,
+      23.269122916061256,
+      24.888545678348468,
+      26.620672735184016,
+      28.473347781435937,
+      30.45496039666474,
+      32.57448403616007,
+      34.841516665976414,
+      37.26632422597882,
+      39.85988711771418,
+      42.6339499276222,
+      45.60107461075105,
+      48.77469737581169,
+      52.16918952916827,
+      55.79992255328648,
+      59.683337714340226,
+      63.8370205141832,
+      68.27978032383231,
+      73.03173555907077,
+      78.11440478387698,
+      83.55080415422934,
+      89.36555164354556,
+      95.58497852172921,
+      102.23724859263834,
+      109.35248572992874,
+      116.96291028879762,
+      125.10298501135163,
+      133.80957108630935,
+      143.12209506973304,
+      153.08272742266882,
+      163.7365734741743,
+      175.13187767448719,
+      187.3202420632626,
+      200.3568599421861,
+      214.30076581011247,
+      229.21510269252792,
+      245.16740807590213,
+      262.2299197417381,
+      280.47990288525403,
+      300.0
+    ],
+    "nominal_avalanche_area_ADC_ns": 446.251053514752,
+    "objective": "Unweighted mean squared logarithmic relative discrepancy at50/102/202ns using the declared event statistic. Area minimized analytically in log space at each kernel. Not chi-square or likelihood.",
+    "statistic_note": "The formula predicts an expectation-like moment. Mean is the default; median remains a descriptive sensitivity option. Finite-window nonstationarity is still omitted; the native avalanche self-term check is needed before physical interpretation.",
+    "tolerance_regions": "Grid points where all3 relative discrepancies <=5/10/20%, after log-optimal area scaling. Descriptive and grid-limited, NOT confidence or credible intervals. A region reaching a grid edge is not bounded by the data.",
+    "degeneracy": "The Fourier factors for SPE decay and additional RC commute exactly; this statistic alone cannot assign the two poles to physical components."
+  },
+  "limits": [
+    "Locally stationary independent avalanche rate; finite decaying pulses, recovery, mixed signals, signal-dependent noise and deterministic curvature are not fully represented.",
+    "Effective area may combine gain, impedance, excess-noise factors and model error; not gain_electrons or an SPE measurement.",
+    "Voltage alone does not establish equal source geometry, deposited energy, historical ADC conversion or temperature.",
+    "No fitted profile is applied to Geant4 configuration."
+  ],
+  "inputs_sha256": {
+    "simulation/results/bias_response_20261028/bias_response.json": "de837481dec3c4ca863c9af4907b43795d2b4478ba0bd1783463bd01e9b7e8e3",
+    "simulation/results/bias_response_20261028/samples.npz": "496dd6b8c05b9edb0f6aa73d33b025bc55922e5171e154771d0ffbedef1f7d08",
+    "simulation/results/colored_noise_20261028/co60/config.json": "654f7acb236d7c0be4d0f3640b211a28f17f58c44fd891bacf53aa87abdbef52",
+    "simulation/results/colored_noise_20261028/fluctuations/diagnostics.json": "b23a71587d12dd38d1b427802cfccd3b726177c7c755f6f51351d7b92b3b3748"
+  },
+  "code_sha256": {
+    "simulation/profile_bias_response.py": "a408a17d5e9266dfbf9c62555fb872465d988a6cecf956d53439d8726ea990b8",
+    "simulation/profile_signal_response.py": "af78b2db1ef7ec8314d46efb8c372fa8d203f48256f6ecd6118d42c45ebb5a60"
+  },
+  "runs": {
+    "3": {
+      "bias_V": 53.2,
+      "groups": {
+        "first60": {
+          "observed_filter_values": [
+            0.08767428620544643,
+            0.1659913677184826,
+            0.3004893302340671
+          ],
+          "best_grid": {
+            "SPE_decay_ns": 37.831695076458466,
+            "RC_ns": 0.0,
+            "effective_area_ADC_ns": 40.07446765312516,
+            "predictions": [
+              0.0842025968648207,
+              0.17693950272945494,
+              0.29351919647936764
+            ],
+            "fractional_residuals": [
+              -0.03959757747545889,
+              0.06595605037449959,
+              -0.023195944259551737
+            ],
+            "rms_log_residual": 0.0456904145123684
+          },
+          "descriptive_relative_tolerance_regions": {
+            "0.05": {
+              "grid_points": 0,
+              "decay_ns_min_max": null,
+              "RC_ns_min_max": null,
+              "effective_ADC_area_ns_min_max": null,
+              "touches_decay_upper_grid_edge": false,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.1": {
+              "grid_points": 808,
+              "decay_ns_min_max": [
+                2.5,
+                56.12209821216165
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                34.841516665976414
+              ],
+              "effective_ADC_area_ns_min_max": [
+                20.111794665880762,
+                80.784450881964
+              ],
+              "touches_decay_upper_grid_edge": false,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.2": {
+              "grid_points": 3920,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                83.55080415422934
+              ],
+              "effective_ADC_area_ns_min_max": [
+                9.598143873355765,
+                956.7839326812607
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": false
+            }
+          }
+        },
+        "middle20": {
+          "observed_filter_values": [
+            0.0865080420215509,
+            0.16217151879586547,
+            0.2923699999007075
+          ],
+          "best_grid": {
+            "SPE_decay_ns": 36.209697837779004,
+            "RC_ns": 0.0,
+            "effective_area_ADC_ns": 36.40525852838076,
+            "predictions": [
+              0.08311771619266971,
+              0.17345687775548604,
+              0.28449769213035114
+            ],
+            "fractional_residuals": [
+              -0.03919087462454174,
+              0.0695890316833383,
+              -0.026925839768204285
+            ],
+            "rms_log_residual": 0.04785127856275368
+          },
+          "descriptive_relative_tolerance_regions": {
+            "0.05": {
+              "grid_points": 0,
+              "decay_ns_min_max": null,
+              "RC_ns_min_max": null,
+              "effective_ADC_area_ns_min_max": null,
+              "touches_decay_upper_grid_edge": false,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.1": {
+              "grid_points": 758,
+              "decay_ns_min_max": [
+                2.5,
+                53.715917676368775
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                32.57448403616007
+              ],
+              "effective_ADC_area_ns_min_max": [
+                19.505176484972807,
+                72.82446618856521
+              ],
+              "touches_decay_upper_grid_edge": false,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.2": {
+              "grid_points": 3898,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                78.11440478387698
+              ],
+              "effective_ADC_area_ns_min_max": [
+                9.128213580853373,
+                928.9994808921508
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": false
+            }
+          }
+        },
+        "last20": {
+          "observed_filter_values": [
+            0.08578162874404233,
+            0.16307591817869901,
+            0.2956945824482282
+          ],
+          "best_grid": {
+            "SPE_decay_ns": 37.831695076458466,
+            "RC_ns": 0.0,
+            "effective_area_ADC_ns": 39.33821582062454,
+            "predictions": [
+              0.082655618954106,
+              0.17368875379240323,
+              0.2881266346079889
+            ],
+            "fractional_residuals": [
+              -0.036441483283836895,
+              0.06507910997670807,
+              -0.025593799445292054
+            ],
+            "rms_log_residual": 0.044816082822720815
+          },
+          "descriptive_relative_tolerance_regions": {
+            "0.05": {
+              "grid_points": 0,
+              "decay_ns_min_max": null,
+              "RC_ns_min_max": null,
+              "effective_ADC_area_ns_min_max": null,
+              "touches_decay_upper_grid_edge": false,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.1": {
+              "grid_points": 838,
+              "decay_ns_min_max": [
+                2.5,
+                58.63606253014191
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                34.841516665976414
+              ],
+              "effective_ADC_area_ns_min_max": [
+                19.943472151203878,
+                85.66280957329761
+              ],
+              "touches_decay_upper_grid_edge": false,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.2": {
+              "grid_points": 3940,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                89.36555164354556
+              ],
+              "effective_ADC_area_ns_min_max": [
+                9.421805884875665,
+                943.6399695344435
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": false
+            }
+          }
+        }
+      }
+    },
+    "7": {
+      "bias_V": 53.4,
+      "groups": {
+        "first60": {
+          "observed_filter_values": [
+            0.10652577559079764,
+            0.20580654969576692,
+            0.3813782277956437
+          ],
+          "best_grid": {
+            "SPE_decay_ns": 43.14679091932643,
+            "RC_ns": 0.0,
+            "effective_area_ADC_ns": 62.45106212923786,
+            "predictions": [
+              0.10209796452092383,
+              0.2186158161638426,
+              0.3746028960995867
+            ],
+            "fractional_residuals": [
+              -0.04156563090310239,
+              0.06223935286321525,
+              -0.017765386700804187
+            ],
+            "rms_log_residual": 0.04385325572803918
+          },
+          "descriptive_relative_tolerance_regions": {
+            "0.05": {
+              "grid_points": 0,
+              "decay_ns_min_max": null,
+              "RC_ns_min_max": null,
+              "effective_ADC_area_ns_min_max": null,
+              "touches_decay_upper_grid_edge": false,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.1": {
+              "grid_points": 909,
+              "decay_ns_min_max": [
+                2.5,
+                66.87403049764221
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                39.85988711771418
+              ],
+              "effective_ADC_area_ns_min_max": [
+                28.54136256582407,
+                138.53307766105397
+              ],
+              "touches_decay_upper_grid_edge": false,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.2": {
+              "grid_points": 3965,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                116.96291028879762
+              ],
+              "effective_ADC_area_ns_min_max": [
+                12.785374954072086,
+                1231.595366889606
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": false
+            }
+          }
+        },
+        "middle20": {
+          "observed_filter_values": [
+            0.1059946518618854,
+            0.20759494469706666,
+            0.3805170205698934
+          ],
+          "best_grid": {
+            "SPE_decay_ns": 43.14679091932643,
+            "RC_ns": 0.0,
+            "effective_area_ADC_ns": 62.48006929985642,
+            "predictions": [
+              0.10214538682209362,
+              0.21871735849255844,
+              0.3747768910606152
+            ],
+            "fractional_residuals": [
+              -0.03631565340492371,
+              0.05357747902639054,
+              -0.015085079507563992
+            ],
+            "rms_log_residual": 0.037962096433732016
+          },
+          "descriptive_relative_tolerance_regions": {
+            "0.05": {
+              "grid_points": 0,
+              "decay_ns_min_max": null,
+              "RC_ns_min_max": null,
+              "effective_ADC_area_ns_min_max": null,
+              "touches_decay_upper_grid_edge": false,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.1": {
+              "grid_points": 1046,
+              "decay_ns_min_max": [
+                2.5,
+                72.9994013604543
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                39.85988711771418
+              ],
+              "effective_ADC_area_ns_min_max": [
+                26.0560128537721,
+                162.58355580354734
+              ],
+              "touches_decay_upper_grid_edge": false,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.2": {
+              "grid_points": 4024,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                133.80957108630935
+              ],
+              "effective_ADC_area_ns_min_max": [
+                12.791313484820314,
+                1222.8498800072641
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": false
+            }
+          }
+        },
+        "last20": {
+          "observed_filter_values": [
+            0.10178835182065292,
+            0.19933411387267672,
+            0.3639990103633184
+          ],
+          "best_grid": {
+            "SPE_decay_ns": 41.29691410075965,
+            "RC_ns": 0.0,
+            "effective_area_ADC_ns": 55.510715570896295,
+            "predictions": [
+              0.0986962921398386,
+              0.21007770945889467,
+              0.35620425601829764
+            ],
+            "fractional_residuals": [
+              -0.03037734304080686,
+              0.05389742567135469,
+              -0.021414218509112293
+            ],
+            "rms_log_residual": 0.03730925230474233
+          },
+          "descriptive_relative_tolerance_regions": {
+            "0.05": {
+              "grid_points": 0,
+              "decay_ns_min_max": null,
+              "RC_ns_min_max": null,
+              "effective_ADC_area_ns_min_max": null,
+              "touches_decay_upper_grid_edge": false,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.1": {
+              "grid_points": 1054,
+              "decay_ns_min_max": [
+                2.5,
+                69.86962281913829
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                39.85988711771418
+              ],
+              "effective_ADC_area_ns_min_max": [
+                24.221762562330333,
+                144.20972438828056
+              ],
+              "touches_decay_upper_grid_edge": false,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.2": {
+              "grid_points": 4043,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                125.10298501135163
+              ],
+              "effective_ADC_area_ns_min_max": [
+                12.071856235846324,
+                1172.7573919160452
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": false
+            }
+          }
+        }
+      }
+    },
+    "10": {
+      "bias_V": 52.4,
+      "groups": {
+        "first60": {
+          "observed_filter_values": [
+            0.15376093370175756,
+            0.31641250181346964,
+            0.6130768115952869
+          ],
+          "best_grid": {
+            "SPE_decay_ns": 58.63606253014191,
+            "RC_ns": 0.0,
+            "effective_area_ADC_ns": 165.32939038506706,
+            "predictions": [
+              0.14926719159119675,
+              0.3305832397005019,
+              0.60446246668456
+            ],
+            "fractional_residuals": [
+              -0.029225512634289075,
+              0.044785644706877514,
+              -0.014051004291471214
+            ],
+            "rms_log_residual": 0.031620086135542215
+          },
+          "descriptive_relative_tolerance_regions": {
+            "0.05": {
+              "grid_points": 235,
+              "decay_ns_min_max": [
+                51.41289979762668,
+                69.86962281913829
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                1.053616885175667
+              ],
+              "effective_ADC_area_ns_min_max": [
+                130.2516034769712,
+                229.20934620738353
+              ],
+              "touches_decay_upper_grid_edge": false,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.1": {
+              "grid_points": 1772,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                55.79992255328648
+              ],
+              "effective_ADC_area_ns_min_max": [
+                53.030450783453155,
+                1746.3665997016246
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.2": {
+              "grid_points": 4134,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                300.0
+              ],
+              "effective_ADC_area_ns_min_max": [
+                23.458782565930093,
+                4477.820939989464
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": true
+            }
+          }
+        },
+        "middle20": {
+          "observed_filter_values": [
+            0.14734959235419587,
+            0.2992029142084579,
+            0.5603258483873802
+          ],
+          "best_grid": {
+            "SPE_decay_ns": 49.20862157705743,
+            "RC_ns": 0.0,
+            "effective_area_ADC_ns": 113.07882744637752,
+            "predictions": [
+              0.14351016109035025,
+              0.31227071478091817,
+              0.5512409924973988
+            ],
+            "fractional_residuals": [
+              -0.02605661272965365,
+              0.04367537865408555,
+              -0.016213522749535247
+            ],
+            "rms_log_residual": 0.030505245898440725
+          },
+          "descriptive_relative_tolerance_regions": {
+            "0.05": {
+              "grid_points": 247,
+              "decay_ns_min_max": [
+                43.14679091932643,
+                58.63606253014191
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                1.2053737646108509
+              ],
+              "effective_ADC_area_ns_min_max": [
+                89.61245384699725,
+                155.52764116002209
+              ],
+              "touches_decay_upper_grid_edge": false,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.1": {
+              "grid_points": 1413,
+              "decay_ns_min_max": [
+                2.5,
+                113.14315824823004
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                48.77469737581169
+              ],
+              "effective_ADC_area_ns_min_max": [
+                41.976019435352065,
+                537.5636413782444
+              ],
+              "touches_decay_upper_grid_edge": false,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.2": {
+              "grid_points": 4133,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                300.0
+              ],
+              "effective_ADC_area_ns_min_max": [
+                20.07629812467728,
+                4047.2338199153814
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": true
+            }
+          }
+        },
+        "last20": {
+          "observed_filter_values": [
+            0.14397593961202604,
+            0.300565204990337,
+            0.5791029205228899
+          ],
+          "best_grid": {
+            "SPE_decay_ns": 61.26263875668244,
+            "RC_ns": 0.0,
+            "effective_area_ADC_ns": 169.06074427335705,
+            "predictions": [
+              0.1401193709514701,
+              0.3115064739592898,
+              0.5741417434385597
+            ],
+            "fractional_residuals": [
+              -0.026786202409571302,
+              0.03640231399807092,
+              -0.008567004082539631
+            ],
+            "rms_log_residual": 0.026392420278267447
+          },
+          "descriptive_relative_tolerance_regions": {
+            "0.05": {
+              "grid_points": 405,
+              "decay_ns_min_max": [
+                47.0988496475708,
+                76.26937693336211
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                1.4749600373933185
+              ],
+              "effective_ADC_area_ns_min_max": [
+                105.3635812042061,
+                254.76721789589718
+              ],
+              "touches_decay_upper_grid_edge": false,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.1": {
+              "grid_points": 1930,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                59.683337714340226
+              ],
+              "effective_ADC_area_ns_min_max": [
+                47.949902714603205,
+                1662.7822309665594
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.2": {
+              "grid_points": 4194,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                300.0
+              ],
+              "effective_ADC_area_ns_min_max": [
+                22.13581002895653,
+                4263.42407085252
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": true
+            }
+          }
+        }
+      }
+    },
+    "11": {
+      "bias_V": 52.8,
+      "groups": {
+        "first60": {
+          "observed_filter_values": [
+            0.08541990214130098,
+            0.1728643304773917,
+            0.3223656189983455
+          ],
+          "best_grid": {
+            "SPE_decay_ns": 49.20862157705743,
+            "RC_ns": 0.0,
+            "effective_area_ADC_ns": 65.31313794583372,
+            "predictions": [
+              0.08288995526034817,
+              0.18036427093835744,
+              0.3183909826218689
+            ],
+            "fractional_residuals": [
+              -0.029617768430216462,
+              0.04338628125451627,
+              -0.012329591439765197
+            ],
+            "rms_log_residual": 0.03088504467757691
+          },
+          "descriptive_relative_tolerance_regions": {
+            "0.05": {
+              "grid_points": 234,
+              "decay_ns_min_max": [
+                41.29691410075965,
+                56.12209821216165
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                1.053616885175667
+              ],
+              "effective_ADC_area_ns_min_max": [
+                47.94992281685567,
+                83.1436754046527
+              ],
+              "touches_decay_upper_grid_edge": false,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.1": {
+              "grid_points": 1359,
+              "decay_ns_min_max": [
+                2.5,
+                103.64932964218234
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                48.77469737581169
+              ],
+              "effective_ADC_area_ns_min_max": [
+                23.12098394810373,
+                262.55900505395925
+              ],
+              "touches_decay_upper_grid_edge": false,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.2": {
+              "grid_points": 4134,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                262.2299197417381
+              ],
+              "effective_ADC_area_ns_min_max": [
+                11.421397933995495,
+                1789.7625305595952
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": false
+            }
+          }
+        },
+        "middle20": {
+          "observed_filter_values": [
+            0.06704598148689798,
+            0.1525946094990839,
+            0.2961450658573292
+          ],
+          "best_grid": {
+            "SPE_decay_ns": 86.98470564008193,
+            "RC_ns": 0.0,
+            "effective_area_ADC_ns": 161.1252953934074,
+            "predictions": [
+              0.06704030528791656,
+              0.1525414782140306,
+              0.2962732981746771
+            ],
+            "fractional_residuals": [
+              -8.46612855168738e-05,
+              -0.00034818585812246283,
+              0.000433005078023907
+            ],
+            "rms_log_residual": 0.0003244770158084815
+          },
+          "descriptive_relative_tolerance_regions": {
+            "0.05": {
+              "grid_points": 1241,
+              "decay_ns_min_max": [
+                2.5,
+                191.42519395231236
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                63.8370205141832
+              ],
+              "effective_ADC_area_ns_min_max": [
+                44.48305650042969,
+                746.990892307982
+              ],
+              "touches_decay_upper_grid_edge": false,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.1": {
+              "grid_points": 2316,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                133.80957108630935
+              ],
+              "effective_ADC_area_ns_min_max": [
+                22.199864466517273,
+                878.0453167264444
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.2": {
+              "grid_points": 4362,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                300.0
+              ],
+              "effective_ADC_area_ns_min_max": [
+                12.237815540184503,
+                2222.122858415451
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": true
+            }
+          }
+        },
+        "last20": {
+          "observed_filter_values": [
+            0.06478754250907233,
+            0.15084317100163244,
+            0.29698875256527735
+          ],
+          "best_grid": {
+            "SPE_decay_ns": 90.88114667053854,
+            "RC_ns": 0.9850612054411158,
+            "effective_area_ADC_ns": 176.7356275889195,
+            "predictions": [
+              0.06473475745852295,
+              0.15085197407729162,
+              0.29721357358049455
+            ],
+            "fractional_residuals": [
+              -0.0008147407434383469,
+              5.8359126241747106e-05,
+              0.0007570017829809927
+            ],
+            "rms_log_residual": 0.0006430053131244057
+          },
+          "descriptive_relative_tolerance_regions": {
+            "0.05": {
+              "grid_points": 1351,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                78.11440478387698
+              ],
+              "effective_ADC_area_ns_min_max": [
+                48.10226256682808,
+                822.3885427053807
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.1": {
+              "grid_points": 2345,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                214.30076581011247
+              ],
+              "effective_ADC_area_ns_min_max": [
+                23.828174369772203,
+                1017.8265064384807
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.2": {
+              "grid_points": 4342,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                300.0
+              ],
+              "effective_ADC_area_ns_min_max": [
+                12.848939850523296,
+                2246.0942437084927
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": true
+            }
+          }
+        }
+      }
+    },
+    "12": {
+      "bias_V": 53.2,
+      "groups": {
+        "first60": {
+          "observed_filter_values": [
+            0.2234776550749497,
+            0.457009180531486,
+            0.8546461454533566
+          ],
+          "best_grid": {
+            "SPE_decay_ns": 51.41289979762668,
+            "RC_ns": 0.0,
+            "effective_area_ADC_ns": 186.30593515575592,
+            "predictions": [
+              0.21720955162834457,
+              0.4749107726767723,
+              0.8461637736740488
+            ],
+            "fractional_residuals": [
+              -0.028048009741747815,
+              0.0391711871618583,
+              -0.009925010279907331
+            ],
+            "rms_log_residual": 0.028196884420896247
+          },
+          "descriptive_relative_tolerance_regions": {
+            "0.05": {
+              "grid_points": 312,
+              "decay_ns_min_max": [
+                41.29691410075965,
+                61.26263875668244
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                1.2892621740930692
+              ],
+              "effective_ADC_area_ns_min_max": [
+                126.61800328829506,
+                256.4202736167372
+              ],
+              "touches_decay_upper_grid_edge": false,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.1": {
+              "grid_points": 1512,
+              "decay_ns_min_max": [
+                2.5,
+                123.50658033753678
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                48.77469737581169
+              ],
+              "effective_ADC_area_ns_min_max": [
+                60.970119083694904,
+                970.4572644008792
+              ],
+              "touches_decay_upper_grid_edge": false,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.2": {
+              "grid_points": 4155,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                300.0
+              ],
+              "effective_ADC_area_ns_min_max": [
+                30.57831995097856,
+                6164.364062200986
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": true
+            }
+          }
+        },
+        "middle20": {
+          "observed_filter_values": [
+            0.21743769125243276,
+            0.445180094623706,
+            0.8366764500784603
+          ],
+          "best_grid": {
+            "SPE_decay_ns": 51.41289979762668,
+            "RC_ns": 0.0,
+            "effective_area_ADC_ns": 181.71367200523326,
+            "predictions": [
+              0.21185554388269504,
+              0.46320467625356126,
+              0.8253066457789987
+            ],
+            "fractional_residuals": [
+              -0.025672399930227185,
+              0.04048829192394776,
+              -0.01358924862579236
+            ],
+            "rms_log_residual": 0.028512650896956336
+          },
+          "descriptive_relative_tolerance_regions": {
+            "0.05": {
+              "grid_points": 307,
+              "decay_ns_min_max": [
+                43.14679091932643,
+                61.26263875668244
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                1.3789888268256942
+              ],
+              "effective_ADC_area_ns_min_max": [
+                133.12489191238674,
+                250.88890806636928
+              ],
+              "touches_decay_upper_grid_edge": false,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.1": {
+              "grid_points": 1552,
+              "decay_ns_min_max": [
+                2.5,
+                129.03900242964335
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                52.16918952916827
+              ],
+              "effective_ADC_area_ns_min_max": [
+                62.35799613058728,
+                1031.3218235478198
+              ],
+              "touches_decay_upper_grid_edge": false,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.2": {
+              "grid_points": 4164,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                300.0
+              ],
+              "effective_ADC_area_ns_min_max": [
+                30.15249021214624,
+                6053.626799429571
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": true
+            }
+          }
+        },
+        "last20": {
+          "observed_filter_values": [
+            0.21669605282732995,
+            0.4473016490879765,
+            0.8423359636499106
+          ],
+          "best_grid": {
+            "SPE_decay_ns": 53.715917676368775,
+            "RC_ns": 0.0,
+            "effective_area_ADC_ns": 197.1884088167396,
+            "predictions": [
+              0.21115390980799803,
+              0.46376942162673107,
+              0.8337495366751122
+            ],
+            "fractional_residuals": [
+              -0.025575652841946628,
+              0.03681581002961076,
+              -0.010193589429083216
+            ],
+            "rms_log_residual": 0.026352460327052102
+          },
+          "descriptive_relative_tolerance_regions": {
+            "0.05": {
+              "grid_points": 367,
+              "decay_ns_min_max": [
+                41.29691410075965,
+                64.00687129192005
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                1.5776103979864124
+              ],
+              "effective_ADC_area_ns_min_max": [
+                125.86053453228406,
+                273.2037990613293
+              ],
+              "touches_decay_upper_grid_edge": false,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.1": {
+              "grid_points": 1682,
+              "decay_ns_min_max": [
+                2.5,
+                153.7604341028596
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                52.16918952916827
+              ],
+              "effective_ADC_area_ns_min_max": [
+                60.810120621420644,
+                1455.5282429125534
+              ],
+              "touches_decay_upper_grid_edge": false,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.2": {
+              "grid_points": 4191,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                300.0
+              ],
+              "effective_ADC_area_ns_min_max": [
+                30.63929610676159,
+                6113.9621043430025
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": true
+            }
+          }
+        }
+      }
+    },
+    "13": {
+      "bias_V": 53.6,
+      "groups": {
+        "first60": {
+          "observed_filter_values": [
+            0.07808529886564268,
+            0.17939390649330986,
+            0.35375111013006344
+          ],
+          "best_grid": {
+            "SPE_decay_ns": 99.20546514890945,
+            "RC_ns": 0.33569982446549096,
+            "effective_area_ADC_ns": 244.79748677252815,
+            "predictions": [
+              0.07809513506184995,
+              0.17930100399969975,
+              0.3538898231330548
+            ],
+            "fractional_residuals": [
+              0.00012596732483793893,
+              -0.0005178687248976743,
+              0.0003921203326835432
+            ],
+            "rms_log_residual": 0.0003820518384996623
+          },
+          "descriptive_relative_tolerance_regions": {
+            "0.05": {
+              "grid_points": 1323,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                68.27978032383231
+              ],
+              "effective_ADC_area_ns_min_max": [
+                58.83221456413498,
+                977.6726431864101
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.1": {
+              "grid_points": 2290,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                187.3202420632626
+              ],
+              "effective_ADC_area_ns_min_max": [
+                27.855886113262024,
+                1052.681944775672
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.2": {
+              "grid_points": 4346,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                300.0
+              ],
+              "effective_ADC_area_ns_min_max": [
+                15.069929535963745,
+                2684.523308910003
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": true
+            }
+          }
+        },
+        "middle20": {
+          "observed_filter_values": [
+            0.07974175079447972,
+            0.18107588838454225,
+            0.35523865941473565
+          ],
+          "best_grid": {
+            "SPE_decay_ns": 90.88114667053854,
+            "RC_ns": 0.0,
+            "effective_area_ADC_ns": 208.74471487488168,
+            "predictions": [
+              0.07964873545810412,
+              0.18161852206764512,
+              0.3545909044524279
+            ],
+            "fractional_residuals": [
+              -0.0011664571626389675,
+              0.0029967197065492446,
+              -0.0018234360060217503
+            ],
+            "rms_log_residual": 0.002132814580931338
+          },
+          "descriptive_relative_tolerance_regions": {
+            "0.05": {
+              "grid_points": 1285,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                63.8370205141832
+              ],
+              "effective_ADC_area_ns_min_max": [
+                59.01957219994096,
+                978.6678225290256
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.1": {
+              "grid_points": 2266,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                143.12209506973304
+              ],
+              "effective_ADC_area_ns_min_max": [
+                27.64415121078571,
+                1055.2240304507677
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.2": {
+              "grid_points": 4345,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                300.0
+              ],
+              "effective_ADC_area_ns_min_max": [
+                14.924729342659637,
+                2680.96835905336
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": true
+            }
+          }
+        },
+        "last20": {
+          "observed_filter_values": [
+            0.08119356357876888,
+            0.18331837802081227,
+            0.3595576495007782
+          ],
+          "best_grid": {
+            "SPE_decay_ns": 90.88114667053854,
+            "RC_ns": 0.0,
+            "effective_area_ADC_ns": 211.71842986023142,
+            "predictions": [
+              0.08078338760169437,
+              0.18420580539605583,
+              0.3596423007805741
+            ],
+            "fractional_residuals": [
+              -0.0050518287287215635,
+              0.004840907850181875,
+              0.00023543173094342507
+            ],
+            "rms_log_residual": 0.004042580126629885
+          },
+          "descriptive_relative_tolerance_regions": {
+            "0.05": {
+              "grid_points": 1255,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                63.8370205141832
+              ],
+              "effective_ADC_area_ns_min_max": [
+                59.39045192595111,
+                989.5613101431054
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.1": {
+              "grid_points": 2243,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                133.80957108630935
+              ],
+              "effective_ADC_area_ns_min_max": [
+                29.567767197762876,
+                1070.2564374467179
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.2": {
+              "grid_points": 4336,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                300.0
+              ],
+              "effective_ADC_area_ns_min_max": [
+                14.895704052847302,
+                2719.160635151677
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": true
+            }
+          }
+        }
+      }
+    },
+    "14": {
+      "bias_V": 54.0,
+      "groups": {
+        "first60": {
+          "observed_filter_values": [
+            0.10314763255519352,
+            0.22868085846358752,
+            0.4456661082370838
+          ],
+          "best_grid": {
+            "SPE_decay_ns": 79.68582960126164,
+            "RC_ns": 0.0,
+            "effective_area_ADC_ns": 206.61204398391553,
+            "predictions": [
+              0.10219560868083688,
+              0.23143457019549288,
+              0.4444656682516317
+            ],
+            "fractional_residuals": [
+              -0.009229721039377359,
+              0.012041723782245883,
+              -0.00269358599019498
+            ],
+            "rms_log_residual": 0.008879410722408205
+          },
+          "descriptive_relative_tolerance_regions": {
+            "0.05": {
+              "grid_points": 1037,
+              "decay_ns_min_max": [
+                2.5,
+                160.6480640590751
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                55.79992255328648
+              ],
+              "effective_ADC_area_ns_min_max": [
+                73.96149004645201,
+                801.7053955056946
+              ],
+              "touches_decay_upper_grid_edge": false,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.1": {
+              "grid_points": 2202,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                102.23724859263834
+              ],
+              "effective_ADC_area_ns_min_max": [
+                36.00836443156706,
+                1310.114486153882
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.2": {
+              "grid_points": 4320,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                300.0
+              ],
+              "effective_ADC_area_ns_min_max": [
+                18.23411982765444,
+                3325.155289332605
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": true
+            }
+          }
+        },
+        "middle20": {
+          "observed_filter_values": [
+            0.10361435183847112,
+            0.23008896619811708,
+            0.44735786216495
+          ],
+          "best_grid": {
+            "SPE_decay_ns": 79.68582960126164,
+            "RC_ns": 0.0,
+            "effective_area_ADC_ns": 207.60907452881978,
+            "predictions": [
+              0.10268876552419015,
+              0.23255138473922615,
+              0.4466104892352654
+            ],
+            "fractional_residuals": [
+              -0.008932993334011319,
+              0.01070202792335917,
+              -0.0016706377441713105
+            ],
+            "rms_log_residual": 0.008095932403669591
+          },
+          "descriptive_relative_tolerance_regions": {
+            "0.05": {
+              "grid_points": 1031,
+              "decay_ns_min_max": [
+                2.5,
+                160.6480640590751
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                55.79992255328648
+              ],
+              "effective_ADC_area_ns_min_max": [
+                74.31839985335894,
+                804.1476411738586
+              ],
+              "touches_decay_upper_grid_edge": false,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.1": {
+              "grid_points": 2225,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                102.23724859263834
+              ],
+              "effective_ADC_area_ns_min_max": [
+                36.182126998927906,
+                1316.4365965925099
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.2": {
+              "grid_points": 4324,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                300.0
+              ],
+              "effective_ADC_area_ns_min_max": [
+                18.079550752178697,
+                3341.2012144688665
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": true
+            }
+          }
+        },
+        "last20": {
+          "observed_filter_values": [
+            0.10355261558154343,
+            0.22961751163759278,
+            0.4472188184961758
+          ],
+          "best_grid": {
+            "SPE_decay_ns": 79.68582960126164,
+            "RC_ns": 0.0,
+            "effective_area_ADC_ns": 207.4044745294731,
+            "predictions": [
+              0.10258756512431919,
+              0.23232220394222247,
+              0.44617035189534837
+            ],
+            "fractional_residuals": [
+              -0.00931942135700381,
+              0.011779120352538808,
+              -0.002344415211222528
+            ],
+            "rms_log_residual": 0.008761811101431776
+          },
+          "descriptive_relative_tolerance_regions": {
+            "0.05": {
+              "grid_points": 1034,
+              "decay_ns_min_max": [
+                2.5,
+                160.6480640590751
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                55.79992255328648
+              ],
+              "effective_ADC_area_ns_min_max": [
+                74.24515862054697,
+                804.1470958675383
+              ],
+              "touches_decay_upper_grid_edge": false,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.1": {
+              "grid_points": 2206,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                102.23724859263834
+              ],
+              "effective_ADC_area_ns_min_max": [
+                36.146469293805225,
+                1315.1392403598209
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.2": {
+              "grid_points": 4320,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                300.0
+              ],
+              "effective_ADC_area_ns_min_max": [
+                18.3040541511536,
+                3337.908440451882
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": true
+            }
+          }
+        }
+      }
+    },
+    "18": {
+      "bias_V": 53.2,
+      "groups": {
+        "first60": {
+          "observed_filter_values": [
+            0.13502551420072564,
+            0.2882402017223047,
+            0.5513658778474637
+          ],
+          "best_grid": {
+            "SPE_decay_ns": 64.00687129192005,
+            "RC_ns": 0.0,
+            "effective_area_ADC_ns": 174.0462590980618,
+            "predictions": [
+              0.1324024437991989,
+              0.29540667960358824,
+              0.5486482094763007
+            ],
+            "fractional_residuals": [
+              -0.0194264796327851,
+              0.024862867283821366,
+              -0.004928974534610053
+            ],
+            "rms_log_residual": 0.018370291602388268
+          },
+          "descriptive_relative_tolerance_regions": {
+            "0.05": {
+              "grid_points": 584,
+              "decay_ns_min_max": [
+                43.14679091932643,
+                90.88114667053854
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                2.208499431193309
+              ],
+              "effective_ADC_area_ns_min_max": [
+                89.36214384885287,
+                336.5745011559989
+              ],
+              "touches_decay_upper_grid_edge": false,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.1": {
+              "grid_points": 2091,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                68.27978032383231
+              ],
+              "effective_ADC_area_ns_min_max": [
+                42.4618033248251,
+                1602.118947118118
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.2": {
+              "grid_points": 4267,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                300.0
+              ],
+              "effective_ADC_area_ns_min_max": [
+                21.020226205120142,
+                4048.559246778941
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": true
+            }
+          }
+        },
+        "middle20": {
+          "observed_filter_values": [
+            0.13546013761928127,
+            0.28995813242783014,
+            0.5526423474370334
+          ],
+          "best_grid": {
+            "SPE_decay_ns": 61.26263875668244,
+            "RC_ns": 0.0,
+            "effective_area_ADC_ns": 161.15544079262918,
+            "predictions": [
+              0.13356737003806454,
+              0.29694038871316136,
+              0.5472947971392035
+            ],
+            "fractional_residuals": [
+              -0.013972875079578562,
+              0.02408022229577944,
+              -0.009676331035126218
+            ],
+            "rms_log_residual": 0.016918883338512894
+          },
+          "descriptive_relative_tolerance_regions": {
+            "0.05": {
+              "grid_points": 608,
+              "decay_ns_min_max": [
+                41.29691410075965,
+                90.88114667053854
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                2.208499431193309
+              ],
+              "effective_ADC_area_ns_min_max": [
+                84.56296559701421,
+                338.1336723894034
+              ],
+              "touches_decay_upper_grid_edge": false,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.1": {
+              "grid_points": 2107,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                68.27978032383231
+              ],
+              "effective_ADC_area_ns_min_max": [
+                40.923341174763316,
+                1603.7305525464108
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.2": {
+              "grid_points": 4271,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                300.0
+              ],
+              "effective_ADC_area_ns_min_max": [
+                21.10073653024002,
+                4064.065779298848
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": true
+            }
+          }
+        },
+        "last20": {
+          "observed_filter_values": [
+            0.1354696629604705,
+            0.2896873103115857,
+            0.5536666191471767
+          ],
+          "best_grid": {
+            "SPE_decay_ns": 64.00687129192005,
+            "RC_ns": 0.0,
+            "effective_area_ADC_ns": 174.77040301086012,
+            "predictions": [
+              0.1329533227678919,
+              0.29663576059586844,
+              0.5509309374316088
+            ],
+            "fractional_residuals": [
+              -0.01857493506360064,
+              0.023986036104961084,
+              -0.004941027002461795
+            ],
+            "rms_log_residual": 0.017681534657308776
+          },
+          "descriptive_relative_tolerance_regions": {
+            "0.05": {
+              "grid_points": 599,
+              "decay_ns_min_max": [
+                41.29691410075965,
+                90.88114667053854
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                2.208499431193309
+              ],
+              "effective_ADC_area_ns_min_max": [
+                84.5908073989597,
+                338.31445683487857
+              ],
+              "touches_decay_upper_grid_edge": false,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.1": {
+              "grid_points": 2101,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                68.27978032383231
+              ],
+              "effective_ADC_area_ns_min_max": [
+                40.93681491651182,
+                1608.7847880798638
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": false
+            },
+            "0.2": {
+              "grid_points": 4273,
+              "decay_ns_min_max": [
+                2.5,
+                200.0
+              ],
+              "RC_ns_min_max": [
+                0.0,
+                300.0
+              ],
+              "effective_ADC_area_ns_min_max": [
+                21.107683809385602,
+                4065.403846308697
+              ],
+              "touches_decay_upper_grid_edge": true,
+              "touches_RC_upper_grid_edge": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "shared_53p2V_checks": {
+    "3_12": {
+      "runs": [
+        "3",
+        "12"
+      ],
+      "one_kernel_one_area": {
+        "SPE_decay_ns": 43.14679091932643,
+        "RC_ns": 0.0,
+        "effective_area_ADC_ns": 82.87151130095062,
+        "prediction": [
+          0.13548228536274298,
+          0.2900995189208565,
+          0.4970917559935594
+        ],
+        "fractional_residuals_per_run": [
+          [
+            0.5452909995214386,
+            0.7476783456164922,
+            0.6542742319880319
+          ],
+          [
+            -0.39375466725160924,
+            -0.36522168201636407,
+            -0.41836541516270276
+          ]
+        ],
+        "rms_log_residual": 0.5008594371007832
+      },
+      "one_kernel_separate_diagnostic_areas": {
+        "SPE_decay_ns": 43.14679091932643,
+        "RC_ns": 0.0,
+        "areas_ADC_ns": [
+          50.31670157331262,
+          136.48922068743335
+        ],
+        "fractional_residuals_per_run": [
+          [
+            -0.061753009614122,
+            0.06112955323305447,
+            0.0044178215729959724
+          ],
+          [
+            -0.0015150959208779513,
+            0.04547867621514445,
+            -0.042048950682152086
+          ]
+        ],
+        "rms_log_residual": 0.043643919901978606
+      },
+      "meaning": "Conditional conflict of stationary common-response approximation, not proof of different physical gains or particle-dependent electronics."
+    },
+    "12_18": {
+      "runs": [
+        "12",
+        "18"
+      ],
+      "one_kernel_one_area": {
+        "SPE_decay_ns": 56.12209821216165,
+        "RC_ns": 0.0,
+        "effective_area_ADC_ns": 172.79056383085074,
+        "prediction": [
+          0.1699117439073633,
+          0.3747883065681382,
+          0.6796235097047626
+        ],
+        "fractional_residuals_per_run": [
+          [
+            -0.23969247014705575,
+            -0.17991077086838325,
+            -0.20478959237071304
+          ],
+          [
+            0.2583676863824169,
+            0.30026382277242303,
+            0.2326180074073818
+          ]
+        ],
+        "rms_log_residual": 0.23538573982222852
+      },
+      "one_kernel_separate_diagnostic_areas": {
+        "SPE_decay_ns": 56.12209821216165,
+        "RC_ns": 0.0,
+        "areas_ADC_ns": [
+          218.31112622558518,
+          136.76160013086962
+        ],
+        "fractional_residuals_per_run": [
+          [
+            -0.03939434283879806,
+            0.03613646050982822,
+            0.004703473540379033
+          ],
+          [
+            -0.0040174965161329235,
+            0.029142778703568517,
+            -0.024398049836911406
+          ]
+        ],
+        "rms_log_residual": 0.026922879620142528
+      },
+      "meaning": "Conditional conflict of stationary common-response approximation, not proof of different physical gains or particle-dependent electronics."
+    },
+    "3_12_18": {
+      "runs": [
+        "3",
+        "12",
+        "18"
+      ],
+      "one_kernel_one_area": {
+        "SPE_decay_ns": 49.20862157705743,
+        "RC_ns": 0.0,
+        "effective_area_ADC_ns": 105.66844551818909,
+        "prediction": [
+          0.13410552603822573,
+          0.29180671357244853,
+          0.515116579279403
+        ],
+        "fractional_residuals_per_run": [
+          [
+            0.529587885369005,
+            0.7579631855756845,
+            0.7142591348523135
+          ],
+          [
+            -0.39991528015071776,
+            -0.36148610136652537,
+            -0.39727502192599995
+          ],
+          [
+            -0.006813439429916079,
+            0.012373401867029843,
+            -0.06574454463808721
+          ]
+        ],
+        "rms_log_residual": 0.40995984921365386
+      },
+      "one_kernel_separate_diagnostic_areas": {
+        "SPE_decay_ns": 49.20862157705743,
+        "RC_ns": 0.0,
+        "areas_ADC_ns": [
+          63.49288933203494,
+          172.23098321530847,
+          107.89456892957035
+        ],
+        "fractional_residuals_per_run": [
+          [
+            -0.08091811275260663,
+            0.056305517169128017,
+            0.03004510951069439
+          ],
+          [
+            -0.021910648866938498,
+            0.04072579111948116,
+            -0.017607242417118196
+          ],
+          [
+            0.014110080770574962,
+            0.0337011323915406,
+            -0.04606252952758916
+          ]
+        ],
+        "rms_log_residual": 0.043353176322900866
+      },
+      "meaning": "Conditional conflict of stationary common-response approximation, not proof of different physical gains or particle-dependent electronics."
+    }
+  },
+  "known_full_MC_anchor": {
+    "colored_noise_20261028": {
+      "Co60": {
+        "analytic": [
+          0.013530810813839287,
+          0.075836186860536,
+          0.2830737056208694
+        ],
+        "full_MC_medians": [
+          0.012593353501273344,
+          0.05732822738244488,
+          0.23107652706970955
+        ]
+      },
+      "Am241": {
+        "analytic": [
+          0.013530810813839287,
+          0.075836186860536,
+          0.2830737056208694
+        ],
+        "full_MC_medians": [
+          0.009734142467805865,
+          0.06510258727493928,
+          0.25709726691437984
+        ]
+      }
+    }
+  }
+}

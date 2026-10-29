@@ -1,0 +1,7 @@
+test_original_and_alternative_response_for_both_sources (__main__.ReplayTests.test_original_and_alternative_response_for_both_sources) ... ok
+test_signal_dependent_native_digitizer_and_replay (__main__.ReplayTests.test_signal_dependent_native_digitizer_and_replay) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 56.866s
+
+OK

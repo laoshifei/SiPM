@@ -148,6 +148,12 @@ G4VPhysicalVolume* DetectorConstruction::Construct() {
   }
   properties->AddConstProperty("SCINTILLATIONTIMECONSTANT1", optical.at("electron_tau_ns").at(0).get<double>() * ns);
   properties->AddConstProperty("SCINTILLATIONTIMECONSTANT2", optical.at("electron_tau_ns").at(1).get<double>() * ns);
+  // Geant4's finite-rise PDF is proportional to (1-exp(-t/rise))*exp(-t/decay),
+  // not the difference of exponentials with rise and decay as the two poles.
+  // These two rise constants are shared across particle types in Geant4.
+  const auto rise = optical.value("rise_time_ns", std::vector<double>{0., 0.});
+  properties->AddConstProperty("SCINTILLATIONRISETIME1", rise[0] * ns);
+  properties->AddConstProperty("SCINTILLATIONRISETIME2", rise[1] * ns);
   properties->AddConstProperty("RESOLUTIONSCALE", 1.);
 
   const double world_half = csi::WorldHalfSizeMm * mm;

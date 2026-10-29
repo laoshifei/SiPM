@@ -1,0 +1,839 @@
+{
+  "scope": "Compare short-scale waveform fluctuations in the frozen common-charge range.\n\nThis is an empirical filter-dependent variance metric, not a photoelectron count,\nSiPM gain measurement, or electronics deconvolution. No detector parameters fit.\n",
+  "selection": "Original training split, primary quality, amplitude >=200 ADC, fixed common Q; measured bit 0x8000 clear. Frozen MC event IDs from previous validation, then same common Q.",
+  "common_charge_range_adc_samples": [
+    201824.1125,
+    418733.2
+  ],
+  "filters_samples": [
+    25,
+    51,
+    101
+  ],
+  "metric_columns": [
+    "mean_signal_adc",
+    "pretrigger_highpass_variance_adc2",
+    "signal_highpass_variance_adc2",
+    "excess_variance_over_mean_adc"
+  ],
+  "filter": "Subtract centered odd-width box average, retain only complete filter support; 2ns sampling. Unbiased sample variances in [-600,-200)ns and [500,2500)ns relative to t10. Negative excess variances retained.",
+  "uncertainty": "1000 event-bootstrap medians, seed281019; finite recorded-event uncertainty only, not total model uncertainty. Q spectra within the common interval are not reweighted; per-Q-bin diagnostics retained.",
+  "limitations": "Signal-dependent fluctuations, readout filtering, photon statistics and correlated noise are not separately identified. Do not assign the difference to a unique material or circuit parameter.",
+  "inputs_sha256": {
+    "analysis/paper_baseline/results/confirmed_cohort.json": "30db949b61f47b0b7a1e3c9778e558c3c260d64c6edea36e8343be1314711ab7",
+    "simulation/results/response_factorization_20261028/joint_validation_final/validation.json": "c0384356c03b3e217afcecedc36bccb74ad1f0c00a09d50b5e0bd0c3ccf84945",
+    "analysis/paper_baseline/results/pha_run0003_features.npz": "554c37bc0e513fcd93988c8e5689fa73f96f003fd4a3553c4674f684306c082c",
+    "analysis/paper_baseline/results/phase2/run0003_features.npz": "3d488ac67fa99fc61c7b54e015196a8672c35d4a315331c891261a2eaac2bd18",
+    "simulation/results/response_factorization_20261028/co60/events.root": "cc91691f57a3f8b0d9595022bfb4d2837e382afe460487435fa0a9817aa682a2",
+    "data/DT5730_DPP_PHA/DAQ/run_3/UNFILTERED/Data_run_3.BIN": "2afbb146fb8b79a7b133672b60cc6fffffa3b0e42b51f4ebb4f8e3b719676581",
+    "analysis/paper_baseline/results/pha_run0012_features.npz": "1fa71845db07435102a6d34c6c515b0de3d0247bc0a934bea4beaf07fc4f1584",
+    "analysis/paper_baseline/results/phase2/run0012_features.npz": "02e1cf961958d4075aacfeed398f1fa089881b90854e03efafdfaacddfe824ce",
+    "simulation/results/response_factorization_20261028/am241/events.root": "afd4b9a1eba8b35b63378175439e5fc876412f31834b85e0440d5a51778edfab",
+    "data/DT5730_DPP_PHA/DAQ/run_12/UNFILTERED/Data_run_12.BIN": "aa778158a28560a2929b76038468e33875cd3a043ad80262661cd177f4e0044f"
+  },
+  "code_sha256": {
+    "simulation/diagnose_fluctuations.py": "cd531de81a5ae3035e501dcfa79a526bdccf113930b5c12a17c6c2ac85472743",
+    "simulation/diagnose_charge.py": "3f9f5b67e2bb61ae6aaabed3d917a14da56139b2e6737780c0e9f18fa226ffed",
+    "simulation/reference.py": "fe7ebd20af44ffc2ade2b758dd8fa6bde1d269cc8cb02e7a37bd591d4fe0d1bb",
+    "analysis/paper_baseline/prepare.py": "9ebe888c46f8964ecea7141f1c3da5095a0d5546bacb87d77e9874a156fab9c9"
+  },
+  "sources": {
+    "Co60": {
+      "run": 3,
+      "groups": {
+        "measured": {
+          "n": 2450,
+          "charge_p10_p50_p90": [
+            275826.35,
+            355049.625,
+            400538.075
+          ],
+          "metrics": {
+            "50ns": {
+              "excess_variance_over_mean": {
+                "n": 2450,
+                "p10_p50_p90": [
+                  0.062269197332123605,
+                  0.08563722828112166,
+                  0.11646231138189869
+                ],
+                "median_event_bootstrap_95": [
+                  0.08458532274991361,
+                  0.08646426497665058
+                ]
+              },
+              "pretrigger_variance": {
+                "n": 2450,
+                "p10_p50_p90": [
+                  7.20572416482412,
+                  9.210904040201005,
+                  11.49562277788945
+                ],
+                "median_event_bootstrap_95": [
+                  9.13387159798995,
+                  9.29527537688442
+                ]
+              },
+              "signal_variance": {
+                "n": 2450,
+                "p10_p50_p90": [
+                  19.85669933597597,
+                  24.54375633233233,
+                  29.97087260668669
+                ],
+                "median_event_bootstrap_95": [
+                  24.338800523723723,
+                  24.741125403583577
+                ]
+              }
+            },
+            "102ns": {
+              "excess_variance_over_mean": {
+                "n": 2450,
+                "p10_p50_p90": [
+                  0.12408899116188735,
+                  0.16395330647283202,
+                  0.21069934973527193
+                ],
+                "median_event_bootstrap_95": [
+                  0.1622400420869247,
+                  0.1654574434724048
+                ]
+              },
+              "pretrigger_variance": {
+                "n": 2450,
+                "p10_p50_p90": [
+                  7.622752265750126,
+                  9.936225224546416,
+                  12.335865501092544
+                ],
+                "median_event_bootstrap_95": [
+                  9.851369550921659,
+                  10.012932709129075
+                ]
+              },
+              "signal_variance": {
+                "n": 2450,
+                "p10_p50_p90": [
+                  30.93887141840033,
+                  39.10841697195082,
+                  48.03332108698471
+                ],
+                "median_event_bootstrap_95": [
+                  38.771729461757026,
+                  39.54207716633397
+                ]
+              }
+            },
+            "202ns": {
+              "excess_variance_over_mean": {
+                "n": 2450,
+                "p10_p50_p90": [
+                  0.22039675819546298,
+                  0.29286448292098743,
+                  0.39140360381267897
+                ],
+                "median_event_bootstrap_95": [
+                  0.28930176744081476,
+                  0.2958796937542549
+                ]
+              },
+              "pretrigger_variance": {
+                "n": 2450,
+                "p10_p50_p90": [
+                  8.061867944516228,
+                  10.626632483562798,
+                  13.238154524952966
+                ],
+                "median_event_bootstrap_95": [
+                  10.53408649096009,
+                  10.719057482140384
+                ]
+              },
+              "signal_variance": {
+                "n": 2450,
+                "p10_p50_p90": [
+                  47.66045442550678,
+                  62.95830513446492,
+                  80.90845293707588
+                ],
+                "median_event_bootstrap_95": [
+                  62.201094092946,
+                  63.39094205110536
+                ]
+              }
+            }
+          }
+        },
+        "mc": {
+          "n": 165,
+          "charge_p10_p50_p90": [
+            218009.5,
+            301304.5,
+            397928.35
+          ],
+          "metrics": {
+            "50ns": {
+              "excess_variance_over_mean": {
+                "n": 165,
+                "p10_p50_p90": [
+                  1.2448371547714687,
+                  1.4861000611245008,
+                  1.7363112146409951
+                ],
+                "median_event_bootstrap_95": [
+                  1.433241884042094,
+                  1.5239520215776723
+                ]
+              },
+              "pretrigger_variance": {
+                "n": 165,
+                "p10_p50_p90": [
+                  9.558346741708542,
+                  11.0867263919598,
+                  12.5233527959799
+                ],
+                "median_event_bootstrap_95": [
+                  10.777052904522614,
+                  11.335765829145728
+                ]
+              },
+              "signal_variance": {
+                "n": 165,
+                "p10_p50_p90": [
+                  167.16265134254255,
+                  244.1039960264264,
+                  334.1061436588589
+                ],
+                "median_event_bootstrap_95": [
+                  232.00212538778783,
+                  259.8236154858859
+                ]
+              }
+            },
+            "102ns": {
+              "excess_variance_over_mean": {
+                "n": 165,
+                "p10_p50_p90": [
+                  2.394362757387034,
+                  2.971138358470756,
+                  3.578292665464408
+                ],
+                "median_event_bootstrap_95": [
+                  2.8988157395796366,
+                  3.0783446546695274
+                ]
+              },
+              "pretrigger_variance": {
+                "n": 165,
+                "p10_p50_p90": [
+                  9.726246731543146,
+                  11.375238273257867,
+                  12.703813483024502
+                ],
+                "median_event_bootstrap_95": [
+                  11.030689694145469,
+                  11.592164242975741
+                ]
+              },
+              "signal_variance": {
+                "n": 165,
+                "p10_p50_p90": [
+                  333.026397252462,
+                  487.2513620502471,
+                  677.561165115904
+                ],
+                "median_event_bootstrap_95": [
+                  439.8254209730684,
+                  518.3066817436428
+                ]
+              }
+            },
+            "202ns": {
+              "excess_variance_over_mean": {
+                "n": 165,
+                "p10_p50_p90": [
+                  3.5064622812343393,
+                  4.558813260391674,
+                  5.8569570540112
+                ],
+                "median_event_bootstrap_95": [
+                  4.3838243451333,
+                  4.695918824501241
+                ]
+              },
+              "pretrigger_variance": {
+                "n": 165,
+                "p10_p50_p90": [
+                  9.710681701813646,
+                  11.462892619651537,
+                  12.801587962851215
+                ],
+                "median_event_bootstrap_95": [
+                  11.023728679176688,
+                  11.718076095111375
+                ]
+              },
+              "signal_variance": {
+                "n": 165,
+                "p10_p50_p90": [
+                  484.2539248945054,
+                  719.760153765274,
+                  1030.9559092084144
+                ],
+                "median_event_bootstrap_95": [
+                  674.5334507371797,
+                  762.7119875567558
+                ]
+              }
+            }
+          }
+        }
+      },
+      "charge_bin_edges": [
+        201824.1125,
+        245205.93,
+        288587.7475,
+        331969.565,
+        375351.3825,
+        418733.2
+      ],
+      "charge_bins": [
+        {
+          "q_low": 201824.1125,
+          "q_high": 245205.93,
+          "measured": {
+            "n": 116,
+            "p10_p50_p90": [
+              0.06502429317600315,
+              0.09761633579081465,
+              0.13439229098655686
+            ],
+            "median_event_bootstrap_95": [
+              0.0908597783468894,
+              0.10288015970685566
+            ]
+          },
+          "mc": {
+            "n": 37,
+            "p10_p50_p90": [
+              1.203062119372034,
+              1.433241884042094,
+              1.6598806189111175
+            ],
+            "median_event_bootstrap_95": [
+              1.369940580308621,
+              1.505608925271234
+            ]
+          }
+        },
+        {
+          "q_low": 245205.93,
+          "q_high": 288587.7475,
+          "measured": {
+            "n": 214,
+            "p10_p50_p90": [
+              0.0648544449488285,
+              0.09184638297906139,
+              0.12820079790900019
+            ],
+            "median_event_bootstrap_95": [
+              0.08795738214982664,
+              0.09643161053541124
+            ]
+          },
+          "mc": {
+            "n": 32,
+            "p10_p50_p90": [
+              1.2350663635461356,
+              1.3887498579386741,
+              1.747025231212437
+            ],
+            "median_event_bootstrap_95": [
+              1.2907465332000407,
+              1.5377891349621384
+            ]
+          }
+        },
+        {
+          "q_low": 288587.7475,
+          "q_high": 331969.565,
+          "measured": {
+            "n": 462,
+            "p10_p50_p90": [
+              0.06179183163592082,
+              0.0857793693641119,
+              0.1209313484153948
+            ],
+            "median_event_bootstrap_95": [
+              0.08328044830905586,
+              0.0881443349876469
+            ]
+          },
+          "mc": {
+            "n": 27,
+            "p10_p50_p90": [
+              1.3198746003169985,
+              1.5269218829695033,
+              1.7281351663596622
+            ],
+            "median_event_bootstrap_95": [
+              1.4180357144566107,
+              1.5573072703278361
+            ]
+          }
+        },
+        {
+          "q_low": 331969.565,
+          "q_high": 375351.3825,
+          "measured": {
+            "n": 853,
+            "p10_p50_p90": [
+              0.06134236165212455,
+              0.08396369878055708,
+              0.11682005191238876
+            ],
+            "median_event_bootstrap_95": [
+              0.08213158007402717,
+              0.0857527819660141
+            ]
+          },
+          "mc": {
+            "n": 33,
+            "p10_p50_p90": [
+              1.255520583550195,
+              1.5208629786657815,
+              1.7436554888946272
+            ],
+            "median_event_bootstrap_95": [
+              1.3665322356480976,
+              1.6226715104386829
+            ]
+          }
+        },
+        {
+          "q_low": 375351.3825,
+          "q_high": 418733.2,
+          "measured": {
+            "n": 805,
+            "p10_p50_p90": [
+              0.06294996267749615,
+              0.08453315026424937,
+              0.10843361653533178
+            ],
+            "median_event_bootstrap_95": [
+              0.08294558479805948,
+              0.08612567207675985
+            ]
+          },
+          "mc": {
+            "n": 36,
+            "p10_p50_p90": [
+              1.2605160672463684,
+              1.5275043513912059,
+              1.7248647235246677
+            ],
+            "median_event_bootstrap_95": [
+              1.4284990497141468,
+              1.5682693873415139
+            ]
+          }
+        }
+      ]
+    },
+    "Am241": {
+      "run": 12,
+      "groups": {
+        "measured": {
+          "n": 1551,
+          "charge_p10_p50_p90": [
+            209447.5,
+            254618.5,
+            356459.5
+          ],
+          "metrics": {
+            "50ns": {
+              "excess_variance_over_mean": {
+                "n": 1551,
+                "p10_p50_p90": [
+                  0.18254456762059296,
+                  0.2211244393362049,
+                  0.26738190339920165
+                ],
+                "median_event_bootstrap_95": [
+                  0.21921469709887212,
+                  0.22314601049904562
+                ]
+              },
+              "pretrigger_variance": {
+                "n": 1551,
+                "p10_p50_p90": [
+                  7.111170211055276,
+                  9.375182472361809,
+                  13.143261869346732
+                ],
+                "median_event_bootstrap_95": [
+                  9.276140703517589,
+                  9.499528643216081
+                ]
+              },
+              "signal_variance": {
+                "n": 1551,
+                "p10_p50_p90": [
+                  37.049346906906905,
+                  45.8871077093093,
+                  59.339095255255245
+                ],
+                "median_event_bootstrap_95": [
+                  45.45680528368368,
+                  46.366031534894894
+                ]
+              }
+            },
+            "102ns": {
+              "excess_variance_over_mean": {
+                "n": 1551,
+                "p10_p50_p90": [
+                  0.36849806718120587,
+                  0.4506823362993708,
+                  0.5573593703067706
+                ],
+                "median_event_bootstrap_95": [
+                  0.4456172941733569,
+                  0.4565231638033723
+                ]
+              },
+              "pretrigger_variance": {
+                "n": 1551,
+                "p10_p50_p90": [
+                  7.564141343008777,
+                  9.773132135108453,
+                  13.52834004702482
+                ],
+                "median_event_bootstrap_95": [
+                  9.679043854412393,
+                  9.93220959661823
+                ]
+              },
+              "signal_variance": {
+                "n": 1551,
+                "p10_p50_p90": [
+                  64.73720728456253,
+                  83.74265283199385,
+                  112.90838347613281
+                ],
+                "median_event_bootstrap_95": [
+                  82.8244914364576,
+                  84.8226448640105
+                ]
+              }
+            },
+            "202ns": {
+              "excess_variance_over_mean": {
+                "n": 1551,
+                "p10_p50_p90": [
+                  0.641732806298313,
+                  0.8354393549349496,
+                  1.0919930092383952
+                ],
+                "median_event_bootstrap_95": [
+                  0.8258572694022163,
+                  0.8446903826342083
+                ]
+              },
+              "pretrigger_variance": {
+                "n": 1551,
+                "p10_p50_p90": [
+                  7.74337917407841,
+                  10.123657243180908,
+                  14.3514529711591
+                ],
+                "median_event_bootstrap_95": [
+                  9.994474716490009,
+                  10.247918149220764
+                ]
+              },
+              "signal_variance": {
+                "n": 1551,
+                "p10_p50_p90": [
+                  107.98537164200765,
+                  147.43898839374614,
+                  207.8652371434271
+                ],
+                "median_event_bootstrap_95": [
+                  145.87715009941812,
+                  150.13527439840584
+                ]
+              }
+            }
+          }
+        },
+        "mc": {
+          "n": 208,
+          "charge_p10_p50_p90": [
+            220734.45,
+            258681.375,
+            303635.8375
+          ],
+          "metrics": {
+            "50ns": {
+              "excess_variance_over_mean": {
+                "n": 208,
+                "p10_p50_p90": [
+                  1.291179665298034,
+                  1.4907993648738325,
+                  1.7443185011787121
+                ],
+                "median_event_bootstrap_95": [
+                  1.466867146727453,
+                  1.5130950745695273
+                ]
+              },
+              "pretrigger_variance": {
+                "n": 208,
+                "p10_p50_p90": [
+                  8.566718986934674,
+                  9.760134673366833,
+                  10.84922142713568
+                ],
+                "median_event_bootstrap_95": [
+                  9.556682828643217,
+                  9.829488124120601
+                ]
+              },
+              "signal_variance": {
+                "n": 208,
+                "p10_p50_p90": [
+                  207.24929293421417,
+                  249.20443474194195,
+                  301.9381652726326
+                ],
+                "median_event_bootstrap_95": [
+                  243.08239417035037,
+                  253.12428976838837
+                ]
+              }
+            },
+            "102ns": {
+              "excess_variance_over_mean": {
+                "n": 208,
+                "p10_p50_p90": [
+                  2.4254954577097627,
+                  2.9778857110934576,
+                  3.5517950933532396
+                ],
+                "median_event_bootstrap_95": [
+                  2.9155452591723354,
+                  3.0524255855758766
+                ]
+              },
+              "pretrigger_variance": {
+                "n": 208,
+                "p10_p50_p90": [
+                  8.732196855094388,
+                  10.0027462137678,
+                  11.02858767308283
+                ],
+                "median_event_bootstrap_95": [
+                  9.74844729414083,
+                  10.11840944872382
+                ]
+              },
+              "signal_variance": {
+                "n": 208,
+                "p10_p50_p90": [
+                  389.40600249669126,
+                  482.08022042419196,
+                  616.728765817413
+                ],
+                "median_event_bootstrap_95": [
+                  466.80528119569016,
+                  499.9300755555392
+                ]
+              }
+            },
+            "202ns": {
+              "excess_variance_over_mean": {
+                "n": 208,
+                "p10_p50_p90": [
+                  3.731918177403536,
+                  4.636928837776732,
+                  5.59496518192594
+                ],
+                "median_event_bootstrap_95": [
+                  4.5148985836031486,
+                  4.817838513485535
+                ]
+              },
+              "pretrigger_variance": {
+                "n": 208,
+                "p10_p50_p90": [
+                  8.801802800149163,
+                  10.046566494614037,
+                  11.113691523985972
+                ],
+                "median_event_bootstrap_95": [
+                  9.776290569601265,
+                  10.220704532366765
+                ]
+              },
+              "signal_variance": {
+                "n": 208,
+                "p10_p50_p90": [
+                  587.5822915988923,
+                  735.5917407335774,
+                  962.5971955394473
+                ],
+                "median_event_bootstrap_95": [
+                  716.1512305172538,
+                  761.2439482555784
+                ]
+              }
+            }
+          }
+        }
+      },
+      "charge_bin_edges": [
+        201824.1125,
+        245205.93,
+        288587.7475,
+        331969.565,
+        375351.3825,
+        418733.2
+      ],
+      "charge_bins": [
+        {
+          "q_low": 201824.1125,
+          "q_high": 245205.93,
+          "measured": {
+            "n": 649,
+            "p10_p50_p90": [
+              0.18271059589801397,
+              0.22783972339816963,
+              0.2754084037941382
+            ],
+            "median_event_bootstrap_95": [
+              0.22443880131491128,
+              0.23043999133893905
+            ]
+          },
+          "mc": {
+            "n": 59,
+            "p10_p50_p90": [
+              1.3277288113151708,
+              1.542352401351117,
+              1.785715330473256
+            ],
+            "median_event_bootstrap_95": [
+              1.4987378785680765,
+              1.5838152220157005
+            ]
+          }
+        },
+        {
+          "q_low": 245205.93,
+          "q_high": 288587.7475,
+          "measured": {
+            "n": 403,
+            "p10_p50_p90": [
+              0.1832192638519252,
+              0.21780849719983422,
+              0.26755098091894935
+            ],
+            "median_event_bootstrap_95": [
+              0.214773727634962,
+              0.22360276415514962
+            ]
+          },
+          "mc": {
+            "n": 106,
+            "p10_p50_p90": [
+              1.2875537799631764,
+              1.4727903293504547,
+              1.733987917423268
+            ],
+            "median_event_bootstrap_95": [
+              1.437482082845849,
+              1.515740843468325
+            ]
+          }
+        },
+        {
+          "q_low": 288587.7475,
+          "q_high": 331969.565,
+          "measured": {
+            "n": 237,
+            "p10_p50_p90": [
+              0.1845104641929976,
+              0.21473564270796366,
+              0.2602790103214094
+            ],
+            "median_event_bootstrap_95": [
+              0.20938408185259486,
+              0.2223157992317053
+            ]
+          },
+          "mc": {
+            "n": 38,
+            "p10_p50_p90": [
+              1.3173706478380052,
+              1.466519460159681,
+              1.7250425725223073
+            ],
+            "median_event_bootstrap_95": [
+              1.4193076239181703,
+              1.4961493995896191
+            ]
+          }
+        },
+        {
+          "q_low": 331969.565,
+          "q_high": 375351.3825,
+          "measured": {
+            "n": 154,
+            "p10_p50_p90": [
+              0.18207426534792467,
+              0.21379490301375154,
+              0.2476787338161235
+            ],
+            "median_event_bootstrap_95": [
+              0.20953993373568924,
+              0.220390417840355
+            ]
+          },
+          "mc": {
+            "n": 5,
+            "p10_p50_p90": [
+              1.3226638402831534,
+              1.4437986490976615,
+              1.6114990491536008
+            ],
+            "median_event_bootstrap_95": [
+              1.245799485951596,
+              1.6752614982252143
+            ]
+          }
+        },
+        {
+          "q_low": 375351.3825,
+          "q_high": 418733.2,
+          "measured": {
+            "n": 108,
+            "p10_p50_p90": [
+              0.18100731843663093,
+              0.21463778190982516,
+              0.2528446477565612
+            ],
+            "median_event_bootstrap_95": [
+              0.20538780432159698,
+              0.21870232609512555
+            ]
+          },
+          "mc": {
+            "n": 0
+          }
+        }
+      ]
+    }
+  }
+}

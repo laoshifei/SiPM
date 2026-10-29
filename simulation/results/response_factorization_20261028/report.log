@@ -1,0 +1,82 @@
+Info in <TCanvas::Print>: SVG file simulation/results/response_factorization_20261028/report/response_control.svg has been created
+Info in <TCanvas::Print>: png file simulation/results/response_factorization_20261028/report/response_control.png has been created
+Info in <TCanvas::Print>: SVG file simulation/results/response_factorization_20261028/report/individual_waveforms.svg has been created
+Info in <TCanvas::Print>: png file simulation/results/response_factorization_20261028/report/individual_waveforms.png has been created
+{
+  "Co60": {
+    "measured": {
+      "n": 2450,
+      "p10_p50_p90": [
+        0.062269197332123605,
+        0.08563722828112166,
+        0.11646231138189869
+      ],
+      "median_event_bootstrap_95": [
+        0.08458532274991361,
+        0.08646426497665058
+      ]
+    },
+    "old_mc": {
+      "n": 38,
+      "p10_p50_p90": [
+        0.0019295509461403112,
+        0.011606995032846965,
+        0.019024850237674217
+      ],
+      "median_event_bootstrap_95": [
+        0.007585790184653926,
+        0.014577485598032958
+      ]
+    },
+    "finite_rise_mc": {
+      "n": 165,
+      "p10_p50_p90": [
+        1.2448371547714687,
+        1.4861000611245008,
+        1.7363112146409951
+      ],
+      "median_event_bootstrap_95": [
+        1.433241884042094,
+        1.5239520215776723
+      ]
+    }
+  },
+  "Am241": {
+    "measured": {
+      "n": 1551,
+      "p10_p50_p90": [
+        0.18254456762059296,
+        0.2211244393362049,
+        0.26738190339920165
+      ],
+      "median_event_bootstrap_95": [
+        0.21921469709887212,
+        0.22314601049904562
+      ]
+    },
+    "old_mc": {
+      "n": 95,
+      "p10_p50_p90": [
+        0.003258777839880882,
+        0.012189204149017897,
+        0.02042502252363815
+      ],
+      "median_event_bootstrap_95": [
+        0.009635305903337358,
+        0.013908837330403068
+      ]
+    },
+    "finite_rise_mc": {
+      "n": 208,
+      "p10_p50_p90": [
+        1.291179665298034,
+        1.4907993648738325,
+        1.7443185011787121
+      ],
+      "median_event_bootstrap_95": [
+        1.466867146727453,
+        1.5130950745695273
+      ]
+    }
+  }
+}

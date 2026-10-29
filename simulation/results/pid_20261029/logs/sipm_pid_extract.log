@@ -1,0 +1,6 @@
+run3_Co60 {'n': 129, 'truth_counts': {'alpha_family': 0, 'gamma_family': 129, 'decay_electron_family': 0, 'mixed_other': 0, 'no_deposit': 0}}
+run3_Am241 {'n': 172, 'truth_counts': {'alpha_family': 172, 'gamma_family': 0, 'decay_electron_family': 0, 'mixed_other': 0, 'no_deposit': 0}}
+run12_Co60 {'n': 129, 'truth_counts': {'alpha_family': 0, 'gamma_family': 129, 'decay_electron_family': 0, 'mixed_other': 0, 'no_deposit': 0}}
+run12_Am241 {'n': 172, 'truth_counts': {'alpha_family': 172, 'gamma_family': 0, 'decay_electron_family': 0, 'mixed_other': 0, 'no_deposit': 0}}
+run18_Co60 {'n': 128, 'truth_counts': {'alpha_family': 0, 'gamma_family': 128, 'decay_electron_family': 0, 'mixed_other': 0, 'no_deposit': 0}}
+run18_Am241 {'n': 172, 'truth_counts': {'alpha_family': 172, 'gamma_family': 0, 'decay_electron_family': 0, 'mixed_other': 0, 'no_deposit': 0}}

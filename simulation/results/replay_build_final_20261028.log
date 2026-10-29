@@ -1,0 +1,10 @@
+gmake: jobserver mkfifo: /tmp/GMfifo4: File exists
+[  6%] Built target sipm_response
+[ 19%] Built target test_sipm
+[ 22%] Built target readout_noise
+[ 25%] Building CXX object CMakeFiles/replay_response.dir/replay_response.cc.o
+[ 38%] Built target test_response
+[ 38%] Built target test_noise
+[ 96%] Built target csi_sources
+Linking CXX executable replay_response
+Built target replay_response

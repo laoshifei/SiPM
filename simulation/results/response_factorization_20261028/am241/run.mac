@@ -1,0 +1,6 @@
+/csi/config /media/sf_works/SiPM/simulation/results/response_factorization_20261028/am241/config.json
+/csi/source Am241
+/csi/seed 282212
+/csi/output /media/sf_works/SiPM/simulation/results/response_factorization_20261028/am241/events.root
+/run/initialize
+/run/beamOn 30000

@@ -1,0 +1,15 @@
+[  5%] Built target sipm_response
+[ 11%] Built target test_sipm
+[ 14%] Building CXX object CMakeFiles/readout_noise.dir/src/SignalDependentNoise.cc.o
+[ 17%] Linking CXX static library libreadout_noise.a
+[ 23%] Built target readout_noise
+[ 26%] Linking CXX executable test_noise
+[ 29%] Linking CXX executable test_response
+[ 32%] Linking CXX executable replay_response
+[ 35%] Built target test_noise
+[ 38%] Built target test_response
+[ 41%] Linking CXX executable test_signal_noise
+[ 44%] Built target replay_response
+[ 47%] Linking CXX executable csi_sources
+[ 50%] Built target test_signal_noise
+[100%] Built target csi_sources

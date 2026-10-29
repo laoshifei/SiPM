@@ -1,0 +1,85 @@
+{
+  "scope": "Freeze a controlled light-timing / readout-filter factorization experiment.\n\nNo fit. Preserve the continuous linear mean kernel by moving one exponential\npole from the deterministic readout filter into stochastic photon emission.\nRecovery, finite windows, discretization and event selection may break exact\nequality of the full nonlinear Monte Carlo response and are checked separately.\n",
+  "status": "Frozen before full optical MC; no parameter optimization",
+  "native_formula": "p(t)=(rise+decay)/decay^2 * (1-exp(-t/rise))*exp(-t/decay), t>=0. Equivalent poles: decay and rise*decay/(rise+decay).",
+  "conversion": "rise_i=RC*decay_i/(decay_i-RC); readout.lowpass_ns=0. Requires the same alpha/electron decay constants for this shared-rise control.",
+  "primary_source": "https://github.com/Geant4/geant4/blob/v11.4.2/source/processes/electromagnetic/xrays/src/G4Scintillation.cc#L557-L570",
+  "interpretation": "An identifiability test, not measured material rise constants or recovered circuit parameters. Conditional geometry and common normalization inherited without refitting.",
+  "sources": {
+    "Co60": {
+      "events_requested": 5000,
+      "seed": 282203,
+      "base_config_sha256": "540df2c412020ab82f4e0127983f96d47b5c4cb54fb1b27aab578ab7ef376838",
+      "config_sha256": "212d2b281786e9d2587a001cd84f358677d1db9364c964438ce8f3917196541b",
+      "moved_pole_ns": 94.47173460998194,
+      "native_rise_time_ns": [
+        117.69595113598648,
+        101.4548867811961
+      ],
+      "changes_to_numeric_config": [
+        "optical.rise_time_ns",
+        "sipm.readout.lowpass_ns"
+      ]
+    },
+    "Am241": {
+      "events_requested": 30000,
+      "seed": 282212,
+      "base_config_sha256": "716d1058557cf114d7fa978d2552422876db4b79b1c406371df6a35992bfe242",
+      "config_sha256": "7760c45eb27fd9b30225ce7e46bef653a3d954ad99ba6cb5add7a38bfdb25ae7",
+      "moved_pole_ns": 94.47173460998194,
+      "native_rise_time_ns": [
+        117.69595113598648,
+        101.4548867811961
+      ],
+      "changes_to_numeric_config": [
+        "optical.rise_time_ns",
+        "sipm.readout.lowpass_ns"
+      ]
+    }
+  },
+  "source_sha256": {
+    "simulation/main.cc": "39db98f35a291f10368bce045ddab2fdbf4f20e571c020a7bdc55a6afcefe805",
+    "simulation/CMakeLists.txt": "eaa7861866c736e416d9042bde82d044addfd2bf58ee974ff4f76fd9c7cb941a",
+    "simulation/src/ActionInitialization.cc": "1b72f9c4978b91c46bae5ccec7c5652a039f29389f350d32e84380450be9f5f1",
+    "simulation/src/DataStructure.cc": "ac10fc4de4f6783a72832bfdd06a8c0bb52e0b1004f3001352cc95aa27114acf",
+    "simulation/src/DetectorConstruction.cc": "6d0cf3f90877f0069ca267aa890f5a7f31d8eb12e293135bc429bbbd87c59bad",
+    "simulation/src/EventAction.cc": "66351889764c3fe811576a4a97c4313bdebc0fec977d10c0d002515e17460125",
+    "simulation/src/PhysicsList.cc": "71cbcf468ce01fe9ba54e8dd9520b3b506157bfe3ce278bdd259cddb4d98084d",
+    "simulation/src/PrimaryGeneratorAction.cc": "c36fb54975b5ca37b6388269ad501a7980e44a23248bbeea1cd560fff845d70c",
+    "simulation/src/RootIO.cc": "9928d10c951efcba0bf1b9ff218d0d8618879ce381e9d0f0e3afec0ea3b97423",
+    "simulation/src/RunAction.cc": "a556559fff68f7479bc1586859694fbf6aae7563a6e4ff23aa5406ea6c98ad61",
+    "simulation/src/RunConfig.cc": "15cdfa32ca62176eb54e7b3d5c706556432acc95f8ece9b82fcaf423c9a7e321",
+    "simulation/src/SiPMDigitizer.cc": "02ed8b819259862f4839167bfc0e606ccd542e6c10b75a86c07c3c3eda63dace",
+    "simulation/src/SiPMHit.cc": "65b8d7878a9177e14460c031155a69c0b3b231fd7c119e7849aadc2cddbe1889",
+    "simulation/src/SiPMSD.cc": "eb386d4fcd7ae5195ad86d53a69e02f2515e18d1763d5ae71c1aa50d910a1e96",
+    "simulation/src/StackingAction.cc": "558cc438a8f5db1c19c2c3d198f21a06373863d28931d4d2db285c2736106050",
+    "simulation/src/SteppingAction.cc": "b70fc73bee05a55d79584831e3c2424955570b941dc62062d17dd5eddc9ea5d5",
+    "simulation/src/TrackInformation.cc": "49be9d6734d55e1986be730e3eaaec2268bccadafbbf69c02797eae445ff82e7",
+    "simulation/src/TrackingAction.cc": "6906406f3dccf71d3601331e1326d4ad26f61f0ba9d3a016b5a64cc1cc38ca73",
+    "simulation/include/ActionInitialization.hh": "40791a7e36ce9271dec4d358a47f75d51dd438849d1c2a8e1068b888b0417101",
+    "simulation/include/Constants.hh": "95305b4a23ae19abbf49d40e35402424259bdc9f223c96f002d6073fc56c08db",
+    "simulation/include/DataStructure.hh": "d6ef3ccd354923c0239fd9f2ff7cbfe4c48ee805a71ac663c2d4432739aaaef3",
+    "simulation/include/DetectorConstruction.hh": "561a53103436371cbd2ccb716468aa4e78698cacadd59980ef2de5297c40555a",
+    "simulation/include/EventAction.hh": "de3a6169e90e7c90d00d87e41af345c62f9c3f1d316627dc281df90c9476f2c3",
+    "simulation/include/PhysicsList.hh": "fa55063098a9964d6255ea3b1dc3828f519bc34a55454980f6b95b615f607caf",
+    "simulation/include/PrimaryGeneratorAction.hh": "4aa05b10fa191356ac669375d4c886806119a1df266067dbc59db2aea2837224",
+    "simulation/include/RootIO.hh": "73c4e16da5b7503fe1439e443bbaeb1df85615728ebbf325711a2a565e031efe",
+    "simulation/include/RunAction.hh": "e458d9dc7a6386551b5f8cfae12fa4743f9140b8e6c1a71e59636d35440ff50c",
+    "simulation/include/RunConfig.hh": "c2f1a767f64882d5ec09cac1b64ed59156f927734b68c8bbc1a4a0bf8144ac13",
+    "simulation/include/SiPMDigitizer.hh": "7e0bc8e461b08898390d34321798e3744f5465b1d7ddecf00ec5664b725a6bc0",
+    "simulation/include/SiPMHit.hh": "aaa3de1a3684ebc4c821a9d9bf77e954cf6220978524028f06ea58f8def14a54",
+    "simulation/include/SiPMSD.hh": "4287efdecf8776ad622da2a56ed4337d503e6f801b6f9e4c87855d21ea15953b",
+    "simulation/include/StackingAction.hh": "15ad01044d6b91bddd240abf451a1046fc2ebe78741eab5b9e7e23935903f4b5",
+    "simulation/include/SteppingAction.hh": "0c183785ec639663babedfcd76525a5d94822572f927f5d38e9f7a910317811c",
+    "simulation/include/TrackInformation.hh": "10657cbfec09c4fbfdc34c81a4b1919c9232da2dcf7842fb707a472019873e23",
+    "simulation/include/TrackingAction.hh": "4cb509354a85afac8f8209a79c3257554c4e5ba94df555a38d33eed30b54cb5c",
+    "simulation/vendor/SiPMResponse.cc": "c2226e528dab87e0a350251716c0b35b3a0f23543c25b9f64ce7ab6f72163274",
+    "simulation/vendor/SiPMResponse.hh": "9522000dfbbffce5c97351996653d9ecf979af95dcf8404567396cbcb172246e",
+    "simulation/prepare_response_test.py": "e851659d717190237c340aeee4251bdb9f094fe41bef414d8c57be631301d473",
+    "simulation/validate_joint.py": "38407613c114555c4d56054c90688d16b091f9373c7b0f32ba375f000941e86c",
+    "simulation/diagnose_fluctuations.py": "8f3233c5e6fe863a52e02752ca5ba0c36ead32a78182001f8616cc58bb7d6490",
+    "simulation/tests/test_workflow.py": "837ebd7bb992d2151d85e4c08aa75abb2182b299f936112c49cabd7d9d53f7be",
+    "simulation/tests/test_charge_diagnostics.py": "e076e7de326349cc42c5183ea2d195281a90e409cd6dc0230a0343fc931ffe6d"
+  },
+  "binary_sha256": "7a92ea1e63fb71f8be233165e45bd09b1b5051d93cb687cd74056be312864740"
+}

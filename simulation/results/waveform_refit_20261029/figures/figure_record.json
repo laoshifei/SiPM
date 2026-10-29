@@ -1,0 +1,61 @@
+{
+  "code_sha256": "dc8cc6e71e4d8ae7b1c9db856bff01b1f6f94a9e365a65aace9cb6e596225561",
+  "analysis_sha256": "0264e700267b54bec8084cf37ad5c067089ebe93edb06e832d909103ea248f77",
+  "conditioned_analysis_sha256": "afaed93a26bf1dc37bf1e4f63e789f002303bb096a58fa5a8c82af01a8beefc0",
+  "run18_validation_sha256": "56a1fa30898b33c2ea6a7bf657fca006064fe15e251bcb76a5a682840710a06e",
+  "figures": [
+    "simulation/results/waveform_refit_20261029/figures/shape_and_fluctuation_comparison.png",
+    "simulation/results/waveform_refit_20261029/figures/feature_distributions.png",
+    "simulation/results/waveform_refit_20261029/figures/unscaled_individual_waveforms.png",
+    "simulation/results/waveform_refit_20261029/figures/charge_spectrum_check.png",
+    "simulation/results/waveform_refit_20261029/figures/run18_separate_calibration.png"
+  ],
+  "examples": [
+    {
+      "source": "Co60",
+      "measured_group": "run3_last20",
+      "rank": 0.25,
+      "measured_id": 4702,
+      "MC_id": 788,
+      "Q_relative_difference": 0.004194546329961968,
+      "model_analysis": "simulation/results/waveform_refit_20261029/conditioned_last20/analysis"
+    },
+    {
+      "source": "Co60",
+      "measured_group": "run3_last20",
+      "rank": 0.75,
+      "measured_id": 4725,
+      "MC_id": 514,
+      "Q_relative_difference": -0.0009235403200451575,
+      "model_analysis": "simulation/results/waveform_refit_20261029/conditioned_last20/analysis"
+    },
+    {
+      "source": "Am241",
+      "measured_group": "run12_last20",
+      "rank": 0.25,
+      "measured_id": 7075,
+      "MC_id": 13565,
+      "Q_relative_difference": 0.0034173215103709964,
+      "model_analysis": "simulation/results/waveform_refit_20261029/conditioned_last20/analysis"
+    },
+    {
+      "source": "Am241",
+      "measured_group": "run12_last20",
+      "rank": 0.75,
+      "measured_id": 7427,
+      "MC_id": 1602,
+      "Q_relative_difference": -0.002109514964152681,
+      "model_analysis": "simulation/results/waveform_refit_20261029/conditioned_last20/analysis"
+    },
+    {
+      "source": "Am241",
+      "measured_group": "run18_last20",
+      "rank": 0.5,
+      "measured_id": 137227,
+      "MC_id": 2394,
+      "Q_relative_difference": -0.0027422100275650285,
+      "model_analysis": "simulation/results/waveform_refit_20261029/run18/last20"
+    }
+  ],
+  "scope": "Area normalization only for mean-shape plots. Raw ADC examples are baseline/t10 aligned, fixed measured Q ranks and nearest MC Q; no shape-based cherry-picking."
+}

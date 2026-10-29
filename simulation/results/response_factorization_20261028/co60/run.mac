@@ -1,0 +1,6 @@
+/csi/config /media/sf_works/SiPM/simulation/results/response_factorization_20261028/co60/config.json
+/csi/source Co60
+/csi/seed 282203
+/csi/output /media/sf_works/SiPM/simulation/results/response_factorization_20261028/co60/events.root
+/run/initialize
+/run/beamOn 5000

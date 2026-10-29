@@ -1,0 +1,19 @@
+-- Could NOT find XKB (missing: XKB_LIBRARY XKB_INCLUDE_DIR) (Required is at least version "0.5.0")
+-- Configuring done (20.4s)
+-- Generating done (19.9s)
+-- Build files have been written to: /media/sf_works/SiPM/simulation/build
+[  6%] Built target sipm_response
+[ 10%] Building CXX object CMakeFiles/readout_noise.dir/src/ReadoutResponse.cc.o
+[ 17%] Built target test_sipm
+[ 20%] Linking CXX static library libreadout_noise.a
+[ 24%] Built target readout_noise
+[ 27%] Building CXX object CMakeFiles/test_response.dir/tests/test_readout_response.cc.o
+[ 31%] Linking CXX executable test_noise
+[ 34%] Built target test_noise
+[ 41%] Building CXX object CMakeFiles/csi_sources.dir/src/RunConfig.cc.o
+[ 41%] Building CXX object CMakeFiles/csi_sources.dir/src/RootIO.cc.o
+[ 44%] Building CXX object CMakeFiles/csi_sources.dir/src/SiPMDigitizer.cc.o
+[ 48%] Linking CXX executable test_response
+[ 48%] Built target test_response
+[ 51%] Linking CXX executable csi_sources
+[100%] Built target csi_sources

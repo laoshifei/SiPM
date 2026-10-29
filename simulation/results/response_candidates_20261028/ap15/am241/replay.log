@@ -1,0 +1,8 @@
+{
+  "equal_original_adc_events": 11820,
+  "equal_original_avalanche_events": 11820,
+  "max_relative_charge_balance": 3.074591323973332e-14,
+  "parent_file": "/media/sf_works/SiPM/simulation/results/colored_noise_20261028/am241/events.root",
+  "scope": "Original Geant4 optical histories; all entries retained. Native PDE/recovery/AP and readout regenerated, candidate selections must be recomputed.",
+  "unchanged_zero_photon_events": 11811
+}

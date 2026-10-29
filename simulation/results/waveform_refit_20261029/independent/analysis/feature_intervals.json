@@ -1,0 +1,405 @@
+{
+  "scope": "Conditional uncertainty for native-vs-measured waveform feature medians.",
+  "code_sha256": "620114f1ae732bb1201e9faba3e02ba5383ffe0faa43ad938eb462738381d82d",
+  "validation_sha256": "0264e700267b54bec8084cf37ad5c067089ebe93edb06e832d909103ea248f77",
+  "method": "512 full-mother multinomial and measured raw-index block64 resamples, same seeds as F intervals; median of replicated event multiset. All fitted parameters held fixed.",
+  "limits": "Conditional intervals exclude fitting and model selection; later-segment pretrigger calibration, where used, is also held fixed. No simultaneous multiplicity adjustment.",
+  "sources": {
+    "Co60": {
+      "run3_first60": {
+        "peak_ADC": {
+          "MC_median": 740.1171875,
+          "data_median": 820.4765625,
+          "median_difference": -80.359375,
+          "difference_interval95": [
+            -131.27021484375,
+            -43.0525390625
+          ]
+        },
+        "peak_per_Q": {
+          "MC_median": 0.0023314207841768136,
+          "data_median": 0.0023050951335007756,
+          "median_difference": 2.632565067603801e-05,
+          "difference_interval95": [
+            1.2643337866259544e-05,
+            4.351623921300405e-05
+          ]
+        },
+        "tpeak_minus_t10_ns": {
+          "MC_median": 191.0079861111111,
+          "data_median": 200.96722395833336,
+          "median_difference": -9.959237847222255,
+          "difference_interval95": [
+            -18.754230887541475,
+            -5.949800873926976
+          ]
+        },
+        "short_long_ratio": {
+          "MC_median": 0.46181368806895506,
+          "data_median": 0.4656943460908458,
+          "median_difference": -0.0038806580218907483,
+          "difference_interval95": [
+            -0.006340375067682667,
+            -0.0008921153866217238
+          ]
+        },
+        "baseline_RMS_ADC": {
+          "MC_median": 3.376735664810025,
+          "data_median": 3.353337594945158,
+          "median_difference": 0.023398069864867033,
+          "difference_interval95": [
+            -0.04585763652774305,
+            0.10874103998782693
+          ]
+        },
+        "baseline_ADC": {
+          "MC_median": 3036.6171875,
+          "data_median": 3036.90625,
+          "median_difference": -0.2890625,
+          "difference_interval95": [
+            -0.846484375,
+            0.24306640624999987
+          ]
+        }
+      },
+      "run3_middle20": {
+        "peak_ADC": {
+          "MC_median": 740.1171875,
+          "data_median": 809.90625,
+          "median_difference": -69.7890625,
+          "difference_interval95": [
+            -120.646484375,
+            -38.01533203125001
+          ]
+        },
+        "peak_per_Q": {
+          "MC_median": 0.0023314207841768136,
+          "data_median": 0.0023065640848881517,
+          "median_difference": 2.4856699288661882e-05,
+          "difference_interval95": [
+            9.649045950316704e-06,
+            4.291738760228731e-05
+          ]
+        },
+        "tpeak_minus_t10_ns": {
+          "MC_median": 191.0079861111111,
+          "data_median": 200.4077205882353,
+          "median_difference": -9.399734477124184,
+          "difference_interval95": [
+            -19.11120427516711,
+            -2.6699254219012643
+          ]
+        },
+        "short_long_ratio": {
+          "MC_median": 0.46181368806895506,
+          "data_median": 0.4650638976835681,
+          "median_difference": -0.003250209614613031,
+          "difference_interval95": [
+            -0.005720543754044419,
+            -0.00041232128148349
+          ]
+        },
+        "baseline_RMS_ADC": {
+          "MC_median": 3.376735664810025,
+          "data_median": 3.3305815464420023,
+          "median_difference": 0.04615411836802252,
+          "difference_interval95": [
+            -0.03921720975653268,
+            0.13285877152698547
+          ]
+        },
+        "baseline_ADC": {
+          "MC_median": 3036.6171875,
+          "data_median": 3036.65625,
+          "median_difference": -0.0390625,
+          "difference_interval95": [
+            -0.4158203125,
+            0.4296875
+          ]
+        }
+      },
+      "run3_last20": {
+        "peak_ADC": {
+          "MC_median": 740.1171875,
+          "data_median": 802.3125,
+          "median_difference": -62.1953125,
+          "difference_interval95": [
+            -104.78984375,
+            -26.665625000000002
+          ]
+        },
+        "peak_per_Q": {
+          "MC_median": 0.0023314207841768136,
+          "data_median": 0.002309938974621718,
+          "median_difference": 2.1481809555095547e-05,
+          "difference_interval95": [
+            5.837724238989676e-06,
+            3.8691129679564165e-05
+          ]
+        },
+        "tpeak_minus_t10_ns": {
+          "MC_median": 191.0079861111111,
+          "data_median": 197.62871525808276,
+          "median_difference": -6.620729146971655,
+          "difference_interval95": [
+            -17.494094721889965,
+            -1.4016201792433878
+          ]
+        },
+        "short_long_ratio": {
+          "MC_median": 0.46181368806895506,
+          "data_median": 0.46526129295294816,
+          "median_difference": -0.003447604883993094,
+          "difference_interval95": [
+            -0.005842544850341377,
+            -0.00041711215726693746
+          ]
+        },
+        "baseline_RMS_ADC": {
+          "MC_median": 3.376735664810025,
+          "data_median": 3.3174160074116106,
+          "median_difference": 0.05931965739841427,
+          "difference_interval95": [
+            -0.01146742258425355,
+            0.1315776387935784
+          ]
+        },
+        "baseline_ADC": {
+          "MC_median": 3036.6171875,
+          "data_median": 3036.8125,
+          "median_difference": -0.1953125,
+          "difference_interval95": [
+            -0.511328125,
+            0.30126953124999933
+          ]
+        }
+      }
+    },
+    "Am241": {
+      "run12_first60": {
+        "peak_ADC": {
+          "MC_median": 433.515625,
+          "data_median": 432.140625,
+          "median_difference": 1.375,
+          "difference_interval95": [
+            -11.51171875,
+            10.10410156249999
+          ]
+        },
+        "peak_per_Q": {
+          "MC_median": 0.0017060215680787488,
+          "data_median": 0.0016703580119797532,
+          "median_difference": 3.566355609899564e-05,
+          "difference_interval95": [
+            7.205095310475001e-06,
+            5.664096803720602e-05
+          ]
+        },
+        "tpeak_minus_t10_ns": {
+          "MC_median": 316.41888020833335,
+          "data_median": 293.06500000000005,
+          "median_difference": 23.353880208333294,
+          "difference_interval95": [
+            4.069133649553679,
+            37.64289510459841
+          ]
+        },
+        "short_long_ratio": {
+          "MC_median": 0.32507963854837596,
+          "data_median": 0.32246462673480913,
+          "median_difference": 0.0026150118135668254,
+          "difference_interval95": [
+            6.787905373815546e-05,
+            0.0048650244827039635
+          ]
+        },
+        "baseline_RMS_ADC": {
+          "MC_median": 3.2146822764626686,
+          "data_median": 3.167214864829982,
+          "median_difference": 0.04746741163268675,
+          "difference_interval95": [
+            -0.04312866021281464,
+            0.15818225611370926
+          ]
+        },
+        "baseline_ADC": {
+          "MC_median": 3042.53125,
+          "data_median": 3042.46875,
+          "median_difference": 0.0625,
+          "difference_interval95": [
+            -0.22353515625,
+            0.2916992187499996
+          ]
+        }
+      },
+      "run12_middle20": {
+        "peak_ADC": {
+          "MC_median": 433.515625,
+          "data_median": 433.75,
+          "median_difference": -0.234375,
+          "difference_interval95": [
+            -15.7798828125,
+            13.749804687499992
+          ]
+        },
+        "peak_per_Q": {
+          "MC_median": 0.0017060215680787488,
+          "data_median": 0.0016798678732803292,
+          "median_difference": 2.615369479841965e-05,
+          "difference_interval95": [
+            -1.0978386100496065e-05,
+            4.717615853111112e-05
+          ]
+        },
+        "tpeak_minus_t10_ns": {
+          "MC_median": 316.41888020833335,
+          "data_median": 296.416640625,
+          "median_difference": 20.002239583333335,
+          "difference_interval95": [
+            -1.636514007260115,
+            35.1048777567918
+          ]
+        },
+        "short_long_ratio": {
+          "MC_median": 0.32507963854837596,
+          "data_median": 0.32373741269259115,
+          "median_difference": 0.0013422258557848066,
+          "difference_interval95": [
+            -0.0012129588567145243,
+            0.005222991423757723
+          ]
+        },
+        "baseline_RMS_ADC": {
+          "MC_median": 3.2146822764626686,
+          "data_median": 4.415092510100388,
+          "median_difference": -1.2004102336377196,
+          "difference_interval95": [
+            -1.8859220154469116,
+            -0.27451573409913466
+          ]
+        },
+        "baseline_ADC": {
+          "MC_median": 3042.53125,
+          "data_median": 3061.7421875,
+          "median_difference": -19.2109375,
+          "difference_interval95": [
+            -23.25703125,
+            -0.713378906250002
+          ]
+        }
+      },
+      "run12_last20": {
+        "peak_ADC": {
+          "MC_median": 433.515625,
+          "data_median": 427.046875,
+          "median_difference": 6.46875,
+          "difference_interval95": [
+            -13.0208984375,
+            20.390625
+          ]
+        },
+        "peak_per_Q": {
+          "MC_median": 0.0017060215680787488,
+          "data_median": 0.001681562210825609,
+          "median_difference": 2.4459357253139727e-05,
+          "difference_interval95": [
+            -1.1781576023411937e-05,
+            4.621752557955328e-05
+          ]
+        },
+        "tpeak_minus_t10_ns": {
+          "MC_median": 316.41888020833335,
+          "data_median": 289.8163194444444,
+          "median_difference": 26.60256076388896,
+          "difference_interval95": [
+            0.9147508708740077,
+            39.64756460813489
+          ]
+        },
+        "short_long_ratio": {
+          "MC_median": 0.32507963854837596,
+          "data_median": 0.3249774878195686,
+          "median_difference": 0.00010215072880737086,
+          "difference_interval95": [
+            -0.003698491914254279,
+            0.0033327242802116772
+          ]
+        },
+        "baseline_RMS_ADC": {
+          "MC_median": 3.2146822764626686,
+          "data_median": 5.6774464715662445,
+          "median_difference": -2.462764195103576,
+          "difference_interval95": [
+            -2.5986679682844556,
+            -2.2571545534427075
+          ]
+        },
+        "baseline_ADC": {
+          "MC_median": 3042.53125,
+          "data_median": 3069.15625,
+          "median_difference": -26.625,
+          "difference_interval95": [
+            -27.542578125,
+            -25.90927734375
+          ]
+        }
+      },
+      "run18_first60": {
+        "peak_ADC": {
+          "MC_median": 433.515625,
+          "data_median": 510.734375,
+          "median_difference": -77.21875,
+          "difference_interval95": [
+            -90.953125,
+            -67.60917968750002
+          ]
+        },
+        "peak_per_Q": {
+          "MC_median": 0.0017060215680787488,
+          "data_median": 0.0016345430893020918,
+          "median_difference": 7.147847877665703e-05,
+          "difference_interval95": [
+            4.2968485585828145e-05,
+            8.92841890638138e-05
+          ]
+        },
+        "tpeak_minus_t10_ns": {
+          "MC_median": 316.41888020833335,
+          "data_median": 285.08859375,
+          "median_difference": 31.330286458333376,
+          "difference_interval95": [
+            10.457231124561245,
+            43.038687188632174
+          ]
+        },
+        "short_long_ratio": {
+          "MC_median": 0.32507963854837596,
+          "data_median": 0.32334083173014316,
+          "median_difference": 0.0017388068182327965,
+          "difference_interval95": [
+            -0.00028884697077018043,
+            0.00437500294353751
+          ]
+        },
+        "baseline_RMS_ADC": {
+          "MC_median": 3.2146822764626686,
+          "data_median": 4.96511266236729,
+          "median_difference": -1.7504303859046217,
+          "difference_interval95": [
+            -1.838858945115086,
+            -1.6379845275967806
+          ]
+        },
+        "baseline_ADC": {
+          "MC_median": 3042.53125,
+          "data_median": 3057.015625,
+          "median_difference": -14.484375,
+          "difference_interval95": [
+            -14.78515625,
+            -14.1623046875
+          ]
+        }
+      }
+    }
+  }
+}

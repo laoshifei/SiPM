@@ -1,0 +1,71 @@
+{
+  "code_sha256": "26becab03eb83179ee84d5fbe5f6e8f2826131b1760da1d292ca7d967d173a8a",
+  "groups": {
+    "run3_first60": {
+      "n": 2450,
+      "input": "simulation/results/signal_fluctuations_20261028/run3_first60.npz",
+      "input_sha256": "95462fa2ab57243fa669e1b4811469df40f2f3522e005db9dc3e64130865add3",
+      "pool_sha256": "52557bc1955fece5b47b385008620e6fecac709e7e1cd57b9ed1abbad0d984bc",
+      "particle_truth": "Not available; source provenance only."
+    },
+    "run3_middle20": {
+      "n": 853,
+      "input": "simulation/results/signal_fluctuations_20261028/run3_middle20.npz",
+      "input_sha256": "87d8ca246dd872e8e62f0b0083262b5e0386213340a0f021963e7f3d14cfd1aa",
+      "pool_sha256": "52557bc1955fece5b47b385008620e6fecac709e7e1cd57b9ed1abbad0d984bc",
+      "particle_truth": "Not available; source provenance only."
+    },
+    "run3_last20": {
+      "n": 826,
+      "input": "simulation/results/signal_fluctuations_20261028/run3_last20.npz",
+      "input_sha256": "63873053f70e3cf4d8ff6d1b4d2b7af3b7aa15b24eaa75973740f443daa67033",
+      "pool_sha256": "52557bc1955fece5b47b385008620e6fecac709e7e1cd57b9ed1abbad0d984bc",
+      "particle_truth": "Not available; source provenance only."
+    },
+    "run12_first60": {
+      "n": 1547,
+      "input": "simulation/results/signal_fluctuations_20261028/run12_first60.npz",
+      "input_sha256": "887ce1d2cec395f61ee1a196de2ca9b70d790403d60b83335c76df204816504b",
+      "pool_sha256": "5a930defee4c9d67cccf88cdb880fbd1c986cd5dc64ff87e71e0b73eea7acc82",
+      "particle_truth": "Not available; source provenance only."
+    },
+    "run12_middle20": {
+      "n": 460,
+      "input": "simulation/results/signal_fluctuations_20261028/run12_middle20.npz",
+      "input_sha256": "7ad68fb1e6b6e14fa63c3ac4b4c29333350fae03e7372efcb1a11a477684ade4",
+      "pool_sha256": "5a930defee4c9d67cccf88cdb880fbd1c986cd5dc64ff87e71e0b73eea7acc82",
+      "particle_truth": "Not available; source provenance only."
+    },
+    "run12_last20": {
+      "n": 407,
+      "input": "simulation/results/signal_fluctuations_20261028/run12_last20.npz",
+      "input_sha256": "f016f8e88ff9c6d27ee6f568e3f12070e6b18c2902b1dc2a28ca57fe877c1237",
+      "pool_sha256": "5a930defee4c9d67cccf88cdb880fbd1c986cd5dc64ff87e71e0b73eea7acc82",
+      "particle_truth": "Not available; source provenance only."
+    },
+    "run18_first60": {
+      "n": 3000,
+      "input": "simulation/results/waveform_refit_20261029/run18/run18_first60.npz",
+      "input_sha256": "9061223c0c63b89e3ab4ee589e4af3c7b6fe65c0d7187ce8b19ffc6fa7c6583d",
+      "pool_sha256": "85be274e22d08e2c84e426f200b8d7d9b535a96b4a31bea8b218a9db05369bcb",
+      "particle_truth": "Not available; source provenance only."
+    },
+    "run18_middle20": {
+      "n": 3000,
+      "input": "simulation/results/waveform_refit_20261029/run18/run18_middle20.npz",
+      "input_sha256": "c2572a78fd5eb771a1e1a2bfd99fa2a119145f0951d453b2847a929acbd55b0e",
+      "pool_sha256": "85be274e22d08e2c84e426f200b8d7d9b535a96b4a31bea8b218a9db05369bcb",
+      "particle_truth": "Not available; source provenance only."
+    },
+    "run18_last20": {
+      "n": 3000,
+      "input": "simulation/results/waveform_refit_20261029/run18/run18_last20.npz",
+      "input_sha256": "f091ef07cc99f797c076edab0fc50fab3aa8149bdbdfd4556fefb65cbddc567a",
+      "pool_sha256": "85be274e22d08e2c84e426f200b8d7d9b535a96b4a31bea8b218a9db05369bcb",
+      "particle_truth": "Not available; source provenance only."
+    }
+  },
+  "PCA_path": "analysis/paper_baseline/results/publication_20261028/point.json",
+  "PCA_sha256": "a02a7a261de4b016737c9ed553a63aae801ada172006f026ea904778d4ce90c0",
+  "PCA_refit": false
+}

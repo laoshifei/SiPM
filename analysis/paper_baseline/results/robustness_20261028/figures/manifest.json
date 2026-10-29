@@ -1,0 +1,12 @@
+{
+  "stems": [
+    "figS01_full_cohort",
+    "figS02_charge_matched_mc"
+  ],
+  "code_sha256": "55d28915f874799a4d6ecb14c7e83b6ab6cc4a30e4cba45fe748ae46f6832949",
+  "inputs_sha256": {
+    "full_cohort_covariance.json": "22fc061d209c1dd3be031df84881f893020bd3be902de2800670a20bf388e1b1",
+    "mc_charge_matched.json": "91df781107402a9aa822d13a18574a4d6e42f3d23971badd774fa5dd8b379c2a"
+  },
+  "note": "Only panel(a) of S01 has intervals. S02 uses source-specific common support, never all six bins for both sources."
+}

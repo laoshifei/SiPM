@@ -1,0 +1,138 @@
+{
+  "scope": "Conditional stationary Poisson-shot-noise check of the assumed signal kernel.\n\nFor a unit-area impulse h and avalanche ADC area A, Var(filtered signal)/mean\nsignal = A * integral |H(f) F(f)|^2 df. This is an analytic diagnostic only,\nnot a replacement for Geant4, a likelihood fit or a measured SiPM time constant.\n",
+  "assumptions": {
+    "SPE_rise_ns": 2.0,
+    "SPE_decay_ns": 29.0,
+    "avalanche_area_adc_ns": 446.251053514752,
+    "var_scale": "Constant ADC area per independent avalanche, locally stationary rate, no correlated avalanches. 2ns aperture and discrete centered box filters; finite 1000-sample variance correction."
+  },
+  "limits": "Pulse rate changes over the finite window, current recovery, finite MC, signal/noise cross terms and deterministic curvature are not fully represented. Metric-specific RC crossings are conditional diagnostic values, not measured circuit constants. Do not export this as a calibrated detector configuration.",
+  "inputs_sha256": {
+    "simulation/results/fluctuations_20261028/diagnostics.json": "8d399408a03add2ed0e409abcad081a89ddd46059e01aded84738bb6714ab7a1",
+    "simulation/results/response_factorization_20261028/fluctuations/diagnostics.json": "73a5470c179ea36816301dec54440952f146ee5b45b1d41a955115a3c347960e",
+    "simulation/results/joint_optical_20261028/co60/config.json": "540df2c412020ab82f4e0127983f96d47b5c4cb54fb1b27aab578ab7ef376838"
+  },
+  "code_sha256": {
+    "simulation/profile_signal_response.py": "af78b2db1ef7ec8314d46efb8c372fa8d203f48256f6ecd6118d42c45ebb5a60"
+  },
+  "sources": {
+    "Co60": {
+      "observed_medians": [
+        0.08563722828112166,
+        0.16395330647283202,
+        0.29286448292098743
+      ],
+      "metric_specific_RC_crossings_ns": [
+        34.86278162934006,
+        61.73216332140771,
+        92.6329481385614
+      ],
+      "best_shared_RC_for_three_metrics_ns": 55.60268034744619,
+      "best_predictions": [
+        0.03700491635295536,
+        0.19650980645196126,
+        0.6638512346543085
+      ],
+      "best_fractional_residuals": [
+        -0.5678875052859117,
+        0.19857178046314083,
+        1.266752280895087
+      ],
+      "frozen_MC_proxy_checks": {
+        "zero_RC_finite_emission_rise": {
+          "analytic": [
+            1.543593453567556,
+            3.0941636570956805,
+            4.776030596349426
+          ],
+          "full_MC_median": [
+            1.4861000611245008,
+            2.971138358470756,
+            4.558813260391674
+          ],
+          "relative_difference": [
+            0.03868743023908583,
+            0.041406788840438136,
+            0.047647781023408164
+          ]
+        },
+        "previous_RC94": {
+          "analytic": [
+            0.013530810813839287,
+            0.075836186860536,
+            0.2830737056208694
+          ],
+          "full_MC_median": [
+            0.011606995032846965,
+            0.06767883023001016,
+            0.2589781268525388
+          ],
+          "relative_difference": [
+            0.16574623970700952,
+            0.12053040223660227,
+            0.09304098018305051
+          ]
+        }
+      }
+    },
+    "Am241": {
+      "observed_medians": [
+        0.2211244393362049,
+        0.4506823362993708,
+        0.8354393549349496
+      ],
+      "metric_specific_RC_crossings_ns": [
+        19.383638628310504,
+        33.15459403705504,
+        47.339231459120576
+      ],
+      "best_shared_RC_for_three_metrics_ns": 28.106041335598714,
+      "best_predictions": [
+        0.1233009986717726,
+        0.5709482197365557,
+        1.5698847967440999
+      ],
+      "best_fractional_residuals": [
+        -0.4423909042260965,
+        0.26685288894326,
+        0.8791128134804433
+      ],
+      "frozen_MC_proxy_checks": {
+        "zero_RC_finite_emission_rise": {
+          "analytic": [
+            1.543593453567556,
+            3.0941636570956805,
+            4.776030596349426
+          ],
+          "full_MC_median": [
+            1.4907993648738325,
+            2.9778857110934576,
+            4.636928837776732
+          ],
+          "relative_difference": [
+            0.03541327554710327,
+            0.03904714864276193,
+            0.02999868305923581
+          ]
+        },
+        "previous_RC94": {
+          "analytic": [
+            0.013530810813839287,
+            0.075836186860536,
+            0.2830737056208694
+          ],
+          "full_MC_median": [
+            0.012189204149017897,
+            0.06679022968461594,
+            0.23673046523824437
+          ],
+          "relative_difference": [
+            0.11006515670914285,
+            0.13543833010659134,
+            0.19576373634878563
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "code_sha256": "f451ae3bbbf579e34a87dfea9e8ae0db0b6e6c9154d4bcf77f01fd764792cba3",
+  "tables": [
+    {
+      "file": "S01_cohort_flow.csv",
+      "rows": 24,
+      "columns": [
+        "run",
+        "segment",
+        "saved",
+        "basic",
+        "four_windows",
+        "pretrigger_primary",
+        "common_Q",
+        "amplitude200",
+        "bit_clear",
+        "time_support",
+        "frozen_primary"
+      ],
+      "description": "Sequential event flow in every original acquisition-index segment",
+      "units": "counts",
+      "uncertainty": "No efficiency or live-time denominator inferred",
+      "sha256": "de753bc251d137d12cfa015951fe59dcf803d3ebf4337b1b2a71e3c14c52818e"
+    },
+    {
+      "file": "S02_window_method_FOM.csv",
+      "rows": 18,
+      "columns": [
+        "block_events",
+        "window_end_ns",
+        "method",
+        "median_FOM",
+        "interval95_low",
+        "interval95_high",
+        "valid_draws",
+        "total_draws"
+      ],
+      "description": "Median of six fixed-Q-bin FWHM FOM values",
+      "units": "dimensionless",
+      "uncertainty": "Paired block percentile; PCA and mixture nuisance refit; unadjusted exploratory intervals",
+      "sha256": "548f8374d78b2986c516a5852618a2a37dcd45f4699c970f1df85c6212b23609"
+    },
+    {
+      "file": "S03_paired_method_differences.csv",
+      "rows": 126,
+      "columns": [
+        "block_events",
+        "window_end_ns",
+        "comparison",
+        "summary",
+        "Q_bin_zero_based",
+        "point",
+        "interval95_low",
+        "interval95_high",
+        "valid_draws",
+        "total_draws"
+      ],
+      "description": "Paired differences; median and per-bin summaries are distinct",
+      "units": "dimensionless",
+      "uncertainty": "Conditional percentile intervals; no multiplicity correction",
+      "sha256": "6c3e3a9f75380aaf500090e00c8a4120a18f791352bdeccc46a76f0d2e634ebf"
+    },
+    {
+      "file": "S04_selection_and_core_models.csv",
+      "rows": 27,
+      "columns": [
+        "selection",
+        "core_family",
+        "fixed_dof",
+        "method",
+        "training_n",
+        "median_FWHM_FOM"
+      ],
+      "description": "3us point sensitivity; Student-t checks added after Gaussian baseline",
+      "units": "dimensionless",
+      "uncertainty": "Point estimates only; t scale is not a standard deviation",
+      "sha256": "72ee2941b6e0a6f5f99844d76ec72d1c5eca6da78c05cccca3d17b1be15bcf0f"
+    },
+    {
+      "file": "S05_cross_run_effects.csv",
+      "rows": 54,
+      "columns": [
+        "check_group",
+        "reference",
+        "supported_Q_bins_zero_based",
+        "method",
+        "metric",
+        "point",
+        "interval95_low",
+        "interval95_high",
+        "draws"
+      ],
+      "description": "Equal supported-Q-bin transfer effects with training uncertainty",
+      "units": "dimensionless",
+      "uncertainty": "Conditional block intervals; KS is not a p-value; IQR is not a particle-peak width",
+      "sha256": "d584f5ee890a18ca75d3db7c25a84a85c00253e825f487f6a176558ea65dfd69"
+    },
+    {
+      "file": "S06_transfer_selection.csv",
+      "rows": 135,
+      "columns": [
+        "check_group",
+        "variant",
+        "supported_Q_bins_zero_based",
+        "check_n",
+        "reference_n",
+        "method",
+        "metric",
+        "primary_same_support",
+        "alternative_same_support"
+      ],
+      "description": "Primary and alternative evaluated on identical supported Q cells",
+      "units": "dimensionless",
+      "uncertainty": "Point sensitivity; original primary PCA fixed",
+      "sha256": "380be140ea1a37662c5b735173d92925345f0ce2d0a5cc4c9cc5651933f0c6d6"
+    },
+    {
+      "file": "S07_primary_local_covariance.csv",
+      "rows": 144,
+      "columns": [
+        "run",
+        "view",
+        "block_events",
+        "filter_ns",
+        "window_start_ns",
+        "window_end_ns",
+        "equal_Q_point_ADC",
+        "interval95_low",
+        "interval95_high",
+        "draws"
+      ],
+      "description": "Frozen-cohort zero-lag excess covariance, six Q bins equally weighted",
+      "units": "ADC",
+      "uncertainty": "Each cell mean recomputed per block draw; not a gain measurement",
+      "sha256": "3ba74562c0729de08bcd264086e49133abc6e08d7a3c52acac1491c56aa608fe"
+    },
+    {
+      "file": "S08_full_cohort_covariance.csv",
+      "rows": 26,
+      "columns": [
+        "scope",
+        "shape_view",
+        "Q_bins",
+        "time_quarter_zero_based",
+        "supported_Q_bins_zero_based",
+        "run12_ADC",
+        "run18_ADC",
+        "run12_over18_minus1",
+        "interval95_low",
+        "interval95_high"
+      ],
+      "description": "50ns filter,500--900ns local endpoint only",
+      "units": "ADC for means; fraction for relative contrast",
+      "uncertainty": "Only six-bin full/frozen first-two-view rows have512 block64 intervals; all other rows point-only",
+      "sha256": "283e7cf429c0eeb1f05cfebe3753d7bf0c37b1986830ec310c6564c408f20baf"
+    },
+    {
+      "file": "S09_MC_original_metrics.csv",
+      "rows": 36,
+      "columns": [
+        "source",
+        "candidate",
+        "metric",
+        "measured_n",
+        "parent_decays",
+        "common_Q_MC_n",
+        "point",
+        "joint_interval95_low",
+        "joint_interval95_high",
+        "MC_only_interval95_low",
+        "MC_only_interval95_high"
+      ],
+      "description": "Original fixed-range MC comparison, before Q-population reweighting",
+      "units": "F:ADC; other metrics:dimensionless",
+      "uncertainty": "512 shared-parent draws; broad-selected Q reference held fixed; geometry/circuit uncertainty excluded",
+      "sha256": "ba196fd41a9184e61ee93890a2b38adfc33710e8d9926cd5e116b80b45e2d43f"
+    },
+    {
+      "file": "S10_MC_Q_matched.csv",
+      "rows": 96,
+      "columns": [
+        "source",
+        "min_MC_n_per_bin",
+        "weight_target",
+        "candidate",
+        "supported_Q_bins_zero_based",
+        "bin_weights",
+        "measured_n",
+        "MC_n",
+        "MC_effective_weighted_n",
+        "metric",
+        "point",
+        "interval95_low",
+        "interval95_high",
+        "valid_draws",
+        "total_draws",
+        "weighted_Q_KS_point"
+      ],
+      "description": "Fixed supported cells and shared Q-bin weights for data and all candidates",
+      "units": "relative residuals and NRMSE:fractions; KS:dimensionless",
+      "uncertainty": "512 paired-parent and recorded-block draws; empty cells counted as invalid; source-specific support",
+      "sha256": "434bff648b1ce913c3dbf5b3050de9651db98d1bfe166f4514b11a7a9db6870d"
+    },
+    {
+      "file": "S11_MC_Q_support.csv",
+      "rows": 48,
+      "columns": [
+        "source",
+        "dataset",
+        "Q_bin_zero_based",
+        "Q_low_ADC_samples",
+        "Q_high_ADC_samples",
+        "n",
+        "supported_all_candidates_min10",
+        "supported_all_candidates_min5"
+      ],
+      "description": "Counts and missing Q coverage before choosing supported cells",
+      "units": "counts; Q:ADC samples",
+      "uncertainty": "No extrapolation into missing cells; bin numbers are zero-based",
+      "sha256": "552af324301ff8d1836c06213a1e61ffe11c2a8d11ac225d466d7452c9f14c55"
+    },
+    {
+      "file": "S12_full_cohort_Q_cells.csv",
+      "rows": 504,
+      "columns": [
+        "run",
+        "scope",
+        "shape_view",
+        "number_Q_bins",
+        "Q_bin_zero_based",
+        "Q_low_ADC_samples",
+        "Q_high_ADC_samples",
+        "n",
+        "eligible_n_ge10",
+        "excess_covariance_ADC"
+      ],
+      "description": "Per-Q-cell sufficient-statistic covariance for the declared local endpoint",
+      "units": "ADC",
+      "uncertainty": "Point estimates only; cells below10 events not estimated",
+      "sha256": "6a6999281401310a1e639e53b1c696dddb9020b91aba8333c1247fe0e91f869f"
+    }
+  ],
+  "inputs_sha256": {
+    "analysis/paper_baseline/results/publication_20261028/protocol.json": "ae27c8a32adfcbedff8ee94a229c88a64011e0566117658eda0791c86e6ad763",
+    "analysis/paper_baseline/results/publication_20261028/point.json": "a02a7a261de4b016737c9ed553a63aae801ada172006f026ea904778d4ce90c0",
+    "analysis/paper_baseline/results/publication_20261028/paired_uncertainty.json": "118c618f56b86dc2a51ec91a8443b59225a395230b9ab21b0dd57aa9598c6545",
+    "analysis/paper_baseline/results/publication_20261028/core_model_sensitivity.json": "b1c74744d6c1bab86348a3533d14fd869da4cfe4a37de3e5f54e68645e4f7882",
+    "analysis/paper_baseline/results/publication_20261028/transfer_uncertainty.json": "2c563cbb9435a8a1e80427cf623865f4bb4f2ea8e816aef8e80d0b3e36784b2a",
+    "analysis/paper_baseline/results/publication_20261028/transfer_matched.json": "7a7c32afabd200b5f6a4af18d0b6558e0ab09c065677a45a72e88723dd0333ba",
+    "analysis/paper_baseline/results/publication_20261028/transfer_selection_sensitivity.json": "cc66152fe05a8ea07bad5095158fad9927cdaad43b66071ee21ca82a6db72c28",
+    "analysis/paper_baseline/results/publication_20261028/covariance_uncertainty.json": "7b2e798654dd8250b8234cb56c4d8a9d2de6ee10be1088bf3662acb7c5cc88ce",
+    "analysis/paper_baseline/results/robustness_20261028/full_cohort_covariance.json": "22fc061d209c1dd3be031df84881f893020bd3be902de2800670a20bf388e1b1",
+    "analysis/paper_baseline/results/publication_20261028/mc_uncertainty.json": "0589adb0f1ac5f737e5e879ee2eb300584d8621b3eec41d218a27535f6a9b9ea",
+    "analysis/paper_baseline/results/robustness_20261028/mc_charge_matched.json": "91df781107402a9aa822d13a18574a4d6e42f3d23971badd774fa5dd8b379c2a",
+    "analysis/paper_baseline/results/robustness_20261028/full_run12.npz": "dbefb812794c07737423b7e7f9b52be3f6b25466b0a539e66d3aa350dc830f52",
+    "analysis/paper_baseline/results/robustness_20261028/full_run18.npz": "857697528210d19a5d5572b99516e1380dce3e79d9cc0ddfbaa69c990a836c67"
+  },
+  "conventions": "UTF-8 BOM CSV; empty interval fields mean not estimated, never zero. Relative effects are fractions, not percent. Q-bin/time-quarter numbers are zero-based. All methods and gates preserve source-vs-particle distinction."
+}

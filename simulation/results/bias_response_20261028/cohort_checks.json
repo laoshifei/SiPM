@@ -1,0 +1,475 @@
+{
+  "scope": "Cohort reproducibility and descriptive cross-run checks; no response parameters exported",
+  "cohorts": {
+    "run3_first60": {
+      "pulse_n_available": 2450,
+      "pulse_n_used": 2450,
+      "noise_n_used": 2863,
+      "event_ids_and_selection_match": true
+    },
+    "run3_middle20": {
+      "pulse_n_available": 853,
+      "pulse_n_used": 853,
+      "noise_n_used": 955,
+      "event_ids_and_selection_match": true
+    },
+    "run3_last20": {
+      "pulse_n_available": 826,
+      "pulse_n_used": 826,
+      "noise_n_used": 936,
+      "event_ids_and_selection_match": true
+    },
+    "run7_first60": {
+      "pulse_n_available": 356,
+      "pulse_n_used": 356,
+      "noise_n_used": 2848,
+      "event_ids_and_selection_match": true
+    },
+    "run7_middle20": {
+      "pulse_n_available": 111,
+      "pulse_n_used": 111,
+      "noise_n_used": 949,
+      "event_ids_and_selection_match": true
+    },
+    "run7_last20": {
+      "pulse_n_available": 123,
+      "pulse_n_used": 123,
+      "noise_n_used": 950,
+      "event_ids_and_selection_match": true
+    },
+    "run10_first60": {
+      "pulse_n_available": 213,
+      "pulse_n_used": 213,
+      "noise_n_used": 2976,
+      "event_ids_and_selection_match": true
+    },
+    "run10_middle20": {
+      "pulse_n_available": 72,
+      "pulse_n_used": 72,
+      "noise_n_used": 992,
+      "event_ids_and_selection_match": true
+    },
+    "run10_last20": {
+      "pulse_n_available": 52,
+      "pulse_n_used": 52,
+      "noise_n_used": 993,
+      "event_ids_and_selection_match": true
+    },
+    "run11_first60": {
+      "pulse_n_available": 5321,
+      "pulse_n_used": 3000,
+      "noise_n_used": 3000,
+      "event_ids_and_selection_match": true
+    },
+    "run11_middle20": {
+      "pulse_n_available": 1666,
+      "pulse_n_used": 1666,
+      "noise_n_used": 3000,
+      "event_ids_and_selection_match": true
+    },
+    "run11_last20": {
+      "pulse_n_available": 1659,
+      "pulse_n_used": 1659,
+      "noise_n_used": 3000,
+      "event_ids_and_selection_match": true
+    },
+    "run12_first60": {
+      "pulse_n_available": 1547,
+      "pulse_n_used": 1547,
+      "noise_n_used": 3000,
+      "event_ids_and_selection_match": true
+    },
+    "run12_middle20": {
+      "pulse_n_available": 460,
+      "pulse_n_used": 460,
+      "noise_n_used": 1498,
+      "event_ids_and_selection_match": true
+    },
+    "run12_last20": {
+      "pulse_n_available": 407,
+      "pulse_n_used": 407,
+      "noise_n_used": 1497,
+      "event_ids_and_selection_match": true
+    },
+    "run13_first60": {
+      "pulse_n_available": 25386,
+      "pulse_n_used": 3000,
+      "noise_n_used": 3000,
+      "event_ids_and_selection_match": true
+    },
+    "run13_middle20": {
+      "pulse_n_available": 8586,
+      "pulse_n_used": 3000,
+      "noise_n_used": 3000,
+      "event_ids_and_selection_match": true
+    },
+    "run13_last20": {
+      "pulse_n_available": 8696,
+      "pulse_n_used": 3000,
+      "noise_n_used": 3000,
+      "event_ids_and_selection_match": true
+    },
+    "run14_first60": {
+      "pulse_n_available": 50386,
+      "pulse_n_used": 3000,
+      "noise_n_used": 3000,
+      "event_ids_and_selection_match": true
+    },
+    "run14_middle20": {
+      "pulse_n_available": 16649,
+      "pulse_n_used": 3000,
+      "noise_n_used": 3000,
+      "event_ids_and_selection_match": true
+    },
+    "run14_last20": {
+      "pulse_n_available": 16742,
+      "pulse_n_used": 3000,
+      "noise_n_used": 3000,
+      "event_ids_and_selection_match": true
+    },
+    "run18_first60": {
+      "pulse_n_available": 65034,
+      "pulse_n_used": 3000,
+      "noise_n_used": 3000,
+      "event_ids_and_selection_match": true
+    },
+    "run18_middle20": {
+      "pulse_n_available": 21628,
+      "pulse_n_used": 3000,
+      "noise_n_used": 3000,
+      "event_ids_and_selection_match": true
+    },
+    "run18_last20": {
+      "pulse_n_available": 21521,
+      "pulse_n_used": 3000,
+      "noise_n_used": 3000,
+      "event_ids_and_selection_match": true
+    }
+  },
+  "previous_metric_regression": {
+    "3": {
+      "original_n": 2450,
+      "current_n": 2450,
+      "exact_metric_match_on_shared_events": true,
+      "removed_indices": [],
+      "removed_t10_samples": [],
+      "only_change": "Additional fixed pretrigger-spectrum support requirement t10>=384 samples"
+    },
+    "12": {
+      "original_n": 1551,
+      "current_n": 1547,
+      "exact_metric_match_on_shared_events": true,
+      "removed_indices": [
+        819,
+        1508,
+        1511,
+        1732
+      ],
+      "removed_t10_samples": [
+        381.691015625,
+        381.24640625,
+        379.0621875,
+        379.3378125
+      ],
+      "only_change": "Additional fixed pretrigger-spectrum support requirement t10>=384 samples"
+    }
+  },
+  "shape_comparisons": {
+    "10_versus_12": {
+      "scope": "Measured versus measured, not MC accuracy",
+      "time_range_ns": [
+        -100,
+        3500
+      ],
+      "area_normalized_peak_NRMSE": 0.012544687763604396
+    },
+    "11_versus_12": {
+      "scope": "Measured versus measured, not MC accuracy",
+      "time_range_ns": [
+        -100,
+        3500
+      ],
+      "area_normalized_peak_NRMSE": 0.0019595453069858786
+    },
+    "13_versus_12": {
+      "scope": "Measured versus measured, not MC accuracy",
+      "time_range_ns": [
+        -100,
+        3500
+      ],
+      "area_normalized_peak_NRMSE": 0.002085928395041321
+    },
+    "14_versus_12": {
+      "scope": "Measured versus measured, not MC accuracy",
+      "time_range_ns": [
+        -100,
+        3500
+      ],
+      "area_normalized_peak_NRMSE": 0.002216331555936036
+    },
+    "18_versus_12": {
+      "scope": "Measured versus measured, not MC accuracy",
+      "time_range_ns": [
+        -100,
+        3500
+      ],
+      "area_normalized_peak_NRMSE": 0.0025137826790769917
+    }
+  },
+  "pairs": {
+    "12_over_18": {
+      "raw_median_50ns_ratio": 1.6260009747464168,
+      "spectral_20_80MHz_median_ratio": 1.612640371700568,
+      "per_Q_bin_median_ratios": [
+        {
+          "q_low": 201824.1125,
+          "q_high": 237975.62708333333,
+          "n": [
+            557,
+            417
+          ],
+          "ratios": [
+            1.6021156629429534,
+            1.5932327977414633,
+            1.5554996017853562
+          ]
+        },
+        {
+          "q_low": 237975.62708333333,
+          "q_high": 274127.14166666666,
+          "n": [
+            389,
+            488
+          ],
+          "ratios": [
+            1.6547485369756982,
+            1.5947837428543534,
+            1.5443846951210818
+          ]
+        },
+        {
+          "q_low": 274127.14166666666,
+          "q_high": 310278.65625,
+          "n": [
+            232,
+            558
+          ],
+          "ratios": [
+            1.6141799852185812,
+            1.545106841878365,
+            1.541719538264311
+          ]
+        },
+        {
+          "q_low": 310278.65625,
+          "q_high": 346430.17083333334,
+          "n": [
+            171,
+            541
+          ],
+          "ratios": [
+            1.5762308577971411,
+            1.5590656242646599,
+            1.554772625810035
+          ]
+        },
+        {
+          "q_low": 346430.17083333334,
+          "q_high": 382581.6854166667,
+          "n": [
+            114,
+            527
+          ],
+          "ratios": [
+            1.5929772138890923,
+            1.5544804076248229,
+            1.5174745447462772
+          ]
+        },
+        {
+          "q_low": 382581.6854166667,
+          "q_high": 418733.2,
+          "n": [
+            84,
+            469
+          ],
+          "ratios": [
+            1.5279375317806558,
+            1.5258523584692036,
+            1.546586619958732
+          ]
+        }
+      ],
+      "equal_six_bin_mean_of_medians_ratio": [
+        1.594275276525046,
+        1.5621326296367941,
+        1.5434613490802738
+      ]
+    },
+    "12_over_13": {
+      "raw_median_50ns_ratio": 2.6609481070026186,
+      "spectral_20_80MHz_median_ratio": 2.56732805949406,
+      "per_Q_bin_median_ratios": [
+        {
+          "q_low": 201824.1125,
+          "q_high": 237975.62708333333,
+          "n": [
+            557,
+            1578
+          ],
+          "ratios": [
+            2.7814573618840477,
+            2.592099061219331,
+            2.45200347237839
+          ]
+        },
+        {
+          "q_low": 237975.62708333333,
+          "q_high": 274127.14166666666,
+          "n": [
+            389,
+            913
+          ],
+          "ratios": [
+            2.6499806673622994,
+            2.464664255787785,
+            2.3509880379212342
+          ]
+        },
+        {
+          "q_low": 274127.14166666666,
+          "q_high": 310278.65625,
+          "n": [
+            232,
+            347
+          ],
+          "ratios": [
+            2.480781714455913,
+            2.4663967471118005,
+            2.3881773553739167
+          ]
+        },
+        {
+          "q_low": 310278.65625,
+          "q_high": 346430.17083333334,
+          "n": [
+            171,
+            114
+          ],
+          "ratios": [
+            2.6735835613248353,
+            2.5950255442927355,
+            2.479716131891781
+          ]
+        },
+        {
+          "q_low": 346430.17083333334,
+          "q_high": 382581.6854166667,
+          "n": [
+            114,
+            34
+          ],
+          "ratios": [
+            2.4831816799614805,
+            2.5083019530536586,
+            2.380766641461956
+          ]
+        }
+      ]
+    },
+    "12_over_3": {
+      "raw_median_50ns_ratio": 2.5835850506604148,
+      "spectral_20_80MHz_median_ratio": 2.4748260946989977,
+      "per_Q_bin_median_ratios": [
+        {
+          "q_low": 201824.1125,
+          "q_high": 237975.62708333333,
+          "n": [
+            557,
+            90
+          ],
+          "ratios": [
+            2.3021494130857763,
+            2.493376928113748,
+            2.8468820341450862
+          ]
+        },
+        {
+          "q_low": 237975.62708333333,
+          "q_high": 274127.14166666666,
+          "n": [
+            389,
+            145
+          ],
+          "ratios": [
+            2.3834089939147574,
+            2.6593239939622686,
+            2.687443522128422
+          ]
+        },
+        {
+          "q_low": 274127.14166666666,
+          "q_high": 310278.65625,
+          "n": [
+            232,
+            286
+          ],
+          "ratios": [
+            2.472832029558945,
+            2.6113336417626,
+            2.741717624328598
+          ]
+        },
+        {
+          "q_low": 310278.65625,
+          "q_high": 346430.17083333334,
+          "n": [
+            171,
+            530
+          ],
+          "ratios": [
+            2.560009151823451,
+            2.7331005449224195,
+            2.825489778824467
+          ]
+        },
+        {
+          "q_low": 346430.17083333334,
+          "q_high": 382581.6854166667,
+          "n": [
+            114,
+            765
+          ],
+          "ratios": [
+            2.5365277022278905,
+            2.711974489425387,
+            2.785146068954171
+          ]
+        },
+        {
+          "q_low": 382581.6854166667,
+          "q_high": 418733.2,
+          "n": [
+            84,
+            634
+          ],
+          "ratios": [
+            2.508278433153666,
+            2.709802979175654,
+            2.9144954771186016
+          ]
+        }
+      ],
+      "equal_six_bin_mean_of_medians_ratio": [
+        2.4549865725741147,
+        2.6490118901365802,
+        2.7984389353155494
+      ]
+    }
+  },
+  "inputs_sha256": {
+    "simulation/results/bias_response_20261028/bias_response.json": "de837481dec3c4ca863c9af4907b43795d2b4478ba0bd1783463bd01e9b7e8e3",
+    "simulation/results/bias_response_20261028/samples.npz": "496dd6b8c05b9edb0f6aa73d33b025bc55922e5171e154771d0ffbedef1f7d08",
+    "simulation/results/fluctuations_20261028/metrics.npz": "8a9b031c17e8b6e9ec2144459d967328bc4db8eea3074ce78c45c491f706bf7a"
+  }
+}

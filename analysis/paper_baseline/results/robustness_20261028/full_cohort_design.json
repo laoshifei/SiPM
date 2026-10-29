@@ -1,0 +1,57 @@
+{
+  "scope": "Uncapped-data and finer-Q checks of the primary local covariance contrast.\n\nPost-publication-baseline sensitivity, not a replacement primary cohort. The\nendpoint is fixed at the50ns filter and500--900ns window. Shared unsupported\nshape strata are counted; no event is relabelled as a particle or a bad pulse.\n",
+  "parent_record_sha256": "69d1858dafa473c58d795cbfbb40deb1aca5ad6a9a20e1d5920eb67de0bf18e1",
+  "parent_protocol_sha256": "ae27c8a32adfcbedff8ee94a229c88a64011e0566117658eda0791c86e6ad763",
+  "code_sha256": "52c0ba37533f36c3c43e828d85946137c8112cbe583090aa827f371d9633ad11",
+  "original_endpoint": "50ns centered box residual,500--900ns after ceil(t10),200 samples. Equal-length baseline[-600,-200)ns. Each divided by local pulse mean; conditional event means removed.",
+  "selection": "Same eligibility,amplitude>=200,bit0x8000clear,t10>=384 and fixed Q as the parent. Original first60 only. Full data and the exact frozen IDs both retained. No redefinition of the primary cohort.",
+  "shape_policy": "Primary comparison has ratio<.40, the original common populated shape stratum. Additional0.30<=ratio<0.35 and unstratified point views. Rare unsupported>=.40 events retained and counted, not called bad or assigned particle truth.",
+  "point_sensitivity": "Six,twelve,twenty-four equal-width Q cells, each run needs>=10 events. Temporal quarters refer to acquisition-index fractions within first60, not equal wall time. All four quarters share their common supported six-Q-bin intersection.",
+  "bootstrap": "512 original-index blocks64 and256 blocks128. Re-estimate each cell mean. Same run-specific draw for full/frozen and both shape views; point-six-Q support fixed. Percentile intervals conditional on recorded population,chosen model and cuts.",
+  "axes": {
+    "global": [
+      "scope",
+      "shape_view",
+      "24_Q_cells",
+      "signal_or_pre",
+      "200_samples"
+    ],
+    "block": [
+      "full_or_frozen",
+      "first_two_shape_views",
+      "original_block64",
+      "6_Q_cells",
+      "signal_or_pre",
+      "200_samples"
+    ]
+  },
+  "runs": {
+    "12": {
+      "original_n": 7516,
+      "first60_span": 4509,
+      "full_n": 1547,
+      "frozen_n": 1547,
+      "ratio_ge040_n": 0,
+      "ratio_ge040_ids": [],
+      "primary_coarse_shape_n": 1547,
+      "narrow_shape_n": 1338
+    },
+    "18": {
+      "original_n": 156966,
+      "first60_span": 94179,
+      "full_n": 65034,
+      "frozen_n": 3000,
+      "ratio_ge040_n": 2,
+      "ratio_ge040_ids": [
+        45356,
+        79618
+      ],
+      "primary_coarse_shape_n": 65032,
+      "narrow_shape_n": 60684
+    }
+  },
+  "input_sha256": {
+    "analysis/paper_baseline/results/publication_20261028/pool_run12.npz": "5a930defee4c9d67cccf88cdb880fbd1c986cd5dc64ff87e71e0b73eea7acc82",
+    "analysis/paper_baseline/results/publication_20261028/pool_run18.npz": "85be274e22d08e2c84e426f200b8d7d9b535a96b4a31bea8b218a9db05369bcb"
+  }
+}

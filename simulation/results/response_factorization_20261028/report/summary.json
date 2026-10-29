@@ -1,0 +1,681 @@
+{
+  "scope": "Controlled factorization, no refit of geometry, yield, gain, fractions, or decay constants.",
+  "selection": "Mean curves use original frozen common-Q reference (no flag cut). Fluctuations use training primary-QC + amplitude>=200 + same common Q, measured bit0x8000 clear. Do not conflate these populations.",
+  "uncertainties": "Intervals are conditional event-bootstrap intervals; do not include parameter, selection, hardware-history or geometry uncertainty. Old and new MC are independent, not event-paired.",
+  "inputs_sha256": {
+    "simulation/results/fluctuations_20261028/diagnostics.json": "8d399408a03add2ed0e409abcad081a89ddd46059e01aded84738bb6714ab7a1",
+    "simulation/results/response_factorization_20261028/fluctuations/diagnostics.json": "73a5470c179ea36816301dec54440952f146ee5b45b1d41a955115a3c347960e",
+    "simulation/results/response_factorization_20261028/joint_validation_final/validation.json": "c0384356c03b3e217afcecedc36bccb74ad1f0c00a09d50b5e0bd0c3ccf84945",
+    "simulation/results/response_factorization_20261028/common_charge/comparison.json": "d1d196febbb8b5d453d8bacca550a36e8b6687be3780d84175bace399a7a4c4a",
+    "simulation/results/response_factorization_20261028/design.json": "68b3cafb47a8e376f882c0ea713c26019211ec722684c717a3f2aa8cec7328d1"
+  },
+  "code_sha256": {
+    "simulation/report_response_test.py": "d6748e6aeef46d6a5f03ac05ec995f03f55ad5166bd686f75d707a0127e9b1be"
+  },
+  "sources": {
+    "Co60": {
+      "fluctuations": {
+        "50ns": {
+          "measured": {
+            "n": 2450,
+            "p10_p50_p90": [
+              0.062269197332123605,
+              0.08563722828112166,
+              0.11646231138189869
+            ],
+            "median_event_bootstrap_95": [
+              0.08458532274991361,
+              0.08646426497665058
+            ]
+          },
+          "old_mc": {
+            "n": 38,
+            "p10_p50_p90": [
+              0.0019295509461403112,
+              0.011606995032846965,
+              0.019024850237674217
+            ],
+            "median_event_bootstrap_95": [
+              0.007585790184653926,
+              0.014577485598032958
+            ]
+          },
+          "finite_rise_mc": {
+            "n": 165,
+            "p10_p50_p90": [
+              1.2448371547714687,
+              1.4861000611245008,
+              1.7363112146409951
+            ],
+            "median_event_bootstrap_95": [
+              1.433241884042094,
+              1.5239520215776723
+            ]
+          }
+        },
+        "102ns": {
+          "measured": {
+            "n": 2450,
+            "p10_p50_p90": [
+              0.12408899116188735,
+              0.16395330647283202,
+              0.21069934973527193
+            ],
+            "median_event_bootstrap_95": [
+              0.1622400420869247,
+              0.1654574434724048
+            ]
+          },
+          "old_mc": {
+            "n": 38,
+            "p10_p50_p90": [
+              0.04757625946930156,
+              0.06767883023001016,
+              0.09225330531955431
+            ],
+            "median_event_bootstrap_95": [
+              0.057945196935812425,
+              0.0715461232132071
+            ]
+          },
+          "finite_rise_mc": {
+            "n": 165,
+            "p10_p50_p90": [
+              2.394362757387034,
+              2.971138358470756,
+              3.578292665464408
+            ],
+            "median_event_bootstrap_95": [
+              2.8988157395796366,
+              3.0783446546695274
+            ]
+          }
+        },
+        "202ns": {
+          "measured": {
+            "n": 2450,
+            "p10_p50_p90": [
+              0.22039675819546298,
+              0.29286448292098743,
+              0.39140360381267897
+            ],
+            "median_event_bootstrap_95": [
+              0.28930176744081476,
+              0.2958796937542549
+            ]
+          },
+          "old_mc": {
+            "n": 38,
+            "p10_p50_p90": [
+              0.14432942451203082,
+              0.2589781268525388,
+              0.3567385912330478
+            ],
+            "median_event_bootstrap_95": [
+              0.21982371945945117,
+              0.2792972290779149
+            ]
+          },
+          "finite_rise_mc": {
+            "n": 165,
+            "p10_p50_p90": [
+              3.5064622812343393,
+              4.558813260391674,
+              5.8569570540112
+            ],
+            "median_event_bootstrap_95": [
+              4.3838243451333,
+              4.695918824501241
+            ]
+          }
+        }
+      },
+      "absolute_mean_and_spectra": {
+        "measured": {
+          "n": 2846,
+          "charge_quantiles": [
+            255489.375,
+            314598.875,
+            357574.75,
+            389307.5,
+            409937.0
+          ],
+          "ratio_quantiles": [
+            0.45136048591633254,
+            0.4585034832399702,
+            0.46521236420690576,
+            0.47152752435890743,
+            0.4772349489481075
+          ],
+          "mean_waveform_peak_adc": 767.9500230586789,
+          "mean_event_count": 2846
+        },
+        "old": {
+          "n": 114,
+          "charge_quantiles": [
+            146445.025,
+            217813.9375,
+            380726.6875,
+            488586.375,
+            593371.125
+          ],
+          "ratio_quantiles": [
+            0.44385899592024614,
+            0.44982884695329506,
+            0.458600674748717,
+            0.4668948537627989,
+            0.47510749898744536
+          ],
+          "mean_waveform_peak_adc": 828.6051702608795,
+          "mean_event_count": 114
+        },
+        "new": {
+          "n": 431,
+          "charge_quantiles": [
+            119548.125,
+            188735.5,
+            329393.0,
+            459026.5625,
+            571723.25
+          ],
+          "ratio_quantiles": [
+            0.43715791320722014,
+            0.4465591246350657,
+            0.4560674843383849,
+            0.4668713983442891,
+            0.4762755523426718
+          ],
+          "mean_waveform_peak_adc": 749.0616647191354,
+          "mean_event_count": 431
+        },
+        "old_discrepancy": {
+          "charge_loss": 5.663948239796932,
+          "ratio_loss": 0.0643916110547775,
+          "total_loss": 5.728339850851709,
+          "charge_ks_distance": 0.3873087497380133,
+          "ratio_ks_distance": 0.2659503643155675,
+          "charge_quantile_relative_residual": [
+            -0.4268058113962665,
+            -0.30764552956522806,
+            0.0647471263001651,
+            0.25501403132485256,
+            0.44746906231933203
+          ],
+          "ratio_quantile_residual": [
+            -0.007501489996086408,
+            -0.008674636286675141,
+            -0.006611689458188741,
+            -0.004632670596108557,
+            -0.002127449960662109
+          ]
+        },
+        "new_discrepancy": {
+          "charge_loss": 8.73234781541063,
+          "ratio_loss": 0.14419505701132354,
+          "total_loss": 8.876542872421954,
+          "charge_ks_distance": 0.29634379183222925,
+          "ratio_ks_distance": 0.3232215850634178,
+          "charge_quantile_relative_residual": [
+            -0.5320818135783534,
+            -0.40007573135790775,
+            -0.07881359072473659,
+            0.1790848172716939,
+            0.39466125282665376
+          ],
+          "ratio_quantile_residual": [
+            -0.014202572709112404,
+            -0.011944358604904504,
+            -0.009144879868520861,
+            -0.004656126014618345,
+            -0.0009593966054356473
+          ]
+        },
+        "input_sha256": {
+          "old": "2dc77dd231793b8a48ebc2561c00ed3c36a19208c0d844de443300090e028f30",
+          "new": "cc91691f57a3f8b0d9595022bfb4d2837e382afe460487435fa0a9817aa682a2"
+        },
+        "raw_training_sha256": "2afbb146fb8b79a7b133672b60cc6fffffa3b0e42b51f4ebb4f8e3b719676581"
+      }
+    },
+    "Am241": {
+      "fluctuations": {
+        "50ns": {
+          "measured": {
+            "n": 1551,
+            "p10_p50_p90": [
+              0.18254456762059296,
+              0.2211244393362049,
+              0.26738190339920165
+            ],
+            "median_event_bootstrap_95": [
+              0.21921469709887212,
+              0.22314601049904562
+            ]
+          },
+          "old_mc": {
+            "n": 95,
+            "p10_p50_p90": [
+              0.003258777839880882,
+              0.012189204149017897,
+              0.02042502252363815
+            ],
+            "median_event_bootstrap_95": [
+              0.009635305903337358,
+              0.013908837330403068
+            ]
+          },
+          "finite_rise_mc": {
+            "n": 208,
+            "p10_p50_p90": [
+              1.291179665298034,
+              1.4907993648738325,
+              1.7443185011787121
+            ],
+            "median_event_bootstrap_95": [
+              1.466867146727453,
+              1.5130950745695273
+            ]
+          }
+        },
+        "102ns": {
+          "measured": {
+            "n": 1551,
+            "p10_p50_p90": [
+              0.36849806718120587,
+              0.4506823362993708,
+              0.5573593703067706
+            ],
+            "median_event_bootstrap_95": [
+              0.4456172941733569,
+              0.4565231638033723
+            ]
+          },
+          "old_mc": {
+            "n": 95,
+            "p10_p50_p90": [
+              0.045774017409402276,
+              0.06679022968461594,
+              0.08463019614637411
+            ],
+            "median_event_bootstrap_95": [
+              0.06373758610463291,
+              0.06822721291724215
+            ]
+          },
+          "finite_rise_mc": {
+            "n": 208,
+            "p10_p50_p90": [
+              2.4254954577097627,
+              2.9778857110934576,
+              3.5517950933532396
+            ],
+            "median_event_bootstrap_95": [
+              2.9155452591723354,
+              3.0524255855758766
+            ]
+          }
+        },
+        "202ns": {
+          "measured": {
+            "n": 1551,
+            "p10_p50_p90": [
+              0.641732806298313,
+              0.8354393549349496,
+              1.0919930092383952
+            ],
+            "median_event_bootstrap_95": [
+              0.8258572694022163,
+              0.8446903826342083
+            ]
+          },
+          "old_mc": {
+            "n": 95,
+            "p10_p50_p90": [
+              0.1682219567717263,
+              0.23673046523824437,
+              0.36096806077543686
+            ],
+            "median_event_bootstrap_95": [
+              0.22501749469646753,
+              0.2565406931312583
+            ]
+          },
+          "finite_rise_mc": {
+            "n": 208,
+            "p10_p50_p90": [
+              3.731918177403536,
+              4.636928837776732,
+              5.59496518192594
+            ],
+            "median_event_bootstrap_95": [
+              4.5148985836031486,
+              4.817838513485535
+            ]
+          }
+        }
+      },
+      "absolute_mean_and_spectra": {
+        "measured": {
+          "n": 4406,
+          "charge_quantiles": [
+            142657.875,
+            165131.875,
+            206137.125,
+            307220.125,
+            548647.25
+          ],
+          "ratio_quantiles": [
+            0.30375107762432524,
+            0.31481202989138163,
+            0.3264684984946892,
+            0.33907774797299883,
+            0.3523836229454196
+          ],
+          "mean_waveform_peak_adc": 449.69204281093965,
+          "mean_event_count": 4406
+        },
+        "old": {
+          "n": 108,
+          "charge_quantiles": [
+            195319.4625,
+            226591.75,
+            251957.5,
+            275260.21875,
+            296889.5125
+          ],
+          "ratio_quantiles": [
+            0.31713544088482254,
+            0.3241481881387428,
+            0.3336370426962171,
+            0.3411719302628463,
+            0.3489496921529263
+          ],
+          "mean_waveform_peak_adc": 393.6217589773565,
+          "mean_event_count": 108
+        },
+        "new": {
+          "n": 240,
+          "charge_quantiles": [
+            197239.025,
+            227059.65625,
+            253954.5,
+            272991.875,
+            302205.52499999997
+          ],
+          "ratio_quantiles": [
+            0.3185265789764455,
+            0.3250453238179193,
+            0.33504280192577574,
+            0.3448792895081402,
+            0.35315133855234093
+          ],
+          "mean_waveform_peak_adc": 394.16613536192057,
+          "mean_event_count": 240
+        },
+        "old_discrepancy": {
+          "charge_loss": 5.584836193784388,
+          "ratio_loss": 0.10683857178519154,
+          "total_loss": 5.691674765569579,
+          "charge_ks_distance": 0.371231990047242,
+          "ratio_ks_distance": 0.21122711454077772,
+          "charge_quantile_relative_residual": [
+            0.369146025061708,
+            0.37218662356979837,
+            0.22228104229162993,
+            -0.10402933808454118,
+            -0.4588699524147801
+          ],
+          "ratio_quantile_residual": [
+            0.0133843632604973,
+            0.00933615824736117,
+            0.007168544201527904,
+            0.0020941822898474793,
+            -0.003433930792493267
+          ]
+        },
+        "new_discrepancy": {
+          "charge_loss": 5.506494694425117,
+          "ratio_loss": 0.13785654257882984,
+          "total_loss": 5.6443512370039475,
+          "charge_ks_distance": 0.36190043879558176,
+          "ratio_ks_distance": 0.24112195490997124,
+          "charge_quantile_relative_residual": [
+            0.38260173159035205,
+            0.37502015434633673,
+            0.23196876836232194,
+            -0.11141278586485825,
+            -0.4491806438472079
+          ],
+          "ratio_quantile_residual": [
+            0.014775501352120246,
+            0.010233293926537657,
+            0.00857430343108656,
+            0.005801541535141341,
+            0.0007677156069213487
+          ]
+        },
+        "input_sha256": {
+          "old": "1fa27bad9e0dd4365250f205d7a728b81145f852f654063d4e6079f5a10f404e",
+          "new": "afd4b9a1eba8b35b63378175439e5fc876412f31834b85e0440d5a51778edfab"
+        },
+        "raw_training_sha256": "aa778158a28560a2929b76038468e33875cd3a043ad80262661cd177f4e0044f"
+      }
+    }
+  },
+  "mean_checks": {
+    "run3_train": {
+      "mc_mean": {
+        "nrmse_peak": 0.012740694892857953,
+        "max_abs_residual_over_peak": 0.08001305873917887,
+        "integral_short_long_predicted": 0.45482052885744884,
+        "integral_short_long_measured_mean": 0.46364989005695095
+      },
+      "analytic_mean": {
+        "nrmse_peak": 0.011555164194066804,
+        "max_abs_residual_over_peak": 0.07023028478929064,
+        "integral_short_long_predicted": 0.462493537398825,
+        "integral_short_long_measured_mean": 0.46364989005695095
+      },
+      "mc_resampling_nrmse_95": [
+        0.0116134768027483,
+        0.015216962973596908
+      ],
+      "mc_resampling_scope": "1000 whole-event bootstrap replicates, seed 271999, measured mean and calibrated parameters fixed; not total model uncertainty"
+    },
+    "run3_middle": {
+      "mc_mean": {
+        "nrmse_peak": 0.012829132946560198,
+        "max_abs_residual_over_peak": 0.08038754690833969,
+        "integral_short_long_predicted": 0.45482052885744884,
+        "integral_short_long_measured_mean": 0.46299993345432255
+      },
+      "analytic_mean": {
+        "nrmse_peak": 0.011895918031503146,
+        "max_abs_residual_over_peak": 0.07079193355100867,
+        "integral_short_long_predicted": 0.462493537398825,
+        "integral_short_long_measured_mean": 0.46299993345432255
+      },
+      "mc_resampling_nrmse_95": [
+        0.011693154984686692,
+        0.015354144650923591
+      ],
+      "mc_resampling_scope": "1000 whole-event bootstrap replicates, seed 271999, measured mean and calibrated parameters fixed; not total model uncertainty"
+    },
+    "run3_late": {
+      "mc_mean": {
+        "nrmse_peak": 0.013103415889851703,
+        "max_abs_residual_over_peak": 0.08116597251099678,
+        "integral_short_long_predicted": 0.45482052885744884,
+        "integral_short_long_measured_mean": 0.4638579673765863
+      },
+      "analytic_mean": {
+        "nrmse_peak": 0.011833464938718124,
+        "max_abs_residual_over_peak": 0.07106638897462149,
+        "integral_short_long_predicted": 0.462493537398825,
+        "integral_short_long_measured_mean": 0.4638579673765863
+      },
+      "mc_resampling_nrmse_95": [
+        0.011913239038198136,
+        0.015593884638252146
+      ],
+      "mc_resampling_scope": "1000 whole-event bootstrap replicates, seed 271999, measured mean and calibrated parameters fixed; not total model uncertainty"
+    },
+    "run12_train": {
+      "mc_mean": {
+        "nrmse_peak": 0.020553274594503547,
+        "max_abs_residual_over_peak": 0.0749699201810534,
+        "integral_short_long_predicted": 0.3341816410883284,
+        "integral_short_long_measured_mean": 0.3225266388551846
+      },
+      "analytic_mean": {
+        "nrmse_peak": 0.01493745678196246,
+        "max_abs_residual_over_peak": 0.036818462818191865,
+        "integral_short_long_predicted": 0.3227671262160178,
+        "integral_short_long_measured_mean": 0.3225266388551846
+      },
+      "mc_resampling_nrmse_95": [
+        0.019420316376314466,
+        0.023641928198337516
+      ],
+      "mc_resampling_scope": "1000 whole-event bootstrap replicates, seed 271999, measured mean and calibrated parameters fixed; not total model uncertainty"
+    },
+    "run12_middle": {
+      "mc_mean": {
+        "nrmse_peak": 0.021154378039360714,
+        "max_abs_residual_over_peak": 0.08163787821959197,
+        "integral_short_long_predicted": 0.3341816410883284,
+        "integral_short_long_measured_mean": 0.32148208522035376
+      },
+      "analytic_mean": {
+        "nrmse_peak": 0.015162359591829553,
+        "max_abs_residual_over_peak": 0.04133312646730447,
+        "integral_short_long_predicted": 0.3227671262160178,
+        "integral_short_long_measured_mean": 0.32148208522035376
+      },
+      "mc_resampling_nrmse_95": [
+        0.01997588440007276,
+        0.02415942583460545
+      ],
+      "mc_resampling_scope": "1000 whole-event bootstrap replicates, seed 271999, measured mean and calibrated parameters fixed; not total model uncertainty"
+    },
+    "run12_late": {
+      "mc_mean": {
+        "nrmse_peak": 0.018843958246170595,
+        "max_abs_residual_over_peak": 0.07029445621286463,
+        "integral_short_long_predicted": 0.3341816410883284,
+        "integral_short_long_measured_mean": 0.32325340528230234
+      },
+      "analytic_mean": {
+        "nrmse_peak": 0.013603127233017289,
+        "max_abs_residual_over_peak": 0.030228682405177752,
+        "integral_short_long_predicted": 0.3227671262160178,
+        "integral_short_long_measured_mean": 0.32325340528230234
+      },
+      "mc_resampling_nrmse_95": [
+        0.017804471211966,
+        0.02196128324563452
+      ],
+      "mc_resampling_scope": "1000 whole-event bootstrap replicates, seed 271999, measured mean and calibrated parameters fixed; not total model uncertainty"
+    },
+    "run18_check": {
+      "mc_mean": {
+        "nrmse_peak": 0.020393937470714593,
+        "max_abs_residual_over_peak": 0.07439023229510638,
+        "integral_short_long_predicted": 0.3341816410883284,
+        "integral_short_long_measured_mean": 0.32292449471126783
+      },
+      "analytic_mean": {
+        "nrmse_peak": 0.015118789771605289,
+        "max_abs_residual_over_peak": 0.03468906726311884,
+        "integral_short_long_predicted": 0.3227671262160178,
+        "integral_short_long_measured_mean": 0.32292449471126783
+      },
+      "mc_resampling_nrmse_95": [
+        0.019236478618194223,
+        0.023432473514885196
+      ],
+      "mc_resampling_scope": "1000 whole-event bootstrap replicates, seed 271999, measured mean and calibrated parameters fixed; not total model uncertainty"
+    }
+  },
+  "individual_waveforms": {
+    "selection": "Measured Q25/Q75 rank within the fluctuation cohort; nearest-Q old/new MC (ties by saved order). No waveform-distance selection, amplitude scaling or denoising.",
+    "examples": [
+      {
+        "source": "Co60",
+        "run": 3,
+        "q_rank": 0.25,
+        "measured_event_id": 1782,
+        "measured_q": 318720.75,
+        "mc": {
+          "Previous MC": {
+            "event_id": 1388,
+            "q": 322151.5,
+            "q_relative_difference": 0.010764125021668569
+          },
+          "Finite-rise MC": {
+            "event_id": 657,
+            "q": 317404.625,
+            "q_relative_difference": -0.004129398540885676
+          }
+        }
+      },
+      {
+        "source": "Co60",
+        "run": 3,
+        "q_rank": 0.75,
+        "measured_event_id": 2603,
+        "measured_q": 383763.25,
+        "mc": {
+          "Previous MC": {
+            "event_id": 1038,
+            "q": 383192.625,
+            "q_relative_difference": -0.0014869193441529038
+          },
+          "Finite-rise MC": {
+            "event_id": 4817,
+            "q": 383475.5,
+            "q_relative_difference": -0.0007498112443022897
+          }
+        }
+      },
+      {
+        "source": "Am241",
+        "run": 12,
+        "q_rank": 0.25,
+        "measured_event_id": 1905,
+        "measured_q": 226475.25,
+        "mc": {
+          "Previous MC": {
+            "event_id": 7325,
+            "q": 227075.75,
+            "q_relative_difference": 0.00265150386190105
+          },
+          "Finite-rise MC": {
+            "event_id": 13942,
+            "q": 225517.0,
+            "q_relative_difference": -0.004231146670552355
+          }
+        }
+      },
+      {
+        "source": "Am241",
+        "run": 12,
+        "q_rank": 0.75,
+        "measured_event_id": 1404,
+        "measured_q": 307338.5,
+        "mc": {
+          "Previous MC": {
+            "event_id": 1044,
+            "q": 304197.0,
+            "q_relative_difference": -0.010221628595180832
+          },
+          "Finite-rise MC": {
+            "event_id": 10238,
+            "q": 307006.0,
+            "q_relative_difference": -0.0010818690141326526
+          }
+        }
+      }
+    ]
+  }
+}

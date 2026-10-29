@@ -1,0 +1,30 @@
+run3_first60 available/used 2450 2450 f50 0.08563722828112166 rms 3.36046817433036
+run3_middle20 available/used 853 853 f50 0.08339480538120793 rms 3.3414102577777913
+run3_last20 available/used 826 826 f50 0.08320557771000174 rms 3.3505970540383876
+run7_first60 available/used 356 356 f50 0.10480993126425117 rms 3.6717074055965773
+run7_middle20 available/used 111 111 f50 0.10337739650343121 rms 3.5760747738655434
+run7_last20 available/used 123 123 f50 0.09939675908706125 rms 3.7037516424183123
+run10_first60 available/used 213 213 f50 0.15068580330119427 rms 5.001304471737099
+run10_middle20 available/used 72 72 f50 0.14868409504451668 rms 4.644622331876238
+run10_last20 available/used 52 52 f50 0.141210708067652 rms 4.579425282429741
+run11_first60 available/used 5321 3000 f50 0.08679775488018696 rms 3.520367365230931
+run11_middle20 available/used 1666 1666 f50 0.07311202052711216 rms 3.9526242052157325
+run11_last20 available/used 1659 1659 f50 0.07007969129947608 rms 3.98666475770738
+run12_first60 available/used 1547 1547 f50 0.22125106276709922 rms 3.2153381475530654
+run12_middle20 available/used 460 460 f50 0.21440500006657986 rms 4.668536834427902
+run12_last20 available/used 407 407 f50 0.21434155182366 rms 5.737740161724565
+run13_first60 available/used 25386 3000 f50 0.08314745491836135 rms 4.2432870749571165
+run13_middle20 available/used 8586 3000 f50 0.08503486636157315 rms 4.200773315307597
+run13_last20 available/used 8696 3000 f50 0.08562771521230879 rms 4.215578231768305
+run14_first60 available/used 50386 3000 f50 0.10660132136113715 rms 4.771471052456343
+run14_middle20 available/used 16649 3000 f50 0.10780187150669754 rms 4.763551117851058
+run14_last20 available/used 16742 3000 f50 0.10788241955980946 rms 4.744618648756726
+run18_first60 available/used 65034 3000 f50 0.13607068273843098 rms 5.035047533337854
+run18_middle20 available/used 21628 3000 f50 0.13715658257715013 rms 5.032501653688012
+run18_last20 available/used 21521 3000 f50 0.1368809821519111 rms 5.017641466508334
+Info in <TCanvas::Print>: SVG file simulation/results/bias_response_20261028/bias_overview.svg has been created
+Info in <TCanvas::Print>: png file simulation/results/bias_response_20261028/bias_overview.png has been created
+Info in <TCanvas::Print>: SVG file simulation/results/bias_response_20261028/bias_time_checks.svg has been created
+Info in <TCanvas::Print>: png file simulation/results/bias_response_20261028/bias_time_checks.png has been created
+Info in <TCanvas::Print>: SVG file simulation/results/bias_response_20261028/bias_charge_shapes.svg has been created
+Info in <TCanvas::Print>: png file simulation/results/bias_response_20261028/bias_charge_shapes.png has been created

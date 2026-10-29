@@ -1,0 +1,13 @@
+{
+  "command": "python3 simulation/tests/test_charge_diagnostics.py",
+  "exit_code": 0,
+  "tests_passed": 6,
+  "elapsed_seconds": 1.18,
+  "evidence": "Recorded tool output from the test invocation before full MC; no rerun for logging",
+  "source_sha256": {
+    "simulation/tests/test_charge_diagnostics.py": "e076e7de326349cc42c5183ea2d195281a90e409cd6dc0230a0343fc931ffe6d",
+    "simulation/diagnose_charge.py": "e5a4e3f7c282797369cc2173a46d4d42b3acea3c53a5de2a34f1915b04bb0936",
+    "simulation/diagnose_fluctuations.py": "8f3233c5e6fe863a52e02752ca5ba0c36ead32a78182001f8616cc58bb7d6490",
+    "simulation/prepare_response_test.py": "e851659d717190237c340aeee4251bdb9f094fe41bef414d8c57be631301d473"
+  }
+}

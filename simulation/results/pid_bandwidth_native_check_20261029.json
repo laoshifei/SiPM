@@ -1,0 +1,78 @@
+{
+  "scope": "Supplementary full native source/ancestry/charge checks, without modifying frozen PID-bandwidth artifacts.",
+  "bandwidth_record_sha256": "51785e50b5e2513ff8a34437bf81ce8934eb925e67f0e9095f129ff60920c320",
+  "validator_sha256": "7ea129ff27483a9ad03593ec573152cb12105b486f6e14968f835dee3ba06d97",
+  "runs": {
+    "new_run3_Co60": {
+      "root_sha256": "0ad470f53db800990127b54d35ea9a078424444412d2e0f48fa65f25862ad927",
+      "checks": {
+        "passed": true,
+        "source": "Co60",
+        "events": 8000,
+        "zero_deposit_events": 7192,
+        "deposited_events": 808,
+        "alpha_deposit_events": 0,
+        "alpha_deposit_median_MeV": null,
+        "energy_deposit_p05_p50_p95_MeV": [
+          0.054094021219031334,
+          0.5977893152360061,
+          1.3288410546258003
+        ],
+        "decay_product_counts": {
+          "1000280609": 15992,
+          "-12": 8000,
+          "11": 8040,
+          "22": 15992,
+          "1000280600": 8000
+        },
+        "max_relative_charge_balance_error": 5.037961284370616e-14,
+        "prompt_gamma_lines_counts": {
+          "0.05954": 0,
+          "1.17323": 7990,
+          "1.33249": 8000
+        },
+        "ancestry_checks": true,
+        "scope": "Numerical and source-physics checks, not validation against experimental waveform",
+        "source_gap_mm": 1.0,
+        "transport_only": false,
+        "digitization_enabled": true
+      }
+    },
+    "new_run12_Am241": {
+      "root_sha256": "fecd9a485459ded23169efeb1cb9f8bdce26d7704c7e62f80ab49ac0929d7a03",
+      "checks": {
+        "passed": true,
+        "source": "Am241",
+        "events": 48000,
+        "zero_deposit_events": 47236,
+        "deposited_events": 764,
+        "alpha_deposit_events": 401,
+        "alpha_deposit_median_MeV": 0.9063535559318275,
+        "energy_deposit_p05_p50_p95_MeV": [
+          0.013951209444563739,
+          0.6635927769828701,
+          1.0634601748921169
+        ],
+        "decay_product_counts": {
+          "1000932379": 18237,
+          "1000020040": 48000,
+          "1000932371": 47677,
+          "11": 583071,
+          "22": 40411,
+          "1000932370": 48000
+        },
+        "max_relative_charge_balance_error": 2.907711993793557e-14,
+        "prompt_gamma_lines_counts": {
+          "0.05954": 17269,
+          "1.17323": 0,
+          "1.33249": 0
+        },
+        "ancestry_checks": true,
+        "scope": "Numerical and source-physics checks, not validation against experimental waveform",
+        "source_gap_mm": 30.0,
+        "transport_only": false,
+        "digitization_enabled": true
+      }
+    }
+  }
+}

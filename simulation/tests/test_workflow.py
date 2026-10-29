@@ -134,4 +134,55 @@ class WorkflowChecks(unittest.TestCase):
             result=subprocess.run([str(binary),str(path),'Co60','1','1',str(folder/'invalid.root')],capture_output=True)
             self.assertNotEqual(result.returncode,0);self.assertIn(b'foil must lie strictly',result.stderr)
 
+    def test_finite_rise_macro_config_and_zero_default_replay(self):
+        binary=HERE/'build/csi_sources'
+        if not binary.exists():self.skipTest('Geant4 build required')
+        with tempfile.TemporaryDirectory(prefix='csi-rise-') as directory:
+            folder=Path(directory);base=json.loads((HERE/'configs/csi_tl_initial.json').read_text())
+            files=[]
+            for name,rise in [('default',None),('zero',[0.,0.]),('finite',[120.,100.])]:
+                config=json.loads(json.dumps(base))
+                if rise is not None:config['optical']['rise_time_ns']=rise
+                path=folder/(name+'.json');path.write_text(json.dumps(config));root=folder/(name+'.root')
+                macro=folder/(name+'.mac')
+                macro.write_text(f'/csi/config {path}\n/csi/source Co60\n/csi/seed 281103\n/csi/output {root}\n/run/initialize\n/run/beamOn 8\n')
+                subprocess.run([str(binary),str(macro)],check=True,stdout=subprocess.DEVNULL,stderr=subprocess.PIPE)
+                file=ROOT.TFile.Open(str(root));files.append(file)
+                info=json.loads(str(file.Get('RunInfo').GetString().Data()))
+                self.assertTrue(info['completed']);self.assertEqual(info['schema_version'],9)
+                self.assertEqual(info['scintillation_time_model']['finite_rise_enabled'],name=='finite')
+                self.assertEqual(info['scintillation_time_model']['rise_time_ns'],rise or [0.,0.])
+            trees=[f.Get('Events') for f in files];photons=0
+            for i in range(8):
+                for tree in trees:tree.GetEntry(i);check_ancestry(tree)
+                for branch in ('adc','photon_t_ns','avalanche_t_ns','avalanche_q_C'):
+                    np.testing.assert_array_equal(np.array(getattr(trees[0],branch)),np.array(getattr(trees[1],branch)))
+                photons+=len(trees[2].photon_t_ns)
+            self.assertGreater(photons,0,'Finite-rise test must exercise optical transport')
+            for f in files:f.Close()
+            for bad in ([-1.,0.],[0.],1.):
+                base['optical']['rise_time_ns']=bad;path.write_text(json.dumps(base))
+                invalid=folder/'invalid.root'
+                result=subprocess.run([str(binary),str(path),'Co60','1','1',str(invalid)],capture_output=True)
+                self.assertNotEqual(result.returncode,0);self.assertFalse(invalid.exists())
+
+    def test_colored_noise_preserves_transport_and_avalanche_stream(self):
+        binary=HERE/'build/csi_sources'
+        if not binary.exists():self.skipTest('Geant4 build required')
+        with tempfile.TemporaryDirectory(prefix='csi-noise-') as directory:
+            folder=Path(directory);config=json.loads((HERE/'configs/csi_tl_initial.json').read_text());files=[]
+            for i in range(2):
+                if i:config['electronics_noise']={'model':'gaussian_fir','coefficients':[float(np.sqrt(.5))]*2}
+                path=folder/f'config{i}.json';path.write_text(json.dumps(config));root=folder/f'noise{i}.root'
+                subprocess.run([str(binary),str(path),'Co60','6','281103',str(root)],check=True,stdout=subprocess.DEVNULL,stderr=subprocess.PIPE)
+                files.append(ROOT.TFile.Open(str(root)))
+            trees=[f.Get('Events') for f in files];different=0;photons=0
+            for i in range(6):
+                for tree in trees:tree.GetEntry(i)
+                for branch in ('photon_t_ns','avalanche_t_ns','avalanche_q_C','signal_mV','charge_by_origin_C'):
+                    np.testing.assert_array_equal(np.array(getattr(trees[0],branch)),np.array(getattr(trees[1],branch)))
+                different+=not np.array_equal(np.array(trees[0].adc),np.array(trees[1].adc));photons+=len(trees[0].photon_t_ns)
+            self.assertGreater(photons,0);self.assertEqual(different,6)
+            for f in files:f.Close()
+
 if __name__=='__main__':unittest.main(verbosity=2)

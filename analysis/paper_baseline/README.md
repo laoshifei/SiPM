@@ -1,6 +1,78 @@
 # 已有波形的论文分析基线
 
-更新日期：2026-10-27。当前以已确认来源的 PHA CH0 数据开展波形方法研究。²⁴¹Am 按 **α/γ 混合源**保存，源名称不充当逐事件粒子标签。现有数据支持比较共同光输出区间内的波形形状；α 接受率、γ 泄漏率和最低甄别能量尚不能由这些源标签直接计算。
+更新日期：2026-10-28。当前以已确认来源的 PHA CH0 数据开展波形方法研究。²⁴¹Am 按 **α/γ 混合源**保存，源名称不充当逐事件粒子标签。现有数据支持比较共同 ADC 电荷区间内的波形形状；α 接受率、γ 泄漏率和最低甄别能量尚不能由这些源标签直接计算。
+
+## 新增模拟校准（2026-10-28）
+
+模拟目录已增加原生信号相关随机残差，并用冻结 run 3/12 前段训练。参数冻结后的新完整输运为 Co 4000 / Am 24000 个衰变；后段平均形状 NRMSE 为 2.17% / 1.08%，三尺度起伏均值偏差约在 5% 内。电荷谱、Co 峰值时间、Am 后段基线及跨 run 迁移仍未通过完整一致性检查。该阶段是采集条件相关的经验校准，和以下冻结的共同快响应分析分开保存。[结果与模型边界](../../simulation/RESULTS.md)、[ADC 示例](../../simulation/results/signal_fluctuations_20261028/independent/individual_native_calibration.png)、[数值表](../../simulation/results/signal_fluctuations_20261028/waveform_validation.csv)、[归档](../../simulation/results/signal_fluctuations_20261028/record.json)。原主分析与补充阶段的记录、图表及源码快照不覆盖。
+
+## 全量波形与相同 Q 权重补充（2026-10-28）
+
+取消每段 3000 条上限，复核 run 12/18 原始前 60% 的全部合格波形，分别为 **1547/65034 条**。在 50 ns 滤波、500–900 ns 局部窗和 0.30–0.35 形状条件下，六个 Q 箱等权的相对差异为 **+58.0% [54.6%, 59.4%]**；细分至 24 箱仍为 +58.24%。这是既有数据的敏感性检查，正式的 40795 条队列及原约 57% 的结果保留。
+
+模拟与实测在共同支持 Q 箱内使用相同权重后，固定 f=0.10 候选的 F₅₀ 偏差仍为 **Co +81.6% [72.6%, 90.1%]、Am −25.2% [−27.9%, −22.4%]**。主支持要求每箱各候选至少 10 条，Co 仅余 2 箱 24 条 MC、Am 3 箱 79 条；箱内连续电荷仍可能不匹配，不向缺失箱外推。
+
+- [更新工作稿及两张补充图](MANUSCRIPT_DRAFT.md)
+- [全量、细分箱、序号区间和配对抽样](results/robustness_20261028/full_cohort_covariance.json)
+- [MC 共同支持、箱权重及有效抽样数](results/robustness_20261028/mc_charge_matched.json)
+- [12 份补充 CSV 的字段、单位和来源](results/robustness_20261028/tables/manifest.json)、[压缩包](results/robustness_20261028/supplementary_tables.zip)
+- [独立归档与验证记录](results/robustness_20261028/record.json)
+
+本补充阶段只读使用 `publication_20261028` 的数值与原记录。复现本阶段时使用下列命令；不要重新运行旧 `verify_publication.py` 来归档本次改稿，以免覆盖其历史源码快照。
+
+```bash
+export OPENBLAS_NUM_THREADS=1
+export OMP_NUM_THREADS=1
+python3 analysis/paper_baseline/robustness_full_cohort.py prepare
+python3 analysis/paper_baseline/robustness_full_cohort.py run
+python3 analysis/paper_baseline/robustness_mc_charge.py
+python3 analysis/paper_baseline/test_robustness.py
+python3 analysis/paper_baseline/plot_robustness.py
+python3 analysis/paper_baseline/export_publication_tables.py
+python3 analysis/paper_baseline/verify_robustness.py
+```
+
+## 主分析：统一队列与不确定度
+
+正式分析沿用此前冻结的 **40795 条事件编号**，训练仅含 run 3/12 前段的 **3997 条**。所有方法和窗口使用同一训练队列，PCA 与拟合背景参数在每次配对块重采样中重新估计。3 μs 下，负平均时间−QDC 的中位 FOM 差为 **0.234 [0.096, 0.305]**，PCA−QDC 为 **0.165 [0.124, 0.203]**，PCA−负平均时间为 **−0.069 [−0.146, 0.070]**；均为条件 95% 区间，不能宣布 PCA 或负平均时间普遍最优。
+
+跨 run 检查已补等样本量背景、训练不确定度、相同支持下的选择敏感性。局部协方差每次重估分组均值，run 12/18 在相同 Q 和形状条件下相差约 **57% [53%, 59%]**；不能唯一归因于增益或温度。原生 MC 按共享父衰变配对重采样后，响应不吻合仍在。FOM 的绝对值也依赖峰形假设，Student-t 检查保留在补充结果中。
+
+- [完整工作稿、6 张主图及图注](MANUSCRIPT_DRAFT.md)
+- [队列流量表](results/publication_20261028/cohort_flow.csv)、[冻结协议](results/publication_20261028/protocol.json)
+- [方法/窗口配对区间](results/publication_20261028/paired_uncertainty.json)、[峰形模型检查](results/publication_20261028/core_model_sensitivity.json)
+- [跨 run 区间](results/publication_20261028/transfer_uncertainty.json)、[等样本量](results/publication_20261028/transfer_matched.json)、[共同支持敏感性](results/publication_20261028/transfer_selection_sensitivity.json)
+- [局部协方差区间](results/publication_20261028/covariance_uncertainty.json)、[MC 误差条](results/publication_20261028/mc_uncertainty.json)
+- [数值验证、输入和输出哈希、源码归档](results/publication_20261028/record.json)
+
+依赖现有 NumPy、PyROOT、g++ 及此前生成的特征和原生 MC 文件，不需联网安装。从仓库根目录复现：
+
+```bash
+export OPENBLAS_NUM_THREADS=1
+export OMP_NUM_THREADS=1
+python3 analysis/paper_baseline/publication_stats.py prepare
+python3 analysis/paper_baseline/publication_stats.py point
+python3 analysis/paper_baseline/test_publication_stats.py
+python3 analysis/paper_baseline/publication_compute.py verify
+python3 analysis/paper_baseline/publication_compute.py bootstrap --block-size 64 --draws 256
+python3 analysis/paper_baseline/publication_compute.py bootstrap --block-size 32 --draws 128
+python3 analysis/paper_baseline/publication_compute.py bootstrap --block-size 128 --draws 128
+python3 analysis/paper_baseline/publication_stats.py summarize
+python3 analysis/paper_baseline/publication_model_check.py
+python3 analysis/paper_baseline/publication_covariance.py
+python3 analysis/paper_baseline/publication_transfer.py matched
+python3 analysis/paper_baseline/publication_transfer.py bootstrap
+python3 analysis/paper_baseline/publication_transfer_sensitivity.py
+python3 analysis/paper_baseline/publication_mc_uncertainty.py prepare
+python3 analysis/paper_baseline/publication_mc_uncertainty.py bootstrap
+python3 analysis/paper_baseline/test_publication_diagnostics.py
+python3 analysis/paper_baseline/plot_publication.py
+python3 analysis/paper_baseline/verify_publication.py
+```
+
+FOM、局部协方差和跨 run 重采样有逐次检查点；只有完整 256 次训练结果才进入跨 run 区间。编译加速保留与 Python 相同的三组初始化、EM 方程和收敛条件，验证记录见 [computation.json](results/publication_20261028/computation.json)。结果不含盲测或候选选择后的统计校正，不把相同 G4 光子历史的重放计作独立输运。
+
+## 历史分析的范围
 
 第二轮已完成质量条件敏感性、共享形状混合模型、三种方法与四种记录窗口、时间分段及 run 18 复核，见 [第二轮结果](PHASE2_RESULTS.md)。已形成 [方法与结果草稿](MANUSCRIPT_DRAFT.md)。下文保留第一轮数据建档与初始诊断的范围。
 

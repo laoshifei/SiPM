@@ -1,0 +1,13 @@
+{
+  "binary_sha256": "c285d9122eda414a039cb51e5405087f36a33e9e58761ab8d33ff6b467ddbc8a",
+  "parent": {
+    "path": "simulation/results/waveform_refit_20261029/independent/am241/events.root",
+    "sha256": "58c23065d89a5fa82ce0795aa8c7382b5f2cb9460a8595fef15d8331b1aaefed"
+  },
+  "fit_sha256": "938244eccb9da0154c7f7194491389f1c36dd53d357def54adc39e6e5392d1e3",
+  "scope": "Shared final Am241 optical histories with separately trained run18 signal residual; optional measured last20 pretrigger state. No new transport.",
+  "config_sha256": {
+    "first60": "5f8aa93611d389c3fbeebf430e8fd6fb9af325d6607bbda9a3334dcfa46f0649",
+    "last20": "7295a89129131209df449de62a5ded6aba4ec1c5c63d15c99fbc6749a00310dc"
+  }
+}

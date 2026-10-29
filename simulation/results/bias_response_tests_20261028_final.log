@@ -1,0 +1,11 @@
+test_free_area_recovers_signal_scale_without_identifying_gain (__main__.BiasResponseChecks.test_free_area_recovers_signal_scale_without_identifying_gain) ... ok
+test_matrix_integral_matches_direct_quadrature (__main__.BiasResponseChecks.test_matrix_integral_matches_direct_quadrature) ... ok
+test_pole_allocation_is_exactly_degenerate (__main__.BiasResponseChecks.test_pole_allocation_is_exactly_degenerate) ... ok
+test_segments_use_original_indices_before_selection (__main__.BiasResponseChecks.test_segments_use_original_indices_before_selection) ... ok
+test_spectral_band_recovers_known_sinusoidal_variance (__main__.BiasResponseChecks.test_spectral_band_recovers_known_sinusoidal_variance) ... ok
+test_stationary_noise_subtraction_has_zero_expected_excess (__main__.BiasResponseChecks.test_stationary_noise_subtraction_has_zero_expected_excess) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.178s
+
+OK

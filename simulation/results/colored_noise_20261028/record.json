@@ -1,0 +1,307 @@
+{
+  "stage": "Pretrigger noise characterization, native Gaussian FIR readout, full optical MC and conditional signal-response constraints",
+  "archived_utc": "2026-10-28T04:08:52.163363+00:00",
+  "result": "Baseline covariance and spectrum improve; pulse fluctuations and charge spectra remain inconsistent. No single-PE gain calibration or full detector-response validation is claimed.",
+  "verification": {
+    "inherited_kernel_tests": 14,
+    "noise_kernel_tests": 3,
+    "geant4_workflow_tests": 10,
+    "analysis_checks": 6,
+    "frozen_transport_source_and_binary_unchanged": true,
+    "root_config_source_seed_counts_and_schema_checked": true,
+    "full_mc_events": {
+      "Co60": 2000,
+      "Am241": 12000
+    },
+    "source_and_numerical_validations": {
+      "Co60": {
+        "passed": true,
+        "source": "Co60",
+        "events": 2000,
+        "zero_deposit_events": 1797,
+        "deposited_events": 203,
+        "alpha_deposit_events": 0,
+        "alpha_deposit_median_MeV": null,
+        "energy_deposit_p05_p50_p95_MeV": [
+          0.04661238914541291,
+          0.6370571467420004,
+          1.190452065012801
+        ],
+        "decay_product_counts": {
+          "1000280609": 4000,
+          "-12": 2000,
+          "11": 2000,
+          "22": 4000,
+          "1000280600": 2000
+        },
+        "max_relative_charge_balance_error": 4.9520695581653305e-14,
+        "prompt_gamma_lines_counts": {
+          "0.05954": 0,
+          "1.17323": 2000,
+          "1.33249": 2000
+        },
+        "ancestry_checks": true,
+        "scope": "Numerical and source-physics checks, not validation against experimental waveform",
+        "source_gap_mm": 1.0,
+        "transport_only": false,
+        "digitization_enabled": true
+      },
+      "Am241": {
+        "passed": true,
+        "source": "Am241",
+        "events": 12000,
+        "zero_deposit_events": 11811,
+        "deposited_events": 189,
+        "alpha_deposit_events": 90,
+        "alpha_deposit_median_MeV": 0.9690744002019908,
+        "energy_deposit_p05_p50_p95_MeV": [
+          0.010817454933651174,
+          0.0595409119593761,
+          1.100033334850335
+        ],
+        "decay_product_counts": {
+          "1000932371": 11921,
+          "1000020040": 12000,
+          "1000932370": 12000,
+          "11": 145543,
+          "22": 10012,
+          "1000932379": 4561
+        },
+        "max_relative_charge_balance_error": 2.8506476383278963e-14,
+        "prompt_gamma_lines_counts": {
+          "0.05954": 4308,
+          "1.17323": 0,
+          "1.33249": 0
+        },
+        "ancestry_checks": true,
+        "scope": "Numerical and source-physics checks, not validation against experimental waveform",
+        "source_gap_mm": 30.0,
+        "transport_only": false,
+        "digitization_enabled": true
+      }
+    },
+    "scoped_git_diff_check": "Passed for README.md and simulation; preexisting whitespace in two legacy set.h files left unchanged."
+  },
+  "baseline_comparison": {
+    "Co60": {
+      "measured": {
+        "n": 2862,
+        "detrended_rms_adc": {
+          "n": 2862,
+          "p10_p50_p90": [
+            2.9611369634343174,
+            3.3659369912505315,
+            3.8231891289857565
+          ]
+        },
+        "mean_detrended_variance_adc2": 11.541882374310807,
+        "lag1_correlation": 0.49780907224424326
+      },
+      "old": {
+        "n": 1500,
+        "detrended_rms_adc": {
+          "n": 1500,
+          "p10_p50_p90": [
+            3.1638870709753792,
+            3.3557241830457265,
+            3.5514066337689774
+          ]
+        },
+        "mean_detrended_variance_adc2": 11.288053787068696,
+        "lag1_correlation": -0.009713993389152511
+      },
+      "new": {
+        "n": 2000,
+        "detrended_rms_adc": {
+          "n": 2000,
+          "p10_p50_p90": [
+            3.1232516130229078,
+            3.3881890340285823,
+            3.6539849413660597
+          ]
+        },
+        "mean_detrended_variance_adc2": 11.536855794104126,
+        "lag1_correlation": 0.48260481249700776
+      }
+    },
+    "Am241": {
+      "measured": {
+        "n": 4458,
+        "detrended_rms_adc": {
+          "n": 4458,
+          "p10_p50_p90": [
+            2.841955008827165,
+            3.211249622657832,
+            3.8513039382858656
+          ]
+        },
+        "mean_detrended_variance_adc2": 11.569539803873363,
+        "lag1_correlation": 0.5293480770571729
+      },
+      "old": {
+        "n": 12000,
+        "detrended_rms_adc": {
+          "n": 12000,
+          "p10_p50_p90": [
+            2.9874568619889965,
+            3.1721073683620733,
+            3.354576271906764
+          ]
+        },
+        "mean_detrended_variance_adc2": 10.080584277818499,
+        "lag1_correlation": -0.008524383991630077
+      },
+      "new": {
+        "n": 12000,
+        "detrended_rms_adc": {
+          "n": 12000,
+          "p10_p50_p90": [
+            3.1445477310108063,
+            3.393214733392447,
+            3.653552108195486
+          ]
+        },
+        "mean_detrended_variance_adc2": 11.580688766274363,
+        "lag1_correlation": 0.5178465211996269
+      }
+    }
+  },
+  "interpretation_limits": [
+    "Only existing experimental data used. Run 3 and 12 first 60% train the noise model; later groups and run 18 were already explored and are not blind validation.",
+    "The baseline mean detrended variance and PSD enter calibration; their agreement is not independent validation.",
+    "A stationary Gaussian FIR does not model transient weak pulses, non-Gaussian tails or run 12 temporal noise changes.",
+    "Positive and negative weak-pulse candidates are not identified single photoelectrons or a dark-count-rate measurement.",
+    "Signal yield, avalanche gain, geometry and time constants were inherited from the joint candidate without refitting in this stage.",
+    "Assumed 16-channel array summation, PDE/gain/load, source gaps and optional Co foil remain conditional apparatus hypotheses.",
+    "Am-241 includes alpha, gamma and electron contributions. Source labels and acquisition bits are not experimental particle truth.",
+    "Frozen-Q pulse statistics use the existing amplitude and quality selections; baseline and mean-shape cohorts differ as documented.",
+    "Signal-response frequency integration is a stationary Poisson diagnostic, not a substitute for Geant4 or a measurement of circuit RC.",
+    "New and previous MC have different random seeds; small differences cannot be attributed solely to the noise model."
+  ],
+  "analysis_notes": [
+    "readout.json records the exact executed characterize_readout.py preserved beside it. Current source additionally saves primary-mask and primary-PSD arrays; analysis formulas are unchanged.",
+    "A PyROOT noncontiguous plotting-array issue was fixed before the final comparison. The initial plot directory and log are intermediate artifacts, excluded from the authoritative output manifest.",
+    "Final baseline/signal comparison, temporal-stability and conditional RC figures were visually inspected.",
+    "No Git commit or push performed in this stage."
+  ],
+  "build_record": "simulation/results/colored_noise_20261028/build_record.json",
+  "run_metadata_check": "simulation/results/colored_noise_20261028/run_metadata_check.json",
+  "exact_executed_characterization_source": "simulation/results/readout_noise_20261028/characterize_readout.py",
+  "recorded_analysis_code_verified": {
+    "simulation/results/readout_noise_20261028/readout.json:simulation/characterize_readout.py": "simulation/results/readout_noise_20261028/characterize_readout.py",
+    "simulation/results/colored_noise_20261028/design.json:simulation/prepare_noise_model.py": "simulation/prepare_noise_model.py",
+    "simulation/results/colored_noise_20261028/design.json:simulation/characterize_readout.py": "simulation/characterize_readout.py",
+    "simulation/results/colored_noise_20261028/common_charge/comparison.json:simulation/compare.py": "simulation/compare.py",
+    "simulation/results/colored_noise_20261028/common_charge/comparison.json:simulation/calibrate.py": "simulation/calibrate.py",
+    "simulation/results/colored_noise_20261028/common_charge/comparison.json:simulation/reference.py": "simulation/reference.py",
+    "simulation/results/colored_noise_20261028/common_charge/comparison.json:analysis/paper_baseline/prepare.py": "analysis/paper_baseline/prepare.py",
+    "simulation/results/colored_noise_20261028/common_charge/comparison.json:analysis/paper_baseline/refine_waveforms.py": "analysis/paper_baseline/refine_waveforms.py",
+    "simulation/results/colored_noise_20261028/fluctuations/diagnostics.json:simulation/diagnose_fluctuations.py": "simulation/diagnose_fluctuations.py",
+    "simulation/results/colored_noise_20261028/fluctuations/diagnostics.json:simulation/diagnose_charge.py": "simulation/diagnose_charge.py",
+    "simulation/results/colored_noise_20261028/fluctuations/diagnostics.json:simulation/reference.py": "simulation/reference.py",
+    "simulation/results/colored_noise_20261028/fluctuations/diagnostics.json:analysis/paper_baseline/prepare.py": "analysis/paper_baseline/prepare.py",
+    "simulation/results/colored_noise_20261028/joint_validation_final/validation.json:simulation/validate_joint.py": "simulation/validate_joint.py",
+    "simulation/results/colored_noise_20261028/joint_validation_final/validation.json:simulation/compare.py": "simulation/compare.py",
+    "simulation/results/colored_noise_20261028/joint_validation_final/validation.json:simulation/compare_absolute.py": "simulation/compare_absolute.py",
+    "simulation/results/colored_noise_20261028/joint_validation_final/validation.json:simulation/reference.py": "simulation/reference.py",
+    "simulation/results/colored_noise_20261028/noise_comparison/comparison.json:simulation/compare_noise.py": "simulation/compare_noise.py",
+    "simulation/results/colored_noise_20261028/noise_comparison/comparison.json:simulation/characterize_readout.py": "simulation/characterize_readout.py",
+    "simulation/results/signal_constraints_20261028/constraints.json:simulation/profile_signal_response.py": "simulation/profile_signal_response.py"
+  },
+  "analysis_snapshot_sha256": {
+    "README.md": "686bd7161852de15fae3e08e0d1b9a41ffb2491e315cb0512eaa074e13ee88f0",
+    "simulation/README.md": "9f97e355892e8679253e151d9f006ab8db73fbd8fbaa818c3bd5861b87db223f",
+    "simulation/RESULTS.md": "7c8c5f5bc9e093f61c6779e20528147d03e6add16c77dc2a88f5cb10370b93ad",
+    "simulation/audit_acquisition.py": "08132f1c382d5fadd4076fed94452861002b8e6f8603f7d68892bed8569762ab",
+    "simulation/calibrate.py": "b169edf40d01018e622332b541c0d4f111df27ec531bbf30d22fde50cf0ecb43",
+    "simulation/characterize_readout.py": "0dae99d52406d6c7658bedcc54236b975e1a9853ff1a19064096cf62b2946490",
+    "simulation/check_trigger_proxy.py": "523e3dfc76cdd40ed7e9252a7d6b879d95ed47bc01fa10cff438d0d055e33e5f",
+    "simulation/compare.py": "a3d7b6713fb52c8f497d72e6908cc01036b639d847eb11ff89e2be42e3e55fbe",
+    "simulation/compare_absolute.py": "81521726dab12744b486e41a9a4f5c31959437ca2d3370ffaf73a298dabc8a02",
+    "simulation/compare_noise.py": "cebd912ef1c9417ad750781134277b2ff4d163fbfd0a609a2ad5d5acb6458c5f",
+    "simulation/diagnose_charge.py": "3f9f5b67e2bb61ae6aaabed3d917a14da56139b2e6737780c0e9f18fa226ffed",
+    "simulation/diagnose_fluctuations.py": "3f6e7d9527f367806f063734e5a184916557ccd79507c811e0b614326b10eeed",
+    "simulation/diagnose_origin.py": "e2c109affc56e1f2e6064520fc08983878b6f57a45ed73ae98dcc2cf0e9330ed",
+    "simulation/inspect_geometry.py": "1c54fcb95312a03b8a73bfca53001658bed0a6121889600fb1472012022dfd14",
+    "simulation/prepare_noise_model.py": "2ca7cdd0e9a12c6499706e7a95d2c6431479cc88fb54e949fd39650cfdbac32b",
+    "simulation/prepare_response_test.py": "e851659d717190237c340aeee4251bdb9f094fe41bef414d8c57be631301d473",
+    "simulation/profile_signal_response.py": "af78b2db1ef7ec8314d46efb8c372fa8d203f48256f6ecd6118d42c45ebb5a60",
+    "simulation/reference.py": "fe7ebd20af44ffc2ade2b758dd8fa6bde1d269cc8cb02e7a37bd591d4fe0d1bb",
+    "simulation/report_response_test.py": "d6748e6aeef46d6a5f03ac05ec995f03f55ad5166bd686f75d707a0127e9b1be",
+    "simulation/run.py": "431e82dfbaeb7817f3e65d253264c02a90df22e44ac55ba51913becd5e852b85",
+    "simulation/scan_distance.py": "4efdd20cf82aa4a4e9a80541b5858dbc6d47844ee102cd7614a4ee4db78d6f60",
+    "simulation/scan_transport.py": "c6bc1da63b7b6aa5a9ad86b3aeb2ff6677977102f192fd63c12372232ef95008",
+    "simulation/screen_joint.py": "af17fd2f12d53fafccefbcb44abb370cc6edfaa701980dd3f23f90978207c6d5",
+    "simulation/validate.py": "7ea129ff27483a9ad03593ec573152cb12105b486f6e14968f835dee3ba06d97",
+    "simulation/validate_joint.py": "28846de5ceeb6bdcfb91ebff3144b8fbf46d0cdfd2ac9d47b1319ec89b3cb1fe",
+    "simulation/tests/test_charge_diagnostics.py": "e076e7de326349cc42c5183ea2d195281a90e409cd6dc0230a0343fc931ffe6d",
+    "simulation/tests/test_readout_characterization.py": "18d8d12de5fb4636aefc5547c0ac98cfe4f53fbb5e372eb06d65b880ca3fbac4",
+    "simulation/tests/test_readout_noise.cc": "ffe22241f05f2a49d9d5c04c540f54104e0ca759fcc10edbe0eeda5e68c42e07",
+    "simulation/tests/test_vendor_sipm.cc": "5d6ac000dced311761f2bbb92925290d19ccd18629fac2bc0450ca408ff00c74",
+    "simulation/tests/test_workflow.py": "332eadcaae64e5c04cb29317980aa3cb504ac47853dd9be9d86601ab6056106c",
+    "simulation/tests/vendor_fixture.json": "e499d0abae465cfe4472927448a40efca0189c333f5c14c03dd46328e7685544",
+    "analysis/paper_baseline/prepare.py": "9ebe888c46f8964ecea7141f1c3da5095a0d5546bacb87d77e9874a156fab9c9",
+    "analysis/paper_baseline/refine_waveforms.py": "2c4e7e4be126df0fec83cc2eedb093eca1fa95833bcad27a7b0c6c5289781941"
+  },
+  "output_sha256": {
+    "simulation/results/colored_noise_20261028/am241/config.json": "6c4864b59c50a65b678a6e694d482181c4cec11cd6eaab4ff9c02252096da5ec",
+    "simulation/results/colored_noise_20261028/am241/events.root": "6839d20e2b2835f00221844bb6b1a4178ef5387c2ef1778ff7b3452f03e807f4",
+    "simulation/results/colored_noise_20261028/am241/events_validation.json": "7dec84ea4a399a07cde3a77b8984e8d228c270e211a61d7893bbed877f30964d",
+    "simulation/results/colored_noise_20261028/am241/run.log": "016fd1f2ec7eb210049ea91402b3752228f0187ebd0b2c76c42db8191993865c",
+    "simulation/results/colored_noise_20261028/am241/run.mac": "59ef6372ef898b1085b74193726ed048da39b27c9926191438997715439d27a0",
+    "simulation/results/colored_noise_20261028/analysis_tests.log": "ce26b9d5b1022d70bf92716898b5b5decebfbcdd5cdb70915df78af4f77534dc",
+    "simulation/results/colored_noise_20261028/build_record.json": "1954f36b82d624ee9fc3ea4ffad507602ecbad605ebf32710a3e417d3210bac9",
+    "simulation/results/colored_noise_20261028/co60/config.json": "654f7acb236d7c0be4d0f3640b211a28f17f58c44fd891bacf53aa87abdbef52",
+    "simulation/results/colored_noise_20261028/co60/events.root": "0af54e0ba2d07749a8fa5757969f46599b11df0f0e6e4f8a93cec7be0477786f",
+    "simulation/results/colored_noise_20261028/co60/events_validation.json": "92c164b91689380211df5c67df76ccb9de0a4d1d99172e4ecc0b87654c6370e8",
+    "simulation/results/colored_noise_20261028/co60/run.log": "5ebce58d0cafd8636ff310abfc1c68e9efab65bbf26069fdf6ba87e09f77c936",
+    "simulation/results/colored_noise_20261028/co60/run.mac": "856e15396e5cece995abde1841f2e6d3e413813fd437fe93afff8601c723a1e3",
+    "simulation/results/colored_noise_20261028/common_charge/charge_shape_diagnostics.png": "05f34ef0e43bfc9256d41da0e87a5dccb5a9f416f1f486ec2e83b0537d15ec3a",
+    "simulation/results/colored_noise_20261028/common_charge/charge_shape_diagnostics.svg": "5df044bd8778fdb331b38952f0abe0e14aa02458ef07e572f9a66faa9afb929d",
+    "simulation/results/colored_noise_20261028/common_charge/comparison.json": "29f03cfdafa672eac3addc2f207d8294ca22ae29cdca8a12a9a72fff232052b4",
+    "simulation/results/colored_noise_20261028/common_charge/curves.npz": "c52c79db2e3107aa4d54dc65cccd77d8e1ac0612d997211b7d063d6dd7fd5d9a",
+    "simulation/results/colored_noise_20261028/common_charge/waveform_comparison.png": "8c51ac3eb686f1729a89d31cf70ac91f2c5cd7b240dec6743504575f05d09656",
+    "simulation/results/colored_noise_20261028/common_charge/waveform_comparison.svg": "ccabae114d1fd6bc7812d520a871175f4bd975b46eb62a32674d9f6b2244f0a0",
+    "simulation/results/colored_noise_20261028/common_charge.log": "1a42c9d14826c0f23df47bea435bf5a79c49a9892cf88c7f557fdabf1634f8ee",
+    "simulation/results/colored_noise_20261028/ctest.log": "a2e357424eb12f0bcaf404531c465705f5b50c1159b3340e36dfd4d139006b7e",
+    "simulation/results/colored_noise_20261028/design.json": "a11ad47f295b9bcf4bffc8727663f145f8fd885f88ef51764842a28a11d0c989",
+    "simulation/results/colored_noise_20261028/finalize_record.py": "714aa48ebfee1a654a9e7bec7fa9d19ffbb874f1e1c7b2e86962becd757b0de6",
+    "simulation/results/colored_noise_20261028/fluctuations/diagnostics.json": "b23a71587d12dd38d1b427802cfccd3b726177c7c755f6f51351d7b92b3b3748",
+    "simulation/results/colored_noise_20261028/fluctuations/fluctuation_comparison.png": "8741319deb796bb85ad24aad6bd534b5b3cff8b9bbd0c9daa80c2642203ac622",
+    "simulation/results/colored_noise_20261028/fluctuations/fluctuation_comparison.svg": "89f5d0ab5aceca6452ad0a0fd28dcf941aff8dc9f48813529778a7d4e5eeef0e",
+    "simulation/results/colored_noise_20261028/fluctuations/metrics.npz": "a3446faf24832a46e986aa0ac065d3d3730775de936d262c05be0c5e02de213f",
+    "simulation/results/colored_noise_20261028/fluctuations.log": "5a5d2df3ddd96d34a301735e2bc84103757b2a611f68665715bfdcb1f5b31239",
+    "simulation/results/colored_noise_20261028/joint_validation.log": "bdb847415653e0ac6200383c8f382df497f80c89a4b2be3a257408fa208748d4",
+    "simulation/results/colored_noise_20261028/joint_validation_final/curves.npz": "f5327f06a3c4a99b9286fd0e85e77b3c7551589fa179d919a4cc5fcc539ca225",
+    "simulation/results/colored_noise_20261028/joint_validation_final/joint_comparison.png": "c1503a478e7b0856048edd7790d8f226ca01333433e2073ae8e661254007d429",
+    "simulation/results/colored_noise_20261028/joint_validation_final/joint_comparison.svg": "c3db484bbf609c723cc23db179c3413ef0a4d59a73d3c7e6a49ac3362e90c5bc",
+    "simulation/results/colored_noise_20261028/joint_validation_final/validation.json": "1a4371d2a309d5fd22004c20d965a10eb21cc7e520cd46c044cc1098a7efb44d",
+    "simulation/results/colored_noise_20261028/noise_calibration.npz": "4a8e6a2504dc9e7d54ae64c7c4007fcca316edc49a2d561fd877ec0bae8e12ce",
+    "simulation/results/colored_noise_20261028/noise_comparison/comparison.json": "fd9e3485bc14a5438ff90cb9d3467bc02daf716ca7d2af4b6d4ad34cf3929edf",
+    "simulation/results/colored_noise_20261028/noise_comparison/curves.npz": "e3d4b642f4a279808a37a9739118715bda912c9911fe6d8a374269b558efdee9",
+    "simulation/results/colored_noise_20261028/noise_comparison/noise_and_signal.png": "cd06e98711895b1425807b615787a682cc0d214287e988684cb0ee67bf600797",
+    "simulation/results/colored_noise_20261028/noise_comparison/noise_and_signal.svg": "1319597d13b20ab3342f1205ecf17f6f0521b536824aac5ac3bc132e128b3dea",
+    "simulation/results/colored_noise_20261028/noise_comparison/noise_stability.png": "e6f5a368a26c516b7d6466af4e208a32cf65ffb6971d9a87c811f361b1a7135f",
+    "simulation/results/colored_noise_20261028/noise_comparison/noise_stability.svg": "2c2dc0d08bff7815cb48ac1cbe5f55b01523f126e893a2e25e331a039fbc6aa5",
+    "simulation/results/colored_noise_20261028/noise_comparison.log": "1f26a6ba79d6a4c44f65f2ad74138d7950334a42e0c86f1793ee21c6643cd5d8",
+    "simulation/results/colored_noise_20261028/readout_noise_build.log": "8689eed27ab1f1ce27ea23fff20f1b115492afb12d5feabdafb4a3dcc143b05c",
+    "simulation/results/colored_noise_20261028/readout_noise_build_configure.log": "1394554211ec2eafd22afdc6b2ac3dcd700a43458798f3593a047ede541c7a34",
+    "simulation/results/colored_noise_20261028/run_metadata_check.json": "8ecac20b9932e42d43b094d9dc9ca27bb154adb5c2b983aec91123e93d161f55",
+    "simulation/results/colored_noise_20261028/validation.log": "ae563ab0bdf59d2bbe7836b783fd8b0bbc3f1c4945385d61556389fabfdc7d00",
+    "simulation/results/colored_noise_20261028_prepare.log": "65c8e6d98d1cbe0ba0371af42df33fc7dc050130387a34fa1101ae67c0d6f8a4",
+    "simulation/results/readout_noise_20261028/characterize_readout.py": "7c42277476516cac96a46e7f520c4a244f0852bddb50589fecae136e9811b1bd",
+    "simulation/results/readout_noise_20261028/pretrigger_noise.png": "0a1618012342407928676a5257be9c89909cc19d9df41daa4c800ee798335857",
+    "simulation/results/readout_noise_20261028/pretrigger_noise.svg": "58b0c092d26660f39562b5af62c1936762329576d2aa9c88d758569395929e16",
+    "simulation/results/readout_noise_20261028/progress.json": "77d68f97e860f1407fb72a472c7d8f6b7c4c1894eac2f88cf1702e4d8a9944f2",
+    "simulation/results/readout_noise_20261028/readout.json": "00356f7d79c88ca5c5a5e9001e3adc0a6e4bd2e23ad5b476fef729ce9697851b",
+    "simulation/results/readout_noise_20261028/samples.npz": "c17e2238a2cd524f51a61b502330f5bcb03807f651355925c1564ace9fe0e2f0",
+    "simulation/results/readout_noise_20261028/weak_candidates.png": "827836e891fcb66dde2a2bb87286a345ae361fc48309e64f3e4a66149a5ee8ab",
+    "simulation/results/readout_noise_20261028/weak_candidates.svg": "283c644c9a90fcfe7e36f3220832c20b678715c8711b2b9e1cae8bbfb0074976",
+    "simulation/results/readout_noise_20261028.log": "5a22396ab20a1f3b4b249a45c0bad1b8bce288740666d5d9442c46366193f59d",
+    "simulation/results/signal_constraints_20261028/constraints.json": "ad5ba076ae2c9e02313f68f8e58c66c703a9d145cf801c213d7023eee03b0295",
+    "simulation/results/signal_constraints_20261028/curves.npz": "4c6b390e58fa55cb72ab9e9e5023e02fda1f3439405dd4b0a258d3d270e55a12",
+    "simulation/results/signal_constraints_20261028/signal_constraints.png": "43c3e6fe8a04ff1a2a98578c1e936b50cbb9ff02f26f5727e55178f2a4889012",
+    "simulation/results/signal_constraints_20261028/signal_constraints.svg": "693dd6e487a67bc7c3123436610bdb99c463b6ae865f21f5e09e53148e94675c",
+    "simulation/results/signal_constraints_20261028.log": "ce1a35016f4f2503a2538ff531f243ee45238d7712ab83ac7869bd464764048d"
+  }
+}

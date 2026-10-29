@@ -1,0 +1,140 @@
+{
+  "scope": "Estimate acquisition-state noise using pretrigger samples only.\n\nLater-segment states are measured covariates, not predictions from training.\nNo pulse samples or measured noise traces are injected into native simulation.\n",
+  "code_sha256": "eb9f6f01db3d4851eabee45b37fd54bf7078214b47396b996c158f70df42c538",
+  "states": {
+    "run3_first60": {
+      "baseline_mV": 92.70413048413336,
+      "noise_rms_mV": 0.10661716447508711,
+      "event_variance_cv": 0.20241201307914697,
+      "baseline_jitter_mV": 0.05790864018990559,
+      "measured_baseline_ADC_quantiles": [
+        3034.875,
+        3036.90625,
+        3040.0171875
+      ],
+      "measured_RMS_ADC_quantiles": [
+        2.8393466873563873,
+        3.353337594945158,
+        3.890163740378026
+      ],
+      "sample_n": 2450,
+      "sample_variance_factor": 0.9420371129521876,
+      "sample_variance_second_moment": 0.9144210938768512,
+      "role": "training"
+    },
+    "run3_middle20": {
+      "baseline_mV": 92.69240760579618,
+      "noise_rms_mV": 0.10622285742753543,
+      "event_variance_cv": 0.2362001408337623,
+      "baseline_jitter_mV": 0.044558464613806595,
+      "measured_baseline_ADC_quantiles": [
+        3034.815625,
+        3036.65625,
+        3039.28125
+      ],
+      "measured_RMS_ADC_quantiles": [
+        2.805118560393953,
+        3.3305815464420023,
+        3.9153320441301886
+      ],
+      "sample_n": 853,
+      "sample_variance_factor": 0.9420371129521876,
+      "sample_variance_second_moment": 0.9144210938768512,
+      "role": "measured pretrigger covariate; not blind/predictive"
+    },
+    "run3_last20": {
+      "baseline_mV": 92.69815553475811,
+      "noise_rms_mV": 0.1057530454539285,
+      "event_variance_cv": 0.20449873122298345,
+      "baseline_jitter_mV": 0.04283319109240199,
+      "measured_baseline_ADC_quantiles": [
+        3035.1875,
+        3036.8125,
+        3039.0546875
+      ],
+      "measured_RMS_ADC_quantiles": [
+        2.839518429785859,
+        3.3174160074116106,
+        3.909873120114573
+      ],
+      "sample_n": 826,
+      "sample_variance_factor": 0.9420371129521876,
+      "sample_variance_second_moment": 0.9144210938768512,
+      "role": "measured pretrigger covariate; not blind/predictive"
+    },
+    "run12_first60": {
+      "baseline_mV": 92.88916375148504,
+      "noise_rms_mV": 0.10549601588491021,
+      "event_variance_cv": 0.48684496691000373,
+      "baseline_jitter_mV": 0.13517414906260072,
+      "measured_baseline_ADC_quantiles": [
+        3041.1875,
+        3042.46875,
+        3044.53125
+      ],
+      "measured_RMS_ADC_quantiles": [
+        2.7128168017763383,
+        3.167214864829982,
+        4.066175199800461
+      ],
+      "sample_n": 1547,
+      "sample_variance_factor": 0.9551374228714415,
+      "sample_variance_second_moment": 0.9379305498850544,
+      "role": "training"
+    },
+    "run12_middle20": {
+      "baseline_mV": 93.30886446911356,
+      "noise_rms_mV": 0.15720463357599818,
+      "event_variance_cv": 0.7422424717792047,
+      "baseline_jitter_mV": 0.39476453027312863,
+      "measured_baseline_ADC_quantiles": [
+        3041.5921875,
+        3061.7421875,
+        3072.646875
+      ],
+      "measured_RMS_ADC_quantiles": [
+        2.8478967422377024,
+        4.415092510100388,
+        7.222073635596356
+      ],
+      "sample_n": 460,
+      "sample_variance_factor": 0.9551374228714415,
+      "sample_variance_second_moment": 0.9379305498850544,
+      "role": "measured pretrigger covariate; not blind/predictive"
+    },
+    "run12_last20": {
+      "baseline_mV": 93.68423396305019,
+      "noise_rms_mV": 0.18595576797684943,
+      "event_variance_cv": 0.46623447025905834,
+      "baseline_jitter_mV": 0.16033194498728953,
+      "measured_baseline_ADC_quantiles": [
+        3062.8,
+        3069.15625,
+        3075.84375
+      ],
+      "measured_RMS_ADC_quantiles": [
+        4.225249513180165,
+        5.6774464715662445,
+        7.864711562630079
+      ],
+      "sample_n": 407,
+      "sample_variance_factor": 0.9551374228714415,
+      "sample_variance_second_moment": 0.9379305498850544,
+      "role": "measured pretrigger covariate; not blind/predictive"
+    }
+  },
+  "input_sha256": {
+    "simulation/results/signal_fluctuations_20261028/run3_first60.npz": "95462fa2ab57243fa669e1b4811469df40f2f3522e005db9dc3e64130865add3",
+    "simulation/results/signal_fluctuations_20261028/run3_middle20.npz": "87d8ca246dd872e8e62f0b0083262b5e0386213340a0f021963e7f3d14cfd1aa",
+    "simulation/results/signal_fluctuations_20261028/run3_last20.npz": "63873053f70e3cf4d8ff6d1b4d2b7af3b7aa15b24eaa75973740f443daa67033",
+    "simulation/results/signal_fluctuations_20261028/run12_first60.npz": "887ce1d2cec395f61ee1a196de2ca9b70d790403d60b83335c76df204816504b",
+    "simulation/results/signal_fluctuations_20261028/run12_middle20.npz": "7ad68fb1e6b6e14fa63c3ac4b4c29333350fae03e7372efcb1a11a477684ade4",
+    "simulation/results/signal_fluctuations_20261028/run12_last20.npz": "f016f8e88ff9c6d27ee6f568e3f12070e6b18c2902b1dc2a28ca57fe877c1237"
+  },
+  "model": "Stationary FIR with a mean-one lognormal event variance multiplier and independent Gaussian baseline offset.",
+  "calibration": "First128 pretrigger samples only. Exact finite-window Gaussian covariance moments; approximate independent ADC quantization correction1/12.",
+  "limitations": [
+    "No exact model of skewed baseline offsets, weak pulses, or baseline/RMS dependence.",
+    "Later-segment states explicitly use their measured pretrigger samples and are conditional comparisons, not a forecast."
+  ]
+}

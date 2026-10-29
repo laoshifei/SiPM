@@ -1,0 +1,13 @@
+Co60 run3_first60 rel [ 0.0048 -0.0357  0.022 ] shape 0.019706515206689708 F50 KS 0.21012471655328802
+Co60 run3_middle20 rel [ 0.0183 -0.013   0.0503] shape 0.01974191726761667 F50 KS 0.241581998176371
+Co60 run3_last20 rel [ 0.027  -0.0185  0.0385] shape 0.020218423571103785 F50 KS 0.24297148237826205
+Am241 run12_first60 rel [-0.0159 -0.0146 -0.0429] shape 0.0137424434326273 F50 KS 0.12357751687437057
+Am241 run12_middle20 rel [ 0.0115  0.0116 -0.0223] shape 0.014254797018866849 F50 KS 0.16632962588473205
+Am241 run12_last20 rel [ 0.0149  0.0068 -0.0289] shape 0.012305069342967835 F50 KS 0.18838923490086285
+Am241 run18_first60 rel [0.6288 0.5624 0.4836] shape 0.0132625523100976 F50 KS 0.9117829457364341
+Info in <TCanvas::Print>: SVG file /media/sf_works/SiPM/simulation/results/signal_fluctuations_20261028/native_calibration_summary.svg has been created
+Info in <TCanvas::Print>: png file /media/sf_works/SiPM/simulation/results/signal_fluctuations_20261028/native_calibration_summary.png has been created
+Info in <TCanvas::Print>: pdf file /media/sf_works/SiPM/simulation/results/signal_fluctuations_20261028/native_calibration_summary.pdf has been created
+Info in <TCanvas::Print>: SVG file /media/sf_works/SiPM/simulation/results/signal_fluctuations_20261028/individual_native_calibration.svg has been created
+Info in <TCanvas::Print>: png file /media/sf_works/SiPM/simulation/results/signal_fluctuations_20261028/individual_native_calibration.png has been created
+Info in <TCanvas::Print>: pdf file /media/sf_works/SiPM/simulation/results/signal_fluctuations_20261028/individual_native_calibration.pdf has been created

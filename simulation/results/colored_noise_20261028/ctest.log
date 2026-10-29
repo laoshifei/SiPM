@@ -1,0 +1,71 @@
+Internal ctest changing into directory: /media/sf_works/SiPM/simulation/build
+UpdateCTestConfiguration  from :/media/sf_works/SiPM/simulation/build/DartConfiguration.tcl
+Parse Config file:/media/sf_works/SiPM/simulation/build/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/media/sf_works/SiPM/simulation/build/DartConfiguration.tcl
+Parse Config file:/media/sf_works/SiPM/simulation/build/DartConfiguration.tcl
+Test project /media/sf_works/SiPM/simulation/build
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: inherited_sensor_charge_recovery_rng
+
+1: Test command: /media/sf_works/SiPM/simulation/build/test_sipm "/media/sf_works/SiPM/simulation/tests/vendor_fixture.json"
+1: Working Directory: /media/sf_works/SiPM/simulation/build
+1: Test timeout computed to be: 1500
+1: PASS cell boundaries
+1: PASS bilinear PDE and no extrapolation
+1: PASS recovery and trigger
+1: PASS single electron charge and fractional-bin integral
+1: PASS empty input still produces baseline ADC
+1: PASS gate uses avalanche charge and half-open endpoints
+1: PASS PDE binomial statistics
+1: PASS same-time cell saturation
+1: PASS dark count Poisson statistics
+1: PASS recursive secondary ancestry and charge
+1: PASS independent reproducible electronics RNG
+1: PASS ADC clipping explicitly marked
+1: PASS invalid config/input and candidate limit reject
+1: PASS readout time-step convergence
+1: 14 tests passed
+1/3 Test #1: inherited_sensor_charge_recovery_rng ...   Passed    0.04 sec
+test 2
+    Start 2: stationary_readout_noise
+
+2: Test command: /media/sf_works/SiPM/simulation/build/test_noise "/media/sf_works/SiPM/simulation/tests/vendor_fixture.json"
+2: Working Directory: /media/sf_works/SiPM/simulation/build
+2: Test timeout computed to be: 1500
+2: PASS unit FIR / vendor noise RNG and ADC identity
+2: PASS stationary FIR variance / covariance / preserved signal
+2: PASS parameter rejection / requantization / clipping
+2: 3 tests passed
+2/3 Test #2: stationary_readout_noise ...............   Passed    0.05 sec
+test 3
+    Start 3: csi_application_workflow
+
+3: Test command: /usr/bin/python3 "/media/sf_works/SiPM/simulation/tests/test_workflow.py"
+3: Working Directory: /media/sf_works/SiPM/simulation/build
+3: Test timeout computed to be: 1500
+3: test_alignment_preserves_shape_under_adc_scaling_and_offset (__main__.WorkflowChecks.test_alignment_preserves_shape_under_adc_scaling_and_offset) ... ok
+3: test_am_transport_replay_and_boundary (__main__.WorkflowChecks.test_am_transport_replay_and_boundary) ... ok
+3: test_colored_noise_preserves_transport_and_avalanche_stream (__main__.WorkflowChecks.test_colored_noise_preserves_transport_and_avalanche_stream) ... ok
+3: test_effective_forward_model_area_and_causality (__main__.WorkflowChecks.test_effective_forward_model_area_and_causality) ... ok
+3: test_finite_rise_macro_config_and_zero_default_replay (__main__.WorkflowChecks.test_finite_rise_macro_config_and_zero_default_replay) ... ok
+3: test_geant4_seed_replay_and_output_guards (__main__.WorkflowChecks.test_geant4_seed_replay_and_output_guards) ... ok
+3: test_initialized_geometry_export (__main__.WorkflowChecks.test_initialized_geometry_export) ... ok
+3: test_macro_errors_and_post_initialization_config_lock (__main__.WorkflowChecks.test_macro_errors_and_post_initialization_config_lock) ... ok
+3: test_training_split_isolation (__main__.WorkflowChecks.test_training_split_isolation) ... ok
+3: test_transport_only_energy_matrix_and_exit_foil (__main__.WorkflowChecks.test_transport_only_energy_matrix_and_exit_foil) ... ok
+3: 
+3: ----------------------------------------------------------------------
+3: Ran 10 tests in 28.167s
+3: 
+3: OK
+3/3 Test #3: csi_application_workflow ...............   Passed   29.76 sec
+
+100% tests passed, 0 tests failed out of 3
+
+Total Test time (real) =  29.91 sec

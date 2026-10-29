@@ -1,0 +1,6 @@
+/csi/config /media/sf_works/SiPM/simulation/results/colored_noise_20261028/am241/config.json
+/csi/source Am241
+/csi/seed 283112
+/csi/output /media/sf_works/SiPM/simulation/results/colored_noise_20261028/am241/events.root
+/run/initialize
+/run/beamOn 12000

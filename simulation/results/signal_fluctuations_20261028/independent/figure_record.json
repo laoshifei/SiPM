@@ -1,0 +1,43 @@
+{
+  "code_sha256": "2a7474bedeab2fefe8da57ad9bb86aab9774c93524b2d8b0af60e36796e4bb28",
+  "validation_sha256": "62357c3931fe70eeefc2ddf3018ae66b6832fc7b0c93e5c70179cf7cee76e61d",
+  "stems": [
+    "native_calibration_summary",
+    "individual_native_calibration",
+    "native_fluctuation_distributions"
+  ],
+  "examples": [
+    {
+      "source": "Co60",
+      "measured_group": "run3_last20",
+      "Q_rank": 0.25,
+      "measured_id": 4702,
+      "MC_parent_id": 752,
+      "relative_Q_difference": -0.001955908675740692
+    },
+    {
+      "source": "Co60",
+      "measured_group": "run3_last20",
+      "Q_rank": 0.75,
+      "measured_id": 4725,
+      "MC_parent_id": 539,
+      "relative_Q_difference": 0.0024542259712994063
+    },
+    {
+      "source": "Am241",
+      "measured_group": "run12_last20",
+      "Q_rank": 0.25,
+      "measured_id": 7075,
+      "MC_parent_id": 2900,
+      "relative_Q_difference": 0.0020729648210069396
+    },
+    {
+      "source": "Am241",
+      "measured_group": "run12_last20",
+      "Q_rank": 0.75,
+      "measured_id": 7427,
+      "MC_parent_id": 3520,
+      "relative_Q_difference": 0.001627811449366634
+    }
+  ]
+}

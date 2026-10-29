@@ -1,0 +1,17 @@
+{
+  "scope": "Original primary cohort unchanged by additive flag-sensitivity diagnostics",
+  "checks": {
+    "run3": {
+      "original_ids_and_peak_unchanged": true,
+      "n": 2846
+    },
+    "run12": {
+      "original_ids_and_peak_unchanged": true,
+      "n": 4406
+    }
+  },
+  "inputs_sha256": {
+    "simulation/results/charge_diagnostics_20261028_final/diagnostics.json": "8e0d2f64a8b2b557bf2fa605fecc6c0e4ad067334360088dbeb67a5427bbdfed",
+    "simulation/results/joint_optical_20261028/joint_validation_final/validation.json": "9e8ddcd490d1170e0b24cd4a8957477717c3297ad201348ac54a0f04ae4ba8d0"
+  }
+}

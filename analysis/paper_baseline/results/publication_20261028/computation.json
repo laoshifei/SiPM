@@ -1,0 +1,19 @@
+{
+  "scope": "Numerically verified compiled execution of the unchanged publication protocol.\n\nOnly the EM inner loop is accelerated. Quantiles, initial seeds, all equations,\nconvergence criteria, PCA and the random draws are unchanged. This execution\nextension is recorded separately from the already frozen statistical protocol.\n",
+  "protocol_sha256": "ae27c8a32adfcbedff8ee94a229c88a64011e0566117658eda0791c86e6ad763",
+  "point_fit_comparisons": 72,
+  "resampled_background_comparisons": 3,
+  "max_absolute_fom_error": 4.440892098500626e-16,
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "flags": [
+    "-std=c++17",
+    "-O2",
+    "-shared",
+    "-fPIC"
+  ],
+  "library_sha256": "38bd15cc8905348ff50e242290fdf4a10c221b8c61e66638fcf63b4ecfe90ff0",
+  "code_sha256": {
+    "analysis/paper_baseline/publication_compute.py": "d2d9e07da885a8d642b7e7e4a0596e74bac281d37faaf05507eed5acbcd67ccd",
+    "analysis/paper_baseline/publication_em.cc": "c13f94d17eb03554d249b2d2f940757cf3d06463a208cf097be399990deb3df4"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "scope": "Replay newly generated optical histories with frozen training residual and pretrigger mixture. No new transport.",
+  "binary_sha256": "e9bae7d1bab8ef92a2da6dea93574a07e97d8b8139c515daec34c995b42ccc9c",
+  "sources": {
+    "Co60": {
+      "parent": "simulation/results/waveform_refit_20261029/parallel_shape/native/co60/events.root",
+      "parent_sha256": "db423947bdd5a119ebd28c3dd7cf14546dd1b20b3571a297e8d7f143dca61b4c",
+      "config_sha256": "84fed44a197c647262a54006d5adb2d09a96ec6dc1696849943f0009d272ad40"
+    },
+    "Am241": {
+      "parent": "simulation/results/waveform_refit_20261029/parallel_shape/native/am241/events.root",
+      "parent_sha256": "d0e048cc20530d37c89d03671139c694d2df40248233f9254adf75cdb0b279bd",
+      "config_sha256": "fc55c7ee30f0a289a2d2d82ecead2e12dde4b05fcb48d6cfb61a67ae664f23f3"
+    }
+  },
+  "fit_sha256": "853b230029a449828c102667c38b492e30045f1adc9f451d84306ad5579cd8ac",
+  "baseline_mixture_sha256": "9215a2dbbb130d3ee43ef8ddc3283adf5093cb3f3bf92855af157bc4d2e86eb0"
+}

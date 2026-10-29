@@ -1,0 +1,18 @@
+{
+  "scope": "Export per-event PID regions with explicit measured-vs-simulated truth status.",
+  "code_sha256": "d9252428668459e15ef1f54a86db5c40dabcacd103b892014fa05c1f087a6cb4",
+  "tables": {
+    "measured": {
+      "path": "simulation/results/pid_20261029/measured_pid_regions.csv",
+      "rows": 15543,
+      "sha256": "339e23a91d71139ad6e25351f05164cb048ceb7058628066ac18a20505027ed8"
+    },
+    "MC": {
+      "path": "simulation/results/pid_20261029/MC_pid_events.csv",
+      "rows": 902,
+      "sha256": "e0c2d975f6f11ad319802f6f64f9fd29714af7403cb38300bce684363333f755"
+    }
+  },
+  "classifier_sha256": "8372b74b0c9b3f54b1fbe75ee56c717086867c3e169a04b3256fd3587950f6e9",
+  "limits": "Three MC states repeat the same mothers; measured low/high score regions are predictions, never experimental truth labels."
+}

@@ -1,0 +1,66 @@
+{
+  "source": "Co60",
+  "state": "run3",
+  "ROOT_path": "simulation/results/waveform_refit_20261029/independent/co60/events.root",
+  "ROOT_sha256": "e37a437085d0c6a1e7f031fddd6b872c2733b7b12d14f63d52df2f81b36e7d69",
+  "nparent": 4000,
+  "seed": 291029503,
+  "kind": "existing_native",
+  "counts": {
+    "all_mothers": {
+      "n": 4000,
+      "truth_counts": {
+        "alpha_family": 0,
+        "gamma_family": 411,
+        "decay_electron_family": 3,
+        "mixed_other": 0,
+        "no_deposit": 3586
+      }
+    },
+    "selected": {
+      "n": 337,
+      "truth_counts": {
+        "alpha_family": 0,
+        "gamma_family": 337,
+        "decay_electron_family": 0,
+        "mixed_other": 0,
+        "no_deposit": 0
+      }
+    },
+    "common_Q": {
+      "n": 129,
+      "truth_counts": {
+        "alpha_family": 0,
+        "gamma_family": 129,
+        "decay_electron_family": 0,
+        "mixed_other": 0,
+        "no_deposit": 0
+      }
+    },
+    "common_train": {
+      "n": 66,
+      "truth_counts": {
+        "alpha_family": 0,
+        "gamma_family": 66,
+        "decay_electron_family": 0,
+        "mixed_other": 0,
+        "no_deposit": 0
+      }
+    },
+    "common_test": {
+      "n": 63,
+      "truth_counts": {
+        "alpha_family": 0,
+        "gamma_family": 63,
+        "decay_electron_family": 0,
+        "mixed_other": 0,
+        "no_deposit": 0
+      }
+    }
+  },
+  "energy_charge_label_disagreement_common": 0,
+  "replay_checks": null,
+  "scope": "Transport/charge conservation inherited from verified parent; all-ancestry energy sum rechecked; exact avalanche identity required for each replay.",
+  "code_sha256": "26becab03eb83179ee84d5fbe5f6e8f2826131b1760da1d292ca7d967d173a8a",
+  "protocol_sha256": "bdc8d08572fb405804496c6abb8bdfb08a93685b847668fa93c2185bef32684d"
+}

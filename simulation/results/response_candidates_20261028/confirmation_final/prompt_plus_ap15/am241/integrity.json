@@ -1,0 +1,36 @@
+{
+  "root_sha256": "eb188ced4f5786345ad34fed2e26f8e8442602c9347809b6cdfe3da5ecfd1e61",
+  "report": {
+    "passed": true,
+    "source": "Am241",
+    "events": 12000,
+    "zero_deposit_events": 11811,
+    "deposited_events": 189,
+    "alpha_deposit_events": 90,
+    "alpha_deposit_median_MeV": 0.9690744002019908,
+    "energy_deposit_p05_p50_p95_MeV": [
+      0.010817454933651174,
+      0.0595409119593761,
+      1.100033334850335
+    ],
+    "decay_product_counts": {
+      "1000932371": 11921,
+      "1000020040": 12000,
+      "1000932370": 12000,
+      "11": 145543,
+      "22": 10012,
+      "1000932379": 4561
+    },
+    "max_relative_charge_balance_error": 3.0535324792885835e-14,
+    "prompt_gamma_lines_counts": {
+      "0.05954": 4308,
+      "1.17323": 0,
+      "1.33249": 0
+    },
+    "ancestry_checks": true,
+    "scope": "Numerical and source-physics checks, not validation against experimental waveform",
+    "source_gap_mm": 30.0,
+    "transport_only": false,
+    "digitization_enabled": true
+  }
+}

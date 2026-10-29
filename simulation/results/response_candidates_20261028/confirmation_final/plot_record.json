@@ -1,0 +1,83 @@
+{
+  "scope": "Plot recorded means/local covariance against confirmed native candidates.",
+  "analysis_changed": false,
+  "code_sha256": "9231f415d81c28f1280721426d264e14833f870df59be77126a9ceacf222ac2b",
+  "inputs_sha256": {
+    "simulation/results/response_candidates_20261028/screen.json": "03dbe2b9259f514b9455ab0f02029d17090001a212b9de4d07219ee2e242c9c5",
+    "simulation/results/response_candidates_20261028/curves.npz": "4c5f50f493f840a753980762875fccf7ed7144a7d99a5bd981a0db3f8b019f0c",
+    "simulation/results/response_candidates_20261028/confirmation_final/confirmation.json": "0f5be296df17f0994573cf3084d5490b15d2163f083ec9e89aedfa9abde8feeb",
+    "simulation/results/response_candidates_20261028/confirmation_final/curves.npz": "ec4f8a84d2b5add21ca3a7fd6d91e70085de33c9c9f7b20bb021b8bd9bb8f700",
+    "simulation/results/bias_response_20261028/samples.npz": "496dd6b8c05b9edb0f6aa73d33b025bc55922e5171e154771d0ffbedef1f7d08",
+    "simulation/results/residual_covariance_20261028/covariance.json": "a648af96ef12dfb8202256524b78266f7da4da076de318b3a7f89c754f5da984"
+  },
+  "curves": {
+    "Co60": {
+      "measured_n": 2436,
+      "original_prompt_combined_n": [
+        64,
+        64,
+        35
+      ],
+      "covariance50_measured_original_prompt_combined": [
+        [
+          0.10929246455263969,
+          0.0757119974946248,
+          0.09174587747106204,
+          0.14614095405536415
+        ],
+        [
+          0.017422494925911913,
+          0.01215318848495556,
+          0.011604216468049275,
+          0.01382798362241656
+        ],
+        [
+          0.2327394442560541,
+          0.1582385612609268,
+          0.16143327655645898,
+          0.171022481999225
+        ],
+        [
+          0.22405975583677076,
+          0.15335444953015406,
+          0.16045083335761823,
+          0.18119742523032592
+        ]
+      ]
+    },
+    "Am241": {
+      "measured_n": 1547,
+      "original_prompt_combined_n": [
+        79,
+        79,
+        84
+      ],
+      "covariance50_measured_original_prompt_combined": [
+        [
+          0.3000240414538389,
+          0.21726843999909773,
+          0.22503248811974205,
+          0.23761631697233654
+        ],
+        [
+          0.01578032522829035,
+          0.011456456699981441,
+          0.012155234298532134,
+          0.01042354369108851
+        ],
+        [
+          0.23396583588428013,
+          0.1645024169182198,
+          0.1640289536220506,
+          0.1719666107148921
+        ],
+        [
+          0.2302180004697449,
+          0.16531018856095206,
+          0.16018396335952959,
+          0.16701718131553958
+        ]
+      ]
+    }
+  }
+}

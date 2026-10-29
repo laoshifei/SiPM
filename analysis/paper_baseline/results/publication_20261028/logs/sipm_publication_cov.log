@@ -1,0 +1,16 @@
+covariance block 64 draw 1
+covariance block 64 draw 64
+covariance block 64 draw 128
+covariance block 64 draw 192
+covariance block 64 draw 256
+covariance block 64 draw 320
+covariance block 64 draw 384
+covariance block 64 draw 448
+covariance block 64 draw 512
+covariance block 32 draw 1
+covariance block 32 draw 64
+covariance block 32 draw 128
+covariance block 128 draw 1
+covariance block 128 draw 64
+covariance block 128 draw 128
+50ns500-900ns effects 0.56616521450033 0.5697731309714118

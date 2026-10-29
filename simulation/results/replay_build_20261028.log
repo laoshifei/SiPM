@@ -1,0 +1,13 @@
+-- Could NOT find XKB (missing: XKB_LIBRARY XKB_INCLUDE_DIR) (Required is at least version "0.5.0")
+-- Configuring done (1.6s)
+-- Generating done (4.8s)
+-- Build files have been written to: /media/sf_works/SiPM/simulation/build
+[  6%] Built target sipm_response
+[ 12%] Built target test_sipm
+[ 22%] Built target readout_noise
+[ 25%] Building CXX object CMakeFiles/replay_response.dir/replay_response.cc.o
+[ 32%] Built target test_response
+[ 38%] Built target test_noise
+[ 96%] Built target csi_sources
+[100%] Linking CXX executable replay_response
+[100%] Built target replay_response

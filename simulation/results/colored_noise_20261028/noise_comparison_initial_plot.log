@@ -1,0 +1,31 @@
+Co60 baseline {'measured': {'n': 2862, 'detrended_rms_adc': {'n': 2862, 'p10_p50_p90': [2.9611369634343174, 3.3659369912505315, 3.8231891289857565]}, 'mean_detrended_variance_adc2': 11.541882374310807, 'lag1_correlation': 0.49780907224424326}, 'old': {'n': 1500, 'detrended_rms_adc': {'n': 1500, 'p10_p50_p90': [3.1638870709753792, 3.3557241830457265, 3.5514066337689774]}, 'mean_detrended_variance_adc2': 11.288053787068696, 'lag1_correlation': -0.009713993389152511}, 'new': {'n': 2000, 'detrended_rms_adc': {'n': 2000, 'p10_p50_p90': [3.1232516130229078, 3.3881890340285823, 3.6539849413660597]}, 'mean_detrended_variance_adc2': 11.536855794104126, 'lag1_correlation': 0.48260481249700776}} 50ns {'measured': {'n': 2450, 'p10_p50_p90': [0.062269197332123605, 0.08563722828112166, 0.11646231138189869], 'median_event_bootstrap_95': [0.08458532274991361, 0.08646426497665058]}, 'old': {'n': 38, 'p10_p50_p90': [0.0019295509461403112, 0.011606995032846965, 0.019024850237674217], 'median_event_bootstrap_95': [0.007585790184653926, 0.014577485598032958]}, 'new': {'n': 72, 'p10_p50_p90': [0.002662451404645376, 0.012593353501273344, 0.020760163460579305], 'median_event_bootstrap_95': [0.009589025045924848, 0.015218728546534194]}}
+Am241 baseline {'measured': {'n': 4458, 'detrended_rms_adc': {'n': 4458, 'p10_p50_p90': [2.841955008827165, 3.211249622657832, 3.8513039382858656]}, 'mean_detrended_variance_adc2': 11.569539803873363, 'lag1_correlation': 0.5293480770571729}, 'old': {'n': 12000, 'detrended_rms_adc': {'n': 12000, 'p10_p50_p90': [2.9874568619889965, 3.1721073683620733, 3.354576271906764]}, 'mean_detrended_variance_adc2': 10.080584277818499, 'lag1_correlation': -0.008524383991630077}, 'new': {'n': 12000, 'detrended_rms_adc': {'n': 12000, 'p10_p50_p90': [3.1445477310108063, 3.393214733392447, 3.653552108195486]}, 'mean_detrended_variance_adc2': 11.580688766274363, 'lag1_correlation': 0.5178465211996269}} 50ns {'measured': {'n': 1551, 'p10_p50_p90': [0.18254456762059296, 0.2211244393362049, 0.26738190339920165], 'median_event_bootstrap_95': [0.21921469709887212, 0.22314601049904562]}, 'old': {'n': 95, 'p10_p50_p90': [0.003258777839880882, 0.012189204149017897, 0.02042502252363815], 'median_event_bootstrap_95': [0.009635305903337358, 0.013908837330403068]}, 'new': {'n': 86, 'p10_p50_p90': [0.0005030923753117035, 0.009734142467805865, 0.022740122511948027], 'median_event_bootstrap_95': [0.007569570835913132, 0.011763635697655499]}}
+Info in <TCanvas::Print>: SVG file simulation/results/colored_noise_20261028/noise_comparison/noise_and_signal.svg has been created
+Info in <TCanvas::Print>: png file simulation/results/colored_noise_20261028/noise_comparison/noise_and_signal.png has been created
+Traceback (most recent call last):
+  File "/media/sf_works/SiPM/simulation/compare_noise.py", line 98, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/media/sf_works/SiPM/simulation/compare_noise.py", line 88, in main
+    g=ROOT.TGraphAsymmErrors(3,x,y,np.zeros(3),np.zeros(3),y-values[:,0],values[:,2]-y);g.SetMarkerStyle(20);g.SetLineColor(BLUE);g.SetMarkerColor(BLUE);g.Draw('LP SAME');KEEP.append(g)
+TypeError: none of the 10 overloaded methods succeeded. Full details:
+  TGraphAsymmErrors::TGraphAsymmErrors(const TVectorF& vx, const TVectorF& vy, const TVectorF& vexl, const TVectorF& vexh, const TVectorF& veyl, const TVectorF& veyh) =>
+    TypeError: takes at most 6 arguments (7 given)
+  TGraphAsymmErrors::TGraphAsymmErrors(const TVectorD& vx, const TVectorD& vy, const TVectorD& vexl, const TVectorD& vexh, const TVectorD& veyl, const TVectorD& veyh) =>
+    TypeError: takes at most 6 arguments (7 given)
+  TGraphAsymmErrors::TGraphAsymmErrors(const TGraphAsymmErrors& gr) =>
+    TypeError: takes at most 1 arguments (7 given)
+  TGraphAsymmErrors::TGraphAsymmErrors(const TH1* pass, const TH1* total, Option_t* option = "") =>
+    TypeError: takes at most 3 arguments (7 given)
+  TGraphAsymmErrors::TGraphAsymmErrors(const TH1* h) =>
+    TypeError: takes at most 1 arguments (7 given)
+  TGraphAsymmErrors::TGraphAsymmErrors() =>
+    TypeError: takes at most 0 arguments (7 given)
+  TGraphAsymmErrors::TGraphAsymmErrors(Int_t n) =>
+    TypeError: takes at most 1 arguments (7 given)
+  TGraphAsymmErrors::TGraphAsymmErrors(const char* filename, const char* format = "%lg %lg %lg %lg %lg %lg", Option_t* option = "") =>
+    TypeError: takes at most 3 arguments (7 given)
+  TGraphAsymmErrors::TGraphAsymmErrors(Int_t n, const Float_t* x, const Float_t* y, const Float_t* exl = nullptr, const Float_t* exh = nullptr, const Float_t* eyl = nullptr, const Float_t* eyh = nullptr) =>
+    TypeError: could not convert argument 2 (could not convert argument to buffer or nullptr)
+  TGraphAsymmErrors::TGraphAsymmErrors(Int_t n, const Double_t* x, const Double_t* y, const Double_t* exl = nullptr, const Double_t* exh = nullptr, const Double_t* eyl = nullptr, const Double_t* eyh = nullptr) =>
+    TypeError: could not convert argument 3 (could not convert argument to buffer or nullptr)

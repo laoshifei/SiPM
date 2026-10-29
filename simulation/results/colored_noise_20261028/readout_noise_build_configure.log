@@ -1,0 +1,4 @@
+-- Could NOT find XKB (missing: XKB_LIBRARY XKB_INCLUDE_DIR) (Required is at least version "0.5.0")
+-- Configuring done (3.3s)
+-- Generating done (2.4s)
+-- Build files have been written to: /media/sf_works/SiPM/simulation/build

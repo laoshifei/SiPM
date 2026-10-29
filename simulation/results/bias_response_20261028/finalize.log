@@ -1,0 +1,18 @@
+{
+  "verification": {
+    "analysis_checks_passed": 10,
+    "cohorts_checked": 24,
+    "pulse_waveforms_used": 40795,
+    "baseline_waveforms_used": 56457,
+    "original_metric_regression_exact": true,
+    "native_Geant4_source_and_executable_unchanged": true,
+    "new_Geant4_runs": 0,
+    "native_signal_replays": 158,
+    "maximum_native_signal_replay_difference_mV": 0.0,
+    "maximum_variance_decomposition_error_ADC": 2.525757381022231e-14,
+    "maximum_phase_grid_relative_change": 1.790550895682461e-05
+  },
+  "source_files": 22,
+  "output_files": 39,
+  "record": "simulation/results/bias_response_20261028/record.json"
+}

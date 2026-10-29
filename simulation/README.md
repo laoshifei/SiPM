@@ -2,7 +2,44 @@
 
 已实现并运行 **核衰变 → 能量沉积 → 闪烁光输运 → SiPM 雪崩 → 被动读出响应 → ADC → 实测对照**。只支持 `Am241` 和 `Co60`。本目录参考 GAGG_pileup 的 SiPM 数值内核，新建 CsI 几何、源、材料参数和本项目波形对照；未修改参考项目。
 
-先看 [结果与适用边界](RESULTS.md)、[本轮绝对 ADC / 电荷谱对比](results/joint_optical_20261028/joint_validation_final/joint_comparison.png)、[共同 Q 平均波形及残差](results/joint_optical_20261028/common_charge_final/waveform_comparison.png)、[Co 候选几何](results/joint_optical_20261028/geometry_co/geometry.png)和 [Am 候选几何](results/joint_optical_20261028/geometry_am/geometry.png)。2026-10-28 的联合候选改善了平均幅度，但 Co 谱过宽、Am 高电荷尾部缺失，完整响应的一致性尚未通过。
+最新参数、笔记、图和复现命令见 [codex_0001 notebook](../jupyter/codex_0001_csi_geant4_waveform_calibration.ipynb)。2026-10-29 新种子完整输运的后段平均形状 NRMSE 为 **1.03% / 1.18%（Co / Am）**；另有前触发状态条件化和 run 18 单独读出校准。当前配置为 [run 3](configs/csi_tl_run3_waveform_20261029.json)、[run 12](configs/csi_tl_run12_waveform_20261029.json)、[run 18](configs/csi_tl_run18_waveform_20261029.json)；[未缩放 ADC 对照](results/waveform_refit_20261029/figures/unscaled_individual_waveforms.png)。峰值时间、电荷谱及装置参数退化仍限制解释，详细数值和适用边界写在 notebook。
+
+[PID notebook](../jupyter/codex_0001_csi_geant4_pid.ipynb)在同一读出状态下对两源应用长短门、平均时间和冻结 PCA，使用沉积祖先真值检查测试母事件。提供 [PID 图](results/pid_20261029/figures/pid_truth_and_measurement.png)、[固定分类分区配置](results/pid_20261029/pid_classifier.json)和 [完整数值](results/pid_20261029/pid.json)。主场景长短门为92/92 α保留、0/62 γ误判；γ泄漏率单侧95%上限仍为4.72%。实验真值缺失、带宽不完全吻合，不能称为已测实验效率。重放没有增加独立输运历史。
+
+[PID 带宽与噪声笔记](../jupyter/codex_0001_csi_pid_bandwidth.ipynb)新增逐分量协方差分解和信号期相关噪声联合校准，并用 **8000 Co / 48000 Am 新母衰变**检验。实验最后20%的 QDC 带宽比（MC/实测）在 run12 从0.726改善到0.881，run18 从0.811改善到0.882；Co 仍偏宽，run12平均时间带仍偏窄。平均波形和短尺度起伏保持接近，但**尚未全面解决 PID 带宽差异**，候选频谱未替换默认配置。见[带宽图](results/pid_bandwidth_20261029/figures/pid_bandwidth_validation.png)、[验证数值与区间](results/pid_bandwidth_20261029/validation/assessment.json)和[结论边界](results/pid_bandwidth_20261029/decision.json)。
+
+以下保留 2026-10-28 阶段及工程通用说明，历史配置与数值不代表最新校准。该阶段增加**按采集 run 校准的信号相关随机残差**，在原生数字化中执行。参数冻结后重新运行 4000 个 Co、24000 个 Am 完整衰变；对未用于该次拟合的后段波形，归一化平均形状 NRMSE 为 **2.17% / 1.08%**，50/102/202 ns 起伏均值偏差均在约 5% 内。
+
+[未缩放幅度的单条 ADC 对照](results/signal_fluctuations_20261028/independent/individual_native_calibration.png)、[平均形状、起伏和 Q 谱](results/signal_fluctuations_20261028/independent/native_calibration_summary.png)、[事件起伏分布](results/signal_fluctuations_20261028/independent/native_fluctuation_distributions.png)。新结果使用 run 3/12 前段 2450/1547 条训练，后段及 run 18 是此前已探索的内部检查；新随机种子验证的是模拟统计可重复性，并不产生新的实验验证数据。
+
+历史阶段的 [联合筛选](results/response_candidates_20261028/response_candidates.png)仅重放原 14000 个光子历史，未找到同时满足两源、三个起伏尺度和电荷谱的候选。对应的 [Q 箱权重检查](../analysis/paper_baseline/results/robustness_20261028/mc_charge_matched.json)中，f=0.10 的 F₅₀ 偏差仍为 Co **+81.6% [72.6%, 90.1%]**、Am **−25.2% [−27.9%, −22.4%]**。这些冻结结果与新校准分开保存；[论文主分析](../analysis/paper_baseline/MANUSCRIPT_DRAFT.md)的 40795 条波形和 [原记录](../analysis/paper_baseline/results/publication_20261028/record.json)未覆盖。
+
+此前的 [Gaussian FIR 噪声](results/colored_noise_20261028/noise_comparison/noise_and_signal.png)、[响应参数退化](results/bias_response_profile_20261028_final/response_profiles.png)和[单条波形示例](results/response_factorization_20261028/report/individual_waveforms.png)保留；[Co 几何](results/joint_optical_20261028/geometry_co/geometry.png)与 [Am 几何](results/joint_optical_20261028/geometry_am/geometry.png)沿用明确标注的候选假设。
+
+## 2026-10-28 历史波形校准
+
+配置为 [run 3](configs/csi_tl_run3_response_calibrated.json) 和 [run 12](configs/csi_tl_run12_response_calibrated.json)，与新完整输运使用的文件逐字节相同。它们是相应采集条件下的**经验校准**；原 `csi_tl_initial.json` 起点保持原样。配置继承的历史假设文字不能当成器件实测参数；本阶段的数值和状态以 `status`、`signal_dependent_noise` 及下述记录为准。
+
+```bash
+./simulation/build/csi_sources simulation/configs/csi_tl_run3_response_calibrated.json \
+  Co60 4000 281028403 simulation/results/new_calibrated_co60/events.root
+./simulation/build/csi_sources simulation/configs/csi_tl_run12_response_calibrated.json \
+  Am241 24000 281028412 simulation/results/new_calibrated_am241/events.root
+python3 simulation/validate.py simulation/results/new_calibrated_co60/events.root \
+  simulation/results/new_calibrated_am241/events.root
+```
+
+每次使用新输出目录。完整流程仍是 Geant4 核衰变、光学输运和原生 SiPM 雪崩；没有把实测波形当模板，也没有按单条实测波形缩放模拟幅度。两个配置共用 105 ns 被动 RC，信号内额外协方差和事件间方差变化分别由各 run 训练数据约束。原生模块不读取源名或实验 run 标签；不同校准文件不代表已经确定“不同核素有不同 SiPM 增益”。
+
+计算入口依次为 `calibrate_signal_fluctuations.py`、`fit_signal_fluctuations.py`、`fit_event_variance.py`；不要覆盖本次冻结结果重新拟合。既有原生输出可用下列命令重新核查、绘图和导表：
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 simulation/validate_signal_fluctuations.py \
+  --out simulation/results/signal_fluctuations_20261028/independent
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 simulation/summarize_signal_calibration.py
+```
+
+[42 行数值表](results/signal_fluctuations_20261028/waveform_validation.csv)、[额外形状与基线检查](results/signal_fluctuations_20261028/waveform_feature_checks.json)、[拟合](results/signal_fluctuations_20261028/fit.json)、[事件间变化拟合](results/signal_fluctuations_20261028/variance_scatter/fit.json)、[完整输运验证](results/signal_fluctuations_20261028/independent/validation.json)、[本阶段验证与源码归档](results/signal_fluctuations_20261028/record.json)。
 
 ## Geant4 工程结构
 
@@ -33,6 +70,9 @@ simulation/
 | [TrackingAction](src/TrackingAction.cc)、[TrackInformation](include/TrackInformation.hh) | `G4UserTrackingAction` / `G4VUserTrackInformation`；保存 α、γ、衰变电子及其后代的来源，记录实际发光粒子 |
 | [SiPMSD](src/SiPMSD.cc)、[SiPMHit](include/SiPMHit.hh) | `G4VSensitiveDetector` / `G4VHit`；只记录透入 SiPM 的光子，生成当前事件的 `SiPM/OpticalArrivals` 命中集合 |
 | [SiPMDigitizer](src/SiPMDigitizer.cc) | `G4VDigitizerModule`；生成 `SiPMDigiCollection`，所有权交给当前 `G4Event` |
+| [ReadoutResponse](src/ReadoutResponse.cc) | 可选快慢双路径响应；相同雪崩电荷驱动两支原生 `BuildReadout`，保持积分与有限窗尾部电荷守恒，先于电子噪声执行 |
+| [ReadoutNoise](src/ReadoutNoise.cc) | 可选平稳 Gaussian FIR 电子噪声；由数字化模块调用，带随机前历史并重新量化 ADC，保持光子、雪崩与无噪声信号不变 |
+| [SignalDependentNoise](src/SignalDependentNoise.cc) | 可选信号相关 Gaussian FIR 残差及均值为 1 的事件间方差乘子；使用独立随机流，在原生数字化及重放中同样执行，不改变光子、雪崩电荷或无噪声信号 |
 | [RootIO](src/RootIO.cc) | ROOT 事件树、运行元数据和完成标记 |
 | [RunConfig](src/RunConfig.cc) | JSON 校验和 `/csi/` 命令，初始化后禁止更改配置 |
 | [DataStructure](include/DataStructure.hh)、[Constants](include/Constants.hh) | 事件记录、物理光子命中、器件常量 |
@@ -41,7 +81,7 @@ simulation/
 
 schema 4 修正了旧模型“仅凭 post-volume 名称接收光子”的错误。短程核查发现旧模型也接收了菲涅耳反射光子，故本次物理修正后不再要求与旧 ADC 逐事件相同；保留修正前记录和源码，禁止混合两种模型的 MC 文件。详见[边界核查](results/sd_boundary_audit_20261027/finding.json)。
 
-当前 schema 5 另增加来源 × 实际沉积粒子的能量矩阵、可选源出口片，以及明确关闭数字化的输运模式。可选功能保持在现有 Geant4 类中实现；Python 扫描程序不替代核衰变或光学输运。
+schema 5 增加来源 × 实际沉积粒子的能量矩阵、可选源出口片，以及明确关闭数字化的输运模式。schema 6 记录可选的 Geant4 有限闪烁上升时间及启用状态，默认关闭；schema 7 记录电子噪声模型，schema 8 增加 `readout_response` 元数据；当前 **schema 9** 另记录 `signal_dependent_noise`。省略新配置时原输出路径不变。可选功能保持在现有 Geant4 工程中实现；Python 扫描程序不替代核衰变或光学输运。
 
 ## 装置与参数状态
 
@@ -59,11 +99,11 @@ schema 4 修正了旧模型“仅凭 post-volume 名称接收光子”的错误�
 | 采样 | 2496 点 × 2 ns，14 bit，正脉冲 | 实测 BIN/配置依据 |
 | ADC 输入范围 | 本轮候选 0.5 Vpp，旧模型假设 2 V | 当前 XML 的 X4 设置支持 0.5 Vpp，但与历史 BIN 的完整关联未确认 |
 | 光产额 / PDE / α 相对产额 | 初始 54000 / 0.30 / 0.50；本轮候选 18195.9 / 0.30 / 0.65 | 有效输出归一化与 PDE、增益、收光退化；不是本征材料参数测量 |
-| 噪声 | 本轮分别用 run 3 / 12 训练参考的基线及 RMS，独立高斯样本 | 尚未复现相关噪声、后段状态变化或 run 18 噪声 |
+| 噪声 | 可选用 run 3 / 12 训练前触发区约束的 257 tap Gaussian FIR；省略配置时沿用独立高斯样本 | 改善平均协方差与频谱；固定平稳模型尚未复现弱脉冲、非高斯尾部及后段状态变化 |
 
 厂商 [S13361-3050 系列资料](https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/s13361-3050_series_kapd1054e.pdf) 第 2 页给出每通道典型 320 pF、3 V 过电压下典型增益 1.7×10⁶；这些是规格条件，**不能用典型击穿电压把 53.2 V 实验偏压直接换成真实过电压**。PDE 已含填充因子的影响，不再次乘填充因子。
 
-`lowpass_ns` 与有效电流—电压转换系数是现阶段独立的等效参数，尚未由真实求和电路约束。初始 256 ns 来自“16 × 320 pF × 50 Ω”这一直接并联假设；拟合后的 94.47 ns 不可反推已经确认的单元数量或负载。
+`lowpass_ns` 与有效电流—电压转换系数是现阶段独立的等效参数，尚未由真实求和电路约束。初始 256 ns 来自“16 × 320 pF × 50 Ω”这一直接并联假设；旧拟合的 94.47 ns 和本次训练选择的 105 ns 均不可反推已经确认的单元数量或负载。
 
 [CAEN DT5730 规格](https://caen.it/product/dt5730-dt5730s/)给出 X4 对应 0.5 Vpp 和 50 Ω 输入；它不证明实际 SiPM 求和电路。现存配置审计见 [settings_audit.json](results/settings_audit_20261028/settings_audit.json)。
 
@@ -81,7 +121,7 @@ cmake --build simulation/build -j4
 ctest --test-dir simulation/build --output-on-failure
 ```
 
-`ctest` 同时运行 14 项内核检查和 8 项 Python/PyROOT 集成检查，后者包括宏/命令行等价、两种源同种子重放、来源守恒、反射光子排除、实际几何导出、输运模式空 ADC、出口片及覆盖保护。
+`ctest` 的 5 个目标覆盖继承 SiPM 内核、平稳电子噪声、双路径响应、信号相关残差及 Python/PyROOT 工作流。新增 5 项残差检查验证关闭/零信号退化、方差与信号成比例、FIR 协方差、事件间方差乘子的矩、种子复现与异常配置。另运行 `python3 simulation/tests/test_response_replay.py` 的 2 项双源集成检查，验证相同种子下光子/雪崩/无噪声信号保留，原生数字化与重放的 ADC 逐元素一致。本阶段全部通过；[测试日志](results/signal_fluctuations_20261028/logs/sipm_signal_final_ctest.log)。
 
 和 GAGG 项目一样，可以直接交给 Geant4 执行宏。在 **SiPM 项目根目录**执行：
 
@@ -164,7 +204,7 @@ python3 simulation/compare.py \
 
 标定模型为双指数发光与固定 2/29 ns SPE 响应、共享 RC 的卷积。两种源共享时间常数和读出参数，只允许主导分量份额不同；Am 主导分量暂配给 α 是**待检验假设**。241Am 中的 γ 始终保留，源标签及波形带不当成实测逐事件真值。保存多初值拟合和边界解，未报告无依据的材料寿命误差或拟合显著性。
 
-对 schema 4 / 5 的完整光学输出可以继续按来源诊断电荷谱：
+对 schema 4–8 的完整光学输出可以继续按来源诊断电荷谱：
 
 ```bash
 python3 simulation/diagnose_origin.py \
@@ -208,6 +248,182 @@ python3 simulation/validate_joint.py \
 `validate_joint.py` 在实测与 MC 上同时施加 amplitude ≥ 200 ADC 的分析条件，输出电荷谱、门比分布、未缩放平均 ADC 波形和后段检查。该阈值不模拟硬件触发。分位数损失和 KS 距离用于描述差异，不输出拟合显著性；完整光学结果仍未复现实测电荷谱宽度和尾部。`compare.py` 则继续使用原冻结共同 Q 选择，图中绿色线标为原平均形状拟合，红色线才是输入的新 MC。
 
 `check_trigger_proxy.py` 的简单 FIR 只用于核查假设，没有成为选择模型：当前 XML 和简化 FIR 不能完整重放已记录波形的触发，详见 [RESULTS.md](RESULTS.md)。
+
+### 电荷尾部、单条波形起伏与有限上升时间
+
+`diagnose_charge.py` 保留原有训练样本，另按 `flags & 0x8000` 分组，比较电荷分箱的平均形状、硬件能量、原始波形和 MC 来源。其他非零状态位不会被一起删除；该位也不当作粒子真值。`diagnose_fluctuations.py` 使用固定共同 Q、200 ADC 分析阈值及实测该位未置位的样本，比较 50 / 102 / 202 ns 居中滑动平均残差的起伏。指标为脉冲区方差减前触发方差，再除平均信号；它不是增益、光电子数或噪声标准差。
+
+```bash
+python3 simulation/diagnose_charge.py --out simulation/results/new_charge_diagnostics
+python3 simulation/diagnose_fluctuations.py --out simulation/results/new_fluctuations
+```
+
+`optical.rise_time_ns` 是可选的两元素数组，单位 ns，缺省 `[0,0]`。正值启用 Geant4 的 `SCINTILLATIONRISETIME1/2` 和 `SetScintFiniteRiseTime`，由 `PhysicsList::ConstructProcess` 在读取宏配置之后设置。两个上升参数对粒子类型共用，α/e 衰减参数仍可分别配置。按 [Geant4 11.4.2 的实现](https://github.com/Geant4/geant4/blob/v11.4.2/source/processes/electromagnetic/xrays/src/G4Scintillation.cc#L557-L570)，发射时间密度正比于 `(1-exp(-t/rise))*exp(-t/decay)`，不能把 RC 数值直接当成这里的 rise。
+
+受控检验将旧 RC 的 94.4717 ns 极点从电子滤波移到随机发光时间，换算为两个 rise 参数 117.696 / 101.455 ns，`sipm.readout.lowpass_ns=0`，其他数值参数不变。连续线性平均响应相同，但单条波形的光子涨落会改变；有限记录窗、像元恢复和事件选择仍可能改变完整 MC。这个控制不是材料上升时间测量，也不宣称实际读出电路没有低通。
+
+下面生成新目录、冻结设计和源码，然后通过 Geant4 宏运行与比较；默认 5000 次 Co 衰变、30000 次 Am 衰变：
+
+```bash
+python3 simulation/prepare_response_test.py --out simulation/results/new_response_control
+simulation/build/csi_sources simulation/results/new_response_control/co60/run.mac
+simulation/build/csi_sources simulation/results/new_response_control/am241/run.mac
+python3 simulation/validate.py simulation/results/new_response_control/co60/events.root
+python3 simulation/validate.py simulation/results/new_response_control/am241/events.root
+python3 simulation/validate_joint.py \
+  --new simulation/results/new_response_control \
+  --old simulation/results/joint_optical_20261028 \
+  --screen simulation/results/joint_screen_20261028 \
+  --design simulation/results/new_response_control/design.json \
+  --out simulation/results/new_response_control/joint_validation_final
+python3 simulation/compare.py \
+  --co simulation/results/new_response_control/co60/events.root \
+  --am simulation/results/new_response_control/am241/events.root \
+  --out simulation/results/new_response_control/common_charge
+python3 simulation/diagnose_fluctuations.py \
+  --mc simulation/results/new_response_control \
+  --out simulation/results/new_response_control/fluctuations
+python3 simulation/report_response_test.py \
+  --control simulation/results/new_response_control \
+  --out simulation/results/new_response_control/report
+```
+
+## 前触发噪声校准与可选相关噪声
+
+`characterize_readout.py` 在 t₁₀ ≥768 ns 的已有波形中取前 512 ns，分别检查原基本质量样本与额外前触发筛选后的样本。其正负弱脉冲搜索规则相同，候选不当作已知单光电子。`prepare_noise_model.py` 仅用 run 3 / 12 前 60% 且满足原前触发质量条件的基线，生成 257 tap FIR 核与 RMS；后段和 run 18 不参与噪声校准。
+
+FIR 系数来自经验噪声功率谱的平方根，经过窗口截断并归一化为平方和 1。电子噪声从独立高斯随机数生成，包含平稳随机前历史。`noise_rms_mV` 控制未去趋势时的 RMS；它不等于有限 512 ns 窗内去趋势后的 RMS。该参数化描述电子噪声，不是单雪崩信号响应。
+
+顶层 `electronics_noise` 为可选字段，生成配置含完整系数和来源。以下只演示两点滤波，**不是实验校准系数**：
+
+```json
+"electronics_noise": {
+  "model": "gaussian_fir",
+  "sample_period_ns": 2.0,
+  "coefficients": [0.7071067811865476, 0.7071067811865476]
+}
+```
+
+系数必须有限、非空、平方和为 1，采样周期须与 ADC 一致。模块复用独立读出随机流，保留雪崩电荷和无噪声输出；模拟电压、截断计数和 ADC 量化由加入噪声后的结果重新计算。缺省配置沿用原独立高斯噪声。
+
+```bash
+python3 simulation/characterize_readout.py --out simulation/results/new_readout_noise
+python3 simulation/prepare_noise_model.py \
+  --noise simulation/results/new_readout_noise --out simulation/results/new_colored_noise
+simulation/build/csi_sources simulation/results/new_colored_noise/co60/run.mac
+simulation/build/csi_sources simulation/results/new_colored_noise/am241/run.mac
+python3 simulation/validate.py simulation/results/new_colored_noise/co60/events.root \
+  simulation/results/new_colored_noise/am241/events.root
+python3 simulation/validate_joint.py \
+  --new simulation/results/new_colored_noise --old simulation/results/joint_optical_20261028 \
+  --screen simulation/results/joint_screen_20261028 \
+  --design simulation/results/new_colored_noise/design.json \
+  --out simulation/results/new_colored_noise/joint_validation_final
+python3 simulation/diagnose_fluctuations.py --mc simulation/results/new_colored_noise \
+  --out simulation/results/new_colored_noise/fluctuations
+python3 simulation/compare_noise.py --new simulation/results/new_colored_noise \
+  --noise simulation/results/new_readout_noise --out simulation/results/new_colored_noise/noise_comparison
+python3 simulation/profile_signal_response.py --out simulation/results/new_signal_constraints
+```
+
+最后一个工具是固定单雪崩 / 增益假设下的平稳散粒噪声诊断，不代替 Geant4，也不输出“已测得的 RC”。源码与数值假设见工具说明和 [RESULTS.md](RESULTS.md)。
+
+## 已有偏压序列和响应退化检查
+
+`analyze_bias_response.py` 使用已确认的 8 个 run，按原始序号前 60% / 中间 20% / 最后 20% 分组；原 feature 文件和训练标记不变。脉冲样本采用原 primary、幅度 ≥200 ADC、`0x8000` 未置位、冻结共同 Q 和 t₁₀ ≥768 ns，每组最多 3000 条均匀抽样。输出波形均值、三个起伏尺度、固定电荷分箱、前后频谱和正负弱候选。
+
+`profile_bias_response.py` 在平稳独立雪崩近似下，扫描两个响应极点和有效 ADC 面积。默认 `--statistic mean` 与期望矩的解释相符；`--statistic median` 保留为描述性敏感性比较。它明确保留两极点互换的退化、有限网格边界和同偏压共同响应的残差。5% / 10% / 20% 容差范围不是参数置信区间，有效面积也不是单光电子增益；不自动改写 Geant4 配置。
+
+```bash
+python3 simulation/analyze_bias_response.py --out simulation/results/new_bias_response
+python3 simulation/profile_bias_response.py \
+  --bias simulation/results/new_bias_response --out simulation/results/new_bias_profile
+python3 simulation/tests/test_bias_response.py
+```
+
+如只更新已有图形，可运行 `analyze_bias_response.py --out 原结果目录 --replot`，它保持数值结果不变并另存绘图代码与输入哈希。数值提取和参数扫描拒绝覆盖已有输出目录。完整执行来源、与旧指标的逐事件回归及源码快照见[本轮记录](results/bias_response_20261028/record.json)。
+
+## 原生读出记录与有限窗矩核查
+
+`diagnose_mc_components.py` 在冻结 MC 事件中，将 ADC 起伏精确分解为保存的信号、电子噪声、量化与交叉协方差，区分事件均值和中位数。`diagnose_nonstationary_moments.py` 通过 PyROOT 调用原 `vendor/SiPMResponse.cc` 的 C++ `BuildReadout`，重放真实雪崩记录，并用同一内核计算实际到达时间下的有限窗单雪崩自项。它们是完整 MC 输出的诊断，不执行新的核衰变或更换 Geant4 输运。
+
+```bash
+python3 simulation/diagnose_mc_components.py \
+  --mc simulation/results/colored_noise_20261028 --out simulation/results/new_mc_components
+python3 simulation/diagnose_nonstationary_moments.py \
+  --mc simulation/results/colored_noise_20261028 \
+  --components simulation/results/new_mc_components --out simulation/results/new_native_moments
+python3 simulation/tests/test_mc_components.py
+python3 simulation/tests/test_nonstationary_moments.py
+```
+
+已核查的 158 条无噪声信号重放差异为零；实际时间自项与 MC 组均值相差约 0.2%–2.6%，其配对统计区间包含零。这是内部一致性检查，不是实测响应精度，见[原生矩结果](results/nonstationary_moments_20261028/moments.json)。
+
+## 局部协方差、原生响应候选与固定 PSD 检查
+
+`analyze_residual_covariance.py` 直接沿用冻结偏压样本的事件编号，在六个 Q 箱及统计门比范围内，计算等长基线/脉冲窗的局部协方差。分组均值结构与跨事件项分开报告；后者仍含定时、混合成分与非平稳效应，不等于单独测得的光电子噪声。`--resume` 只接受相同分析代码的分组检查点，`--replot` 不改变数值。
+
+```bash
+python3 simulation/analyze_residual_covariance.py \
+  --out simulation/results/new_local_covariance
+python3 simulation/estimate_voltage_feedback.py \
+  --covariance simulation/results/new_local_covariance/covariance.json \
+  --out simulation/results/new_local_covariance/voltage_feedback_bounds.json
+python3 simulation/tests/test_residual_covariance.py
+```
+
+电压工具只将已有事件峰值按两种 ADC 输入范围转换，再给出若干假设过电压下的比例；不能将 ADC 端电压当作已知 SiPM 偏压节点变化。实际负载和求和拓扑仍未知。
+
+可选顶层配置如下，数值是本轮候选，**不是校准结果**：
+
+```json
+"readout_response": {
+  "model": "parallel_paths",
+  "prompt_charge_fraction": 0.10,
+  "prompt_decay_ns": 5.0,
+  "prompt_lowpass_ns": 0.0
+}
+```
+
+快支路沿用原 `rise_ns`、电流—电压转换和采样孔径；只替换衰减与额外低通。两支的权重作用于积分电荷，不是峰值；快衰减必须大于上升时间，低通 ≥0，快份额在 [0,1]。省略配置或份额为零保持旧响应。Gaussian FIR 噪声在混合后只施加一次。此模块是有效线性响应族，不是已确定元件的 S13361 阵列电路。
+
+重新运行完整输运可照常用 `run.py`；仅改变数字化时，可用新 C++ 程序重放完成的 ROOT 光子历史：
+
+```bash
+simulation/build/replay_response \
+  simulation/results/colored_noise_20261028/co60/events.root \
+  simulation/results/response_candidates_20261028/confirmation_final/native_best/co60/config.json \
+  simulation/results/new_response_replay.root
+python3 simulation/validate.py simulation/results/new_response_replay.root
+```
+
+输出文件必须不存在。重放拒绝改变几何、光学和采样，沿用父文件事件种子，保留全部事件并重算雪崩来源、电荷、信号和 ADC。它没有重新执行 Geant4 输运，不能作为新增独立 MC 计数；若要改变光学或源距，必须重新运行完整输运。平铺微胞映射下的空间串扰仍禁止开启。
+
+本轮候选筛选的默认实测输入为 `bias_response_20261028` 和 `residual_covariance_20261028` 的冻结结果。用新目录重现：
+
+```bash
+python3 simulation/screen_response_candidates.py prepare --out simulation/results/new_response_candidates
+python3 simulation/screen_response_candidates.py replay --out simulation/results/new_response_candidates
+python3 simulation/screen_response_candidates.py screen --out simulation/results/new_response_candidates
+python3 simulation/confirm_response_candidate.py \
+  --screen simulation/results/new_response_candidates \
+  --out simulation/results/new_response_candidates/confirmation
+python3 simulation/plot_response_confirmation.py \
+  --screen simulation/results/new_response_candidates \
+  --confirmation simulation/results/new_response_candidates/confirmation
+python3 simulation/tests/test_response_replay.py
+```
+
+前两步保存冻结设计及原生基础输出，第三步组合相同噪声下的两支信号，重新量化并重算选择。确认步骤对描述性最优快份额作全事件原生重放，逐点核对 ADC，另作与 AP=0.15 的探索性组合。后者是在首轮筛选之后追加的条件检查，不是预先独立验证。完整性检查逐项保存，恢复运行仍核对输出哈希；原始中断目录未作为最终证据。
+
+`check_frozen_psd_transfer.py` 保持 phase2 的 3 μs 门宽、PCA 中心/向量/尺度不变；仅在已有偏压样本中计算相对于同源训练段的分数分布变化。不存在额外 PCA 训练，也不把 KS 距离转换为粒子效率。它与原 FOM 样本有明确的幅度/状态位/窗口支持区别。
+
+```bash
+python3 simulation/check_frozen_psd_transfer.py --out simulation/results/new_frozen_psd_transfer
+python3 simulation/tests/test_frozen_psd_transfer.py
+```
+
+本轮 BIN 文件哈希沿用冻结偏压记录，没有再次遍历原始大文件；当前代码读取选中波形并检查布局/特征支持，具体逐文件核验范围见 JSON。当前数值、源码快照和各阶段日志见[本轮记录](results/response_candidates_20261028/record.json)。
 
 ## 源距扫描
 

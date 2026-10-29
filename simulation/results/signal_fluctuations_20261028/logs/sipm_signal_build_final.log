@@ -1,0 +1,10 @@
+[  5%] Built target sipm_response
+[ 11%] Built target test_sipm
+[ 23%] Built target readout_noise
+[ 29%] Built target test_response
+[ 35%] Built target test_noise
+[ 41%] Built target replay_response
+[ 44%] Building CXX object CMakeFiles/test_signal_noise.dir/tests/test_signal_dependent_noise.cc.o
+[ 97%] Built target csi_sources
+[100%] Linking CXX executable test_signal_noise
+[100%] Built target test_signal_noise

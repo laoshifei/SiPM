@@ -1,0 +1,139 @@
+Info in <TCanvas::Print>: SVG file simulation/results/colored_noise_20261028/common_charge/waveform_comparison.svg has been created
+Info in <TCanvas::Print>: png file simulation/results/colored_noise_20261028/common_charge/waveform_comparison.png has been created
+Info in <TCanvas::Print>: SVG file simulation/results/colored_noise_20261028/common_charge/charge_shape_diagnostics.svg has been created
+Info in <TCanvas::Print>: png file simulation/results/colored_noise_20261028/common_charge/charge_shape_diagnostics.png has been created
+{
+  "run3_train": {
+    "mc_mean": {
+      "nrmse_peak": 0.012693959410611364,
+      "max_abs_residual_over_peak": 0.07634381542170211,
+      "integral_short_long_predicted": 0.452612455120702,
+      "integral_short_long_measured_mean": 0.46364989005695095
+    },
+    "analytic_mean": {
+      "nrmse_peak": 0.011555164194066804,
+      "max_abs_residual_over_peak": 0.07023028478929064,
+      "integral_short_long_predicted": 0.462493537398825,
+      "integral_short_long_measured_mean": 0.46364989005695095
+    },
+    "mc_resampling_nrmse_95": [
+      0.011730049394163318,
+      0.014461823193874247
+    ],
+    "mc_resampling_scope": "1000 whole-event bootstrap replicates, seed 271999, measured mean and calibrated parameters fixed; not total model uncertainty"
+  },
+  "run3_middle": {
+    "mc_mean": {
+      "nrmse_peak": 0.01269926502627985,
+      "max_abs_residual_over_peak": 0.07692583138768748,
+      "integral_short_long_predicted": 0.452612455120702,
+      "integral_short_long_measured_mean": 0.46299993345432255
+    },
+    "analytic_mean": {
+      "nrmse_peak": 0.011895918031503146,
+      "max_abs_residual_over_peak": 0.07079193355100867,
+      "integral_short_long_predicted": 0.462493537398825,
+      "integral_short_long_measured_mean": 0.46299993345432255
+    },
+    "mc_resampling_nrmse_95": [
+      0.011765558883341675,
+      0.014432679599713722
+    ],
+    "mc_resampling_scope": "1000 whole-event bootstrap replicates, seed 271999, measured mean and calibrated parameters fixed; not total model uncertainty"
+  },
+  "run3_late": {
+    "mc_mean": {
+      "nrmse_peak": 0.01303302597092029,
+      "max_abs_residual_over_peak": 0.07787577964541795,
+      "integral_short_long_predicted": 0.452612455120702,
+      "integral_short_long_measured_mean": 0.4638579673765863
+    },
+    "analytic_mean": {
+      "nrmse_peak": 0.011833464938718124,
+      "max_abs_residual_over_peak": 0.07106638897462149,
+      "integral_short_long_predicted": 0.462493537398825,
+      "integral_short_long_measured_mean": 0.4638579673765863
+    },
+    "mc_resampling_nrmse_95": [
+      0.012025876368319298,
+      0.014804702933499315
+    ],
+    "mc_resampling_scope": "1000 whole-event bootstrap replicates, seed 271999, measured mean and calibrated parameters fixed; not total model uncertainty"
+  },
+  "run12_train": {
+    "mc_mean": {
+      "nrmse_peak": 0.019034917554122937,
+      "max_abs_residual_over_peak": 0.06895628404425654,
+      "integral_short_long_predicted": 0.3310169322316362,
+      "integral_short_long_measured_mean": 0.3225266388551846
+    },
+    "analytic_mean": {
+      "nrmse_peak": 0.01493745678196246,
+      "max_abs_residual_over_peak": 0.036818462818191865,
+      "integral_short_long_predicted": 0.3227671262160178,
+      "integral_short_long_measured_mean": 0.3225266388551846
+    },
+    "mc_resampling_nrmse_95": [
+      0.016878555912675796,
+      0.02202269910882081
+    ],
+    "mc_resampling_scope": "1000 whole-event bootstrap replicates, seed 271999, measured mean and calibrated parameters fixed; not total model uncertainty"
+  },
+  "run12_middle": {
+    "mc_mean": {
+      "nrmse_peak": 0.019700552058820143,
+      "max_abs_residual_over_peak": 0.07347865785177538,
+      "integral_short_long_predicted": 0.3310169322316362,
+      "integral_short_long_measured_mean": 0.32148208522035376
+    },
+    "analytic_mean": {
+      "nrmse_peak": 0.015162359591829553,
+      "max_abs_residual_over_peak": 0.04133312646730447,
+      "integral_short_long_predicted": 0.3227671262160178,
+      "integral_short_long_measured_mean": 0.32148208522035376
+    },
+    "mc_resampling_nrmse_95": [
+      0.01753420229654186,
+      0.02268100302688348
+    ],
+    "mc_resampling_scope": "1000 whole-event bootstrap replicates, seed 271999, measured mean and calibrated parameters fixed; not total model uncertainty"
+  },
+  "run12_late": {
+    "mc_mean": {
+      "nrmse_peak": 0.01740231221687613,
+      "max_abs_residual_over_peak": 0.06214960628986067,
+      "integral_short_long_predicted": 0.3310169322316362,
+      "integral_short_long_measured_mean": 0.32325340528230234
+    },
+    "analytic_mean": {
+      "nrmse_peak": 0.013603127233017289,
+      "max_abs_residual_over_peak": 0.030228682405177752,
+      "integral_short_long_predicted": 0.3227671262160178,
+      "integral_short_long_measured_mean": 0.32325340528230234
+    },
+    "mc_resampling_nrmse_95": [
+      0.015289529421176553,
+      0.020422618894438554
+    ],
+    "mc_resampling_scope": "1000 whole-event bootstrap replicates, seed 271999, measured mean and calibrated parameters fixed; not total model uncertainty"
+  },
+  "run18_check": {
+    "mc_mean": {
+      "nrmse_peak": 0.018799425622293545,
+      "max_abs_residual_over_peak": 0.06688574017491436,
+      "integral_short_long_predicted": 0.3310169322316362,
+      "integral_short_long_measured_mean": 0.32292449471126783
+    },
+    "analytic_mean": {
+      "nrmse_peak": 0.015118789771605289,
+      "max_abs_residual_over_peak": 0.03468906726311884,
+      "integral_short_long_predicted": 0.3227671262160178,
+      "integral_short_long_measured_mean": 0.32292449471126783
+    },
+    "mc_resampling_nrmse_95": [
+      0.0165592164402394,
+      0.02184414819428634
+    ],
+    "mc_resampling_scope": "1000 whole-event bootstrap replicates, seed 271999, measured mean and calibrated parameters fixed; not total model uncertainty"
+  }
+}

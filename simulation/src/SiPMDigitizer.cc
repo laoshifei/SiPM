@@ -2,6 +2,9 @@
 #include "RunConfig.hh"
 #include "DataStructure.hh"
 #include "Constants.hh"
+#include "ReadoutNoise.hh"
+#include "ReadoutResponse.hh"
+#include "SignalDependentNoise.hh"
 #include <algorithm>
 #include <memory>
 #include <numeric>
@@ -35,10 +38,15 @@ void SiPMDigitizer::Digitize() {
     photons.push_back({hit.time_ns, cell_coordinate, .5, hit.energy_eV});
   }
   auto digi = std::make_unique<SiPMDigi>();
-  digi->response = sipm::Simulate(config_.SensorModel(), photons, config_.DurationNs(),
+  auto sensor = config_.SensorModel();
+  if (ReadoutNoise::Enabled(config_.Data())) sensor.readout.noise_rms_mV = 0.;
+  digi->response = sipm::Simulate(sensor, photons, config_.DurationNs(),
       config_.PretriggerNs(), config_.DurationNs(),
       sipm::EventSeed(config_.Seed() + 17, event->event_id),
       sipm::EventSeed(config_.Seed() + 31, event->event_id));
+  ReadoutResponse::Apply(config_.Data(), sensor, config_.DurationNs(), digi->response);
+  ReadoutNoise::Apply(config_.Data(), config_.SensorModel().readout, digi->response);
+  SignalDependentNoise::Apply(config_.Data(), config_.SensorModel().readout, digi->response);
   digi->response.event_id = event->event_id;
   // Attribution follows the realized avalanches after PDE, recovery and any
   // secondary avalanches. It is diagnostic only and never changes probability.

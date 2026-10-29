@@ -1,0 +1,61 @@
+{
+  "scope": "Freeze inputs for PID width diagnostics; leave earlier calibrated studies intact.",
+  "code_sha256": "0d634ada87ec435faa70972e4b55feac230885aee6c52115efb8a09daf4cc732",
+  "parent_waveform_record_sha256": "2114b09c325376751b789aec0ee9657d4444ac06053d1ce3861b33ca9d42ccc5",
+  "parent_PID_record_sha256": "e8f1cb2875996a8741526d25f19574cdef64a5622ec2189fcab74c68fbe5a386",
+  "binary_sha256": "c285d9122eda414a039cb51e5405087f36a33e9e58761ab8d33ff6b467ddbc8a",
+  "entries": {
+    "run3": {
+      "run": 3,
+      "source": "Co60",
+      "parent_root": "simulation/results/waveform_refit_20261029/independent/co60/events.root",
+      "parent_sha256": "e37a437085d0c6a1e7f031fddd6b872c2733b7b12d14f63d52df2f81b36e7d69",
+      "parent_config": "simulation/results/waveform_refit_20261029/independent/Co60_calibrated.json",
+      "base_config": "simulation/results/pid_bandwidth_20261029/run3/without_signal_residual/config.json",
+      "base_config_sha256": "1590d15f322c7586ee1926f27539c8717e9befd49021d7495219dc0f4a3e92c9",
+      "base_root": "simulation/results/pid_bandwidth_20261029/run3/without_signal_residual/events.root"
+    },
+    "run12": {
+      "run": 12,
+      "source": "Am241",
+      "parent_root": "simulation/results/waveform_refit_20261029/independent/am241/events.root",
+      "parent_sha256": "58c23065d89a5fa82ce0795aa8c7382b5f2cb9460a8595fef15d8331b1aaefed",
+      "parent_config": "simulation/results/waveform_refit_20261029/independent/Am241_calibrated.json",
+      "base_config": "simulation/results/pid_bandwidth_20261029/run12/without_signal_residual/config.json",
+      "base_config_sha256": "e6a643f3fec1c7d3280717da2e04807a8509476280f93ec6e7fc6afe177eb18b",
+      "base_root": "simulation/results/pid_bandwidth_20261029/run12/without_signal_residual/events.root"
+    },
+    "run18": {
+      "run": 18,
+      "source": "Am241",
+      "parent_root": "simulation/results/waveform_refit_20261029/run18/first60/events.root",
+      "parent_sha256": "22120cb04d9c81437fb5237031e1492308326acac6173176e3ea967a4a678a99",
+      "parent_config": "simulation/results/waveform_refit_20261029/run18/Am241_run18_first60.json",
+      "base_config": "simulation/results/pid_bandwidth_20261029/run18/without_signal_residual/config.json",
+      "base_config_sha256": "1d5ccc2e2a1adc4f7381979117023ee7cafcf9f2e300de034ca908d5bc9d0426",
+      "base_root": "simulation/results/pid_bandwidth_20261029/run18/without_signal_residual/events.root"
+    }
+  },
+  "q_edges": [
+    201824.1125,
+    237975.62708333333,
+    274127.14166666666,
+    310278.65625,
+    346430.17083333334,
+    382581.6854166667,
+    418733.2
+  ],
+  "training": "Any new response fit uses only frozen experimental first60; later segments excluded, previously explored checks not blind.",
+  "diagnosis": "Separate native noiseless signal, baseline electronics, signal-dependent residual and ADC quantization on identical mothers. Fixed-anchor exact ratio covariance decomposition plus own-anchor removal comparisons; account for cross covariances.",
+  "measured_sensitivity": "Original baseline versus recent strictly pretrigger baseline, on identical frozen event IDs; no new charge/shape selection. Dominant-band diagnostics retain the pre-existing0.4 ratio separator and report removed tails separately.",
+  "goals": [
+    "Explain which contributors are compatible with observed PID widths.",
+    "If evidence supports a change, recalibrate waveform-level response on training data, retaining mean-shape, baseline and short-timescale fluctuation checks.",
+    "Do not add random numbers directly to PID scores or claim a unique physical mechanism from a conditional fit."
+  ],
+  "limits": [
+    "Native noiseless signal still includes finite photon/avalanche statistics and source geometry.",
+    "Observed-anchor component covariance is an algebraic decomposition, not a unique causal attribution.",
+    "Original common-Q MC samples are small; assess conditional uncertainty and support before interpreting width ratios."
+  ]
+}

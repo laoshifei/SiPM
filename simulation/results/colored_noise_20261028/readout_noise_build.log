@@ -1,0 +1,35 @@
+[  3%] Building CXX object CMakeFiles/sipm_response.dir/vendor/SiPMResponse.cc.o
+[  7%] Linking CXX static library libsipm_response.a
+[  7%] Built target sipm_response
+gmake[2]: Warning: File 'libsipm_response.a' has modification time 0.11 s in the future
+[ 11%] Building CXX object CMakeFiles/test_sipm.dir/tests/test_vendor_sipm.cc.o
+[ 15%] Building CXX object CMakeFiles/readout_noise.dir/src/ReadoutNoise.cc.o
+[ 19%] Linking CXX static library libreadout_noise.a
+[ 19%] Built target readout_noise
+gmake[2]: Warning: File 'libreadout_noise.a' has modification time 0.1 s in the future
+[ 23%] Building CXX object CMakeFiles/csi_sources.dir/main.cc.o
+[ 26%] Building CXX object CMakeFiles/test_noise.dir/tests/test_readout_noise.cc.o
+[ 30%] Building CXX object CMakeFiles/csi_sources.dir/src/DetectorConstruction.cc.o
+[ 34%] Linking CXX executable test_sipm
+[ 38%] Linking CXX executable test_noise
+gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[ 38%] Built target test_sipm
+[ 42%] Building CXX object CMakeFiles/csi_sources.dir/src/PhysicsList.cc.o
+gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[ 42%] Built target test_noise
+[ 46%] Building CXX object CMakeFiles/csi_sources.dir/src/ActionInitialization.cc.o
+[ 50%] Building CXX object CMakeFiles/csi_sources.dir/src/PrimaryGeneratorAction.cc.o
+[ 53%] Building CXX object CMakeFiles/csi_sources.dir/src/RunAction.cc.o
+[ 57%] Building CXX object CMakeFiles/csi_sources.dir/src/EventAction.cc.o
+[ 61%] Building CXX object CMakeFiles/csi_sources.dir/src/StackingAction.cc.o
+[ 65%] Building CXX object CMakeFiles/csi_sources.dir/src/TrackingAction.cc.o
+[ 69%] Building CXX object CMakeFiles/csi_sources.dir/src/TrackInformation.cc.o
+[ 73%] Building CXX object CMakeFiles/csi_sources.dir/src/SteppingAction.cc.o
+[ 76%] Building CXX object CMakeFiles/csi_sources.dir/src/SiPMDigitizer.cc.o
+[ 80%] Building CXX object CMakeFiles/csi_sources.dir/src/SiPMSD.cc.o
+[ 84%] Building CXX object CMakeFiles/csi_sources.dir/src/SiPMHit.cc.o
+[ 88%] Building CXX object CMakeFiles/csi_sources.dir/src/RootIO.cc.o
+[ 92%] Building CXX object CMakeFiles/csi_sources.dir/src/RunConfig.cc.o
+[ 96%] Building CXX object CMakeFiles/csi_sources.dir/src/DataStructure.cc.o
+[100%] Linking CXX executable csi_sources
+[100%] Built target csi_sources

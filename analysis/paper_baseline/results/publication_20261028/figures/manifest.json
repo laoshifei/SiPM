@@ -1,0 +1,20 @@
+{
+  "figure_stems": [
+    "fig01_primary_data",
+    "fig02_methods_windows",
+    "fig03_cross_run",
+    "fig04_local_covariance",
+    "fig05_mc_shape_fluctuations",
+    "fig06_mc_charge"
+  ],
+  "code_sha256": "67b6c76cf576748ab40981b1ce23cdec034ed9c24806d89d6aea0bfc5fead402",
+  "inputs_sha256": {
+    "point.json": "a02a7a261de4b016737c9ed553a63aae801ada172006f026ea904778d4ce90c0",
+    "paired_uncertainty.json": "118c618f56b86dc2a51ec91a8443b59225a395230b9ab21b0dd57aa9598c6545",
+    "transfer_matched.json": "7a7c32afabd200b5f6a4af18d0b6558e0ab09c065677a45a72e88723dd0333ba",
+    "transfer_uncertainty.json": "2c563cbb9435a8a1e80427cf623865f4bb4f2ea8e816aef8e80d0b3e36784b2a",
+    "covariance_uncertainty.json": "7b2e798654dd8250b8234cb56c4d8a9d2de6ee10be1088bf3662acb7c5cc88ce",
+    "mc_uncertainty.json": "0589adb0f1ac5f737e5e879ee2eb300584d8621b3eec41d218a27535f6a9b9ea"
+  },
+  "captions": "See MANUSCRIPT_DRAFT.md; all source identities remain distinct from event particle truth."
+}

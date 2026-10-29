@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "sensor": {
+    "name": "Hamamatsu_S13360-6050PE",
+    "parameter_status": "datasheet_based",
+    "parameter_source": "Hamamatsu S13360 datasheet KAPD1052E07 (Jul 2025), PDF pp.2-5, T=25 C, overvoltage=3 V. PDE points read approximately from PE curve KAPDB0322EB. Recovery 29 ns transferred from S13360-1350CS/3050CS (Rosado 2018 PDF p.3 Table 1); readout and recovery below 2 V remain approximations. No unit-level calibration.",
+    "temperature_C": 25.0,
+    "cells_x": 120,
+    "cells_y": 120,
+    "x_min_mm": -3.0,
+    "x_max_mm": 3.0,
+    "y_min_mm": -3.0,
+    "y_max_mm": 3.0,
+    "overvoltage_V": 3.0,
+    "gain_electrons": 1700000.0,
+    "recovery_ns": 29.0,
+    "trigger_scale_V": 2.4,
+    "trigger_threshold_V": 0.0,
+    "recovery_enabled": true,
+    "pde_mode": "table",
+    "constant_pde": null,
+    "pde_wavelength_nm": [
+      400.0,
+      425.0,
+      450.0,
+      475.0,
+      500.0,
+      525.0,
+      550.0,
+      575.0,
+      600.0,
+      625.0,
+      650.0
+    ],
+    "pde_overvoltage_V": [
+      0.0,
+      2.0,
+      3.0
+    ],
+    "pde_probabilities": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.2795625,
+        0.30555,
+        0.315,
+        0.313425,
+        0.300825,
+        0.2811375,
+        0.2575125,
+        0.2307375,
+        0.2102625,
+        0.1866375,
+        0.1582875
+      ],
+      [
+        0.355,
+        0.388,
+        0.4,
+        0.398,
+        0.382,
+        0.357,
+        0.327,
+        0.293,
+        0.267,
+        0.237,
+        0.201
+      ]
+    ],
+    "dark_rate_hz": 2000000.0,
+    "crosstalk_probability": 0.03,
+    "crosstalk_delay_ns": 0.0,
+    "afterpulse_probability": 0.0,
+    "afterpulse_delay_ns": 60.0,
+    "transit_delay_mean_ns": 0.0,
+    "transit_delay_sigma_ns": 0.0,
+    "max_candidates": 10000000
+  },
+  "readout": {
+    "model": "double_exponential",
+    "internal_dt_ns": 0.25,
+    "sample_period_ns": 2.0,
+    "aperture_ns": 0.5,
+    "rise_ns": 2.0,
+    "decay_ns": 20.0,
+    "transimpedance_ohm": 50.0,
+    "lowpass_ns": 2.0,
+    "baseline_mV": 10.0,
+    "noise_rms_mV": 0.1,
+    "adc_bits": 12,
+    "adc_min_mV": 0.0,
+    "adc_max_mV": 1000.0,
+    "template_csv": null,
+    "max_internal_bins": 5000000
+  },
+  "configuration_notes": {
+    "purpose": "Single-channel GAGG photon-to-electrical response with a named Hamamatsu device.",
+    "previous_profile": "g4/configs/sipm_hamamatsu_s13360_6050pe_v1.json",
+    "geometry": "6 x 6 mm active area centered on existing 10 x 10 mm ideal photon-recording plane. Outside photons are rejected by digitizer, not removed from WaveformEvent. This does not introduce physical epoxy/grease/package geometry.",
+    "status_definition": "datasheet_based means manufacturer typical inputs plus explicitly documented approximations, not calibrated performance.",
+    "wavelength_scope": "400-650 nm only, covering current GAGG scintillation table (2.0-3.0 eV). No extrapolation.",
+    "readout": "Same uncalibrated demonstrator as v1, except ADC maximum 500 -> 1000 mV.",
+    "adc_range_reason": "2026-10-13 named-device alpha: analog peak 508.01760677599276 mV, 4 clipped samples at 500 mV. See jupyter/artifacts/sipm_native_20261013_095254/summary.json. Preserve v1 and all ROOT files; new range is a project readout choice, not a Hamamatsu specification."
+  },
+  "parameter_evidence": {
+    "manufacturer": {
+      "type": "manufacturer_typical",
+      "product_url": "https://www.hamamatsu.com.cn/cn/zh-cn/product/optical-sensors/mppc/mppc_mppc-array/S13360-6050PE.html",
+      "datasheet_url": "https://www.hamamatsu.com.cn/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/s13360_series_kapd1052e.pdf",
+      "revision": "KAPD1052E07 Jul.2025",
+      "pdf_pages": [
+        2,
+        3,
+        4,
+        5,
+        11
+      ],
+      "effective_area_mm": [
+        6.0,
+        6.0
+      ],
+      "pixel_pitch_um": 50.0,
+      "number_of_pixels": 14400,
+      "fill_factor": 0.74,
+      "terminal_capacitance_pF": 1280.0,
+      "breakdown_voltage_typical_V": 53.0,
+      "breakdown_voltage_spread_V": 5.0,
+      "bias_temperature_coefficient_mV_per_C": 54.0,
+      "epoxy_refractive_index": 1.55,
+      "conditions": "Ta=25 C; Vop=Vbr+3 V; DCR threshold 0.5 p.e.; PDE excludes crosstalk and afterpulses. Fill factor already included in PDE."
+    },
+    "pde": {
+      "type": "approximate_graph_readout",
+      "pdf_page_spectrum": 4,
+      "figure_spectrum": "KAPDB0322EB, S13360-**50PE (black dash-dot)",
+      "pdf_page_voltage": 5,
+      "figure_voltage": "KAPDB0324EA, PDE at 450 nm",
+      "reading_tolerance_absolute": 0.01,
+      "voltage_anchor_PDE_450nm": {
+        "2_V": 0.315,
+        "3_V": 0.4
+      },
+      "interpolation_assumptions": "Use separable spectral/voltage response over 0-3 V. At 2 V scale spectrum by 0.315/0.400. Below 2 V interpolate linearly to zero; not manufacturer-measured low-voltage data or wavelength-dependent recovery.",
+      "trigger_scale_V": "2.4 V empirical approximation for non-photon recovery acceptance; not a manufacturer device constant."
+    },
+    "recovery": {
+      "type": "same_family_proxy",
+      "value_ns": 29.0,
+      "source_title": "Performance of SiPMs in the nonlinear region",
+      "author": "Jaime Rosado",
+      "year": 2018,
+      "doi": "10.1016/j.nima.2017.10.031",
+      "pdf_page": 3,
+      "table": 1,
+      "measured_models": [
+        "S13360-1350CS",
+        "S13360-3050CS"
+      ],
+      "limitation": "This paper quotes recovery from reference [1]. It does not measure the selected S13360-6050PE. Temperature and unit-level uncertainty not specified; verify selected unit with double-pulse data."
+    },
+    "dark_rate": "2 Mcps total device, treated as primary Poisson DCR; manufacturer 0.5 p.e. threshold specification, not a measured primary/afterpulse decomposition.",
+    "crosstalk": "3% manufacturer typical at full recovery; existing recursive one-neighbour candidate model is a simplified distribution.",
+    "afterpulse": {
+      "type": "disabled_unknown",
+      "probability_in_model": 0.0,
+      "delay_ns_placeholder": 60.0,
+      "meaning": "Manufacturer describes low afterpulse qualitatively but supplies no probability/delay here. Zero disables this process; it is not a claim that the device has no afterpulses."
+    },
+    "transit": {
+      "type": "disabled_unknown",
+      "mean_ns": 0.0,
+      "sigma_ns": 0.0,
+      "meaning": "No device-specific SPTR or transit offset supplied; no added jitter in this version."
+    },
+    "readout": {
+      "type": "project_demonstrator",
+      "calibrated": false
+    },
+    "optical_coupling": {
+      "type": "idealized",
+      "virtual_plane_refractive_index": 1.9,
+      "manufacturer_epoxy_refractive_index": 1.55,
+      "meaning": "Existing index-matched virtual recording plane retained. Physical epoxy, grease, reflection and collection efficiency require later optical calibration."
+    }
+  }
+}

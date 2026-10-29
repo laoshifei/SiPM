@@ -1,0 +1,10 @@
+test_ancestry_dominance_and_zero_deposit (__main__.PIDTests.test_ancestry_dominance_and_zero_deposit) ... ok
+test_fom_scale_and_translation (__main__.PIDTests.test_fom_scale_and_translation) ... ok
+test_ties_and_roc_area (__main__.PIDTests.test_ties_and_roc_area) ... ok
+test_weighted_replicated_observations (__main__.PIDTests.test_weighted_replicated_observations) ... ok
+test_zero_errors_have_positive_upper_limit (__main__.PIDTests.test_zero_errors_have_positive_upper_limit) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.038s
+
+OK

@@ -1,0 +1,827 @@
+{
+  "scope": "Current saved settings, not proof of the settings used for every earlier BIN in a reused run directory",
+  "script_sha256": "08132f1c382d5fadd4076fed94452861002b8e6f8603f7d68892bed8569762ab",
+  "hardware_sources": {
+    "range": {
+      "url": "https://caen.it/product/dt5730-dt5730s/",
+      "checked": "2026-10-28",
+      "paraphrase": "DT5730 X1 corresponds to 2 Vpp, X4 to 0.5 Vpp; analog inputs have 50 ohm impedance."
+    },
+    "trigger": {
+      "url": "https://caen.it/products/dpp-pha/",
+      "checked": "2026-10-28",
+      "paraphrase": "DPP-PHA self-trigger uses the RC-CR2 digital algorithm; raw pulse peak is not that filter output."
+    }
+  },
+  "snapshot_keys_checked": "Matched run 3/12 Hcompass ROOT files contain spectra and live/real times, no saved settings object at top level.",
+  "runs": [
+    {
+      "run": 3,
+      "channel": 0,
+      "settings_path": "data/DT5730_DPP_PHA/DAQ/run_3/settings.xml",
+      "settings_sha256": "43bacda3d122f497b01939149839f88ff9422359e1a53d441c3ef89dd9ac3576",
+      "board": "DT5730",
+      "firmware": {
+        "rocFirmware": {
+          "major": "4",
+          "minor": "23",
+          "build": "19206"
+        },
+        "amcFirmware": {
+          "major": "139",
+          "minor": "10",
+          "build": "22036"
+        }
+      },
+      "acquisition": {
+        "acquisitionMode": "WAVES",
+        "saveRaw": "true",
+        "saveUnfiltered": "true",
+        "saveFiltered": "true",
+        "autoTriggerEnabled": "false",
+        "listTimeSorting": "false"
+      },
+      "event_saving_enabled_current": "false",
+      "sample_time_ps": "2000",
+      "adc_bits": "14",
+      "parameters": {
+        "SRV_PARAM_CH_COARSE_GAIN": {
+          "value": "COARSE_GAIN_X4",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_THRESHOLD": {
+          "value": "120.0",
+          "scope": "channel override"
+        },
+        "SRV_PARAM_CH_TTF_DELAY": {
+          "value": "96.0",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_TTF_SMOOTHING": {
+          "value": "RCCR2_SMTH_4",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_POLARITY": {
+          "value": "POLARITY_POSITIVE",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_PRETRG": {
+          "value": "1000.0",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_SELF_TRG_ENABLE": {
+          "value": "true",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_TRG_HOLDOFF": {
+          "value": "496.0",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_TRAP_TRISE": {
+          "value": "800.0",
+          "scope": "channel override"
+        },
+        "SRV_PARAM_CH_TRAP_TFLAT": {
+          "value": "496.0",
+          "scope": "channel override"
+        },
+        "SRV_PARAM_CH_TRAP_POLEZERO": {
+          "value": "696.0",
+          "scope": "channel override"
+        },
+        "SRV_PARAM_CH_ENERGY_FINE_GAIN": {
+          "value": "1.0",
+          "scope": "board inherited"
+        },
+        "SW_PARAMETER_CH_ENERGYCUTENABLE": {
+          "value": "false",
+          "scope": "board inherited"
+        },
+        "SW_PARAMETER_CH_ENERGYLOWCUT": {
+          "value": "0.0",
+          "scope": "board inherited"
+        },
+        "SW_PARAMETER_CH_ENERGYHIGHCUT": {
+          "value": "0.0",
+          "scope": "board inherited"
+        },
+        "SW_PARAM_CH_PUR_ENABLE": {
+          "value": "false",
+          "scope": "board inherited"
+        }
+      },
+      "range_implied_by_current_settings_mV": 500,
+      "historical_bin_settings_association": "unconfirmed",
+      "exact_energy_histogram_matches": [
+        "data/DT5730_DPP_PHA/DAQ/run_3/UNFILTERED/Hcompass_run_3_20221206_220545.root"
+      ]
+    },
+    {
+      "run": 7,
+      "channel": 0,
+      "settings_path": "data/DT5730_DPP_PHA/DAQ/run_7/settings.xml",
+      "settings_sha256": "468145ef954536931aaec42454ea38c9719e189b43a7677fe86390a74e40f164",
+      "board": "DT5730",
+      "firmware": {
+        "rocFirmware": {
+          "major": "4",
+          "minor": "23",
+          "build": "19206"
+        },
+        "amcFirmware": {
+          "major": "139",
+          "minor": "10",
+          "build": "22036"
+        }
+      },
+      "acquisition": {
+        "acquisitionMode": "WAVES",
+        "saveRaw": "true",
+        "saveUnfiltered": "true",
+        "saveFiltered": "true",
+        "autoTriggerEnabled": "false",
+        "listTimeSorting": "false"
+      },
+      "event_saving_enabled_current": "false",
+      "sample_time_ps": "2000",
+      "adc_bits": "14",
+      "parameters": {
+        "SRV_PARAM_CH_COARSE_GAIN": {
+          "value": "COARSE_GAIN_X4",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_THRESHOLD": {
+          "value": "160.0",
+          "scope": "channel override"
+        },
+        "SRV_PARAM_CH_TTF_DELAY": {
+          "value": "96.0",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_TTF_SMOOTHING": {
+          "value": "RCCR2_SMTH_4",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_POLARITY": {
+          "value": "POLARITY_POSITIVE",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_PRETRG": {
+          "value": "1000.0",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_SELF_TRG_ENABLE": {
+          "value": "true",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_TRG_HOLDOFF": {
+          "value": "496.0",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_TRAP_TRISE": {
+          "value": "800.0",
+          "scope": "channel override"
+        },
+        "SRV_PARAM_CH_TRAP_TFLAT": {
+          "value": "496.0",
+          "scope": "channel override"
+        },
+        "SRV_PARAM_CH_TRAP_POLEZERO": {
+          "value": "696.0",
+          "scope": "channel override"
+        },
+        "SRV_PARAM_CH_ENERGY_FINE_GAIN": {
+          "value": "1.0",
+          "scope": "board inherited"
+        },
+        "SW_PARAMETER_CH_ENERGYCUTENABLE": {
+          "value": "false",
+          "scope": "board inherited"
+        },
+        "SW_PARAMETER_CH_ENERGYLOWCUT": {
+          "value": "0.0",
+          "scope": "board inherited"
+        },
+        "SW_PARAMETER_CH_ENERGYHIGHCUT": {
+          "value": "0.0",
+          "scope": "board inherited"
+        },
+        "SW_PARAM_CH_PUR_ENABLE": {
+          "value": "false",
+          "scope": "board inherited"
+        }
+      },
+      "range_implied_by_current_settings_mV": 500,
+      "historical_bin_settings_association": "unconfirmed",
+      "exact_energy_histogram_matches": [
+        "data/DT5730_DPP_PHA/DAQ/run_7/UNFILTERED/Hcompass_run_7_20221206_223753.root"
+      ]
+    },
+    {
+      "run": 10,
+      "channel": 0,
+      "settings_path": "data/DT5730_DPP_PHA/DAQ/run_10/settings.xml",
+      "settings_sha256": "44f9f47aee4ad6bf4d849d0a6de4f7825f94a71b98f5283fc6773f95616147e0",
+      "board": "DT5730",
+      "firmware": {
+        "rocFirmware": {
+          "major": "4",
+          "minor": "23",
+          "build": "19206"
+        },
+        "amcFirmware": {
+          "major": "139",
+          "minor": "10",
+          "build": "22036"
+        }
+      },
+      "acquisition": {
+        "acquisitionMode": "WAVES",
+        "saveRaw": "true",
+        "saveUnfiltered": "true",
+        "saveFiltered": "true",
+        "autoTriggerEnabled": "false",
+        "listTimeSorting": "false"
+      },
+      "event_saving_enabled_current": "false",
+      "sample_time_ps": "2000",
+      "adc_bits": "14",
+      "parameters": {
+        "SRV_PARAM_CH_COARSE_GAIN": {
+          "value": "COARSE_GAIN_X4",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_THRESHOLD": {
+          "value": "200.0",
+          "scope": "channel override"
+        },
+        "SRV_PARAM_CH_TTF_DELAY": {
+          "value": "96.0",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_TTF_SMOOTHING": {
+          "value": "RCCR2_SMTH_4",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_POLARITY": {
+          "value": "POLARITY_POSITIVE",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_PRETRG": {
+          "value": "1000.0",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_SELF_TRG_ENABLE": {
+          "value": "true",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_TRG_HOLDOFF": {
+          "value": "496.0",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_TRAP_TRISE": {
+          "value": "800.0",
+          "scope": "channel override"
+        },
+        "SRV_PARAM_CH_TRAP_TFLAT": {
+          "value": "496.0",
+          "scope": "channel override"
+        },
+        "SRV_PARAM_CH_TRAP_POLEZERO": {
+          "value": "696.0",
+          "scope": "channel override"
+        },
+        "SRV_PARAM_CH_ENERGY_FINE_GAIN": {
+          "value": "1.0",
+          "scope": "board inherited"
+        },
+        "SW_PARAMETER_CH_ENERGYCUTENABLE": {
+          "value": "false",
+          "scope": "board inherited"
+        },
+        "SW_PARAMETER_CH_ENERGYLOWCUT": {
+          "value": "0.0",
+          "scope": "board inherited"
+        },
+        "SW_PARAMETER_CH_ENERGYHIGHCUT": {
+          "value": "0.0",
+          "scope": "board inherited"
+        },
+        "SW_PARAM_CH_PUR_ENABLE": {
+          "value": "false",
+          "scope": "board inherited"
+        }
+      },
+      "range_implied_by_current_settings_mV": 500,
+      "historical_bin_settings_association": "unconfirmed",
+      "exact_energy_histogram_matches": [
+        "data/DT5730_DPP_PHA/DAQ/run_10/UNFILTERED/Hcompass_run_10_20221206_233859.root"
+      ]
+    },
+    {
+      "run": 11,
+      "channel": 0,
+      "settings_path": "data/DT5730_DPP_PHA/DAQ/run_11/settings.xml",
+      "settings_sha256": "bc18c185a5e81e68c1a3eb967c64d34e0a7ec2a4dd8e4a35622b82656986f2a1",
+      "board": "DT5730",
+      "firmware": {
+        "rocFirmware": {
+          "major": "4",
+          "minor": "23",
+          "build": "19206"
+        },
+        "amcFirmware": {
+          "major": "139",
+          "minor": "10",
+          "build": "22036"
+        }
+      },
+      "acquisition": {
+        "acquisitionMode": "WAVES",
+        "saveRaw": "true",
+        "saveUnfiltered": "true",
+        "saveFiltered": "true",
+        "autoTriggerEnabled": "false",
+        "listTimeSorting": "false"
+      },
+      "event_saving_enabled_current": "false",
+      "sample_time_ps": "2000",
+      "adc_bits": "14",
+      "parameters": {
+        "SRV_PARAM_CH_COARSE_GAIN": {
+          "value": "COARSE_GAIN_X4",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_THRESHOLD": {
+          "value": "90.0",
+          "scope": "channel override"
+        },
+        "SRV_PARAM_CH_TTF_DELAY": {
+          "value": "96.0",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_TTF_SMOOTHING": {
+          "value": "RCCR2_SMTH_4",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_POLARITY": {
+          "value": "POLARITY_POSITIVE",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_PRETRG": {
+          "value": "1000.0",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_SELF_TRG_ENABLE": {
+          "value": "true",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_TRG_HOLDOFF": {
+          "value": "496.0",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_TRAP_TRISE": {
+          "value": "800.0",
+          "scope": "channel override"
+        },
+        "SRV_PARAM_CH_TRAP_TFLAT": {
+          "value": "496.0",
+          "scope": "channel override"
+        },
+        "SRV_PARAM_CH_TRAP_POLEZERO": {
+          "value": "696.0",
+          "scope": "channel override"
+        },
+        "SRV_PARAM_CH_ENERGY_FINE_GAIN": {
+          "value": "1.0",
+          "scope": "board inherited"
+        },
+        "SW_PARAMETER_CH_ENERGYCUTENABLE": {
+          "value": "false",
+          "scope": "board inherited"
+        },
+        "SW_PARAMETER_CH_ENERGYLOWCUT": {
+          "value": "0.0",
+          "scope": "board inherited"
+        },
+        "SW_PARAMETER_CH_ENERGYHIGHCUT": {
+          "value": "0.0",
+          "scope": "board inherited"
+        },
+        "SW_PARAM_CH_PUR_ENABLE": {
+          "value": "false",
+          "scope": "board inherited"
+        }
+      },
+      "range_implied_by_current_settings_mV": 500,
+      "historical_bin_settings_association": "unconfirmed",
+      "exact_energy_histogram_matches": [
+        "data/DT5730_DPP_PHA/DAQ/run_11/UNFILTERED/Hcompass_run_11_20221207_155100.root"
+      ]
+    },
+    {
+      "run": 12,
+      "channel": 0,
+      "settings_path": "data/DT5730_DPP_PHA/DAQ/run_12/settings.xml",
+      "settings_sha256": "8ad1fe8163be5cd2ac7dba2408b60b8b544242caf8aaa0e266cceea3a4eb1d6d",
+      "board": "DT5730",
+      "firmware": {
+        "rocFirmware": {
+          "major": "4",
+          "minor": "23",
+          "build": "19206"
+        },
+        "amcFirmware": {
+          "major": "139",
+          "minor": "10",
+          "build": "22036"
+        }
+      },
+      "acquisition": {
+        "acquisitionMode": "WAVES",
+        "saveRaw": "true",
+        "saveUnfiltered": "true",
+        "saveFiltered": "true",
+        "autoTriggerEnabled": "false",
+        "listTimeSorting": "false"
+      },
+      "event_saving_enabled_current": "false",
+      "sample_time_ps": "2000",
+      "adc_bits": "14",
+      "parameters": {
+        "SRV_PARAM_CH_COARSE_GAIN": {
+          "value": "COARSE_GAIN_X4",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_THRESHOLD": {
+          "value": "160.0",
+          "scope": "channel override"
+        },
+        "SRV_PARAM_CH_TTF_DELAY": {
+          "value": "96.0",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_TTF_SMOOTHING": {
+          "value": "RCCR2_SMTH_4",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_POLARITY": {
+          "value": "POLARITY_POSITIVE",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_PRETRG": {
+          "value": "1000.0",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_SELF_TRG_ENABLE": {
+          "value": "true",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_TRG_HOLDOFF": {
+          "value": "496.0",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_TRAP_TRISE": {
+          "value": "800.0",
+          "scope": "channel override"
+        },
+        "SRV_PARAM_CH_TRAP_TFLAT": {
+          "value": "496.0",
+          "scope": "channel override"
+        },
+        "SRV_PARAM_CH_TRAP_POLEZERO": {
+          "value": "696.0",
+          "scope": "channel override"
+        },
+        "SRV_PARAM_CH_ENERGY_FINE_GAIN": {
+          "value": "1.0",
+          "scope": "board inherited"
+        },
+        "SW_PARAMETER_CH_ENERGYCUTENABLE": {
+          "value": "false",
+          "scope": "board inherited"
+        },
+        "SW_PARAMETER_CH_ENERGYLOWCUT": {
+          "value": "0.0",
+          "scope": "board inherited"
+        },
+        "SW_PARAMETER_CH_ENERGYHIGHCUT": {
+          "value": "0.0",
+          "scope": "board inherited"
+        },
+        "SW_PARAM_CH_PUR_ENABLE": {
+          "value": "false",
+          "scope": "board inherited"
+        }
+      },
+      "range_implied_by_current_settings_mV": 500,
+      "historical_bin_settings_association": "unconfirmed",
+      "exact_energy_histogram_matches": [
+        "data/DT5730_DPP_PHA/DAQ/run_12/UNFILTERED/Hcompass_run_12_20221207_172832.root"
+      ]
+    },
+    {
+      "run": 13,
+      "channel": 0,
+      "settings_path": "data/DT5730_DPP_PHA/DAQ/run_13/settings.xml",
+      "settings_sha256": "2f8cde3dd2a9bb49752453c1e3c436c661b5dfebb683f1de8164a5368c7fd390",
+      "board": "DT5730",
+      "firmware": {
+        "rocFirmware": {
+          "major": "4",
+          "minor": "23",
+          "build": "19206"
+        },
+        "amcFirmware": {
+          "major": "139",
+          "minor": "10",
+          "build": "22036"
+        }
+      },
+      "acquisition": {
+        "acquisitionMode": "WAVES",
+        "saveRaw": "true",
+        "saveUnfiltered": "true",
+        "saveFiltered": "true",
+        "autoTriggerEnabled": "false",
+        "listTimeSorting": "false"
+      },
+      "event_saving_enabled_current": "false",
+      "sample_time_ps": "2000",
+      "adc_bits": "14",
+      "parameters": {
+        "SRV_PARAM_CH_COARSE_GAIN": {
+          "value": "COARSE_GAIN_X4",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_THRESHOLD": {
+          "value": "160.0",
+          "scope": "channel override"
+        },
+        "SRV_PARAM_CH_TTF_DELAY": {
+          "value": "96.0",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_TTF_SMOOTHING": {
+          "value": "RCCR2_SMTH_4",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_POLARITY": {
+          "value": "POLARITY_POSITIVE",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_PRETRG": {
+          "value": "1000.0",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_SELF_TRG_ENABLE": {
+          "value": "true",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_TRG_HOLDOFF": {
+          "value": "496.0",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_TRAP_TRISE": {
+          "value": "800.0",
+          "scope": "channel override"
+        },
+        "SRV_PARAM_CH_TRAP_TFLAT": {
+          "value": "496.0",
+          "scope": "channel override"
+        },
+        "SRV_PARAM_CH_TRAP_POLEZERO": {
+          "value": "696.0",
+          "scope": "channel override"
+        },
+        "SRV_PARAM_CH_ENERGY_FINE_GAIN": {
+          "value": "1.0",
+          "scope": "board inherited"
+        },
+        "SW_PARAMETER_CH_ENERGYCUTENABLE": {
+          "value": "false",
+          "scope": "board inherited"
+        },
+        "SW_PARAMETER_CH_ENERGYLOWCUT": {
+          "value": "0.0",
+          "scope": "board inherited"
+        },
+        "SW_PARAMETER_CH_ENERGYHIGHCUT": {
+          "value": "0.0",
+          "scope": "board inherited"
+        },
+        "SW_PARAM_CH_PUR_ENABLE": {
+          "value": "false",
+          "scope": "board inherited"
+        }
+      },
+      "range_implied_by_current_settings_mV": 500,
+      "historical_bin_settings_association": "unconfirmed",
+      "exact_energy_histogram_matches": [
+        "data/DT5730_DPP_PHA/DAQ/run_13/UNFILTERED/Hcompass_run_13_20221207_174327.root"
+      ]
+    },
+    {
+      "run": 14,
+      "channel": 0,
+      "settings_path": "data/DT5730_DPP_PHA/DAQ/run_14/settings.xml",
+      "settings_sha256": "b05eff07ae1e8dc298d2f4870671e879dd55fd62a9dc8ca620a2ab1e3ada5333",
+      "board": "DT5730",
+      "firmware": {
+        "rocFirmware": {
+          "major": "4",
+          "minor": "23",
+          "build": "19206"
+        },
+        "amcFirmware": {
+          "major": "139",
+          "minor": "10",
+          "build": "22036"
+        }
+      },
+      "acquisition": {
+        "acquisitionMode": "WAVES",
+        "saveRaw": "true",
+        "saveUnfiltered": "true",
+        "saveFiltered": "true",
+        "autoTriggerEnabled": "false",
+        "listTimeSorting": "false"
+      },
+      "event_saving_enabled_current": "false",
+      "sample_time_ps": "2000",
+      "adc_bits": "14",
+      "parameters": {
+        "SRV_PARAM_CH_COARSE_GAIN": {
+          "value": "COARSE_GAIN_X4",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_THRESHOLD": {
+          "value": "160.0",
+          "scope": "channel override"
+        },
+        "SRV_PARAM_CH_TTF_DELAY": {
+          "value": "96.0",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_TTF_SMOOTHING": {
+          "value": "RCCR2_SMTH_4",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_POLARITY": {
+          "value": "POLARITY_POSITIVE",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_PRETRG": {
+          "value": "1000.0",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_SELF_TRG_ENABLE": {
+          "value": "true",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_TRG_HOLDOFF": {
+          "value": "496.0",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_TRAP_TRISE": {
+          "value": "800.0",
+          "scope": "channel override"
+        },
+        "SRV_PARAM_CH_TRAP_TFLAT": {
+          "value": "496.0",
+          "scope": "channel override"
+        },
+        "SRV_PARAM_CH_TRAP_POLEZERO": {
+          "value": "696.0",
+          "scope": "channel override"
+        },
+        "SRV_PARAM_CH_ENERGY_FINE_GAIN": {
+          "value": "1.0",
+          "scope": "board inherited"
+        },
+        "SW_PARAMETER_CH_ENERGYCUTENABLE": {
+          "value": "false",
+          "scope": "board inherited"
+        },
+        "SW_PARAMETER_CH_ENERGYLOWCUT": {
+          "value": "0.0",
+          "scope": "board inherited"
+        },
+        "SW_PARAMETER_CH_ENERGYHIGHCUT": {
+          "value": "0.0",
+          "scope": "board inherited"
+        },
+        "SW_PARAM_CH_PUR_ENABLE": {
+          "value": "false",
+          "scope": "board inherited"
+        }
+      },
+      "range_implied_by_current_settings_mV": 500,
+      "historical_bin_settings_association": "unconfirmed",
+      "exact_energy_histogram_matches": [
+        "data/DT5730_DPP_PHA/DAQ/run_14/UNFILTERED/Hcompass_run_14_20221207_175336.root"
+      ]
+    },
+    {
+      "run": 18,
+      "channel": 0,
+      "settings_path": "data/DT5730_DPP_PHA/DAQ/run_18/settings.xml",
+      "settings_sha256": "50ce7758d3ba790b65a3edb49ed9270901137ddb2ee55b42b0b41ca5d9ac4386",
+      "board": "DT5730",
+      "firmware": {
+        "rocFirmware": {
+          "major": "4",
+          "minor": "23",
+          "build": "19206"
+        },
+        "amcFirmware": {
+          "major": "139",
+          "minor": "10",
+          "build": "22036"
+        }
+      },
+      "acquisition": {
+        "acquisitionMode": "WAVES",
+        "saveRaw": "true",
+        "saveUnfiltered": "true",
+        "saveFiltered": "true",
+        "autoTriggerEnabled": "false",
+        "listTimeSorting": "false"
+      },
+      "event_saving_enabled_current": "false",
+      "sample_time_ps": "2000",
+      "adc_bits": "14",
+      "parameters": {
+        "SRV_PARAM_CH_COARSE_GAIN": {
+          "value": "COARSE_GAIN_X4",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_THRESHOLD": {
+          "value": "200.0",
+          "scope": "channel override"
+        },
+        "SRV_PARAM_CH_TTF_DELAY": {
+          "value": "96.0",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_TTF_SMOOTHING": {
+          "value": "RCCR2_SMTH_4",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_POLARITY": {
+          "value": "POLARITY_POSITIVE",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_PRETRG": {
+          "value": "1000.0",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_SELF_TRG_ENABLE": {
+          "value": "true",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_TRG_HOLDOFF": {
+          "value": "496.0",
+          "scope": "board inherited"
+        },
+        "SRV_PARAM_CH_TRAP_TRISE": {
+          "value": "800.0",
+          "scope": "channel override"
+        },
+        "SRV_PARAM_CH_TRAP_TFLAT": {
+          "value": "496.0",
+          "scope": "channel override"
+        },
+        "SRV_PARAM_CH_TRAP_POLEZERO": {
+          "value": "696.0",
+          "scope": "channel override"
+        },
+        "SRV_PARAM_CH_ENERGY_FINE_GAIN": {
+          "value": "1.0",
+          "scope": "board inherited"
+        },
+        "SW_PARAMETER_CH_ENERGYCUTENABLE": {
+          "value": "false",
+          "scope": "board inherited"
+        },
+        "SW_PARAMETER_CH_ENERGYLOWCUT": {
+          "value": "0.0",
+          "scope": "board inherited"
+        },
+        "SW_PARAMETER_CH_ENERGYHIGHCUT": {
+          "value": "0.0",
+          "scope": "board inherited"
+        },
+        "SW_PARAM_CH_PUR_ENABLE": {
+          "value": "false",
+          "scope": "board inherited"
+        }
+      },
+      "range_implied_by_current_settings_mV": 500,
+      "historical_bin_settings_association": "unconfirmed",
+      "exact_energy_histogram_matches": [
+        "data/DT5730_DPP_PHA/DAQ/run_18/UNFILTERED/Hcompass_run_18_20221207_180711.root"
+      ]
+    }
+  ]
+}

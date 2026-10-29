@@ -1,0 +1,17 @@
+block 128 draw 1 seconds 1.1
+block 128 draw 8 seconds 6.1
+block 128 draw 16 seconds 12.7
+block 128 draw 24 seconds 20.0
+block 128 draw 32 seconds 27.7
+block 128 draw 40 seconds 37.8
+block 128 draw 48 seconds 45.2
+block 128 draw 56 seconds 52.0
+block 128 draw 64 seconds 58.7
+block 128 draw 72 seconds 68.2
+block 128 draw 80 seconds 76.2
+block 128 draw 88 seconds 82.0
+block 128 draw 96 seconds 88.3
+block 128 draw 104 seconds 97.7
+block 128 draw 112 seconds 105.5
+block 128 draw 120 seconds 113.4
+block 128 draw 128 seconds 121.2

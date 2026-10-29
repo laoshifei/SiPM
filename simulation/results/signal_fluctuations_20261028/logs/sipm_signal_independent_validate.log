@@ -1,0 +1,16 @@
+Co60 run3_first60 rel [-0.0208 -0.0386  0.0192] shape 0.02118212511781873 F50 KS 0.08404761904761904
+Co60 run3_middle20 rel [-0.0076 -0.016   0.0475] shape 0.021269910653820497 F50 KS 0.0712778429073857
+Co60 run3_last20 rel [ 0.0008 -0.0214  0.0357] shape 0.021665771730657122 F50 KS 0.08184019370460044
+Am241 run12_first60 rel [ 0.0104  0.013  -0.0249] shape 0.012733573085610319 F50 KS 0.08566571549996965
+Am241 run12_middle20 rel [ 0.0385  0.0399 -0.004 ] shape 0.013337421549310429 F50 KS 0.14568820562094642
+Am241 run12_last20 rel [ 0.042   0.0349 -0.0107] shape 0.01076526298495848 F50 KS 0.16486350740494393
+Am241 run18_first60 rel [0.6723 0.6061 0.5114] shape 0.01169991412022134 F50 KS 0.8793683241252301
+Info in <TCanvas::Print>: SVG file simulation/results/signal_fluctuations_20261028/independent/native_calibration_summary.svg has been created
+Info in <TCanvas::Print>: png file simulation/results/signal_fluctuations_20261028/independent/native_calibration_summary.png has been created
+Info in <TCanvas::Print>: pdf file simulation/results/signal_fluctuations_20261028/independent/native_calibration_summary.pdf has been created
+Info in <TCanvas::Print>: SVG file simulation/results/signal_fluctuations_20261028/independent/individual_native_calibration.svg has been created
+Info in <TCanvas::Print>: png file simulation/results/signal_fluctuations_20261028/independent/individual_native_calibration.png has been created
+Info in <TCanvas::Print>: pdf file simulation/results/signal_fluctuations_20261028/independent/individual_native_calibration.pdf has been created
+Info in <TCanvas::Print>: SVG file simulation/results/signal_fluctuations_20261028/independent/native_fluctuation_distributions.svg has been created
+Info in <TCanvas::Print>: png file simulation/results/signal_fluctuations_20261028/independent/native_fluctuation_distributions.png has been created
+Info in <TCanvas::Print>: pdf file simulation/results/signal_fluctuations_20261028/independent/native_fluctuation_distributions.pdf has been created

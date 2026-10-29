@@ -1,0 +1,188 @@
+{
+  "stage": "Hardware-bit sensitivity, charge-conditioned shapes, fluctuations and a frozen Geant4 finite-rise control",
+  "date": "2026-10-28",
+  "control_conclusion": "Do not adopt the all-pole-in-emission model as calibrated. Mean shape remains close while fluctuation statistics overshoot. Baseline and all primary cohorts remain available.",
+  "verification": {
+    "kernel_tests": 14,
+    "geant4_workflow_tests": 9,
+    "analysis_checks": 6,
+    "full_mc_events": {
+      "Co60": 5000,
+      "Am241": 30000
+    },
+    "frozen_transport_source_and_binary_unchanged": true,
+    "co60_validation": {
+      "passed": true,
+      "source": "Co60",
+      "events": 5000,
+      "zero_deposit_events": 4504,
+      "deposited_events": 496,
+      "alpha_deposit_events": 0,
+      "alpha_deposit_median_MeV": null,
+      "energy_deposit_p05_p50_p95_MeV": [
+        0.040225685496371705,
+        0.5751296899943433,
+        1.3324980931528763
+      ],
+      "decay_product_counts": {
+        "1000280609": 9988,
+        "-12": 5000,
+        "11": 5175,
+        "22": 9987,
+        "1000280600": 5000
+      },
+      "max_relative_charge_balance_error": 7.572043383424389e-14,
+      "prompt_gamma_lines_counts": {
+        "0.05954": 0,
+        "1.17323": 4987,
+        "1.33249": 4998
+      },
+      "ancestry_checks": true,
+      "scope": "Numerical and source-physics checks, not validation against experimental waveform",
+      "source_gap_mm": 1.0,
+      "transport_only": false,
+      "digitization_enabled": true
+    },
+    "am241_validation": {
+      "passed": true,
+      "source": "Am241",
+      "events": 30000,
+      "zero_deposit_events": 29563,
+      "deposited_events": 437,
+      "alpha_deposit_events": 241,
+      "alpha_deposit_median_MeV": 0.9214470371064972,
+      "energy_deposit_p05_p50_p95_MeV": [
+        0.013766804857657178,
+        0.7070693047980618,
+        1.102195310980174
+      ],
+      "decay_product_counts": {
+        "1000932371": 29808,
+        "1000020040": 30000,
+        "1000932379": 11474,
+        "11": 363384,
+        "1000932370": 30000,
+        "22": 25222,
+        "1000932372": 1
+      },
+      "max_relative_charge_balance_error": 3.341287305210017e-14,
+      "prompt_gamma_lines_counts": {
+        "0.05954": 10878,
+        "1.17323": 0,
+        "1.33249": 0
+      },
+      "ancestry_checks": true,
+      "scope": "Numerical and source-physics checks, not validation against experimental waveform",
+      "source_gap_mm": 30.0,
+      "transport_only": false,
+      "digitization_enabled": true
+    }
+  },
+  "analysis_notes": [
+    "CLI relative-path handling corrected after first analysis invocation; no MC rerun required.",
+    "The final histogram range includes the high-fluctuation control. Initial cropped plots and initial layouts are retained only as intermediate local artifacts.",
+    "Analysis checks were run before subsequent path/plot-only changes; exact tested versions are in the frozen source/diagnostic snapshots.",
+    "All final figures visually inspected."
+  ],
+  "geant4_primary_source": {
+    "url": "https://github.com/Geant4/geant4/blob/v11.4.2/source/processes/electromagnetic/xrays/src/G4Scintillation.cc",
+    "downloaded_file_sha256": "6c9d39c850a9a11da3b9bdbc1c2c5a5d4a2d7c48f13dcbe9112cf7ef22be2988"
+  },
+  "source_sha256": {
+    "README.md": "3f6e47c522a48463d21d31f5e3a05c785e22077da5b83d5016e599d81f723eb2",
+    "simulation/README.md": "776d1889b57703c5a767fdc43c3d85566e82efddb1950ba7b91e51eb690f69fc",
+    "simulation/RESULTS.md": "152a1705b87e1b819d6077c57c257cb81dfd0c2155dba28e566df6fbf73680e0",
+    "simulation/audit_acquisition.py": "08132f1c382d5fadd4076fed94452861002b8e6f8603f7d68892bed8569762ab",
+    "simulation/calibrate.py": "b169edf40d01018e622332b541c0d4f111df27ec531bbf30d22fde50cf0ecb43",
+    "simulation/check_trigger_proxy.py": "523e3dfc76cdd40ed7e9252a7d6b879d95ed47bc01fa10cff438d0d055e33e5f",
+    "simulation/compare.py": "a3d7b6713fb52c8f497d72e6908cc01036b639d847eb11ff89e2be42e3e55fbe",
+    "simulation/compare_absolute.py": "81521726dab12744b486e41a9a4f5c31959437ca2d3370ffaf73a298dabc8a02",
+    "simulation/diagnose_charge.py": "3f9f5b67e2bb61ae6aaabed3d917a14da56139b2e6737780c0e9f18fa226ffed",
+    "simulation/diagnose_fluctuations.py": "3f6e7d9527f367806f063734e5a184916557ccd79507c811e0b614326b10eeed",
+    "simulation/diagnose_origin.py": "e2c109affc56e1f2e6064520fc08983878b6f57a45ed73ae98dcc2cf0e9330ed",
+    "simulation/inspect_geometry.py": "1c54fcb95312a03b8a73bfca53001658bed0a6121889600fb1472012022dfd14",
+    "simulation/prepare_response_test.py": "e851659d717190237c340aeee4251bdb9f094fe41bef414d8c57be631301d473",
+    "simulation/reference.py": "fe7ebd20af44ffc2ade2b758dd8fa6bde1d269cc8cb02e7a37bd591d4fe0d1bb",
+    "simulation/report_response_test.py": "d6748e6aeef46d6a5f03ac05ec995f03f55ad5166bd686f75d707a0127e9b1be",
+    "simulation/run.py": "431e82dfbaeb7817f3e65d253264c02a90df22e44ac55ba51913becd5e852b85",
+    "simulation/scan_distance.py": "4efdd20cf82aa4a4e9a80541b5858dbc6d47844ee102cd7614a4ee4db78d6f60",
+    "simulation/scan_transport.py": "c6bc1da63b7b6aa5a9ad86b3aeb2ff6677977102f192fd63c12372232ef95008",
+    "simulation/screen_joint.py": "af17fd2f12d53fafccefbcb44abb370cc6edfaa701980dd3f23f90978207c6d5",
+    "simulation/validate.py": "7ea129ff27483a9ad03593ec573152cb12105b486f6e14968f835dee3ba06d97",
+    "simulation/validate_joint.py": "38407613c114555c4d56054c90688d16b091f9373c7b0f32ba375f000941e86c",
+    "simulation/tests/test_charge_diagnostics.py": "e076e7de326349cc42c5183ea2d195281a90e409cd6dc0230a0343fc931ffe6d",
+    "simulation/tests/test_workflow.py": "837ebd7bb992d2151d85e4c08aa75abb2182b299f936112c49cabd7d9d53f7be",
+    "analysis/paper_baseline/prepare.py": "9ebe888c46f8964ecea7141f1c3da5095a0d5546bacb87d77e9874a156fab9c9",
+    "analysis/paper_baseline/refine_waveforms.py": "2c4e7e4be126df0fec83cc2eedb093eca1fa95833bcad27a7b0c6c5289781941"
+  },
+  "outputs_sha256": {
+    "co60/config.json": "212d2b281786e9d2587a001cd84f358677d1db9364c964438ce8f3917196541b",
+    "co60/events.root": "cc91691f57a3f8b0d9595022bfb4d2837e382afe460487435fa0a9817aa682a2",
+    "co60/events_validation.json": "0bb0311fac2adeb71c70074f9254a6a6777f996d245e7e9471e741e987d412a4",
+    "co60/run.log": "216c08483ac520a1f0f870d20b6894a8d439fdeced30194b0cea519d07b99372",
+    "co60/run.mac": "421b4e30369ada94a5beb4d4490454e96cd6079ea066300b3ee2d4cf38d7c4d9",
+    "co60/validation.log": "22fd5e7f3a07365dead8b67d2f4c56872490d419bb0918f0c980a1b7cc7650ba",
+    "am241/config.json": "7760c45eb27fd9b30225ce7e46bef653a3d954ad99ba6cb5add7a38bfdb25ae7",
+    "am241/events.root": "afd4b9a1eba8b35b63378175439e5fc876412f31834b85e0440d5a51778edfab",
+    "am241/events_validation.json": "1c5ede74c7376bbf30c589e4da33a9b58dabe54b9e56e9cdfb8b47d8b65831fb",
+    "am241/run.log": "2482946fa2a98b859c7d14b3e25691049e0e03f1ae69eaa12ffeceefbe51e9cb",
+    "am241/run.mac": "19955f4458516d174db88b9985d79fb8256d96f946f4ed582dfdc08cd2a332fe",
+    "am241/validation.log": "90ee2dbdca142e32c769cb70ecfd6ca3c37173a5700caebdb817345ead234a36",
+    "common_charge/charge_shape_diagnostics.png": "876b3ddc03a173d7aa8dad3ddda1e15db0d5d260cd5de34a864dfc3dae9bb368",
+    "common_charge/charge_shape_diagnostics.svg": "1c51bc1aca807273c0862cdb819912d63c79d36afa496a8bab9962a993434722",
+    "common_charge/comparison.json": "d1d196febbb8b5d453d8bacca550a36e8b6687be3780d84175bace399a7a4c4a",
+    "common_charge/curves.npz": "5173bf4d01d4a200616d1771ae7bb5a889a19812e7d91a1c53da652aa5b7be7b",
+    "common_charge/waveform_comparison.png": "c2c6f75723f2017619847ab06a3c15c7020074c976591c623a4b33bd96eca705",
+    "common_charge/waveform_comparison.svg": "3190a6ea790306278b1b1c73c28d47cd33151ccd1226a7a192cc9c9578920234",
+    "joint_validation_final/curves.npz": "4b890b5cfeed9277b5f34efd6b2fa216f7bae273967d61ad9368093f23accfe4",
+    "joint_validation_final/joint_comparison.png": "2f1a29e99ad47e0a56bdb7e95af98333d75f299fe43a225b379f632cddf86aca",
+    "joint_validation_final/joint_comparison.svg": "3d82ba0274a7e1e3b896666383d23ea36379fe3995e8c5925d5ea5ba29e58fde",
+    "joint_validation_final/validation.json": "c0384356c03b3e217afcecedc36bccb74ad1f0c00a09d50b5e0bd0c3ccf84945",
+    "fluctuations/diagnostics.json": "73a5470c179ea36816301dec54440952f146ee5b45b1d41a955115a3c347960e",
+    "fluctuations/fluctuation_comparison.png": "3451bf4c3e9d848613f0e4baa31f9a51763faf0e9c8b99f8f1a1a0bd20ac70f7",
+    "fluctuations/fluctuation_comparison.svg": "d368cece436b10a8acaef8f7769c9f7a6870a6a249d2de5809dbff504a8e97fd",
+    "fluctuations/metrics.npz": "4cac541095a32149d29508d3ef3612f495c4de0532f6ab26c99462f398c9d0ac",
+    "report/individual_waveforms.png": "08b979c65df3db1bc31351149061b840a16427ce72a85834df8f07d4638be345",
+    "report/individual_waveforms.svg": "ebf6f9bf9ac9f69fb0c6315335c117161b4784f7e64c003f8227537a6b74b59f",
+    "report/response_control.png": "c39430bca39847b68528dcdc5cc11e4b877619d05f7dcbf0555e1cb6957da389",
+    "report/response_control.svg": "1bdadc028f0c4961c0fa0d0fbe7a4b276b2da7af8371c251115e1f4db8fab9d1",
+    "report/summary.json": "548e5f28e433cacbdb08710f61d6bc06191435fadf4a4b7793b78229fc86dcb2",
+    "design.json": "68b3cafb47a8e376f882c0ea713c26019211ec722684c717a3f2aa8cec7328d1",
+    "build.log": "802b6630f352c7f895e9e38740098b43493e3e0e407e7c85dd10316176facf24",
+    "ctest.log": "b573ccbdbfc3c14e02e8b19e0c2c7329585f701eecfbb525129544b92a708f65",
+    "diagnostic_tests.json": "1b4521475a098b5b3542ddcabc3a750fcec03a46a16b859ae8d72aba277b6a3b",
+    "run_metadata_check.json": "40a321927fcfcc78a15afa3ce254f0a074ada08022c8bd7d88bf7fb380e220d0",
+    "common_charge.log": "efe28f66b742067fde21e14c34362b406aab10368b0b4c7bc1d720257e255c9a",
+    "joint_validation.log": "eb51958d9ddf0e53f3c49feefa39addb151ca089c018fd323db12fa9145205e5",
+    "fluctuations.log": "12ddbd6dc57d24de2526bf7395a8e003466647811d764194df8142af0e0f2f2e",
+    "report.log": "fc62e2d0d1d8ce1633f9ce54735634b5450dc513fa329c8c8964d7eceb41849b"
+  },
+  "related_results_sha256": {
+    "simulation/results/charge_diagnostics_20261028_final/diagnostics.json": "8e0d2f64a8b2b557bf2fa605fecc6c0e4ad067334360088dbeb67a5427bbdfed",
+    "simulation/results/fluctuations_20261028/diagnostics.json": "8d399408a03add2ed0e409abcad081a89ddd46059e01aded84738bb6714ab7a1",
+    "simulation/results/settings_flags_20261028/settings_audit.json": "6dbd8b98970170c1c23873098f16fa71923ad386f72fd3a12551ba7682844d98"
+  },
+  "intermediate_artifacts_excluded": [
+    "fluctuations_failed_relative_path",
+    "fluctuations_initial_plot",
+    "report_initial_layout"
+  ],
+  "key_results": {
+    "Co60": {
+      "50ns_medians": {
+        "measured": 0.08563722828112166,
+        "old_mc": 0.011606995032846965,
+        "finite_rise_mc": 1.4861000611245008
+      },
+      "new_selected_events": 431
+    },
+    "Am241": {
+      "50ns_medians": {
+        "measured": 0.2211244393362049,
+        "old_mc": 0.012189204149017897,
+        "finite_rise_mc": 1.4907993648738325
+      },
+      "new_selected_events": 240
+    }
+  }
+}

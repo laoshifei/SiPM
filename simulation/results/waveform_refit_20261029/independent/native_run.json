@@ -1,0 +1,20 @@
+{
+  "scope": "Fresh full Geant4 after all training-only optical-fraction, baseline-state and residual-spectrum calibrations are frozen. No subsequent tuning on these outputs.",
+  "binary_sha256": "218fcecaacb37e66415dfcbb4792fbec95f646aa61709cf24aa9ba60c07326e6",
+  "fit_sha256": "33bf8efedad1ec3ea6fbde79139cf4083d8f317549ea2535553afbf57af74f49",
+  "baseline_mixture_sha256": "9215a2dbbb130d3ee43ef8ddc3283adf5093cb3f3bf92855af157bc4d2e86eb0",
+  "sources": {
+    "Co60": {
+      "events": 4000,
+      "seed": 291029503,
+      "config": "simulation/results/waveform_refit_20261029/independent/Co60_calibrated.json",
+      "config_sha256": "d7f8cb284182390f832d4e7db1834162f416e08ebf74e0e4c73de52054cdc485"
+    },
+    "Am241": {
+      "events": 24000,
+      "seed": 291029512,
+      "config": "simulation/results/waveform_refit_20261029/independent/Am241_calibrated.json",
+      "config_sha256": "316587932543353abca9c6ae923c575b8a4c8b414d2543cec9e618287c87ae0f"
+    }
+  }
+}

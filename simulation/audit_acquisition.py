@@ -10,7 +10,8 @@ KEYS = ('SRV_PARAM_CH_COARSE_GAIN', 'SRV_PARAM_CH_THRESHOLD', 'SRV_PARAM_CH_TTF_
         'SRV_PARAM_CH_TTF_SMOOTHING', 'SRV_PARAM_CH_POLARITY', 'SRV_PARAM_CH_PRETRG',
         'SRV_PARAM_CH_SELF_TRG_ENABLE', 'SRV_PARAM_CH_TRG_HOLDOFF', 'SRV_PARAM_CH_TRAP_TRISE',
         'SRV_PARAM_CH_TRAP_TFLAT', 'SRV_PARAM_CH_TRAP_POLEZERO', 'SRV_PARAM_CH_ENERGY_FINE_GAIN',
-        'SW_PARAMETER_CH_ENERGYCUTENABLE', 'SW_PARAMETER_CH_ENERGYLOWCUT', 'SW_PARAMETER_CH_ENERGYHIGHCUT')
+        'SW_PARAMETER_CH_ENERGYCUTENABLE', 'SW_PARAMETER_CH_ENERGYLOWCUT', 'SW_PARAMETER_CH_ENERGYHIGHCUT',
+        'SW_PARAM_CH_PUR_ENABLE')
 
 
 def main():
@@ -18,6 +19,7 @@ def main():
     args = parser.parse_args(); args.out.mkdir(parents=True, exist_ok=False)
     associations = json.loads((PROJECT/'analysis/paper_baseline/results/histogram_association.json').read_text())
     report = {'scope': 'Current saved settings, not proof of the settings used for every earlier BIN in a reused run directory',
+              'script_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
               'hardware_sources': {
                   'range': {'url': 'https://caen.it/product/dt5730-dt5730s/', 'checked': '2026-10-28',
                             'paraphrase': 'DT5730 X1 corresponds to 2 Vpp, X4 to 0.5 Vpp; analog inputs have 50 ohm impedance.'},
@@ -27,13 +29,17 @@ def main():
               'runs': []}
     for run in (3, 7, 10, 11, 12, 13, 14, 18):
         path = PROJECT/f'data/DT5730_DPP_PHA/DAQ/run_{run}/settings.xml'
-        board = ET.parse(path).getroot().find('board')
+        root = ET.parse(path).getroot(); board = root.find('board')
         values = {entry.findtext('key'): entry.findtext('value/value') for entry in board.findall('parameters/entry')}
         channel = next(c for c in board.findall('channel') if c.findtext('index') == '0')
         overrides = {entry.findtext('key'): entry.findtext('value') for entry in channel.findall('values/entry')}
         values.update(overrides)
         report['runs'].append({'run': run, 'channel': 0, 'settings_path': str(path.relative_to(PROJECT)),
             'settings_sha256': hashlib.sha256(path.read_bytes()).hexdigest(), 'board': board.findtext('modelName'),
+            'firmware': {name: {entry.tag: entry.text for entry in board.find(name)} for name in ('rocFirmware', 'amcFirmware')},
+            'acquisition': {name: root.findtext('acquisitionMemento/'+name) for name in
+                            ('acquisitionMode', 'saveRaw', 'saveUnfiltered', 'saveFiltered', 'autoTriggerEnabled', 'listTimeSorting')},
+            'event_saving_enabled_current': root.findtext('eventSavingEnabled'),
             'sample_time_ps': board.findtext('sampleTime'), 'adc_bits': board.findtext('adcBitCount'),
             'parameters': {key: {'value': values[key], 'scope': 'channel override' if key in overrides else 'board inherited'} for key in KEYS},
             'range_implied_by_current_settings_mV': {'COARSE_GAIN_X1': 2000, 'COARSE_GAIN_X4': 500}[values['SRV_PARAM_CH_COARSE_GAIN']],

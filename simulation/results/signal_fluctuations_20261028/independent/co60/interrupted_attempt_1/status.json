@@ -1,0 +1,7 @@
+{
+  "exit_code": 143,
+  "last_logged_event": 1600,
+  "completion": "interrupted; excluded from all statistics",
+  "cause": "SIGTERM; initiating cause not known",
+  "retry": "same frozen configuration, full event count and seed; do not combine partial output"
+}

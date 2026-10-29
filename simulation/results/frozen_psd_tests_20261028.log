@@ -1,0 +1,8 @@
+test_empirical_ks_handles_ties (test_frozen_psd_transfer.TransferTests.test_empirical_ks_handles_ties) ... ok
+test_new_blocks_equal_original_feature_extraction (test_frozen_psd_transfer.TransferTests.test_new_blocks_equal_original_feature_extraction) ... ok
+test_scores_are_scale_invariant_without_retraining (test_frozen_psd_transfer.TransferTests.test_scores_are_scale_invariant_without_retraining) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.062s
+
+OK

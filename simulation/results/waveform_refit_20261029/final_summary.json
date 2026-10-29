@@ -1,0 +1,60 @@
+{
+  "scope": "Export frozen validation numbers and Chinese notebook notes; never refit.",
+  "code_sha256": "1c42fc07bbf69a7506847d7db576e08cf041e2286969cd5f37d482007a5d0efb",
+  "inputs_sha256": {
+    "simulation/results/waveform_refit_20261029/independent/analysis/validation.json": "0264e700267b54bec8084cf37ad5c067089ebe93edb06e832d909103ea248f77",
+    "simulation/results/waveform_refit_20261029/conditioned_last20/analysis/validation.json": "afaed93a26bf1dc37bf1e4f63e789f002303bb096a58fa5a8c82af01a8beefc0",
+    "simulation/results/waveform_refit_20261029/run18/validation.json": "56a1fa30898b33c2ea6a7bf657fca006064fe15e251bcb76a5a682840710a06e",
+    "simulation/results/waveform_refit_20261029/independent/analysis/feature_intervals.json": "6511a1ecdcf73acbbbd09ee9f87a4195febfc5b79ceb6bbbcb323fbcaafbd359",
+    "simulation/results/waveform_refit_20261029/conditioned_last20/analysis/feature_intervals.json": "24e2adca53a6656ffdd0043fdabd8d688ef264bc4494fe4a2ef1460066ccece8",
+    "simulation/results/waveform_refit_20261029/figures/figure_record.json": "a0c7b49cf7fd96d693d6a294f16c9ecc5aa96dd2c79562bec1573d2bfb542d38"
+  },
+  "notebook_summary_markdown": "## 3. 冻结参数后的完整 Geant4 结果\n\n本轮完成两批完整输运：候选阶段 Co 4000 + Am 24000；冻结最终参数后另用新种子 Co 4000（291029503）+ Am 24000（291029512）。合计新增 **56000 个完整母衰变历史**。下表使用最后一批。其共同 Q 区间内合格 MC 仅为 Co **129**、Am **172** 条，不能把 28000 个母衰变全当作有效波形。数字化重放复用这些历史，不增加独立 MC 数。\n\nrun 3 / 12 的训练波形数为 2450 / 1547；中段为 853 / 460；后段为 826 / 407。run 18 另用冻结前段 3000 条训练读出残差，冻结中段、后段各 3000 条作检查。run 18 全部合格前/中/后段分别有 65034 / 21628 / 21521 条；本轮该分支没有宣称使用全部事件。\n\n### 指标定义和比较范围\n\n共同 Q 区间为 **201824.1125–418733.2 ADC·sample**；原冻结实测 ID 不变。MC 重新执行相同的质量、幅度≥200 ADC、Q 区间与触发前窗口条件。平均形状逐条扣基线、按 t10 对齐后用 [−40,3000) ns 积分归一化。NRMSE 是 [−100,3500] ns 内平均曲线差的 RMS 除以实测平均曲线最大值，**不是逐点相对误差，也不是幅度误差**。\n\n配置内的 acquisition.amplitude_threshold_adc 是软件触发代理，不是硬件触发仿真。run18 分支继承 Am 配置的160 ADC代理；本文比较统一再要求幅度≥200 ADC，不据此还原该次采集的硬件阈值或低于阈值的探测效率。\n\nF50 / F102 / F202：减去对应宽度的中心滑动平均，以 [500,2500) ns 信号残差方差减去 [−600,−200) ns 前触发残差方差，再除以信号区均值，单位 ADC。它是依赖滤波器的经验量，不能直接解释为增益或光电子数。表中偏差为 MC/实测−1。\n\n下表使用前段训练状态，未使用后段的基线或脉冲重新拟合。平均形状在 Co 上明显改善，Am 从上一版约 1.08% 变为约 1.18%，**不能写成每项都改善**。\n\n|后段检查|平均 NRMSE|F50|F102|F202|Q 谱 KS|\n|---|---|---|---|---|---|\n|Co60 / 上一版|2.167%|+0.08%|-2.14%|+3.57%|0.189|\n|Co60 / 本轮冻结|1.026%|+1.75%|+0.85%|+4.11%|0.257|\n|Am241 / 上一版|1.077%|+4.20%|+3.49%|-1.07%|0.190|\n|Am241 / 本轮冻结|1.179%|+2.70%|+2.28%|-0.20%|0.223|\n\n|源|滤波宽度 ns|后段偏差|条件 95% 区间|\n|---|---|---|---|\n|Co60|50|+1.75%|[-2.84, 6.47]%|\n|Co60|102|+0.85%|[-2.60, 4.92]%|\n|Co60|202|+4.11%|[0.11, 8.72]%|\n|Am241|50|+2.70%|[-0.31, 5.65]%|\n|Am241|102|+2.28%|[-1.06, 5.61]%|\n|Am241|202|-0.20%|[-3.93, 3.75]%|\n\n区间来自 512 次母衰变重采样与实测原始序号 64 条块重采样；参数、模型选择和前触发校准均固定，未计入拟合不确定度，未作多重比较修正。Co F202 的区间仍略高于零；小偏差不能自动称为统计等效。新随机种子检验的是 MC 重复性；既有中/后段在以前阶段已看过，不是新的盲实验数据。\n\n### 峰值时间、积分比和后段基线\n\n|源|特征|MC 中位数|实测中位数|MC−实测的条件95%区间|\n|---|---|---|---|---|\n|Co60|峰值−t10 / ns|191.01|197.63|[-17.49, -1.40]|\n|Co60|短长积分比|0.4618|0.4653|[-0.0058, -0.0004]|\n|Am241|峰值−t10 / ns|316.42|289.82|[0.91, 39.65]|\n|Am241|短长积分比|0.3251|0.3250|[-0.0037, 0.0033]|\n\nCo 峰值时间较上一版更接近，但仍略早；Am 的峰值仍偏晚约 27 ns。因此本轮只达到主要平均形状和起伏均值的近似匹配，尚未通过所有特征分布的一致性检验。\n\n|源|读出状态|MC基线RMS/ADC|实测/ADC|RMS KS|平均NRMSE|F50|F102|F202|\n|---|---|---|---|---|---|---|---|---|\n|Co60|前段训练状态|3.377|3.317|0.100|1.026%|+1.75%|+0.85%|+4.11%|\n|Co60|后段前触发条件化|3.368|3.317|0.072|1.025%|+1.57%|+0.79%|+4.05%|\n|Am241|前段训练状态|3.215|5.677|0.883|1.179%|+2.70%|+2.28%|-0.20%|\n|Am241|后段前触发条件化|5.620|5.677|0.081|1.143%|+3.10%|+2.29%|-0.13%|\n\n后段条件化只读取该段最前 128 个样本的统计，保持发光、SiPM、信号残差不变。它能复现 Am 后段基线的主要变化，但用到了该段数据，不能作为前段参数预测后段基线的证据。模型允许事件间电平、方差及其相关性变化，未推断变化的电路原因。\n\n### run 18：同一物理模型，单独训练采集状态\n\n直接把 run 12 状态用于 run 18 前段时，F50 偏差仍为 **+64.82%**。该迁移失败保留。另用 run 18 前段 3000 条重新估计信号残差强度、相关频谱与方差分散，没有更改几何、闪烁或 SiPM 参数。下面是这个**独立校准分支**，不是宣称 run 12 参数已经迁移成功。\n\n|run18检查 / 前段状态|平均NRMSE|F50|F102|F202|Q谱KS|\n|---|---|---|---|---|---|\n|run18_middle20|1.053%|-1.61%|-1.58%|-3.03%|0.515|\n|run18_last20|0.961%|-1.62%|-1.49%|-3.21%|0.536|\n\nrun 18 后段 F50/F102/F202 的条件95%区间分别为 [-5.39, 2.52]%、[-5.64, 2.48]%、[-7.37, 0.91]%。run 18 基线 RMS 中位数 MC/实测为 4.940/4.950 ADC。但 Q 谱差异很大，不能把它当作绝对能谱或所有脉冲幅度均已复现。\n\n## 4. 当前可复现的参数\n\n|参数|值|\n|---|---|\n|电子/γ沉积时间常数|93.720, 700.000 ns|\n|电子快份额|0.130398|\n|α沉积时间常数|791.389, 8438.628 ns|\n|α快份额|0.484029|\n|共同被动 RC|126.816 ns|\n|候选快路径电荷份额|7.3e-12（实际为零）|\n|有效光产额|17590.196 photons/MeV|\n|α相对产额|0.971946|\n|固定假设|PDE 0.30、增益1.7×10⁶、50 Ω、恢复29 ns、16单元求和、输入500 mV|\n\n|采集run|信号残差方差系数 κ / ADC|事件方差CV|FIR抽头数（2ns采样）|\n|---|---|---|---|\n|3|0.261347|0.198662|1025|\n|12|1.522652|0.090485|1025|\n|18|0.756696|0.173554|1025|\n\n信号残差模型为 nᵢ=√(κ·max(Sᵢ,0)·V)·(h∗z)ᵢ，Sᵢ 是原生无噪声信号的 ADC 值，∑h²=1，V 是均值1的对数正态方差乘子。1025个抽头由训练频谱与100 ns相关项、白项的正组合生成；并非1025个自由参数逐点追踪实测波形。完整系数与前触发状态保存在配置 JSON 中。\n\n电子慢时间 700 ns 位于搜索下界；α慢时间约 8.44 µs 长于本次形状检查窗。它们与 RC、份额、有限积分窗及光产额相互关联，当前是装置假设下的有效拟合值，**不能报告为该 CsI(Tl) 晶体本征时间常数或已测 α 淬灭比**。光产额调整仅保持时间参数改变后的期望3µs积分，没有按事件缩放模拟。快路径份额趋于零，不支持宣称需要额外快路径。源距仍沿用候选 Co 1 mm（假设0.25 mm Al出口片）/ Am 30 mm，未恢复真实装置历史。配置中的 evidence 保留历次假设，当前数值应以本表、status 与本次记录为准。\n\n### 仍未解决、会限制文章结论的部分\n\nQ 谱 KS 在 Co/run12 后段为约 0.257/0.223，run18 约 0.536；Am MC 在共同Q高端的事件支持不足，等Q箱比较只能使用满足数据≥20、MC≥10的箱。不能用等Q箱权重图代替未加权能谱检验。峰值时间和部分分布仍偏离。读出状态单独校准是一种经验响应补全，不构成唯一物理机理；没有补测单光电子响应、完整接线、温度、源封装与距离，因此只支持限定Q区间内的条件波形校准。\n\n## 5. 图与未缩放单条波形\n\n以下依次显示平均形状与起伏均值、特征分布、单条ADC、未加权Q谱和run18分支。单条示例固定取实测Q的25%/75%排位（run18取50%），选择最近Q的MC事件，仅扣基线并按t10对齐，没有按幅度或形状挑选。图例中的 pretrigger-conditioned 表示使用了该段前触发统计。实验和模拟是独立随机事件，不要求随机细峰逐点重合。",
+  "figures": [
+    "simulation/results/waveform_refit_20261029/figures/shape_and_fluctuation_comparison.png",
+    "simulation/results/waveform_refit_20261029/figures/feature_distributions.png",
+    "simulation/results/waveform_refit_20261029/figures/unscaled_individual_waveforms.png",
+    "simulation/results/waveform_refit_20261029/figures/charge_spectrum_check.png",
+    "simulation/results/waveform_refit_20261029/figures/run18_separate_calibration.png"
+  ],
+  "presets": {
+    "run3_first60": {
+      "path": "simulation/configs/csi_tl_run3_waveform_20261029.json",
+      "source": "simulation/results/waveform_refit_20261029/final_parameters/Co60_calibrated.json",
+      "sha256": "d7f8cb284182390f832d4e7db1834162f416e08ebf74e0e4c73de52054cdc485"
+    },
+    "run3_last20": {
+      "path": "simulation/configs/csi_tl_run3_waveform_20261029_last20_pretrigger.json",
+      "source": "simulation/results/waveform_refit_20261029/conditioned_last20/Co60_calibrated.json",
+      "sha256": "9af0a71ef1494d11516d1c0a403855dea6eea2c9d88b02c73630c3d464dcbb34"
+    },
+    "run12_first60": {
+      "path": "simulation/configs/csi_tl_run12_waveform_20261029.json",
+      "source": "simulation/results/waveform_refit_20261029/final_parameters/Am241_calibrated.json",
+      "sha256": "316587932543353abca9c6ae923c575b8a4c8b414d2543cec9e618287c87ae0f"
+    },
+    "run12_last20": {
+      "path": "simulation/configs/csi_tl_run12_waveform_20261029_last20_pretrigger.json",
+      "source": "simulation/results/waveform_refit_20261029/conditioned_last20/Am241_calibrated.json",
+      "sha256": "172411b9c2f17445e87e0f056b2d5e1ff7e179374d5772607b437fa07ce47143"
+    },
+    "run18_first60": {
+      "path": "simulation/configs/csi_tl_run18_waveform_20261029.json",
+      "source": "simulation/results/waveform_refit_20261029/run18/Am241_run18_first60.json",
+      "sha256": "5f8aa93611d389c3fbeebf430e8fd6fb9af325d6607bbda9a3334dcfa46f0649"
+    },
+    "run18_last20": {
+      "path": "simulation/configs/csi_tl_run18_waveform_20261029_last20_pretrigger.json",
+      "source": "simulation/results/waveform_refit_20261029/run18/Am241_run18_last20.json",
+      "sha256": "7295a89129131209df449de62a5ded6aba4ec1c5c63d15c99fbc6749a00310dc"
+    }
+  },
+  "waveform_rows": 123,
+  "feature_rows": 84,
+  "MC_accounting": {
+    "new_complete_mothers_this_phase": 56000,
+    "fresh_final_mothers": 28000,
+    "replays_are_not_additional_mothers": true
+  },
+  "not_all_observables_agree": true
+}

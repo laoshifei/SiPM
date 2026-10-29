@@ -1,0 +1,4 @@
+Frozen PID protocol; new replay jobs: 3
+/media/sf_works/SiPM/simulation/build/replay_response /media/sf_works/SiPM/simulation/results/waveform_refit_20261029/independent/am241/events.root /media/sf_works/SiPM/simulation/results/pid_20261029/configs/run3_Am241.json /media/sf_works/SiPM/simulation/results/pid_20261029/run3/am241/events.root
+/media/sf_works/SiPM/simulation/build/replay_response /media/sf_works/SiPM/simulation/results/waveform_refit_20261029/independent/co60/events.root /media/sf_works/SiPM/simulation/results/pid_20261029/configs/run12_Co60.json /media/sf_works/SiPM/simulation/results/pid_20261029/run12/co60/events.root
+/media/sf_works/SiPM/simulation/build/replay_response /media/sf_works/SiPM/simulation/results/waveform_refit_20261029/independent/co60/events.root /media/sf_works/SiPM/simulation/results/pid_20261029/configs/run18_Co60.json /media/sf_works/SiPM/simulation/results/pid_20261029/run18/co60/events.root

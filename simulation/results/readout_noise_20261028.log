@@ -1,0 +1,11 @@
+run3_train n 2863 lag1 0.49781311684397134 candidates5 {'positive': 17, 'negative': 0}
+run3_middle n 955 lag1 0.48921248032154424 candidates5 {'positive': 3, 'negative': 0}
+run3_late n 936 lag1 0.4979849038048642 candidates5 {'positive': 4, 'negative': 3}
+run12_train n 4485 lag1 0.5400394296016229 candidates5 {'positive': 155, 'negative': 75}
+run12_middle n 1498 lag1 0.7911644324872917 candidates5 {'positive': 507, 'negative': 453}
+run12_late n 1497 lag1 0.8261888581037772 candidates5 {'positive': 749, 'negative': 680}
+run18_check n 12000 lag1 0.7101959750544563 candidates5 {'positive': 11, 'negative': 1}
+Info in <TCanvas::Print>: SVG file simulation/results/readout_noise_20261028/pretrigger_noise.svg has been created
+Info in <TCanvas::Print>: png file simulation/results/readout_noise_20261028/pretrigger_noise.png has been created
+Info in <TCanvas::Print>: SVG file simulation/results/readout_noise_20261028/weak_candidates.svg has been created
+Info in <TCanvas::Print>: png file simulation/results/readout_noise_20261028/weak_candidates.png has been created

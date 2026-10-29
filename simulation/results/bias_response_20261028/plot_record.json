@@ -1,0 +1,8 @@
+{
+  "scope": "Plot-only refresh; extraction source and numeric results unchanged",
+  "plot_code_sha256": "c3d324302c2b6b48758ff33c6e0ce954b77135d12055bb6c50b63d1979b92a01",
+  "inputs_sha256": {
+    "bias_response.json": "de837481dec3c4ca863c9af4907b43795d2b4478ba0bd1783463bd01e9b7e8e3",
+    "samples.npz": "496dd6b8c05b9edb0f6aa73d33b025bc55922e5171e154771d0ffbedef1f7d08"
+  }
+}

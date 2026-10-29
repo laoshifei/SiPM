@@ -25,7 +25,13 @@ UNFILTERED/Data_run_N.BIN
 
 原始数据、ROOT 结果、图表、逐事件数组、实验刻度文件和编译产物不纳入 Git。代码、配置、数值汇总和结果说明保存在仓库；文档中的图像及数组链接指向本地生成结果，需按各目录说明重新生成。
 
-已运行的模拟对照和仍未吻合的部分见 [模拟结果（更新至 2026-10-28）](simulation/RESULTS.md)；新候选改善了绝对平均幅度，但电荷谱宽度和尾部仍有偏差，平均形状接近不代表完整探测器响应已经验证。
+当前 [论文工作稿](analysis/paper_baseline/MANUSCRIPT_DRAFT.md)已统一 40795 条冻结波形，补齐重新训练 PCA 的配对方法区间、跨 run 等样本量和质量检查、重估均值的局部协方差区间，以及按共享父衰变配对的原生 MC 误差条，形成 6 张主图。3 μs 下 PCA 与负平均时间的差值区间包含零；run 12/18 的局部起伏差异约 57%，但不能据此确定唯一物理原因。模拟平均波形接近仍不足以同时复现实测起伏和电荷谱。[复现入口及结果记录](analysis/paper_baseline/README.md)；[模拟结果与历史阶段](simulation/RESULTS.md)。
+最新补充已去掉 run 18 前段 3000 条上限，复核 **65034 条**合格波形：相近形状下的局部差异为 **58.0% [54.6%, 59.4%]**。MC 与实测使用相同的共同支持 Q 箱权重后，Co/Am 短时起伏仍分别偏高/偏低。新增 2 张补充图及 [12 份数据表](analysis/paper_baseline/results/robustness_20261028/supplementary_tables.zip)，验证与原主分析分开[归档](analysis/paper_baseline/results/robustness_20261028/record.json)。
+
+最新波形参数搜索、实际执行结果与复现说明保存在 [codex_0001 笔记](jupyter/codex_0001_csi_geant4_waveform_calibration.ipynb)。2026-10-29 冻结参数后另运行 **4000 个 Co / 24000 个 Am 完整 Geant4 衰变**；后段归一化平均形状 NRMSE 为 **1.03% / 1.18%**，三个起伏均值偏差约在 4.1% 内。增加了前触发基线状态与 run 18 单独读出校准；峰值时间和电荷谱仍有差距，属于条件经验校准。[未缩放单条 ADC 对照](simulation/results/waveform_refit_20261029/figures/unscaled_individual_waveforms.png)、[配置与工程说明](simulation/README.md)。此前阶段保留在 [历史结果](simulation/RESULTS.md)。
+
+后续 [Geant4 PID 笔记](jupyter/codex_0001_csi_geant4_pid.ipynb)加入共同读出状态、逐事件祖先真值、PID–Q 图、分箱 FOM 与测试母事件 ROC；固定阈值及逐事件分区表保存在 [PID 结果目录](simulation/results/pid_20261029/)。零误判的有限样本上限和实验带宽差异均单独报告，不把模拟性能写成实验效率。
+
 本地可能另有 `PKUXIADAQ/`，它是单独分发的 XIA Pixie-16 采集软件；本仓库的
 `XIA/` 宏读取其解码结果。实验 run、通道选择和门参数需要与对应数据核对。
 

@@ -3,6 +3,10 @@
 #include "G4GenericMessenger.hh"
 #include "G4ApplicationState.hh"
 #include "Randomize.hh"
+#include "ReadoutNoise.hh"
+#include "ReadoutResponse.hh"
+#include "SignalDependentNoise.hh"
+#include <cmath>
 #include <fstream>
 #include <set>
 #include <stdexcept>
@@ -37,6 +41,7 @@ void RunConfig::Load(G4String filename) {
   const auto& g = candidate.at("geometry");
   const auto& o = candidate.at("optical");
   const auto& a = candidate.at("acquisition");
+  ReadoutNoise::Validate(candidate);
   Require(a.value("digitize", true) || o.at("yield_photons_per_MeV").get<double>() == 0.,
           "Disabling digitization is supported only for zero-light transport scans");
 
@@ -79,6 +84,13 @@ void RunConfig::Load(G4String filename) {
     const double fraction = o.at(key);
     Require(fraction >= 0 && fraction <= 1, "Invalid light fraction");
   }
+  if (o.contains("rise_time_ns")) {
+    Require(o.at("rise_time_ns").is_array() && o.at("rise_time_ns").size() == 2,
+            "Expected two scintillation rise times");
+    for (double time : o.at("rise_time_ns")) {
+      Require(std::isfinite(time) && time >= 0., "Scintillation rise time must be finite and nonnegative");
+    }
+  }
   const auto channels = g.at("summed_channels").get<std::vector<int>>();
   const std::set<int> unique(channels.begin(), channels.end());
   Require(!channels.empty() && unique.size() == channels.size(), "Summed channels must be unique and nonempty");
@@ -92,6 +104,12 @@ void RunConfig::Load(G4String filename) {
   candidate["sipm"]["sensor"]["cells_x"] = csi::CellsPerChannel * channels.size();
   candidate["sipm"]["sensor"]["x_max_mm"] = double(csi::CellsPerChannel) * channels.size();
   auto sensor = sipm::Config::FromJSON(candidate.at("sipm").dump());
+  ReadoutResponse::Validate(candidate, sensor);
+  SignalDependentNoise::Validate(candidate, sensor.readout);
+  if (ReadoutNoise::Enabled(candidate)) {
+    Require(candidate.at("electronics_noise").value("sample_period_ns", sensor.readout.sample_period_ns)
+                == sensor.readout.sample_period_ns, "Noise FIR and ADC sampling definitions disagree");
+  }
   Require(sensor.readout.sample_period_ns == a.at("sample_period_ns").get<double>(),
           "ADC sampling definitions disagree");
   const double duration = a.at("samples").get<double>() * a.at("sample_period_ns").get<double>();

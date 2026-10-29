@@ -1,0 +1,73 @@
+{
+  "source": "Am241",
+  "state": "run18",
+  "ROOT_path": "simulation/results/waveform_refit_20261029/run18/first60/events.root",
+  "ROOT_sha256": "22120cb04d9c81437fb5237031e1492308326acac6173176e3ea967a4a678a99",
+  "nparent": 24000,
+  "seed": 291029512,
+  "kind": "existing_replay",
+  "counts": {
+    "all_mothers": {
+      "n": 24000,
+      "truth_counts": {
+        "alpha_family": 189,
+        "gamma_family": 188,
+        "decay_electron_family": 7,
+        "mixed_other": 0,
+        "no_deposit": 23616
+      }
+    },
+    "selected": {
+      "n": 189,
+      "truth_counts": {
+        "alpha_family": 189,
+        "gamma_family": 0,
+        "decay_electron_family": 0,
+        "mixed_other": 0,
+        "no_deposit": 0
+      }
+    },
+    "common_Q": {
+      "n": 172,
+      "truth_counts": {
+        "alpha_family": 172,
+        "gamma_family": 0,
+        "decay_electron_family": 0,
+        "mixed_other": 0,
+        "no_deposit": 0
+      }
+    },
+    "common_train": {
+      "n": 81,
+      "truth_counts": {
+        "alpha_family": 81,
+        "gamma_family": 0,
+        "decay_electron_family": 0,
+        "mixed_other": 0,
+        "no_deposit": 0
+      }
+    },
+    "common_test": {
+      "n": 91,
+      "truth_counts": {
+        "alpha_family": 91,
+        "gamma_family": 0,
+        "decay_electron_family": 0,
+        "mixed_other": 0,
+        "no_deposit": 0
+      }
+    }
+  },
+  "energy_charge_label_disagreement_common": 1,
+  "replay_checks": {
+    "equal_original_adc_events": 0,
+    "equal_original_avalanche_events": 24000,
+    "max_relative_charge_balance": 2.924357996681453e-14,
+    "parent_file": "/media/sf_works/SiPM/simulation/results/waveform_refit_20261029/independent/am241/events.root",
+    "scope": "Original Geant4 optical histories; all entries retained. Native PDE/recovery/AP and readout regenerated, candidate selections must be recomputed.",
+    "unchanged_zero_photon_events": 0
+  },
+  "scope": "Transport/charge conservation inherited from verified parent; all-ancestry energy sum rechecked; exact avalanche identity required for each replay.",
+  "code_sha256": "26becab03eb83179ee84d5fbe5f6e8f2826131b1760da1d292ca7d967d173a8a",
+  "protocol_sha256": "bdc8d08572fb405804496c6abb8bdfb08a93685b847668fa93c2185bef32684d"
+}

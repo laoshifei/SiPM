@@ -1,0 +1,15 @@
+{
+  "scope": "Native confirmation of a screened response and one exploratory AP combination.",
+  "parent_screen_sha256": "03dbe2b9259f514b9455ab0f02029d17090001a212b9de4d07219ee2e242c9c5",
+  "candidate": "prompt_0.100",
+  "prompt_fraction": 0.1,
+  "additional_combined_AP_probability": 0.15,
+  "roles": "Adaptive exploratory follow-up after inspecting the first screen. No new transport histories or blind validation. No parameters promoted to calibrated status.",
+  "code_sha256": {
+    "simulation/confirm_response_candidate.py": "b40e00cc656fc35f79bcb6b5c06f696396b98dc94fe1b5caa377ab697415cd3b",
+    "simulation/screen_response_candidates.py": "5b324d407c4e9a210f5c9e196b5bb32c65cbcd1949c78043cd95c4053bebf5b1",
+    "simulation/replay_response.cc": "9b244f11b92548d055e798c82513fdc99c8127ceff8de25de39835e23e98a1e7",
+    "simulation/src/ReadoutResponse.cc": "b968866668f0a8207e64d51e21a6215e5a23ac85da1d6b4b3190a52caf0f037a",
+    "simulation/build/replay_response": "bed571c203d7613be288b84f913ea7563d80c121820d50921d45213cf64ed48f"
+  }
+}

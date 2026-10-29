@@ -1,0 +1,17 @@
+block 32 draw 1 seconds 1.1
+block 32 draw 8 seconds 6.9
+block 32 draw 16 seconds 13.6
+block 32 draw 24 seconds 21.2
+block 32 draw 32 seconds 29.6
+block 32 draw 40 seconds 39.8
+block 32 draw 48 seconds 46.6
+block 32 draw 56 seconds 53.2
+block 32 draw 64 seconds 60.6
+block 32 draw 72 seconds 69.1
+block 32 draw 80 seconds 77.2
+block 32 draw 88 seconds 82.8
+block 32 draw 96 seconds 89.1
+block 32 draw 104 seconds 97.5
+block 32 draw 112 seconds 106.1
+block 32 draw 120 seconds 114.1
+block 32 draw 128 seconds 122.4

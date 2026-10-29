@@ -98,6 +98,7 @@ def main():
     parser.add_argument('--new', type=Path, required=True)
     parser.add_argument('--old', type=Path, default=HERE/'results/corrected_optics_20261027')
     parser.add_argument('--screen', type=Path, required=True)
+    parser.add_argument('--design', type=Path, help='Optional frozen controlled-test design; screening parameters are then inherited, not refitted')
     parser.add_argument('--out', type=Path, required=True); args = parser.parse_args()
     args.out.mkdir(parents=True, exist_ok=False)
     screen = json.loads((args.screen/'screen.json').read_text()); data = {}; report = {
@@ -109,16 +110,26 @@ def main():
         'check_scope': 'Late groups and run18 were explored previously; not blind. They did not enter this joint fit.',
         'screen_sha256': sha(args.screen/'screen.json'), 'parameters': screen['best'], 'sources': {}, 'checks': {},
         'code_sha256': {str(p.relative_to(PROJECT)): sha(p) for p in (Path(__file__), HERE/'compare.py', HERE/'compare_absolute.py', HERE/'reference.py')}}
+    design = json.loads(args.design.read_text()) if args.design else None
+    if design:
+        report['scope'] = design.get('comparison_scope', 'Controlled response-factorization test with new MC seeds; inherited geometry/normalization, no refit')
+        report['frozen_design_sha256'] = sha(args.design)
+        report['controlled_changes'] = design['sources']
+        report['inherited_screen_parameters'] = report.pop('parameters')
     arrays = {'time_ns': TIME_NS}
     for source, name, run in [('Co60', 'co60', 3), ('Am241', 'am241', 12)]:
         data[source] = {'measured': measured(run, 0), 'old': read_simulation(args.old/name/'events.root'),
                         'new': read_simulation(args.new/name/'events.root')}
         observed = data[source]['measured']
+        if design:
+            if sha(args.new/name/'config.json') != design['sources'][source]['config_sha256']:
+                raise ValueError('Candidate config changed after the control design was frozen')
         report['sources'][source] = {'measured': summary(observed), 'old': summary(data[source]['old']), 'new': summary(data[source]['new']),
                                     'old_discrepancy': discrepancy(data[source]['old'], observed),
                                     'new_discrepancy': discrepancy(data[source]['new'], observed),
                                     'input_sha256': {key: data[source][key]['sha256'] for key in ('old', 'new')},
                                     'raw_training_sha256': observed['raw_sha256']}
+        report['sources'][source]['mc_run_info'] = {key: data[source][key]['info'] for key in ('old', 'new')}
         for key in ('old', 'new', 'measured'):
             for field in ('q', 'r', 'mean_adc'): arrays[source+'_'+key+'_'+field] = data[source][key][field]
         for check_run, split in ([(3, 2)] if source == 'Co60' else [(12, 2), (18, 3)]):

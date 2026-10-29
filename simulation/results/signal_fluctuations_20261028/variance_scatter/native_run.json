@@ -1,0 +1,19 @@
+{
+  "config_sha256": {
+    "Co60": "67587ce5ea2cec67868370c353410467c2ff2eb6a99b84cea21d2f97cf5827c2",
+    "Am241": "9f9771b4ca1928a827000f3b54e749cdff2ebfe0168585f0cf346b4ab163cb89"
+  },
+  "binary_sha256": "958154ab1ea84c89beacc11faa6f4ab273636cf249642a3052066e120b9fc299",
+  "fit_sha256": "f2007cb1519a59709434cc8e6694e5f8d27f153bfce09bb13e570a34d5c46f87",
+  "new_transport": false,
+  "parents": {
+    "Co60": {
+      "path": "simulation/results/response_candidates_20261028/control/co60/events.root",
+      "sha256": "3f09425d75a465fe6a3f159eafc14ab5c57a0ddcb61c56f2ba62ac9f901365ca"
+    },
+    "Am241": {
+      "path": "simulation/results/response_candidates_20261028/control/am241/events.root",
+      "sha256": "813ab0b4d9961f132653e88fbc7d2c6305c58ffa13456b0381f242031e00d79d"
+    }
+  }
+}

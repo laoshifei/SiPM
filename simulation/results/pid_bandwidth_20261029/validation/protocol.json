@@ -1,0 +1,299 @@
+{
+  "scope": "Freeze new-seed native validation and paired previous-response controls.",
+  "code_sha256": "78154e2dae12af96e4f062f7d3dcb9f3fef38d29c935f6bcce46fb445573076c",
+  "fit_sha256": "874dbd9f9ff9fcaa79fd0f84df00609f2828e02ce289cc49e3ca68fc5cf55783",
+  "native_binary_sha256": "218fcecaacb37e66415dfcbb4792fbec95f646aa61709cf24aa9ba60c07326e6",
+  "replay_binary_sha256": "c285d9122eda414a039cb51e5405087f36a33e9e58761ab8d33ff6b467ddbc8a",
+  "entries": {
+    "new_run3_Co60": {
+      "key": "new_run3_Co60",
+      "version": "new",
+      "run": 3,
+      "source": "Co60",
+      "native": true,
+      "events": 8000,
+      "seed": 291029903,
+      "config": "simulation/results/pid_bandwidth_20261029/validation/new_run3_Co60/config.json",
+      "config_sha256": "3b38463638e6c16133ccf019a28918af514038c3cc2c1b011bcabc747a8f2a98",
+      "path": "simulation/results/pid_bandwidth_20261029/validation/new_run3_Co60/events.root",
+      "command": [
+        "simulation/build/csi_sources",
+        "simulation/results/pid_bandwidth_20261029/validation/new_run3_Co60/config.json",
+        "Co60",
+        "8000",
+        "291029903",
+        "simulation/results/pid_bandwidth_20261029/validation/new_run3_Co60/events.root"
+      ]
+    },
+    "new_run12_Am241": {
+      "key": "new_run12_Am241",
+      "version": "new",
+      "run": 12,
+      "source": "Am241",
+      "native": true,
+      "events": 48000,
+      "seed": 291029912,
+      "config": "simulation/results/pid_bandwidth_20261029/validation/new_run12_Am241/config.json",
+      "config_sha256": "c410c563ae23cfdf7c0a6f3952e12d253f1de1c5755aef0df3bc0ec1c4baac19",
+      "path": "simulation/results/pid_bandwidth_20261029/validation/new_run12_Am241/events.root",
+      "command": [
+        "simulation/build/csi_sources",
+        "simulation/results/pid_bandwidth_20261029/validation/new_run12_Am241/config.json",
+        "Am241",
+        "48000",
+        "291029912",
+        "simulation/results/pid_bandwidth_20261029/validation/new_run12_Am241/events.root"
+      ]
+    },
+    "old_run3_Co60": {
+      "key": "old_run3_Co60",
+      "version": "old",
+      "run": 3,
+      "source": "Co60",
+      "native": false,
+      "events": 8000,
+      "seed": 291029903,
+      "config": "simulation/results/pid_bandwidth_20261029/validation/old_run3_Co60/config.json",
+      "config_sha256": "4b5318f72ff85497d52f7811351a34c8a99c61e80eef46110bc877e0211e43b4",
+      "path": "simulation/results/pid_bandwidth_20261029/validation/old_run3_Co60/events.root",
+      "command": [
+        "simulation/build/replay_response",
+        "simulation/results/pid_bandwidth_20261029/validation/new_run3_Co60/events.root",
+        "simulation/results/pid_bandwidth_20261029/validation/old_run3_Co60/config.json",
+        "simulation/results/pid_bandwidth_20261029/validation/old_run3_Co60/events.root"
+      ]
+    },
+    "old_run12_Am241": {
+      "key": "old_run12_Am241",
+      "version": "old",
+      "run": 12,
+      "source": "Am241",
+      "native": false,
+      "events": 48000,
+      "seed": 291029912,
+      "config": "simulation/results/pid_bandwidth_20261029/validation/old_run12_Am241/config.json",
+      "config_sha256": "76e3bb0a55807ace5caec8a78bfd2575d523bf804f1747cdd750b70407c16fd4",
+      "path": "simulation/results/pid_bandwidth_20261029/validation/old_run12_Am241/events.root",
+      "command": [
+        "simulation/build/replay_response",
+        "simulation/results/pid_bandwidth_20261029/validation/new_run12_Am241/events.root",
+        "simulation/results/pid_bandwidth_20261029/validation/old_run12_Am241/config.json",
+        "simulation/results/pid_bandwidth_20261029/validation/old_run12_Am241/events.root"
+      ]
+    },
+    "new_run18_Am241": {
+      "key": "new_run18_Am241",
+      "version": "new",
+      "run": 18,
+      "source": "Am241",
+      "native": false,
+      "events": 48000,
+      "seed": 291029912,
+      "config": "simulation/results/pid_bandwidth_20261029/validation/new_run18_Am241/config.json",
+      "config_sha256": "be96c5eb592cd0f700db3b93b6cf7b268eae4e2e2a9c071c46e895376cd0ce2e",
+      "path": "simulation/results/pid_bandwidth_20261029/validation/new_run18_Am241/events.root",
+      "command": [
+        "simulation/build/replay_response",
+        "simulation/results/pid_bandwidth_20261029/validation/new_run12_Am241/events.root",
+        "simulation/results/pid_bandwidth_20261029/validation/new_run18_Am241/config.json",
+        "simulation/results/pid_bandwidth_20261029/validation/new_run18_Am241/events.root"
+      ]
+    },
+    "old_run18_Am241": {
+      "key": "old_run18_Am241",
+      "version": "old",
+      "run": 18,
+      "source": "Am241",
+      "native": false,
+      "events": 48000,
+      "seed": 291029912,
+      "config": "simulation/results/pid_bandwidth_20261029/validation/old_run18_Am241/config.json",
+      "config_sha256": "d79733ebe6c0f41cc330d2942a5a0045065b34bb05fd1be164aa1c92a95741fc",
+      "path": "simulation/results/pid_bandwidth_20261029/validation/old_run18_Am241/events.root",
+      "command": [
+        "simulation/build/replay_response",
+        "simulation/results/pid_bandwidth_20261029/validation/new_run12_Am241/events.root",
+        "simulation/results/pid_bandwidth_20261029/validation/old_run18_Am241/config.json",
+        "simulation/results/pid_bandwidth_20261029/validation/old_run18_Am241/events.root"
+      ]
+    },
+    "new_run12_Co60": {
+      "key": "new_run12_Co60",
+      "version": "new",
+      "run": 12,
+      "source": "Co60",
+      "native": false,
+      "events": 8000,
+      "seed": 291029903,
+      "config": "simulation/results/pid_bandwidth_20261029/validation/new_run12_Co60/config.json",
+      "config_sha256": "104fc18064a8324161dd650ef7251e80f9d4a48eb579abe52124430d3a408547",
+      "path": "simulation/results/pid_bandwidth_20261029/validation/new_run12_Co60/events.root",
+      "command": [
+        "simulation/build/replay_response",
+        "simulation/results/pid_bandwidth_20261029/validation/new_run3_Co60/events.root",
+        "simulation/results/pid_bandwidth_20261029/validation/new_run12_Co60/config.json",
+        "simulation/results/pid_bandwidth_20261029/validation/new_run12_Co60/events.root"
+      ]
+    }
+  },
+  "native_jobs": [
+    {
+      "key": "new_run3_Co60",
+      "version": "new",
+      "run": 3,
+      "source": "Co60",
+      "native": true,
+      "events": 8000,
+      "seed": 291029903,
+      "config": "simulation/results/pid_bandwidth_20261029/validation/new_run3_Co60/config.json",
+      "config_sha256": "3b38463638e6c16133ccf019a28918af514038c3cc2c1b011bcabc747a8f2a98",
+      "path": "simulation/results/pid_bandwidth_20261029/validation/new_run3_Co60/events.root",
+      "command": [
+        "simulation/build/csi_sources",
+        "simulation/results/pid_bandwidth_20261029/validation/new_run3_Co60/config.json",
+        "Co60",
+        "8000",
+        "291029903",
+        "simulation/results/pid_bandwidth_20261029/validation/new_run3_Co60/events.root"
+      ]
+    },
+    {
+      "key": "new_run12_Am241",
+      "version": "new",
+      "run": 12,
+      "source": "Am241",
+      "native": true,
+      "events": 48000,
+      "seed": 291029912,
+      "config": "simulation/results/pid_bandwidth_20261029/validation/new_run12_Am241/config.json",
+      "config_sha256": "c410c563ae23cfdf7c0a6f3952e12d253f1de1c5755aef0df3bc0ec1c4baac19",
+      "path": "simulation/results/pid_bandwidth_20261029/validation/new_run12_Am241/events.root",
+      "command": [
+        "simulation/build/csi_sources",
+        "simulation/results/pid_bandwidth_20261029/validation/new_run12_Am241/config.json",
+        "Am241",
+        "48000",
+        "291029912",
+        "simulation/results/pid_bandwidth_20261029/validation/new_run12_Am241/events.root"
+      ]
+    }
+  ],
+  "replay_jobs": [
+    {
+      "key": "old_run3_Co60",
+      "version": "old",
+      "run": 3,
+      "source": "Co60",
+      "native": false,
+      "events": 8000,
+      "seed": 291029903,
+      "config": "simulation/results/pid_bandwidth_20261029/validation/old_run3_Co60/config.json",
+      "config_sha256": "4b5318f72ff85497d52f7811351a34c8a99c61e80eef46110bc877e0211e43b4",
+      "path": "simulation/results/pid_bandwidth_20261029/validation/old_run3_Co60/events.root",
+      "command": [
+        "simulation/build/replay_response",
+        "simulation/results/pid_bandwidth_20261029/validation/new_run3_Co60/events.root",
+        "simulation/results/pid_bandwidth_20261029/validation/old_run3_Co60/config.json",
+        "simulation/results/pid_bandwidth_20261029/validation/old_run3_Co60/events.root"
+      ]
+    },
+    {
+      "key": "old_run12_Am241",
+      "version": "old",
+      "run": 12,
+      "source": "Am241",
+      "native": false,
+      "events": 48000,
+      "seed": 291029912,
+      "config": "simulation/results/pid_bandwidth_20261029/validation/old_run12_Am241/config.json",
+      "config_sha256": "76e3bb0a55807ace5caec8a78bfd2575d523bf804f1747cdd750b70407c16fd4",
+      "path": "simulation/results/pid_bandwidth_20261029/validation/old_run12_Am241/events.root",
+      "command": [
+        "simulation/build/replay_response",
+        "simulation/results/pid_bandwidth_20261029/validation/new_run12_Am241/events.root",
+        "simulation/results/pid_bandwidth_20261029/validation/old_run12_Am241/config.json",
+        "simulation/results/pid_bandwidth_20261029/validation/old_run12_Am241/events.root"
+      ]
+    },
+    {
+      "key": "new_run18_Am241",
+      "version": "new",
+      "run": 18,
+      "source": "Am241",
+      "native": false,
+      "events": 48000,
+      "seed": 291029912,
+      "config": "simulation/results/pid_bandwidth_20261029/validation/new_run18_Am241/config.json",
+      "config_sha256": "be96c5eb592cd0f700db3b93b6cf7b268eae4e2e2a9c071c46e895376cd0ce2e",
+      "path": "simulation/results/pid_bandwidth_20261029/validation/new_run18_Am241/events.root",
+      "command": [
+        "simulation/build/replay_response",
+        "simulation/results/pid_bandwidth_20261029/validation/new_run12_Am241/events.root",
+        "simulation/results/pid_bandwidth_20261029/validation/new_run18_Am241/config.json",
+        "simulation/results/pid_bandwidth_20261029/validation/new_run18_Am241/events.root"
+      ]
+    },
+    {
+      "key": "old_run18_Am241",
+      "version": "old",
+      "run": 18,
+      "source": "Am241",
+      "native": false,
+      "events": 48000,
+      "seed": 291029912,
+      "config": "simulation/results/pid_bandwidth_20261029/validation/old_run18_Am241/config.json",
+      "config_sha256": "d79733ebe6c0f41cc330d2942a5a0045065b34bb05fd1be164aa1c92a95741fc",
+      "path": "simulation/results/pid_bandwidth_20261029/validation/old_run18_Am241/events.root",
+      "command": [
+        "simulation/build/replay_response",
+        "simulation/results/pid_bandwidth_20261029/validation/new_run12_Am241/events.root",
+        "simulation/results/pid_bandwidth_20261029/validation/old_run18_Am241/config.json",
+        "simulation/results/pid_bandwidth_20261029/validation/old_run18_Am241/events.root"
+      ]
+    },
+    {
+      "key": "new_run12_Co60",
+      "version": "new",
+      "run": 12,
+      "source": "Co60",
+      "native": false,
+      "events": 8000,
+      "seed": 291029903,
+      "config": "simulation/results/pid_bandwidth_20261029/validation/new_run12_Co60/config.json",
+      "config_sha256": "104fc18064a8324161dd650ef7251e80f9d4a48eb579abe52124430d3a408547",
+      "path": "simulation/results/pid_bandwidth_20261029/validation/new_run12_Co60/events.root",
+      "command": [
+        "simulation/build/replay_response",
+        "simulation/results/pid_bandwidth_20261029/validation/new_run3_Co60/events.root",
+        "simulation/results/pid_bandwidth_20261029/validation/new_run12_Co60/config.json",
+        "simulation/results/pid_bandwidth_20261029/validation/new_run12_Co60/events.root"
+      ]
+    }
+  ],
+  "q_edges": [
+    201824.1125,
+    237975.62708333333,
+    274127.14166666666,
+    310278.65625,
+    346430.17083333334,
+    382581.6854166667,
+    418733.2
+  ],
+  "selection": "Identical waveform-quality/primary-pretrigger, amplitude>=200 ADC, complete3us and t10>=384; no PID-score cut. Recompute own selection; also retain paired fixed old-selected IDs for sensitivity.",
+  "targets_frozen": true,
+  "new_transport": 56000,
+  "comparison": "first60 training closure plus middle20/last20 experimental checks; already explored experiments, not blind. New native seeds independent of calibration MC.",
+  "width": "Per-Q IQR with paired whole-mother bootstrap for MC and original-index block64 resampling for experiment. Equal-bin RMS IQR across frozen fit-supported bins as summary, no pooling different Q-band centers.",
+  "other_checks": [
+    "Mean normalized waveforms and all three short-scale F means",
+    "Baseline RMS",
+    "Original threshold/PCA unchanged",
+    "Same run12 response applied to both sources; no source ID input"
+  ],
+  "decision": "A successful noise-only fit must preserve waveform means/F and improve widths on new native histories; a remaining discrepancy must be reported, not tuned using these checks.",
+  "limits": [
+    "Long-correlated signal residual is phenomenological; no unique noise/intrinsic-shape identification.",
+    "Old run3/run12 source-specific responses are for acquisition-state matching; common run12 state is the PID control.",
+    "Counts remain insufficient for rare leakage claims."
+  ]
+}

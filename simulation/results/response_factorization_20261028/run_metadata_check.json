@@ -1,0 +1,32 @@
+{
+  "Co60": {
+    "completed": true,
+    "events": 5000,
+    "schema": 6,
+    "seed": 282203,
+    "frozen_config_matches_run_info": true,
+    "time_model": {
+      "definition": "Geant4 finite rise per component: normalized (1-exp(-t/rise))*exp(-t/decay); zero rise gives exponential. Rise constants shared by all particle types; decay constants remain particle dependent.",
+      "finite_rise_enabled": true,
+      "rise_time_ns": [
+        117.69595113598648,
+        101.4548867811961
+      ]
+    }
+  },
+  "Am241": {
+    "completed": true,
+    "events": 30000,
+    "schema": 6,
+    "seed": 282212,
+    "frozen_config_matches_run_info": true,
+    "time_model": {
+      "definition": "Geant4 finite rise per component: normalized (1-exp(-t/rise))*exp(-t/decay); zero rise gives exponential. Rise constants shared by all particle types; decay constants remain particle dependent.",
+      "finite_rise_enabled": true,
+      "rise_time_ns": [
+        117.69595113598648,
+        101.4548867811961
+      ]
+    }
+  }
+}

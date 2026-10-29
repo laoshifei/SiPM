@@ -1,0 +1,5 @@
+{
+  "completed": false,
+  "excluded": "Path normalization error before comparisons; rerun with normalized paths",
+  "native_transport_unchanged": true
+}

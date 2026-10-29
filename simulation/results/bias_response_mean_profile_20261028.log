@@ -1,0 +1,169 @@
+Info in <TCanvas::Print>: SVG file simulation/results/bias_response_mean_profile_20261028/response_profiles.svg has been created
+Info in <TCanvas::Print>: png file simulation/results/bias_response_mean_profile_20261028/response_profiles.png has been created
+{
+  "3_12": {
+    "runs": [
+      "3",
+      "12"
+    ],
+    "one_kernel_one_area": {
+      "SPE_decay_ns": 43.14679091932643,
+      "RC_ns": 0.0,
+      "effective_area_ADC_ns": 82.87151130095062,
+      "prediction": [
+        0.13548228536274298,
+        0.2900995189208565,
+        0.4970917559935594
+      ],
+      "fractional_residuals_per_run": [
+        [
+          0.5452909995214386,
+          0.7476783456164922,
+          0.6542742319880319
+        ],
+        [
+          -0.39375466725160924,
+          -0.36522168201636407,
+          -0.41836541516270276
+        ]
+      ],
+      "rms_log_residual": 0.5008594371007832
+    },
+    "one_kernel_separate_diagnostic_areas": {
+      "SPE_decay_ns": 43.14679091932643,
+      "RC_ns": 0.0,
+      "areas_ADC_ns": [
+        50.31670157331262,
+        136.48922068743335
+      ],
+      "fractional_residuals_per_run": [
+        [
+          -0.061753009614122,
+          0.06112955323305447,
+          0.0044178215729959724
+        ],
+        [
+          -0.0015150959208779513,
+          0.04547867621514445,
+          -0.042048950682152086
+        ]
+      ],
+      "rms_log_residual": 0.043643919901978606
+    },
+    "meaning": "Conditional conflict of stationary common-response approximation, not proof of different physical gains or particle-dependent electronics."
+  },
+  "12_18": {
+    "runs": [
+      "12",
+      "18"
+    ],
+    "one_kernel_one_area": {
+      "SPE_decay_ns": 56.12209821216165,
+      "RC_ns": 0.0,
+      "effective_area_ADC_ns": 172.79056383085074,
+      "prediction": [
+        0.1699117439073633,
+        0.3747883065681382,
+        0.6796235097047626
+      ],
+      "fractional_residuals_per_run": [
+        [
+          -0.23969247014705575,
+          -0.17991077086838325,
+          -0.20478959237071304
+        ],
+        [
+          0.2583676863824169,
+          0.30026382277242303,
+          0.2326180074073818
+        ]
+      ],
+      "rms_log_residual": 0.23538573982222852
+    },
+    "one_kernel_separate_diagnostic_areas": {
+      "SPE_decay_ns": 56.12209821216165,
+      "RC_ns": 0.0,
+      "areas_ADC_ns": [
+        218.31112622558518,
+        136.76160013086962
+      ],
+      "fractional_residuals_per_run": [
+        [
+          -0.03939434283879806,
+          0.03613646050982822,
+          0.004703473540379033
+        ],
+        [
+          -0.0040174965161329235,
+          0.029142778703568517,
+          -0.024398049836911406
+        ]
+      ],
+      "rms_log_residual": 0.026922879620142528
+    },
+    "meaning": "Conditional conflict of stationary common-response approximation, not proof of different physical gains or particle-dependent electronics."
+  },
+  "3_12_18": {
+    "runs": [
+      "3",
+      "12",
+      "18"
+    ],
+    "one_kernel_one_area": {
+      "SPE_decay_ns": 49.20862157705743,
+      "RC_ns": 0.0,
+      "effective_area_ADC_ns": 105.66844551818909,
+      "prediction": [
+        0.13410552603822573,
+        0.29180671357244853,
+        0.515116579279403
+      ],
+      "fractional_residuals_per_run": [
+        [
+          0.529587885369005,
+          0.7579631855756845,
+          0.7142591348523135
+        ],
+        [
+          -0.39991528015071776,
+          -0.36148610136652537,
+          -0.39727502192599995
+        ],
+        [
+          -0.006813439429916079,
+          0.012373401867029843,
+          -0.06574454463808721
+        ]
+      ],
+      "rms_log_residual": 0.40995984921365386
+    },
+    "one_kernel_separate_diagnostic_areas": {
+      "SPE_decay_ns": 49.20862157705743,
+      "RC_ns": 0.0,
+      "areas_ADC_ns": [
+        63.49288933203494,
+        172.23098321530847,
+        107.89456892957035
+      ],
+      "fractional_residuals_per_run": [
+        [
+          -0.08091811275260663,
+          0.056305517169128017,
+          0.03004510951069439
+        ],
+        [
+          -0.021910648866938498,
+          0.04072579111948116,
+          -0.017607242417118196
+        ],
+        [
+          0.014110080770574962,
+          0.0337011323915406,
+          -0.04606252952758916
+        ]
+      ],
+      "rms_log_residual": 0.043353176322900866
+    },
+    "meaning": "Conditional conflict of stationary common-response approximation, not proof of different physical gains or particle-dependent electronics."
+  }
+}

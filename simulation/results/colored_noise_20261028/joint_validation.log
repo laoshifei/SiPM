@@ -1,0 +1,98 @@
+Info in <TCanvas::Print>: SVG file simulation/results/colored_noise_20261028/joint_validation_final/joint_comparison.svg has been created
+Info in <TCanvas::Print>: png file simulation/results/colored_noise_20261028/joint_validation_final/joint_comparison.png has been created
+{
+  "joint_loss": {
+    "old": 11.420014616421287,
+    "new": 13.862817263440052
+  },
+  "sources": {
+    "Co60": {
+      "old_discrepancy": {
+        "charge_loss": 5.663948239796932,
+        "ratio_loss": 0.0643916110547775,
+        "total_loss": 5.728339850851709,
+        "charge_ks_distance": 0.3873087497380133,
+        "ratio_ks_distance": 0.2659503643155675,
+        "charge_quantile_relative_residual": [
+          -0.4268058113962665,
+          -0.30764552956522806,
+          0.0647471263001651,
+          0.25501403132485256,
+          0.44746906231933203
+        ],
+        "ratio_quantile_residual": [
+          -0.007501489996086408,
+          -0.008674636286675141,
+          -0.006611689458188741,
+          -0.004632670596108557,
+          -0.002127449960662109
+        ]
+      },
+      "new_discrepancy": {
+        "charge_loss": 7.184824713681763,
+        "ratio_loss": 0.16067865306138207,
+        "total_loss": 7.345503366743145,
+        "charge_ks_distance": 0.3020834194535158,
+        "ratio_ks_distance": 0.3619031871357116,
+        "charge_quantile_relative_residual": [
+          -0.5052865701362337,
+          -0.3056867852753765,
+          -0.018935026872003657,
+          0.1887484507747732,
+          0.4722893090889577
+        ],
+        "ratio_quantile_residual": [
+          -0.014043284514461851,
+          -0.012209362763123122,
+          -0.008830021434642898,
+          -0.008273058034074354,
+          -0.003070121171833806
+        ]
+      }
+    },
+    "Am241": {
+      "old_discrepancy": {
+        "charge_loss": 5.584836193784388,
+        "ratio_loss": 0.10683857178519154,
+        "total_loss": 5.691674765569579,
+        "charge_ks_distance": 0.371231990047242,
+        "ratio_ks_distance": 0.21122711454077772,
+        "charge_quantile_relative_residual": [
+          0.369146025061708,
+          0.37218662356979837,
+          0.22228104229162993,
+          -0.10402933808454118,
+          -0.4588699524147801
+        ],
+        "ratio_quantile_residual": [
+          0.0133843632604973,
+          0.00933615824736117,
+          0.007168544201527904,
+          0.0020941822898474793,
+          -0.003433930792493267
+        ]
+      },
+      "new_discrepancy": {
+        "charge_loss": 6.3903345986974385,
+        "ratio_loss": 0.12697929799946844,
+        "total_loss": 6.517313896696907,
+        "charge_ks_distance": 0.4432995410299087,
+        "ratio_ks_distance": 0.256362535935845,
+        "charge_quantile_relative_residual": [
+          0.4958644939860488,
+          0.4634067090317966,
+          0.27692609955630254,
+          -0.07963060688162926,
+          -0.4442651904297342
+        ],
+        "ratio_quantile_residual": [
+          0.014467623861396939,
+          0.011448874989079594,
+          0.004981877976488636,
+          -0.0009098838022594813,
+          -0.005547470669743815
+        ]
+      }
+    }
+  }
+}

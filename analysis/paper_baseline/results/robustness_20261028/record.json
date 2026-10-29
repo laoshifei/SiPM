@@ -1,0 +1,209 @@
+{
+  "date": "2026-10-28",
+  "scope": "Supplementary uncapped local endpoint and common-supported-Q MC sensitivity; primary publication record unchanged.",
+  "checks": {
+    "parent_artifacts_unchanged": 1605,
+    "parent_source_snapshots_unchanged": 63,
+    "unit_tests": {
+      "passed": true,
+      "count": 7
+    },
+    "full_cohort": {
+      "full_event_counts": {
+        "12": {
+          "original_n": 7516,
+          "first60_span": 4509,
+          "full_n": 1547,
+          "frozen_n": 1547,
+          "ratio_ge040_n": 0,
+          "ratio_ge040_ids": [],
+          "primary_coarse_shape_n": 1547,
+          "narrow_shape_n": 1338
+        },
+        "18": {
+          "original_n": 156966,
+          "first60_span": 94179,
+          "full_n": 65034,
+          "frozen_n": 3000,
+          "ratio_ge040_n": 2,
+          "ratio_ge040_ids": [
+            45356,
+            79618
+          ],
+          "primary_coarse_shape_n": 65032,
+          "narrow_shape_n": 60684
+        }
+      },
+      "point_Q_bins": [
+        6,
+        12,
+        24
+      ],
+      "paired_block_draws": {
+        "64": 512,
+        "128": 256
+      },
+      "raw_reselection_and_frozen_ID_subset": true,
+      "moment_block_and_frozen_endpoint_identities": true,
+      "all_interval_quantiles_recomputed": true,
+      "sampled_block_draws_reconstructed": 12
+    },
+    "charge_matched_MC": {
+      "candidate_weight_settings_checked": 24,
+      "draws_per_source": 512,
+      "conditional_parent_counts": {
+        "Co60": 2000,
+        "Am241": 12000
+      },
+      "all_point_weights_and_bootstrap_quantiles_recomputed": true,
+      "sampled_draws_and_all_empty_draws_reconstructed": true,
+      "new_independent_Geant4_transport": 0
+    },
+    "supplementary_tables": {
+      "CSV_tables": 12,
+      "rows": 1238,
+      "archive_bytes_equal_to_tables": true,
+      "source_and_table_hashes_checked": true,
+      "key_numbers_and_missing_intervals_checked": true
+    },
+    "figures": {
+      "count": 2,
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "visual_review": "Both final PNG canvases inspected. S02 label overlaps and shaded-axis redraw corrected; final plots legible. PDF/SVG share the ROOT canvases; PDF magic checked, not separately rasterized."
+    },
+    "existing_local_document_targets": 282
+  },
+  "environment": {
+    "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+    "numpy": "2.2.4",
+    "ROOT": "6.34.10"
+  },
+  "parent_record": {
+    "path": "analysis/paper_baseline/results/publication_20261028/record.json",
+    "sha256": "69d1858dafa473c58d795cbfbb40deb1aca5ad6a9a20e1d5920eb67de0bf18e1"
+  },
+  "source_sha256": {
+    "analysis/paper_baseline/audit_provenance.py": "d44e5fcb1b3cddeb3f852802875e96c1657ceae7d6d1a6daff6e277186fa4fb8",
+    "analysis/paper_baseline/audit_waveforms.py": "8341ae81033cd80cad74bee8dbf5ecac8c7cabd7fb93c56c62d60e4f4c87af17",
+    "analysis/paper_baseline/compare_methods.py": "f59290c6797e5e426832c76db5d7ef9ddcf4e5d3203feb37061167c98187323a",
+    "analysis/paper_baseline/diagnose_phase2.py": "bb0fe577ff55cfd5ed484eeb1f666c3255796a1cb991fcdcd741447ed005f6ae",
+    "analysis/paper_baseline/export_publication_tables.py": "f451ae3bbbf579e34a87dfea9e8ae0db0b6e6c9154d4bcf77f01fd764792cba3",
+    "analysis/paper_baseline/make_figures.py": "81e6cfa680b3fe0e9645b4073581ad0f1086040335218f8a87ef1fe1ea9bd1a9",
+    "analysis/paper_baseline/plot_phase2.py": "d5885e7f3fb724765eed911067c836d34c5a1169da5c3c3538d34671460c5a84",
+    "analysis/paper_baseline/plot_publication.py": "67b6c76cf576748ab40981b1ce23cdec034ed9c24806d89d6aea0bfc5fead402",
+    "analysis/paper_baseline/plot_robustness.py": "55d28915f874799a4d6ecb14c7e83b6ab6cc4a30e4cba45fe748ae46f6832949",
+    "analysis/paper_baseline/prepare.py": "9ebe888c46f8964ecea7141f1c3da5095a0d5546bacb87d77e9874a156fab9c9",
+    "analysis/paper_baseline/publication_compute.py": "d2d9e07da885a8d642b7e7e4a0596e74bac281d37faaf05507eed5acbcd67ccd",
+    "analysis/paper_baseline/publication_covariance.py": "59ca2c225218129c44bb49b67abc524fc17af8d27cd43d90616ac73d902a38b1",
+    "analysis/paper_baseline/publication_em.cc": "c13f94d17eb03554d249b2d2f940757cf3d06463a208cf097be399990deb3df4",
+    "analysis/paper_baseline/publication_mc_uncertainty.py": "b9da4ff213dc76911f5aa0b7ebdc3e513c1ec73d202f0d0e471f50f6ef9bb00f",
+    "analysis/paper_baseline/publication_model_check.py": "07a962c5962cbf5802c1a32d41731797f1864c8729fbe7f3500a5d49eb312592",
+    "analysis/paper_baseline/publication_stats.py": "d1eab8e5cb63ac458c9ef306d676d8141e218e63054c4e0dc8c3534520a82067",
+    "analysis/paper_baseline/publication_transfer.py": "08c5f1dd93f3c56f6140461d15cf4aa8e26a10203e4e9e21f472e50a633e6d23",
+    "analysis/paper_baseline/publication_transfer_sensitivity.py": "3425577e79977caf848b7204400d8aef9724e85debcf0a75794a865888ce2c9a",
+    "analysis/paper_baseline/refine_waveforms.py": "2c4e7e4be126df0fec83cc2eedb093eca1fa95833bcad27a7b0c6c5289781941",
+    "analysis/paper_baseline/robustness_full_cohort.py": "52c0ba37533f36c3c43e828d85946137c8112cbe583090aa827f371d9633ad11",
+    "analysis/paper_baseline/robustness_mc_charge.py": "ac3284183e43732638a3ace851e0e3a13a7e0c1f464c2d39fc10896a8fab3fb3",
+    "analysis/paper_baseline/shape_mixture.py": "ea4f4422e943964829e5732c4447cbde7a8e139048499885412cd6fc0ed98e4a",
+    "analysis/paper_baseline/test_phase2.py": "8b8cfb991726c218b21661ec018dc0938248d06def186aede8cbd37ac3af47a1",
+    "analysis/paper_baseline/test_publication_diagnostics.py": "98ef295e4a151e3c13ebc51e8639e89391936657f209793e5df12215ffc40feb",
+    "analysis/paper_baseline/test_publication_stats.py": "28e67b2496d5a0bba1ced59dd6dce738cfaece83381cb57a9cfe8db7d1a347ae",
+    "analysis/paper_baseline/test_robustness.py": "d45fcdb05f3a477bd8b822d49084fe0b22eeecff4088f06db8f650560683d2a2",
+    "analysis/paper_baseline/verify.py": "6c025b711b0f56d37be4a45463b39da9da5e662438c1b245210dd4e8000aaaef",
+    "analysis/paper_baseline/verify_publication.py": "cfee702c514a000ac79db3370ba19d0bb0697dd326e9500908d346be1f78df43",
+    "analysis/paper_baseline/verify_robustness.py": "984664d7f6a6e5015e6c87af76f3d64416c170111208e6ea852ab3434551d030",
+    "simulation/analyze_bias_response.py": "c3d324302c2b6b48758ff33c6e0ce954b77135d12055bb6c50b63d1979b92a01",
+    "simulation/analyze_residual_covariance.py": "5a4ab4715dc029921cd98968563379836ff6af06557ff7958c5d51d7a1dbb846",
+    "simulation/audit_acquisition.py": "08132f1c382d5fadd4076fed94452861002b8e6f8603f7d68892bed8569762ab",
+    "simulation/calibrate.py": "b169edf40d01018e622332b541c0d4f111df27ec531bbf30d22fde50cf0ecb43",
+    "simulation/characterize_readout.py": "0dae99d52406d6c7658bedcc54236b975e1a9853ff1a19064096cf62b2946490",
+    "simulation/check_frozen_psd_transfer.py": "18a6b96a5f2dace21cc5164078dbfc84ed61792ab248ad0b6185a591b80cfa77",
+    "simulation/check_trigger_proxy.py": "523e3dfc76cdd40ed7e9252a7d6b879d95ed47bc01fa10cff438d0d055e33e5f",
+    "simulation/compare.py": "a3d7b6713fb52c8f497d72e6908cc01036b639d847eb11ff89e2be42e3e55fbe",
+    "simulation/compare_absolute.py": "81521726dab12744b486e41a9a4f5c31959437ca2d3370ffaf73a298dabc8a02",
+    "simulation/compare_noise.py": "cebd912ef1c9417ad750781134277b2ff4d163fbfd0a609a2ad5d5acb6458c5f",
+    "simulation/confirm_response_candidate.py": "2b6003c87d6f0edb64de0617a0c38cda2ef857e1748a0c3b5f81cb5bba5024dd",
+    "simulation/diagnose_charge.py": "3f9f5b67e2bb61ae6aaabed3d917a14da56139b2e6737780c0e9f18fa226ffed",
+    "simulation/diagnose_fluctuations.py": "3f6e7d9527f367806f063734e5a184916557ccd79507c811e0b614326b10eeed",
+    "simulation/diagnose_mc_components.py": "fe324c39515a9fbfce9bda52f3309c24c8f303a0574e6a31d2242d5cecda9d53",
+    "simulation/diagnose_nonstationary_moments.py": "5b587b269b65a17c81d44b13237234a4a8219a9c4f7480d36773c59eb22ef092",
+    "simulation/diagnose_origin.py": "e2c109affc56e1f2e6064520fc08983878b6f57a45ed73ae98dcc2cf0e9330ed",
+    "simulation/estimate_voltage_feedback.py": "cd1d6a1db8cc767098f868ed4b9b7d03c89a3c2b3e677a0e40834aebc102ef87",
+    "simulation/inspect_geometry.py": "1c54fcb95312a03b8a73bfca53001658bed0a6121889600fb1472012022dfd14",
+    "simulation/plot_response_confirmation.py": "9231f415d81c28f1280721426d264e14833f870df59be77126a9ceacf222ac2b",
+    "simulation/prepare_noise_model.py": "2ca7cdd0e9a12c6499706e7a95d2c6431479cc88fb54e949fd39650cfdbac32b",
+    "simulation/prepare_response_test.py": "e851659d717190237c340aeee4251bdb9f094fe41bef414d8c57be631301d473",
+    "simulation/profile_bias_response.py": "a408a17d5e9266dfbf9c62555fb872465d988a6cecf956d53439d8726ea990b8",
+    "simulation/profile_signal_response.py": "af78b2db1ef7ec8314d46efb8c372fa8d203f48256f6ecd6118d42c45ebb5a60",
+    "simulation/reference.py": "fe7ebd20af44ffc2ade2b758dd8fa6bde1d269cc8cb02e7a37bd591d4fe0d1bb",
+    "simulation/report_response_test.py": "d6748e6aeef46d6a5f03ac05ec995f03f55ad5166bd686f75d707a0127e9b1be",
+    "simulation/run.py": "431e82dfbaeb7817f3e65d253264c02a90df22e44ac55ba51913becd5e852b85",
+    "simulation/scan_distance.py": "4efdd20cf82aa4a4e9a80541b5858dbc6d47844ee102cd7614a4ee4db78d6f60",
+    "simulation/scan_transport.py": "c6bc1da63b7b6aa5a9ad86b3aeb2ff6677977102f192fd63c12372232ef95008",
+    "simulation/screen_joint.py": "af17fd2f12d53fafccefbcb44abb370cc6edfaa701980dd3f23f90978207c6d5",
+    "simulation/screen_response_candidates.py": "5b324d407c4e9a210f5c9e196b5bb32c65cbcd1949c78043cd95c4053bebf5b1",
+    "simulation/validate.py": "7ea129ff27483a9ad03593ec573152cb12105b486f6e14968f835dee3ba06d97",
+    "simulation/validate_joint.py": "28846de5ceeb6bdcfb91ebff3144b8fbf46d0cdfd2ac9d47b1319ec89b3cb1fe",
+    "README.md": "479279efb6461cf91f43703f29f351ce7a3385a241f099bbe0b725cdb77b8df3",
+    "EXPERIMENT_INFO.md": "5cae8da50b50e284d06e20b1c68242cc1e555ba96d7ec59a4ba062b81f2ca9fa",
+    "simulation/README.md": "0d651d1135a711cb74a5958e5e87f6cb781c75f916ded70861ce7dc92b7c6c50",
+    "simulation/RESULTS.md": "90c6ff0262253610a582e56871f4dddab40bbd99ab214e2ee63f95b2477ffc36",
+    "analysis/paper_baseline/README.md": "988b4277cbfe4ab330b5f5f2e3eb6d4bee65243003d602873730158b3ccb189a",
+    "analysis/paper_baseline/PHASE2_RESULTS.md": "d62828d1cf5ae569853d91331fff952c4258d1319392117dc8f041b303a1c5e5",
+    "analysis/paper_baseline/MANUSCRIPT_DRAFT.md": "fa41e7f6f031af44e67160648d97381104ebb533f0ed694928a0ce9d098f1300",
+    "analysis/paper_baseline/LOCAL_EVIDENCE.md": "993a8e7c154d47f4c7717ce6c0cfd271cd966249777d2e3958aa8d93878e788e"
+  },
+  "outputs_sha256": {
+    "analysis/paper_baseline/results/robustness_20261028/Am241_mc_charge_bootstrap.npz": "fa79227ec5222a5d7b8e28ec7f5b3ab8c09065864b6d346a6963be45d23f6503",
+    "analysis/paper_baseline/results/robustness_20261028/Co60_mc_charge_bootstrap.npz": "d6d29a1afad18604e62e4a1197feccbc6c55514b2195b78aaefd2bc23e028d29",
+    "analysis/paper_baseline/results/robustness_20261028/figures/figS01_full_cohort.pdf": "89f5cb3076ec4007a21d48604719fe4a3858cf9ffef41496bb5ed8c04a78935d",
+    "analysis/paper_baseline/results/robustness_20261028/figures/figS01_full_cohort.png": "e43d799847b11ef07d39753125fac58c07fe2252f7087adec5ee94960582b41a",
+    "analysis/paper_baseline/results/robustness_20261028/figures/figS01_full_cohort.svg": "808a35251376da5b2bcdd21f002c0ed848314d184167e78f50d1486929c6a77d",
+    "analysis/paper_baseline/results/robustness_20261028/figures/figS02_charge_matched_mc.pdf": "4ac37cccfcfe236803b4bedd340388beb316a293e72f66f385f873ff895f57de",
+    "analysis/paper_baseline/results/robustness_20261028/figures/figS02_charge_matched_mc.png": "4f7f35d5eee8a8d4dc5568e79437a3911939963c6b9cf775430bde3caad54826",
+    "analysis/paper_baseline/results/robustness_20261028/figures/figS02_charge_matched_mc.svg": "441fe2ead71ab364ae27f0e1018145ec9d80e9bd2a5665fcce005d41806ebb41",
+    "analysis/paper_baseline/results/robustness_20261028/figures/manifest.json": "e258bc531902e7ed2d8992b463d00c11ab6d788576f4368f31611577680da745",
+    "analysis/paper_baseline/results/robustness_20261028/full_cohort_bootstrap_b128.npz": "7873f843a57505bbe83ea0b25a068594ef72d6f8ed7426f693ab9d9dcf4ccd8d",
+    "analysis/paper_baseline/results/robustness_20261028/full_cohort_bootstrap_b64.npz": "8733c4ef000ce41044896fc26e208c941d7d090547882bccb0887cceaa12c74b",
+    "analysis/paper_baseline/results/robustness_20261028/full_cohort_covariance.json": "22fc061d209c1dd3be031df84881f893020bd3be902de2800670a20bf388e1b1",
+    "analysis/paper_baseline/results/robustness_20261028/full_cohort_design.json": "98b877ae6092b286628fcbcb9256b8c4948e06319af8a56c95295aee4eb0c6e6",
+    "analysis/paper_baseline/results/robustness_20261028/full_run12.npz": "dbefb812794c07737423b7e7f9b52be3f6b25466b0a539e66d3aa350dc830f52",
+    "analysis/paper_baseline/results/robustness_20261028/full_run18.npz": "857697528210d19a5d5572b99516e1380dce3e79d9cc0ddfbaa69c990a836c67",
+    "analysis/paper_baseline/results/robustness_20261028/logs/sipm_robustness_figures.log": "d6541c34bc039c53305f99ae43613a17e0e0ae5cadc43537c4428987da6f78a2",
+    "analysis/paper_baseline/results/robustness_20261028/logs/sipm_robustness_full.log": "da1272728ecf23851a09d4b47e3df4fa800d6ce7f62a1ed8e49031e02716dca9",
+    "analysis/paper_baseline/results/robustness_20261028/logs/sipm_robustness_full_prepare.log": "01dbf54aae4ef53f3f9391e1b943973c027877cc2096378be526f0ae8ce51165",
+    "analysis/paper_baseline/results/robustness_20261028/logs/sipm_robustness_mc_charge.log": "d67f8597fb65aedcc5a972ea2360363e808bb221becce3bfddef8a16e5bdbd04",
+    "analysis/paper_baseline/results/robustness_20261028/logs/sipm_robustness_tables.log": "e373ba143974ef84ca28d1084580a2e0482b606eaa0b0c1247949c74b301ff2b",
+    "analysis/paper_baseline/results/robustness_20261028/logs/sipm_robustness_tests.log": "8127c3e883d6a72e0ad33c3ebceca1efc1aa178710fb6751622702db1f4cdb1d",
+    "analysis/paper_baseline/results/robustness_20261028/logs/test_robustness.py.log": "9391c72e1c9532c08d3fd142039f064672058cda67be5ff1b971589ee47b8218",
+    "analysis/paper_baseline/results/robustness_20261028/mc_charge_design.json": "a70b7288a3c604edf3a5f0cd718274585649c242a1ebacbb54ac3dcfa24da2bc",
+    "analysis/paper_baseline/results/robustness_20261028/mc_charge_matched.json": "91df781107402a9aa822d13a18574a4d6e42f3d23971badd774fa5dd8b379c2a",
+    "analysis/paper_baseline/results/robustness_20261028/supplementary_tables.zip": "b8dac26c8661ea67267a5ff410c9dedb5e6f60d8a52c7c31f54a661bdb363437",
+    "analysis/paper_baseline/results/robustness_20261028/tables/S01_cohort_flow.csv": "de753bc251d137d12cfa015951fe59dcf803d3ebf4337b1b2a71e3c14c52818e",
+    "analysis/paper_baseline/results/robustness_20261028/tables/S02_window_method_FOM.csv": "548f8374d78b2986c516a5852618a2a37dcd45f4699c970f1df85c6212b23609",
+    "analysis/paper_baseline/results/robustness_20261028/tables/S03_paired_method_differences.csv": "6c3e3a9f75380aaf500090e00c8a4120a18f791352bdeccc46a76f0d2e634ebf",
+    "analysis/paper_baseline/results/robustness_20261028/tables/S04_selection_and_core_models.csv": "72ee2941b6e0a6f5f99844d76ec72d1c5eca6da78c05cccca3d17b1be15bcf0f",
+    "analysis/paper_baseline/results/robustness_20261028/tables/S05_cross_run_effects.csv": "d584f5ee890a18ca75d3db7c25a84a85c00253e825f487f6a176558ea65dfd69",
+    "analysis/paper_baseline/results/robustness_20261028/tables/S06_transfer_selection.csv": "380be140ea1a37662c5b735173d92925345f0ce2d0a5cc4c9cc5651933f0c6d6",
+    "analysis/paper_baseline/results/robustness_20261028/tables/S07_primary_local_covariance.csv": "3ba74562c0729de08bcd264086e49133abc6e08d7a3c52acac1491c56aa608fe",
+    "analysis/paper_baseline/results/robustness_20261028/tables/S08_full_cohort_covariance.csv": "283e7cf429c0eeb1f05cfebe3753d7bf0c37b1986830ec310c6564c408f20baf",
+    "analysis/paper_baseline/results/robustness_20261028/tables/S09_MC_original_metrics.csv": "ba196fd41a9184e61ee93890a2b38adfc33710e8d9926cd5e116b80b45e2d43f",
+    "analysis/paper_baseline/results/robustness_20261028/tables/S10_MC_Q_matched.csv": "434bff648b1ce913c3dbf5b3050de9651db98d1bfe166f4514b11a7a9db6870d",
+    "analysis/paper_baseline/results/robustness_20261028/tables/S11_MC_Q_support.csv": "552af324301ff8d1836c06213a1e61ffe11c2a8d11ac225d466d7452c9f14c55",
+    "analysis/paper_baseline/results/robustness_20261028/tables/S12_full_cohort_Q_cells.csv": "6a6999281401310a1e639e53b1c696dddb9020b91aba8333c1247fe0e91f869f",
+    "analysis/paper_baseline/results/robustness_20261028/tables/manifest.json": "605aea6e011fa0c42d721dcfe42893b7160085b5f3736cede0d9cbbaa89f9ddd"
+  },
+  "raw_data_provenance": "Raw run12/18 waveforms were reread for the focused endpoint; event IDs and frozen endpoint verified. Raw BIN hashes inherited from parent audits, not recomputed for all BIN files.",
+  "literature": "Reused previously checked local evidence; no new literature retrieval or shared-library writes.",
+  "limits": [
+    "Supplementary analyses reuse previously explored data; not independent validation or new transport.",
+    "Full-record bootstrap is for50ns,500--900ns endpoint only; finer-Q and acquisition-quarter curves are point sensitivities.",
+    "Q-bin matching is source-specific with finite MC; continuous within-cell Q may differ. Empty resample cells counted.",
+    "Conditional intervals omit candidate-selection, unknown circuit, geometry, calibration and full nonstationarity uncertainty."
+  ],
+  "repository_actions": "No commit or push; unrelated working-tree edits preserved."
+}

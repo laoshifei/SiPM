@@ -1,0 +1,26 @@
+[
+  {
+    "source": "/media/sf_works/GAGG_pileup/g4/include/SiPMResponse.hh",
+    "local": "vendor/SiPMResponse.hh",
+    "sha256": "9522000dfbbffce5c97351996653d9ecf979af95dcf8404567396cbcb172246e",
+    "policy": "Unmodified reference snapshot; source project remains read-only"
+  },
+  {
+    "source": "/media/sf_works/GAGG_pileup/g4/src/SiPMResponse.cc",
+    "local": "vendor/SiPMResponse.cc",
+    "sha256": "c2226e528dab87e0a350251716c0b35b3a0f23543c25b9f64ce7ab6f72163274",
+    "policy": "Unmodified reference snapshot; source project remains read-only"
+  },
+  {
+    "source": "/media/sf_works/GAGG_pileup/g4/tests/test_sipm_response.cc",
+    "local": "tests/test_vendor_sipm.cc",
+    "sha256": "5d6ac000dced311761f2bbb92925290d19ccd18629fac2bc0450ca408ff00c74",
+    "policy": "Unmodified reference snapshot; source project remains read-only"
+  },
+  {
+    "source": "/media/sf_works/GAGG_pileup/g4/configs/sipm_hamamatsu_s13360_6050pe_v2.json",
+    "local": "tests/vendor_fixture.json",
+    "sha256": "e499d0abae465cfe4472927448a40efca0189c333f5c14c03dd46328e7685544",
+    "policy": "Unmodified reference snapshot; source project remains read-only"
+  }
+]

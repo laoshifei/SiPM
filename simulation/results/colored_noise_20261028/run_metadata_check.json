@@ -1,0 +1,41 @@
+{
+  "build_source_and_binary_match": true,
+  "sources": {
+    "Co60": {
+      "checks": {
+        "completed": true,
+        "source_matches": true,
+        "seed_matches": true,
+        "counts_match": true,
+        "schema_7": true,
+        "config_matches": true,
+        "noise_matches": true,
+        "full_optical_digitization": true
+      },
+      "events": 2000,
+      "seed": 283103,
+      "geant4": "$Name: geant4-11-04-patch-02 [MT]$",
+      "schema": 7,
+      "root_sha256": "0af54e0ba2d07749a8fa5757969f46599b11df0f0e6e4f8a93cec7be0477786f",
+      "config_sha256": "654f7acb236d7c0be4d0f3640b211a28f17f58c44fd891bacf53aa87abdbef52"
+    },
+    "Am241": {
+      "checks": {
+        "completed": true,
+        "source_matches": true,
+        "seed_matches": true,
+        "counts_match": true,
+        "schema_7": true,
+        "config_matches": true,
+        "noise_matches": true,
+        "full_optical_digitization": true
+      },
+      "events": 12000,
+      "seed": 283112,
+      "geant4": "$Name: geant4-11-04-patch-02 [MT]$",
+      "schema": 7,
+      "root_sha256": "6839d20e2b2835f00221844bb6b1a4178ef5387c2ef1778ff7b3452f03e807f4",
+      "config_sha256": "6c4864b59c50a65b678a6e694d482181c4cec11cd6eaab4ff9c02252096da5ec"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+test_learned_noise_model_predicts_independent_colored_traces (__main__.ReadoutChecks.test_learned_noise_model_predicts_independent_colored_traces) ... ok
+test_offset_and_slope_do_not_change_noise_statistics (__main__.ReadoutChecks.test_offset_and_slope_do_not_change_noise_statistics) ... ok
+test_periodogram_parseval_and_units (__main__.ReadoutChecks.test_periodogram_parseval_and_units) ... ok
+test_positive_and_negative_control_have_exact_sign_symmetry (__main__.ReadoutChecks.test_positive_and_negative_control_have_exact_sign_symmetry) ... ok
+test_shot_noise_frequency_integral_converges (__main__.ReadoutChecks.test_shot_noise_frequency_integral_converges) ... ok
+test_white_noise_projection_bias_is_accounted_for (__main__.ReadoutChecks.test_white_noise_projection_bias_is_accounted_for) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.484s
+
+OK

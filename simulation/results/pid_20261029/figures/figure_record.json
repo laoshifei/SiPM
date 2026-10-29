@@ -1,0 +1,18 @@
+{
+  "scope": "Scientific PID figures: truth, common readout, finite-sample ROC and widths.",
+  "code_sha256": "d875896690ce927a747e0b0ca5bb43131cf3db91e8fc80b7bba182991c0fa5cb",
+  "PID_sha256": "8844c09416c36d89916bde686b39f4337f4236656273ba9d6bc5566a716a48df",
+  "thresholds_sha256": "4cde82f9a173c75f2a3c996b557bcf77f70c20aec0ef52d7aec1091ccc11cddf",
+  "figures": [
+    "simulation/results/pid_20261029/figures/pid_truth_and_measurement.png",
+    "simulation/results/pid_20261029/figures/pid_core_fom_vs_charge.png",
+    "simulation/results/pid_20261029/figures/pid_roc_and_operating_points.png",
+    "simulation/results/pid_20261029/figures/pid_bandwidth_check.png"
+  ],
+  "notes": [
+    "All selected common-Q points shown in PID scatter; no score-based cuts.",
+    "FOM curves are descriptive fitted core separation, not empirical tail probabilities.",
+    "ROC uses held-out mothers, same frozen primary-state cuts for all states.",
+    "IQR is a distribution width, not an error bar. Missing high-Q Am points lack support."
+  ]
+}

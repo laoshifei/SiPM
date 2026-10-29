@@ -1,0 +1,7 @@
+test_prefix_formula_matches_direct_shifted_impulses (__main__.MomentChecks.test_prefix_formula_matches_direct_shifted_impulses) ... ok
+test_single_avalanche_self_term_equals_complete_signal_variance (__main__.MomentChecks.test_single_avalanche_self_term_equals_complete_signal_variance) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.061s
+
+OK

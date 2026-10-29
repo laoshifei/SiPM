@@ -1,0 +1,7 @@
+test_correlated_noise_and_quantization_preserve_variance_identity (__main__.ComponentsChecks.test_correlated_noise_and_quantization_preserve_variance_identity) ... ok
+test_noiseless_case_has_only_signal_component (__main__.ComponentsChecks.test_noiseless_case_has_only_signal_component) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.074s
+
+OK

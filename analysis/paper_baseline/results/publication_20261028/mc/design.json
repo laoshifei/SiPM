@@ -1,0 +1,133 @@
+{
+  "scope": "Paired parent-decay bootstrap of existing native Geant4 response candidates.\n\nReplays share parent histories. Their resamples share parent multiplicities,\nincluding no-signal parents; they are not independent extra transport events.\nAll intervals are conditional on geometry, source/circuit assumptions and the\nadaptively screened candidates. They are not parameter or selection-adjusted CIs.\n",
+  "sources": {
+    "Co60": {
+      "measured_n": 2450,
+      "measured_F": [
+        0.08767428620544643,
+        0.1659913677184826,
+        0.3004893302340671
+      ],
+      "candidates": {
+        "control": {
+          "nparent": 2000,
+          "common_n": 72,
+          "selected_n": 170,
+          "point": [
+            0.011961100770085666,
+            0.064423962849842,
+            0.24614056220113584,
+            0.012424494798218748,
+            0.2849773242630385,
+            0.3062722248404096
+          ],
+          "root": "simulation/results/response_candidates_20261028/control/co60/events.root",
+          "root_sha256": "3f09425d75a465fe6a3f159eafc14ab5c57a0ddcb61c56f2ba62ac9f901365ca"
+        },
+        "native_best": {
+          "nparent": 2000,
+          "common_n": 72,
+          "selected_n": 171,
+          "point": [
+            0.16085212556539535,
+            0.20578678667764985,
+            0.34996163423103116,
+            0.018521346405454334,
+            0.2874263038548753,
+            0.30424264107707977
+          ],
+          "root": "simulation/results/response_candidates_20261028/confirmation_final/native_best/co60/events.root",
+          "root_sha256": "5ecab519d2516e28f61a63a65f861bfa0a3141eb11c7c9a31ec7e1f8869abbff"
+        },
+        "prompt_plus_ap15": {
+          "nparent": 2000,
+          "common_n": 61,
+          "selected_n": 173,
+          "point": [
+            0.1561014159925563,
+            0.20026720971469295,
+            0.3371076573981838,
+            0.026246502585489148,
+            0.2895617263298762,
+            0.4017972542300098
+          ],
+          "root": "simulation/results/response_candidates_20261028/confirmation_final/prompt_plus_ap15/co60/events.root",
+          "root_sha256": "bdf2b35829a6c2521b056d2a572edc855cc8087d2a80dfe6c0e0cde87919b1cb"
+        }
+      }
+    },
+    "Am241": {
+      "measured_n": 1547,
+      "measured_F": [
+        0.2234776550749497,
+        0.457009180531486,
+        0.8546461454533566
+      ],
+      "candidates": {
+        "control": {
+          "nparent": 12000,
+          "common_n": 86,
+          "selected_n": 90,
+          "point": [
+            0.011189101996764891,
+            0.06896478635251535,
+            0.2635990412543339,
+            0.019045367410738374,
+            0.1921122652996798,
+            0.4933832709113608
+          ],
+          "root": "simulation/results/response_candidates_20261028/control/am241/events.root",
+          "root_sha256": "813ab0b4d9961f132653e88fbc7d2c6305c58ffa13456b0381f242031e00d79d"
+        },
+        "native_best": {
+          "nparent": 12000,
+          "common_n": 86,
+          "selected_n": 90,
+          "point": [
+            0.16646851822325132,
+            0.2171619890890022,
+            0.3716586984587675,
+            0.016164746673100288,
+            0.19146585288856152,
+            0.4933832709113608
+          ],
+          "root": "simulation/results/response_candidates_20261028/confirmation_final/native_best/am241/events.root",
+          "root_sha256": "20de8cd10a6231c6929e7fba530f690b92ff8b3f7571e18bb5989bf93a664318"
+        },
+        "prompt_plus_ap15": {
+          "nparent": 12000,
+          "common_n": 88,
+          "selected_n": 90,
+          "point": [
+            0.16491623862100707,
+            0.2126410084574008,
+            0.362633312432251,
+            0.01407193126467498,
+            0.3468443321384498,
+            0.569538077403246
+          ],
+          "root": "simulation/results/response_candidates_20261028/confirmation_final/prompt_plus_ap15/am241/events.root",
+          "root_sha256": "eb188ced4f5786345ad34fed2e26f8e8442602c9347809b6cdfe3da5ecfd1e61"
+        }
+      }
+    }
+  },
+  "protocol_sha256": "ae27c8a32adfcbedff8ee94a229c88a64011e0566117658eda0791c86e6ad763",
+  "code_sha256": "b9da4ff213dc76911f5aa0b7ebdc3e513c1ec73d202f0d0e471f50f6ef9bb00f",
+  "metrics": "Common-Q fluctuation means and area-normalized mean-shape NRMSE on the same publication training IDs; charge KS inside common-Q (new primary diagnostic) and broad selected charge KS (legacy diagnostic). No particle labels, no energy calibration.",
+  "uncertainty": "512 independent parent-decay multinomial draws per source, shared across candidates. Measured training events use original-index blocks64 and are shared across candidates. Report both MC-only and joint recorded-event+MC conditional percentile intervals. No new transport or source-distance calibration.",
+  "metric_order": [
+    "F50",
+    "F102",
+    "F202",
+    "mean_shape_NRMSE",
+    "common_Q_KS",
+    "broad_selected_Q_KS"
+  ],
+  "limits": [
+    "Only2000 Co and12000 Am parent histories; selected common-Q events are much fewer.",
+    "Source/circuit/PDE/ADC assumptions and adaptive candidate selection are not covered by the intervals.",
+    "Broad selected-Q diagnostic uses the earlier broader measured selection; its data-reference uncertainty is held fixed.",
+    "Common-Q spectra are not reweighted between MC and data; differences may affect fluctuation and shape comparisons."
+  ]
+}

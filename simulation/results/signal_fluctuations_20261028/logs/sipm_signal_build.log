@@ -1,0 +1,33 @@
+-- Could NOT find XKB (missing: XKB_LIBRARY XKB_INCLUDE_DIR) (Required is at least version "0.5.0")
+-- Configuring done (3.1s)
+-- Generating done (3.8s)
+-- Build files have been written to: /media/sf_works/SiPM/simulation/build
+[  5%] Built target sipm_response
+[ 11%] Built target test_sipm
+[ 14%] Building CXX object CMakeFiles/readout_noise.dir/src/SignalDependentNoise.cc.o
+[ 17%] Linking CXX static library libreadout_noise.a
+[ 23%] Built target readout_noise
+[ 26%] Linking CXX executable test_noise
+[ 29%] Building CXX object CMakeFiles/replay_response.dir/replay_response.cc.o
+[ 32%] Linking CXX executable test_response
+[ 35%] Built target test_response
+[ 38%] Building CXX object CMakeFiles/test_signal_noise.dir/tests/test_signal_dependent_noise.cc.o
+[ 41%] Built target test_noise
+[ 44%] Building CXX object CMakeFiles/csi_sources.dir/src/RootIO.cc.o
+[ 47%] Building CXX object CMakeFiles/csi_sources.dir/src/RunConfig.cc.o
+/media/sf_works/SiPM/simulation/tests/test_signal_dependent_noise.cc: In function ‘int main(int, char**)’:
+/media/sf_works/SiPM/simulation/tests/test_signal_dependent_noise.cc:30:126: error: expected ‘}’ before ‘;’ token
+   30 |       {"sample_period_ns",r.sample_period_ns},{"variance_per_signal_adc",.4},{"coefficients",{std::sqrt(.5),std::sqrt(.5)}}}};
+      |                                                                                                                              ^
+/media/sf_works/SiPM/simulation/tests/test_signal_dependent_noise.cc:29:22: note: to match this ‘{’
+   29 |     nlohmann::json j={{"signal_dependent_noise",{{"model","gaussian_fir_signal_variance"},
+      |                      ^
+gmake[2]: *** [CMakeFiles/test_signal_noise.dir/build.make:79: CMakeFiles/test_signal_noise.dir/tests/test_signal_dependent_noise.cc.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:1261: CMakeFiles/test_signal_noise.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 50%] Building CXX object CMakeFiles/csi_sources.dir/src/SiPMDigitizer.cc.o
+[ 52%] Linking CXX executable replay_response
+[ 52%] Built target replay_response
+[ 55%] Linking CXX executable csi_sources
+[ 97%] Built target csi_sources
+gmake: *** [Makefile:101: all] Error 2

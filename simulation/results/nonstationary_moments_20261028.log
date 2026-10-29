@@ -1,0 +1,370 @@
+Co60 {
+  "n": 72,
+  "max_native_signal_replay_error_mV": 0.0,
+  "max_relative_32_vs_64_phase_difference": 1.634191510833439e-05,
+  "filters": {
+    "50ns": {
+      "native_signal": {
+        "n": 72,
+        "event_median": 0.011311641650185309,
+        "event_median_bootstrap_95": [
+          0.010915966407623611,
+          0.011668776413192621
+        ],
+        "mean_event_ratio": 0.011563637290031912,
+        "mean_event_ratio_bootstrap_95": [
+          0.011117543416759443,
+          0.012036206534556037
+        ],
+        "ratio_of_summed_variance_to_summed_mean": 0.011582768197531606,
+        "ratio_of_sums_bootstrap_95": [
+          0.01112872057214721,
+          0.012033393889562101
+        ]
+      },
+      "finite_window_self_term": {
+        "n": 72,
+        "event_median": 0.011401478562227337,
+        "event_median_bootstrap_95": [
+          0.011352214797530909,
+          0.011469971907826027
+        ],
+        "mean_event_ratio": 0.011416899532246092,
+        "mean_event_ratio_bootstrap_95": [
+          0.011377674830186953,
+          0.011459310020634475
+        ],
+        "ratio_of_summed_variance_to_summed_mean": 0.011411093382677774,
+        "ratio_of_sums_bootstrap_95": [
+          0.011373124288737086,
+          0.01145112391263826
+        ]
+      },
+      "observed_minus_self_term": {
+        "n": 72,
+        "event_median": -0.00016991026902981807,
+        "event_median_bootstrap_95": [
+          -0.000520054273314613,
+          0.0002261095946385263
+        ],
+        "mean_event_ratio": 0.00014673775778581988,
+        "mean_event_ratio_bootstrap_95": [
+          -0.00029850099379626267,
+          0.0006135044252868494
+        ],
+        "ratio_of_summed_variance_to_summed_mean": 0.0001716748148538317,
+        "ratio_of_sums_bootstrap_95": [
+          -0.0002820296288040948,
+          0.0006189930651009575
+        ]
+      },
+      "stationary_expectation_ADC": 0.013530810813839287,
+      "self_term_mean_relative_to_native_minus1": -0.012689584955445699,
+      "stationary_mean_relative_to_native_minus1": 0.17011719361892452
+    },
+    "102ns": {
+      "native_signal": {
+        "n": 72,
+        "event_median": 0.061706580594075675,
+        "event_median_bootstrap_95": [
+          0.05787829972494288,
+          0.06629264137788221
+        ],
+        "mean_event_ratio": 0.06484694162446153,
+        "mean_event_ratio_bootstrap_95": [
+          0.06097858603982832,
+          0.06871909587609698
+        ],
+        "ratio_of_summed_variance_to_summed_mean": 0.06469502003624339,
+        "ratio_of_sums_bootstrap_95": [
+          0.06078796987919064,
+          0.06852421090491041
+        ]
+      },
+      "finite_window_self_term": {
+        "n": 72,
+        "event_median": 0.06465828388599121,
+        "event_median_bootstrap_95": [
+          0.06439809899814357,
+          0.06499423080669837
+        ],
+        "mean_event_ratio": 0.06471446441608525,
+        "mean_event_ratio_bootstrap_95": [
+          0.06451478619187273,
+          0.06493171229059796
+        ],
+        "ratio_of_summed_variance_to_summed_mean": 0.0646875431947654,
+        "ratio_of_sums_bootstrap_95": [
+          0.06449682510198164,
+          0.06489438242453835
+        ]
+      },
+      "observed_minus_self_term": {
+        "n": 72,
+        "event_median": -0.0033030010730558425,
+        "event_median_bootstrap_95": [
+          -0.007329030936951107,
+          0.002228409716158064
+        ],
+        "mean_event_ratio": 0.00013247720837628098,
+        "mean_event_ratio_bootstrap_95": [
+          -0.003718563569805544,
+          0.003972220749249809
+        ],
+        "ratio_of_summed_variance_to_summed_mean": 7.476841477990829e-06,
+        "ratio_of_sums_bootstrap_95": [
+          -0.0038803026711823146,
+          0.0038226032364362186
+        ]
+      },
+      "stationary_expectation_ADC": 0.075836186860536,
+      "self_term_mean_relative_to_native_minus1": -0.002042921455625124,
+      "stationary_mean_relative_to_native_minus1": 0.1694643565415137
+    },
+    "202ns": {
+      "native_signal": {
+        "n": 72,
+        "event_median": 0.23567078122115684,
+        "event_median_bootstrap_95": [
+          0.21591362903393005,
+          0.26785858426195197
+        ],
+        "mean_event_ratio": 0.248083075973996,
+        "mean_event_ratio_bootstrap_95": [
+          0.229958637915032,
+          0.2668095559712103
+        ],
+        "ratio_of_summed_variance_to_summed_mean": 0.2472180393879606,
+        "ratio_of_sums_bootstrap_95": [
+          0.2297963972954597,
+          0.2656556786778248
+        ]
+      },
+      "finite_window_self_term": {
+        "n": 72,
+        "event_median": 0.2456656512240991,
+        "event_median_bootstrap_95": [
+          0.2448564264837234,
+          0.24623527547316576
+        ],
+        "mean_event_ratio": 0.2458492850915609,
+        "mean_event_ratio_bootstrap_95": [
+          0.24523236495445716,
+          0.24652419565508366
+        ],
+        "ratio_of_summed_variance_to_summed_mean": 0.2457906596705123,
+        "ratio_of_sums_bootstrap_95": [
+          0.24517118164928284,
+          0.24643336849862557
+        ]
+      },
+      "observed_minus_self_term": {
+        "n": 72,
+        "event_median": -0.012224197165693312,
+        "event_median_bootstrap_95": [
+          -0.03250930140526806,
+          0.016546906344646888
+        ],
+        "mean_event_ratio": 0.002233790882435154,
+        "mean_event_ratio_bootstrap_95": [
+          -0.01553395825139406,
+          0.020827868208583185
+        ],
+        "ratio_of_summed_variance_to_summed_mean": 0.001427379717448329,
+        "ratio_of_sums_bootstrap_95": [
+          -0.016019942466426032,
+          0.020063772692660936
+        ]
+      },
+      "stationary_expectation_ADC": 0.2830737056208694,
+      "self_term_mean_relative_to_native_minus1": -0.009004205037627222,
+      "stationary_mean_relative_to_native_minus1": 0.14104400112541793
+    }
+  }
+}
+Am241 {
+  "n": 86,
+  "max_native_signal_replay_error_mV": 0.0,
+  "max_relative_32_vs_64_phase_difference": 1.790550895682461e-05,
+  "filters": {
+    "50ns": {
+      "native_signal": {
+        "n": 86,
+        "event_median": 0.012112114083052409,
+        "event_median_bootstrap_95": [
+          0.01159123854226182,
+          0.012834319442516656
+        ],
+        "mean_event_ratio": 0.012334659486621708,
+        "mean_event_ratio_bootstrap_95": [
+          0.011922268750048013,
+          0.01277277836710981
+        ],
+        "ratio_of_summed_variance_to_summed_mean": 0.012326981163495907,
+        "ratio_of_sums_bootstrap_95": [
+          0.011898202393456918,
+          0.012768738302854759
+        ]
+      },
+      "finite_window_self_term": {
+        "n": 86,
+        "event_median": 0.012176709686665812,
+        "event_median_bootstrap_95": [
+          0.01214568285955666,
+          0.012228183327190556
+        ],
+        "mean_event_ratio": 0.012188225699484872,
+        "mean_event_ratio_bootstrap_95": [
+          0.012159917501468647,
+          0.012217369515461981
+        ],
+        "ratio_of_summed_variance_to_summed_mean": 0.012186906092928522,
+        "ratio_of_sums_bootstrap_95": [
+          0.012158866644035125,
+          0.012217039867545564
+        ]
+      },
+      "observed_minus_self_term": {
+        "n": 86,
+        "event_median": -1.3197380514080696e-05,
+        "event_median_bootstrap_95": [
+          -0.0006419431401261997,
+          0.0006459733123257563
+        ],
+        "mean_event_ratio": 0.00014643378713683646,
+        "mean_event_ratio_bootstrap_95": [
+          -0.00028518748772880586,
+          0.000586180398451899
+        ],
+        "ratio_of_summed_variance_to_summed_mean": 0.00014007507056738384,
+        "ratio_of_sums_bootstrap_95": [
+          -0.0002936775316635589,
+          0.0005873117149953779
+        ]
+      },
+      "stationary_expectation_ADC": 0.013530810813839287,
+      "self_term_mean_relative_to_native_minus1": -0.01187173324854729,
+      "stationary_mean_relative_to_native_minus1": 0.0969748154389618
+    },
+    "102ns": {
+      "native_signal": {
+        "n": 86,
+        "event_median": 0.06914964992333564,
+        "event_median_bootstrap_95": [
+          0.0647739622566942,
+          0.07396944473063602
+        ],
+        "mean_event_ratio": 0.0706223982882424,
+        "mean_event_ratio_bootstrap_95": [
+          0.06748259893489247,
+          0.0739027389594917
+        ],
+        "ratio_of_summed_variance_to_summed_mean": 0.0705111674651271,
+        "ratio_of_sums_bootstrap_95": [
+          0.06731620055409145,
+          0.07383599793571619
+        ]
+      },
+      "finite_window_self_term": {
+        "n": 86,
+        "event_median": 0.06872951926544742,
+        "event_median_bootstrap_95": [
+          0.0685573377461415,
+          0.06906398466863871
+        ],
+        "mean_event_ratio": 0.06881424262078775,
+        "mean_event_ratio_bootstrap_95": [
+          0.06866603588168675,
+          0.0689607218437782
+        ],
+        "ratio_of_summed_variance_to_summed_mean": 0.06880598175809971,
+        "ratio_of_sums_bootstrap_95": [
+          0.06865976790111845,
+          0.06895883104177668
+        ]
+      },
+      "observed_minus_self_term": {
+        "n": 86,
+        "event_median": 0.00033112425370462883,
+        "event_median_bootstrap_95": [
+          -0.0037775348968969308,
+          0.0053572442839583305
+        ],
+        "mean_event_ratio": 0.0018081556674546535,
+        "mean_event_ratio_bootstrap_95": [
+          -0.0013104621164932411,
+          0.005078771720079412
+        ],
+        "ratio_of_summed_variance_to_summed_mean": 0.0017051857070274126,
+        "ratio_of_sums_bootstrap_95": [
+          -0.0015351960395272024,
+          0.005053573174532406
+        ]
+      },
+      "stationary_expectation_ADC": 0.075836186860536,
+      "self_term_mean_relative_to_native_minus1": -0.025603147319845143,
+      "stationary_mean_relative_to_native_minus1": 0.07382627464750957
+    },
+    "202ns": {
+      "native_signal": {
+        "n": 86,
+        "event_median": 0.2558778050906323,
+        "event_median_bootstrap_95": [
+          0.24671671706796827,
+          0.27003907756794804
+        ],
+        "mean_event_ratio": 0.26506270015315,
+        "mean_event_ratio_bootstrap_95": [
+          0.2500381962926621,
+          0.2794293466466118
+        ],
+        "ratio_of_summed_variance_to_summed_mean": 0.26466110227877093,
+        "ratio_of_sums_bootstrap_95": [
+          0.24968261902478966,
+          0.27988202038017446
+        ]
+      },
+      "finite_window_self_term": {
+        "n": 86,
+        "event_median": 0.2595329013788559,
+        "event_median_bootstrap_95": [
+          0.2589972007882335,
+          0.260228366272646
+        ],
+        "mean_event_ratio": 0.2598004429286054,
+        "mean_event_ratio_bootstrap_95": [
+          0.259335760429095,
+          0.26025949899034584
+        ],
+        "ratio_of_summed_variance_to_summed_mean": 0.2597757667542017,
+        "ratio_of_sums_bootstrap_95": [
+          0.2592976298539693,
+          0.26024463982580454
+        ]
+      },
+      "observed_minus_self_term": {
+        "n": 86,
+        "event_median": -0.002585056605288738,
+        "event_median_bootstrap_95": [
+          -0.01231146507867329,
+          0.009387434217336788
+        ],
+        "mean_event_ratio": 0.005262257224544604,
+        "mean_event_ratio_bootstrap_95": [
+          -0.009517086262420536,
+          0.019575882922029646
+        ],
+        "ratio_of_summed_variance_to_summed_mean": 0.004885335524569219,
+        "ratio_of_sums_bootstrap_95": [
+          -0.010254763639770771,
+          0.01997140456955244
+        ]
+      },
+      "stationary_expectation_ADC": 0.2830737056208694,
+      "self_term_mean_relative_to_native_minus1": -0.019852877155118853,
+      "stationary_mean_relative_to_native_minus1": 0.0679499811075377
+    }
+  }
+}
+Info in <TCanvas::Print>: SVG file simulation/results/nonstationary_moments_20261028/native_moments.svg has been created
+Info in <TCanvas::Print>: png file simulation/results/nonstationary_moments_20261028/native_moments.png has been created

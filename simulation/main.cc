@@ -31,7 +31,7 @@ int main(int argc, char** argv) {
     std::unique_ptr<G4RunManager> run_manager(
         G4RunManagerFactory::CreateRunManager(G4RunManagerType::SerialOnly));
     run_manager->SetUserInitialization(new DetectorConstruction(config));
-    run_manager->SetUserInitialization(new PhysicsList());
+    run_manager->SetUserInitialization(new PhysicsList(config));
     run_manager->SetUserInitialization(new ActionInitialization(config));
 
     if (legacy_cli) {
