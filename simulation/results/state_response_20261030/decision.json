@@ -1,0 +1,49 @@
+{
+  "scope": "Record the joint decision without changing production defaults.",
+  "code_sha256": "40e7717874d9d969ecbc407354ad8ee78342bf2e289f2dc5aa6d5575ba45af6f",
+  "conclusion_zh": "本轮完成采集段条件校准、原生采样相位和仅前沿定位对照。Am晚段的RC+扩展谱方案（块128）把平均时间差从7.26 ns降到1.41 ns，时间IQR比从0.917改善到0.978，绝对平均波形NRMSE从1.97%降到1.36%。但QDC/PCA的IQR比变为1.134/1.174，且块64下时间差为-2.99 ns。因此是条件改善，尚未达到全PID分布和波形的一致性。",
+  "promoted_to_default": false,
+  "front_estimator_adopted": false,
+  "new_independent_mothers": 0,
+  "unique_original_mothers_with_fixed_waveforms": 470,
+  "n_supported_original_mothers": 456,
+  "new_experimental_events": 0,
+  "native_jobs": 114,
+  "native_selected_replay_entries": 26790,
+  "phase_max_abs_mean_time_change_ns": 0.07975202692356298,
+  "mean_time_conditional_CI95_ns": [
+    -5.795643697595887,
+    8.01641730417263
+  ],
+  "mean_time_paired_change_conditional_CI95_ns": [
+    -7.544881460349123,
+    -4.2401417778288275
+  ],
+  "time_IQR_conditional_CI95": [
+    0.7423074411926015,
+    1.129421936553551
+  ],
+  "time_IQR_paired_change_conditional_CI95": [
+    -0.06478044614581714,
+    0.1962518800307588
+  ],
+  "time_SD_ratio_within_response_fold": 0.9125328891153746,
+  "native_fresh_check_deferred_reason_zh": "当前候选在不同块长下的中心仍不稳定，扩展残差谱使QDC/PCA核心宽度偏大；本轮没有确定可推广的最终参数。因此没有把候选送入新母事件的验证阶段，已有重放只计为内部校准证据。",
+  "limitations_zh": [
+    "后段现在参与新的条件校准，全部实验数据已经探索过，不称盲测。既有光学参数、PCA和Q匹配目标仍共享先前校准；本轮交叉检查仅隔离新增拟合层。",
+    "512次配对区间固定本轮参数、模板和母事件折分；训练块重拟合另报RC选择/残差功率稳定性，不代表完整模型选择不确定度。区间覆盖零或一不构成等效性证明。",
+    "粗RC网格只作局部响应族探查；112与128 ns之间的切换可能含网格离散误差，不能推断物理电路存在两种时间常数或温漂。",
+    "前沿拟合有大量边界命中，原PID定义保持不变。相位结果只约束本模型及已测试的4种原生孔径偏移。",
+    "Am源含α、γ和衰变电子；实验主带不作为粒子真值。有效噪声谱不是已确定的CsI本征或SiPM微观机制。"
+  ],
+  "next_work_zh": "下一轮先在既定96–160 ns范围内细化或连续化RC校准，并检查每折的中心和波形残差，分清粗网格误差与真实段间差异；同时以QDC、平均时间、PCA完整协方差和IQR/SD差异约束噪声分布，不能只按时间带宽增加噪声。只有稳定的联合候选冻结后，再用新Geant4母事件检查MC统计；实验部分仍属于已有数据的条件验证。",
+  "inputs_sha256": {
+    "simulation/results/state_response_20261030/protocol.json": "877e89fb51c4b906ed5c2c2fa2e30028b8ef8a9a2dd9a5a60e0c22472e5f2cf0",
+    "simulation/results/state_response_20261030/fit_design.json": "396e56e8c4c241fd91b5f838eb10c0695324cc0554ca1f46b372ade757f57650",
+    "simulation/results/state_response_20261030/alignment.json": "c6f86aea5659660aebc75004024873d46130a407908c2e55cda4d42c75483fbb",
+    "simulation/results/state_response_20261030/mean_calibration.json": "886bae1d3e83c4e66a4391abcb834169a8234f82e4b8f264e2f7ea89b598177a",
+    "simulation/results/state_response_20261030/signal_calibration.json": "8376b428be341eadb2fcb53175bfcd65187a7e2d12590a2e998cda6c85eeba2a",
+    "simulation/results/state_response_20261030/evaluation.json": "12b606dc88d88fe29e6b0b169990c14310954e339c80495754f619fcb79b8e89",
+    "simulation/results/state_response_20261030/fold_mixture_diagnostic.json": "7b199d19c09b7a88dae0d3f30fbbe78cca324448268e1aac700c31ff1ae538c3"
+  }
+}

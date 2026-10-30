@@ -1,0 +1,403 @@
+{
+  "date": "2026-10-30",
+  "library": "/media/sf_works/papers",
+  "mode": "local-only; shared library read-only including cache",
+  "inventory": {
+    "started": "2026-10-30T11:45:44.964445",
+    "finished": "2026-10-30T11:47:46.983934",
+    "baseline": ".cache/paper-search/paper-web-search/20261029-csi-pid/library_lookup.json",
+    "raw_pdfs": 1897,
+    "source_notes": 1856,
+    "stable_names_during_read": true,
+    "new": [
+      {
+        "path": "/media/sf_works/papers/raw/1978_Lepage_JCP_A-New-Algorithm-for-Adaptive-Multidimensional-Integration.pdf",
+        "bytes": 611252,
+        "sha256": "c6532dd7220e641cbc29789b7e31186eac7f29e57e16ae27e846b5e8e5eea5a6",
+        "matching_note": null
+      },
+      {
+        "path": "/media/sf_works/papers/raw/1995_Hesterberg_Technometrics_Weighted-Average-Importance-Sampling-and-Defensive-Mixture-Distributions.pdf",
+        "bytes": 1327769,
+        "sha256": "3c0111a9c11c62149972cad6fe1cfb88f30089fc158f733753f3b8fb2cdc4549",
+        "matching_note": null
+      },
+      {
+        "path": "/media/sf_works/papers/raw/2009_Beck_SIAM-J-Imaging-Sci_A-Fast-Iterative-Shrinkage-Thresholding-Algorithm-for-Linear-Inverse-Problems.pdf",
+        "bytes": 772415,
+        "sha256": "72d16d349aac3d1662472664b87e3eadb932f155144275ea728b87e13bacc0d0",
+        "matching_note": null
+      },
+      {
+        "path": "/media/sf_works/papers/raw/2010_El-Yaniv_JMLR_On-the-Foundations-of-Noise-Free-Selective-Classification.pdf",
+        "bytes": 552991,
+        "sha256": "474309b8455d320dc8d388984bcb2c86636af5f11acb0f18845fee28332799c9",
+        "matching_note": null
+      },
+      {
+        "path": "/media/sf_works/papers/raw/2015_Trigano_IEEE-SPL_Pileup-Correction-Algorithm-using-an-Iterated-Sparse-Reconstruction-Method.pdf",
+        "bytes": 709414,
+        "sha256": "b47e8338c3c79be6bd239ff903c1677169c2b8d507e5be8f9eaabef6f8eb0bbf",
+        "matching_note": null
+      },
+      {
+        "path": "/media/sf_works/papers/raw/2018_Ferrarotto_IEEE-TNS_Performance-of-the-Prototype-of-the-Charged-Particle-Veto-System-of-the-PADME-Experiment.pdf",
+        "bytes": 2639528,
+        "sha256": "919513ba88c0a4b186ab4ea8e18d45d940a475ae097c191b80a33104f0a54d3f",
+        "matching_note": null
+      },
+      {
+        "path": "/media/sf_works/papers/raw/2018_Griewank_JCAM_High-dimensional-integration-of-kinks-and-jumps-Smoothing-by-preintegration.pdf",
+        "bytes": 741926,
+        "sha256": "80694257f1e500f550198b3600f7dc3d0336d1aeecd1000a69b8254234ea1453",
+        "matching_note": null
+      },
+      {
+        "path": "/media/sf_works/papers/raw/2019_Sanchez-Tembleque_NIMA_Optimizing-time-pickup-algorithms-in-radiation-detectors-with-a-genetic-algorithm.pdf",
+        "bytes": 3528476,
+        "sha256": "4e377eb8ac7d524fc9e921a51a9b10f6816b8acb298948edfe5e528649eb9974",
+        "matching_note": null
+      },
+      {
+        "path": "/media/sf_works/papers/raw/2019_Simpson_NIMA_Performance-of-four-digital-algorithms-for-gamma-gamma-timing-with-LaBr3(Ce)-scintillators.pdf",
+        "bytes": 407420,
+        "sha256": "c5471c67a9feab417cca8996efd7d245bf1cc2f8baf264a4169cdd40c3b7e832",
+        "matching_note": null
+      },
+      {
+        "path": "/media/sf_works/papers/raw/2020_Gao_MLST_i-flow-High-dimensional-integration-and-sampling-with-normalizing-flows.pdf",
+        "bytes": 1342830,
+        "sha256": "74796d103348b473c1b95b8fb357fe8d6aa4ccadf64cd603d4420c92eb4e85d1",
+        "matching_note": null
+      },
+      {
+        "path": "/media/sf_works/papers/raw/2020_Inoue_Sensors_Modeling-and-analysis-of-capacitive-relaxation-quenching-in-a-single-photon-avalanche-diode-(SPAD)-applied-to-a-CMOS-image-sensor.pdf",
+        "bytes": 3778029,
+        "sha256": "cb3eb7c03b11c673fbcf293d6b785dd2ea0e8c5a7c3632fd5929c2bf8d01a8cb",
+        "matching_note": null
+      },
+      {
+        "path": "/media/sf_works/papers/raw/2021_Windischhofer_NIMA_The-statistics-of-electron-hole-avalanches.pdf",
+        "bytes": 1118093,
+        "sha256": "9dccf629ba4fd72a5dcf6dbad4acfec24e77139e7b00683313d079ff8e0099b7",
+        "matching_note": null
+      },
+      {
+        "path": "/media/sf_works/papers/raw/2023_Li_NST_Pulse-shaping-method-for-real-time-neutron-gamma-discrimination-at-low-sampling-rates.pdf",
+        "bytes": 3826693,
+        "sha256": "c4d2e8982deae771f19001d19663dd4e9ae03dbd14a485966d5b3841f81dd8e6",
+        "matching_note": null
+      },
+      {
+        "path": "/media/sf_works/papers/raw/2025_Georgiev_JINST_A-deconvolution-based-signal-reconstruction-capable-of-piled-up-pulse-separation.pdf",
+        "bytes": 706336,
+        "sha256": "4fbdac59e2faf5c89ec937c7d28a8ee410b29c423ad709c8b2aa25b080cfb29f",
+        "matching_note": null
+      },
+      {
+        "path": "/media/sf_works/papers/raw/2026_Chen_NIMA_Study-on-the-time-resolution-performance-of-LaBr3(Ce)-detectors-utilizing-various-electronics-and-a-60Co-source.pdf",
+        "bytes": 2364560,
+        "sha256": "b110afa9d5f92898300e9089c6d0391ecb8c89c97d186d57be3f9827975f61df",
+        "matching_note": null
+      },
+      {
+        "path": "/media/sf_works/papers/raw/2026_Jia_NST_HALIMA-a-hybrid-array-for-lifetime-measurement-of-neutron-rich-nuclei-at-IMP.pdf",
+        "bytes": 2582177,
+        "sha256": "1a2162c182a7930dc7b9b48225c27427bd9c47c0f8e3f54d34e5d8b7931b40a2",
+        "matching_note": null
+      },
+      {
+        "path": "/media/sf_works/papers/raw/2026_Kong_ActaPhysSin_Study-on-high-precision-digital-timing-methods.pdf",
+        "bytes": 5464505,
+        "sha256": "d6224a4990c99cd172465229a4bb9cffd129a2f4c27eae30f18d442d42c4ac64",
+        "matching_note": null
+      }
+    ],
+    "missing": [],
+    "limit": "One inventory compared to 2026-10-29 filenames, not timestamps; no formal source notes inferred from draft caches."
+  },
+  "discussion_update": "P13 16篇＋Georgiev 1篇已有缓存讨论稿；不是本轮从头精读，也不代表正式入库或科学审核通过。",
+  "papers": [
+    {
+      "id": "hong2026",
+      "title": "Reconstruction Fidelity and Confidence Reliability in Overlapped Radiation-Detector Pulse Analysis Under Distribution Shift",
+      "authors": "Tao Hong、Bo Zhang、Xinjie Yao、Zhoupeng Guo、Guangsheng Xie",
+      "year": 2026,
+      "doi": "10.3390/s26206600",
+      "url": "https://doi.org/10.3390/s26206600",
+      "pdf": "/media/sf_works/papers/raw/2026_Hong_Sensors_Reconstruction-Fidelity-and-Confidence-Reliability-in-Overlapped-Radiation-Detector-Pulse-Analysis-Under-Distribution-Shift.pdf",
+      "note": "/media/sf_works/papers/.cache/paper-read/batch-2026-10-30-P13-parallel16/P13-012/draft.md",
+      "local_status": "原文＋既有精读讨论稿，未正式入库，待人工审核",
+      "doi_status": "本轮核对本地正式PDF首页所印DOI；未联网解析",
+      "priority": "高：校准转移和验证边界",
+      "location": "PDF 7、13、18、21；式(1)，表3、7–9，§6.3–6.4",
+      "finding": "受控白噪声与整条波形常量偏置下，名义分布的概率校准未可靠转移；用匹配扰动的验证数据校准可改善ECE/NLL，但不改变类别准确率。",
+      "limits": "研究对象是单/双脉冲分类及半合成分量重建；不是α/γ分类，也不是CsI–SiPM的噪声模型。温度缩放中的温度是logit刻度，不是器件温度。",
+      "application": "明确区分新读出状态内的条件校准、块留出内部检查和跨状态转移；分别报告均波形、PID中心/协方差和F，不能用一种指标改善代替全部。",
+      "checked_text_pages": [
+        1,
+        7,
+        13,
+        18,
+        21
+      ],
+      "checked_image_pages": [
+        18
+      ],
+      "review": "本轮未检出针对本篇科学采用范围的用户确认；不是整篇认可"
+    },
+    {
+      "id": "georgiev2025",
+      "title": "A deconvolution based signal reconstruction capable of piled-up pulse separation",
+      "authors": "Georgi Georgiev",
+      "year": 2025,
+      "doi": "10.1088/1748-0221/20/07/P07044",
+      "url": "https://doi.org/10.1088/1748-0221/20/07/P07044",
+      "pdf": "/media/sf_works/papers/raw/2025_Georgiev_JINST_A-deconvolution-based-signal-reconstruction-capable-of-piled-up-pulse-separation.pdf",
+      "note": "/media/sf_works/papers/.cache/paper-read/single-2026-10-30-Georgiev/draft.md",
+      "local_status": "原文＋既有精读讨论稿，未正式入库，待人工审核",
+      "doi_status": "本轮核对本地正式PDF首页所印DOI；未联网解析",
+      "priority": "中：响应模板及残差诊断",
+      "location": "PDF 4–5、7–8、10；式(2.5–2.6)、(3.2)、(3.7–3.9)、(4.1)，图3，§5",
+      "finding": "以稳定响应的线性叠加和带限逆滤波重建时间、峰高；低通减少高频噪声，也引入展宽与旁瓣。性能扫描使用同一估计模板生成的双脉冲。",
+      "limits": "塑料闪烁体与SiPM、带整形放大的PADME读出，非本项目无前放CsI阵列。末端归零的基线条件未必适合长尾；固定模板可能改变粒子依赖形状。8 ns是特定测试的分离边界，不是本项目PID或时间分辨率。",
+      "application": "先用不同采集块的独立平均形状检查模板稳定性；模板仅作诊断对照。任何反卷积对照同时检查原始ADC中的α/γ形状差异、尾积分和噪声协方差。",
+      "checked_text_pages": [
+        1,
+        4,
+        5,
+        7,
+        8,
+        10
+      ],
+      "checked_image_pages": [
+        7
+      ],
+      "review": "本轮未检出针对本篇科学采用范围的用户确认；不是整篇认可"
+    },
+    {
+      "id": "simpson2019",
+      "title": "Performance of four digital algorithms for γ–γ timing with LaBr3(Ce) scintillators",
+      "authors": "G. Simpson、S. Curtoni、D. Dauvergne、M.-L. Gallin-Martel、S. Marcatilli、G. Thiamova",
+      "year": 2019,
+      "doi": "10.1016/j.nima.2019.05.015",
+      "url": "https://doi.org/10.1016/j.nima.2019.05.015",
+      "pdf": "/media/sf_works/papers/raw/2019_Simpson_NIMA_Performance-of-four-digital-algorithms-for-gamma-gamma-timing-with-LaBr3(Ce)-scintillators.pdf",
+      "note": "/media/sf_works/papers/.cache/paper-read/batch-2026-10-30-P13-parallel16/P13-007/draft.md",
+      "local_status": "原文＋既有精读讨论稿，未正式入库，待人工审核",
+      "doi_status": "本轮核对本地正式PDF首页所印DOI；未联网解析",
+      "priority": "中：前沿定位对照",
+      "location": "PDF 4–6；§3.4–§6，图8–10，表1",
+      "finding": "同一套波形比较前沿、拟合前沿、CFD和平均脉冲的方差最小lag；最佳算法随所选能区和已有参数改变。",
+      "limits": "LaBr3–PMT、40 GS/s等条件与本项目不同；表1是近似单探头FWHM，不能当CsI PID宽度。模板构建与独立测试细节有缺口，文中autocovariance不等于本项目的信号期噪声自协方差。",
+      "application": "增加只用前沿估计位置的对照，积分保持原ADC、原事件/Q；对齐模板从校准块产生。检查定位变化是否同时改变平均时间、PCA和尾电荷。",
+      "checked_text_pages": [
+        1,
+        4,
+        5,
+        6
+      ],
+      "checked_image_pages": [],
+      "review": "本轮未检出针对本篇科学采用范围的用户确认；不是整篇认可"
+    },
+    {
+      "id": "kong2026",
+      "title": "高精度数字化定时方法研究 / Study on high-precision digital timing methods",
+      "authors": "孔誉谦、吴鸿毅、张广鑫",
+      "year": 2026,
+      "doi": "10.7498/aps.75.20260283",
+      "url": "https://doi.org/10.7498/aps.75.20260283",
+      "pdf": "/media/sf_works/papers/raw/2026_Kong_ActaPhysSin_Study-on-high-precision-digital-timing-methods.pdf",
+      "note": "/media/sf_works/papers/.cache/paper-read/batch-2026-10-30-P13-parallel16/P13-014/draft.md",
+      "local_status": "原文＋既有精读讨论稿，未正式入库，待人工审核",
+      "doi_status": "本轮核对本地正式PDF首页所印DOI；未联网解析",
+      "priority": "中：亚采样相位审计",
+      "location": "PDF 2–4、6–7；式(1–6)，图1–3、6，§4",
+      "finding": "双指数模型、加性高斯噪声和两点线性CFD插值的模拟显示采样相位会影响时间差分布。",
+      "limits": "没有本篇实测验证，未计量化噪声；4–6点的数值建议受模型和参数缺口限制。已有讨论稿指出100 MHz下原印tr=td组合退化，尚不能照搬数值结论。",
+      "application": "在固定Q和读出状态下检查估计t10的样点内相位与PID残差的关系，并用原生模拟控制真实相位；测得t10本身含噪声，不能直接当真值。相位检查不预设能解释约7 ns偏差。",
+      "checked_text_pages": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "checked_image_pages": [
+        3
+      ],
+      "review": "本轮未检出针对本篇科学采用范围的用户确认；不是整篇认可"
+    },
+    {
+      "id": "windischhofer2021",
+      "title": "The statistics of electron–hole avalanches",
+      "authors": "P. Windischhofer、W. Riegler",
+      "year": 2021,
+      "doi": "10.1016/j.nima.2021.165327",
+      "url": "https://doi.org/10.1016/j.nima.2021.165327",
+      "pdf": "/media/sf_works/papers/raw/2021_Windischhofer_NIMA_The-statistics-of-electron-hole-avalanches.pdf",
+      "note": null,
+      "local_status": "原文已存在，未见对应正式笔记；本轮初筛",
+      "doi_status": "本轮核对本地正式PDF首页所印DOI；未联网解析",
+      "priority": "背景：微观雪崩统计",
+      "location": "PDF 1–2；摘要、§1–2、图1说明；仅定向初筛",
+      "finding": "讨论电子/空穴倍增的平均发展与统计涨落，以及阈值取时；模型假设一维、局部电离系数，忽略空间电荷反馈。",
+      "limits": "当前核验没有覆盖全文推导；§2明确把淬灭起始等空间电荷问题排除。不能将其早期雪崩统计直接用作微秒闪烁波形的经验残差。",
+      "application": "保留为底层模型依据候选；现阶段不据此新增自由噪声幅度或宣称已解释CsI的带宽。",
+      "checked_text_pages": [
+        1,
+        2
+      ],
+      "checked_image_pages": [],
+      "review": "本轮未检出针对本篇科学采用范围的用户确认；不是整篇认可"
+    },
+    {
+      "id": "inoue2020",
+      "title": "Modeling and Analysis of Capacitive Relaxation Quenching in a Single Photon Avalanche Diode (SPAD) Applied to a CMOS Image Sensor",
+      "authors": "Akito Inoue、Toru Okino、Shinzo Koyama、Yutaka Hirose",
+      "year": 2020,
+      "doi": "10.3390/s20103007",
+      "url": "https://doi.org/10.3390/s20103007",
+      "pdf": "/media/sf_works/papers/raw/2020_Inoue_Sensors_Modeling-and-analysis-of-capacitive-relaxation-quenching-in-a-single-photon-avalanche-diode-(SPAD)-applied-to-a-CMOS-image-sensor.pdf",
+      "note": null,
+      "local_status": "原文已存在，未见对应正式笔记；本轮初筛",
+      "doi_status": "本轮核对本地正式PDF首页所印DOI；未联网解析",
+      "priority": "背景：淬灭模型的电路条件",
+      "location": "PDF 1–2；摘要、§1、§2开头；仅定向初筛",
+      "finding": "用载流子方程和电容电路讨论SPAD雪崩到淬灭；实验对象是6 μm像素的CMOS成像器件。",
+      "limits": "几何、寄生电容和读出方式不同于S13361求和阵列；首页所述电压摆幅结论不应成为本项目增益的直接倍增系数。本轮未核全文数值。",
+      "application": "提醒区分雪崩电荷、淬灭/再充电和外部读出传递函数；保持现有有效增益/PDE退化边界。",
+      "checked_text_pages": [
+        1,
+        2
+      ],
+      "checked_image_pages": [],
+      "review": "本轮未检出针对本篇科学采用范围的用户确认；不是整篇认可"
+    },
+    {
+      "id": "ferrarotto2018",
+      "title": "Performance of the Prototype of the Charged-Particle Veto System of the PADME Experiment",
+      "authors": "F. Ferrarotto 等",
+      "year": 2018,
+      "doi": "10.1109/TNS.2018.2822724",
+      "url": "https://doi.org/10.1109/TNS.2018.2822724",
+      "pdf": "/media/sf_works/papers/raw/2018_Ferrarotto_IEEE-TNS_Performance-of-the-Prototype-of-the-Charged-Particle-Veto-System-of-the-PADME-Experiment.pdf",
+      "note": null,
+      "local_status": "原文已存在，未见对应正式笔记；本轮初筛",
+      "doi_status": "本轮核对本地正式PDF首页所印DOI；未联网解析",
+      "priority": "背景：Georgiev的装置来源",
+      "location": "PDF 1；摘要、题录；仅初筛",
+      "finding": "报道塑料闪烁体否决系统原型、光传感器和前端的束流测试。",
+      "limits": "不是CsI装置，也未在本轮核查其完整电路和性能曲线；不把该引用当作Georgiev反卷积算法的独立验证。",
+      "application": "当前已找到原文，替代旧讨论稿“未找到原文”的可用性状态；科学采用状态仍未改变。",
+      "checked_text_pages": [
+        1
+      ],
+      "checked_image_pages": [],
+      "review": "本轮未检出针对本篇科学采用范围的用户确认；不是整篇认可"
+    },
+    {
+      "id": "li2023",
+      "title": "Pulse-shaping method for real-time neutron/gamma discrimination at low sampling rates",
+      "authors": "Jia-Xin Li、Hui-Liang Hou、Yue-Feng Huang、Mao-Song Cheng、Zhi-Min Dai",
+      "year": 2023,
+      "doi": "10.1007/s41365-023-01306-z",
+      "url": "https://doi.org/10.1007/s41365-023-01306-z",
+      "pdf": "/media/sf_works/papers/raw/2023_Li_NST_Pulse-shaping-method-for-real-time-neutron-gamma-discrimination-at-low-sampling-rates.pdf",
+      "note": null,
+      "local_status": "原文已存在，未见对应正式笔记；本轮初筛",
+      "doi_status": "本轮核对本地正式PDF首页所印DOI；未联网解析",
+      "priority": "背景：成形后的PID定义",
+      "location": "PDF 1；摘要、题录；仅初筛",
+      "finding": "研究NaI:Tl,6Li与Am-Be场中的梯形成形、零交叉时间判别和FPGA实现。",
+      "limits": "材料、入射粒子及任务不同；摘要FOM不能移作CsI–Am/Co的预计成绩。改善成形后分离能力不等于解决原始波形模拟的带宽差异。",
+      "application": "如以后研究在线判别可另做方法对照；本轮不改变正式PID定义。",
+      "checked_text_pages": [
+        1
+      ],
+      "checked_image_pages": [],
+      "review": "本轮未检出针对本篇科学采用范围的用户确认；不是整篇认可"
+    }
+  ],
+  "previous_web_candidates": [
+    {
+      "id": "viet2021",
+      "title": "Pulse Shape Discrimination of CsI(Tl) With a Photomultiplier Tube and Multipixel Photon Counters",
+      "doi": "10.1109/tns.2020.3047615"
+    },
+    {
+      "id": "coakley2021",
+      "title": "Ratio-Based Pulse Shape Discrimination: Analytic Results for Gaussian and Poisson Noise Models",
+      "doi": "10.6028/jres.126.032"
+    },
+    {
+      "id": "rosado2026",
+      "title": "Modeling the Variance of Passive SiPMs in the Nonlinear Regime",
+      "doi": "10.3390/s26175579"
+    },
+    {
+      "id": "lu2017",
+      "title": "Energy-Dependent Scintillation Pulse Shape and Proportionality of Decay Components for CsI:Tl: Modeling with Transport and Rate Equations",
+      "doi": "10.1103/physrevapplied.7.014007"
+    },
+    {
+      "id": "jha2013",
+      "title": "Simulating Silicon Photomultiplier Response to Scintillation Light",
+      "doi": "10.1109/tns.2012.2234135"
+    },
+    {
+      "id": "moya2024",
+      "title": "Understanding the Nonlinear Response of SiPMs",
+      "doi": "10.3390/s24082648"
+    }
+  ],
+  "gap_scope": "此前未收录的6篇候选，在本轮新增文件清单及未变的正式笔记目录中仍未找到同身份记录；没有重新全文检索全部PDF或联网。",
+  "old_readout_evidence": {
+    "title": "SiPM readout electronics",
+    "authors": "Pietro P. Calò 等",
+    "year": 2019,
+    "doi": "10.1016/j.nima.2018.09.030",
+    "note": "/media/sf_works/papers/sources/2019_Calo_NIMA_SiPM-readout-electronics.md",
+    "pdf": "/media/sf_works/papers/raw/2019_Calo_NIMA_SiPM-readout-electronics.pdf",
+    "scope": "据既有完整精读笔记；本轮未回查该PDF。相关位置为PDF3–5式(2–8)、图3–6。",
+    "relevance": "输入阻抗、寄生电容/电感和多单元负载能影响读出波形；不能由简化线性电路直接识别本装置参数。",
+    "review": "AI待审，无本篇科学采用确认"
+  },
+  "review_boundary": "search-review SiPM命中的Molina第668项仅认可特定NaI(Tl)–SiPM堆积拒绝工程证据；已回查global-review.md:13461，不转移到上述论文或本项目的PID效率。",
+  "input_sha256": {
+    "/media/sf_works/papers/raw/2026_Hong_Sensors_Reconstruction-Fidelity-and-Confidence-Reliability-in-Overlapped-Radiation-Detector-Pulse-Analysis-Under-Distribution-Shift.pdf": "dbffe1e675dc8d1dd8375964784d77bfe9521e56408bf31b874cad8753a70e90",
+    "/media/sf_works/papers/.cache/paper-read/batch-2026-10-30-P13-parallel16/P13-012/draft.md": "a777f73b3a53ddafce2e47aa996c1234a8f6d6a707778c647cd011b7cdf837d0",
+    "/media/sf_works/papers/raw/2025_Georgiev_JINST_A-deconvolution-based-signal-reconstruction-capable-of-piled-up-pulse-separation.pdf": "4fbdac59e2faf5c89ec937c7d28a8ee410b29c423ad709c8b2aa25b080cfb29f",
+    "/media/sf_works/papers/.cache/paper-read/single-2026-10-30-Georgiev/draft.md": "c71dd6c2ad5f0d4d7ddbca1feacaef6609680340bced0ddb216880f7f104d707",
+    "/media/sf_works/papers/raw/2019_Simpson_NIMA_Performance-of-four-digital-algorithms-for-gamma-gamma-timing-with-LaBr3(Ce)-scintillators.pdf": "c5471c67a9feab417cca8996efd7d245bf1cc2f8baf264a4169cdd40c3b7e832",
+    "/media/sf_works/papers/.cache/paper-read/batch-2026-10-30-P13-parallel16/P13-007/draft.md": "c74d51dc243036eea6032f183eba74ce2bc2521ea65d9be5ad6b71bb7b641a6a",
+    "/media/sf_works/papers/raw/2026_Kong_ActaPhysSin_Study-on-high-precision-digital-timing-methods.pdf": "d6224a4990c99cd172465229a4bb9cffd129a2f4c27eae30f18d442d42c4ac64",
+    "/media/sf_works/papers/.cache/paper-read/batch-2026-10-30-P13-parallel16/P13-014/draft.md": "1d75bd2dd0ee83c2100a59652853895a2e4f28fd39affacfcc065df64f73f14c",
+    "/media/sf_works/papers/raw/2021_Windischhofer_NIMA_The-statistics-of-electron-hole-avalanches.pdf": "9dccf629ba4fd72a5dcf6dbad4acfec24e77139e7b00683313d079ff8e0099b7",
+    "/media/sf_works/papers/raw/2020_Inoue_Sensors_Modeling-and-analysis-of-capacitive-relaxation-quenching-in-a-single-photon-avalanche-diode-(SPAD)-applied-to-a-CMOS-image-sensor.pdf": "cb3eb7c03b11c673fbcf293d6b785dd2ea0e8c5a7c3632fd5929c2bf8d01a8cb",
+    "/media/sf_works/papers/raw/2018_Ferrarotto_IEEE-TNS_Performance-of-the-Prototype-of-the-Charged-Particle-Veto-System-of-the-PADME-Experiment.pdf": "919513ba88c0a4b186ab4ea8e18d45d940a475ae097c191b80a33104f0a54d3f",
+    "/media/sf_works/papers/raw/2023_Li_NST_Pulse-shaping-method-for-real-time-neutron-gamma-discrimination-at-low-sampling-rates.pdf": "c4d2e8982deae771f19001d19663dd4e9ae03dbd14a485966d5b3841f81dd8e6",
+    "/media/sf_works/papers/sources/2019_Calo_NIMA_SiPM-readout-electronics.md": "602c1a2e06592cd47e81c01948ec0753a2752f8105aada618d272707738f0cab",
+    "/media/sf_works/papers/AGENTS.md": "c94c58f3cb22f6612f4a22aa8961df21f782bb7289796302c93c63141b743b60",
+    "/media/sf_works/papers/index.md": "ea78f90f874808359846f3b3a248f445ebd5512cdcdf30ea5980b26f188fb1cc",
+    "/media/sf_works/papers/vocabulary.json": "a0fbbabbd660d741e8d61da883583dcf62b94c5d54511e85879e4d336b64edae",
+    "/media/sf_works/papers/topic-index.md": "0e6be560a2168a03a2455a0a5a3548c7ec8a950a13ea5ccbf361744904153c04",
+    "/media/sf_works/papers/review-index.md": "05c87c1a6edf8db398997c5364c5b8a794141c85f143a5ace9032247a4c6f152",
+    "/media/sf_works/papers/global-review.md": "620d2b396e91d7a538e0de48b1a2e7243ad49000f45f57be80f79e91db958ce5",
+    "/media/sf_works/papers/reading-queue.md": "0f9980085f7fcf552aa39cc9bb49c966d3fec0d9209a29ba8da74c6df81990e6",
+    "/media/sf_works/SiPM/.cache/paper-search/2026-10-30-library-update/inventory_delta.json": "36f52620947aa3f67000a02c7952f14102f87c3b717d6b2e43a9af887d81b3dc",
+    "/media/sf_works/SiPM/.cache/paper-search/2026-10-30-library-update/extraction_manifest.json": "18d5d71e597668a2792d7bcb22b71fc1502e5d77fd178a8adc3af9b32fcfc4c1",
+    "/media/sf_works/SiPM/.cache/paper-search/2026-10-30-library-update/topic-search.txt": "034ed4300f483538acf78911859d4f6362f16080b084d67657a2c761ada67494",
+    "/media/sf_works/SiPM/.cache/paper-search/2026-10-30-library-update/review-search.txt": "1232993dab850a6c8b8d69f4c6aa0cd27927dee359d9af113650eb3fdaf4ae44",
+    "/media/sf_works/SiPM/simulation/results/acquisition_state_20261030/record.json": "06ecdec15a26681efccabc128bc3f124eabb3a60999e7f119350567021770c7e",
+    "/media/sf_works/SiPM/simulation/results/acquisition_state_20261030/summary.json": "76f7092864f3fd3e71eb9d84a1f6a469f1ea9de7819b4b90a8244a50953eb959",
+    "/media/sf_works/SiPM/simulation/results/acquisition_state_20261030/states.json": "70bcfd4b9b7fe09937e25ff3dbf271fe4a59d0841c01c94fc2a0bbb2b42c4524",
+    "/media/sf_works/SiPM/simulation/results/acquisition_state_20261030/controls.json": "6658a820fdcdd5f1d4074cb3b8a658b7a8ac5e3c343d2c1318b2549b1f02a876",
+    "/media/sf_works/SiPM/simulation/results/acquisition_state_20261030/decision.json": "11c9738fff5303472c21bc306557a2a40e2316c228f5761ff674b29c916704b8"
+  },
+  "conclusion": "新增资料细化验证策略，尚未提供可直接替代经验信号残差的CsI–S13361参数；优先按读出状态联合约束，再补相位/前沿定位诊断。",
+  "new_experimental_events": 0,
+  "new_simulated_mothers": 0,
+  "simulation_modified": false
+}

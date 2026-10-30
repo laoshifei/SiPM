@@ -1,0 +1,10 @@
+{
+  "promoted_to_default": false,
+  "PID_definition_changed": false,
+  "source_sha256": "e246872873938291a76f1dc9a84cb92af8b8f1b3b408308d7f6c4d4bb963230d",
+  "conclusion_zh": "**Am的采集状态发生了明显变化，但本轮没有获得可用于修正PID的可靠前触发状态模型。**\n\n按电荷匹配的基线RMS由3.33增至5.91 ADC，低于20 MHz的前触发功率占比由0.189增至0.628。然而，基线/定位的四种对照中，后段MC−实测平均时间仍为7.05–7.26 ns，没有把差异解释为一个简单的基线估计或定位偏移。\n\nQ+前触发状态模型的首段分块交叉检查，平均时间均方误差为Q-only的1.060倍；后段落在既定训练状态支持区域内的加权比例只有33.7%。因此不能把模型外推值用作温漂或电子学校正。状态变化、波形估计误差与信号期相关波动之间仍不能作唯一物理归因。",
+  "next_work_zh": "下一步优先检验**分读出状态的信号期响应模型**：保留本轮冻结结果，明确将某个后段作为新的条件校准样本，按原始事件块划分校准与内部检查，不再把它称为独立验证。先比较信号期低频整体形状起伏与短尺度残差的协方差，再同时约束均ADC、三种PID协方差和F；读出传递函数变化与快慢分量比例起伏均作为待检验候选，不能直接命名为CsI固有涨落。\n\n候选冻结后再运行独立Geant4母事件检查模拟统计，并保留原始与条件化两套结果。现有数据无法补足装置参数、温度或实验逐事件粒子真值。",
+  "new_independent_mothers": 0,
+  "new_native_replay_entries": 0,
+  "limits": "Internal exploratory diagnostics. State support is a descriptive training-envelope rule, not a proof of transportability. Covariance normalization/filtering and sparse sampling affect attribution; no identified microscopic noise mechanism."
+}

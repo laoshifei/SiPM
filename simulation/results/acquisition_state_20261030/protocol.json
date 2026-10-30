@@ -1,0 +1,326 @@
+{
+  "scope": "Freeze estimator controls and acquisition-state diagnostics on existing ADC.",
+  "checkpoint_commit": "f5f8a1e55768141d9ceef17bc91772f8ee5689b4",
+  "code_sha256": "31017da83223992b2a11925dc86f1a54245b6b9a294ec3e9d0138c0f6f4e989e",
+  "parent_record_sha256": "0e903fe73eca0bd9600a50fa72da811efe167d53e1d788b2c6d09948453606e6",
+  "inputs_sha256": {
+    "simulation/results/conditional_response_20261030/record.json": "0e903fe73eca0bd9600a50fa72da811efe167d53e1d788b2c6d09948453606e6",
+    "simulation/results/conditional_response_20261030/protocol.json": "327bc874fe9cfc676e77f5d50e0fb1937c04b2f7daa9425a95bb80f030233d81",
+    "simulation/results/conditional_response_20261030/conditional.json": "e9fce3303c625a207a4c09731111be304210151a7519a0e1b96540938eece14c",
+    "analysis/paper_baseline/results/publication_20261028/point.json": "a02a7a261de4b016737c9ed553a63aae801ada172006f026ea904778d4ce90c0",
+    "simulation/results/signal_fluctuations_20261028/run3_first60.npz": "95462fa2ab57243fa669e1b4811469df40f2f3522e005db9dc3e64130865add3",
+    "simulation/results/pid_bandwidth_20261029/arrays/measured_run3_first60.npz": "3524db75f16934f8f2294c0081bd4e394c06d83151aa72285cf56ba6b76e3dcc",
+    "simulation/results/conditional_response_20261030/arrays/data_run3_first60.npz": "57269fe8d855c16cdd84d93d8c555dc5b72215415732301d777f1652a3a66008",
+    "simulation/results/signal_fluctuations_20261028/run3_middle20.npz": "87d8ca246dd872e8e62f0b0083262b5e0386213340a0f021963e7f3d14cfd1aa",
+    "simulation/results/pid_bandwidth_20261029/arrays/measured_run3_middle20.npz": "5ca98d4e2304650ba788079478d29bc465e719dc9d51f80d2ab33a0d1e1351b1",
+    "simulation/results/conditional_response_20261030/arrays/data_run3_middle20.npz": "c74d728dbed78a4f65bb758953368aab18828c998a22258762fdbfce7756dd86",
+    "simulation/results/signal_fluctuations_20261028/run3_last20.npz": "63873053f70e3cf4d8ff6d1b4d2b7af3b7aa15b24eaa75973740f443daa67033",
+    "simulation/results/pid_bandwidth_20261029/arrays/measured_run3_last20.npz": "fa8a7407568165fd17ef14f77246c8f25bd8df0dde5aa04e3d54b42db3a71579",
+    "simulation/results/conditional_response_20261030/arrays/data_run3_last20.npz": "2b8611ceb85540349e907b31cac88668d4a0e37bb2f812ff42e9b7a49e5f541a",
+    "simulation/results/conditional_response_20261030/arrays/run3_Co60__identity.npz": "858073ea550582b7e2376d22404fde437b8799d2a463d92b6751b034dfdcb22f",
+    "simulation/results/conditional_response_20261030/arrays/run3_Co60__no_signal_residual.npz": "9e0253201976c7425572b7a06218f49807e3db6e4cd935e44459b114ea5b4042",
+    "data/DT5730_DPP_PHA/DAQ/run_3/UNFILTERED/Data_run_3.BIN": "2afbb146fb8b79a7b133672b60cc6fffffa3b0e42b51f4ebb4f8e3b719676581",
+    "simulation/results/signal_fluctuations_20261028/run12_first60.npz": "887ce1d2cec395f61ee1a196de2ca9b70d790403d60b83335c76df204816504b",
+    "simulation/results/pid_bandwidth_20261029/arrays/measured_run12_first60.npz": "9cc78ea936d98553e23ddd05b35664890f8b9029efae859c1f8592c8d2d25fdc",
+    "simulation/results/conditional_response_20261030/arrays/data_run12_first60.npz": "cd9b9f365e61629ce77bcf232e63de90aa89ed641e1f2e47291926ec3c43f396",
+    "simulation/results/signal_fluctuations_20261028/run12_middle20.npz": "7ad68fb1e6b6e14fa63c3ac4b4c29333350fae03e7372efcb1a11a477684ade4",
+    "simulation/results/pid_bandwidth_20261029/arrays/measured_run12_middle20.npz": "6b9605543d541cdbcfdfb8cbec44e6fb088ca8e108cd85a355ba1aea3e17c9dc",
+    "simulation/results/conditional_response_20261030/arrays/data_run12_middle20.npz": "ea2534df9af3f93332609e4e262aa585f690cbfa2c56d96e2632e6c0118bfc45",
+    "simulation/results/signal_fluctuations_20261028/run12_last20.npz": "f016f8e88ff9c6d27ee6f568e3f12070e6b18c2902b1dc2a28ca57fe877c1237",
+    "simulation/results/pid_bandwidth_20261029/arrays/measured_run12_last20.npz": "e34e9bf77176d38bde499b2f5706aa152697e2fc1dc7e4e65f38eec33de453cc",
+    "simulation/results/conditional_response_20261030/arrays/data_run12_last20.npz": "3f8f9dba7f01e10f7836dcc258371cd45d6f65d6d32525fef14068c444e3a03c",
+    "simulation/results/conditional_response_20261030/arrays/run12_Am241__identity.npz": "cb47f166445ec5f21597dbb0f19a70ac3195e80cd69594d949af4faf1256aa2a",
+    "simulation/results/conditional_response_20261030/arrays/run12_Am241__no_signal_residual.npz": "3f64a08e98112c0638c0b1ff65ffa6923316f06b80861a9a839a915ff8650151",
+    "data/DT5730_DPP_PHA/DAQ/run_12/UNFILTERED/Data_run_12.BIN": "aa778158a28560a2929b76038468e33875cd3a043ad80262661cd177f4e0044f"
+  },
+  "q_edges": [
+    201824.1125,
+    237975.62708333333,
+    274127.14166666666,
+    310278.65625,
+    346430.17083333334,
+    382581.6854166667,
+    418733.2
+  ],
+  "support_bins": {
+    "Co60": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "Am241": [
+      0,
+      1,
+      2
+    ]
+  },
+  "conditional_cuts": {
+    "Co60": {
+      "0": {
+        "q_quartiles": [
+          213530.25,
+          224292.25,
+          229674.75
+        ],
+        "rms_median": 3.2988738016745955,
+        "q2_target": [
+          0.4935064935064935,
+          0.5064935064935064
+        ],
+        "q4_target": [
+          0.24675324675324675,
+          0.24675324675324675,
+          0.24675324675324675,
+          0.2597402597402597
+        ],
+        "q2r2_target": [
+          0.2987012987012987,
+          0.19480519480519481,
+          0.19480519480519481,
+          0.3116883116883117
+        ],
+        "training_n": 77
+      },
+      "1": {
+        "q_quartiles": [
+          249471.75,
+          259007.75,
+          266566.0
+        ],
+        "rms_median": 3.4460121880225554,
+        "q2_target": [
+          0.49635036496350365,
+          0.5036496350364964
+        ],
+        "q4_target": [
+          0.24817518248175183,
+          0.24817518248175183,
+          0.24817518248175183,
+          0.25547445255474455
+        ],
+        "q2r2_target": [
+          0.24087591240875914,
+          0.25547445255474455,
+          0.25547445255474455,
+          0.24817518248175183
+        ],
+        "training_n": 137
+      },
+      "2": {
+        "q_quartiles": [
+          286112.1875,
+          295286.625,
+          303201.3125
+        ],
+        "rms_median": 3.33254145321797,
+        "q2_target": [
+          0.5,
+          0.5
+        ],
+        "q4_target": [
+          0.25177304964539005,
+          0.24822695035460993,
+          0.24822695035460993,
+          0.25177304964539005
+        ],
+        "q2r2_target": [
+          0.25886524822695034,
+          0.24113475177304963,
+          0.24113475177304963,
+          0.25886524822695034
+        ],
+        "training_n": 282
+      },
+      "3": {
+        "q_quartiles": [
+          321641.0,
+          331390.75,
+          339488.0
+        ],
+        "rms_median": 3.3481279750780137,
+        "q2_target": [
+          0.499054820415879,
+          0.500945179584121
+        ],
+        "q4_target": [
+          0.2495274102079395,
+          0.2495274102079395,
+          0.2495274102079395,
+          0.2514177693761815
+        ],
+        "q2r2_target": [
+          0.2589792060491493,
+          0.24007561436672967,
+          0.2381852551984877,
+          0.2627599243856333
+        ],
+        "training_n": 529
+      },
+      "4": {
+        "q_quartiles": [
+          356064.9375,
+          365870.875,
+          374653.1875
+        ],
+        "rms_median": 3.371290639761466,
+        "q2_target": [
+          0.5,
+          0.5
+        ],
+        "q4_target": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "q2r2_target": [
+          0.25523560209424084,
+          0.24476439790575916,
+          0.24476439790575916,
+          0.25523560209424084
+        ],
+        "training_n": 764
+      },
+      "5": {
+        "q_quartiles": [
+          390342.5,
+          396853.625,
+          405467.5
+        ],
+        "rms_median": 3.3285100984842035,
+        "q2_target": [
+          0.5,
+          0.5
+        ],
+        "q4_target": [
+          0.250788643533123,
+          0.24921135646687698,
+          0.24921135646687698,
+          0.250788643533123
+        ],
+        "q2r2_target": [
+          0.24605678233438485,
+          0.2539432176656151,
+          0.2539432176656151,
+          0.24605678233438485
+        ],
+        "training_n": 634
+      }
+    },
+    "Am241": {
+      "0": {
+        "q_quartiles": [
+          208701.5,
+          218005.5,
+          228342.5
+        ],
+        "rms_median": 3.1914421088866707,
+        "q2_target": [
+          0.4991023339317774,
+          0.5008976660682226
+        ],
+        "q4_target": [
+          0.2495511669658887,
+          0.2495511669658887,
+          0.2495511669658887,
+          0.2513464991023339
+        ],
+        "q2r2_target": [
+          0.24416517055655296,
+          0.25493716337522443,
+          0.25493716337522443,
+          0.2459605026929982
+        ],
+        "training_n": 557
+      },
+      "1": {
+        "q_quartiles": [
+          245954.5,
+          252571.5,
+          261583.5
+        ],
+        "rms_median": 3.1396142652203314,
+        "q2_target": [
+          0.4987146529562982,
+          0.5012853470437018
+        ],
+        "q4_target": [
+          0.2493573264781491,
+          0.2493573264781491,
+          0.2493573264781491,
+          0.2519280205655527
+        ],
+        "q2r2_target": [
+          0.2467866323907455,
+          0.2519280205655527,
+          0.2519280205655527,
+          0.2493573264781491
+        ],
+        "training_n": 389
+      },
+      "2": {
+        "q_quartiles": [
+          281622.8125,
+          290740.75,
+          299654.5
+        ],
+        "rms_median": 3.2348420752374967,
+        "q2_target": [
+          0.5,
+          0.5
+        ],
+        "q4_target": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "q2r2_target": [
+          0.23706896551724138,
+          0.2629310344827586,
+          0.2629310344827586,
+          0.23706896551724138
+        ],
+        "training_n": 232
+      }
+    }
+  },
+  "controls": [
+    "original",
+    "recent_baseline",
+    "smooth_anchor",
+    "recent_and_smooth"
+  ],
+  "MC_variants": [
+    "identity",
+    "no_signal_residual"
+  ],
+  "highpass_lags_ns": [
+    0,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128
+  ],
+  "state_features": [
+    "baseline_first128_ADC",
+    "log_RMS_first128",
+    "first256_detrended_Hann_power_fraction_0_to_20MHz"
+  ],
+  "selection": "Existing experimental main-band IDs and original Q; native original parent IDs/Q. No reselection after estimator changes. Source is not particle truth.",
+  "estimator_controls": "Original first128 baseline / raw t10; recent baseline in original anchor[-192,-64); t10 from centered11-sample box smoothing with nearest boundary. Smooth waveform ONLY for locating the anchor; all PID gates integrate original ADC. The recent baseline window is frozen to the original anchor in both recent variants.",
+  "state": "First128 baseline and log RMS; first256 linear detrend + Hann FFT low-power fraction. No quantization-noise subtraction. Event index is acquisition order; timestamp ticks audited without assuming time units.",
+  "regression": "Q-bin intercepts and within-bin linear Q, optionally three pretrigger state features, raw event fraction, or both. Weighted ordinary least squares; first60 only; six contiguous10%-of-run folds for internal crossvalidation. No outcome-driven model selection. Full-first60 coefficients applied to later segments only as exploratory checks; report marginal1%-99% and Mahalanobis99% state support. Time extrapolates after60%.",
+  "covariance": "Exact within-original-Q decomposition into between-Q-half, between acquisition deciles within Q-half, and remaining within-cell covariance. Between-decile means include sampling noise, not causal drift variance. Reference null permutes whole raw64/128 blocks within each segment, preserving block order internally and last partial-block length.",
+  "shape": "76 original-anchor40ns gate charge fractions, sum1; pulse covariance is descriptive, not intrinsic scintillation covariance. Original 50ns box-highpass autocovariance subtracts local pretrigger covariance, divides by mean signal; lag0 closes to frozen F50.",
+  "uncertainty": "512 paired whole-original-mother and original-index experimental block64/128 draws for estimator comparisons; first60 Q2 targets/PCA fixed. 512 whole-block permutations per segment for temporal covariance reference. Regression crossvalidation reports held-out losses and fold variability, not a claim of independent experimental validation.",
+  "new_independent_mothers": 0,
+  "new_native_replay_entries": 0,
+  "default_configuration_changed": false
+}

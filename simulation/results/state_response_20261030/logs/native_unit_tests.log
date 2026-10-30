@@ -1,0 +1,107 @@
+Start testing: Oct 30 12:19 CST
+----------------------------------------------------------
+1/5 Testing: inherited_sensor_charge_recovery_rng
+1/5 Test: inherited_sensor_charge_recovery_rng
+Command: "/media/sf_works/SiPM/simulation/build/state_response_20261030/test_sipm" "/media/sf_works/SiPM/simulation/tests/vendor_fixture.json"
+Directory: /media/sf_works/SiPM/simulation/build/state_response_20261030
+"inherited_sensor_charge_recovery_rng" start time: Oct 30 12:19 CST
+Output:
+----------------------------------------------------------
+PASS cell boundaries
+PASS bilinear PDE and no extrapolation
+PASS recovery and trigger
+PASS single electron charge and fractional-bin integral
+PASS empty input still produces baseline ADC
+PASS gate uses avalanche charge and half-open endpoints
+PASS PDE binomial statistics
+PASS same-time cell saturation
+PASS dark count Poisson statistics
+PASS recursive secondary ancestry and charge
+PASS independent reproducible electronics RNG
+PASS ADC clipping explicitly marked
+PASS invalid config/input and candidate limit reject
+PASS readout time-step convergence
+14 tests passed
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"inherited_sensor_charge_recovery_rng" end time: Oct 30 12:19 CST
+"inherited_sensor_charge_recovery_rng" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/5 Testing: stationary_readout_noise
+2/5 Test: stationary_readout_noise
+Command: "/media/sf_works/SiPM/simulation/build/state_response_20261030/test_noise" "/media/sf_works/SiPM/simulation/tests/vendor_fixture.json"
+Directory: /media/sf_works/SiPM/simulation/build/state_response_20261030
+"stationary_readout_noise" start time: Oct 30 12:19 CST
+Output:
+----------------------------------------------------------
+PASS unit FIR / vendor noise RNG and ADC identity
+PASS stationary FIR variance / covariance / preserved signal
+PASS parameter rejection / requantization / clipping
+PASS event variance / baseline state moments / reproducibility
+PASS baseline-state mixture / covariance / weight validation
+5 tests passed
+<end of output>
+Test time =   0.17 sec
+----------------------------------------------------------
+Test Passed.
+"stationary_readout_noise" end time: Oct 30 12:19 CST
+"stationary_readout_noise" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/5 Testing: parallel_readout_response
+3/5 Test: parallel_readout_response
+Command: "/media/sf_works/SiPM/simulation/build/state_response_20261030/test_response" "/media/sf_works/SiPM/simulation/tests/vendor_fixture.json"
+Directory: /media/sf_works/SiPM/simulation/build/state_response_20261030
+"parallel_readout_response" start time: Oct 30 12:19 CST
+Output:
+----------------------------------------------------------
+Parallel paths and voltage transfer checks passed: legacy/unit replay, physical charge/current, downstream noise, mixture, bounds
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"parallel_readout_response" end time: Oct 30 12:19 CST
+"parallel_readout_response" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/5 Testing: signal_dependent_readout_noise
+4/5 Test: signal_dependent_readout_noise
+Command: "/media/sf_works/SiPM/simulation/build/state_response_20261030/test_signal_noise" "/media/sf_works/SiPM/simulation/tests/vendor_fixture.json"
+Directory: /media/sf_works/SiPM/simulation/build/state_response_20261030
+"signal_dependent_readout_noise" start time: Oct 30 12:19 CST
+Output:
+----------------------------------------------------------
+PASS disabled,zero strength and zero signal identities
+PASS mean,linear variance scaling,FIR covariance and preserved physical charge
+PASS deterministic independent seed stream
+PASS event-scatter mean and variance including finite-waveform statistics
+PASS invalid settings and clipping
+5 tests passed
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"signal_dependent_readout_noise" end time: Oct 30 12:19 CST
+"signal_dependent_readout_noise" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/5 Testing: native_aperture_sampling
+5/5 Test: native_aperture_sampling
+Command: "/media/sf_works/SiPM/simulation/build/state_response_20261030/test_sampling" "/media/sf_works/SiPM/simulation/tests/vendor_fixture.json"
+Directory: /media/sf_works/SiPM/simulation/build/state_response_20261030
+"native_aperture_sampling" start time: Oct 30 12:19 CST
+Output:
+----------------------------------------------------------
+Sampling tests passed: exact native identity, analytic aperture, preserved avalanches, paired noise, bounds
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"native_aperture_sampling" end time: Oct 30 12:19 CST
+"native_aperture_sampling" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 30 12:19 CST

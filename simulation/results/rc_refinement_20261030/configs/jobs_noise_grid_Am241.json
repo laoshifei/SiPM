@@ -1,0 +1,1544 @@
+{
+  "ids": [
+    2,
+    80,
+    149,
+    220,
+    315,
+    334,
+    389,
+    401,
+    422,
+    449,
+    511,
+    625,
+    714,
+    936,
+    960,
+    1074,
+    1268,
+    1571,
+    1625,
+    1790,
+    1994,
+    2043,
+    2227,
+    2242,
+    2432,
+    2523,
+    2641,
+    2718,
+    2791,
+    2891,
+    2893,
+    3039,
+    3306,
+    3337,
+    3527,
+    3569,
+    3629,
+    3635,
+    3639,
+    3652,
+    3857,
+    3930,
+    4106,
+    4334,
+    4718,
+    4750,
+    4783,
+    4961,
+    5013,
+    5149,
+    5200,
+    5217,
+    5278,
+    5291,
+    5396,
+    5403,
+    5408,
+    5534,
+    5710,
+    5794,
+    5954,
+    6067,
+    6178,
+    6283,
+    6386,
+    6518,
+    6959,
+    7355,
+    7501,
+    7641,
+    7726,
+    7732,
+    8008,
+    8116,
+    8484,
+    8519,
+    8752,
+    8934,
+    9129,
+    9433,
+    9654,
+    9756,
+    9791,
+    9854,
+    9942,
+    10002,
+    10013,
+    10041,
+    10165,
+    10340,
+    10341,
+    10428,
+    11080,
+    11126,
+    11293,
+    11304,
+    11445,
+    11774,
+    12040,
+    12080,
+    12247,
+    12288,
+    12506,
+    12531,
+    12584,
+    12598,
+    12953,
+    13288,
+    13299,
+    13302,
+    13613,
+    13818,
+    13833,
+    13858,
+    13903,
+    13929,
+    14148,
+    14156,
+    14173,
+    14227,
+    14502,
+    14591,
+    14621,
+    14649,
+    14656,
+    14928,
+    14971,
+    15005,
+    15088,
+    15119,
+    15189,
+    15368,
+    15487,
+    15767,
+    15838,
+    15839,
+    15972,
+    16046,
+    16134,
+    16349,
+    16353,
+    16383,
+    16488,
+    16507,
+    16590,
+    16651,
+    16681,
+    16754,
+    16967,
+    16972,
+    17047,
+    17051,
+    17054,
+    17066,
+    17093,
+    17337,
+    17777,
+    18142,
+    18220,
+    18335,
+    18539,
+    18629,
+    18648,
+    18707,
+    19090,
+    19129,
+    19279,
+    19373,
+    19534,
+    19703,
+    20312,
+    20424,
+    20593,
+    20914,
+    20966,
+    21380,
+    21564,
+    22280,
+    22407,
+    22521,
+    22570,
+    22720,
+    22771,
+    23012,
+    23020,
+    23026,
+    23142,
+    23416,
+    23472,
+    23509,
+    23538,
+    23649,
+    23826,
+    23899
+  ],
+  "jobs": [
+    {
+      "key": "run12_first60_B64_eval0_inherited_cv0",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval0_inherited_cv0.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B64_eval0_inherited_cv0.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "c0e808a2046b7324b764052469d63063584d55d8704ba5fabfe01416a6ae62d8"
+    },
+    {
+      "key": "run12_first60_B64_eval0_inherited_cv1",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval0_inherited_cv1.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B64_eval0_inherited_cv1.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "698d4dd6d724f42806b71b743f83f04167e1ba0680548ae2688748e1212edeb7"
+    },
+    {
+      "key": "run12_first60_B64_eval0_inherited_cv2",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval0_inherited_cv2.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B64_eval0_inherited_cv2.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "6cdfd105e18205d8e235cdd4aacc2125cf761165dfe29e256a45839778ae65d3"
+    },
+    {
+      "key": "run12_first60_B64_eval0_inherited_cv3",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval0_inherited_cv3.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B64_eval0_inherited_cv3.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "2038b0cde8bf3bc3ad9aedece982afb7ecea7a11b7c245b3bd0f0299c3e56db7"
+    },
+    {
+      "key": "run12_first60_B64_eval0_inherited_cv4",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval0_inherited_cv4.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B64_eval0_inherited_cv4.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "ee6e568c290c7695c88c7d78d43edd59be3e0d690ab9079b503b79d205ddc7be"
+    },
+    {
+      "key": "run12_first60_B64_eval0_inherited_cv5",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval0_inherited_cv5.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B64_eval0_inherited_cv5.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "6564906ade1354a6efa4009316342a87960262f9ca731bb590786c1f6a50e4a2"
+    },
+    {
+      "key": "run12_first60_B64_eval0_inherited_cv6",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval0_inherited_cv6.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B64_eval0_inherited_cv6.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "bb75cbee929883a5b54f27ef47657f6b6ec0b9f130d8055e03939f7752e26ccc"
+    },
+    {
+      "key": "run12_first60_B64_eval0_spectrum_cv0",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval0_spectrum_cv0.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B64_eval0_spectrum_cv0.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "9ff97822ea1d3896ec770d39201a28479ed4e2531df2a7f5f811f8d3c43a8728"
+    },
+    {
+      "key": "run12_first60_B64_eval0_spectrum_cv1",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval0_spectrum_cv1.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B64_eval0_spectrum_cv1.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "aeab77a343c73e84ec4ff0f654187dcd1b4e3b17db96c8f0295c0c636f35972c"
+    },
+    {
+      "key": "run12_first60_B64_eval0_spectrum_cv2",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval0_spectrum_cv2.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B64_eval0_spectrum_cv2.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "ab6c84a5b2a2c7d3e45039505d01de30f14fb9d4b04a65cb36f5249ddca4361c"
+    },
+    {
+      "key": "run12_first60_B64_eval0_spectrum_cv3",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval0_spectrum_cv3.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B64_eval0_spectrum_cv3.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "febc0336701a0c2b743f8453150a2642deac6aac07514adf5094b8a606ed39fd"
+    },
+    {
+      "key": "run12_first60_B64_eval0_spectrum_cv4",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval0_spectrum_cv4.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B64_eval0_spectrum_cv4.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "09cec0f27a805b935f1f94b916d6a8e9638f04f6263c02b6d1eefe8c48d10f68"
+    },
+    {
+      "key": "run12_first60_B64_eval0_spectrum_cv5",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval0_spectrum_cv5.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B64_eval0_spectrum_cv5.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "9643fd0003a820e519e24b5bf10c5567221303ad590b4c880ee6eb553ed036b9"
+    },
+    {
+      "key": "run12_first60_B64_eval0_spectrum_cv6",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval0_spectrum_cv6.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B64_eval0_spectrum_cv6.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "ac21dfef1709c6e5e6a2e4ea3beb0b98e02565bfa775f8c13a53d188b3d9b610"
+    },
+    {
+      "key": "run12_first60_B64_eval1_inherited_cv0",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval1_inherited_cv0.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B64_eval1_inherited_cv0.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "b9af58a420e55a9d9d90489edc63198f61584d9c79546c0a2077cf8ec4fd5311"
+    },
+    {
+      "key": "run12_first60_B64_eval1_inherited_cv1",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval1_inherited_cv1.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B64_eval1_inherited_cv1.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "6e3eb1ea6880df178895c00281b20d2b2b1cace54e03d55478ea1784467b33d2"
+    },
+    {
+      "key": "run12_first60_B64_eval1_inherited_cv2",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval1_inherited_cv2.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B64_eval1_inherited_cv2.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "046546b32feed64e0b8e7a48cf2d6540a33a37a6275aa2a01c6acc984ca53991"
+    },
+    {
+      "key": "run12_first60_B64_eval1_inherited_cv3",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval1_inherited_cv3.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B64_eval1_inherited_cv3.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "12c6bb503e9adce023d997fb215ca2f815a37554af08327a1f45ddc5c0d2270b"
+    },
+    {
+      "key": "run12_first60_B64_eval1_inherited_cv4",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval1_inherited_cv4.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B64_eval1_inherited_cv4.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "ce51f6e1fdcfda88a72d7eb7f172b7af00d29a9f5a767a4cae538270901ce893"
+    },
+    {
+      "key": "run12_first60_B64_eval1_inherited_cv5",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval1_inherited_cv5.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B64_eval1_inherited_cv5.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "5ce524ecd746a20f282097616e6d873d743dfa377cb080eece013ac7f72d75bf"
+    },
+    {
+      "key": "run12_first60_B64_eval1_inherited_cv6",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval1_inherited_cv6.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B64_eval1_inherited_cv6.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "2895f3cf548f3d4cb89ce647a8a49930e6b584236ec26efe62b3b9ab0831151b"
+    },
+    {
+      "key": "run12_first60_B64_eval1_spectrum_cv0",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval1_spectrum_cv0.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B64_eval1_spectrum_cv0.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "2c1386e22b05e1db46dab51656b79b1c5e7a66ca14c71277171257534c32b438"
+    },
+    {
+      "key": "run12_first60_B64_eval1_spectrum_cv1",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval1_spectrum_cv1.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B64_eval1_spectrum_cv1.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "cd62f4a3aec84fe7a6550922b037ad214414f2d139fa4ec5af65176092b049f2"
+    },
+    {
+      "key": "run12_first60_B64_eval1_spectrum_cv2",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval1_spectrum_cv2.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B64_eval1_spectrum_cv2.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "eb5c8501fab96ea89d4ec473825262706f5bcdee40cbf433b733ab117e205402"
+    },
+    {
+      "key": "run12_first60_B64_eval1_spectrum_cv3",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval1_spectrum_cv3.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B64_eval1_spectrum_cv3.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "f803e60afb6f8433b23fe13f08ef6f43dde659dbe3fef4609ecd88404b013c92"
+    },
+    {
+      "key": "run12_first60_B64_eval1_spectrum_cv4",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval1_spectrum_cv4.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B64_eval1_spectrum_cv4.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "d3a5926d342283b6d2b6e548a0a1b2b2245303981b8947c2fab3df24674cdb7e"
+    },
+    {
+      "key": "run12_first60_B64_eval1_spectrum_cv5",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval1_spectrum_cv5.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B64_eval1_spectrum_cv5.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "172f9b67b224d9dd6c7b6a9acd67604ba846ff1a1fb42e9c9322316693525321"
+    },
+    {
+      "key": "run12_first60_B64_eval1_spectrum_cv6",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval1_spectrum_cv6.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B64_eval1_spectrum_cv6.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "577a206c766e977491643df603ea8ca9919b7348588970941caece8f0fbffe27"
+    },
+    {
+      "key": "run12_first60_B128_eval0_inherited_cv0",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval0_inherited_cv0.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B128_eval0_inherited_cv0.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "5e97a9d488bad2ef6c3a176ae510adf4f8d3d378e9a28117a17b7acab68a8786"
+    },
+    {
+      "key": "run12_first60_B128_eval0_inherited_cv1",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval0_inherited_cv1.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B128_eval0_inherited_cv1.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "b862a68dd4bd7d5f8fb1eb687ef72a30ad4c63c24a6c227d1ab000f8656c9167"
+    },
+    {
+      "key": "run12_first60_B128_eval0_inherited_cv2",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval0_inherited_cv2.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B128_eval0_inherited_cv2.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "d13b47060595ddbaa45b76671500fc5d77ecca52a02550e8fc6c36d8df273f42"
+    },
+    {
+      "key": "run12_first60_B128_eval0_inherited_cv3",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval0_inherited_cv3.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B128_eval0_inherited_cv3.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "9c6c3a7712a0c810c2949b542f50ac661978ad14d9aca2b05abaea20b89004e8"
+    },
+    {
+      "key": "run12_first60_B128_eval0_inherited_cv4",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval0_inherited_cv4.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B128_eval0_inherited_cv4.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "2f9197019202090159c43a27c6b681ae199e7c3cb0a57feb86b9afc8b164b173"
+    },
+    {
+      "key": "run12_first60_B128_eval0_inherited_cv5",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval0_inherited_cv5.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B128_eval0_inherited_cv5.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "3b83bf02953ab90ed2bdfd5e8fc8facbfb04da66f0383dc2d34cec17eafb7f9f"
+    },
+    {
+      "key": "run12_first60_B128_eval0_inherited_cv6",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval0_inherited_cv6.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B128_eval0_inherited_cv6.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "0397e38a0b14e145cbefbdfc02ba22a68ec739b755b0820ae37ef3be84806f40"
+    },
+    {
+      "key": "run12_first60_B128_eval0_spectrum_cv0",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval0_spectrum_cv0.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B128_eval0_spectrum_cv0.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "cb593dc01074f0839864c6a118f4ee6a3429240760e2aa53f7b492616ea6e65b"
+    },
+    {
+      "key": "run12_first60_B128_eval0_spectrum_cv1",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval0_spectrum_cv1.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B128_eval0_spectrum_cv1.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "8d3156f335a1c17763ceb183aff1b35be1ec95b86bc4732dc57145d36b9990f2"
+    },
+    {
+      "key": "run12_first60_B128_eval0_spectrum_cv2",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval0_spectrum_cv2.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B128_eval0_spectrum_cv2.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "74e1f867abb908812af518a22e884ed6f43c9f4c8037745fc69d5986e76de54e"
+    },
+    {
+      "key": "run12_first60_B128_eval0_spectrum_cv3",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval0_spectrum_cv3.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B128_eval0_spectrum_cv3.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "53f913b057c95537f5c09ecabe438f06202c0e2d22d64a63c6b8cdafdc5c0309"
+    },
+    {
+      "key": "run12_first60_B128_eval0_spectrum_cv4",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval0_spectrum_cv4.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B128_eval0_spectrum_cv4.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "1a0a13b418e812cff08ec037a41295550ab6e3e48240e03556b5b03fe10b0197"
+    },
+    {
+      "key": "run12_first60_B128_eval0_spectrum_cv5",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval0_spectrum_cv5.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B128_eval0_spectrum_cv5.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "77106451d96724a6f87693dd7a50b42236107eb7339a0c5442fbe9d73c507253"
+    },
+    {
+      "key": "run12_first60_B128_eval0_spectrum_cv6",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval0_spectrum_cv6.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B128_eval0_spectrum_cv6.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "ef5016621f73a64de5b9423067ede479e085aa10264c007edf7d64dde7c34859"
+    },
+    {
+      "key": "run12_first60_B128_eval1_inherited_cv0",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval1_inherited_cv0.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B128_eval1_inherited_cv0.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "8ddc9233decd1bf82c3ee84c0f3e030ff9941d38fc11aab918632240d5937906"
+    },
+    {
+      "key": "run12_first60_B128_eval1_inherited_cv1",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval1_inherited_cv1.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B128_eval1_inherited_cv1.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "1ed03dfe481e1402f22056e4a9c5ff7385cca170c8d67a26861ca7821eeec955"
+    },
+    {
+      "key": "run12_first60_B128_eval1_inherited_cv2",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval1_inherited_cv2.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B128_eval1_inherited_cv2.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "cd8ec92a59ae8e1dfbcc6fe41354cbb2c20cbb7400a2d6e1010ce23d746f8569"
+    },
+    {
+      "key": "run12_first60_B128_eval1_inherited_cv3",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval1_inherited_cv3.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B128_eval1_inherited_cv3.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "0a9bf6d4c64032e1fa55f02a7cbb007cff2467f38c434b53a0c13fb6317a421b"
+    },
+    {
+      "key": "run12_first60_B128_eval1_inherited_cv4",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval1_inherited_cv4.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B128_eval1_inherited_cv4.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "d7af0c9c0118e1a32d8a87bb41c27f79836f6ae9deed3b5cea3d4d50768e7bde"
+    },
+    {
+      "key": "run12_first60_B128_eval1_inherited_cv5",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval1_inherited_cv5.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B128_eval1_inherited_cv5.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "c881797890202f6fab196f1a12096d83dd9b65caee6e735b528bb54615115746"
+    },
+    {
+      "key": "run12_first60_B128_eval1_inherited_cv6",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval1_inherited_cv6.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B128_eval1_inherited_cv6.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "d77f541401b3456f246b0237af7eee859cc957dab4f4cad4e352aad3530d2784"
+    },
+    {
+      "key": "run12_first60_B128_eval1_spectrum_cv0",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval1_spectrum_cv0.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B128_eval1_spectrum_cv0.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "dffafd010d457e42d6b655811f93cc7b5b6238fef1d61985a6ed46a0019b066e"
+    },
+    {
+      "key": "run12_first60_B128_eval1_spectrum_cv1",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval1_spectrum_cv1.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B128_eval1_spectrum_cv1.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "d1e9276b0d59a0e450b49b2e216ed0c9128d257d091c05325728941d210acd63"
+    },
+    {
+      "key": "run12_first60_B128_eval1_spectrum_cv2",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval1_spectrum_cv2.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B128_eval1_spectrum_cv2.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "cc904bf5e8668a8ec2fad32d606c7b8be9104d9e24e61a9bdaf57b6b126b25d6"
+    },
+    {
+      "key": "run12_first60_B128_eval1_spectrum_cv3",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval1_spectrum_cv3.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B128_eval1_spectrum_cv3.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "02bcb6ae2172332f4d11ba27687cc04ae2ab2b91d8c5b6328efc664315a074ab"
+    },
+    {
+      "key": "run12_first60_B128_eval1_spectrum_cv4",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval1_spectrum_cv4.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B128_eval1_spectrum_cv4.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "ca6e6330a59ecb4ee53a9885e41c1975669580d06b649e36569850b94fe28b33"
+    },
+    {
+      "key": "run12_first60_B128_eval1_spectrum_cv5",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval1_spectrum_cv5.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B128_eval1_spectrum_cv5.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "fcefb4099cc08d99eefcaceddbc0b1ffe4f0e984cbadfa8edb35d6f87ff6b0c7"
+    },
+    {
+      "key": "run12_first60_B128_eval1_spectrum_cv6",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval1_spectrum_cv6.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_first60_B128_eval1_spectrum_cv6.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "f833e94f9dd5f9782548ec5dacce02c0e9bbd4940a20a456b1adfdaac43a2728"
+    },
+    {
+      "key": "run12_middle20_B64_eval0_inherited_cv0",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval0_inherited_cv0.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B64_eval0_inherited_cv0.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "aa11870abdd2a96cb6cca082ff2ca7a355abf7c6e5cc109a61d3b8b4d409088c"
+    },
+    {
+      "key": "run12_middle20_B64_eval0_inherited_cv1",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval0_inherited_cv1.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B64_eval0_inherited_cv1.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "740272e449d3d065c3235d047a6d0c312b8479043f2b28dee9835c74f17a7d55"
+    },
+    {
+      "key": "run12_middle20_B64_eval0_inherited_cv2",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval0_inherited_cv2.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B64_eval0_inherited_cv2.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "b4ab70fc9587b07f018d2d8c35177b69fc63a17e3b025184c470c7ce5384bbde"
+    },
+    {
+      "key": "run12_middle20_B64_eval0_inherited_cv3",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval0_inherited_cv3.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B64_eval0_inherited_cv3.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "b2057a4ad42b6ab8d8891f0f8fe661199461957087dd5bd7affce3d4ecd563ae"
+    },
+    {
+      "key": "run12_middle20_B64_eval0_inherited_cv4",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval0_inherited_cv4.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B64_eval0_inherited_cv4.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "710ac1a98e19881cd7e6b704063e4dc85f20e652ad3d3b19e29cb83bfbbcb29f"
+    },
+    {
+      "key": "run12_middle20_B64_eval0_inherited_cv5",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval0_inherited_cv5.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B64_eval0_inherited_cv5.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "d82eafe53b508a5d90264ef7ac538dbb97e8037b5e98bd540265dc62864486e3"
+    },
+    {
+      "key": "run12_middle20_B64_eval0_inherited_cv6",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval0_inherited_cv6.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B64_eval0_inherited_cv6.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "2f1ba8d14d130f5410050a3ef316de98a7649075851b65e106692addec409594"
+    },
+    {
+      "key": "run12_middle20_B64_eval0_spectrum_cv0",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval0_spectrum_cv0.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B64_eval0_spectrum_cv0.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "cff8b860d6e313348f8b5f4729daf7e1b0fb1e402654584c5ea4aa3dc0f03455"
+    },
+    {
+      "key": "run12_middle20_B64_eval0_spectrum_cv1",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval0_spectrum_cv1.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B64_eval0_spectrum_cv1.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "4cedbb22b3b84e1b1de86d2ff97ac5c3cd7e0aedf9e85670ac8d76fb409ff63a"
+    },
+    {
+      "key": "run12_middle20_B64_eval0_spectrum_cv2",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval0_spectrum_cv2.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B64_eval0_spectrum_cv2.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "72aa13051ed3248940b3f9bd6fb30333e2022a6d1a20ff91c14bd56da71b49bc"
+    },
+    {
+      "key": "run12_middle20_B64_eval0_spectrum_cv3",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval0_spectrum_cv3.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B64_eval0_spectrum_cv3.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "b64c8d233291e73d6c717292b24543d18917a40f74e937dbca583f13f0b42091"
+    },
+    {
+      "key": "run12_middle20_B64_eval0_spectrum_cv4",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval0_spectrum_cv4.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B64_eval0_spectrum_cv4.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "92240277775a90b144cd6525e60dfb09f8974b1b62c5927c41e9f2e70c157d46"
+    },
+    {
+      "key": "run12_middle20_B64_eval0_spectrum_cv5",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval0_spectrum_cv5.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B64_eval0_spectrum_cv5.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "2d60137d80a124fe548fa5a089408ce6596cae678b4f57ef3dc5ce098f97d164"
+    },
+    {
+      "key": "run12_middle20_B64_eval0_spectrum_cv6",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval0_spectrum_cv6.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B64_eval0_spectrum_cv6.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "d39b6ff7475f384deeceb90dbd64e385df847cf50d6cdbb23235c7c1dee14a87"
+    },
+    {
+      "key": "run12_middle20_B64_eval1_inherited_cv0",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval1_inherited_cv0.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B64_eval1_inherited_cv0.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "284e8274bb92574dfb43f56bad821b5eb3fa3eff26fc97d99bfcabb916ad7372"
+    },
+    {
+      "key": "run12_middle20_B64_eval1_inherited_cv1",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval1_inherited_cv1.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B64_eval1_inherited_cv1.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "5be066561d13aadc6dcdf5af4984d56a975c6349f5d6b7464d4645d5c5b22084"
+    },
+    {
+      "key": "run12_middle20_B64_eval1_inherited_cv2",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval1_inherited_cv2.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B64_eval1_inherited_cv2.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "20a8e86f678cc3b9b05cf26d7fc97d7ac692f548be15c27a9a022813f79bb1f8"
+    },
+    {
+      "key": "run12_middle20_B64_eval1_inherited_cv3",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval1_inherited_cv3.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B64_eval1_inherited_cv3.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "9ff29907464b25236ccee3a0bb8774a0e7cb7ece8e889b3d2f803345313a16e0"
+    },
+    {
+      "key": "run12_middle20_B64_eval1_inherited_cv4",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval1_inherited_cv4.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B64_eval1_inherited_cv4.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "61490f2e53947de6b870e3a5eaad3328bcdccb90f9c50f8f5bb751299959c434"
+    },
+    {
+      "key": "run12_middle20_B64_eval1_inherited_cv5",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval1_inherited_cv5.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B64_eval1_inherited_cv5.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "31fe428653bf340948d368557699f04835c677df824f058308f3d05eb40c9b47"
+    },
+    {
+      "key": "run12_middle20_B64_eval1_inherited_cv6",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval1_inherited_cv6.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B64_eval1_inherited_cv6.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "bde2a48b7c4349e4ccdfe326078fa3a3c823bd4803eddab5426a72dc18a6306a"
+    },
+    {
+      "key": "run12_middle20_B64_eval1_spectrum_cv0",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval1_spectrum_cv0.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B64_eval1_spectrum_cv0.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "2daf1652c15e668446baf87d88e893ea5f560066e8ba6641bf379fdd67f54960"
+    },
+    {
+      "key": "run12_middle20_B64_eval1_spectrum_cv1",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval1_spectrum_cv1.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B64_eval1_spectrum_cv1.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "7607e50edcc1cf2514cf88ef71c359c386b590ac4256c8627bb458f6221013e3"
+    },
+    {
+      "key": "run12_middle20_B64_eval1_spectrum_cv2",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval1_spectrum_cv2.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B64_eval1_spectrum_cv2.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "e1277893665ee32767fe20cd83d445e2145d82da826979ff6cd6749f03dc84b2"
+    },
+    {
+      "key": "run12_middle20_B64_eval1_spectrum_cv3",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval1_spectrum_cv3.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B64_eval1_spectrum_cv3.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "ed9003dd9bbf0421252bc228a7394cbc77e36d3c23720c2def8f681d0a3a16b8"
+    },
+    {
+      "key": "run12_middle20_B64_eval1_spectrum_cv4",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval1_spectrum_cv4.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B64_eval1_spectrum_cv4.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "5560d2f75acae574663c311a45eaa94da6dd9ac72d2eeb8e7555a558f74446cb"
+    },
+    {
+      "key": "run12_middle20_B64_eval1_spectrum_cv5",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval1_spectrum_cv5.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B64_eval1_spectrum_cv5.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "fd106e35311ab73285eef9efadc704fb2b0ca0a75a57ea45d6c4d2d0feabf2ab"
+    },
+    {
+      "key": "run12_middle20_B64_eval1_spectrum_cv6",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval1_spectrum_cv6.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B64_eval1_spectrum_cv6.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "87c3466e8acee19dd0ef7c13465e4c3324dcf317a88a8dee89171bd651bcb4f5"
+    },
+    {
+      "key": "run12_middle20_B128_eval0_inherited_cv0",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval0_inherited_cv0.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B128_eval0_inherited_cv0.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "e1dda3485632d8f86672b4fa00ce0834a826f294db65188f76549b07b7feed90"
+    },
+    {
+      "key": "run12_middle20_B128_eval0_inherited_cv1",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval0_inherited_cv1.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B128_eval0_inherited_cv1.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "b5167cd02e5a3408f138135b759dca83c8b2dec846790abe1e2b8eab9ab78ed1"
+    },
+    {
+      "key": "run12_middle20_B128_eval0_inherited_cv2",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval0_inherited_cv2.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B128_eval0_inherited_cv2.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "5ea25f81563205a40f49f4217622f990a53350a0429aa6ba4175ba6ecf7e7c51"
+    },
+    {
+      "key": "run12_middle20_B128_eval0_inherited_cv3",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval0_inherited_cv3.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B128_eval0_inherited_cv3.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "e2687e1afb39550f71957a763083a0bc8c373a10fdc00a0f6d7e79dab0c56d7d"
+    },
+    {
+      "key": "run12_middle20_B128_eval0_inherited_cv4",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval0_inherited_cv4.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B128_eval0_inherited_cv4.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "f930e18a676b9a7f6a20b94ec5376f8c90434feaddba2c6e02bf55994e332c05"
+    },
+    {
+      "key": "run12_middle20_B128_eval0_inherited_cv5",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval0_inherited_cv5.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B128_eval0_inherited_cv5.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "a1ae1472b8cb317701f737311b64f2d6f08cbaa0db32bd26990ad5e12ea4383b"
+    },
+    {
+      "key": "run12_middle20_B128_eval0_inherited_cv6",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval0_inherited_cv6.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B128_eval0_inherited_cv6.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "3dfd03c3b7a207cb1cb90b313f6727d86f2853f8d26c052101bbd66b6bb1dd60"
+    },
+    {
+      "key": "run12_middle20_B128_eval0_spectrum_cv0",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval0_spectrum_cv0.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B128_eval0_spectrum_cv0.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "4e3fdf355f141002f2b8031b8fc87e6521eeec09d7545e2db97fc25d73895256"
+    },
+    {
+      "key": "run12_middle20_B128_eval0_spectrum_cv1",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval0_spectrum_cv1.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B128_eval0_spectrum_cv1.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "162c38cacbab77cfe8b5f3daa64a52ff94bfe18cab8165c034640de6208ff7db"
+    },
+    {
+      "key": "run12_middle20_B128_eval0_spectrum_cv2",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval0_spectrum_cv2.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B128_eval0_spectrum_cv2.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "bc0601cfc0290c520d5494e009c987e0ba199dbfe4a4060c12e588314b048ec3"
+    },
+    {
+      "key": "run12_middle20_B128_eval0_spectrum_cv3",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval0_spectrum_cv3.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B128_eval0_spectrum_cv3.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "0a3d3b0f50466bc60f335faa87d8367ba0d9b6d53c6c14aee74c7492f09f4dd2"
+    },
+    {
+      "key": "run12_middle20_B128_eval0_spectrum_cv4",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval0_spectrum_cv4.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B128_eval0_spectrum_cv4.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "9d0bbd952a6822372d11bd9a958b809cc504044c36fb832a99232ad5fd2ec8da"
+    },
+    {
+      "key": "run12_middle20_B128_eval0_spectrum_cv5",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval0_spectrum_cv5.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B128_eval0_spectrum_cv5.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "3a327c49fdb1e33690124586a9caeb6b03bd068561818051c63e8e09bd4d2ee7"
+    },
+    {
+      "key": "run12_middle20_B128_eval0_spectrum_cv6",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval0_spectrum_cv6.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B128_eval0_spectrum_cv6.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "ca3fc3c7990ed68f42b81ef090a9ce1311ce376fd7a1deed2f0ff131dfc38d0d"
+    },
+    {
+      "key": "run12_middle20_B128_eval1_inherited_cv0",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval1_inherited_cv0.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B128_eval1_inherited_cv0.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "3825fec88112aecbe9b181cc60ad145251a96b21e79ce5ce7b5d1286cc95bdd0"
+    },
+    {
+      "key": "run12_middle20_B128_eval1_inherited_cv1",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval1_inherited_cv1.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B128_eval1_inherited_cv1.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "be035a9b57187e6f3aae31d5d2a067655db128fa52a085a3912047e6581273d5"
+    },
+    {
+      "key": "run12_middle20_B128_eval1_inherited_cv2",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval1_inherited_cv2.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B128_eval1_inherited_cv2.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "23f3b51e9d209b60c3713b3633b6e8dd68e695196c04d739b0fe255df3dc821c"
+    },
+    {
+      "key": "run12_middle20_B128_eval1_inherited_cv3",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval1_inherited_cv3.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B128_eval1_inherited_cv3.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "5f9dd8a897bb5491a05c63216dbf84d797b12c7e73deb02307ff50c226dbebbb"
+    },
+    {
+      "key": "run12_middle20_B128_eval1_inherited_cv4",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval1_inherited_cv4.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B128_eval1_inherited_cv4.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "757900500e0a61e1c88c47b9d2ff9a4bb599023fab688cf3895037f8e0ea6976"
+    },
+    {
+      "key": "run12_middle20_B128_eval1_inherited_cv5",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval1_inherited_cv5.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B128_eval1_inherited_cv5.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "a9bbb2cd529e63ff1fd924e1b74233b99e237279c8f7281670ec140c13588b74"
+    },
+    {
+      "key": "run12_middle20_B128_eval1_inherited_cv6",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval1_inherited_cv6.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B128_eval1_inherited_cv6.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "2652098f657dd1f049aeb97a67dc5003930ba382bc795c92dd5e99d580edc9af"
+    },
+    {
+      "key": "run12_middle20_B128_eval1_spectrum_cv0",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval1_spectrum_cv0.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B128_eval1_spectrum_cv0.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "24bd3dfb3387515d87088d38f7726e185907a67537491d5e1e4767ceeaa67701"
+    },
+    {
+      "key": "run12_middle20_B128_eval1_spectrum_cv1",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval1_spectrum_cv1.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B128_eval1_spectrum_cv1.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "8bbb499cbef41cc11f41b98da9173fa0b8129b1ad3a138fcbd3fdca4f975a6e4"
+    },
+    {
+      "key": "run12_middle20_B128_eval1_spectrum_cv2",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval1_spectrum_cv2.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B128_eval1_spectrum_cv2.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "5069e9ac9f46c7da5ce5b15f21db77f20b47d128fb0220a88a60940a944b20d7"
+    },
+    {
+      "key": "run12_middle20_B128_eval1_spectrum_cv3",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval1_spectrum_cv3.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B128_eval1_spectrum_cv3.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "672ed550322da6adf69a2c86dc7fb5785f73d819aa833970c734493544ea8851"
+    },
+    {
+      "key": "run12_middle20_B128_eval1_spectrum_cv4",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval1_spectrum_cv4.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B128_eval1_spectrum_cv4.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "28a700d4fd049744a9e05f1ab9bb25f028393a1093b70fffac124911b282468c"
+    },
+    {
+      "key": "run12_middle20_B128_eval1_spectrum_cv5",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval1_spectrum_cv5.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B128_eval1_spectrum_cv5.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "8243da8776aa1ecf2ff46fb7a57db9e61fdab7fa52f2e3dd5a629661dc37097d"
+    },
+    {
+      "key": "run12_middle20_B128_eval1_spectrum_cv6",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval1_spectrum_cv6.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_middle20_B128_eval1_spectrum_cv6.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "db4b38be4374a1de96528f4e167ef91c283ea1300ee1810ddff8dbb7a2c17080"
+    },
+    {
+      "key": "run12_last20_B64_eval0_inherited_cv0",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval0_inherited_cv0.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B64_eval0_inherited_cv0.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "6347db2e933346f22264a4fa1f8d58db798ef73fe3f32e52f720011bca98d2b3"
+    },
+    {
+      "key": "run12_last20_B64_eval0_inherited_cv1",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval0_inherited_cv1.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B64_eval0_inherited_cv1.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "db5502622d5a9c53cd75c27e57bf96d857222a56d495f5c64523fe71f90ae56e"
+    },
+    {
+      "key": "run12_last20_B64_eval0_inherited_cv2",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval0_inherited_cv2.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B64_eval0_inherited_cv2.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "7e28f5b73c5815d502fc6d511a2ab264f23eac2fa4c1943bab1574a0e3020d6b"
+    },
+    {
+      "key": "run12_last20_B64_eval0_inherited_cv3",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval0_inherited_cv3.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B64_eval0_inherited_cv3.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "9382ca527083cd50a98dbcca1bf5ce7ad6a609d2a82f1c3896b4c5fcbc918421"
+    },
+    {
+      "key": "run12_last20_B64_eval0_inherited_cv4",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval0_inherited_cv4.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B64_eval0_inherited_cv4.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "b4f5e377e7f5a4ec0cc9248826e24a334a2a29d93efa2f35b5e4be9d2e7ad266"
+    },
+    {
+      "key": "run12_last20_B64_eval0_inherited_cv5",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval0_inherited_cv5.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B64_eval0_inherited_cv5.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "b78ef973c019a68a6518d51ec6248a85b002388025933524802c9c5a3f0c0d92"
+    },
+    {
+      "key": "run12_last20_B64_eval0_inherited_cv6",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval0_inherited_cv6.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B64_eval0_inherited_cv6.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "bd7f18892c137647654b0b5f01d440fddea6631b9a2e75470e11ef49e1d0a826"
+    },
+    {
+      "key": "run12_last20_B64_eval0_spectrum_cv0",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval0_spectrum_cv0.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B64_eval0_spectrum_cv0.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "191d3d3cb48f115e216886556a1abae2873df0098b16f61d61e0f26106b85505"
+    },
+    {
+      "key": "run12_last20_B64_eval0_spectrum_cv1",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval0_spectrum_cv1.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B64_eval0_spectrum_cv1.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "5dcf5ec4f91a3c5b0dfa4ea193e45cf6f295c7c8fdefa4b40e8a8d55451cf30c"
+    },
+    {
+      "key": "run12_last20_B64_eval0_spectrum_cv2",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval0_spectrum_cv2.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B64_eval0_spectrum_cv2.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "72dbaa68af51e71163703b03ddab9787f4131373fd06318bcf6d95a9876a2ca8"
+    },
+    {
+      "key": "run12_last20_B64_eval0_spectrum_cv3",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval0_spectrum_cv3.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B64_eval0_spectrum_cv3.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "f5378ab43cc2e8223dbbb8d51bd611195037648994bb17d66f7ed6dffa0de344"
+    },
+    {
+      "key": "run12_last20_B64_eval0_spectrum_cv4",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval0_spectrum_cv4.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B64_eval0_spectrum_cv4.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "df814505eb251c96423af33a7cde74f8f363f0bbc2cdc4288aef471a8a423f1f"
+    },
+    {
+      "key": "run12_last20_B64_eval0_spectrum_cv5",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval0_spectrum_cv5.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B64_eval0_spectrum_cv5.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "7fd8f5ea21e1b95a8994aec3d0a030ab9234f3414b503a442278d5b08c3a10d0"
+    },
+    {
+      "key": "run12_last20_B64_eval0_spectrum_cv6",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval0_spectrum_cv6.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B64_eval0_spectrum_cv6.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "321c718fc3f23139771145b63772446423fce98f272a6dd83e0f9e74cd7c1626"
+    },
+    {
+      "key": "run12_last20_B64_eval1_inherited_cv0",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval1_inherited_cv0.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B64_eval1_inherited_cv0.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "5595fdb419a2a2c74066e1f06d1be5a02eb89c65f0a62169a4498cc956591823"
+    },
+    {
+      "key": "run12_last20_B64_eval1_inherited_cv1",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval1_inherited_cv1.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B64_eval1_inherited_cv1.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "5b40daeba310e256875ac528cbf923364ae3f74254be613cea27d0d2870df372"
+    },
+    {
+      "key": "run12_last20_B64_eval1_inherited_cv2",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval1_inherited_cv2.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B64_eval1_inherited_cv2.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "89aefe300ef1fba30f7f21e7accc65f22a01d203e3df2fff062dbb53b7770421"
+    },
+    {
+      "key": "run12_last20_B64_eval1_inherited_cv3",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval1_inherited_cv3.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B64_eval1_inherited_cv3.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "7bda33b04a59eebc188d55409dd9e3a1226b8d0deea1271a492b4e14c99487bf"
+    },
+    {
+      "key": "run12_last20_B64_eval1_inherited_cv4",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval1_inherited_cv4.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B64_eval1_inherited_cv4.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "0b14de574266e7bbf6caa7b1c936c4649c17b1b28eb96c33384364696a5fe69a"
+    },
+    {
+      "key": "run12_last20_B64_eval1_inherited_cv5",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval1_inherited_cv5.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B64_eval1_inherited_cv5.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "b28d47534d3fdbd436c142afc3407e81073ad9aa78f0be659e57d7f42594f2c1"
+    },
+    {
+      "key": "run12_last20_B64_eval1_inherited_cv6",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval1_inherited_cv6.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B64_eval1_inherited_cv6.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "298e90465b843296f78aa431af3cf33d612610f03ccbe74f80e2775706eed579"
+    },
+    {
+      "key": "run12_last20_B64_eval1_spectrum_cv0",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval1_spectrum_cv0.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B64_eval1_spectrum_cv0.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "4fc3bd0ca69f56b03479eac05904a6162d7a8f1180dea4750718ba7941a705ca"
+    },
+    {
+      "key": "run12_last20_B64_eval1_spectrum_cv1",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval1_spectrum_cv1.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B64_eval1_spectrum_cv1.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "66c69dc091eadd8e52d4048592e68d5cb8b008cdc68909051e4d19c255df2b95"
+    },
+    {
+      "key": "run12_last20_B64_eval1_spectrum_cv2",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval1_spectrum_cv2.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B64_eval1_spectrum_cv2.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "9fc3aac528dc696e7061df2c8068a558ce18033f237436bbaa7a6377da846964"
+    },
+    {
+      "key": "run12_last20_B64_eval1_spectrum_cv3",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval1_spectrum_cv3.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B64_eval1_spectrum_cv3.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "85f07c7c77f2f187ae0b499e21352f1706981628aec1dcafb86d571166c7c2fb"
+    },
+    {
+      "key": "run12_last20_B64_eval1_spectrum_cv4",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval1_spectrum_cv4.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B64_eval1_spectrum_cv4.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "0c25e8002caff0b41617d5bb3f4e555eac8601e5cd21ee10a414717c13e90e60"
+    },
+    {
+      "key": "run12_last20_B64_eval1_spectrum_cv5",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval1_spectrum_cv5.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B64_eval1_spectrum_cv5.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "d648696fde5aa0ea503f5b70e274995bc3e6eb7e020abd1916632837e2b11f3d"
+    },
+    {
+      "key": "run12_last20_B64_eval1_spectrum_cv6",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval1_spectrum_cv6.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B64_eval1_spectrum_cv6.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "722979e6535e70ee067b41d561df36f371cd14f6f65c66207069f66a82ea4463"
+    },
+    {
+      "key": "run12_last20_B128_eval0_inherited_cv0",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval0_inherited_cv0.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B128_eval0_inherited_cv0.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "9e4a0bc861d4430d2d8164bfae8767bd1900767633686c5113fe7edc266ba1d0"
+    },
+    {
+      "key": "run12_last20_B128_eval0_inherited_cv1",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval0_inherited_cv1.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B128_eval0_inherited_cv1.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "4fe0102fd721493688cce1a773232a2c43351c5fdfbe2f27215509b8ad517075"
+    },
+    {
+      "key": "run12_last20_B128_eval0_inherited_cv2",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval0_inherited_cv2.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B128_eval0_inherited_cv2.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "be3db5d13e97e4ac734635b5157757919e0cf9039eb30b53a8d6d170e4cfead1"
+    },
+    {
+      "key": "run12_last20_B128_eval0_inherited_cv3",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval0_inherited_cv3.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B128_eval0_inherited_cv3.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "46e32fea25b5e69b15ec05ac5be23a7cc0d556fd74223a8175b64225da4a190f"
+    },
+    {
+      "key": "run12_last20_B128_eval0_inherited_cv4",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval0_inherited_cv4.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B128_eval0_inherited_cv4.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "2cc46f609ba242c296b3132dfdd7cd03bf3083240c0df01d25dd267426eae0ef"
+    },
+    {
+      "key": "run12_last20_B128_eval0_inherited_cv5",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval0_inherited_cv5.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B128_eval0_inherited_cv5.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "6c4395f60f2d49011fd49c2bb339428decce977036afc5078f5e4160e8d8af12"
+    },
+    {
+      "key": "run12_last20_B128_eval0_inherited_cv6",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval0_inherited_cv6.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B128_eval0_inherited_cv6.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "3d6f3b8609e39c260c254dbf5d8aab4b6cc87b826fdeb2f84602229c2318548e"
+    },
+    {
+      "key": "run12_last20_B128_eval0_spectrum_cv0",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval0_spectrum_cv0.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B128_eval0_spectrum_cv0.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "28c0e570ac5b601950afceb640e2a6879e2d5e1517289235892dda4d74a825f7"
+    },
+    {
+      "key": "run12_last20_B128_eval0_spectrum_cv1",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval0_spectrum_cv1.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B128_eval0_spectrum_cv1.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "4ef1fffa215d4381e5c4540fb6d34d719fe46a405db10092f26314125119665c"
+    },
+    {
+      "key": "run12_last20_B128_eval0_spectrum_cv2",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval0_spectrum_cv2.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B128_eval0_spectrum_cv2.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "7b55c9641666f1b9f943fcb17f406d8c6021a93765338cae4946bc325f6ae610"
+    },
+    {
+      "key": "run12_last20_B128_eval0_spectrum_cv3",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval0_spectrum_cv3.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B128_eval0_spectrum_cv3.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "4fda729d46f6e4199989d7d5f37ca6d6eff907b2f447da2c3719dd31bc3c1267"
+    },
+    {
+      "key": "run12_last20_B128_eval0_spectrum_cv4",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval0_spectrum_cv4.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B128_eval0_spectrum_cv4.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "9cd1fdb85c3261c0e86c59e9efb53e4e592494aab89f154f3a6f5cff3fbfd9ea"
+    },
+    {
+      "key": "run12_last20_B128_eval0_spectrum_cv5",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval0_spectrum_cv5.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B128_eval0_spectrum_cv5.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "2ef64db6c9b2f3b47d6c5247f7c89b11ceec4a2934d4bf00d8898528d1dc8ef2"
+    },
+    {
+      "key": "run12_last20_B128_eval0_spectrum_cv6",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval0_spectrum_cv6.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B128_eval0_spectrum_cv6.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "b5675f2ac8122ede2fae52368fdb3b1ae838187656c32deba1a6bd5a6623a84b"
+    },
+    {
+      "key": "run12_last20_B128_eval1_inherited_cv0",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval1_inherited_cv0.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B128_eval1_inherited_cv0.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "7e3c77864ddfce10d0dc3eba5062eedb67edaeaf277cbb92faac85fa2c77dea7"
+    },
+    {
+      "key": "run12_last20_B128_eval1_inherited_cv1",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval1_inherited_cv1.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B128_eval1_inherited_cv1.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "23433f13ab517a668861f82c782e8d05916b72c14e9532feb80de379b9bf6e5a"
+    },
+    {
+      "key": "run12_last20_B128_eval1_inherited_cv2",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval1_inherited_cv2.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B128_eval1_inherited_cv2.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "f7dd13b46f7ea1dd8d1022d87f0cf87e88421bdf850d63b68f44c7f0e5de09a8"
+    },
+    {
+      "key": "run12_last20_B128_eval1_inherited_cv3",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval1_inherited_cv3.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B128_eval1_inherited_cv3.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "deec7c94fd847b46204dfac0b1a9bafeab53babb77fa86cdd8e1975d92b09cf3"
+    },
+    {
+      "key": "run12_last20_B128_eval1_inherited_cv4",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval1_inherited_cv4.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B128_eval1_inherited_cv4.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "dc4f2ce51f58b01c93982261c86165f38459e7b9ed0fbf9464c90453bdcd84fa"
+    },
+    {
+      "key": "run12_last20_B128_eval1_inherited_cv5",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval1_inherited_cv5.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B128_eval1_inherited_cv5.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "00ea9897476b296cf35dea05c9a9ea0d8350115882254c64e45c337ecf82b614"
+    },
+    {
+      "key": "run12_last20_B128_eval1_inherited_cv6",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval1_inherited_cv6.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B128_eval1_inherited_cv6.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "4c394c06199ef87569234e47d719e8c628e38252ef9842ef95a06a12a03d07ba"
+    },
+    {
+      "key": "run12_last20_B128_eval1_spectrum_cv0",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval1_spectrum_cv0.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B128_eval1_spectrum_cv0.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "ba0ddc0a9522be52871f97f8bc2edda52618183b01d2a01a20b0ced7ac3abbd6"
+    },
+    {
+      "key": "run12_last20_B128_eval1_spectrum_cv1",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval1_spectrum_cv1.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B128_eval1_spectrum_cv1.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "bb6fcbd1a58507829258e826f9ddc70414fbc8563beb8249cebc6aa79ed0edc1"
+    },
+    {
+      "key": "run12_last20_B128_eval1_spectrum_cv2",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval1_spectrum_cv2.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B128_eval1_spectrum_cv2.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "c0f431a1c5371f28d028d600719da6aa13f165e7b9207075701b8d7cbf2223a2"
+    },
+    {
+      "key": "run12_last20_B128_eval1_spectrum_cv3",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval1_spectrum_cv3.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B128_eval1_spectrum_cv3.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "6b7f25ad4743145830a11d92830b0c7bd1f138fb1fe5bdb7177c0bf768fed4f5"
+    },
+    {
+      "key": "run12_last20_B128_eval1_spectrum_cv4",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval1_spectrum_cv4.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B128_eval1_spectrum_cv4.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "92cf30031de43608e74ee1b87a7b924de51990159a86ea5e719d5daa948919e0"
+    },
+    {
+      "key": "run12_last20_B128_eval1_spectrum_cv5",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval1_spectrum_cv5.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B128_eval1_spectrum_cv5.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "f258b6610578ad9a86faabb832531eb0b10f03f604f760b15af67bf471646c05"
+    },
+    {
+      "key": "run12_last20_B128_eval1_spectrum_cv6",
+      "config": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval1_spectrum_cv6.json",
+      "output": "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/native/run12_last20_B128_eval1_spectrum_cv6.root",
+      "phase_ns": 0.0,
+      "require_identity": false,
+      "config_sha256": "fd78c8df5012a429aef2f4abaf9ca2e5c3d4f7dece2eb65aab7663336df65b0f"
+    }
+  ]
+}

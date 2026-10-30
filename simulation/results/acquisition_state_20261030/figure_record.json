@@ -1,0 +1,14 @@
+{
+  "code_sha256": "e246872873938291a76f1dc9a84cb92af8b8f1b3b408308d7f6c4d4bb963230d",
+  "inputs_sha256": {
+    "simulation/results/acquisition_state_20261030/protocol.json": "68e0502e67e524a0a3c0d81be27c77fce2c73cfb053ebc2960bb69c1071efaef",
+    "simulation/results/acquisition_state_20261030/controls.json": "6658a820fdcdd5f1d4074cb3b8a658b7a8ac5e3c343d2c1318b2549b1f02a876",
+    "simulation/results/acquisition_state_20261030/states.json": "70bcfd4b9b7fe09937e25ff3dbf271fe4a59d0841c01c94fc2a0bbb2b42c4524"
+  },
+  "figures": [
+    "acquisition_state_traces",
+    "estimator_state_controls",
+    "pretrigger_state_prediction",
+    "signal_state_covariance"
+  ]
+}

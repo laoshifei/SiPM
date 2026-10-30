@@ -1,0 +1,247 @@
+{
+  "scope": "Continuous training-only RC proposals and fixed native noisy-bias corrections.",
+  "code_sha256": "c3f14efcadbbfc4ab940a53cf7d454e814d103af63bf99bb0f7e7db65887c905",
+  "protocol_sha256": "8a7565b3ded230e41eeacf1e4446b11b730a35f4c2a0ca54f9bcf00f31801679",
+  "groups": {
+    "run3_first60_B64_eval0": {
+      "entry": {
+        "source": "Co60",
+        "run": 3,
+        "segment": "first60",
+        "block": 64,
+        "evaluation_fold": 0,
+        "RC_ns": 128.21494566172396,
+        "transmission": 0.49966846730876624,
+        "noise_states": 2,
+        "fit": "simulation/results/state_response_20261030/fits/run3_first60_B64_eval0.json",
+        "fit_sha256": "08427fd9d4e5d0cd7b76c731c872465f0a6da9c3133861593159834cee443bbf"
+      },
+      "RC_ns": 130.13022290915163,
+      "transmission": 0.5013531553682552,
+      "selected_round": 1,
+      "native_key": "run3_first60_B64_eval0_mean1",
+      "fit": "simulation/results/rc_refinement_20261030/fits/run3_first60_B64_eval0_mean.json",
+      "fit_sha256": "66dfd1d3e8a3b17195f050e88f66cad8f041ce16c37e9fcba44bd1e153af3f0e"
+    },
+    "run3_first60_B64_eval1": {
+      "entry": {
+        "source": "Co60",
+        "run": 3,
+        "segment": "first60",
+        "block": 64,
+        "evaluation_fold": 1,
+        "RC_ns": 128.21494566172396,
+        "transmission": 0.49837462612943584,
+        "noise_states": 2,
+        "fit": "simulation/results/state_response_20261030/fits/run3_first60_B64_eval1.json",
+        "fit_sha256": "5010d157e8a135b3c31bf308ba688711be4dd7075a058cfc85e16db6164cd2f6"
+      },
+      "RC_ns": 130.40830648409326,
+      "transmission": 0.5001777762090728,
+      "selected_round": 2,
+      "native_key": "run3_first60_B64_eval1_mean2",
+      "fit": "simulation/results/rc_refinement_20261030/fits/run3_first60_B64_eval1_mean.json",
+      "fit_sha256": "cff99ae8de67cfdb1447eae90ab33d78410ab0c36f5251bf846c58a1cdc5eadd"
+    },
+    "run3_first60_B128_eval0": {
+      "entry": {
+        "source": "Co60",
+        "run": 3,
+        "segment": "first60",
+        "block": 128,
+        "evaluation_fold": 0,
+        "RC_ns": 128.21494566172396,
+        "transmission": 0.4992670039871934,
+        "noise_states": 2,
+        "fit": "simulation/results/state_response_20261030/fits/run3_first60_B128_eval0.json",
+        "fit_sha256": "a800df45fe1743ffdb56651cfd6573f3a1f135fa614ba3f8f2321d1d98e2120c"
+      },
+      "RC_ns": 130.5326257083662,
+      "transmission": 0.5011178998849729,
+      "selected_round": 2,
+      "native_key": "run3_first60_B128_eval0_mean2",
+      "fit": "simulation/results/rc_refinement_20261030/fits/run3_first60_B128_eval0_mean.json",
+      "fit_sha256": "a0a82eb8124a303eeb28d42544d3aac3ce7d9bf3056163fb7b90e28ca655a11f"
+    },
+    "run3_first60_B128_eval1": {
+      "entry": {
+        "source": "Co60",
+        "run": 3,
+        "segment": "first60",
+        "block": 128,
+        "evaluation_fold": 1,
+        "RC_ns": 128.21494566172396,
+        "transmission": 0.49875422303953365,
+        "noise_states": 2,
+        "fit": "simulation/results/state_response_20261030/fits/run3_first60_B128_eval1.json",
+        "fit_sha256": "b312c6a8fa8d354b8450a00a456cedf9831cac6f9b0ece1ed89322d2226f332d"
+      },
+      "RC_ns": 130.03393651673554,
+      "transmission": 0.5004041661666168,
+      "selected_round": 2,
+      "native_key": "run3_first60_B128_eval1_mean2",
+      "fit": "simulation/results/rc_refinement_20261030/fits/run3_first60_B128_eval1_mean.json",
+      "fit_sha256": "e3d0857deee78ea98a5f8b0f182120529ef6d67845bea0417c8fe1968217b95c"
+    },
+    "run3_middle20_B64_eval0": {
+      "entry": {
+        "source": "Co60",
+        "run": 3,
+        "segment": "middle20",
+        "block": 64,
+        "evaluation_fold": 0,
+        "RC_ns": 128.21494566172396,
+        "transmission": 0.49908648462632105,
+        "noise_states": 2,
+        "fit": "simulation/results/state_response_20261030/fits/run3_middle20_B64_eval0.json",
+        "fit_sha256": "3dd86b5234772bd5ef001ac5f34c9b5aa5248d3fb50d321d666def6a999c2c4f"
+      },
+      "RC_ns": 131.4380081978899,
+      "transmission": 0.5013033675452317,
+      "selected_round": 1,
+      "native_key": "run3_middle20_B64_eval0_mean1",
+      "fit": "simulation/results/rc_refinement_20261030/fits/run3_middle20_B64_eval0_mean.json",
+      "fit_sha256": "71bea750c4f7f87da7ed1942c71c878099d7c4a6c7bd6d3892585f68693fd322"
+    },
+    "run3_middle20_B64_eval1": {
+      "entry": {
+        "source": "Co60",
+        "run": 3,
+        "segment": "middle20",
+        "block": 64,
+        "evaluation_fold": 1,
+        "RC_ns": 128.21494566172396,
+        "transmission": 0.4989061826546548,
+        "noise_states": 2,
+        "fit": "simulation/results/state_response_20261030/fits/run3_middle20_B64_eval1.json",
+        "fit_sha256": "adf1ff56a41d2b57a1d3bb92002fd331a30442125a38b707385d7035b5e2a235"
+      },
+      "RC_ns": 132.39656139847713,
+      "transmission": 0.5014975023784788,
+      "selected_round": 1,
+      "native_key": "run3_middle20_B64_eval1_mean1",
+      "fit": "simulation/results/rc_refinement_20261030/fits/run3_middle20_B64_eval1_mean.json",
+      "fit_sha256": "482562bf190e1e6c261032a773fa3aa027f61c93eeba4ba32eb627a3a94f6136"
+    },
+    "run3_middle20_B128_eval0": {
+      "entry": {
+        "source": "Co60",
+        "run": 3,
+        "segment": "middle20",
+        "block": 128,
+        "evaluation_fold": 0,
+        "RC_ns": 128.21494566172396,
+        "transmission": 0.4986607218289755,
+        "noise_states": 2,
+        "fit": "simulation/results/state_response_20261030/fits/run3_middle20_B128_eval0.json",
+        "fit_sha256": "8be36974cae712bfd80c18b4e66b15e58aafe318a67e44259e9ec7062eff2794"
+      },
+      "RC_ns": 131.9459427376387,
+      "transmission": 0.5010728092232335,
+      "selected_round": 2,
+      "native_key": "run3_middle20_B128_eval0_mean2",
+      "fit": "simulation/results/rc_refinement_20261030/fits/run3_middle20_B128_eval0_mean.json",
+      "fit_sha256": "c46a9820911794fb0324902ea3a1129d399cad9bd91964042ad59a1ec4b995d8"
+    },
+    "run3_middle20_B128_eval1": {
+      "entry": {
+        "source": "Co60",
+        "run": 3,
+        "segment": "middle20",
+        "block": 128,
+        "evaluation_fold": 1,
+        "RC_ns": 128.21494566172396,
+        "transmission": 0.49943699648228634,
+        "noise_states": 2,
+        "fit": "simulation/results/state_response_20261030/fits/run3_middle20_B128_eval1.json",
+        "fit_sha256": "b375b12e1b128c9db41a4529aa41c24a2edb7dc3bb4efe0df072d42e45bf8393"
+      },
+      "RC_ns": 132.351233654148,
+      "transmission": 0.5020220867424615,
+      "selected_round": 1,
+      "native_key": "run3_middle20_B128_eval1_mean1",
+      "fit": "simulation/results/rc_refinement_20261030/fits/run3_middle20_B128_eval1_mean.json",
+      "fit_sha256": "27276b554b9f8ced76794941f8e5148bc3098cb65a191f9df8ea2d2673dd5c8e"
+    },
+    "run3_last20_B64_eval0": {
+      "entry": {
+        "source": "Co60",
+        "run": 3,
+        "segment": "last20",
+        "block": 64,
+        "evaluation_fold": 0,
+        "RC_ns": 128.21494566172396,
+        "transmission": 0.4987515214226795,
+        "noise_states": 2,
+        "fit": "simulation/results/state_response_20261030/fits/run3_last20_B64_eval0.json",
+        "fit_sha256": "f7005fce84ba244fa5b74475a35cb8dbaea4107e5f7294f62b7e92690a2b4b5e"
+      },
+      "RC_ns": 130.88977270733915,
+      "transmission": 0.5007440102374716,
+      "selected_round": 2,
+      "native_key": "run3_last20_B64_eval0_mean2",
+      "fit": "simulation/results/rc_refinement_20261030/fits/run3_last20_B64_eval0_mean.json",
+      "fit_sha256": "3cdae282a9815b0dd030ed7334b6651555dd4c7deed251e50c1bd91111c5b72a"
+    },
+    "run3_last20_B64_eval1": {
+      "entry": {
+        "source": "Co60",
+        "run": 3,
+        "segment": "last20",
+        "block": 64,
+        "evaluation_fold": 1,
+        "RC_ns": 128.21494566172396,
+        "transmission": 0.4990885744859667,
+        "noise_states": 2,
+        "fit": "simulation/results/state_response_20261030/fits/run3_last20_B64_eval1.json",
+        "fit_sha256": "31ee5f7564998de03fcceaf6664d185b0bc880c937a6ce10ad56fb135f5cfb34"
+      },
+      "RC_ns": 130.45909797113444,
+      "transmission": 0.5009117829030674,
+      "selected_round": 1,
+      "native_key": "run3_last20_B64_eval1_mean1",
+      "fit": "simulation/results/rc_refinement_20261030/fits/run3_last20_B64_eval1_mean.json",
+      "fit_sha256": "64a55d0f02dd536ab2e0b2fe0c218a406f8174612ad60e6fadaf27027e10c7fb"
+    },
+    "run3_last20_B128_eval0": {
+      "entry": {
+        "source": "Co60",
+        "run": 3,
+        "segment": "last20",
+        "block": 128,
+        "evaluation_fold": 0,
+        "RC_ns": 128.21494566172396,
+        "transmission": 0.4990752745151664,
+        "noise_states": 2,
+        "fit": "simulation/results/state_response_20261030/fits/run3_last20_B128_eval0.json",
+        "fit_sha256": "670c1243632ba8c5cde6064e94de5f977096dc86e7437c695578fb7efa3004fa"
+      },
+      "RC_ns": 130.3173761318058,
+      "transmission": 0.5008422304464137,
+      "selected_round": 2,
+      "native_key": "run3_last20_B128_eval0_mean2",
+      "fit": "simulation/results/rc_refinement_20261030/fits/run3_last20_B128_eval0_mean.json",
+      "fit_sha256": "df700be27f6255fa41f191bc523fbb578dde00f4339e57bd734de30f2bb9a477"
+    },
+    "run3_last20_B128_eval1": {
+      "entry": {
+        "source": "Co60",
+        "run": 3,
+        "segment": "last20",
+        "block": 128,
+        "evaluation_fold": 1,
+        "RC_ns": 128.21494566172396,
+        "transmission": 0.49897710056712086,
+        "noise_states": 2,
+        "fit": "simulation/results/state_response_20261030/fits/run3_last20_B128_eval1.json",
+        "fit_sha256": "2e41742e1183b237d76778bd2f6e99572720ece38a5f0d89e99864599bf14e97"
+      },
+      "RC_ns": 130.57123990896147,
+      "transmission": 0.5008351673252375,
+      "selected_round": 2,
+      "native_key": "run3_last20_B128_eval1_mean2",
+      "fit": "simulation/results/rc_refinement_20261030/fits/run3_last20_B128_eval1_mean.json",
+      "fit_sha256": "e458525b92ad1a76287a09f707957ac81cf1d988f7ea0256c48751d8dc0a45d7"
+    }
+  }
+}

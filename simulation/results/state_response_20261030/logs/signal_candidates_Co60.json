@@ -1,0 +1,252 @@
+{
+  "command": [
+    "/media/sf_works/SiPM/simulation/build/state_response_20261030/replay_readout",
+    "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/validation/run3_Co60/events.root",
+    "/media/sf_works/SiPM/simulation/results/state_response_20261030/configs/jobs_signal_candidates_Co60.json"
+  ],
+  "seconds": 40.86107802391052,
+  "jobs": {
+    "run3_first60_B64_eval0_response_inherited": {
+      "root": "simulation/results/state_response_20261030/native/run3_first60_B64_eval0_response_inherited.root",
+      "root_sha256": "e487796b0f2c3f945a5bb91c8aa0da2c0f9c91088c7ab0431afd2588e596ffb1",
+      "array_sha256": "1a6e422506af3b3f6e30f4356f59fd1846a6dc5eff7c2062a28e3b8a3186e7d5",
+      "config_sha256": "9ed1d169a4212baaf9ccf39b2204d4ad39c6f59900e530e14d46b99ea671d9fd",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_first60_B64_eval0_response_spectrum": {
+      "root": "simulation/results/state_response_20261030/native/run3_first60_B64_eval0_response_spectrum.root",
+      "root_sha256": "2c49d9f442b140ee3370bd28309729da7e1948d2d6505310fc28007b75897222",
+      "array_sha256": "779c99abc122a0083ef625622f0eca3e2bd99ae180fc4885b4f217ac700a0f32",
+      "config_sha256": "9f8aaf7abe87a5c7bfe509cbba1250d0057aceb6c73e3558e1147edd67a9a7f1",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_first60_B64_eval1_response_inherited": {
+      "root": "simulation/results/state_response_20261030/native/run3_first60_B64_eval1_response_inherited.root",
+      "root_sha256": "74c5c5a359921228282c9891f09b3dbab6f35d62fef0c6829d70f539236f6836",
+      "array_sha256": "f3c67699f006b2d043854898f846c1f7e7d78bc102d5853aca25fd7caf0fd587",
+      "config_sha256": "559f1c00ff7e5840a0c413382387eff93af82972e0778edd8b89e6b0bd256f24",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_first60_B64_eval1_response_spectrum": {
+      "root": "simulation/results/state_response_20261030/native/run3_first60_B64_eval1_response_spectrum.root",
+      "root_sha256": "2f83ba6e15613c2bb3b93086be991ca1b353f0b3688314f009770702e84d0827",
+      "array_sha256": "dd395077e6251e0478f309788831060cbc9da269ea3a56202d021049d1351cb6",
+      "config_sha256": "20810a243d810c045678dbfa20a1b997f9000e4e3812b3c48841995e8bde77d1",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_first60_B128_eval0_response_inherited": {
+      "root": "simulation/results/state_response_20261030/native/run3_first60_B128_eval0_response_inherited.root",
+      "root_sha256": "4f6f1b99977e495fe043be0daa03ee464bcfbde924df9c2d781e6b6857d9322d",
+      "array_sha256": "3e74cc7230f2903d11df2126e4b9271ad2debfe751c82ab9648ab1533e825684",
+      "config_sha256": "fdcf795e6bbc392b9cdcfdc9ff0060504e89ec55badb5c334aa80d8a1defca60",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_first60_B128_eval0_response_spectrum": {
+      "root": "simulation/results/state_response_20261030/native/run3_first60_B128_eval0_response_spectrum.root",
+      "root_sha256": "a5c68943ac9cf6fb734b2b26bc29b44b9e848f0c32e2b569ff2bf0b9965cd64f",
+      "array_sha256": "c3949fa0bdd86df225f95171da4393b750612fe28c088589fd26b41550c090e5",
+      "config_sha256": "27915c4cfc13d0140e5881640e5e683ccb0a425c1dd573ee1286295b80c73035",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_first60_B128_eval1_response_inherited": {
+      "root": "simulation/results/state_response_20261030/native/run3_first60_B128_eval1_response_inherited.root",
+      "root_sha256": "0b6fdefdcb61e2811dfe78049e634f78d4d1f140a02d6e97e047b77cf2ebc3f9",
+      "array_sha256": "ba013718264f682a020579bf154ddc799fdaa48a1ecc4300607ea2eb846bd3d3",
+      "config_sha256": "f029f7cb88cc301d96daa37bfad97850a19991a4486ebb557e6f757619db2b87",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_first60_B128_eval1_response_spectrum": {
+      "root": "simulation/results/state_response_20261030/native/run3_first60_B128_eval1_response_spectrum.root",
+      "root_sha256": "75be6f78899f4492f5c91a7041fec68897580bb630569d6bf753096dc9ccb4b5",
+      "array_sha256": "b116c2a49d9b97a4d62609f73985c6d0a555b439b9e04b87aaf95f83cb10a514",
+      "config_sha256": "2f7fb2eb209857fdc6340735cb4a0374f1a6e9d30abcb3adb544fb8d85283770",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_middle20_B64_eval0_response_inherited": {
+      "root": "simulation/results/state_response_20261030/native/run3_middle20_B64_eval0_response_inherited.root",
+      "root_sha256": "bb7206279d01613a0309cc736777b113c3541afa671d24b40b81476b3c16a18b",
+      "array_sha256": "ea03fe2dcc128248a6bbd81ef2715398119c6250c94e2578a53e4f81e5c9bee6",
+      "config_sha256": "ca508ebd7b458ac187082c6cc38cc60c4f40f455f279756039657f697d2da8fd",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_middle20_B64_eval0_response_spectrum": {
+      "root": "simulation/results/state_response_20261030/native/run3_middle20_B64_eval0_response_spectrum.root",
+      "root_sha256": "c28c66637d5a27b0c69f969ccb6f677c9af75aca1cbfc9d54aa12a8a766a09d0",
+      "array_sha256": "de07f1c29e1e7b9ef9d86114d68445e40c92f88deffed651df1e3c1b57575318",
+      "config_sha256": "31bc9f7ee1f53c8bb004c11f134bdc63de3e1e73538c1c447971847416968e48",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_middle20_B64_eval1_response_inherited": {
+      "root": "simulation/results/state_response_20261030/native/run3_middle20_B64_eval1_response_inherited.root",
+      "root_sha256": "efd34543f4d1f28df6792bcc4ca480fa14afc6598dc7f26a8d124183dfe532b0",
+      "array_sha256": "fcd4e592ee641453e05419216e3028da4efe13c65ebc3ef3999f3269b946872a",
+      "config_sha256": "5176b497cb82e75aa97d3674f3602476c3f7f6a4a3c168ebc71701136e928115",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_middle20_B64_eval1_response_spectrum": {
+      "root": "simulation/results/state_response_20261030/native/run3_middle20_B64_eval1_response_spectrum.root",
+      "root_sha256": "b252b463eb8a2da47adc10b9bc78ad09d8f1799ae46944ab5f8bef4fd27f3b87",
+      "array_sha256": "dc73a0e1590964e6a9b0a1c55e194036c489b9e3feaa2579f26842c981aedebe",
+      "config_sha256": "546224ef122e5d341bd055ffd9647c58c828829272ae50604b8efa2e5af49b41",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_middle20_B128_eval0_response_inherited": {
+      "root": "simulation/results/state_response_20261030/native/run3_middle20_B128_eval0_response_inherited.root",
+      "root_sha256": "9cbda88eb1549ea6a80cb8ad5c896ebda4f8b06bf8e694a8e455a6528e24934e",
+      "array_sha256": "fa42a1dd3f73636678d0990b6f3e98c4734b3daa763054abe14448d2f9b94257",
+      "config_sha256": "d34d119fcd04638ed4ecbb830a0dc856e1417da98f6f4014954e8d5c5fd2097e",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_middle20_B128_eval0_response_spectrum": {
+      "root": "simulation/results/state_response_20261030/native/run3_middle20_B128_eval0_response_spectrum.root",
+      "root_sha256": "da5a11cd1e185cfcf6ada16e54ca5fcc6b6a94b1f07ec56d92e59ac7567ad877",
+      "array_sha256": "151decb2d68b9784596465ec74039460b6040ca090d65e86e4680c53977a8cf1",
+      "config_sha256": "123ea957d471ad7541fd237d75664eaaea9eea84686dd88b935e9cf1884793c4",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_middle20_B128_eval1_response_inherited": {
+      "root": "simulation/results/state_response_20261030/native/run3_middle20_B128_eval1_response_inherited.root",
+      "root_sha256": "27372f61593d3672020795057efe5e9c49429e99c6c06e33cbbf0d334a879313",
+      "array_sha256": "50acabdb3c2a6185b944a6f32ef18ad30d9b7e0985668098cb01d6c6e2b5eb69",
+      "config_sha256": "62a00c8e0136895bea836886d7aa2cc222e86edb956a52f4f4ed45619725f945",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_middle20_B128_eval1_response_spectrum": {
+      "root": "simulation/results/state_response_20261030/native/run3_middle20_B128_eval1_response_spectrum.root",
+      "root_sha256": "f7a5c156ee33bc6896d5905d65a2f719ce78858935ea58db538fdfffc629d7a9",
+      "array_sha256": "43501b531f7f79f52784b56f4d9cb50205f5ee3e42d07f05a5b792151dab91e9",
+      "config_sha256": "379af360c8fbadc2416960b384c66bd188c0e6142207cb3ca959c9355257d43b",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_last20_B64_eval0_response_inherited": {
+      "root": "simulation/results/state_response_20261030/native/run3_last20_B64_eval0_response_inherited.root",
+      "root_sha256": "c6f2f8a2de8cc55fedc1dc72dcf775b00bfe4c964e5595508620d88e9375ebc7",
+      "array_sha256": "42f85a4df61696cd200217e81d2cfdf1f81b515d9e3576ba5aeb28cd1104fa9d",
+      "config_sha256": "8bd1cc6aa09ff1ee3ef3516e500500472be4b5546f3bea0ef69a2abdead453dc",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_last20_B64_eval0_response_spectrum": {
+      "root": "simulation/results/state_response_20261030/native/run3_last20_B64_eval0_response_spectrum.root",
+      "root_sha256": "048d28bcc8903c82473450cfd28fd5f75afe46e34264ccb8adbeff04d0bf68eb",
+      "array_sha256": "2d761565ec99116ce2357ee5d76f9285b0dfdc7a3d1dc6adde76ab05aebaa14d",
+      "config_sha256": "4b14ea8c8a6ddf411a11c6b7c8016ae91c755a3478b26d51a573c004c76adcfd",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_last20_B64_eval1_response_inherited": {
+      "root": "simulation/results/state_response_20261030/native/run3_last20_B64_eval1_response_inherited.root",
+      "root_sha256": "df347983c46d2d0c46abe0d234c003b9dd08a3c24104672dfb90361c41e42ecf",
+      "array_sha256": "931d2e32634f902a78eacfc99a36b2f230b582fc3240ab4a03d5f2f3a4accc54",
+      "config_sha256": "028729348fe83cf76268a0cdcee90b060537d4aa35db4178408a614ee66e1fd4",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_last20_B64_eval1_response_spectrum": {
+      "root": "simulation/results/state_response_20261030/native/run3_last20_B64_eval1_response_spectrum.root",
+      "root_sha256": "02e0523045f91bbe0bc829558fc341a43e681e9b3ebf8556008cd45477a526c5",
+      "array_sha256": "29aa4219eee1f9c7914701efb169fb7b9eed9d7733cd3a273e2d185398a77437",
+      "config_sha256": "776eefcc7cb42cb4175aa907564a12485359462eb3d75ab80228bfef5c3937f8",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_last20_B128_eval0_response_inherited": {
+      "root": "simulation/results/state_response_20261030/native/run3_last20_B128_eval0_response_inherited.root",
+      "root_sha256": "3ba0ffaea5fa125a14ce4734417f54d3abd1f1fd95b46d372ce72853bdac5415",
+      "array_sha256": "75545fa66c9385562136ace13692c1f93164f27af99a22edbf72a74691c8a804",
+      "config_sha256": "693894c7d02ee658c3593d26c3491522cddd17d4353fc73b80276ade4c4b5be6",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_last20_B128_eval0_response_spectrum": {
+      "root": "simulation/results/state_response_20261030/native/run3_last20_B128_eval0_response_spectrum.root",
+      "root_sha256": "047dbb3ee9f29158714591e34d860516ba1987ea1980e5f93e00a77bdf398344",
+      "array_sha256": "b9a6015af238dfbc2fca1884ea02db4534fdd434687c70ccad56ac431717a578",
+      "config_sha256": "835268965126d73453ca10c769fc21f3d679e5d3148a6cc79a24d0c5d55037cf",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_last20_B128_eval1_response_inherited": {
+      "root": "simulation/results/state_response_20261030/native/run3_last20_B128_eval1_response_inherited.root",
+      "root_sha256": "2759ae5e2d2b667a0a9af1d9594acf9b685b1c851d659fcc836da0db26b3cf6c",
+      "array_sha256": "5118875839ed631791d08b2b9f3f185cf79b93c4b90a6f7a024aa7a03aa4b733",
+      "config_sha256": "2a975364c942ed6734a941ff750c56a877d67dac8c6ea6902cc1b61ac357ad8b",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_last20_B128_eval1_response_spectrum": {
+      "root": "simulation/results/state_response_20261030/native/run3_last20_B128_eval1_response_spectrum.root",
+      "root_sha256": "d47a5a72acbd8a38f10564b11e620f749dc2d6e9692abfbd371a9a3a77dd94bc",
+      "array_sha256": "6bf71c87d8853e96ba2bb4ca457fe2bebca8d138bed5502991af7c8b7003b033",
+      "config_sha256": "9c0c991de2dfa582dd5939685cdecb65964be927f1dce767982c0f08efeaa39c",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 276,
+      "new_independent_mothers": 0
+    }
+  },
+  "binary_sha256": "1c4ed0831b17d5a5d5ce1c06d321e1eec303dd3886c935cf3b7df0e8c79e4ff4",
+  "plan_sha256": "e88580c1bf8ab383c404c59359b761884050518225d267593ec813f714f53df1"
+}

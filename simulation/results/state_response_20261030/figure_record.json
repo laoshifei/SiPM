@@ -1,0 +1,18 @@
+{
+  "scope": "Figures for conditional state calibration and rejected alignment shortcuts.",
+  "code_sha256": "85c435f7ffea7fc1bb8e57fb5bad474b0adaf99b38e962ebd4f03b46958af415",
+  "figures": [
+    "sampling_and_front_controls",
+    "conditional_RC_stability",
+    "state_native_joint_checks",
+    "state_native_waveforms",
+    "state_PID_covariance"
+  ],
+  "inputs_sha256": {
+    "simulation/results/state_response_20261030/protocol.json": "877e89fb51c4b906ed5c2c2fa2e30028b8ef8a9a2dd9a5a60e0c22472e5f2cf0",
+    "simulation/results/state_response_20261030/alignment.json": "c6f86aea5659660aebc75004024873d46130a407908c2e55cda4d42c75483fbb",
+    "simulation/results/state_response_20261030/mean_calibration.json": "886bae1d3e83c4e66a4391abcb834169a8234f82e4b8f264e2f7ea89b598177a",
+    "simulation/results/state_response_20261030/signal_calibration.json": "8376b428be341eadb2fcb53175bfcd65187a7e2d12590a2e998cda6c85eeba2a",
+    "simulation/results/state_response_20261030/evaluation.json": "12b606dc88d88fe29e6b0b169990c14310954e339c80495754f619fcb79b8e89"
+  }
+}

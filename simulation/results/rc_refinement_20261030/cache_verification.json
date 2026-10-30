@@ -1,0 +1,143 @@
+{
+  "scope": "Compare cached and legacy C++ readout bitwise across noise and cache invalidations.",
+  "passed": true,
+  "code_sha256": "fa8b094cb469998c254e4b61831d7613167ca2e81e54b59022dcc683e7bee541",
+  "protocol_sha256": "8a7565b3ded230e41eeacf1e4446b11b730a35f4c2a0ca54f9bcf00f31801679",
+  "cached_binary": "simulation/build/rc_refinement_20261030/replay_readout_cached",
+  "cached_binary_sha256": "3d5afc62c150678b8f8012703799eea406bd10829bf8ca9e2b43cbea601e6a2f",
+  "legacy_binary": "simulation/build/state_response_20261030/replay_readout",
+  "legacy_binary_sha256": "1c4ed0831b17d5a5d5ce1c06d321e1eec303dd3886c935cf3b7df0e8c79e4ff4",
+  "source_sha256": "d01567d8b63f685ba4e954563531693bc52b82a235209e992e092931d60651d8",
+  "test_cases": [
+    {
+      "source": "Co60",
+      "case": "identity",
+      "events": 12,
+      "base_cache_generation": 1,
+      "bitwise_ADC_signal_analog_equal": true
+    },
+    {
+      "source": "Co60",
+      "case": "cv_half",
+      "events": 12,
+      "base_cache_generation": 1,
+      "bitwise_ADC_signal_analog_equal": true
+    },
+    {
+      "source": "Co60",
+      "case": "cv_two",
+      "events": 12,
+      "base_cache_generation": 1,
+      "bitwise_ADC_signal_analog_equal": true
+    },
+    {
+      "source": "Co60",
+      "case": "white",
+      "events": 12,
+      "base_cache_generation": 1,
+      "bitwise_ADC_signal_analog_equal": true
+    },
+    {
+      "source": "Co60",
+      "case": "zero_residual",
+      "events": 12,
+      "base_cache_generation": 1,
+      "bitwise_ADC_signal_analog_equal": true
+    },
+    {
+      "source": "Co60",
+      "case": "RC_changed",
+      "events": 12,
+      "base_cache_generation": 2,
+      "bitwise_ADC_signal_analog_equal": true
+    },
+    {
+      "source": "Co60",
+      "case": "return_original",
+      "events": 12,
+      "base_cache_generation": 3,
+      "bitwise_ADC_signal_analog_equal": true
+    },
+    {
+      "source": "Co60",
+      "case": "phase_changed",
+      "events": 12,
+      "base_cache_generation": 4,
+      "bitwise_ADC_signal_analog_equal": true
+    },
+    {
+      "source": "Co60",
+      "case": "electronics_changed",
+      "events": 12,
+      "base_cache_generation": 5,
+      "bitwise_ADC_signal_analog_equal": true
+    },
+    {
+      "source": "Am241",
+      "case": "identity",
+      "events": 12,
+      "base_cache_generation": 1,
+      "bitwise_ADC_signal_analog_equal": true
+    },
+    {
+      "source": "Am241",
+      "case": "cv_half",
+      "events": 12,
+      "base_cache_generation": 1,
+      "bitwise_ADC_signal_analog_equal": true
+    },
+    {
+      "source": "Am241",
+      "case": "cv_two",
+      "events": 12,
+      "base_cache_generation": 1,
+      "bitwise_ADC_signal_analog_equal": true
+    },
+    {
+      "source": "Am241",
+      "case": "white",
+      "events": 12,
+      "base_cache_generation": 1,
+      "bitwise_ADC_signal_analog_equal": true
+    },
+    {
+      "source": "Am241",
+      "case": "zero_residual",
+      "events": 12,
+      "base_cache_generation": 1,
+      "bitwise_ADC_signal_analog_equal": true
+    },
+    {
+      "source": "Am241",
+      "case": "RC_changed",
+      "events": 12,
+      "base_cache_generation": 2,
+      "bitwise_ADC_signal_analog_equal": true
+    },
+    {
+      "source": "Am241",
+      "case": "return_original",
+      "events": 12,
+      "base_cache_generation": 3,
+      "bitwise_ADC_signal_analog_equal": true
+    },
+    {
+      "source": "Am241",
+      "case": "phase_changed",
+      "events": 12,
+      "base_cache_generation": 4,
+      "bitwise_ADC_signal_analog_equal": true
+    },
+    {
+      "source": "Am241",
+      "case": "electronics_changed",
+      "events": 12,
+      "base_cache_generation": 5,
+      "bitwise_ADC_signal_analog_equal": true
+    }
+  ],
+  "paired_event_cases": 216,
+  "engineering_native_jobs": 36,
+  "new_independent_mothers": 0,
+  "implementation_change": "Performance-only amendment before noise grid: cache the last fixed-avalanche deterministic+electronics result; regenerate signal residual with original event seed. Geometry, optics, sensor, fitting choices and all physics parameters unchanged. 216 event-cases equal legacy ADC/signal/analog bitwise, including cache invalidation."
+}

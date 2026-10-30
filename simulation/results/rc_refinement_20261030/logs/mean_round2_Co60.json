@@ -1,0 +1,108 @@
+{
+  "command": [
+    "/media/sf_works/SiPM/simulation/build/state_response_20261030/replay_readout",
+    "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/validation/run3_Co60/events.root",
+    "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/jobs_mean_round2_Co60.json"
+  ],
+  "seconds": 110.0617127418518,
+  "binary_sha256": "1c4ed0831b17d5a5d5ce1c06d321e1eec303dd3886c935cf3b7df0e8c79e4ff4",
+  "plan_sha256": "27c047224952a9df431fd633e499ea81a6837f28e525da861c7bfa9bedd2c0f3",
+  "jobs": {
+    "run3_first60_B64_eval0_mean2": {
+      "root": "simulation/results/rc_refinement_20261030/native/run3_first60_B64_eval0_mean2.root",
+      "root_sha256": "2eb58c343068095c182e1198f74a7f204c13df0a11df5b49b2f72f147785cbda",
+      "array_sha256": "fe9af59e9af9a7679fb02c9ad3db8c050c21b288748571628196d2a4fec5762f",
+      "config_sha256": "03c48bdbe5264ba7ded019abd705c9c2170438ac8f3de6827572f6c629dae97b",
+      "n_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_first60_B64_eval1_mean2": {
+      "root": "simulation/results/rc_refinement_20261030/native/run3_first60_B64_eval1_mean2.root",
+      "root_sha256": "81541a843a14ace82b68cc8a04bdf7d72b3b037e4a67e7e2c226123dc7f5842a",
+      "array_sha256": "2ae84df580d8affdba489aba8a225f9437a8baf49c8a8470e8051a5e8479387a",
+      "config_sha256": "014fa505961da0d788215c95c1ee618373179e6915ffe2175d6efca8cc5decf7",
+      "n_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_first60_B128_eval0_mean2": {
+      "root": "simulation/results/rc_refinement_20261030/native/run3_first60_B128_eval0_mean2.root",
+      "root_sha256": "090e0af708fa048e781c4dbae95e1ebd9a8641d5553e94ed2183adf9125f2c55",
+      "array_sha256": "d17475e86094ff21a2236583ac49c07a8631556c0c1085395dcddb066afb4ed4",
+      "config_sha256": "df0cf0c45c4d829d918a1ef1bd4e2787b605a96dc309890a1ab3d3933d9a1804",
+      "n_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_first60_B128_eval1_mean2": {
+      "root": "simulation/results/rc_refinement_20261030/native/run3_first60_B128_eval1_mean2.root",
+      "root_sha256": "9ce63cf0d4ad4517a050f13d6ad606879ce2b7992f3e094e402cc9e74631c57a",
+      "array_sha256": "f01edc39653bbe4c7e4013b9b2b86d64f62c8368d3bdcd8a45c383ea056b3277",
+      "config_sha256": "cdc347e7d42641fbea333cd3c7c02c0aabad6730e9ea44a0261acd100865b93c",
+      "n_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_middle20_B64_eval0_mean2": {
+      "root": "simulation/results/rc_refinement_20261030/native/run3_middle20_B64_eval0_mean2.root",
+      "root_sha256": "958119c1b92ee727efb9e739280e5f35ffc130043e9c6d524149a3ce1fb720b9",
+      "array_sha256": "e7aa0bc4c3a8a9efab91663aa544c0d996ad0647e4d7ac2744f4b1a4943bc343",
+      "config_sha256": "e1c0a3aefc960b6e41d86701bbc7a9f7dc9eeff34678470e64bed5e182c74a48",
+      "n_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_middle20_B64_eval1_mean2": {
+      "root": "simulation/results/rc_refinement_20261030/native/run3_middle20_B64_eval1_mean2.root",
+      "root_sha256": "63252f1bc325beaf14c9c08109e4c587f0c62d87a9b91158661f9444162ffe1c",
+      "array_sha256": "f4727dfc5e5612f43b45886e3542519ca71618b07112243a65a017d54ddf3035",
+      "config_sha256": "da6c2135e7d3f5a93ae40eb38da8309c1955305e6e709cdb60e76d137e3a0bcc",
+      "n_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_middle20_B128_eval0_mean2": {
+      "root": "simulation/results/rc_refinement_20261030/native/run3_middle20_B128_eval0_mean2.root",
+      "root_sha256": "03ad69fde2faf88efe38b0386e98f1582ad3a3fc43fdb78431f2c3e614b52ff0",
+      "array_sha256": "4ee1242d8315ab854fdd3efe9fe8ff589fcc7201510b86e9a4a611a3aa3bc748",
+      "config_sha256": "e3e5791032cf2dceaaf1853b8afe0e384c841f063ce260ebe939c9c7f3a731ed",
+      "n_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_middle20_B128_eval1_mean2": {
+      "root": "simulation/results/rc_refinement_20261030/native/run3_middle20_B128_eval1_mean2.root",
+      "root_sha256": "d34a1c76ca2104c0bd4ecd2a1ac8956d1c02d0ea398979e40dded14d3734af53",
+      "array_sha256": "ec81fcbec161294bb221c81290deaa3ed212b4b6b080f0d2f5180a0b2f99049d",
+      "config_sha256": "5b9272fc8ccf2fe2e4a860ee9cd622610e1ce57c0425da1b838cb427391ee388",
+      "n_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_last20_B64_eval0_mean2": {
+      "root": "simulation/results/rc_refinement_20261030/native/run3_last20_B64_eval0_mean2.root",
+      "root_sha256": "d2d765c7d3cdfdcb57a35475b875258b8e7925659510089de7d837db754f6901",
+      "array_sha256": "41ccb5ac7d92b1d7ae31c8167991d98f0db6b9c8d01da347999801c569e6b26d",
+      "config_sha256": "dd6b0618f8f3afd38077c205801ed27b80380f6f0e22b85c703bd7433c79151d",
+      "n_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_last20_B64_eval1_mean2": {
+      "root": "simulation/results/rc_refinement_20261030/native/run3_last20_B64_eval1_mean2.root",
+      "root_sha256": "f72347bfb3d54b6c794f2a1f24de7227483a75a266fc0746755213b8739ef29c",
+      "array_sha256": "c77bce5a92a0eb54ef61339cae29c9f2830fd48e72a1a8e8daf9d670ed6505d9",
+      "config_sha256": "d4f19de2d05de05273634edca505ff4987799e8e1ac893e7c61958bf72419eaf",
+      "n_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_last20_B128_eval0_mean2": {
+      "root": "simulation/results/rc_refinement_20261030/native/run3_last20_B128_eval0_mean2.root",
+      "root_sha256": "85ee73e9f0ea19a189328302ec7bb9e8a89b0c21d8914b0971d9e79bb5839e0b",
+      "array_sha256": "c126e516668083a98f331a1f8b8832a015d4d139c238eca858c38a674d33aa13",
+      "config_sha256": "86de81b4456a859668b1f0e972bdbb5b3110bf9ef2c53a1b3ea4c428c0af3e16",
+      "n_original_mothers": 276,
+      "new_independent_mothers": 0
+    },
+    "run3_last20_B128_eval1_mean2": {
+      "root": "simulation/results/rc_refinement_20261030/native/run3_last20_B128_eval1_mean2.root",
+      "root_sha256": "b108851c1bb4ae7030bb4dee47b0b740c130770e9e1208e49ca85bc471259b9e",
+      "array_sha256": "56c4ef52ab467c3c925be8b08a8c75aea8f999557041735f43683e6de2c395ee",
+      "config_sha256": "b70db93a1161d027424b9d3bccbd9bb5db0e599e8563b3c9cacac0b778d9901e",
+      "n_original_mothers": 276,
+      "new_independent_mothers": 0
+    }
+  }
+}

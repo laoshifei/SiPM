@@ -1,0 +1,225 @@
+{
+  "scope": "Fit positive spectra, then select native event-variance CV with joint distributions.",
+  "code_sha256": "8836f5ef29a79a67bd07356fdb52016f62eee1128bf46f70b5bf68c44977578b",
+  "protocol_sha256": "8a7565b3ded230e41eeacf1e4446b11b730a35f4c2a0ca54f9bcf00f31801679",
+  "groups": {
+    "run12_first60_B64_eval0": {
+      "fit": "simulation/results/rc_refinement_20261030/fits/run12_first60_B64_eval0_selection.json",
+      "fit_sha256": "bad647601c67c6d4468ac4d1aeed6deaa55a433079f0fb92ffc1bec3b5d6d3f5",
+      "families": {
+        "inherited": {
+          "chosen_native_key": "run12_first60_B64_eval0_inherited_cv1",
+          "chosen_CV": 0.09048491889007625,
+          "inherited_native_key": "run12_first60_B64_eval0_inherited_cv1",
+          "inherited_CV": 0.09048491889007625
+        },
+        "spectrum": {
+          "chosen_native_key": "run12_first60_B64_eval0_spectrum_cv1",
+          "chosen_CV": 0.09048491889007625,
+          "inherited_native_key": "run12_first60_B64_eval0_spectrum_cv1",
+          "inherited_CV": 0.09048491889007625
+        }
+      }
+    },
+    "run12_first60_B64_eval1": {
+      "fit": "simulation/results/rc_refinement_20261030/fits/run12_first60_B64_eval1_selection.json",
+      "fit_sha256": "7c3733d878cea4290a164b31b94e4d54599684ecd4245d2194d218a1baef0bdb",
+      "families": {
+        "inherited": {
+          "chosen_native_key": "run12_first60_B64_eval1_inherited_cv0",
+          "chosen_CV": 0.0,
+          "inherited_native_key": "run12_first60_B64_eval1_inherited_cv1",
+          "inherited_CV": 0.09048491889007625
+        },
+        "spectrum": {
+          "chosen_native_key": "run12_first60_B64_eval1_spectrum_cv0",
+          "chosen_CV": 0.0,
+          "inherited_native_key": "run12_first60_B64_eval1_spectrum_cv1",
+          "inherited_CV": 0.09048491889007625
+        }
+      }
+    },
+    "run12_first60_B128_eval0": {
+      "fit": "simulation/results/rc_refinement_20261030/fits/run12_first60_B128_eval0_selection.json",
+      "fit_sha256": "0b91314f30ce23791e91157383ef356e6bc29b1e641ed25db9f577be70d57c4e",
+      "families": {
+        "inherited": {
+          "chosen_native_key": "run12_first60_B128_eval0_inherited_cv0",
+          "chosen_CV": 0.0,
+          "inherited_native_key": "run12_first60_B128_eval0_inherited_cv1",
+          "inherited_CV": 0.09048491889007625
+        },
+        "spectrum": {
+          "chosen_native_key": "run12_first60_B128_eval0_spectrum_cv0",
+          "chosen_CV": 0.0,
+          "inherited_native_key": "run12_first60_B128_eval0_spectrum_cv1",
+          "inherited_CV": 0.09048491889007625
+        }
+      }
+    },
+    "run12_first60_B128_eval1": {
+      "fit": "simulation/results/rc_refinement_20261030/fits/run12_first60_B128_eval1_selection.json",
+      "fit_sha256": "288de29872bd3e30a2a92cd67caa9f9d21ddfcd9941ed84c1e2cfb3be71e1fd5",
+      "families": {
+        "inherited": {
+          "chosen_native_key": "run12_first60_B128_eval1_inherited_cv0",
+          "chosen_CV": 0.0,
+          "inherited_native_key": "run12_first60_B128_eval1_inherited_cv1",
+          "inherited_CV": 0.09048491889007625
+        },
+        "spectrum": {
+          "chosen_native_key": "run12_first60_B128_eval1_spectrum_cv0",
+          "chosen_CV": 0.0,
+          "inherited_native_key": "run12_first60_B128_eval1_spectrum_cv1",
+          "inherited_CV": 0.09048491889007625
+        }
+      }
+    },
+    "run12_middle20_B64_eval0": {
+      "fit": "simulation/results/rc_refinement_20261030/fits/run12_middle20_B64_eval0_selection.json",
+      "fit_sha256": "75e0d4c001ba50c268ec7514a859504fee9dac2f9696ba5ff34ae633b4f7d5f2",
+      "families": {
+        "inherited": {
+          "chosen_native_key": "run12_middle20_B64_eval0_inherited_cv0",
+          "chosen_CV": 0.0,
+          "inherited_native_key": "run12_middle20_B64_eval0_inherited_cv1",
+          "inherited_CV": 0.09048491889007625
+        },
+        "spectrum": {
+          "chosen_native_key": "run12_middle20_B64_eval0_spectrum_cv0",
+          "chosen_CV": 0.0,
+          "inherited_native_key": "run12_middle20_B64_eval0_spectrum_cv1",
+          "inherited_CV": 0.09048491889007625
+        }
+      }
+    },
+    "run12_middle20_B64_eval1": {
+      "fit": "simulation/results/rc_refinement_20261030/fits/run12_middle20_B64_eval1_selection.json",
+      "fit_sha256": "629b6b919a55584382d1a2fd2d9ac3bb62be926670de821b8de64e82126fb0a5",
+      "families": {
+        "inherited": {
+          "chosen_native_key": "run12_middle20_B64_eval1_inherited_cv0",
+          "chosen_CV": 0.0,
+          "inherited_native_key": "run12_middle20_B64_eval1_inherited_cv1",
+          "inherited_CV": 0.09048491889007625
+        },
+        "spectrum": {
+          "chosen_native_key": "run12_middle20_B64_eval1_spectrum_cv1",
+          "chosen_CV": 0.09048491889007625,
+          "inherited_native_key": "run12_middle20_B64_eval1_spectrum_cv1",
+          "inherited_CV": 0.09048491889007625
+        }
+      }
+    },
+    "run12_middle20_B128_eval0": {
+      "fit": "simulation/results/rc_refinement_20261030/fits/run12_middle20_B128_eval0_selection.json",
+      "fit_sha256": "1336156f4bca0ebf7071874a82b253d094e6d7bef834630230da2c069f3f528f",
+      "families": {
+        "inherited": {
+          "chosen_native_key": "run12_middle20_B128_eval0_inherited_cv0",
+          "chosen_CV": 0.0,
+          "inherited_native_key": "run12_middle20_B128_eval0_inherited_cv1",
+          "inherited_CV": 0.09048491889007625
+        },
+        "spectrum": {
+          "chosen_native_key": "run12_middle20_B128_eval0_spectrum_cv0",
+          "chosen_CV": 0.0,
+          "inherited_native_key": "run12_middle20_B128_eval0_spectrum_cv1",
+          "inherited_CV": 0.09048491889007625
+        }
+      }
+    },
+    "run12_middle20_B128_eval1": {
+      "fit": "simulation/results/rc_refinement_20261030/fits/run12_middle20_B128_eval1_selection.json",
+      "fit_sha256": "2b6f15c62d2c941847f50b9b0b84d9e3138859f845b36bf44272521f54c23f27",
+      "families": {
+        "inherited": {
+          "chosen_native_key": "run12_middle20_B128_eval1_inherited_cv0",
+          "chosen_CV": 0.0,
+          "inherited_native_key": "run12_middle20_B128_eval1_inherited_cv1",
+          "inherited_CV": 0.09048491889007625
+        },
+        "spectrum": {
+          "chosen_native_key": "run12_middle20_B128_eval1_spectrum_cv0",
+          "chosen_CV": 0.0,
+          "inherited_native_key": "run12_middle20_B128_eval1_spectrum_cv1",
+          "inherited_CV": 0.09048491889007625
+        }
+      }
+    },
+    "run12_last20_B64_eval0": {
+      "fit": "simulation/results/rc_refinement_20261030/fits/run12_last20_B64_eval0_selection.json",
+      "fit_sha256": "ba1c3c7f896e3961ee926c85cedcb96a24f8a55f24e47c1c88896bde283257f1",
+      "families": {
+        "inherited": {
+          "chosen_native_key": "run12_last20_B64_eval0_inherited_cv0",
+          "chosen_CV": 0.0,
+          "inherited_native_key": "run12_last20_B64_eval0_inherited_cv1",
+          "inherited_CV": 0.09048491889007625
+        },
+        "spectrum": {
+          "chosen_native_key": "run12_last20_B64_eval0_spectrum_cv0",
+          "chosen_CV": 0.0,
+          "inherited_native_key": "run12_last20_B64_eval0_spectrum_cv1",
+          "inherited_CV": 0.09048491889007625
+        }
+      }
+    },
+    "run12_last20_B64_eval1": {
+      "fit": "simulation/results/rc_refinement_20261030/fits/run12_last20_B64_eval1_selection.json",
+      "fit_sha256": "a151aee3a5c8992e637e933cb87ea18ffcc4a590f01f170bd4f4112833f24932",
+      "families": {
+        "inherited": {
+          "chosen_native_key": "run12_last20_B64_eval1_inherited_cv0",
+          "chosen_CV": 0.0,
+          "inherited_native_key": "run12_last20_B64_eval1_inherited_cv1",
+          "inherited_CV": 0.09048491889007625
+        },
+        "spectrum": {
+          "chosen_native_key": "run12_last20_B64_eval1_spectrum_cv0",
+          "chosen_CV": 0.0,
+          "inherited_native_key": "run12_last20_B64_eval1_spectrum_cv1",
+          "inherited_CV": 0.09048491889007625
+        }
+      }
+    },
+    "run12_last20_B128_eval0": {
+      "fit": "simulation/results/rc_refinement_20261030/fits/run12_last20_B128_eval0_selection.json",
+      "fit_sha256": "a4a6eaf572ae8a944343a00aa783032e096544ebfb66894ef6e50093f6a15337",
+      "families": {
+        "inherited": {
+          "chosen_native_key": "run12_last20_B128_eval0_inherited_cv0",
+          "chosen_CV": 0.0,
+          "inherited_native_key": "run12_last20_B128_eval0_inherited_cv1",
+          "inherited_CV": 0.09048491889007625
+        },
+        "spectrum": {
+          "chosen_native_key": "run12_last20_B128_eval0_spectrum_cv0",
+          "chosen_CV": 0.0,
+          "inherited_native_key": "run12_last20_B128_eval0_spectrum_cv1",
+          "inherited_CV": 0.09048491889007625
+        }
+      }
+    },
+    "run12_last20_B128_eval1": {
+      "fit": "simulation/results/rc_refinement_20261030/fits/run12_last20_B128_eval1_selection.json",
+      "fit_sha256": "92ba18e853de57b8a13891318b433aad4aa62f858384ba306f14f0433d78ef6c",
+      "families": {
+        "inherited": {
+          "chosen_native_key": "run12_last20_B128_eval1_inherited_cv1",
+          "chosen_CV": 0.09048491889007625,
+          "inherited_native_key": "run12_last20_B128_eval1_inherited_cv1",
+          "inherited_CV": 0.09048491889007625
+        },
+        "spectrum": {
+          "chosen_native_key": "run12_last20_B128_eval1_spectrum_cv1",
+          "chosen_CV": 0.09048491889007625,
+          "inherited_native_key": "run12_last20_B128_eval1_spectrum_cv1",
+          "inherited_CV": 0.09048491889007625
+        }
+      }
+    }
+  },
+  "new_independent_mothers": 0,
+  "default_changed": false
+}

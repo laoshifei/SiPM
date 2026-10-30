@@ -1,0 +1,252 @@
+{
+  "command": [
+    "/media/sf_works/SiPM/simulation/build/state_response_20261030/replay_readout",
+    "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/validation/run12_Am241/events.root",
+    "/media/sf_works/SiPM/simulation/results/state_response_20261030/configs/jobs_state_base_Am241.json"
+  ],
+  "seconds": 26.37183427810669,
+  "jobs": {
+    "run12_first60_B64_eval0_electronics": {
+      "root": "simulation/results/state_response_20261030/native/run12_first60_B64_eval0_electronics.root",
+      "root_sha256": "9eac974ee4484a4890df2ec1ddf0230daf7d660e042f780ecb56e546e1ef438e",
+      "array_sha256": "c2eba4755b6bd2ac439274807768a8bd156ac287b6babb7941c8c2a73e24fced",
+      "config_sha256": "4cc7ad8d9e702062cdd7aba6dd88651aa1dadcb2d03fcda315427d42632f7ded",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_first60_B64_eval0_base": {
+      "root": "simulation/results/state_response_20261030/native/run12_first60_B64_eval0_base.root",
+      "root_sha256": "26388cc9281a0b5b7fb4588b7c92617e0e4aadf23a36b4b8a0ca3f56b38206ad",
+      "array_sha256": "2a587cbd6b6a057e476fba2fbab666a9caa20ff6edafc0d157292f77ff167c75",
+      "config_sha256": "67f36d15e06d51149d2b8bf889675924e7bacb2665666042a8a67ec2889a7c90",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_first60_B64_eval1_electronics": {
+      "root": "simulation/results/state_response_20261030/native/run12_first60_B64_eval1_electronics.root",
+      "root_sha256": "7cab1b8c0aed28d8dc608720d4eadb09ed1d4044779397c229bb610ffb062448",
+      "array_sha256": "ad6ee4722c97d99f8d8ebe44a2159332d1fa28b0b49d5f40340f9ab5c34bda04",
+      "config_sha256": "cdda59804ecdcf34d9d5678cf3f81e705ff111b6651c6e288f6eebc1469e5f72",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_first60_B64_eval1_base": {
+      "root": "simulation/results/state_response_20261030/native/run12_first60_B64_eval1_base.root",
+      "root_sha256": "a8eb523c51e1df70100ffebba8a404ec085193a829569843c5de420c709ca476",
+      "array_sha256": "df7556b4bfcdc9918354d946269daf511c9ba7d15928a3b57f316a78ea042acd",
+      "config_sha256": "a92d0627e4b97260da8bb7061582219d7ad090f54dfed1d0a3f151b04ce9ad37",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_first60_B128_eval0_electronics": {
+      "root": "simulation/results/state_response_20261030/native/run12_first60_B128_eval0_electronics.root",
+      "root_sha256": "f951ff6b1bada1fa03c5f4f44e2b24c1cba8c91a24a7a06f6596cb85ee1aa1fe",
+      "array_sha256": "9e6098412aeada4c3759f9b81bcd35d82855efe0ce27f44f8732d2621a320bc6",
+      "config_sha256": "5aa8807bb41c44f473d01be70dd9cb1f42c85a7a2b2d19c522a4d767bc01467e",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_first60_B128_eval0_base": {
+      "root": "simulation/results/state_response_20261030/native/run12_first60_B128_eval0_base.root",
+      "root_sha256": "7207779f869373e0a4ecd2c6e8e3684885eb7ee541363edd17463178ebc1c2be",
+      "array_sha256": "fe6500a5eb5993b91d6fcad67b99fd4639d5d6c129bc58ef4a60755c7c091294",
+      "config_sha256": "5a0e0a982bba2392089c645aa4e8824cc59b70b6632eb95215e612d29e6d2254",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_first60_B128_eval1_electronics": {
+      "root": "simulation/results/state_response_20261030/native/run12_first60_B128_eval1_electronics.root",
+      "root_sha256": "fde581f352bff4eed262f2bdc816edd39b78a6d76798fa1e9622d961b866668f",
+      "array_sha256": "acaeb75b8cbe6b204606c0dca8dc3decaf0389f256f4da50dbe8ef1ae13977f2",
+      "config_sha256": "2e32ef6d87080fc13e8ea23967d3e8f714e6ffbbfd3f094cf8b4aa2a801ec319",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_first60_B128_eval1_base": {
+      "root": "simulation/results/state_response_20261030/native/run12_first60_B128_eval1_base.root",
+      "root_sha256": "f0caaaa1f45bd451dc2dfee73ff151348df1409545ed256eca2aeffef584a541",
+      "array_sha256": "e54c8324c304e2551d60ae3183ff039711cfb5cfda1c871ab070954b4407ad7c",
+      "config_sha256": "ad9e48dbdb957dfa24ba36cbfb1184d30ceda0d2f244b212db0d538105b05e4f",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_middle20_B64_eval0_electronics": {
+      "root": "simulation/results/state_response_20261030/native/run12_middle20_B64_eval0_electronics.root",
+      "root_sha256": "800c2c37f91b66eda845b2135164af1753ef29bc486637bf546d4ed05f9f831b",
+      "array_sha256": "76d424a079556c53c626068cedb6ac0dc782d4fd18b705f2da594cc51335a3f1",
+      "config_sha256": "53ad29fc64237be6c1d7b23aab06125c4b94043354e4d51e5afece12b7640de6",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_middle20_B64_eval0_base": {
+      "root": "simulation/results/state_response_20261030/native/run12_middle20_B64_eval0_base.root",
+      "root_sha256": "84fcbe30b8957f041fc2d0e106cf010f47648c033fc21ed9b38236fbb2b64c82",
+      "array_sha256": "2fa2846a7973b497ddebe50bbf4c2c989afa60c16cca3c3e2e0323392b841d10",
+      "config_sha256": "284b546e219b0b14f30d51cf268287fc481b36d5ad1fcfb1768b52f91351aafd",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_middle20_B64_eval1_electronics": {
+      "root": "simulation/results/state_response_20261030/native/run12_middle20_B64_eval1_electronics.root",
+      "root_sha256": "6f92b661233ce2e2a9e8446220b7797a28d9fb9bf624c7710d51be8a6d8c7ec7",
+      "array_sha256": "7ab37e296a15d942cc31cc81b9a4872c69604a8010e45295bcc64992a066ec0a",
+      "config_sha256": "10f225f5db049153a2f5df8164549bf36a567f0820117a4968d792bdeeca0996",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_middle20_B64_eval1_base": {
+      "root": "simulation/results/state_response_20261030/native/run12_middle20_B64_eval1_base.root",
+      "root_sha256": "efb9438eaa4cc3f081d91797a777fa1192c0fb5ab07c1da9276143c3d65b9e7b",
+      "array_sha256": "ac2b5ca6b16c50fb027d825a7711580920a8b96b2b4dca597b9507813df9e5fe",
+      "config_sha256": "de51ebb051b035bd1acb1d4b661d46f21afe4905afafbb3b537059ee6bfe52df",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_middle20_B128_eval0_electronics": {
+      "root": "simulation/results/state_response_20261030/native/run12_middle20_B128_eval0_electronics.root",
+      "root_sha256": "0eef26764f92ef9b1bfd1a285227a004409dacb65c760f62be038d6519cce5da",
+      "array_sha256": "7c9c9ab3fba47b51441e97f53122a457c0deb12fd83a22d2942e4e743d81e4eb",
+      "config_sha256": "1fa4d8f77857379e5d397efb95b5dfebd522d5404fd015f0ce72fd04e0e83a4d",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_middle20_B128_eval0_base": {
+      "root": "simulation/results/state_response_20261030/native/run12_middle20_B128_eval0_base.root",
+      "root_sha256": "67d67f39c0e242ce5aa01bab639ff759b6a6ea7c22094e776c732e7ccdd016e0",
+      "array_sha256": "4faca3fbf0f3d601a9456cba9f57372d7d846e437a982276be189b14023d7c89",
+      "config_sha256": "46e1ec1e3a2a49974b9e9f96de8c29e1a3f31c8026220f3649f6d719aa0af5d9",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_middle20_B128_eval1_electronics": {
+      "root": "simulation/results/state_response_20261030/native/run12_middle20_B128_eval1_electronics.root",
+      "root_sha256": "9943ecade87590738824600a19d28109053be33c5691bae7e1cd9aa98c1deadd",
+      "array_sha256": "92628907bcfcf9433022465e7d995f7e9339837ec9c856b255939eb45a99273f",
+      "config_sha256": "dce265c1efa8f3d425f8a54acda7d233c588f550f7674eda6a7aaa8f74bb530f",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_middle20_B128_eval1_base": {
+      "root": "simulation/results/state_response_20261030/native/run12_middle20_B128_eval1_base.root",
+      "root_sha256": "6df9bd912e7b54b253d28fddbc9faabf2617c23b8596f4254a04379bc186e357",
+      "array_sha256": "3184d1cc6b0c79605a109c47ace08d12d0fa34de157ba5b2aa8267dca22cc250",
+      "config_sha256": "ac1214e694aac8a89706e4788c6a6106d1dc815026eff1a7219582ef19a48d08",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_last20_B64_eval0_electronics": {
+      "root": "simulation/results/state_response_20261030/native/run12_last20_B64_eval0_electronics.root",
+      "root_sha256": "64eb7295a1131a255fe491a76c958fd08313a791c38811854228cd71777a012f",
+      "array_sha256": "85dd55263d1a351245a47b8775c40e58aeeb2a8cd5e3119a23c46884eac4b5d5",
+      "config_sha256": "1c8ec6ddae8f49870432126e4427f50f61548a377340d7c11aaacdef0679b174",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_last20_B64_eval0_base": {
+      "root": "simulation/results/state_response_20261030/native/run12_last20_B64_eval0_base.root",
+      "root_sha256": "0640f9e3fa2bdd68da2d52602342abd5240b021ee5e6c0431a9ac466f8b47203",
+      "array_sha256": "48e2a6d18245830a92de6e7e472fe80d07ff6b8d9180e9b08ab577f6655ad1a4",
+      "config_sha256": "342ecfc43bb6c0f675480b887c0f9c62e51a562b0ca43d656f5dc5d15b96affb",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_last20_B64_eval1_electronics": {
+      "root": "simulation/results/state_response_20261030/native/run12_last20_B64_eval1_electronics.root",
+      "root_sha256": "28fc104c64c5b011e3b809607c9941ecbdf66dbbce84c67da32dbd6fa99b9bf5",
+      "array_sha256": "52aaedeb87748f14c62c8fe905edde1d59ebc9eec7ac050f6f77d6f8b61d8074",
+      "config_sha256": "b9fa917d61210c8667b4f0d126787dd1045497ec3d2a4ce6fe19749fb6463880",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_last20_B64_eval1_base": {
+      "root": "simulation/results/state_response_20261030/native/run12_last20_B64_eval1_base.root",
+      "root_sha256": "f0df81520ff137d83b09c2e438ac064983b5adaf8c34d7656141b12fe1b0f2f1",
+      "array_sha256": "0ff310196c6b9be7f07a2e0340bb6244f41bb62d20c6d3c0b66b47751a236205",
+      "config_sha256": "77898a5e6622bca6f2417eeb5be29faf04afbfc1a37623890109c01d026c2826",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_last20_B128_eval0_electronics": {
+      "root": "simulation/results/state_response_20261030/native/run12_last20_B128_eval0_electronics.root",
+      "root_sha256": "f35662d22b15955f1cfd4793ed7803e111825bb798bd6db744f3787422d5b7ac",
+      "array_sha256": "11b69ab52e3daa178d4495efc1c7de43b7889f19ca5258f6bc36807b1aab85ea",
+      "config_sha256": "2b8ac38ab999924653229af49615eddcf36f7aad6908978a07723ca8983ce6a6",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_last20_B128_eval0_base": {
+      "root": "simulation/results/state_response_20261030/native/run12_last20_B128_eval0_base.root",
+      "root_sha256": "3a5366a07ecf57a2d271d60afed89af30566aa8f2c8f2056483ca9fb4d84aee2",
+      "array_sha256": "075516298917a076f111813534002d3a33e1bee83482dd205f560952628ab9e1",
+      "config_sha256": "43d8a46ed142660506a837ac88d9cc0e851f9c4908a42e5de375f27fbb0793a0",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_last20_B128_eval1_electronics": {
+      "root": "simulation/results/state_response_20261030/native/run12_last20_B128_eval1_electronics.root",
+      "root_sha256": "b358fb82d55a9afac08666168ecf5ebd9c629b84cdd0acc6c6f1f8ede7a58fc7",
+      "array_sha256": "9f2d5b82259df49c9688a2dd77d7e8897f1feb230226969d6daab1f859ab8cc2",
+      "config_sha256": "f4aaa09b071e4bd3f8a8f63205b66607180d92418a862dd5b2f17c473873e40f",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_last20_B128_eval1_base": {
+      "root": "simulation/results/state_response_20261030/native/run12_last20_B128_eval1_base.root",
+      "root_sha256": "ebea0a389d1f787f91fc6c95f131b31bb93ec3b43d1e31e8cb1728a202d3d233",
+      "array_sha256": "f6bc5328f92c4bbd2ef77f297cb8e63404334446ef56d2e9c875abf1723a7d78",
+      "config_sha256": "8267ea5d8b5c97d85e174d2a366b88c66b356ac3ed633329e0ec7c29219ed917",
+      "phase_ns": 0.0,
+      "equal_parent_ADC": 0,
+      "n_selected_original_mothers": 194,
+      "new_independent_mothers": 0
+    }
+  },
+  "binary_sha256": "1c4ed0831b17d5a5d5ce1c06d321e1eec303dd3886c935cf3b7df0e8c79e4ff4",
+  "plan_sha256": "cca80a4a06c59e8de7a7ec9ccd6fd953c1d2e10523ebcf1be1fe847664570926"
+}

@@ -1,0 +1,17 @@
+{
+  "scope": "Scientific figures for continuous RC and jointly constrained variance scatter.",
+  "code_sha256": "26488711618ba482e531fe3ecda87445e62fb2fc0d61543448732889d299b352",
+  "figures": [
+    "continuous_RC_calibration",
+    "variance_scatter_selection",
+    "refined_joint_checks",
+    "refined_native_waveforms",
+    "refined_PID_covariance"
+  ],
+  "inputs_sha256": {
+    "simulation/results/rc_refinement_20261030/protocol.json": "8a7565b3ded230e41eeacf1e4446b11b730a35f4c2a0ca54f9bcf00f31801679",
+    "simulation/results/rc_refinement_20261030/mean_calibration.json": "1032ad88079484cc82e1fbb5672439b19d819a585dc4b79bd20ea8cd203f80e6",
+    "simulation/results/rc_refinement_20261030/noise_selection.json": "6b48bd7f0749a15857825010ac28686f105d718b0fd300b9b05c96206477709e",
+    "simulation/results/rc_refinement_20261030/evaluation.json": "06fdace449a77ba6f7fc0f7901d9b22e8396571127a2b8e573f518c5b2401f50"
+  }
+}

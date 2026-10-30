@@ -1,0 +1,230 @@
+{
+  "acquisition": {
+    "amplitude_threshold_adc": 160.0,
+    "pretrigger_ns": 1000.0,
+    "sample_period_ns": 2.0,
+    "samples": 2496
+  },
+  "evidence": {
+    "assumptions": [
+      "4x4 array and all 16 summed channels are an explicit initial hypothesis, not confirmed wiring.",
+      "50 ohm effective load, 3 V overvoltage and 29 ns recovery are placeholders; 53.2 V bias is NOT converted using typical breakdown voltage.",
+      "Constant PDE 0.30 and disabled dark/XT/AP are uncalibrated switches; zero does not mean absent in device.",
+      "Lowpass 256 ns = 50 ohm * 16 * 320 pF only if directly parallel; alternative summing networks require calibration.",
+      "Gamma decay times 679/3340 ns and approximate integrated fractions are literature starting values, not this crystal measurements; alpha fraction, light yield, spectrum, optics are hypotheses.",
+      "Source is a point in air; encapsulation and source active layer unspecified.",
+      "Microcells are uniformly mapped to 3584 effective cells/channel; exact masked-cell layout and electronic inter-channel coupling not represented."
+    ],
+    "baseline_state_calibration": {
+      "record": "simulation/results/waveform_refit_20261029/baseline_states.json",
+      "samples": "first128 pretrigger samples only",
+      "state": "run12_first60"
+    },
+    "confirmed": "User 2026-10-27: 10 mm cube CsI(Tl), external PTFE tape, 5 um front Mylar, S13361-3050 series, multiple summed channels, no preamplifier; source distance unknown and authorized to scan.",
+    "fit_policy": "Shared tau_fast/tau_slow and passive RC; separate source-dominant fractions. Am-dominant -> alpha is a testable hypothesis, not truth. No source distance was fitted. No preamplifier added.",
+    "joint_screening": {
+      "no_hardware_trigger_claim": true,
+      "normalization": "Effective common light-yield scale at fixed gain/PDE, not a measured intrinsic light yield",
+      "range": "500 mV follows current X4 settings; association to historical BIN remains unconfirmed",
+      "record": "/media/sf_works/SiPM/simulation/results/joint_screen_20261028/screen.json",
+      "source_geometry": "Fitted candidate among declared scenarios; not recovered apparatus history",
+      "training_only": [
+        3,
+        12
+      ]
+    },
+    "links": {
+      "gamma_times_note": "/media/sf_works/papers/sources/1993_Valentine_NIMA_Temperature-dependence-of-CsI(Tl)-gamma-ray-excited-scintillation-characteristics.md",
+      "sensor_datasheet": "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/s13361-3050_series_kapd1054e.pdf"
+    },
+    "noise_model_update": {
+      "limits": "Finite-window stationary Gaussian approximation; does not reproduce transient weak pulses, non-Gaussian tails, run12 late noise changes, or infer the single-PE signal response.",
+      "scope": "Pretrigger-calibrated Gaussian FIR noise update; all optical, avalanche and signal-response parameters inherited without refitting."
+    },
+    "shape_refit": {
+      "proposal_closure_not_in_native_output": true,
+      "record": "simulation/results/waveform_refit_20261029/parallel_shape/shape_fit.json",
+      "source_identity_not_readout_parameter": true,
+      "training_only": "run3/run12 frozen first60; optical times conditional on apparatus assumptions"
+    },
+    "yield_window_adjustment": {
+      "alpha_scale": 1.466617578759986,
+      "electron_scale": 0.9668884155237002,
+      "scope": "Preserve earlier expected3us charge when emission time parameters change; not a new spectral fit or intrinsic light-yield measurement"
+    },
+    "final_training_closure": {
+      "record": "simulation/results/waveform_refit_20261029/final_parameters/fit.json",
+      "no_check_pulse_tuning": true,
+      "electron_yield_scale": 0.9998176481305752,
+      "alpha_yield_scale": 0.9856190389585627
+    }
+  },
+  "geometry": {
+    "array_nx": 4,
+    "array_ny": 4,
+    "channel_active_mm": 3.0,
+    "channel_pitch_mm": 3.2,
+    "crystal_mm": [
+      10.0,
+      10.0,
+      10.0
+    ],
+    "grease_mm": 0.1,
+    "material": "CsI(Tl)",
+    "mylar_um": 5.0,
+    "ptfe_side_mm": 0.1,
+    "source_gap_mm": 30.0,
+    "source_radius_mm": 0.0,
+    "summed_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "world_material": "G4_AIR"
+  },
+  "optical": {
+    "absorption_mm": 500.0,
+    "alpha_fast_fraction": 0.45451935014231903,
+    "alpha_light_yield_ratio": 0.99852321635028,
+    "alpha_tau_ns": [
+      782.3657519195193,
+      8438.62820399502
+    ],
+    "charged_step_um": 2.0,
+    "electron_fast_fraction": 0.18572102387047612,
+    "electron_tau_ns": [
+      129.04973687884703,
+      771.2808513442212
+    ],
+    "emission_relative": [
+      0.02,
+      0.15,
+      0.55,
+      1.0,
+      0.65,
+      0.2,
+      0.05,
+      0.01
+    ],
+    "ion_light_yield_ratio": 0.05,
+    "photon_energy_eV": [
+      1.77,
+      1.91,
+      2.07,
+      2.21,
+      2.38,
+      2.58,
+      2.82,
+      3.1
+    ],
+    "ptfe_reflectivity": 0.95,
+    "rindex": 1.8,
+    "yield_photons_per_MeV": 35373.449915032164
+  },
+  "readout_response": {
+    "model": "parallel_paths",
+    "prompt_charge_fraction": 7.297304900925533e-12,
+    "prompt_decay_ns": 5.0,
+    "prompt_lowpass_ns": 0.0,
+    "signal_transmission": 0.5
+  },
+  "response_candidate_status": "Hypothetical controlled test; not calibrated parameters",
+  "schema_version": 1,
+  "sipm": {
+    "readout": {
+      "adc_bits": 14,
+      "adc_max_mV": 500.0,
+      "adc_min_mV": 0.0,
+      "aperture_ns": 2.0,
+      "baseline_mV": 92.88916375148506,
+      "decay_ns": 29.0,
+      "internal_dt_ns": 0.5,
+      "lowpass_ns": 148.0,
+      "max_internal_bins": 5000000,
+      "model": "double_exponential",
+      "noise_rms_mV": 0.0,
+      "rise_ns": 2.0,
+      "sample_period_ns": 2.0,
+      "template_csv": null,
+      "transimpedance_ohm": 50.0
+    },
+    "schema_version": 1,
+    "sensor": {
+      "afterpulse_delay_ns": 60.0,
+      "afterpulse_probability": 0.0,
+      "cells_x": 57344,
+      "cells_y": 1,
+      "constant_pde": 0.3,
+      "crosstalk_delay_ns": 0.0,
+      "crosstalk_probability": 0.0,
+      "dark_rate_hz": 0.0,
+      "gain_electrons": 1700000.0,
+      "max_candidates": 10000000,
+      "name": "S13361-3050_series_array_effective",
+      "overvoltage_V": 3.0,
+      "parameter_source": "User confirms S13361-3050 series and multiple summed channels. Manufacturer KAPD1054E PDF p2: 3584 cells/channel, 3x3 mm2, 320 pF/channel, gain 1.7e6 at 3 V overvoltage. Number of summed channels, unit breakdown voltage and recovery remain unconfirmed.",
+      "parameter_status": "hypothetical",
+      "pde_mode": "constant",
+      "pde_overvoltage_V": [],
+      "pde_probabilities": [],
+      "pde_wavelength_nm": [],
+      "recovery_enabled": true,
+      "recovery_ns": 29.0,
+      "temperature_C": 25.0,
+      "transit_delay_mean_ns": 0.0,
+      "transit_delay_sigma_ns": 0.0,
+      "trigger_scale_V": 2.4,
+      "trigger_threshold_V": 0.0,
+      "x_max_mm": 57344.0,
+      "x_min_mm": 0.0,
+      "y_max_mm": 1.0,
+      "y_min_mm": 0.0
+    }
+  },
+  "status": "Joint bounded-family first60 calibration frozen for independent native transport; conditional effective model",
+  "bandwidth_validation": {
+    "record": "simulation/results/pid_bandwidth_20261029/validation/protocol.json",
+    "role": "new independent transport seed; no measured later-segment tuning",
+    "response": "new",
+    "state": 12
+  },
+  "npe_profile": {
+    "chosen_scale": 2.0,
+    "selection": "simulation/results/pid_npe_20261029/selection.json",
+    "no_numerical_high_PDE_in_this_config": true,
+    "physical_interpretation": "Effective yield / electrical transfer family, not an independent measurement of scintillation yield, PDE or coupling. SiPM physical gain and nominal50ohm input unchanged."
+  },
+  "validation_case": "run12_Am241",
+  "tail_refit": {
+    "design": "simulation/results/co_tail_20261029/design.json",
+    "primary": "tail_relaxed_bound",
+    "analytic_area_preservation": {
+      "electron": 1.0064706623899184,
+      "alpha": 1.2399498599848062
+    },
+    "native_template_added": false
+  },
+  "joint_constraints": {
+    "family": "a8439",
+    "design": "simulation/results/joint_constraints_20261029/design.json",
+    "stage": "frozen_independent_validation",
+    "analytic_gate_area_multipliers": {
+      "electron": 0.9990233337437736,
+      "alpha": 0.8330836740041276
+    },
+    "template_added": false
+  }
+}

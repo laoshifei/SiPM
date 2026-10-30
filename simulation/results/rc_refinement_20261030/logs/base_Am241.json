@@ -1,0 +1,108 @@
+{
+  "command": [
+    "/media/sf_works/SiPM/simulation/build/state_response_20261030/replay_readout",
+    "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/validation/run12_Am241/events.root",
+    "/media/sf_works/SiPM/simulation/results/rc_refinement_20261030/configs/jobs_base_Am241.json"
+  ],
+  "seconds": 52.78465437889099,
+  "binary_sha256": "1c4ed0831b17d5a5d5ce1c06d321e1eec303dd3886c935cf3b7df0e8c79e4ff4",
+  "plan_sha256": "a55f3a76156658d27aa781b288a4ac70213baeaa3cabe5056e409ce670af1610",
+  "jobs": {
+    "run12_first60_B64_eval0_base": {
+      "root": "simulation/results/rc_refinement_20261030/native/run12_first60_B64_eval0_base.root",
+      "root_sha256": "c2b990d72dc0dd39ea932a6ac3fbd6ede6218e8f3aa419d81250e1aa077b39f5",
+      "array_sha256": "0dd8712278830299c77ef1502c8b27d5b308972c0d85791befaa2d5b09a6740c",
+      "config_sha256": "8c4c4d1ca9bd57e72206fe182d8ee7d5d4b0a6de6170611ac1a0ccfc0d934d86",
+      "n_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_first60_B64_eval1_base": {
+      "root": "simulation/results/rc_refinement_20261030/native/run12_first60_B64_eval1_base.root",
+      "root_sha256": "7e9552a8bed62cf756e3def898bdc6b56a5d114b491093d814161366fdf12506",
+      "array_sha256": "2fa056cd0e21ce3bd474429ea6b84c6364bc6b39ecfc084a80ff8163089c9a14",
+      "config_sha256": "def3f1694c292b81224eaa61c684df3816d8ff62d8468b7a4cc28640007f2adc",
+      "n_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_first60_B128_eval0_base": {
+      "root": "simulation/results/rc_refinement_20261030/native/run12_first60_B128_eval0_base.root",
+      "root_sha256": "d4fce23fdb9a85d9f642ef045a62f4d4fd251614e383de4889ed468373e29d3a",
+      "array_sha256": "09b4db960576d943d8e3c6bdd1cd63091bc20d43815ea1497f2748bb761c0684",
+      "config_sha256": "fb7c389a89f02d674aca9267544b7c2c0c0c2c75ae4e0c00d7749f64f7ccaf35",
+      "n_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_first60_B128_eval1_base": {
+      "root": "simulation/results/rc_refinement_20261030/native/run12_first60_B128_eval1_base.root",
+      "root_sha256": "54ca3b455907fe10fbccaeb594202ef32c741715f23c1b579594f1a87ad79983",
+      "array_sha256": "ba67cb399fe6ca49d618267e000b06b235ba35341e8957c105dea49bc6627f47",
+      "config_sha256": "d03fa7c9573b4beed43f5543e3ad21990298794b9ab694f0d143e7af94e77c98",
+      "n_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_middle20_B64_eval0_base": {
+      "root": "simulation/results/rc_refinement_20261030/native/run12_middle20_B64_eval0_base.root",
+      "root_sha256": "15ca35075ca3b7623d3c2514470e2bab729ad875522665a08a902c1c54fb331a",
+      "array_sha256": "f6cad6b03aab290fec3724f5089431df6a67720419b2a46459e5f0691d0d3ab6",
+      "config_sha256": "69a710ba75e643b896cd9a8bd3b074ed96ef2650fca66b3e33c3e36fefdfb9ea",
+      "n_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_middle20_B64_eval1_base": {
+      "root": "simulation/results/rc_refinement_20261030/native/run12_middle20_B64_eval1_base.root",
+      "root_sha256": "2416e4e45b2e44755b47197f3f4c7716a9630411a3a73bb4e834b0a4a5ecbd9e",
+      "array_sha256": "5171d299fbcc12f682b34842fe822c0ef8f3019d95088736d909df302579d8bf",
+      "config_sha256": "b93202f37dae3dc9675c6290e60ad274a3731f0cfc41562e2ac84ddaf9bd8ba3",
+      "n_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_middle20_B128_eval0_base": {
+      "root": "simulation/results/rc_refinement_20261030/native/run12_middle20_B128_eval0_base.root",
+      "root_sha256": "f65817e996dace1ec655c5b5c630928c558ca8cc6d91ee85ff787a07453fcb60",
+      "array_sha256": "a4ca86df8ccce3d01409bc53064735ad1794e040f72ed880459aad12cd55107b",
+      "config_sha256": "00947ca42c62c568cef91e8fd7cc7b3a200c54e2037ee2ad346736c4ca615824",
+      "n_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_middle20_B128_eval1_base": {
+      "root": "simulation/results/rc_refinement_20261030/native/run12_middle20_B128_eval1_base.root",
+      "root_sha256": "8eb4e00bb36b5a77c538514bcf699201a86e2411c2481ecb000853a590bcd648",
+      "array_sha256": "f7ece10a95c5d326fec06f0408e064cd386e59774c2a259b6f87d15396c3ff6b",
+      "config_sha256": "07909670226ee27db66b7f35cb191ce51952424c430bf1c360a8fbd8df8fb1bc",
+      "n_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_last20_B64_eval0_base": {
+      "root": "simulation/results/rc_refinement_20261030/native/run12_last20_B64_eval0_base.root",
+      "root_sha256": "c43b84a054bd4f99054b401f48a7d98b085356d43d4a004cc2cb8446b37b7c76",
+      "array_sha256": "f5bac413ce12768a20ee2cb0a3dda70b7b820f77bad6170085b3f1034aebfe46",
+      "config_sha256": "d5c581711227361b09d29c9b673b7d57a856769df8135d027cb3b1faead131c5",
+      "n_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_last20_B64_eval1_base": {
+      "root": "simulation/results/rc_refinement_20261030/native/run12_last20_B64_eval1_base.root",
+      "root_sha256": "8aedf201e984e5ce5c5b4471e3ac0b83e023c2993ea97b54e35fd2980cef8816",
+      "array_sha256": "b9386f543fe83604f9fa70e8970320d8cbd4bcacd32bd60771a798345ff02fed",
+      "config_sha256": "da5d1f9546a86131dae1ad4d14101d3fa541264989c930abadcb61c149b37444",
+      "n_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_last20_B128_eval0_base": {
+      "root": "simulation/results/rc_refinement_20261030/native/run12_last20_B128_eval0_base.root",
+      "root_sha256": "8a66662adcb017bb0274ac135dec5982795dd605b353db4d8fe9db5a64f348fd",
+      "array_sha256": "d5f78a6e2943802e438e2dd2e1d079d4c5ca5bbc98416cf362132f130afc079a",
+      "config_sha256": "ac8462074eca53b97d815823df988dd5820ac5887363a8322ad180a953967668",
+      "n_original_mothers": 194,
+      "new_independent_mothers": 0
+    },
+    "run12_last20_B128_eval1_base": {
+      "root": "simulation/results/rc_refinement_20261030/native/run12_last20_B128_eval1_base.root",
+      "root_sha256": "77d2412899b56a83ec8f5ade64c3d682565035d6289b17ef6be17644f1e5df36",
+      "array_sha256": "0ce40707730e680d6ed57da1c419c175456788640f35293109de7958dd4c2e65",
+      "config_sha256": "bd907c26fcdec79377d58a2cf06612474ee2c0d81707bb7ad5e89cebd72e5495",
+      "n_original_mothers": 194,
+      "new_independent_mothers": 0
+    }
+  }
+}

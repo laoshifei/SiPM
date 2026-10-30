@@ -2,7 +2,35 @@
 
 已实现并运行 **核衰变 → 能量沉积 → 闪烁光输运 → SiPM 雪崩 → 被动读出响应 → ADC → 实测对照**。只支持 `Am241` 和 `Co60`。本目录参考 GAGG_pileup 的 SiPM 数值内核，新建 CsI 几何、源、材料参数和本项目波形对照；未修改参考项目。
 
-最新的[电荷/基线条件化与原生响应对照笔记](../jupyter/codex_0001_csi_conditional_response.ipynb)固定first60目标，检查原Q箱内两分、四分及Q×基线RMS匹配。Am后段平均时间宽度比从0.887变为Q两分匹配的 **0.917**（固定模型、块64条件95%区间[0.705,1.117]），匹配引起的变化区间包含0；中心仍为 **+7.26 ns**（[0.78,14.20] ns）。Q×RMS匹配缺少目标单元，不能可靠估计。Am实测后段相对前段的时间变化在Q两分匹配后仍约−5.02 ns，块64/128结论存在敏感性，不能直接归因于一种噪声。
+最新的[连续RC与噪声分布联合校准笔记](../jupyter/codex_0001_csi_refined_rc.ipynb)细化96–160 ns范围内的读出响应，并同时约束均ADC、PID完整协方差、IQR、F50/102/202均值及事件间起伏。原生2 ns网格只用于插值汇总响应和提出参数，全部评价ADC仍由C++实际生成。**490项研究用原生任务共115150条重放，重复使用470个原Geant4母事件（支持Q箱内456个），新增独立母事件为0。**
+
+Am晚段扩展谱方案（原始块128）的MC−实测平均时间差由上一轮 **1.41变为0.68 ns**，固定拟合条件95%区间为[−6.64,7.18] ns；时间IQR比为 **0.981**，QDC/PCA为 **1.160/1.148**，绝对平均ADC波形NRMSE为 **1.40%**。块64/128的时间中心差距从 **4.40缩小到1.01 ns**，但时间IQR比的配对变化区间仍包含0。完整协方差误差点估计从0.138变为0.102，其变化区间也包含0。Co晚段中心从−0.44变为+1.41 ns，均ADC NRMSE从3.18%变为2.96%；多目标拟合存在权衡，不能称为全面改善或已证明一致。
+
+两个谱族、48个条件/谱族组合中，Co全部24项保留原事件方差CV；Am19项选择CV=0，5项保留原小CV，更大的CV均未被训练目标选中。该参数控制经验信号残差的方差乘子，不能解释为器件增益或光产额的实测波动。**默认配置未替换，尚未选定用于新母事件验证的最终候选。** 下一步应固定本轮校准，分原Q箱检查PID核心、尾部及相关方向，并与波形残差、起伏和已有MC祖先标签对应，避免继续单独加宽某一PID。
+
+见[RC校准](results/rc_refinement_20261030/figures/continuous_RC_calibration.png)、[方差波动约束](results/rc_refinement_20261030/figures/variance_scatter_selection.png)、[联合检查](results/rc_refinement_20261030/figures/refined_joint_checks.png)、[原生均波形与波动](results/rc_refinement_20261030/figures/refined_native_waveforms.png)、[PID协方差](results/rc_refinement_20261030/figures/refined_PID_covariance.png)、[84行数值表](results/rc_refinement_20261030/validation_table.csv)、[方案](results/rc_refinement_20261030/protocol.json)和[结论](results/rc_refinement_20261030/decision.json)。所有实验段已探索，对折只隔离新增拟合层；512次配对区间固定拟合参数，128次训练重拟合单独报告条件稳定性，均不代表全流程独立验证或完整模型不确定度。
+
+新增 `replay_readout_cached` 缓存最近一套原生基础读出，每个噪声候选仍按原事件种子生成；RC、相位、电子学等变化时重建缓存。216个配对事件对照的ADC、无噪声信号和模拟电压与旧程序逐点一致，见[缓存核验](results/rc_refinement_20261030/cache_verification.json)。普通重放入口保留。研究入口为 `rc_refinement_common.py` → `calibrate_refined_rc.py` → `verify_rc_cache.py` → `fit_refined_noise.py` → `evaluate_refined_rc.py`，随后绘图、结论、笔记和 `verify_refined_rc.py` 核验；构建目录为 `simulation/build/rc_refinement_20261030`，完整重跑需使用新结果目录。
+
+上一轮的[采集段条件响应笔记](../jupyter/codex_0001_csi_state_response.ipynb)完成原生孔径相位对照、仅前沿定位、对折前触发噪声校准，以及均ADC/PID完整协方差/F50/102/202联合拟合。**114项原生读出任务共26790条重放，始终只对应470个不同的原Geant4母事件，新增独立母事件为0。** 默认模拟参数和正式PID定义未替换。
+
+Am晚段主分析（原始块128）的RC+扩展残差谱，把MC−实测平均时间差从 **7.26降至1.41 ns**、时间IQR比从 **0.917变为0.978**、绝对平均波形NRMSE从 **1.97%降至1.36%**。但QDC/PCA的IQR比变成 **1.134/1.174**；块64下时间差为−2.99 ns。时间IQR比的配对变化区间包含0，不能称全面一致或已证等效。仅更新前触发噪声后时间差仍为7.12 ns；原生0–1.5 ns采样相位引起的平均时间变化最大仅0.080 ns。前沿拟合大量触边，未采用。
+
+前、中、后段均在各自内部作新增拟合层的条件校准/检查，不是盲验证。粗RC网格在Am晚段对训练块敏感，不能据此断言电路存在112/128 ns两种物理状态；训练块重拟合稳定性另报，512次配对区间固定拟合参数。去掉评价折间均值项后，扩展谱的晚段时间SD比仍为0.913。候选尚有联合分布和块长敏感性问题，因此没有选定最终参数或启动新母事件验证。
+
+见[原生采样对照](results/state_response_20261030/figures/sampling_and_front_controls.png)、[RC选择稳定性](results/state_response_20261030/figures/conditional_RC_stability.png)、[联合结果](results/state_response_20261030/figures/state_native_joint_checks.png)、[绝对波形与波动](results/state_response_20261030/figures/state_native_waveforms.png)、[PID协方差](results/state_response_20261030/figures/state_PID_covariance.png)、[方案](results/state_response_20261030/protocol.json)和[结论](results/state_response_20261030/decision.json)。该轮提出的RC细化和噪声分布联合约束已在上方新笔记执行；各阶段结果分别冻结。
+
+新增 `include/ReadoutSampling.hh` / `src/ReadoutSampling.cc` 和 `replay_readout.cc`，保留 `include/`、`src/` 的Geant4结构及原完整输运入口。`replay_readout parent.root jobs.json` 仅读取选定原母事件的雪崩历史，拒绝改变几何、光学、采集参数或SiPM传感器物理；输出 `Readout` 树，不是新增输运的 `Events` 树。零相位逐点复现原ADC；非零相位在0.5 ns原生积分网格上移动孔径，不插值含噪ADC。分析门避开延长缓冲的末端。配置/输出格式参考本轮 `configs/jobs_initial_Co60.json`；新任务须使用新输出路径。
+
+相关C++测试：`ctest --test-dir simulation/build/state_response_20261030 --output-on-failure -E csi_application_workflow`（5项通过）。研究流程为 `prepare_state_response.py` → `state_response_common.py` → `analyze_state_alignment.py` / `calibrate_state_response.py` → `fit_state_signal_noise.py` → `evaluate_state_response.py`；随后作折间诊断、绘图、笔记和 `verify_state_response.py` 核验。完整重跑须在新目录冻结方案，不能覆盖本轮结果。
+
+上一轮的[采集状态、波形估计与信号期协方差笔记](../jupyter/codex_0001_csi_acquisition_state.ipynb)保留原事件、原Q及first60箱内Q两分目标，复用冻结的实测与原生ADC；**新增独立母事件为0，新增重放为0**。Am前后段的电荷匹配基线RMS由 **3.33增至5.91 ADC**，前触发正频率中不超过20 MHz的功率占比由 **0.189增至0.628**。改用近期基线、平滑定位或两者同时应用后，后段MC−实测平均时间仍为 **7.05–7.26 ns**；平均时间宽度比由0.917变为两项同时改变的0.925，配对变化区间包含0。这些估计方法对照尚未解释PID差异，也未改变正式PID定义。
+
+只用first60拟合的前触发状态回归，在6个连续采集块的交叉检查中，Am平均时间MSE为Q-only模型的 **1.060倍**；后段落在既定训练状态范围内的加权比例仅 **33.7%**。不能将该模型的外推当作温漂或读出校正。所选采集十分位均值之间的统计项仅占Am后段平均时间方差约0.32%，且含有限样本均值噪声，不是已识别的物理漂移贡献。**默认模拟配置保持冻结。** 下一步检验分读出状态的信号期响应模型，按原始事件块划分条件校准与内部检查，同时约束均ADC、PID协方差和短尺度起伏；这些已有后段数据不再称为盲验证。
+
+见[采集状态轨迹](results/acquisition_state_20261030/figures/acquisition_state_traces.png)、[基线与定位对照](results/acquisition_state_20261030/figures/estimator_state_controls.png)、[状态预测与训练范围](results/acquisition_state_20261030/figures/pretrigger_state_prediction.png)、[信号期协方差](results/acquisition_state_20261030/figures/signal_state_covariance.png)、[冻结方案](results/acquisition_state_20261030/protocol.json)和[结论与下一步](results/acquisition_state_20261030/decision.json)。回归检查只覆盖新增状态回归层，PCA和Q目标继承自此前分析；统计区间未包含拟合与装置不确定性。状态变化及相关协方差不能唯一指认微观噪声机制。
+
+此前的[电荷/基线条件化与原生响应对照笔记](../jupyter/codex_0001_csi_conditional_response.ipynb)固定first60目标，检查原Q箱内两分、四分及Q×基线RMS匹配。Am后段平均时间宽度比从0.887变为Q两分匹配的 **0.917**（固定模型、块64条件95%区间[0.705,1.117]），匹配引起的变化区间包含0；中心仍为 **+7.26 ns**（[0.78,14.20] ns）。Q×RMS匹配缺少目标单元，不能可靠估计。Am实测后段相对前段的时间变化在Q两分匹配后仍约−5.02 ns，块64/128结论存在敏感性，不能直接归因于一种噪声。
 
 同一批8000 Co / 24000 Am原光子历史完成 **12组、192000条有效原生响应重放**，新增独立母事件为0。原参数对照的全部32000条ADC与雪崩时间/电荷逐点不变；新增独立ROOT诊断树保存实际后脉冲计数和恢复程度。关闭经验信号残差后，单独测试AP概率0.05、延迟60/300 ns，AP概率0.15/300 ns压力对照，以及恢复60 ns；均固定光学、PDE、增益和读出。固定原事件/Q时，Am原经验残差的时间宽度为关闭残差后的2.36倍，而0.15/300 ns后脉冲仅为1.036倍，却把中心推迟34.96 ns。**这些预设机制对照尚不能替代经验残差，不是拟合出的器件参数，也不替换默认配置。** 空间串扰仍因阵列映射不保留邻接关系而禁用；重放未更新实验ROC。
 
