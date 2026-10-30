@@ -1,0 +1,30 @@
+{
+  "key": "a4000_run3_Co60",
+  "n_parent": 8000,
+  "n_selected": 689,
+  "n_common": 293,
+  "root_sha256": "f8da3e9c4ee69bb539cf71f78f5007705d7a56717ba9e6f773b95fbe9b1cf655",
+  "replay": null,
+  "source": "Co60",
+  "common_avalanches_p10_p50_p90": [
+    2075.8,
+    2962.0,
+    3655.8
+  ],
+  "common_truth_counts": [
+    0,
+    293,
+    0,
+    0,
+    0
+  ],
+  "common_Q_bins": [
+    49,
+    43,
+    45,
+    42,
+    49,
+    65
+  ],
+  "code_sha256": "b904cceab0aa8594ace28d1ad26dbcbcde1e69a53f31a21825b5754d5a35dd03"
+}

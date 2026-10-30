@@ -1,0 +1,19 @@
+{
+  "completed_direct_replays": [
+    {
+      "case": "run12_Am241__ap05_60ns",
+      "native_exit_code": 0
+    },
+    {
+      "case": "run12_Am241__ap05_300ns",
+      "native_exit_code": 0
+    }
+  ],
+  "commands": "Same frozen commands in protocol.json; invoked directly, stdout/stderr retained in per-case replay logs. No binary/config/seed/parent changes.",
+  "prior_wrapper_stop": {
+    "exit_code": 130,
+    "action": "Operator interrupt after prolonged stall; partial output preserved under interrupted_wrapper_retry."
+  },
+  "usable_replay_entries": 192000,
+  "note": "Completed analyzed entries only; incomplete attempts excluded. All attempts reuse the same 32000 mothers; zero new independent histories."
+}

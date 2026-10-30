@@ -1,0 +1,8 @@
+{
+  "equal_original_adc_events": 7185,
+  "equal_original_avalanche_events": 8000,
+  "max_relative_charge_balance": 1.740055750388668e-13,
+  "parent_file": "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a4000_run3_Co60/events.root",
+  "scope": "Original Geant4 optical histories; all entries retained. Native PDE/recovery/AP and readout regenerated, candidate selections must be recomputed.",
+  "unchanged_zero_photon_events": 7185
+}

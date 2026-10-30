@@ -1,0 +1,5 @@
+{
+  "scope": "Stopped stalled wrapper; partial output found before direct rerun",
+  "runner_exit_code": 130,
+  "reason": "Operator SIGINT of this task only after prolonged no completed output. File lacked completed RunInfo. Direct first attempt correctly refused to overwrite this partial file. No numerical result accepted."
+}

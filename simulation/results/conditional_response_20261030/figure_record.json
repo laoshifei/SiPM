@@ -1,0 +1,14 @@
+{
+  "code_sha256": "cfe4be90f1809edcd965a2945cc8c05d6ab2bf539f56ea9f36c8dd9746d1e47a",
+  "inputs_sha256": {
+    "simulation/results/conditional_response_20261030/protocol.json": "327bc874fe9cfc676e77f5d50e0fb1937c04b2f7daa9425a95bb80f030233d81",
+    "simulation/results/conditional_response_20261030/conditional.json": "e9fce3303c625a207a4c09731111be304210151a7519a0e1b96540938eece14c",
+    "simulation/results/conditional_response_20261030/mechanisms.json": "9001020aaa1adf4109cd63cbe6e54255d2553e5779b0a8306fea2f00bee28e4d"
+  },
+  "figures": [
+    "conditional_pid",
+    "conditional_support",
+    "native_response_effects",
+    "native_response_waveforms"
+  ]
+}

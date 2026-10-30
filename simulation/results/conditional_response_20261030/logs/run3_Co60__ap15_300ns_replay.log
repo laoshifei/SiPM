@@ -1,0 +1,9 @@
+{
+  "diagnostics": "ResponseDiagnostics: realized primary/AP/dark/XT counts and recovery; empty-avalanches mean_recovery=1 by convention. Counters do not modify RNG or waveforms.",
+  "equal_original_adc_events": 7202,
+  "equal_original_avalanche_events": 7203,
+  "max_relative_charge_balance": 1.5176179218585988e-13,
+  "parent_file": "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/validation/run3_Co60/events.root",
+  "scope": "Original Geant4 optical histories; all entries retained. Native PDE/recovery/AP and readout regenerated, candidate selections must be recomputed.",
+  "unchanged_zero_photon_events": 7202
+}

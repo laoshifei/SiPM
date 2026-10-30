@@ -1,0 +1,71 @@
+{
+  "cause": "Exact-integer t10 boundary: anchor-0.5 shifts the F window by one sample. Use actual original fractional t10 in both base and proposed-noise F, leaving formal PID integer gates unchanged.",
+  "old_noise_fit_outputs": [
+    {
+      "file": "simulation/results/joint_constraints_20261029/diagnostics/anchor_proxy_before_fix/a4000_run12_Am241.json",
+      "sha256": "2c493bce423b18f8c24e09c6ee84a1c5dba61df8cc74278e14ef14b1ae2eeda5"
+    },
+    {
+      "file": "simulation/results/joint_constraints_20261029/diagnostics/anchor_proxy_before_fix/a4000_run12_Am241.log",
+      "sha256": "30cb148128fa365c955fa88ee31ebbd087298d22a37dea8f981329317f576d0a"
+    },
+    {
+      "file": "simulation/results/joint_constraints_20261029/diagnostics/anchor_proxy_before_fix/a4000_run12_Am241_config.json",
+      "sha256": "609ac9df0b759ddb537ea7a2c5cf8a153a19c1a9dd49e7001ea710c1df3bab4b"
+    },
+    {
+      "file": "simulation/results/joint_constraints_20261029/diagnostics/anchor_proxy_before_fix/a4000_run3_Co60.json",
+      "sha256": "ed65803d9f8b83bad36062bca3a89311dabd4d6c9adf20c6db1127ba35ddfb5e"
+    },
+    {
+      "file": "simulation/results/joint_constraints_20261029/diagnostics/anchor_proxy_before_fix/a4000_run3_Co60.log",
+      "sha256": "3d3975ae051d25925e2804924fb1e8003726e472c7f6d2188c14126506bbd7a1"
+    },
+    {
+      "file": "simulation/results/joint_constraints_20261029/diagnostics/anchor_proxy_before_fix/a4000_run3_Co60_config.json",
+      "sha256": "aa60bb3b95cdc0dd2043609fdbf65130663c9d626f6f29d63b5f25422a5c625b"
+    },
+    {
+      "file": "simulation/results/joint_constraints_20261029/diagnostics/anchor_proxy_before_fix/a6000_run12_Am241.json",
+      "sha256": "edd278d97dcc3c19444684c39f9fc6ad36ac661562897e8dc654bb334ec9db02"
+    },
+    {
+      "file": "simulation/results/joint_constraints_20261029/diagnostics/anchor_proxy_before_fix/a6000_run12_Am241.log",
+      "sha256": "17c9024be6a5fe78a3e9d698335aaa47cebc1e026b399075473234ac43e33e7a"
+    },
+    {
+      "file": "simulation/results/joint_constraints_20261029/diagnostics/anchor_proxy_before_fix/a6000_run12_Am241_config.json",
+      "sha256": "495c7cdda6638500d7e17b70305dd9f15c5d6e4a218801dbe2268025dd8fd42e"
+    },
+    {
+      "file": "simulation/results/joint_constraints_20261029/diagnostics/anchor_proxy_before_fix/a6000_run3_Co60.json",
+      "sha256": "76190491bf221c12ff3e467e90e723965e936023704f07b1df39bdb0f645b450"
+    },
+    {
+      "file": "simulation/results/joint_constraints_20261029/diagnostics/anchor_proxy_before_fix/a6000_run3_Co60.log",
+      "sha256": "fc6ca2545cfcf1b4cb77d9d33686fd2961d203c672b7cd416437d6f87359c265"
+    },
+    {
+      "file": "simulation/results/joint_constraints_20261029/diagnostics/anchor_proxy_before_fix/a6000_run3_Co60_config.json",
+      "sha256": "c8121f76823f088ee56faaca9d5aacee6535bf64adbef9b6f28dd585d5bcfd2a"
+    },
+    {
+      "file": "simulation/results/joint_constraints_20261029/diagnostics/anchor_proxy_before_fix/a8439_run12_Am241.json",
+      "sha256": "ef9eb3a5f5eac735899d79cb170fe3d06a720dc4224ad136a07b5524c9e71636"
+    },
+    {
+      "file": "simulation/results/joint_constraints_20261029/diagnostics/anchor_proxy_before_fix/a8439_run12_Am241.log",
+      "sha256": "06f28ea58514d9af2eb431a4454a9e6935e90151e0382b3b84e916f6bfaac991"
+    },
+    {
+      "file": "simulation/results/joint_constraints_20261029/diagnostics/anchor_proxy_before_fix/a8439_run12_Am241_config.json",
+      "sha256": "b9c5b1db8b3c250aad043cde4f6dc3555d3d5eb9bf14f85ddff30226b475b04c"
+    },
+    {
+      "file": "simulation/results/joint_constraints_20261029/diagnostics/anchor_proxy_before_fix/a8439_run3_Co60.log",
+      "sha256": "a41f38e7101ae58a0a59a1ce9e0eaec7da5493904a20b2713e1fa98899a86424"
+    }
+  ],
+  "native_transport_rerun": false,
+  "all_noise_fits_recomputed": true
+}

@@ -1,0 +1,25 @@
+{
+  "key": "run3_Co60__ap05_300ns",
+  "n_parent": 8000,
+  "n_common": 264,
+  "n_fixed": 276,
+  "gained": 7,
+  "lost": 19,
+  "code_sha256": "071da255dfeee48a8e2c5f979dae30bdc4785c103c6836094b3935879f922370",
+  "root_sha256": "9bf3fd0c99c0c21d2ca9e2a1b4b97b6a1dedb88d01012f5050bafeb22ed6ef25",
+  "config_sha256": "920af2132290f341122aae6f921b9ab5d01c841d361a77fde609b57d5283e7a4",
+  "replay": {
+    "diagnostics": "ResponseDiagnostics: realized primary/AP/dark/XT counts and recovery; empty-avalanches mean_recovery=1 by convention. Counters do not modify RNG or waveforms.",
+    "equal_original_adc_events": 7202,
+    "equal_original_avalanche_events": 7208,
+    "max_relative_charge_balance": 1.5844300820911175e-13,
+    "parent_file": "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/validation/run3_Co60/events.root",
+    "scope": "Original Geant4 optical histories; all entries retained. Native PDE/recovery/AP and readout regenerated, candidate selections must be recomputed.",
+    "unchanged_zero_photon_events": 7202
+  },
+  "energy_identity": true,
+  "diagnostic_charge_count_closure": true,
+  "fixed_mean_recovery": 0.9960949170652671,
+  "fixed_fraction_avalanches_recovery_below_099": 0.022536556970171085,
+  "fixed_afterpulse_avalanche_fraction": 0.046764184669344705
+}

@@ -1,0 +1,114 @@
+{
+  "attempts": [
+    {
+      "start": 0,
+      "parameters": {
+        "electron_tau_ns": [
+          127.05393369965381,
+          771.053011377932
+        ],
+        "alpha_tau_ns": [
+          730.3252318244159,
+          4000.0
+        ],
+        "lowpass_ns": 129.8514273472807,
+        "electron_fast_fraction": 0.1874917168235952,
+        "alpha_fast_fraction": 0.5008400210021641
+      },
+      "objective": 13.843966917862403,
+      "success": true,
+      "nfev": 11,
+      "mean_time_difference_ns": {
+        "Co60": 1.5916157281026244e-12,
+        "Am241": -4.547473508864641e-13
+      }
+    },
+    {
+      "start": 1,
+      "parameters": {
+        "electron_tau_ns": [
+          127.04574650218721,
+          771.048678154489
+        ],
+        "alpha_tau_ns": [
+          730.3192570006894,
+          4000.0
+        ],
+        "lowpass_ns": 129.85269207331785,
+        "electron_fast_fraction": 0.18748758733351623,
+        "alpha_fast_fraction": 0.5008365177702312
+      },
+      "objective": 13.843966741610696,
+      "success": true,
+      "nfev": 17,
+      "mean_time_difference_ns": {
+        "Co60": 1.5916157281026244e-12,
+        "Am241": -4.547473508864641e-13
+      }
+    },
+    {
+      "start": 2,
+      "parameters": {
+        "electron_tau_ns": [
+          127.05389123794308,
+          771.0529856889689
+        ],
+        "alpha_tau_ns": [
+          730.3252114441334,
+          4000.0
+        ],
+        "lowpass_ns": 129.8514316415594,
+        "electron_fast_fraction": 0.18749168904951438,
+        "alpha_fast_fraction": 0.5008400090265112
+      },
+      "objective": 13.84396691646764,
+      "success": true,
+      "nfev": 16,
+      "mean_time_difference_ns": {
+        "Co60": 1.5916157281026244e-12,
+        "Am241": -6.821210263296962e-13
+      }
+    }
+  ],
+  "best": {
+    "start": 1,
+    "parameters": {
+      "electron_tau_ns": [
+        127.04574650218721,
+        771.048678154489
+      ],
+      "alpha_tau_ns": [
+        730.3192570006894,
+        4000.0
+      ],
+      "lowpass_ns": 129.85269207331785,
+      "electron_fast_fraction": 0.18748758733351623,
+      "alpha_fast_fraction": 0.5008365177702312
+    },
+    "objective": 13.843966741610696,
+    "success": true,
+    "nfev": 17,
+    "mean_time_difference_ns": {
+      "Co60": 1.5916157281026244e-12,
+      "Am241": -4.547473508864641e-13
+    }
+  },
+  "bounds_log": [
+    [
+      4.382026634673881,
+      5.991464547107982,
+      5.991464547107982,
+      4.0943445622221
+    ],
+    [
+      6.214608098422191,
+      8.006367567650246,
+      7.495541943884256,
+      5.298317366548036
+    ]
+  ],
+  "analytic_gate_area_multipliers": {
+    "electron": 0.999008689058693,
+    "alpha": 0.6698614042116977
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "scope": "Rank actual native calibration ADC using the frozen first60 joint criterion.",
+  "selection_sha256": "420433e7e9c061bcb00da61b73a2df5be689287b628d35e6fea42126db086b56",
+  "design_sha256": "05451919791e6b6862ab6bd12f88c0ad4dec5a67be165fc17c3065665c37d048",
+  "q_edges": [
+    201824.1125,
+    237975.62708333333,
+    274127.14166666666,
+    310278.65625,
+    346430.17083333334,
+    382581.6854166667,
+    418733.2
+  ],
+  "support_bins": {
+    "Co60": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "Am241": [
+      0,
+      1,
+      2
+    ]
+  },
+  "binary_sha256": {
+    "csi_sources": "ecce63e1944a1d4ec3587f465f8e660337a5fb76926b1b30fface9ea7c06f735",
+    "replay_response": "1005a9e9060b8cb764f25ee619fcdccc6102d8a0bd9a3463d6d157bef4775a4e"
+  },
+  "entries": {
+    "run3_Co60": {
+      "key": "run3_Co60",
+      "run": 3,
+      "source": "Co60",
+      "family": "a8439",
+      "events": 8000,
+      "seed": 401029903,
+      "native": true,
+      "config": "simulation/results/joint_constraints_20261029/validation/run3_Co60/config.json",
+      "config_sha256": "1af3b32e6e7135ca6b2bfcdaa28454f0fd019e233e97e148878862264f7a80bd",
+      "path": "simulation/results/joint_constraints_20261029/validation/run3_Co60/events.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/validation/run3_Co60/config.json",
+        "Co60",
+        "8000",
+        "401029903",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/validation/run3_Co60/events.root"
+      ]
+    },
+    "run12_Am241": {
+      "key": "run12_Am241",
+      "run": 12,
+      "source": "Am241",
+      "family": "a8439",
+      "events": 24000,
+      "seed": 401029912,
+      "native": true,
+      "config": "simulation/results/joint_constraints_20261029/validation/run12_Am241/config.json",
+      "config_sha256": "c65e4dbca4969ebdc1e93a4a4b1b95f5ad042bcb0d7dfdf23cce774a19580d43",
+      "path": "simulation/results/joint_constraints_20261029/validation/run12_Am241/events.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/validation/run12_Am241/config.json",
+        "Am241",
+        "24000",
+        "401029912",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/validation/run12_Am241/events.root"
+      ]
+    }
+  },
+  "independent_mothers": 32000,
+  "stage": "validation"
+}

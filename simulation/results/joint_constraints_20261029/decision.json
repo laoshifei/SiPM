@@ -1,0 +1,36 @@
+{
+  "selected_family": "a8439",
+  "promoted_to_default": false,
+  "last20_conditional_interval_checks": {
+    "Co60": {
+      "mean_time_CI_contains_zero": true,
+      "PID_width_CI_contains_one": [
+        true,
+        true,
+        true
+      ],
+      "F_CI_contains_one": [
+        true,
+        true,
+        true
+      ]
+    },
+    "Am241": {
+      "mean_time_CI_contains_zero": false,
+      "PID_width_CI_contains_one": [
+        true,
+        true,
+        true
+      ],
+      "F_CI_contains_one": [
+        false,
+        true,
+        true
+      ]
+    }
+  },
+  "alpha_relative_yield": 0.99852321635028,
+  "alpha_slow_ns": 8438.62820399502,
+  "limits": "No validation-driven retuning. Interval overlap is not an equivalence test. Conditional family and noise fit remain nonunique; apparatus and selection uncertainty excluded. No source-independent electronics or matched-state ROC validation in this phase.",
+  "next_work": "Use calibration-vs-validation and per-Q residuals to decide whether more independent MC or response-shape model flexibility is justified. Keep later noise-state drift as a separate controlled study; do not conflate it with particle truth."
+}

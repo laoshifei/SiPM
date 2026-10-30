@@ -1,0 +1,156 @@
+{
+  "scope": "Freeze bounded timing families before joint native waveform/PID calibration.\n\nThe analytic convolution proposes parameters only. Every evaluated ADC comes\nfrom full Geant4 transport or its native C++ noise-only response replay.\n",
+  "design_sha256": "05451919791e6b6862ab6bd12f88c0ad4dec5a67be165fc17c3065665c37d048",
+  "q_edges": [
+    201824.1125,
+    237975.62708333333,
+    274127.14166666666,
+    310278.65625,
+    346430.17083333334,
+    382581.6854166667,
+    418733.2
+  ],
+  "support_bins": {
+    "Co60": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "Am241": [
+      0,
+      1,
+      2
+    ]
+  },
+  "entries": {
+    "a4000_run3_Co60": {
+      "key": "a4000_run3_Co60",
+      "run": 3,
+      "source": "Co60",
+      "family": "a4000",
+      "events": 8000,
+      "seed": 401029003,
+      "native": true,
+      "config": "simulation/results/joint_constraints_20261029/profile/a4000_run3_Co60/config.json",
+      "config_sha256": "18271824369de1e8c2812b14cca533830865e631897b756c1c3a85e3d3b26b72",
+      "path": "simulation/results/joint_constraints_20261029/profile/a4000_run3_Co60/events.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a4000_run3_Co60/config.json",
+        "Co60",
+        "8000",
+        "401029003",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a4000_run3_Co60/events.root"
+      ]
+    },
+    "a4000_run12_Am241": {
+      "key": "a4000_run12_Am241",
+      "run": 12,
+      "source": "Am241",
+      "family": "a4000",
+      "events": 24000,
+      "seed": 401029012,
+      "native": true,
+      "config": "simulation/results/joint_constraints_20261029/profile/a4000_run12_Am241/config.json",
+      "config_sha256": "3ee2c6b89f5e70b7463fdc4f44f05d0d3d3768d13dbf5cec0157c85146018f10",
+      "path": "simulation/results/joint_constraints_20261029/profile/a4000_run12_Am241/events.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a4000_run12_Am241/config.json",
+        "Am241",
+        "24000",
+        "401029012",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a4000_run12_Am241/events.root"
+      ]
+    },
+    "a6000_run3_Co60": {
+      "key": "a6000_run3_Co60",
+      "run": 3,
+      "source": "Co60",
+      "family": "a6000",
+      "events": 8000,
+      "seed": 401030003,
+      "native": true,
+      "config": "simulation/results/joint_constraints_20261029/profile/a6000_run3_Co60/config.json",
+      "config_sha256": "b4dd81c1a8f404dbd776d520a7e2cdd0c8ec6af203bd51c3ca3cb216400c780f",
+      "path": "simulation/results/joint_constraints_20261029/profile/a6000_run3_Co60/events.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a6000_run3_Co60/config.json",
+        "Co60",
+        "8000",
+        "401030003",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a6000_run3_Co60/events.root"
+      ]
+    },
+    "a6000_run12_Am241": {
+      "key": "a6000_run12_Am241",
+      "run": 12,
+      "source": "Am241",
+      "family": "a6000",
+      "events": 24000,
+      "seed": 401030012,
+      "native": true,
+      "config": "simulation/results/joint_constraints_20261029/profile/a6000_run12_Am241/config.json",
+      "config_sha256": "c5ceed0ae95f5fa22f541ebc79673f17b6162775c550d2294905a8fabf7bcb51",
+      "path": "simulation/results/joint_constraints_20261029/profile/a6000_run12_Am241/events.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a6000_run12_Am241/config.json",
+        "Am241",
+        "24000",
+        "401030012",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a6000_run12_Am241/events.root"
+      ]
+    },
+    "a8439_run3_Co60": {
+      "key": "a8439_run3_Co60",
+      "run": 3,
+      "source": "Co60",
+      "family": "a8439",
+      "events": 8000,
+      "seed": 401031003,
+      "native": true,
+      "config": "simulation/results/joint_constraints_20261029/profile/a8439_run3_Co60/config.json",
+      "config_sha256": "65dc74996c5a3ec7b3b00e28c02259ba37b59be82f2a91859b6245e0b6933266",
+      "path": "simulation/results/joint_constraints_20261029/profile/a8439_run3_Co60/events.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a8439_run3_Co60/config.json",
+        "Co60",
+        "8000",
+        "401031003",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a8439_run3_Co60/events.root"
+      ]
+    },
+    "a8439_run12_Am241": {
+      "key": "a8439_run12_Am241",
+      "run": 12,
+      "source": "Am241",
+      "family": "a8439",
+      "events": 24000,
+      "seed": 401031012,
+      "native": true,
+      "config": "simulation/results/joint_constraints_20261029/profile/a8439_run12_Am241/config.json",
+      "config_sha256": "fb2289b5a31fe2333419cde435b8afb6a8cfd5c85b48e75cf90162fd9e637abc",
+      "path": "simulation/results/joint_constraints_20261029/profile/a8439_run12_Am241/events.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a8439_run12_Am241/config.json",
+        "Am241",
+        "24000",
+        "401031012",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a8439_run12_Am241/events.root"
+      ]
+    }
+  },
+  "binary_sha256": {
+    "csi_sources": "ecce63e1944a1d4ec3587f465f8e660337a5fb76926b1b30fface9ea7c06f735",
+    "replay_response": "1005a9e9060b8cb764f25ee619fcdccc6102d8a0bd9a3463d6d157bef4775a4e"
+  },
+  "independent_mothers": 96000,
+  "stage": "profile"
+}

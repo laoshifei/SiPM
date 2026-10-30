@@ -1,0 +1,30 @@
+{
+  "key": "run12_Am241",
+  "n_parent": 24000,
+  "n_selected": 209,
+  "n_common": 194,
+  "root_sha256": "b489de20e903a019a7edda979896b0ac2268f5951455d32c1aae6400dcea535d",
+  "replay": null,
+  "source": "Am241",
+  "common_avalanches_p10_p50_p90": [
+    2189.1,
+    2590.5,
+    2933.7
+  ],
+  "common_truth_counts": [
+    194,
+    0,
+    0,
+    0,
+    0
+  ],
+  "common_Q_bins": [
+    43,
+    82,
+    55,
+    14,
+    0,
+    0
+  ],
+  "code_sha256": "b904cceab0aa8594ace28d1ad26dbcbcde1e69a53f31a21825b5754d5a35dd03"
+}

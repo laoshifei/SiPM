@@ -1,0 +1,110 @@
+{
+  "scope": "Freeze bounded timing families before joint native waveform/PID calibration.\n\nThe analytic convolution proposes parameters only. Every evaluated ADC comes\nfrom full Geant4 transport or its native C++ noise-only response replay.\n",
+  "checkpoint_commit": "f7a840c",
+  "code_sha256": "4a5d4645714f4c4aa2c9000a8428c13cbebd7244c800cdf717e6b734afcad4a9",
+  "inputs_sha256": {
+    "simulation/results/signal_fluctuations_20261028/run3_first60.npz": "95462fa2ab57243fa669e1b4811469df40f2f3522e005db9dc3e64130865add3",
+    "simulation/results/pid_bandwidth_20261029/arrays/measured_run3_first60.npz": "3524db75f16934f8f2294c0081bd4e394c06d83151aa72285cf56ba6b76e3dcc",
+    "simulation/results/co_tail_20261029/arrays/run3_Co60.npz": "73ef30ea9a8882848946f7e8b4adbcb586b3e513a9b662a32ee18e100f0c45e9",
+    "simulation/results/co_tail_20261029/configs/run3_Co60.json": "d4f0325720a0a9a28f85d0df87dd81f96d8f0c8367f82fd4311223e338719187",
+    "simulation/results/signal_fluctuations_20261028/run12_first60.npz": "887ce1d2cec395f61ee1a196de2ca9b70d790403d60b83335c76df204816504b",
+    "simulation/results/pid_bandwidth_20261029/arrays/measured_run12_first60.npz": "9cc78ea936d98553e23ddd05b35664890f8b9029efae859c1f8592c8d2d25fdc",
+    "simulation/results/co_tail_20261029/arrays/run12_Am241.npz": "ed82742301a56d88a9f79ed82ab5757fdb7572ba8bbf5da5af7aed703240fab9",
+    "simulation/results/co_tail_20261029/configs/run12_Am241.json": "b5a677f96ba5e512f3faeaee5bf84942a5afab11573bb36a63aeb6528a7ccaee"
+  },
+  "parent_record_sha256": {
+    "simulation/results/co_tail_20261029": "fda088b0d1822b3f02cfe0ab4d3ae93724e6b057544fd79d48a809949b3bf0c3",
+    "simulation/results/pid_npe_20261029": "64703492f79c8b6d7735433bdb56a078fc466dd94ab0b9c7642c77d4af181f19"
+  },
+  "families_alpha_slow_ns": {
+    "a4000": 4000.0,
+    "a6000": 6000.0,
+    "a8439": 8438.62820399502
+  },
+  "starts_log_parameters": [
+    [
+      4.915391473057074,
+      6.658674481263171,
+      6.7527865868393855,
+      4.74625550350624
+    ],
+    [
+      4.605170185988092,
+      6.745236349484363,
+      6.620073206530356,
+      4.867534450455582
+    ],
+    [
+      5.521460917862246,
+      6.907755278982137,
+      6.856461984594587,
+      4.499809670330265
+    ]
+  ],
+  "q_edges": [
+    201824.1125,
+    237975.62708333333,
+    274127.14166666666,
+    310278.65625,
+    346430.17083333334,
+    382581.6854166667,
+    418733.2
+  ],
+  "support_bins": {
+    "Co60": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "Am241": [
+      0,
+      1,
+      2
+    ]
+  },
+  "ranking_scales": {
+    "median_in_data_IQR": 0.2,
+    "mean_time_ns": 3.0,
+    "IQR_ratio": 0.15,
+    "covariance_normalized": 0.25,
+    "F_ratio": 0.1,
+    "mean_ADC_NRMSE": 0.01
+  },
+  "ranking": "Equal source weights. Sum of six group mean-squared residuals: three median shifts/data IQR, mean time, three IQR ratios, six covariance entries normalized by data diagonal products, three F ratios, raw mean ADC NRMSE. Descriptive correlated penalties, not likelihood. Choose smallest total on native calibration ADC first60 only.",
+  "training": "Frozen run3/run12 first60 only; tail-study MC reused for fixed proposal closure, then independent calibration mothers for each family. No later experimental segment or fresh validation output enters selection.",
+  "timing": "Fixed alpha slow times are conditional sensitivity families, not confidence limits. Fractions solve the first60 mean-time target when feasible. Four other timing parameters fit uniform density, five descriptors and late-tail moments, three starts.",
+  "closure": "Fixed smoothed tail-native minus analytic difference is used only to propose parameters; never inserted into native waveform.",
+  "noise": "Native calibration transport disables signal residual. Refit nonnegative positive-PSD mixture against full PID covariance and F50/102/202; inherited event-variance CV fixed. Then native noise-only replay, own-anchor ADC selection and ranking.",
+  "normalization": "Common optical-yield and alpha-relative-yield scalars preserve each analytical 3us gate area. No per-event scaling, PID-score broadening or imported measured template.",
+  "native": {
+    "calibration_mothers": 96000,
+    "validation_mothers": 32000,
+    "calibration_Co_seeds": [
+      401029003,
+      401030003,
+      401031003
+    ],
+    "calibration_Am_seeds": [
+      401029012,
+      401030012,
+      401031012
+    ],
+    "validation_seeds": {
+      "Co60": 401029903,
+      "Am241": 401029912
+    }
+  },
+  "frozen": [
+    "geometry",
+    "PDE0.3",
+    "passive transmission0.5",
+    "SPE2/29ns",
+    "first60 baseline noise",
+    "event variance CV",
+    "experimental IDs and PCA"
+  ],
+  "limits": "Main-band data labels are diagnostic, not particle truth. Am includes alpha/gamma/electrons. Unknown circuit and geometry remain conditional. Later data previously explored, not new experimental blind validation."
+}

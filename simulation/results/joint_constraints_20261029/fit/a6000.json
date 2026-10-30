@@ -1,0 +1,114 @@
+{
+  "attempts": [
+    {
+      "start": 0,
+      "parameters": {
+        "electron_tau_ns": [
+          128.3441672910598,
+          771.1973682019068
+        ],
+        "alpha_tau_ns": [
+          764.9130938880218,
+          6000.0
+        ],
+        "lowpass_ns": 128.7824946063661,
+        "electron_fast_fraction": 0.18632797536608295,
+        "alpha_fast_fraction": 0.4899048618292711
+      },
+      "objective": 13.837461492863074,
+      "success": true,
+      "nfev": 16,
+      "mean_time_difference_ns": {
+        "Co60": 1.5916157281026244e-12,
+        "Am241": 3.410605131648481e-13
+      }
+    },
+    {
+      "start": 1,
+      "parameters": {
+        "electron_tau_ns": [
+          128.33150383060303,
+          771.1912884903841
+        ],
+        "alpha_tau_ns": [
+          764.8968605750499,
+          6000.0
+        ],
+        "lowpass_ns": 128.78606529518638,
+        "electron_fast_fraction": 0.18632460348030505,
+        "alpha_fast_fraction": 0.4898946517845739
+      },
+      "objective": 13.837460962674282,
+      "success": true,
+      "nfev": 17,
+      "mean_time_difference_ns": {
+        "Co60": 1.2505552149377763e-12,
+        "Am241": 0.0
+      }
+    },
+    {
+      "start": 2,
+      "parameters": {
+        "electron_tau_ns": [
+          128.34689897661767,
+          771.1991908113552
+        ],
+        "alpha_tau_ns": [
+          764.9130909522194,
+          6000.0
+        ],
+        "lowpass_ns": 128.7824970004099,
+        "electron_fast_fraction": 0.18633034673785476,
+        "alpha_fast_fraction": 0.4899048623645796
+      },
+      "objective": 13.83746159090666,
+      "success": true,
+      "nfev": 26,
+      "mean_time_difference_ns": {
+        "Co60": 1.4779288903810084e-12,
+        "Am241": -2.2737367544323206e-13
+      }
+    }
+  ],
+  "best": {
+    "start": 1,
+    "parameters": {
+      "electron_tau_ns": [
+        128.33150383060303,
+        771.1912884903841
+      ],
+      "alpha_tau_ns": [
+        764.8968605750499,
+        6000.0
+      ],
+      "lowpass_ns": 128.78606529518638,
+      "electron_fast_fraction": 0.18632460348030505,
+      "alpha_fast_fraction": 0.4898946517845739
+    },
+    "objective": 13.837460962674282,
+    "success": true,
+    "nfev": 17,
+    "mean_time_difference_ns": {
+      "Co60": 1.2505552149377763e-12,
+      "Am241": 0.0
+    }
+  },
+  "bounds_log": [
+    [
+      4.382026634673881,
+      5.991464547107982,
+      5.991464547107982,
+      4.0943445622221
+    ],
+    [
+      6.214608098422191,
+      8.006367567650246,
+      7.495541943884256,
+      5.298317366548036
+    ]
+  ],
+  "analytic_gate_area_multipliers": {
+    "electron": 0.9990176933560938,
+    "alpha": 0.7437397341780428
+  }
+}

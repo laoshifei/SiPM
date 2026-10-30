@@ -1,0 +1,166 @@
+{
+  "scope": "Freeze bounded timing families before joint native waveform/PID calibration.\n\nThe analytic convolution proposes parameters only. Every evaluated ADC comes\nfrom full Geant4 transport or its native C++ noise-only response replay.\n",
+  "design_sha256": "05451919791e6b6862ab6bd12f88c0ad4dec5a67be165fc17c3065665c37d048",
+  "q_edges": [
+    201824.1125,
+    237975.62708333333,
+    274127.14166666666,
+    310278.65625,
+    346430.17083333334,
+    382581.6854166667,
+    418733.2
+  ],
+  "support_bins": {
+    "Co60": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "Am241": [
+      0,
+      1,
+      2
+    ]
+  },
+  "entries": {
+    "a4000_run3_Co60": {
+      "key": "a4000_run3_Co60",
+      "run": 3,
+      "source": "Co60",
+      "family": "a4000",
+      "events": 8000,
+      "seed": 401029003,
+      "native": false,
+      "config": "simulation/results/joint_constraints_20261029/noise_fit/a4000_run3_Co60_config.json",
+      "config_sha256": "aa60bb3b95cdc0dd2043609fdbf65130663c9d626f6f29d63b5f25422a5c625b",
+      "path": "simulation/results/joint_constraints_20261029/calibration/a4000_run3_Co60/events.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a4000_run3_Co60/events.root",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/noise_fit/a4000_run3_Co60_config.json",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/calibration/a4000_run3_Co60/events.root"
+      ],
+      "parent": "simulation/results/joint_constraints_20261029/profile/a4000_run3_Co60/events.root",
+      "parent_sha256": "f8da3e9c4ee69bb539cf71f78f5007705d7a56717ba9e6f773b95fbe9b1cf655"
+    },
+    "a4000_run12_Am241": {
+      "key": "a4000_run12_Am241",
+      "run": 12,
+      "source": "Am241",
+      "family": "a4000",
+      "events": 24000,
+      "seed": 401029012,
+      "native": false,
+      "config": "simulation/results/joint_constraints_20261029/noise_fit/a4000_run12_Am241_config.json",
+      "config_sha256": "609ac9df0b759ddb537ea7a2c5cf8a153a19c1a9dd49e7001ea710c1df3bab4b",
+      "path": "simulation/results/joint_constraints_20261029/calibration/a4000_run12_Am241/events.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a4000_run12_Am241/events.root",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/noise_fit/a4000_run12_Am241_config.json",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/calibration/a4000_run12_Am241/events.root"
+      ],
+      "parent": "simulation/results/joint_constraints_20261029/profile/a4000_run12_Am241/events.root",
+      "parent_sha256": "cc76363dbdf704c10b0380fb501e52d76039aecdc9b26f5becccc4dd74c6d582"
+    },
+    "a6000_run3_Co60": {
+      "key": "a6000_run3_Co60",
+      "run": 3,
+      "source": "Co60",
+      "family": "a6000",
+      "events": 8000,
+      "seed": 401030003,
+      "native": false,
+      "config": "simulation/results/joint_constraints_20261029/noise_fit/a6000_run3_Co60_config.json",
+      "config_sha256": "c8121f76823f088ee56faaca9d5aacee6535bf64adbef9b6f28dd585d5bcfd2a",
+      "path": "simulation/results/joint_constraints_20261029/calibration/a6000_run3_Co60/events.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a6000_run3_Co60/events.root",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/noise_fit/a6000_run3_Co60_config.json",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/calibration/a6000_run3_Co60/events.root"
+      ],
+      "parent": "simulation/results/joint_constraints_20261029/profile/a6000_run3_Co60/events.root",
+      "parent_sha256": "2b45879fe2f74ce5a0b4300187295d14e453fb577b87a6447076b9053004ee30"
+    },
+    "a6000_run12_Am241": {
+      "key": "a6000_run12_Am241",
+      "run": 12,
+      "source": "Am241",
+      "family": "a6000",
+      "events": 24000,
+      "seed": 401030012,
+      "native": false,
+      "config": "simulation/results/joint_constraints_20261029/noise_fit/a6000_run12_Am241_config.json",
+      "config_sha256": "495c7cdda6638500d7e17b70305dd9f15c5d6e4a218801dbe2268025dd8fd42e",
+      "path": "simulation/results/joint_constraints_20261029/calibration/a6000_run12_Am241/events.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a6000_run12_Am241/events.root",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/noise_fit/a6000_run12_Am241_config.json",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/calibration/a6000_run12_Am241/events.root"
+      ],
+      "parent": "simulation/results/joint_constraints_20261029/profile/a6000_run12_Am241/events.root",
+      "parent_sha256": "5c48379147b637c52df95f83cbb475d7e55f61cb3976b6bab9ede3985512560d"
+    },
+    "a8439_run3_Co60": {
+      "key": "a8439_run3_Co60",
+      "run": 3,
+      "source": "Co60",
+      "family": "a8439",
+      "events": 8000,
+      "seed": 401031003,
+      "native": false,
+      "config": "simulation/results/joint_constraints_20261029/noise_fit/a8439_run3_Co60_config.json",
+      "config_sha256": "133395b681b5fd3de7628ad514b11b9042a7760e9dd29cb804e3fa6f9dfd419d",
+      "path": "simulation/results/joint_constraints_20261029/calibration/a8439_run3_Co60/events.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a8439_run3_Co60/events.root",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/noise_fit/a8439_run3_Co60_config.json",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/calibration/a8439_run3_Co60/events.root"
+      ],
+      "parent": "simulation/results/joint_constraints_20261029/profile/a8439_run3_Co60/events.root",
+      "parent_sha256": "5a9dc6e550c99be91dc4e880dafee37537170cdc5efadb79b04eceddbec47a4a"
+    },
+    "a8439_run12_Am241": {
+      "key": "a8439_run12_Am241",
+      "run": 12,
+      "source": "Am241",
+      "family": "a8439",
+      "events": 24000,
+      "seed": 401031012,
+      "native": false,
+      "config": "simulation/results/joint_constraints_20261029/noise_fit/a8439_run12_Am241_config.json",
+      "config_sha256": "b9c5b1db8b3c250aad043cde4f6dc3555d3d5eb9bf14f85ddff30226b475b04c",
+      "path": "simulation/results/joint_constraints_20261029/calibration/a8439_run12_Am241/events.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/replay_response",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a8439_run12_Am241/events.root",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/noise_fit/a8439_run12_Am241_config.json",
+        "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/calibration/a8439_run12_Am241/events.root"
+      ],
+      "parent": "simulation/results/joint_constraints_20261029/profile/a8439_run12_Am241/events.root",
+      "parent_sha256": "804149899657ba1493c4a0499b20cfab0156c5543166156f27b6415c1ec34bdd"
+    }
+  },
+  "binary_sha256": {
+    "csi_sources": "ecce63e1944a1d4ec3587f465f8e660337a5fb76926b1b30fface9ea7c06f735",
+    "replay_response": "1005a9e9060b8cb764f25ee619fcdccc6102d8a0bd9a3463d6d157bef4775a4e"
+  },
+  "independent_mothers": 0,
+  "stage": "calibration",
+  "noise_fit_code_sha256": "8e19f3e3537e6cf63ec4d93575ca8b83fa67c624826f5b1573b20ef77d6230fc",
+  "fit_sha256": {
+    "a4000_run3_Co60": "ad39c872f1f78abc0214513188638d4a75ca9af65a42f17ca96060437b4fa56e",
+    "a4000_run12_Am241": "96454fcafd74560a8155e606968d3a5f254e71b87edfabbee89ca7136d5abd7a",
+    "a6000_run3_Co60": "d8b568d112ad52249720ee9ba5e4ba3db8de1ea7388684c1c401bc50f4e2e81f",
+    "a6000_run12_Am241": "cca1af307d69bb32cc409edb2a07e1682fed15a8008264a7de166ae0f6c69d1c",
+    "a8439_run3_Co60": "9c7972798051430f8edf686fbe7fc7e43c5992a82395a90ef00fb59815afa800",
+    "a8439_run12_Am241": "fe4a10b8516337bd70ec056981040b035f9b3aae6a1b55836310f9ceb09d4dea"
+  },
+  "note": "Replays reuse all 96000 calibration mothers; never count them again as independent events."
+}

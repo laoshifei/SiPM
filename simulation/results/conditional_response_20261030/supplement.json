@@ -1,0 +1,416 @@
+{
+  "data_segment_changes": {
+    "run3_middle20__original": {
+      "data_later_minus_first60_mean_time_ns": 1.2672127131190258,
+      "uncertainty": {
+        "64": {
+          "CI95": [
+            -0.5894024193680014,
+            2.8941192502749624
+          ],
+          "valid_draws": 512
+        },
+        "128": {
+          "CI95": [
+            -0.2794061056520608,
+            2.731639055917792
+          ],
+          "valid_draws": 512
+        }
+      }
+    },
+    "run3_last20__original": {
+      "data_later_minus_first60_mean_time_ns": 0.3323454186052732,
+      "uncertainty": {
+        "64": {
+          "CI95": [
+            -1.3459916732910553,
+            1.8811562114907139
+          ],
+          "valid_draws": 512
+        },
+        "128": {
+          "CI95": [
+            -1.0111742009620588,
+            2.0846524129448145
+          ],
+          "valid_draws": 512
+        }
+      }
+    },
+    "run3_middle20__q2": {
+      "data_later_minus_first60_mean_time_ns": 1.7352419352921755,
+      "uncertainty": {
+        "64": {
+          "CI95": [
+            0.010496132675871801,
+            3.231240106696833
+          ],
+          "valid_draws": 512
+        },
+        "128": {
+          "CI95": [
+            0.06012763394303011,
+            2.999950507983906
+          ],
+          "valid_draws": 511
+        }
+      }
+    },
+    "run3_last20__q2": {
+      "data_later_minus_first60_mean_time_ns": 0.3948809997899039,
+      "uncertainty": {
+        "64": {
+          "CI95": [
+            -1.3494338547298117,
+            1.9184279918051095
+          ],
+          "valid_draws": 512
+        },
+        "128": {
+          "CI95": [
+            -0.9487423966024727,
+            2.1874086563945876
+          ],
+          "valid_draws": 512
+        }
+      }
+    },
+    "run3_middle20__q4": {
+      "data_later_minus_first60_mean_time_ns": 1.9714706735541876,
+      "uncertainty": {
+        "64": {
+          "CI95": [
+            0.34023024600193796,
+            3.3971216915995583
+          ],
+          "valid_draws": 481
+        },
+        "128": {
+          "CI95": [
+            0.3721218525759573,
+            3.2595136971714234
+          ],
+          "valid_draws": 491
+        }
+      }
+    },
+    "run3_last20__q4": {
+      "data_later_minus_first60_mean_time_ns": 0.198486344249571,
+      "uncertainty": {
+        "64": {
+          "CI95": [
+            -1.8095363050261963,
+            1.6589790075169815
+          ],
+          "valid_draws": 450
+        },
+        "128": {
+          "CI95": [
+            -1.367961912858151,
+            1.331094798909832
+          ],
+          "valid_draws": 471
+        }
+      }
+    },
+    "run3_middle20__q2r2": {
+      "data_later_minus_first60_mean_time_ns": 1.1992062241166224,
+      "uncertainty": {
+        "64": {
+          "CI95": [
+            -0.8994845795528006,
+            2.919006253260248
+          ],
+          "valid_draws": 481
+        },
+        "128": {
+          "CI95": [
+            -0.4677789375314156,
+            2.7427332034462792
+          ],
+          "valid_draws": 483
+        }
+      }
+    },
+    "run3_last20__q2r2": {
+      "data_later_minus_first60_mean_time_ns": -0.4227167535050258,
+      "uncertainty": {
+        "64": {
+          "CI95": [
+            -1.860802821767571,
+            1.0535497498011217
+          ],
+          "valid_draws": 458
+        },
+        "128": {
+          "CI95": [
+            -1.506282527804406,
+            1.16524855725722
+          ],
+          "valid_draws": 460
+        }
+      }
+    },
+    "run12_middle20__original": {
+      "data_later_minus_first60_mean_time_ns": 0.3768280155562742,
+      "uncertainty": {
+        "64": {
+          "CI95": [
+            -3.7760374232462977,
+            5.117463300526562
+          ],
+          "valid_draws": 512
+        },
+        "128": {
+          "CI95": [
+            -3.809956818060431,
+            4.948189802986107
+          ],
+          "valid_draws": 512
+        }
+      }
+    },
+    "run12_last20__original": {
+      "data_later_minus_first60_mean_time_ns": -5.061587005496082,
+      "uncertainty": {
+        "64": {
+          "CI95": [
+            -10.199426479875711,
+            -0.08694393043570428
+          ],
+          "valid_draws": 512
+        },
+        "128": {
+          "CI95": [
+            -10.159769361426443,
+            0.28969647343501903
+          ],
+          "valid_draws": 512
+        }
+      }
+    },
+    "run12_middle20__q2": {
+      "data_later_minus_first60_mean_time_ns": 0.6981794540583675,
+      "uncertainty": {
+        "64": {
+          "CI95": [
+            -3.25028313803416,
+            5.781108182150094
+          ],
+          "valid_draws": 512
+        },
+        "128": {
+          "CI95": [
+            -3.6076727421619936,
+            5.211848005394565
+          ],
+          "valid_draws": 512
+        }
+      }
+    },
+    "run12_last20__q2": {
+      "data_later_minus_first60_mean_time_ns": -5.017061672851875,
+      "uncertainty": {
+        "64": {
+          "CI95": [
+            -9.737775991897523,
+            -0.19758746686834927
+          ],
+          "valid_draws": 512
+        },
+        "128": {
+          "CI95": [
+            -9.837361822696153,
+            0.32913434919285733
+          ],
+          "valid_draws": 512
+        }
+      }
+    },
+    "run12_middle20__q4": {
+      "data_later_minus_first60_mean_time_ns": 0.28257612245052854,
+      "uncertainty": {
+        "64": {
+          "CI95": [
+            -3.756723400054368,
+            4.775653027928903
+          ],
+          "valid_draws": 512
+        },
+        "128": {
+          "CI95": [
+            -4.024744737721192,
+            4.404392971406912
+          ],
+          "valid_draws": 512
+        }
+      }
+    },
+    "run12_last20__q4": {
+      "data_later_minus_first60_mean_time_ns": -5.704965990988464,
+      "uncertainty": {
+        "64": {
+          "CI95": [
+            -10.202453613663035,
+            -1.0413009261119643
+          ],
+          "valid_draws": 512
+        },
+        "128": {
+          "CI95": [
+            -9.904011236368214,
+            -0.5571372868794231
+          ],
+          "valid_draws": 512
+        }
+      }
+    },
+    "run12_middle20__q2r2": {
+      "data_later_minus_first60_mean_time_ns": -1.135673615900723,
+      "uncertainty": {
+        "64": {
+          "CI95": [
+            -5.753463378554699,
+            6.850848154106653
+          ],
+          "valid_draws": 502
+        },
+        "128": {
+          "CI95": [
+            -4.936666916974394,
+            7.312446505762659
+          ],
+          "valid_draws": 498
+        }
+      }
+    },
+    "run12_last20__q2r2": {
+      "data_later_minus_first60_mean_time_ns": null,
+      "uncertainty": {
+        "64": {
+          "CI95": null,
+          "valid_draws": 0
+        },
+        "128": {
+          "CI95": null,
+          "valid_draws": 0
+        }
+      }
+    }
+  },
+  "waveform_checks": {
+    "Co60": {
+      "identity": {
+        "mean_ADC_NRMSE_vs_first60": 0.013616747578128223,
+        "F_ratio_vs_first60": [
+          0.9940696677399701,
+          0.9953849636739432,
+          0.9709912758397892
+        ],
+        "scope": "Descriptive point estimates; fixed original MC IDs/Q, first60 data Q2 target. No fit or ranking."
+      },
+      "no_signal_residual": {
+        "mean_ADC_NRMSE_vs_first60": 0.01360148902009592,
+        "F_ratio_vs_first60": [
+          0.025645500668401384,
+          0.09953452129675554,
+          0.23075480271464174
+        ],
+        "scope": "Descriptive point estimates; fixed original MC IDs/Q, first60 data Q2 target. No fit or ranking."
+      },
+      "ap05_60ns": {
+        "mean_ADC_NRMSE_vs_first60": 0.01801877907389449,
+        "F_ratio_vs_first60": [
+          0.025105281819824056,
+          0.0980927805603005,
+          0.2293736685293476
+        ],
+        "scope": "Descriptive point estimates; fixed original MC IDs/Q, first60 data Q2 target. No fit or ranking."
+      },
+      "ap05_300ns": {
+        "mean_ADC_NRMSE_vs_first60": 0.019437601189995487,
+        "F_ratio_vs_first60": [
+          0.025915028738612678,
+          0.0998034227232036,
+          0.22815779776605252
+        ],
+        "scope": "Descriptive point estimates; fixed original MC IDs/Q, first60 data Q2 target. No fit or ranking."
+      },
+      "ap15_300ns": {
+        "mean_ADC_NRMSE_vs_first60": 0.052845288595341953,
+        "F_ratio_vs_first60": [
+          0.027634209436726082,
+          0.10141330072942474,
+          0.2267642951293108
+        ],
+        "scope": "Descriptive point estimates; fixed original MC IDs/Q, first60 data Q2 target. No fit or ranking."
+      },
+      "recovery60ns": {
+        "mean_ADC_NRMSE_vs_first60": 0.013539298877772171,
+        "F_ratio_vs_first60": [
+          0.025387122424011647,
+          0.09944794660284406,
+          0.23063318389704132
+        ],
+        "scope": "Descriptive point estimates; fixed original MC IDs/Q, first60 data Q2 target. No fit or ranking."
+      }
+    },
+    "Am241": {
+      "identity": {
+        "mean_ADC_NRMSE_vs_first60": 0.009082488691146072,
+        "F_ratio_vs_first60": [
+          1.0140439193692996,
+          0.9919394301037985,
+          0.9788368389394279
+        ],
+        "scope": "Descriptive point estimates; fixed original MC IDs/Q, first60 data Q2 target. No fit or ranking."
+      },
+      "no_signal_residual": {
+        "mean_ADC_NRMSE_vs_first60": 0.01100265976035488,
+        "F_ratio_vs_first60": [
+          0.016848475808317373,
+          0.04262042573238895,
+          0.08731019365256348
+        ],
+        "scope": "Descriptive point estimates; fixed original MC IDs/Q, first60 data Q2 target. No fit or ranking."
+      },
+      "ap05_60ns": {
+        "mean_ADC_NRMSE_vs_first60": 0.020335904755524672,
+        "F_ratio_vs_first60": [
+          0.016949559548945285,
+          0.042438621624652915,
+          0.08706151887008871
+        ],
+        "scope": "Descriptive point estimates; fixed original MC IDs/Q, first60 data Q2 target. No fit or ranking."
+      },
+      "ap05_300ns": {
+        "mean_ADC_NRMSE_vs_first60": 0.025935180209780504,
+        "F_ratio_vs_first60": [
+          0.016559583379863074,
+          0.0427536668759316,
+          0.08744066570136116
+        ],
+        "scope": "Descriptive point estimates; fixed original MC IDs/Q, first60 data Q2 target. No fit or ranking."
+      },
+      "ap15_300ns": {
+        "mean_ADC_NRMSE_vs_first60": 0.07296376602363569,
+        "F_ratio_vs_first60": [
+          0.015870908349365498,
+          0.04160018963909948,
+          0.08461256120435323
+        ],
+        "scope": "Descriptive point estimates; fixed original MC IDs/Q, first60 data Q2 target. No fit or ranking."
+      },
+      "recovery60ns": {
+        "mean_ADC_NRMSE_vs_first60": 0.01087888169392224,
+        "F_ratio_vs_first60": [
+          0.016936092258682176,
+          0.042681169850358594,
+          0.0873276251669625
+        ],
+        "scope": "Descriptive point estimates; fixed original MC IDs/Q, first60 data Q2 target. No fit or ranking."
+      }
+    }
+  }
+}

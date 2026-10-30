@@ -1,0 +1,131 @@
+
+**************************************************************
+ Geant4 version Name: geant4-11-04-patch-02 [MT]   (12-June-2026)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+Checking overlaps for volume CsI:0 (G4Box) ... OK! 
+Checking overlaps for volume SourceExitFoil:0 (G4Box) ... OK! 
+Checking overlaps for volume Mylar:0 (G4Box) ... OK! 
+Checking overlaps for volume Grease:0 (G4Box) ... OK! 
+Checking overlaps for volume Sensor:0 (G4Box) ... OK! 
+Checking overlaps for volume PTFE:0 (G4Box) ... OK! 
+Checking overlaps for volume PTFE:1 (G4Box) ... OK! 
+Checking overlaps for volume PTFE:2 (G4Box) ... OK! 
+Checking overlaps for volume PTFE:3 (G4Box) ... OK! 
+### Birks coefficients used in run time
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Scint02
+      issued by : G4Scintillation::SetScintillationByParticleType
+Redefinition: Birks Saturation is replaced by ScintillationByParticleType!
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+======================================================================
+======          Radioactive Decay Physics Parameters           =======
+======================================================================
+min MeanLife (from G4NuclideTable)                1 ns 
+Max life time (from G4DeexPrecoParameters)        1000 ps 
+Internal e- conversion flag                       1
+Stored internal conversion coefficients           1
+Enabled atomic relaxation mode                    1
+Enable correlated gamma emission                  0
+Max 2J for sampling of angular correlations       10
+Atomic de-excitation enabled                      1
+Auger electron emission enabled                   1
+Check EM cuts disabled for atomic de-excitation   1
+Use Bearden atomic level energies                 0
+Use ANSTO fluorescence model                      0
+Threshold for very long decay time at rest        1e+30 y  
+======================================================================
+
+====================================================================
+                  HADRONIC PROCESSES SUMMARY (verbose level 1)
+-------------------------------------------------------------------------
+                           Hadronic Processes for GenericIon
+  Process: RadioactiveDecay
+event 0, Edep=0 MeV, detected photons=0
+event 100, Edep=0 MeV, detected photons=0
+event 200, Edep=0 MeV, detected photons=0
+event 300, Edep=0 MeV, detected photons=0
+event 400, Edep=1.17323 MeV, detected photons=16667
+event 500, Edep=0.727142 MeV, detected photons=10545
+event 600, Edep=0 MeV, detected photons=0
+event 700, Edep=0 MeV, detected photons=0
+event 800, Edep=0 MeV, detected photons=0
+event 900, Edep=0 MeV, detected photons=0
+event 1000, Edep=0 MeV, detected photons=0
+event 1100, Edep=0 MeV, detected photons=0
+event 1200, Edep=0 MeV, detected photons=0
+event 1300, Edep=0 MeV, detected photons=0
+event 1400, Edep=0 MeV, detected photons=0
+event 1500, Edep=0 MeV, detected photons=0
+event 1600, Edep=0 MeV, detected photons=0
+event 1700, Edep=0 MeV, detected photons=0
+event 1800, Edep=0 MeV, detected photons=0
+event 1900, Edep=0 MeV, detected photons=0
+event 2000, Edep=0.669931 MeV, detected photons=10317
+event 2100, Edep=1.17323 MeV, detected photons=16446
+event 2200, Edep=0 MeV, detected photons=0
+event 2300, Edep=0 MeV, detected photons=0
+event 2400, Edep=0 MeV, detected photons=0
+event 2500, Edep=0.87372 MeV, detected photons=12056
+event 2600, Edep=0 MeV, detected photons=0
+event 2700, Edep=0 MeV, detected photons=0
+event 2800, Edep=0 MeV, detected photons=0
+event 2900, Edep=0.808161 MeV, detected photons=10867
+event 3000, Edep=0 MeV, detected photons=0
+event 3100, Edep=0 MeV, detected photons=0
+event 3200, Edep=0 MeV, detected photons=0
+event 3300, Edep=0 MeV, detected photons=0
+event 3400, Edep=0 MeV, detected photons=0
+event 3500, Edep=0 MeV, detected photons=0
+event 3600, Edep=0 MeV, detected photons=0
+event 3700, Edep=0 MeV, detected photons=0
+event 3800, Edep=0 MeV, detected photons=0
+event 3900, Edep=0 MeV, detected photons=0
+event 4000, Edep=0 MeV, detected photons=0
+event 4100, Edep=0 MeV, detected photons=0
+event 4200, Edep=0 MeV, detected photons=0
+event 4300, Edep=0 MeV, detected photons=0
+event 4400, Edep=0 MeV, detected photons=0
+event 4500, Edep=0 MeV, detected photons=0
+event 4600, Edep=0 MeV, detected photons=0
+event 4700, Edep=0 MeV, detected photons=0
+event 4800, Edep=0 MeV, detected photons=0
+event 4900, Edep=0 MeV, detected photons=0
+event 5000, Edep=0 MeV, detected photons=0
+event 5100, Edep=0.185837 MeV, detected photons=2787
+event 5200, Edep=0 MeV, detected photons=0
+event 5300, Edep=0 MeV, detected photons=0
+event 5400, Edep=0 MeV, detected photons=0
+event 5500, Edep=0 MeV, detected photons=0
+event 5600, Edep=0 MeV, detected photons=0
+event 5700, Edep=0 MeV, detected photons=0
+event 5800, Edep=0 MeV, detected photons=0
+event 5900, Edep=0 MeV, detected photons=0
+event 6000, Edep=0 MeV, detected photons=0
+event 6100, Edep=0 MeV, detected photons=0
+event 6200, Edep=0.16835 MeV, detected photons=2322
+event 6300, Edep=0.722409 MeV, detected photons=9990
+event 6400, Edep=0 MeV, detected photons=0
+event 6500, Edep=0 MeV, detected photons=0
+event 6600, Edep=0.130186 MeV, detected photons=2087
+event 6700, Edep=0 MeV, detected photons=0
+event 6800, Edep=0 MeV, detected photons=0
+event 6900, Edep=0 MeV, detected photons=0
+event 7000, Edep=0 MeV, detected photons=0
+event 7100, Edep=0 MeV, detected photons=0
+event 7200, Edep=0 MeV, detected photons=0
+event 7300, Edep=0 MeV, detected photons=0
+event 7400, Edep=0 MeV, detected photons=0
+event 7500, Edep=0 MeV, detected photons=0
+event 7600, Edep=0 MeV, detected photons=0
+event 7700, Edep=0 MeV, detected photons=0
+event 7800, Edep=0 MeV, detected photons=0
+event 7900, Edep=0 MeV, detected photons=0

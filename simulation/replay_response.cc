@@ -64,6 +64,19 @@ int main(int argc, char** argv) {
     TFile output(argv[3], "CREATE");
     if (output.IsZombie()) throw std::runtime_error("Cannot create replay output");
     auto* target = tree->CloneTree(0);
+    // Keep diagnostic counters separate from the historical Events schema.
+    // They describe realized avalanches, not fitted or inferred detector values.
+    auto* diagnostics = new TTree("ResponseDiagnostics", "Native replay avalanche diagnostics");
+    ULong64_t diag_input=0, diag_primary=0, diag_ap=0, diag_dark=0, diag_xt=0, diag_partial=0;
+    double diag_recovery=1.;
+    diagnostics->Branch("event_id", &event_id);
+    diagnostics->Branch("n_input_photons", &diag_input);
+    diagnostics->Branch("n_primary", &diag_primary);
+    diagnostics->Branch("n_afterpulse", &diag_ap);
+    diagnostics->Branch("n_dark", &diag_dark);
+    diagnostics->Branch("n_crosstalk", &diag_xt);
+    diagnostics->Branch("n_recovery_below_099", &diag_partial);
+    diagnostics->Branch("mean_recovery", &diag_recovery);
     info["completed"]=false; info["schema_version"]=9; info["config"]=config;
     info["readout_response"]=config.value("readout_response",nlohmann::json{{"model","legacy_single_path"}});
     info["electronics_noise"]=config.value("electronics_noise",nlohmann::json{{"model","independent_gaussian"}});
@@ -77,6 +90,7 @@ int main(int argc, char** argv) {
       && config["sipm"]["readout"] == parent["sipm"]["readout"];
     for (Long64_t entry=0; entry<tree->GetEntries(); ++entry) {
       if (tree->GetEntry(entry)<=0) throw std::runtime_error("Cannot read parent event");
+      diag_input=pt->size(); diag_primary=diag_ap=diag_dark=diag_xt=diag_partial=0; diag_recovery=1.;
       if (pt->empty() && at->empty() && sensor.sensor.dark_rate_hz==0. && same_noise) {
         ++skipped_zero; ++equal_adc; ++equal_avalanches;
       } else {
@@ -100,6 +114,14 @@ int main(int argc, char** argv) {
         ReadoutResponse::Apply(config,simulated,duration,result);
         ReadoutNoise::Apply(config,sensor.readout,result);
         SignalDependentNoise::Apply(config,sensor.readout,result);
+        diag_primary=result.n_photon_avalanches; diag_ap=result.n_afterpulse_avalanches;
+        diag_dark=result.n_dark_avalanches; diag_xt=result.n_crosstalk_avalanches;
+        if (diag_primary+diag_ap+diag_dark+diag_xt != result.avalanche_time_ns.size())
+          throw std::runtime_error("Diagnostic avalanche counts do not close");
+        if (!result.avalanche_recovery.empty()) {
+          diag_recovery=std::accumulate(result.avalanche_recovery.begin(),result.avalanche_recovery.end(),0.)/result.avalanche_recovery.size();
+          diag_partial=std::count_if(result.avalanche_recovery.begin(),result.avalanche_recovery.end(),[](double x){return x<.99;});
+        }
         equal_adc += result.adc_counts == *adc;
         equal_avalanches += result.avalanche_time_ns == *at && result.avalanche_charge_C == *aq;
         ao->clear(); adg->clear(); by_origin->assign(6,0.);
@@ -121,13 +143,15 @@ int main(int argc, char** argv) {
         trigger=*std::max_element(signal->begin(),signal->end())/scale>=config["acquisition"]["amplitude_threshold_adc"].get<double>();
       }
       if (target->Fill()<0) throw std::runtime_error("Cannot write replay event");
+      if (diagnostics->Fill()<0) throw std::runtime_error("Cannot write response diagnostic");
     }
     info["completed"]=target->GetEntries()==tree->GetEntries();
     info["response_replay"]["equal_original_adc_events"]=equal_adc;
     info["response_replay"]["equal_original_avalanche_events"]=equal_avalanches;
     info["response_replay"]["unchanged_zero_photon_events"]=skipped_zero;
     info["response_replay"]["max_relative_charge_balance"]=max_balance;
-    target->Write(); TObjString(info.dump().c_str()).Write("RunInfo",TObject::kOverwrite);
+    info["response_replay"]["diagnostics"]="ResponseDiagnostics: realized primary/AP/dark/XT counts and recovery; empty-avalanches mean_recovery=1 by convention. Counters do not modify RNG or waveforms.";
+    target->Write(); diagnostics->Write(); TObjString(info.dump().c_str()).Write("RunInfo",TObject::kOverwrite);
     std::cout<<info["response_replay"].dump(2)<<'\n';
   } catch (const std::exception& e) { std::cerr<<e.what()<<'\n'; return 1; }
 }

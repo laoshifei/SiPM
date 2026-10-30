@@ -1,0 +1,37 @@
+{
+  "scope": "Preserved incomplete native outputs before identical-parameter single-worker retry",
+  "failed_cases": [
+    "run12_Am241__ap05_60ns",
+    "run12_Am241__ap05_300ns"
+  ],
+  "known": "Initial runner reported replay failure for ap05_60ns; both cases have incomplete ROOT outputs, empty logs, and no extraction or validation completion. Individual return codes were not retained by the original runner. Cause not established.",
+  "retry": "Same binary, config, seed and parent; workers changed from 2 to 1 only. Completed cases are retained.",
+  "files": [
+    {
+      "original": "simulation/results/conditional_response_20261030/roots/run12_Am241__ap05_60ns.root",
+      "preserved_as": "simulation/results/conditional_response_20261030/diagnostics/incomplete_first_attempt/run12_Am241__ap05_60ns.root",
+      "bytes": 33337069
+    },
+    {
+      "original": "simulation/results/conditional_response_20261030/logs/run12_Am241__ap05_60ns_replay.log",
+      "preserved_as": "simulation/results/conditional_response_20261030/diagnostics/incomplete_first_attempt/run12_Am241__ap05_60ns_replay.log",
+      "bytes": 0
+    },
+    {
+      "original": "simulation/results/conditional_response_20261030/roots/run12_Am241__ap05_300ns.root",
+      "preserved_as": "simulation/results/conditional_response_20261030/diagnostics/incomplete_first_attempt/run12_Am241__ap05_300ns.root",
+      "bytes": 26695555
+    },
+    {
+      "original": "simulation/results/conditional_response_20261030/logs/run12_Am241__ap05_300ns_replay.log",
+      "preserved_as": "simulation/results/conditional_response_20261030/diagnostics/incomplete_first_attempt/run12_Am241__ap05_300ns_replay.log",
+      "bytes": 0
+    }
+  ],
+  "retry_interruption": {
+    "runner_exit_code": 143,
+    "stdout": "empty",
+    "replay_outputs_created": false,
+    "interpretation": "Runner terminated by SIGTERM; issuer/cause unknown. No numerical results were accepted. Retry again with identical parameters and explicit OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 before Python startup."
+  }
+}

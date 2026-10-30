@@ -1,0 +1,84 @@
+{
+  "scope": "Regression on all six actual native calibration ADC arrays; actual fractional t10 agrees with original extraction including exact integer crossings. Formal PID integer gate unchanged.",
+  "fit_code_sha256": "8e19f3e3537e6cf63ec4d93575ca8b83fa67c624826f5b1573b20ef77d6230fc",
+  "arrays": {
+    "a4000_run3_Co60": {
+      "array_sha256": "084ab82c1a2552c0bb227380422e2d550df68a6baa5cf76a185f435d9feb514a",
+      "events_checked": 293,
+      "affected_original_event_ids": [],
+      "actual_t10_samples": [],
+      "midpoint_proxy_t10": [],
+      "original_extracted_F": [],
+      "midpoint_F": [],
+      "actual_t10_F_matches_extracted": true
+    },
+    "a4000_run12_Am241": {
+      "array_sha256": "174b845795de699088b7ebbbe7cbbfb28773a0c4385421169345d50eb8240e98",
+      "events_checked": 189,
+      "affected_original_event_ids": [],
+      "actual_t10_samples": [],
+      "midpoint_proxy_t10": [],
+      "original_extracted_F": [],
+      "midpoint_F": [],
+      "actual_t10_F_matches_extracted": true
+    },
+    "a6000_run3_Co60": {
+      "array_sha256": "f89d49eac689cbdaa4e6ff5055cfd1dcb6fe9744dfb8c8b6bfdb2ddadf6640d5",
+      "events_checked": 306,
+      "affected_original_event_ids": [],
+      "actual_t10_samples": [],
+      "midpoint_proxy_t10": [],
+      "original_extracted_F": [],
+      "midpoint_F": [],
+      "actual_t10_F_matches_extracted": true
+    },
+    "a6000_run12_Am241": {
+      "array_sha256": "3ba0972937ad8322a876baa981f1eda676e058cd9722719c0edacc8a80877530",
+      "events_checked": 183,
+      "affected_original_event_ids": [],
+      "actual_t10_samples": [],
+      "midpoint_proxy_t10": [],
+      "original_extracted_F": [],
+      "midpoint_F": [],
+      "actual_t10_F_matches_extracted": true
+    },
+    "a8439_run3_Co60": {
+      "array_sha256": "36766324a6815f35a0261acf5c7055e3179d16ec64170d786f69ad1040401b5f",
+      "events_checked": 252,
+      "affected_original_event_ids": [
+        3302
+      ],
+      "actual_t10_samples": [
+        511.0
+      ],
+      "midpoint_proxy_t10": [
+        511.5
+      ],
+      "original_extracted_F": [
+        [
+          0.011212785753402715,
+          0.03094949170676138,
+          0.08770379864999385
+        ]
+      ],
+      "midpoint_F": [
+        [
+          0.011589357329010253,
+          0.031753833513635234,
+          0.08874920087083274
+        ]
+      ],
+      "actual_t10_F_matches_extracted": true
+    },
+    "a8439_run12_Am241": {
+      "array_sha256": "865e67e4190f10a4fd4d82cfae6e39607051f986c3543790281ba02fa133b679",
+      "events_checked": 175,
+      "affected_original_event_ids": [],
+      "actual_t10_samples": [],
+      "midpoint_proxy_t10": [],
+      "original_extracted_F": [],
+      "midpoint_F": [],
+      "actual_t10_F_matches_extracted": true
+    }
+  }
+}

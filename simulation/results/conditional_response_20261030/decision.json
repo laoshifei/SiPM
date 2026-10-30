@@ -1,0 +1,10 @@
+{
+  "promoted_to_default": false,
+  "conclusion_zh": "**本轮未找到可直接替代经验信号残差的后脉冲或恢复时间方案，默认配置保持不变。**\n\nAm 后段按箱内电荷两分匹配后，平均时间宽度比为 **0.917**，中心仍为 **+7.26 ns**。匹配造成的宽度比变化区间包含0；再同时匹配基线RMS时有空单元，无法可靠估计，不能据此归因于基线噪声。\n\n固定同一批母事件和原Q时，原经验残差的平均时间宽度是关闭残差后的 **2.36 倍**；15%／300 ns后脉冲压力对照仅为 **1.036 倍**，却把中心推迟 **34.96 ns**。这是本次固定光学/读出下的机制敏感性结果，不是对所有后脉冲模型的排除，也没有测出真实器件的AP概率。",
+  "next_work_zh": "1. **先检查 Am 的采集段状态与信号形状。** 用原始事件顺序、前触发均值/RMS/相关谱建立状态描述；在每段有实际支持的Q区间，比较均值已去除后的信号协方差、早晚积分份额和平均时间。不跨缺失的Q×RMS单元外推，也不把信号残差拟合解释成温度测量。\n2. **在first60内约束所缺的相关波动。** 比较保留光子/SIPM统计后剩余协方差的时间结构，再判断是需要随采集状态变化的读出响应，还是事件间快慢分量起伏的候选模型。这些目前都是待检验假设，均需同时约束平均波形、三种PID协方差和F，而不是只调整单个带宽。\n3. **模型冻结后才增加独立模拟统计。** 目前支持箱仅有Co276、Am180条MC波形，应先按目标区间精度规划新种子完整Geant4输运量；既有重放不增加独立样本。后续再做同读出状态的α/γ真值PID检查，不能用放射源标签代替实验真值。",
+  "source_sha256": "cfe4be90f1809edcd965a2945cc8c05d6ab2bf539f56ea9f36c8dd9746d1e47a",
+  "new_independent_mothers": 0,
+  "experimental_ROC_updated": false,
+  "limits": "Pointwise conditional intervals, fixed cuts/targets/model. Source main bands are not truth. Prespecified sensitivity settings only; no fitted AP/recovery values. Later data and prior validation mothers are now exploratory.",
+  "incomplete_attempts": "Incomplete interrupted ROOT files and empty logs retained under diagnostics; excluded from successful analysis."
+}

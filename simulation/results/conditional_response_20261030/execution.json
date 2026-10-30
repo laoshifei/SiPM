@@ -1,0 +1,240 @@
+{
+  "code_sha256": "071da255dfeee48a8e2c5f979dae30bdc4785c103c6836094b3935879f922370",
+  "protocol_sha256": "327bc874fe9cfc676e77f5d50e0fb1937c04b2f7daa9425a95bb80f030233d81",
+  "jobs": [
+    {
+      "key": "run3_Co60__identity",
+      "steps": [
+        {
+          "step": "replay",
+          "existing": true
+        },
+        {
+          "step": "validate",
+          "existing": true
+        },
+        {
+          "step": "extract",
+          "existing": true
+        }
+      ],
+      "seconds": 0.07497739791870117
+    },
+    {
+      "key": "run3_Co60__no_signal_residual",
+      "steps": [
+        {
+          "step": "replay",
+          "existing": true
+        },
+        {
+          "step": "validate",
+          "existing": true
+        },
+        {
+          "step": "extract",
+          "existing": true
+        }
+      ],
+      "seconds": 0.2288835048675537
+    },
+    {
+      "key": "run3_Co60__ap05_60ns",
+      "steps": [
+        {
+          "step": "replay",
+          "existing": true
+        },
+        {
+          "step": "validate",
+          "existing": true
+        },
+        {
+          "step": "extract",
+          "existing": true
+        }
+      ],
+      "seconds": 0.1350421905517578
+    },
+    {
+      "key": "run3_Co60__ap05_300ns",
+      "steps": [
+        {
+          "step": "replay",
+          "existing": true
+        },
+        {
+          "step": "validate",
+          "existing": true
+        },
+        {
+          "step": "extract",
+          "existing": true
+        }
+      ],
+      "seconds": 0.03785347938537598
+    },
+    {
+      "key": "run3_Co60__ap15_300ns",
+      "steps": [
+        {
+          "step": "replay",
+          "existing": true
+        },
+        {
+          "step": "validate",
+          "existing": true
+        },
+        {
+          "step": "extract",
+          "existing": true
+        }
+      ],
+      "seconds": 0.1268012523651123
+    },
+    {
+      "key": "run3_Co60__recovery60ns",
+      "steps": [
+        {
+          "step": "replay",
+          "existing": true
+        },
+        {
+          "step": "validate",
+          "existing": true
+        },
+        {
+          "step": "extract",
+          "existing": true
+        }
+      ],
+      "seconds": 0.06447982788085938
+    },
+    {
+      "key": "run12_Am241__identity",
+      "steps": [
+        {
+          "step": "replay",
+          "existing": true
+        },
+        {
+          "step": "validate",
+          "existing": true
+        },
+        {
+          "step": "extract",
+          "existing": true
+        }
+      ],
+      "seconds": 0.03124403953552246
+    },
+    {
+      "key": "run12_Am241__no_signal_residual",
+      "steps": [
+        {
+          "step": "replay",
+          "existing": true
+        },
+        {
+          "step": "validate",
+          "existing": true
+        },
+        {
+          "step": "extract",
+          "existing": true
+        }
+      ],
+      "seconds": 0.1008758544921875
+    },
+    {
+      "key": "run12_Am241__ap05_60ns",
+      "steps": [
+        {
+          "step": "replay",
+          "existing": true
+        },
+        {
+          "step": "validate",
+          "existing": true
+        },
+        {
+          "step": "extract",
+          "existing": true
+        }
+      ],
+      "seconds": 0.10056757926940918
+    },
+    {
+      "key": "run12_Am241__ap05_300ns",
+      "steps": [
+        {
+          "step": "replay",
+          "existing": true
+        },
+        {
+          "step": "validate",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/validate.py",
+            "/media/sf_works/SiPM/simulation/results/conditional_response_20261030/roots/run12_Am241__ap05_300ns.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/conditional_response_20261030/logs/run12_Am241__ap05_300ns_validate.log"
+        },
+        {
+          "step": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "/media/sf_works/SiPM/simulation/run_conditional_response.py",
+            "--extract",
+            "run12_Am241__ap05_300ns"
+          ],
+          "exit": 0,
+          "log": "simulation/results/conditional_response_20261030/logs/run12_Am241__ap05_300ns_extract.log"
+        }
+      ],
+      "seconds": 195.11412239074707
+    },
+    {
+      "key": "run12_Am241__ap15_300ns",
+      "steps": [
+        {
+          "step": "replay",
+          "existing": true
+        },
+        {
+          "step": "validate",
+          "existing": true
+        },
+        {
+          "step": "extract",
+          "existing": true
+        }
+      ],
+      "seconds": 0.012085437774658203
+    },
+    {
+      "key": "run12_Am241__recovery60ns",
+      "steps": [
+        {
+          "step": "replay",
+          "existing": true
+        },
+        {
+          "step": "validate",
+          "existing": true
+        },
+        {
+          "step": "extract",
+          "existing": true
+        }
+      ],
+      "seconds": 0.003743410110473633
+    }
+  ],
+  "new_independent_mothers": 0,
+  "replay_entries": 192000,
+  "unique_reused_mothers": 32000
+}

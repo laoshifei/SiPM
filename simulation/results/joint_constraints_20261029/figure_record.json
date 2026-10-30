@@ -1,0 +1,13 @@
+{
+  "code_sha256": "436a0dd6071cccba2848c122b13ccff536a60cbfe7f003eeb5dc68436322738d",
+  "assessment_sha256": "ca86efe8145f65fe4c81ec5794e01b42cf7e816ec86c17dd6f8a738e89fb5c51",
+  "selection_sha256": "420433e7e9c061bcb00da61b73a2df5be689287b628d35e6fea42126db086b56",
+  "figures": [
+    "joint_family_profile",
+    "joint_native_waveforms",
+    "joint_native_pid",
+    "joint_noise_controls",
+    "joint_pid_by_charge"
+  ],
+  "table_rows": 18
+}

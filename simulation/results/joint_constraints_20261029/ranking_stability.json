@@ -1,0 +1,68 @@
+{
+  "scope": "Fixed-fit MC-only stability of the frozen calibration-family ranking.\n\nThis diagnostic does not refit, reselect the saved candidate, or use validation\ndata. Rank frequencies are not posterior model probabilities.\n",
+  "code_sha256": "2cf63141886c8809700f0e6d28b32595e405244a556ce951775c7df6a141c27e",
+  "selection_sha256": "420433e7e9c061bcb00da61b73a2df5be689287b628d35e6fea42126db086b56",
+  "inputs_sha256": {
+    "simulation/results/signal_fluctuations_20261028/run3_first60.npz": "95462fa2ab57243fa669e1b4811469df40f2f3522e005db9dc3e64130865add3",
+    "simulation/results/pid_bandwidth_20261029/arrays/measured_run3_first60.npz": "3524db75f16934f8f2294c0081bd4e394c06d83151aa72285cf56ba6b76e3dcc",
+    "simulation/results/joint_constraints_20261029/calibration/arrays/a4000_run3_Co60.npz": "3e6938e8df0edc22802c06c55d9592b1c0382c02ba3755163ecb0fbd7eff6f0b",
+    "simulation/results/joint_constraints_20261029/calibration/arrays/a6000_run3_Co60.npz": "c4ea0e423ea45bc15345d5205c85618c28a65316fac524201b17d008adfd1ab7",
+    "simulation/results/joint_constraints_20261029/calibration/arrays/a8439_run3_Co60.npz": "4474042bfc49a060ee9c8a652cb1d9d428fba34818bfbb34b90e3dc47d38d7bc",
+    "simulation/results/signal_fluctuations_20261028/run12_first60.npz": "887ce1d2cec395f61ee1a196de2ca9b70d790403d60b83335c76df204816504b",
+    "simulation/results/pid_bandwidth_20261029/arrays/measured_run12_first60.npz": "9cc78ea936d98553e23ddd05b35664890f8b9029efae859c1f8592c8d2d25fdc",
+    "simulation/results/joint_constraints_20261029/calibration/arrays/a4000_run12_Am241.npz": "1f639703ae10fcab79c92f09a39e6280c89d7e662b8ee0676703c1e044647307",
+    "simulation/results/joint_constraints_20261029/calibration/arrays/a6000_run12_Am241.npz": "fe1e8cc12278703eb48fcd1eca25329399feb61aa2c6da36a66896f3d71a8ab4",
+    "simulation/results/joint_constraints_20261029/calibration/arrays/a8439_run12_Am241.npz": "ea8437ccba397d2021126e824588addf81716fcb263dc4e082a55277ac0f7e58"
+  },
+  "families": [
+    "a4000",
+    "a6000",
+    "a8439"
+  ],
+  "resamples": 512,
+  "valid_resamples": 512,
+  "seed": 401029880,
+  "results": {
+    "a4000": {
+      "point_objective": 2.85653380711614,
+      "bootstrap_objective_p025_p50_p975": [
+        2.1906334657316884,
+        3.606725361142252,
+        8.397638216018434
+      ],
+      "rank1_frequency": 0.365234375,
+      "objective_minus_selected_CI95": [
+        -2.241806372037611,
+        5.0824529470781465
+      ]
+    },
+    "a6000": {
+      "point_objective": 3.610567810132957,
+      "bootstrap_objective_p025_p50_p975": [
+        2.938886814083454,
+        4.416909257879958,
+        6.831537982434695
+      ],
+      "rank1_frequency": 0.099609375,
+      "objective_minus_selected_CI95": [
+        -1.7385976298474404,
+        3.8973615521026415
+      ]
+    },
+    "a8439": {
+      "point_objective": 2.4247710107312335,
+      "bootstrap_objective_p025_p50_p975": [
+        2.3506662361459414,
+        3.3358262610038474,
+        5.735891650756799
+      ],
+      "rank1_frequency": 0.53515625,
+      "objective_minus_selected_CI95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "conditional_scope": "Original experimental first60 targets fixed; independently resample all calibration mothers within each source/family. Fitted parameters and family selection rule fixed. No refit or validation data. This isolates finite-MC sensitivity, not complete model uncertainty or a confidence interval for tau.",
+  "saved_selection_changed": false
+}

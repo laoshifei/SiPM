@@ -1,0 +1,259 @@
+{
+  "scope": "Rank actual native calibration ADC using the frozen first60 joint criterion.",
+  "code_sha256": "da55a426ee408a423fd3a955acef5214427b73384b14650f4c7ae9c8690e3f10",
+  "design_sha256": "05451919791e6b6862ab6bd12f88c0ad4dec5a67be165fc17c3065665c37d048",
+  "calibration_protocol_sha256": "541a3ff83cf6dfee0b4ab7d6035030d54ce8936b66d1dff1f24db03563e42bbe",
+  "inputs_sha256": {
+    "simulation/results/joint_constraints_20261029/calibration/arrays/a4000_run3_Co60.npz": "3e6938e8df0edc22802c06c55d9592b1c0382c02ba3755163ecb0fbd7eff6f0b",
+    "simulation/results/signal_fluctuations_20261028/run3_first60.npz": "95462fa2ab57243fa669e1b4811469df40f2f3522e005db9dc3e64130865add3",
+    "simulation/results/pid_bandwidth_20261029/arrays/measured_run3_first60.npz": "3524db75f16934f8f2294c0081bd4e394c06d83151aa72285cf56ba6b76e3dcc",
+    "simulation/results/joint_constraints_20261029/calibration/arrays/a4000_run12_Am241.npz": "1f639703ae10fcab79c92f09a39e6280c89d7e662b8ee0676703c1e044647307",
+    "simulation/results/signal_fluctuations_20261028/run12_first60.npz": "887ce1d2cec395f61ee1a196de2ca9b70d790403d60b83335c76df204816504b",
+    "simulation/results/pid_bandwidth_20261029/arrays/measured_run12_first60.npz": "9cc78ea936d98553e23ddd05b35664890f8b9029efae859c1f8592c8d2d25fdc",
+    "simulation/results/joint_constraints_20261029/calibration/arrays/a6000_run3_Co60.npz": "c4ea0e423ea45bc15345d5205c85618c28a65316fac524201b17d008adfd1ab7",
+    "simulation/results/joint_constraints_20261029/calibration/arrays/a6000_run12_Am241.npz": "fe1e8cc12278703eb48fcd1eca25329399feb61aa2c6da36a66896f3d71a8ab4",
+    "simulation/results/joint_constraints_20261029/calibration/arrays/a8439_run3_Co60.npz": "4474042bfc49a060ee9c8a652cb1d9d428fba34818bfbb34b90e3dc47d38d7bc",
+    "simulation/results/joint_constraints_20261029/calibration/arrays/a8439_run12_Am241.npz": "ea8437ccba397d2021126e824588addf81716fcb263dc4e082a55277ac0f7e58"
+  },
+  "ranking": {
+    "a4000": {
+      "sources": {
+        "Co60": {
+          "n_MC": 297,
+          "IQR_ratio": [
+            0.9866768536477776,
+            0.9635321553852852,
+            0.9710643303974908
+          ],
+          "median_shift_in_data_IQR": [
+            0.25594722149507504,
+            -0.06098326691565245,
+            0.20297793868155736
+          ],
+          "mean_time_difference_ns": 0.4381867941902762,
+          "F_ratio": [
+            0.9853712711758037,
+            0.9953433308268074,
+            0.9716234764067807
+          ],
+          "mean_ADC_NRMSE": 0.013139067603274848,
+          "covariance_difference_normalized": [
+            0.1384882107079443,
+            0.04681293768003164,
+            0.11520196869836843,
+            -0.10563688797742678,
+            0.013327662288810922,
+            0.08251530428983514
+          ],
+          "objective_terms": {
+            "median_in_data_IQR": 0.9202331885514061,
+            "mean_time_ns": 0.021334185178083498,
+            "IQR_ratio": 0.03473604288757467,
+            "covariance_normalized": 0.1407666222852972,
+            "F_ratio": 0.03469704553456552,
+            "mean_ADC_NRMSE": 1.7263509748342665
+          },
+          "objective": 2.8781180592711935
+        },
+        "Am241": {
+          "n_MC": 186,
+          "IQR_ratio": [
+            1.0922364302597252,
+            0.9264024201971355,
+            1.0262250769378447
+          ],
+          "median_shift_in_data_IQR": [
+            -0.12374408740156762,
+            -0.14952960735100831,
+            -0.10551367041040187
+          ],
+          "mean_time_difference_ns": 3.625470620763238,
+          "F_ratio": [
+            1.0121721761763918,
+            1.0079186241455003,
+            1.011761947772236
+          ],
+          "mean_ADC_NRMSE": 0.007818100054754218,
+          "covariance_difference_normalized": [
+            0.04305155715738358,
+            0.0257322593249239,
+            0.055663701317006674,
+            0.17675748942722197,
+            0.07176979107464376,
+            0.07849890351379525
+          ],
+          "objective_terms": {
+            "median_in_data_IQR": 0.40670697737390366,
+            "mean_time_ns": 1.4604485802241534,
+            "IQR_ratio": 0.21647285155988194,
+            "covariance_normalized": 0.12845393125421378,
+            "F_ratio": 0.011640329887454169,
+            "mean_ADC_NRMSE": 0.611226884661479
+          },
+          "objective": 2.834949554961086
+        }
+      },
+      "objective": 2.85653380711614
+    },
+    "a6000": {
+      "sources": {
+        "Co60": {
+          "n_MC": 303,
+          "IQR_ratio": [
+            0.8789042773399364,
+            0.8909647707464418,
+            0.9059547402970926
+          ],
+          "median_shift_in_data_IQR": [
+            0.2582388602120303,
+            0.007480304055316582,
+            0.26892672221258757
+          ],
+          "mean_time_difference_ns": -0.4058778924509454,
+          "F_ratio": [
+            0.9960610466438837,
+            1.0040296866683385,
+            1.0044276979322162
+          ],
+          "mean_ADC_NRMSE": 0.014029299886341398,
+          "covariance_difference_normalized": [
+            -0.12968032671066254,
+            -0.08622058152032273,
+            -0.08773590108321197,
+            -0.13523930248550964,
+            -0.06545466866185826,
+            -0.0514132221616191
+          ],
+          "objective_terms": {
+            "median_in_data_IQR": 1.1588737149364563,
+            "mean_time_ns": 0.018304095953380138,
+            "IQR_ratio": 0.5244054242596499,
+            "covariance_normalized": 0.15244230973816206,
+            "F_ratio": 0.0017119412388532024,
+            "mean_ADC_NRMSE": 1.9682125530089876
+          },
+          "objective": 3.823950039135489
+        },
+        "Am241": {
+          "n_MC": 180,
+          "IQR_ratio": [
+            0.8250851768736487,
+            0.9771905663239586,
+            0.7766717049621622
+          ],
+          "median_shift_in_data_IQR": [
+            0.03758323986171631,
+            0.011722391368553492,
+            -0.02792426620639407
+          ],
+          "mean_time_difference_ns": 1.8717602728430816,
+          "F_ratio": [
+            1.0148480118087253,
+            0.9869317858422161,
+            0.9892994208673025
+          ],
+          "mean_ADC_NRMSE": 0.009177322646822734,
+          "covariance_difference_normalized": [
+            -0.2874854160791014,
+            -0.21180847335486994,
+            -0.29084510668651525,
+            -0.10658223205050067,
+            -0.20150599895668334,
+            -0.29070737575188144
+          ],
+          "objective_terms": {
+            "median_in_data_IQR": 0.019413991842220008,
+            "mean_time_ns": 0.3892762798881786,
+            "IQR_ratio": 1.1998665626437337,
+            "covariance_normalized": 0.9295381014600755,
+            "F_ratio": 0.016858135657362383,
+            "mean_ADC_NRMSE": 0.8422325096388543
+          },
+          "objective": 3.3971855811304246
+        }
+      },
+      "objective": 3.610567810132957
+    },
+    "a8439": {
+      "sources": {
+        "Co60": {
+          "n_MC": 256,
+          "IQR_ratio": [
+            0.8899385243593064,
+            1.0371474369145295,
+            1.0236789894024836
+          ],
+          "median_shift_in_data_IQR": [
+            0.23044763641268798,
+            -0.07676393681862445,
+            0.16832186329121435
+          ],
+          "mean_time_difference_ns": 0.025971334188246153,
+          "F_ratio": [
+            1.0298071836193248,
+            1.0187388728347047,
+            0.9942420427002469
+          ],
+          "mean_ADC_NRMSE": 0.013492395329006784,
+          "covariance_difference_normalized": [
+            0.041261875233695025,
+            -0.053698339343407474,
+            0.059324826626174824,
+            -0.14996516834380275,
+            -0.04266900543915052,
+            0.07216110654974929
+          ],
+          "objective_terms": {
+            "median_in_data_IQR": 0.7277588732159536,
+            "mean_time_ns": 7.494557772417373e-05,
+            "IQR_ratio": 0.2082097041281313,
+            "covariance_normalized": 0.10032776024080554,
+            "F_ratio": 0.04242558742323852,
+            "mean_ADC_NRMSE": 1.8204473171420406
+          },
+          "objective": 2.8992441877278936
+        },
+        "Am241": {
+          "n_MC": 179,
+          "IQR_ratio": [
+            0.9756285872234227,
+            0.8561887543338939,
+            0.901587144933754
+          ],
+          "median_shift_in_data_IQR": [
+            -0.12478642989302517,
+            -0.07456843548391205,
+            -0.09847695040403463
+          ],
+          "mean_time_difference_ns": 0.4835598846089084,
+          "F_ratio": [
+            0.9998552901550758,
+            0.9881554678433785,
+            0.9991062997349608
+          ],
+          "mean_ADC_NRMSE": 0.010206006528520613,
+          "covariance_difference_normalized": [
+            -0.061512257145758455,
+            -0.13827501229366637,
+            -0.08069871887839321,
+            -0.10112205763873933,
+            -0.11603987252016594,
+            -0.08826694174866957
+          ],
+          "objective_terms": {
+            "median_in_data_IQR": 0.25691512014036616,
+            "mean_time_ns": 0.025981129111442312,
+            "IQR_ratio": 0.45867748419338356,
+            "covariance_normalized": 0.1623946549169209,
+            "F_ratio": 0.00470375277040634,
+            "mean_ADC_NRMSE": 1.0416256926020537
+          },
+          "objective": 1.950297833734573
+        }
+      },
+      "objective": 2.4247710107312335
+    }
+  },
+  "selected_family": "a8439",
+  "note": "Minimum predeclared equal-source first60 criterion on actual native replay ADC. These are training results; fresh native transport below has not yet been run."
+}

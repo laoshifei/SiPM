@@ -1,0 +1,266 @@
+{
+  "scope": "Run full native transport or calibrated response replays, validate and extract.",
+  "code_sha256": "c15fecadc252b70db7091d1cda162617551f4014149498697287dc4e7d77f08c",
+  "protocol_sha256": "caf80aeb4bfb555f07a5a26571b3d18d5649d8bb1f593fd7a189a80db5693500",
+  "jobs": [
+    {
+      "key": "a4000_run12_Am241",
+      "seconds": 605.8435235023499,
+      "steps": [
+        {
+          "stage": "native",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+            "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a4000_run12_Am241/config.json",
+            "Am241",
+            "24000",
+            "401029012",
+            "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a4000_run12_Am241/events.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/joint_constraints_20261029/profile/logs/a4000_run12_Am241_native.log"
+        },
+        {
+          "stage": "validate",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/validate.py",
+            "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a4000_run12_Am241/events.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/joint_constraints_20261029/profile/logs/a4000_run12_Am241_validate.log"
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/run_joint_constraints.py",
+            "profile",
+            "--extract",
+            "a4000_run12_Am241"
+          ],
+          "exit": 0,
+          "log": "simulation/results/joint_constraints_20261029/profile/logs/a4000_run12_Am241_extract.log"
+        }
+      ]
+    },
+    {
+      "key": "a4000_run3_Co60",
+      "seconds": 860.5873112678528,
+      "steps": [
+        {
+          "stage": "native",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+            "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a4000_run3_Co60/config.json",
+            "Co60",
+            "8000",
+            "401029003",
+            "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a4000_run3_Co60/events.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/joint_constraints_20261029/profile/logs/a4000_run3_Co60_native.log"
+        },
+        {
+          "stage": "validate",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/validate.py",
+            "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a4000_run3_Co60/events.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/joint_constraints_20261029/profile/logs/a4000_run3_Co60_validate.log"
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/run_joint_constraints.py",
+            "profile",
+            "--extract",
+            "a4000_run3_Co60"
+          ],
+          "exit": 0,
+          "log": "simulation/results/joint_constraints_20261029/profile/logs/a4000_run3_Co60_extract.log"
+        }
+      ]
+    },
+    {
+      "key": "a6000_run3_Co60",
+      "seconds": 865.5237584114075,
+      "steps": [
+        {
+          "stage": "native",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+            "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a6000_run3_Co60/config.json",
+            "Co60",
+            "8000",
+            "401030003",
+            "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a6000_run3_Co60/events.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/joint_constraints_20261029/profile/logs/a6000_run3_Co60_native.log"
+        },
+        {
+          "stage": "validate",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/validate.py",
+            "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a6000_run3_Co60/events.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/joint_constraints_20261029/profile/logs/a6000_run3_Co60_validate.log"
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/run_joint_constraints.py",
+            "profile",
+            "--extract",
+            "a6000_run3_Co60"
+          ],
+          "exit": 0,
+          "log": "simulation/results/joint_constraints_20261029/profile/logs/a6000_run3_Co60_extract.log"
+        }
+      ]
+    },
+    {
+      "key": "a6000_run12_Am241",
+      "seconds": 672.5003364086151,
+      "steps": [
+        {
+          "stage": "native",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+            "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a6000_run12_Am241/config.json",
+            "Am241",
+            "24000",
+            "401030012",
+            "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a6000_run12_Am241/events.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/joint_constraints_20261029/profile/logs/a6000_run12_Am241_native.log"
+        },
+        {
+          "stage": "validate",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/validate.py",
+            "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a6000_run12_Am241/events.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/joint_constraints_20261029/profile/logs/a6000_run12_Am241_validate.log"
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/run_joint_constraints.py",
+            "profile",
+            "--extract",
+            "a6000_run12_Am241"
+          ],
+          "exit": 0,
+          "log": "simulation/results/joint_constraints_20261029/profile/logs/a6000_run12_Am241_extract.log"
+        }
+      ]
+    },
+    {
+      "key": "a8439_run12_Am241",
+      "seconds": 572.487544298172,
+      "steps": [
+        {
+          "stage": "native",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+            "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a8439_run12_Am241/config.json",
+            "Am241",
+            "24000",
+            "401031012",
+            "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a8439_run12_Am241/events.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/joint_constraints_20261029/profile/logs/a8439_run12_Am241_native.log"
+        },
+        {
+          "stage": "validate",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/validate.py",
+            "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a8439_run12_Am241/events.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/joint_constraints_20261029/profile/logs/a8439_run12_Am241_validate.log"
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/run_joint_constraints.py",
+            "profile",
+            "--extract",
+            "a8439_run12_Am241"
+          ],
+          "exit": 0,
+          "log": "simulation/results/joint_constraints_20261029/profile/logs/a8439_run12_Am241_extract.log"
+        }
+      ]
+    },
+    {
+      "key": "a8439_run3_Co60",
+      "seconds": 841.8304407596588,
+      "steps": [
+        {
+          "stage": "native",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+            "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a8439_run3_Co60/config.json",
+            "Co60",
+            "8000",
+            "401031003",
+            "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a8439_run3_Co60/events.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/joint_constraints_20261029/profile/logs/a8439_run3_Co60_native.log"
+        },
+        {
+          "stage": "validate",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/validate.py",
+            "/media/sf_works/SiPM/simulation/results/joint_constraints_20261029/profile/a8439_run3_Co60/events.root"
+          ],
+          "exit": 0,
+          "log": "simulation/results/joint_constraints_20261029/profile/logs/a8439_run3_Co60_validate.log"
+        },
+        {
+          "stage": "extract",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/run_joint_constraints.py",
+            "profile",
+            "--extract",
+            "a8439_run3_Co60"
+          ],
+          "exit": 0,
+          "log": "simulation/results/joint_constraints_20261029/profile/logs/a8439_run3_Co60_extract.log"
+        }
+      ]
+    }
+  ],
+  "new_independent_mothers": 96000
+}

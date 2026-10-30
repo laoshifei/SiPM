@@ -1,0 +1,35 @@
+Traceback (most recent call last):
+  File "/media/sf_works/SiPM/simulation/fit_joint_constraints.py", line 102, in <module>
+    if __name__ == '__main__': main()
+                               ~~~~^^
+  File "/media/sf_works/SiPM/simulation/fit_joint_constraints.py", line 87, in main
+    for key in args.keys or protocol['entries']: fit_one(protocol['entries'][key], protocol, pca)
+                                                 ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/sf_works/SiPM/simulation/fit_joint_constraints.py", line 33, in fit_one
+    np.testing.assert_allclose(metrics[:, :, 3], m['metrics'], atol=1e-12, rtol=1e-12)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xc/software/jupyter/.venv/lib/python3.13/site-packages/numpy/testing/_private/utils.py", line 1780, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         verbose=verbose, header=header, equal_nan=equal_nan,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         strict=strict)
+                         ^^^^^^^^^^^^^^
+  File "/home/xc/software/jupyter/.venv/lib/python3.13/site-packages/numpy/testing/_private/utils.py", line 988, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Not equal to tolerance rtol=1e-12, atol=1e-12
+
+Mismatched elements: 3 / 756 (0.397%)
+Mismatch at indices:
+ [122, 0]: 0.011589357329010253 (ACTUAL), 0.011212785753402715 (DESIRED)
+ [122, 1]: 0.031753833513635234 (ACTUAL), 0.03094949170676138 (DESIRED)
+ [122, 2]: 0.08874920087083274 (ACTUAL), 0.08770379864999385 (DESIRED)
+Max absolute difference among violations: 0.0010454
+Max relative difference among violations: 0.03358412
+ ACTUAL: array([[ 1.531926e-02,  2.990455e-02,  8.174814e-02],
+       [-7.297167e-03,  8.176796e-03,  5.900697e-02],
+       [-1.187672e-02,  1.560776e-03,  4.989496e-02],...
+ DESIRED: array([[ 1.531926e-02,  2.990455e-02,  8.174814e-02],
+       [-7.297167e-03,  8.176796e-03,  5.900697e-02],
+       [-1.187672e-02,  1.560776e-03,  4.989496e-02],...
