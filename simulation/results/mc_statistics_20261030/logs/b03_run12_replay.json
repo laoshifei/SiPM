@@ -1,0 +1,36 @@
+{
+  "key": "b03_run12",
+  "code_sha256": "2e729dad7c0a338f011f5031c4e27f366f44f3924c44a21ec4679bce6460c08b",
+  "steps": [
+    {
+      "label": "replay",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/rc_refinement_20261030/replay_readout_cached",
+        "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b03_run12.root",
+        "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/b03_run12_pending_jobs.json"
+      ],
+      "seconds": 109.64864754676819,
+      "log": "simulation/results/mc_statistics_20261030/logs/b03_run12_replay.log",
+      "exit": 0
+    },
+    {
+      "label": "extract_replay",
+      "command": [
+        "/home/xc/software/jupyter/.venv/bin/python",
+        "-u",
+        "/media/sf_works/SiPM/simulation/run_mc_statistics.py",
+        "extract-replay",
+        "--key",
+        "b03_run12"
+      ],
+      "seconds": 73.96418142318726,
+      "log": "simulation/results/mc_statistics_20261030/logs/b03_run12_extract_replay.log",
+      "exit": 0
+    }
+  ],
+  "new_independent_mothers": 0,
+  "replay_entries": 9300,
+  "distinct_selected_mothers": 372,
+  "extraction_sha256": "439efee3267e81235777404c1fbfc12a106d27070cb9b1309e6b64392e3b2adc",
+  "plan_sha256": "66c15d83b10583cdd83719989864b3dd028c9c8c45d2a08cf4ef42021abf2ef7"
+}

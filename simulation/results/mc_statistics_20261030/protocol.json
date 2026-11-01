@@ -1,0 +1,978 @@
+{
+  "scope": "Freeze independent seed batches, unchanged responses and all evaluation definitions.",
+  "code_sha256": "aa271f8ea2ec85ab529dc8d3b8b854c33f4e3d61683c13799c101d203212ba23",
+  "common_code_sha256": "9d7ead4bb78ee3f4071b6ec31d9a17ccc21a3d5319632762a2cc1e162bf30f38",
+  "checkpoint_commit": "b80bdb374724d7c01379a77497d4b44b80223a2b",
+  "inputs_sha256": {
+    "analysis/paper_baseline/results/publication_20261028/point.json": "a02a7a261de4b016737c9ed553a63aae801ada172006f026ea904778d4ce90c0",
+    "simulation/results/joint_constraints_20261029/validation/protocol.json": "9fd5d37d8a9bbb6ac49ceede6b6eef46ee4da35cfae230d10562e31fff7c701e",
+    "simulation/results/joint_constraints_20261029/validation/run12_Am241/config.json": "c65e4dbca4969ebdc1e93a4a4b1b95f5ad042bcb0d7dfdf23cce774a19580d43",
+    "simulation/results/joint_constraints_20261029/validation/run3_Co60/config.json": "1af3b32e6e7135ca6b2bfcdaa28454f0fd019e233e97e148878862264f7a80bd",
+    "simulation/results/pid_core_tail_20261030/arrays/run12_first60_B128_data_z.npz": "139cd907bc2ce9bf491745df357e2dccaef4a77558708011a12ff1c5229b1a50",
+    "simulation/results/pid_core_tail_20261030/arrays/run12_first60_B128_frozen_z.npz": "eb1b9465da1f977555efed69e327d4ba7f859ad30d64f4d963621c8e3af5bce8",
+    "simulation/results/pid_core_tail_20261030/arrays/run12_first60_B128_inherited_CV_fit_z.npz": "06e2dae936ee86f503d8b0753a3f3e6c01cf32eeae1ead7d5ea53c7c2477a699",
+    "simulation/results/pid_core_tail_20261030/arrays/run12_first60_B128_spectrum_CV_fit_z.npz": "70556e25639718ad6d832d58cfe945af45befee10be3a375e7302765f1fc4c6d",
+    "simulation/results/pid_core_tail_20261030/arrays/run12_first60_B64_data_z.npz": "4f9ac49da3c489dc82e913e0363cd22fd0c3147111a6be7a67bf3f26f5e592e8",
+    "simulation/results/pid_core_tail_20261030/arrays/run12_first60_B64_frozen_z.npz": "2b1761a5a1db8713c11a1afa01905e9a4d98effe33b9c5229a2f9becd0c13a45",
+    "simulation/results/pid_core_tail_20261030/arrays/run12_first60_B64_inherited_CV_fit_z.npz": "b17c698f607b53f0d1d56c8f304c09ae6918fcb6a5e7741db8692dce0c3484a0",
+    "simulation/results/pid_core_tail_20261030/arrays/run12_first60_B64_spectrum_CV_fit_z.npz": "9ddd5f06c9b2a7f6f4bfed65d76076794c891ed42e707cb4658573d520f96e2c",
+    "simulation/results/pid_core_tail_20261030/arrays/run12_last20_B128_data_z.npz": "2ff3973b26e3d02d4bc9d1872635230cf4156ee406457302120928cca3bd0557",
+    "simulation/results/pid_core_tail_20261030/arrays/run12_last20_B128_frozen_z.npz": "52ec62a11b9e633890a22fb1766f18c1ebe596fbf4dd38420d3cde71a0043ed2",
+    "simulation/results/pid_core_tail_20261030/arrays/run12_last20_B128_inherited_CV_fit_z.npz": "11cd74fcff64e107d12f8be9cce30a7c4db116bf636a12614d2e1514c88fa4da",
+    "simulation/results/pid_core_tail_20261030/arrays/run12_last20_B128_spectrum_CV_fit_z.npz": "16a010192cd35be2de3f52bca4dad1e1d8ab8dfc61880761765b1c8ca004e1e8",
+    "simulation/results/pid_core_tail_20261030/arrays/run12_last20_B64_data_z.npz": "e2347b819a978c3c459e11060d2cc3820e957743e7e585a255ee8b5d89bb014e",
+    "simulation/results/pid_core_tail_20261030/arrays/run12_last20_B64_frozen_z.npz": "7a6bdcfda4512f6d361ce4b7fa583dc3c3ef0818b40c48a0294d9e91c65ceb1d",
+    "simulation/results/pid_core_tail_20261030/arrays/run12_last20_B64_inherited_CV_fit_z.npz": "c2f33fff0a2db8e691154444640c134501c1c14e66faa826b2f065c0bd03927c",
+    "simulation/results/pid_core_tail_20261030/arrays/run12_last20_B64_spectrum_CV_fit_z.npz": "02f0a73114ec7b68d1f1372b6b556d9cc0b315776d17ff1b84c0455b81c9a27b",
+    "simulation/results/pid_core_tail_20261030/arrays/run12_middle20_B128_data_z.npz": "dc8235ef10c539f09f5d635c4dc4e2158ca16454c05da62a85bfea3fb00f75f7",
+    "simulation/results/pid_core_tail_20261030/arrays/run12_middle20_B128_frozen_z.npz": "ab809318ecdedc65c94b845834f9c285ec3231e175169e44d907ba269de5b90e",
+    "simulation/results/pid_core_tail_20261030/arrays/run12_middle20_B128_inherited_CV_fit_z.npz": "a5cbe8b191fbc6ea3f3d2960faaa855fed4181c13be4b464670066a50d323ca7",
+    "simulation/results/pid_core_tail_20261030/arrays/run12_middle20_B128_spectrum_CV_fit_z.npz": "a66c88ae17cb678e4ddbbfaace6fde9b4fec21fa3a88a79546f64f205a8ef07d",
+    "simulation/results/pid_core_tail_20261030/arrays/run12_middle20_B64_data_z.npz": "ee6431d9da813f99390055f252062656128717dbb5c4f4a6d17e24e0eabce54c",
+    "simulation/results/pid_core_tail_20261030/arrays/run12_middle20_B64_frozen_z.npz": "2c7f8c574d577492343e1673cb137040a3385ace07f078cd5bcd44c7e3612716",
+    "simulation/results/pid_core_tail_20261030/arrays/run12_middle20_B64_inherited_CV_fit_z.npz": "d8a53037c434bc801d09d8ad91dc68006dfa53eab5f410e7a88b8d0695da6de3",
+    "simulation/results/pid_core_tail_20261030/arrays/run12_middle20_B64_spectrum_CV_fit_z.npz": "717e8c253a8e8715ba60faf547e115c2b354b1cd73f0e4e25bdf788eb8a96c7e",
+    "simulation/results/pid_core_tail_20261030/arrays/run3_first60_B128_data_z.npz": "601b9f1918695adfce2e2286ab61d41871ecae15eea9ebb7d09cb918c93e9bfb",
+    "simulation/results/pid_core_tail_20261030/arrays/run3_first60_B128_frozen_z.npz": "37e932f3b0011200290b19bce5144d37865863fe3e50999b97818d2b77375072",
+    "simulation/results/pid_core_tail_20261030/arrays/run3_first60_B128_inherited_CV_fit_z.npz": "f1d9da04340fac058583bb8a2c9f9329f34b05d2721f4b6cc5001d26631e13de",
+    "simulation/results/pid_core_tail_20261030/arrays/run3_first60_B128_spectrum_CV_fit_z.npz": "fad1965bd6e94da57bebbe26a1bfa2cc4a67b2b43f9a745f8311fac20fb9816e",
+    "simulation/results/pid_core_tail_20261030/arrays/run3_first60_B64_data_z.npz": "b419974f3872cd91298a81d75c9332e50fa7b01c84c27a6ee661ddefa0168a2c",
+    "simulation/results/pid_core_tail_20261030/arrays/run3_first60_B64_frozen_z.npz": "d4c0edf0a649c5d74d319b47352df253e50b6b1e744ca4aff739b729ae4c9cde",
+    "simulation/results/pid_core_tail_20261030/arrays/run3_first60_B64_inherited_CV_fit_z.npz": "dab57094840c271c99b1d5309e267a7cc57e2fc68c8f28ba3879ecb07472d52c",
+    "simulation/results/pid_core_tail_20261030/arrays/run3_first60_B64_spectrum_CV_fit_z.npz": "7ba6f3ce7d0e2a00ec9724da4a6ef302224c52fb639f931130d27d816294a568",
+    "simulation/results/pid_core_tail_20261030/arrays/run3_last20_B128_data_z.npz": "19e6a1a79f067d1c268b8506a0b27ca94022bfb26b5430a02f13bb41c3e2950f",
+    "simulation/results/pid_core_tail_20261030/arrays/run3_last20_B128_frozen_z.npz": "258e8fbe2efe15df80bc0ff5233b0a50cc2bb83e311b7463e0968e5886c30963",
+    "simulation/results/pid_core_tail_20261030/arrays/run3_last20_B128_inherited_CV_fit_z.npz": "f885777e0733f1e090fba3bf7e55d87b58543c9f3c93279ff1510edf802102e1",
+    "simulation/results/pid_core_tail_20261030/arrays/run3_last20_B128_spectrum_CV_fit_z.npz": "29bca61ebeeb31a11e0a7f6c0477f6f84468b3a69a9ab5ebd87f30a96edf4487",
+    "simulation/results/pid_core_tail_20261030/arrays/run3_last20_B64_data_z.npz": "fa13eaafd5aec803bef2f2b04f6fd1c9a9d0ea5d502d3b04a511003f80446678",
+    "simulation/results/pid_core_tail_20261030/arrays/run3_last20_B64_frozen_z.npz": "d84c6e3a449f9841b4d145c2879ec2a97c7d13a8a2c86d9ba6dece3cd1cfc199",
+    "simulation/results/pid_core_tail_20261030/arrays/run3_last20_B64_inherited_CV_fit_z.npz": "cc55d49dd4e443db0a3ddc5d2ebd4fb1a701bcd857f8c13379a60f7d0a70d9aa",
+    "simulation/results/pid_core_tail_20261030/arrays/run3_last20_B64_spectrum_CV_fit_z.npz": "16a32b3a8d12495d4b4df59750ecc909588eaeaf65c24573d37499d99eed2ca0",
+    "simulation/results/pid_core_tail_20261030/arrays/run3_middle20_B128_data_z.npz": "caacc8df0e7221d5751fb8d13e8b32761aed2835131f411ec13de999111eb25f",
+    "simulation/results/pid_core_tail_20261030/arrays/run3_middle20_B128_frozen_z.npz": "c2185f5a3528a04b74636f85ba66e86190044f74cdd2f00db959c0111fa0faad",
+    "simulation/results/pid_core_tail_20261030/arrays/run3_middle20_B128_inherited_CV_fit_z.npz": "5434030cf60beb61eeab199d0c3eeed4fa1a0e4db15f36560fccc0664bd177cf",
+    "simulation/results/pid_core_tail_20261030/arrays/run3_middle20_B128_spectrum_CV_fit_z.npz": "48cd50ebcbbb2812db3b8e76077b09a6667184793d4d8fc7ed581b31c82da1a0",
+    "simulation/results/pid_core_tail_20261030/arrays/run3_middle20_B64_data_z.npz": "3ff0dbf731a47c43de22d4a7c5768c1bf724d4c8d41f0a7ab371c42fa821f8b1",
+    "simulation/results/pid_core_tail_20261030/arrays/run3_middle20_B64_frozen_z.npz": "ae95a5fe7ca70c4f9df672a65d83c53f367b9572ee37afe5439600e3c95a0b64",
+    "simulation/results/pid_core_tail_20261030/arrays/run3_middle20_B64_inherited_CV_fit_z.npz": "9238f2d6627feba0e1f42ccbe16e9616af95e46688fa4baed7e270170928a4b4",
+    "simulation/results/pid_core_tail_20261030/arrays/run3_middle20_B64_spectrum_CV_fit_z.npz": "35a2945859b66ec1827ac8943911a8e961a17ebcf8a87b6e5e17f9bc15e42fd3",
+    "simulation/results/pid_core_tail_20261030/diagnostics.json": "6805b169b48a9f1c8455347d8c33e432f6641cfd7d79cfc33b819a10919ae4c3",
+    "simulation/results/pid_core_tail_20261030/protocol.json": "6e359a5a28d8959b89ed6bf2e68eabd80f1244a0c4a68f562b01047bbb87e304",
+    "simulation/results/pid_core_tail_20261030/record.json": "d4c159ffbe8f0582769c18f08ac1df4ddc8cee8cc30b20aae3e1a83395c77088",
+    "simulation/results/pid_core_tail_20261030/references/run12_first60_B128.json": "899729dd7dc2cb3369dc3b5150429f2a1369693e8171c9decb4888f7fd59a843",
+    "simulation/results/pid_core_tail_20261030/references/run12_first60_B64.json": "fc7eb9a08940b79df9bb7c3a243633c778d0fe03494f1b7eb2f6aabda5f12a24",
+    "simulation/results/pid_core_tail_20261030/references/run12_last20_B128.json": "73c37c0ef196af116088cd61bafb36d58225192576ba4674da5c26b10a54e020",
+    "simulation/results/pid_core_tail_20261030/references/run12_last20_B64.json": "11b62a142ec511841611a00ea468ef2ed66a77e1fbbae88cc7c24a67e25f360f",
+    "simulation/results/pid_core_tail_20261030/references/run12_middle20_B128.json": "2d37c28a4faba214e9c7bd705355e39942156ab6899e91e10b9c7a95e291c159",
+    "simulation/results/pid_core_tail_20261030/references/run12_middle20_B64.json": "23abcde709d6326d916f97f294b22e5ddacdcb2cfb8bde4857de1829393d8aa0",
+    "simulation/results/pid_core_tail_20261030/references/run3_first60_B128.json": "427fdafa216901636fce5a66f449f6ebe3b418c73f17a76cf14ea6a5948acbbe",
+    "simulation/results/pid_core_tail_20261030/references/run3_first60_B64.json": "12ba3a1d9a2777456f12cc8c947a8c74ce4c726408501008cc7dc1f7a37f7e81",
+    "simulation/results/pid_core_tail_20261030/references/run3_last20_B128.json": "e4019c3c5b0596c4738007da98b6213351fe8ef21593155fd677de327a64de89",
+    "simulation/results/pid_core_tail_20261030/references/run3_last20_B64.json": "92fb85750c74fe129cbb0ed5cc06eb509e056057ab59c61a27164f4588877bb8",
+    "simulation/results/pid_core_tail_20261030/references/run3_middle20_B128.json": "9757fb1bc78f3492550bce7d1944d50948eb40ea618a80e217bc394f2874974a",
+    "simulation/results/pid_core_tail_20261030/references/run3_middle20_B64.json": "c8bf878c285eb3b57d95eb73deb77b8d5d6b3bd2a5e6e95f9463e68d45c522d5",
+    "simulation/results/rc_refinement_20261030/arrays/run12_first60_B128_frozen_evaluation.npz": "42ba8863f24ccdb1003df8265a13e2304ad35a7057eac84ac99ab6cf09970a2d",
+    "simulation/results/rc_refinement_20261030/arrays/run12_first60_B128_inherited_CV_fit_evaluation.npz": "2cac68181306a5838959c444746bd92b3f9488bec99823c2ac2fb58905125511",
+    "simulation/results/rc_refinement_20261030/arrays/run12_first60_B128_spectrum_CV_fit_evaluation.npz": "4c2a06ffc58659b8a1382ee6f1abe369d76944a5dedd3a24b7bad0333ffd1752",
+    "simulation/results/rc_refinement_20261030/arrays/run12_first60_B64_frozen_evaluation.npz": "42ba8863f24ccdb1003df8265a13e2304ad35a7057eac84ac99ab6cf09970a2d",
+    "simulation/results/rc_refinement_20261030/arrays/run12_first60_B64_inherited_CV_fit_evaluation.npz": "4e6d16457baabde487f24adfce291c4ec93fa7389e917189d8bd6dfc522db582",
+    "simulation/results/rc_refinement_20261030/arrays/run12_first60_B64_spectrum_CV_fit_evaluation.npz": "04ce57466ed5837ba6ec59eeedb1fe088807ae69c389fb7497fa5836630dc18c",
+    "simulation/results/rc_refinement_20261030/arrays/run12_last20_B128_frozen_evaluation.npz": "42ba8863f24ccdb1003df8265a13e2304ad35a7057eac84ac99ab6cf09970a2d",
+    "simulation/results/rc_refinement_20261030/arrays/run12_last20_B128_inherited_CV_fit_evaluation.npz": "fdcf4433239139355408a491651e9a53e1e499b931df9f0792b28557ec3ce75c",
+    "simulation/results/rc_refinement_20261030/arrays/run12_last20_B128_spectrum_CV_fit_evaluation.npz": "7989f37e78b040d274ba3cbd784dc154f5ba02cebaf23c7104482968170c2127",
+    "simulation/results/rc_refinement_20261030/arrays/run12_last20_B64_frozen_evaluation.npz": "42ba8863f24ccdb1003df8265a13e2304ad35a7057eac84ac99ab6cf09970a2d",
+    "simulation/results/rc_refinement_20261030/arrays/run12_last20_B64_inherited_CV_fit_evaluation.npz": "5f9ee57f5a1957522f28806ad7e6b3e4d2f530545659f06e35c0c56823b137bc",
+    "simulation/results/rc_refinement_20261030/arrays/run12_last20_B64_spectrum_CV_fit_evaluation.npz": "d2cb62c59388ec864d58d77a0b839fb96407509bc3dd82d141f9fae9de27e1cc",
+    "simulation/results/rc_refinement_20261030/arrays/run12_middle20_B128_frozen_evaluation.npz": "42ba8863f24ccdb1003df8265a13e2304ad35a7057eac84ac99ab6cf09970a2d",
+    "simulation/results/rc_refinement_20261030/arrays/run12_middle20_B128_inherited_CV_fit_evaluation.npz": "873b7b9eea0a80b52ccab803bed185eb9fdfae9c00656441a1d9ebf254f127af",
+    "simulation/results/rc_refinement_20261030/arrays/run12_middle20_B128_spectrum_CV_fit_evaluation.npz": "f8791bbb2996e2247de1f7c547c2d271e9dbe21420aad25cbdb67c207a961b94",
+    "simulation/results/rc_refinement_20261030/arrays/run12_middle20_B64_frozen_evaluation.npz": "42ba8863f24ccdb1003df8265a13e2304ad35a7057eac84ac99ab6cf09970a2d",
+    "simulation/results/rc_refinement_20261030/arrays/run12_middle20_B64_inherited_CV_fit_evaluation.npz": "ff8685878bd26ac52b599c5774e01e423ee68afda300d85cce54866af34a34a0",
+    "simulation/results/rc_refinement_20261030/arrays/run12_middle20_B64_spectrum_CV_fit_evaluation.npz": "29f4de02d252ef390df2897fec307e42c1a99d8cfd4487d2f074c00a59e2d038",
+    "simulation/results/rc_refinement_20261030/arrays/run3_first60_B128_frozen_evaluation.npz": "7d9b3b71877711f19775771e6dea880272b41231adbce5f8f1fd85819f29a3e7",
+    "simulation/results/rc_refinement_20261030/arrays/run3_first60_B128_inherited_CV_fit_evaluation.npz": "66a01b777094abcb9e7017bd59fcd90c59e50fb247d5965a22ac5bf221a4340b",
+    "simulation/results/rc_refinement_20261030/arrays/run3_first60_B128_spectrum_CV_fit_evaluation.npz": "86a4f9627bf5d4a82817d0e6d30823ba80fced031bb1cb6c81d6547213c864f0",
+    "simulation/results/rc_refinement_20261030/arrays/run3_first60_B64_frozen_evaluation.npz": "7d9b3b71877711f19775771e6dea880272b41231adbce5f8f1fd85819f29a3e7",
+    "simulation/results/rc_refinement_20261030/arrays/run3_first60_B64_inherited_CV_fit_evaluation.npz": "0ba4a6ce3df00413e6b7705f23ad657f993dd0b5aa4f8e826e4a35c1fc87ec26",
+    "simulation/results/rc_refinement_20261030/arrays/run3_first60_B64_spectrum_CV_fit_evaluation.npz": "39788e5e3235d1e57cf4ea8e7fc2b4c063ac755e67e7e0ffbe331381294eac96",
+    "simulation/results/rc_refinement_20261030/arrays/run3_last20_B128_frozen_evaluation.npz": "7d9b3b71877711f19775771e6dea880272b41231adbce5f8f1fd85819f29a3e7",
+    "simulation/results/rc_refinement_20261030/arrays/run3_last20_B128_inherited_CV_fit_evaluation.npz": "51006553195e037bdb0fb2485a31e4ae1016fdcf6ceea42086067e5f24d09d82",
+    "simulation/results/rc_refinement_20261030/arrays/run3_last20_B128_spectrum_CV_fit_evaluation.npz": "ca24321f57b5b400e4adc1d34db5ee7038f8f43e7c07ec33fdd4105acfa4b30e",
+    "simulation/results/rc_refinement_20261030/arrays/run3_last20_B64_frozen_evaluation.npz": "7d9b3b71877711f19775771e6dea880272b41231adbce5f8f1fd85819f29a3e7",
+    "simulation/results/rc_refinement_20261030/arrays/run3_last20_B64_inherited_CV_fit_evaluation.npz": "737634d495d84ebc9d720a3205dc70a4ba03126f2b498a9a184d19437e28e87d",
+    "simulation/results/rc_refinement_20261030/arrays/run3_last20_B64_spectrum_CV_fit_evaluation.npz": "be062df555b6c70528a02952d50ace16d6056eb036d54588fc4da9e962dc9f0f",
+    "simulation/results/rc_refinement_20261030/arrays/run3_middle20_B128_frozen_evaluation.npz": "7d9b3b71877711f19775771e6dea880272b41231adbce5f8f1fd85819f29a3e7",
+    "simulation/results/rc_refinement_20261030/arrays/run3_middle20_B128_inherited_CV_fit_evaluation.npz": "e825544f457c5a89d8a72fcd248ef920dfe0cc4bfcb1cf7da064ec926312a193",
+    "simulation/results/rc_refinement_20261030/arrays/run3_middle20_B128_spectrum_CV_fit_evaluation.npz": "3a854098a1ec7bcf0c5f4fd7f9239340d7df6df84a98d1c946a6b6dd936b01fb",
+    "simulation/results/rc_refinement_20261030/arrays/run3_middle20_B64_frozen_evaluation.npz": "7d9b3b71877711f19775771e6dea880272b41231adbce5f8f1fd85819f29a3e7",
+    "simulation/results/rc_refinement_20261030/arrays/run3_middle20_B64_inherited_CV_fit_evaluation.npz": "41fadc65cd170964e2c22e17f51754235f7957793b1b0c27e38be5dfa14cf497",
+    "simulation/results/rc_refinement_20261030/arrays/run3_middle20_B64_spectrum_CV_fit_evaluation.npz": "1406fd4026fe3a68cfb121f4a004fb7d283d5073d6e242afa5970bc478e32a15",
+    "simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval0_inherited_cv0.json": "5e97a9d488bad2ef6c3a176ae510adf4f8d3d378e9a28117a17b7acab68a8786",
+    "simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval0_spectrum_cv0.json": "cb593dc01074f0839864c6a118f4ee6a3429240760e2aa53f7b492616ea6e65b",
+    "simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval1_inherited_cv0.json": "8ddc9233decd1bf82c3ee84c0f3e030ff9941d38fc11aab918632240d5937906",
+    "simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval1_spectrum_cv0.json": "dffafd010d457e42d6b655811f93cc7b5b6238fef1d61985a6ed46a0019b066e",
+    "simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval0_inherited_cv1.json": "698d4dd6d724f42806b71b743f83f04167e1ba0680548ae2688748e1212edeb7",
+    "simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval0_spectrum_cv1.json": "aeab77a343c73e84ec4ff0f654187dcd1b4e3b17db96c8f0295c0c636f35972c",
+    "simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval1_inherited_cv0.json": "b9af58a420e55a9d9d90489edc63198f61584d9c79546c0a2077cf8ec4fd5311",
+    "simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval1_spectrum_cv0.json": "2c1386e22b05e1db46dab51656b79b1c5e7a66ca14c71277171257534c32b438",
+    "simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval0_inherited_cv0.json": "9e4a0bc861d4430d2d8164bfae8767bd1900767633686c5113fe7edc266ba1d0",
+    "simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval0_spectrum_cv0.json": "28c0e570ac5b601950afceb640e2a6879e2d5e1517289235892dda4d74a825f7",
+    "simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval1_inherited_cv1.json": "23433f13ab517a668861f82c782e8d05916b72c14e9532feb80de379b9bf6e5a",
+    "simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval1_spectrum_cv1.json": "bb6fcbd1a58507829258e826f9ddc70414fbc8563beb8249cebc6aa79ed0edc1",
+    "simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval0_inherited_cv0.json": "6347db2e933346f22264a4fa1f8d58db798ef73fe3f32e52f720011bca98d2b3",
+    "simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval0_spectrum_cv0.json": "191d3d3cb48f115e216886556a1abae2873df0098b16f61d61e0f26106b85505",
+    "simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval1_inherited_cv0.json": "5595fdb419a2a2c74066e1f06d1be5a02eb89c65f0a62169a4498cc956591823",
+    "simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval1_spectrum_cv0.json": "4fc3bd0ca69f56b03479eac05904a6162d7a8f1180dea4750718ba7941a705ca",
+    "simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval0_inherited_cv0.json": "e1dda3485632d8f86672b4fa00ce0834a826f294db65188f76549b07b7feed90",
+    "simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval0_spectrum_cv0.json": "4e3fdf355f141002f2b8031b8fc87e6521eeec09d7545e2db97fc25d73895256",
+    "simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval1_inherited_cv0.json": "3825fec88112aecbe9b181cc60ad145251a96b21e79ce5ce7b5d1286cc95bdd0",
+    "simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval1_spectrum_cv0.json": "24bd3dfb3387515d87088d38f7726e185907a67537491d5e1e4767ceeaa67701",
+    "simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval0_inherited_cv0.json": "aa11870abdd2a96cb6cca082ff2ca7a355abf7c6e5cc109a61d3b8b4d409088c",
+    "simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval0_spectrum_cv0.json": "cff8b860d6e313348f8b5f4729daf7e1b0fb1e402654584c5ea4aa3dc0f03455",
+    "simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval1_inherited_cv0.json": "284e8274bb92574dfb43f56bad821b5eb3fa3eff26fc97d99bfcabb916ad7372",
+    "simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval1_spectrum_cv1.json": "7607e50edcc1cf2514cf88ef71c359c386b590ac4256c8627bb458f6221013e3",
+    "simulation/results/rc_refinement_20261030/configs/run3_first60_B128_eval0_inherited_cv1.json": "743342f9a144a6d2adc9e2d6bcec2f4f64f2fc8aff50078c98a68c292ee79470",
+    "simulation/results/rc_refinement_20261030/configs/run3_first60_B128_eval0_spectrum_cv1.json": "6e2a6a3a7139a0ee560404730c779835f5edc7c80290a22a2da789ba62bb2ac5",
+    "simulation/results/rc_refinement_20261030/configs/run3_first60_B128_eval1_inherited_cv1.json": "2869cfe9647b5ad8336fddbf8314cd7b09d6eedfdfbeebd2da712f47acfd1d21",
+    "simulation/results/rc_refinement_20261030/configs/run3_first60_B128_eval1_spectrum_cv1.json": "e1d5676900fb25f82914bb654fb2e0bc8f1f682bf269c5c4aea06693cbc81bbf",
+    "simulation/results/rc_refinement_20261030/configs/run3_first60_B64_eval0_inherited_cv1.json": "55c2befff3fda28c11b677c9eac5c90962d650876ebc7e5f45638ab4213834be",
+    "simulation/results/rc_refinement_20261030/configs/run3_first60_B64_eval0_spectrum_cv1.json": "6f0dc441413cee74e788ee4d180d393b69b8a91a29f271e590ccbe905375f691",
+    "simulation/results/rc_refinement_20261030/configs/run3_first60_B64_eval1_inherited_cv1.json": "07596c4da3596d1c763635a2445143fe1b1b777d5156d8719d1c95849ffc465e",
+    "simulation/results/rc_refinement_20261030/configs/run3_first60_B64_eval1_spectrum_cv1.json": "fbcf63b7d40ad9cb0ae8b0876a8f84c303189b11e64945dfc112c242cf651575",
+    "simulation/results/rc_refinement_20261030/configs/run3_last20_B128_eval0_inherited_cv1.json": "40500ed3d12ce5423dd299cbf764dd03bac37cee5fa93b1a375c2e6611bf61d7",
+    "simulation/results/rc_refinement_20261030/configs/run3_last20_B128_eval0_spectrum_cv1.json": "909e6a1f6cbf9aa7dd3021424bdb4a79f382014cadcffce0a55addf81d58b162",
+    "simulation/results/rc_refinement_20261030/configs/run3_last20_B128_eval1_inherited_cv1.json": "a5d8eecdc48cd9baa04b2f60aabf249686d8eaa03344c44f8e96336f24986e48",
+    "simulation/results/rc_refinement_20261030/configs/run3_last20_B128_eval1_spectrum_cv1.json": "498d8bcfd6a6532c9b60f9c4c2af2c2eddd67ea6c9cdc82cdb9f0463727566ec",
+    "simulation/results/rc_refinement_20261030/configs/run3_last20_B64_eval0_inherited_cv1.json": "e466ad39b5a68435089585138a47ffe0a37712139b2f92cf032e279d0930e72a",
+    "simulation/results/rc_refinement_20261030/configs/run3_last20_B64_eval0_spectrum_cv1.json": "b7faa490b445d7c81c62c8812aa4c448ec16979742da39030b1c58b8d098059b",
+    "simulation/results/rc_refinement_20261030/configs/run3_last20_B64_eval1_inherited_cv1.json": "b9cdfec85ab4525198d9aabd8bdf1d9a07efc042cc8c28f8d3dd3db4bc6286bf",
+    "simulation/results/rc_refinement_20261030/configs/run3_last20_B64_eval1_spectrum_cv1.json": "ff773ed3a1b7128f7d002303b86d16720f4115d0e3f7b45af30c0a76c699d0af",
+    "simulation/results/rc_refinement_20261030/configs/run3_middle20_B128_eval0_inherited_cv1.json": "db68903822761fd0688a660285436e4ccb33054382cc2ec03fe139faa566485a",
+    "simulation/results/rc_refinement_20261030/configs/run3_middle20_B128_eval0_spectrum_cv1.json": "31ebffc9b563a2e2b8e8a885996af5be22298fd767597eb8db76b2bc9bd9e687",
+    "simulation/results/rc_refinement_20261030/configs/run3_middle20_B128_eval1_inherited_cv1.json": "2a57ea554693f0130ca65320dd0817babbcd4d62a24a1a54bacffa1b36a2e892",
+    "simulation/results/rc_refinement_20261030/configs/run3_middle20_B128_eval1_spectrum_cv1.json": "077b5c82a26e420e8e7faf6fa01c2df92a8d9d4b1c96e2be0442b26338f82daf",
+    "simulation/results/rc_refinement_20261030/configs/run3_middle20_B64_eval0_inherited_cv1.json": "b4adab2d70d3acd739b4db23cbc23529b7161fe74fd04d7f74200cc0506f685e",
+    "simulation/results/rc_refinement_20261030/configs/run3_middle20_B64_eval0_spectrum_cv1.json": "b2b744ffd40156fcad5390bbf8359a6c3610618cb60ee171e8fe538a2bee30b4",
+    "simulation/results/rc_refinement_20261030/configs/run3_middle20_B64_eval1_inherited_cv1.json": "7029747b57627167b57a1ae731129170e9b8b951ef64d8f851a08b9a62049b16",
+    "simulation/results/rc_refinement_20261030/configs/run3_middle20_B64_eval1_spectrum_cv1.json": "09b2cf84ba5c3bfff70a278ecad054e0cab901f13d0d8bdd23dc26a1e764c4a8",
+    "simulation/results/rc_refinement_20261030/evaluation.json": "06fdace449a77ba6f7fc0f7901d9b22e8396571127a2b8e573f518c5b2401f50",
+    "simulation/results/rc_refinement_20261030/mean_calibration.json": "1032ad88079484cc82e1fbb5672439b19d819a585dc4b79bd20ea8cd203f80e6",
+    "simulation/results/rc_refinement_20261030/noise_selection.json": "6b48bd7f0749a15857825010ac28686f105d718b0fd300b9b05c96206477709e",
+    "simulation/results/rc_refinement_20261030/protocol.json": "8a7565b3ded230e41eeacf1e4446b11b730a35f4c2a0ca54f9bcf00f31801679",
+    "simulation/results/rc_refinement_20261030/record.json": "ac5baa8d7465e8be3ac4377f8fa3cbbd358339fca3700e96530705f7097feb63",
+    "simulation/results/waveform_tail_20261030/analysis.json": "d1f2fd90a82cd53408f08b4e28ebf7ca3aa9b86aab56e6473c8f8ace4fc4f8b9",
+    "simulation/results/waveform_tail_20261030/arrays/run12_first60_data.npz": "a30b630f881691fc0912ab15f3f08ef3e30aa2b19a6377a81e60fa5763bc3ce0",
+    "simulation/results/waveform_tail_20261030/arrays/run12_last20_data.npz": "a2f53970b5cef133f71e04ba5944abe82f95c6ef0fbd5cc57f9fceb4aedc194b",
+    "simulation/results/waveform_tail_20261030/arrays/run12_middle20_data.npz": "f60c751637d4a4d08497767d205bfb6c0474badeac25da3dcf90267b15c1ca56",
+    "simulation/results/waveform_tail_20261030/arrays/run3_first60_data.npz": "282b11a8192a72a926dcdbedca0fed147930dfc77fa8b228b88f75a174178691",
+    "simulation/results/waveform_tail_20261030/arrays/run3_last20_data.npz": "1d78121581c5d30abd3d6c35013938b0b53cd707ba09763a8a0809c34a3ab42c",
+    "simulation/results/waveform_tail_20261030/arrays/run3_middle20_data.npz": "df88d1faaeac65194378c165fc68d093ee80783c93271167a18f1cc531998595",
+    "simulation/results/waveform_tail_20261030/decision.json": "303d2b76f62d486d84c22bc780b2288b349d3005339f16f63fa044e7956c7c5c",
+    "simulation/results/waveform_tail_20261030/designs/run12_first60_B128.json": "65c00e3fc65afdc5bbcd902aedd38dd4e175fd0289e3814edbbdf42faca42c82",
+    "simulation/results/waveform_tail_20261030/designs/run12_first60_B64.json": "1c5381240eabb5c62a00644f8c8539f7629fdc0612cf4dd81e3dd9b076a6c861",
+    "simulation/results/waveform_tail_20261030/designs/run12_last20_B128.json": "4337a5efc7e1bc86e14822de97bffed4fd9a8f0231c7e1e27c212fceb9831bca",
+    "simulation/results/waveform_tail_20261030/designs/run12_last20_B64.json": "525bfc099bb12b7b806404b0c59f4405f062eb1e62d887692fa22c6ddf3ec53a",
+    "simulation/results/waveform_tail_20261030/designs/run12_middle20_B128.json": "bd186293687283bb714879529124904352c1e4d9f5e333735b7bd2bb5e90f51d",
+    "simulation/results/waveform_tail_20261030/designs/run12_middle20_B64.json": "350ce919d81ddb5581b62225beddf74910055c296743c651e504ea579030c97d",
+    "simulation/results/waveform_tail_20261030/designs/run3_first60_B128.json": "f0124bbcaf22e10a7d6b4e33db788419197a09c8535c4b181f8db0c20a4fa60a",
+    "simulation/results/waveform_tail_20261030/designs/run3_first60_B64.json": "31da70120f8aa223b549d4b34541cfc1843441576643fd1e2232ca4e81fefba7",
+    "simulation/results/waveform_tail_20261030/designs/run3_last20_B128.json": "9e3f66ad06be119262cac5815e4582bfe716decbd0975c4f18c91fa62feb1b1c",
+    "simulation/results/waveform_tail_20261030/designs/run3_last20_B64.json": "a9dd32cf6ace40a9312321fde8f0a01fcf39c73a236d3e75bb1cf045d8a808cc",
+    "simulation/results/waveform_tail_20261030/designs/run3_middle20_B128.json": "8ac3bc01149cf155b79e217b964b3c73f5a96322765b4bd4253e33dc429149b4",
+    "simulation/results/waveform_tail_20261030/designs/run3_middle20_B64.json": "7be541e9a8c330f42097bb76cbadb8646edac2d5be32fc2cff882594bf5777d3",
+    "simulation/results/waveform_tail_20261030/protocol.json": "be6079387ff8c7dedbfd73251a79efc2bcb4c63cb1f0413ab94f52b24677b644",
+    "simulation/results/waveform_tail_20261030/record.json": "72101f468e642455fb85030f9a80b499ef7b5fead54e07336a8ee03a880c8f34"
+  },
+  "binary_sha256": {
+    "simulation/build/npe_20261029/csi_sources": "ecce63e1944a1d4ec3587f465f8e660337a5fb76926b1b30fface9ea7c06f735",
+    "simulation/build/rc_refinement_20261030/replay_readout_cached": "3d5afc62c150678b8f8012703799eea406bd10829bf8ca9e2b43cbea601e6a2f"
+  },
+  "entries": {
+    "b00_run3": {
+      "key": "b00_run3",
+      "batch": 0,
+      "run": 3,
+      "source": "Co60",
+      "events": 16000,
+      "seed": 731030003,
+      "config": "simulation/results/mc_statistics_20261030/configs/run3_native.json",
+      "config_sha256": "1af3b32e6e7135ca6b2bfcdaa28454f0fd019e233e97e148878862264f7a80bd",
+      "path": "simulation/results/mc_statistics_20261030/native/b00_run3.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+        "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/run3_native.json",
+        "Co60",
+        "16000",
+        "731030003",
+        "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b00_run3.root"
+      ]
+    },
+    "b01_run3": {
+      "key": "b01_run3",
+      "batch": 1,
+      "run": 3,
+      "source": "Co60",
+      "events": 16000,
+      "seed": 731031003,
+      "config": "simulation/results/mc_statistics_20261030/configs/run3_native.json",
+      "config_sha256": "1af3b32e6e7135ca6b2bfcdaa28454f0fd019e233e97e148878862264f7a80bd",
+      "path": "simulation/results/mc_statistics_20261030/native/b01_run3.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+        "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/run3_native.json",
+        "Co60",
+        "16000",
+        "731031003",
+        "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b01_run3.root"
+      ]
+    },
+    "b02_run3": {
+      "key": "b02_run3",
+      "batch": 2,
+      "run": 3,
+      "source": "Co60",
+      "events": 16000,
+      "seed": 731032003,
+      "config": "simulation/results/mc_statistics_20261030/configs/run3_native.json",
+      "config_sha256": "1af3b32e6e7135ca6b2bfcdaa28454f0fd019e233e97e148878862264f7a80bd",
+      "path": "simulation/results/mc_statistics_20261030/native/b02_run3.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+        "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/run3_native.json",
+        "Co60",
+        "16000",
+        "731032003",
+        "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b02_run3.root"
+      ]
+    },
+    "b03_run3": {
+      "key": "b03_run3",
+      "batch": 3,
+      "run": 3,
+      "source": "Co60",
+      "events": 16000,
+      "seed": 731033003,
+      "config": "simulation/results/mc_statistics_20261030/configs/run3_native.json",
+      "config_sha256": "1af3b32e6e7135ca6b2bfcdaa28454f0fd019e233e97e148878862264f7a80bd",
+      "path": "simulation/results/mc_statistics_20261030/native/b03_run3.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+        "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/run3_native.json",
+        "Co60",
+        "16000",
+        "731033003",
+        "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b03_run3.root"
+      ]
+    },
+    "b00_run12": {
+      "key": "b00_run12",
+      "batch": 0,
+      "run": 12,
+      "source": "Am241",
+      "events": 48000,
+      "seed": 731030012,
+      "config": "simulation/results/mc_statistics_20261030/configs/run12_native.json",
+      "config_sha256": "c65e4dbca4969ebdc1e93a4a4b1b95f5ad042bcb0d7dfdf23cce774a19580d43",
+      "path": "simulation/results/mc_statistics_20261030/native/b00_run12.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+        "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/run12_native.json",
+        "Am241",
+        "48000",
+        "731030012",
+        "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b00_run12.root"
+      ]
+    },
+    "b01_run12": {
+      "key": "b01_run12",
+      "batch": 1,
+      "run": 12,
+      "source": "Am241",
+      "events": 48000,
+      "seed": 731031012,
+      "config": "simulation/results/mc_statistics_20261030/configs/run12_native.json",
+      "config_sha256": "c65e4dbca4969ebdc1e93a4a4b1b95f5ad042bcb0d7dfdf23cce774a19580d43",
+      "path": "simulation/results/mc_statistics_20261030/native/b01_run12.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+        "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/run12_native.json",
+        "Am241",
+        "48000",
+        "731031012",
+        "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b01_run12.root"
+      ]
+    },
+    "b02_run12": {
+      "key": "b02_run12",
+      "batch": 2,
+      "run": 12,
+      "source": "Am241",
+      "events": 48000,
+      "seed": 731032012,
+      "config": "simulation/results/mc_statistics_20261030/configs/run12_native.json",
+      "config_sha256": "c65e4dbca4969ebdc1e93a4a4b1b95f5ad042bcb0d7dfdf23cce774a19580d43",
+      "path": "simulation/results/mc_statistics_20261030/native/b02_run12.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+        "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/run12_native.json",
+        "Am241",
+        "48000",
+        "731032012",
+        "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b02_run12.root"
+      ]
+    },
+    "b03_run12": {
+      "key": "b03_run12",
+      "batch": 3,
+      "run": 12,
+      "source": "Am241",
+      "events": 48000,
+      "seed": 731033012,
+      "config": "simulation/results/mc_statistics_20261030/configs/run12_native.json",
+      "config_sha256": "c65e4dbca4969ebdc1e93a4a4b1b95f5ad042bcb0d7dfdf23cce774a19580d43",
+      "path": "simulation/results/mc_statistics_20261030/native/b03_run12.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+        "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/run12_native.json",
+        "Am241",
+        "48000",
+        "731033012",
+        "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b03_run12.root"
+      ]
+    }
+  },
+  "responses": {
+    "run3_first60_B64_eval0_inherited": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run3_first60_B64_eval0_inherited.json",
+      "config_sha256": "55c2befff3fda28c11b677c9eac5c90962d650876ebc7e5f45638ab4213834be",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run3_first60_B64_eval0_inherited_cv1.json",
+      "parent_choice": "run3_first60_B64_eval0_inherited_cv1"
+    },
+    "run3_first60_B64_eval0_spectrum": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run3_first60_B64_eval0_spectrum.json",
+      "config_sha256": "6f0dc441413cee74e788ee4d180d393b69b8a91a29f271e590ccbe905375f691",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run3_first60_B64_eval0_spectrum_cv1.json",
+      "parent_choice": "run3_first60_B64_eval0_spectrum_cv1"
+    },
+    "run3_first60_B64_eval1_inherited": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run3_first60_B64_eval1_inherited.json",
+      "config_sha256": "07596c4da3596d1c763635a2445143fe1b1b777d5156d8719d1c95849ffc465e",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run3_first60_B64_eval1_inherited_cv1.json",
+      "parent_choice": "run3_first60_B64_eval1_inherited_cv1"
+    },
+    "run3_first60_B64_eval1_spectrum": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run3_first60_B64_eval1_spectrum.json",
+      "config_sha256": "fbcf63b7d40ad9cb0ae8b0876a8f84c303189b11e64945dfc112c242cf651575",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run3_first60_B64_eval1_spectrum_cv1.json",
+      "parent_choice": "run3_first60_B64_eval1_spectrum_cv1"
+    },
+    "run3_first60_B128_eval0_inherited": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run3_first60_B128_eval0_inherited.json",
+      "config_sha256": "743342f9a144a6d2adc9e2d6bcec2f4f64f2fc8aff50078c98a68c292ee79470",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run3_first60_B128_eval0_inherited_cv1.json",
+      "parent_choice": "run3_first60_B128_eval0_inherited_cv1"
+    },
+    "run3_first60_B128_eval0_spectrum": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run3_first60_B128_eval0_spectrum.json",
+      "config_sha256": "6e2a6a3a7139a0ee560404730c779835f5edc7c80290a22a2da789ba62bb2ac5",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run3_first60_B128_eval0_spectrum_cv1.json",
+      "parent_choice": "run3_first60_B128_eval0_spectrum_cv1"
+    },
+    "run3_first60_B128_eval1_inherited": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run3_first60_B128_eval1_inherited.json",
+      "config_sha256": "2869cfe9647b5ad8336fddbf8314cd7b09d6eedfdfbeebd2da712f47acfd1d21",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run3_first60_B128_eval1_inherited_cv1.json",
+      "parent_choice": "run3_first60_B128_eval1_inherited_cv1"
+    },
+    "run3_first60_B128_eval1_spectrum": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run3_first60_B128_eval1_spectrum.json",
+      "config_sha256": "e1d5676900fb25f82914bb654fb2e0bc8f1f682bf269c5c4aea06693cbc81bbf",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run3_first60_B128_eval1_spectrum_cv1.json",
+      "parent_choice": "run3_first60_B128_eval1_spectrum_cv1"
+    },
+    "run3_middle20_B64_eval0_inherited": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run3_middle20_B64_eval0_inherited.json",
+      "config_sha256": "b4adab2d70d3acd739b4db23cbc23529b7161fe74fd04d7f74200cc0506f685e",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run3_middle20_B64_eval0_inherited_cv1.json",
+      "parent_choice": "run3_middle20_B64_eval0_inherited_cv1"
+    },
+    "run3_middle20_B64_eval0_spectrum": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run3_middle20_B64_eval0_spectrum.json",
+      "config_sha256": "b2b744ffd40156fcad5390bbf8359a6c3610618cb60ee171e8fe538a2bee30b4",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run3_middle20_B64_eval0_spectrum_cv1.json",
+      "parent_choice": "run3_middle20_B64_eval0_spectrum_cv1"
+    },
+    "run3_middle20_B64_eval1_inherited": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run3_middle20_B64_eval1_inherited.json",
+      "config_sha256": "7029747b57627167b57a1ae731129170e9b8b951ef64d8f851a08b9a62049b16",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run3_middle20_B64_eval1_inherited_cv1.json",
+      "parent_choice": "run3_middle20_B64_eval1_inherited_cv1"
+    },
+    "run3_middle20_B64_eval1_spectrum": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run3_middle20_B64_eval1_spectrum.json",
+      "config_sha256": "09b2cf84ba5c3bfff70a278ecad054e0cab901f13d0d8bdd23dc26a1e764c4a8",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run3_middle20_B64_eval1_spectrum_cv1.json",
+      "parent_choice": "run3_middle20_B64_eval1_spectrum_cv1"
+    },
+    "run3_middle20_B128_eval0_inherited": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run3_middle20_B128_eval0_inherited.json",
+      "config_sha256": "db68903822761fd0688a660285436e4ccb33054382cc2ec03fe139faa566485a",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run3_middle20_B128_eval0_inherited_cv1.json",
+      "parent_choice": "run3_middle20_B128_eval0_inherited_cv1"
+    },
+    "run3_middle20_B128_eval0_spectrum": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run3_middle20_B128_eval0_spectrum.json",
+      "config_sha256": "31ebffc9b563a2e2b8e8a885996af5be22298fd767597eb8db76b2bc9bd9e687",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run3_middle20_B128_eval0_spectrum_cv1.json",
+      "parent_choice": "run3_middle20_B128_eval0_spectrum_cv1"
+    },
+    "run3_middle20_B128_eval1_inherited": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run3_middle20_B128_eval1_inherited.json",
+      "config_sha256": "2a57ea554693f0130ca65320dd0817babbcd4d62a24a1a54bacffa1b36a2e892",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run3_middle20_B128_eval1_inherited_cv1.json",
+      "parent_choice": "run3_middle20_B128_eval1_inherited_cv1"
+    },
+    "run3_middle20_B128_eval1_spectrum": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run3_middle20_B128_eval1_spectrum.json",
+      "config_sha256": "077b5c82a26e420e8e7faf6fa01c2df92a8d9d4b1c96e2be0442b26338f82daf",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run3_middle20_B128_eval1_spectrum_cv1.json",
+      "parent_choice": "run3_middle20_B128_eval1_spectrum_cv1"
+    },
+    "run3_last20_B64_eval0_inherited": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run3_last20_B64_eval0_inherited.json",
+      "config_sha256": "e466ad39b5a68435089585138a47ffe0a37712139b2f92cf032e279d0930e72a",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run3_last20_B64_eval0_inherited_cv1.json",
+      "parent_choice": "run3_last20_B64_eval0_inherited_cv1"
+    },
+    "run3_last20_B64_eval0_spectrum": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run3_last20_B64_eval0_spectrum.json",
+      "config_sha256": "b7faa490b445d7c81c62c8812aa4c448ec16979742da39030b1c58b8d098059b",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run3_last20_B64_eval0_spectrum_cv1.json",
+      "parent_choice": "run3_last20_B64_eval0_spectrum_cv1"
+    },
+    "run3_last20_B64_eval1_inherited": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run3_last20_B64_eval1_inherited.json",
+      "config_sha256": "b9cdfec85ab4525198d9aabd8bdf1d9a07efc042cc8c28f8d3dd3db4bc6286bf",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run3_last20_B64_eval1_inherited_cv1.json",
+      "parent_choice": "run3_last20_B64_eval1_inherited_cv1"
+    },
+    "run3_last20_B64_eval1_spectrum": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run3_last20_B64_eval1_spectrum.json",
+      "config_sha256": "ff773ed3a1b7128f7d002303b86d16720f4115d0e3f7b45af30c0a76c699d0af",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run3_last20_B64_eval1_spectrum_cv1.json",
+      "parent_choice": "run3_last20_B64_eval1_spectrum_cv1"
+    },
+    "run3_last20_B128_eval0_inherited": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run3_last20_B128_eval0_inherited.json",
+      "config_sha256": "40500ed3d12ce5423dd299cbf764dd03bac37cee5fa93b1a375c2e6611bf61d7",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run3_last20_B128_eval0_inherited_cv1.json",
+      "parent_choice": "run3_last20_B128_eval0_inherited_cv1"
+    },
+    "run3_last20_B128_eval0_spectrum": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run3_last20_B128_eval0_spectrum.json",
+      "config_sha256": "909e6a1f6cbf9aa7dd3021424bdb4a79f382014cadcffce0a55addf81d58b162",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run3_last20_B128_eval0_spectrum_cv1.json",
+      "parent_choice": "run3_last20_B128_eval0_spectrum_cv1"
+    },
+    "run3_last20_B128_eval1_inherited": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run3_last20_B128_eval1_inherited.json",
+      "config_sha256": "a5d8eecdc48cd9baa04b2f60aabf249686d8eaa03344c44f8e96336f24986e48",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run3_last20_B128_eval1_inherited_cv1.json",
+      "parent_choice": "run3_last20_B128_eval1_inherited_cv1"
+    },
+    "run3_last20_B128_eval1_spectrum": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run3_last20_B128_eval1_spectrum.json",
+      "config_sha256": "498d8bcfd6a6532c9b60f9c4c2af2c2eddd67ea6c9cdc82cdb9f0463727566ec",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run3_last20_B128_eval1_spectrum_cv1.json",
+      "parent_choice": "run3_last20_B128_eval1_spectrum_cv1"
+    },
+    "run12_first60_B64_eval0_inherited": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run12_first60_B64_eval0_inherited.json",
+      "config_sha256": "698d4dd6d724f42806b71b743f83f04167e1ba0680548ae2688748e1212edeb7",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval0_inherited_cv1.json",
+      "parent_choice": "run12_first60_B64_eval0_inherited_cv1"
+    },
+    "run12_first60_B64_eval0_spectrum": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run12_first60_B64_eval0_spectrum.json",
+      "config_sha256": "aeab77a343c73e84ec4ff0f654187dcd1b4e3b17db96c8f0295c0c636f35972c",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval0_spectrum_cv1.json",
+      "parent_choice": "run12_first60_B64_eval0_spectrum_cv1"
+    },
+    "run12_first60_B64_eval1_inherited": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run12_first60_B64_eval1_inherited.json",
+      "config_sha256": "b9af58a420e55a9d9d90489edc63198f61584d9c79546c0a2077cf8ec4fd5311",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval1_inherited_cv0.json",
+      "parent_choice": "run12_first60_B64_eval1_inherited_cv0"
+    },
+    "run12_first60_B64_eval1_spectrum": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run12_first60_B64_eval1_spectrum.json",
+      "config_sha256": "2c1386e22b05e1db46dab51656b79b1c5e7a66ca14c71277171257534c32b438",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run12_first60_B64_eval1_spectrum_cv0.json",
+      "parent_choice": "run12_first60_B64_eval1_spectrum_cv0"
+    },
+    "run12_first60_B128_eval0_inherited": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run12_first60_B128_eval0_inherited.json",
+      "config_sha256": "5e97a9d488bad2ef6c3a176ae510adf4f8d3d378e9a28117a17b7acab68a8786",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval0_inherited_cv0.json",
+      "parent_choice": "run12_first60_B128_eval0_inherited_cv0"
+    },
+    "run12_first60_B128_eval0_spectrum": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run12_first60_B128_eval0_spectrum.json",
+      "config_sha256": "cb593dc01074f0839864c6a118f4ee6a3429240760e2aa53f7b492616ea6e65b",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval0_spectrum_cv0.json",
+      "parent_choice": "run12_first60_B128_eval0_spectrum_cv0"
+    },
+    "run12_first60_B128_eval1_inherited": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run12_first60_B128_eval1_inherited.json",
+      "config_sha256": "8ddc9233decd1bf82c3ee84c0f3e030ff9941d38fc11aab918632240d5937906",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval1_inherited_cv0.json",
+      "parent_choice": "run12_first60_B128_eval1_inherited_cv0"
+    },
+    "run12_first60_B128_eval1_spectrum": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run12_first60_B128_eval1_spectrum.json",
+      "config_sha256": "dffafd010d457e42d6b655811f93cc7b5b6238fef1d61985a6ed46a0019b066e",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run12_first60_B128_eval1_spectrum_cv0.json",
+      "parent_choice": "run12_first60_B128_eval1_spectrum_cv0"
+    },
+    "run12_middle20_B64_eval0_inherited": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run12_middle20_B64_eval0_inherited.json",
+      "config_sha256": "aa11870abdd2a96cb6cca082ff2ca7a355abf7c6e5cc109a61d3b8b4d409088c",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval0_inherited_cv0.json",
+      "parent_choice": "run12_middle20_B64_eval0_inherited_cv0"
+    },
+    "run12_middle20_B64_eval0_spectrum": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run12_middle20_B64_eval0_spectrum.json",
+      "config_sha256": "cff8b860d6e313348f8b5f4729daf7e1b0fb1e402654584c5ea4aa3dc0f03455",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval0_spectrum_cv0.json",
+      "parent_choice": "run12_middle20_B64_eval0_spectrum_cv0"
+    },
+    "run12_middle20_B64_eval1_inherited": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run12_middle20_B64_eval1_inherited.json",
+      "config_sha256": "284e8274bb92574dfb43f56bad821b5eb3fa3eff26fc97d99bfcabb916ad7372",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval1_inherited_cv0.json",
+      "parent_choice": "run12_middle20_B64_eval1_inherited_cv0"
+    },
+    "run12_middle20_B64_eval1_spectrum": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run12_middle20_B64_eval1_spectrum.json",
+      "config_sha256": "7607e50edcc1cf2514cf88ef71c359c386b590ac4256c8627bb458f6221013e3",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run12_middle20_B64_eval1_spectrum_cv1.json",
+      "parent_choice": "run12_middle20_B64_eval1_spectrum_cv1"
+    },
+    "run12_middle20_B128_eval0_inherited": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run12_middle20_B128_eval0_inherited.json",
+      "config_sha256": "e1dda3485632d8f86672b4fa00ce0834a826f294db65188f76549b07b7feed90",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval0_inherited_cv0.json",
+      "parent_choice": "run12_middle20_B128_eval0_inherited_cv0"
+    },
+    "run12_middle20_B128_eval0_spectrum": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run12_middle20_B128_eval0_spectrum.json",
+      "config_sha256": "4e3fdf355f141002f2b8031b8fc87e6521eeec09d7545e2db97fc25d73895256",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval0_spectrum_cv0.json",
+      "parent_choice": "run12_middle20_B128_eval0_spectrum_cv0"
+    },
+    "run12_middle20_B128_eval1_inherited": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run12_middle20_B128_eval1_inherited.json",
+      "config_sha256": "3825fec88112aecbe9b181cc60ad145251a96b21e79ce5ce7b5d1286cc95bdd0",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval1_inherited_cv0.json",
+      "parent_choice": "run12_middle20_B128_eval1_inherited_cv0"
+    },
+    "run12_middle20_B128_eval1_spectrum": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run12_middle20_B128_eval1_spectrum.json",
+      "config_sha256": "24bd3dfb3387515d87088d38f7726e185907a67537491d5e1e4767ceeaa67701",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run12_middle20_B128_eval1_spectrum_cv0.json",
+      "parent_choice": "run12_middle20_B128_eval1_spectrum_cv0"
+    },
+    "run12_last20_B64_eval0_inherited": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run12_last20_B64_eval0_inherited.json",
+      "config_sha256": "6347db2e933346f22264a4fa1f8d58db798ef73fe3f32e52f720011bca98d2b3",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval0_inherited_cv0.json",
+      "parent_choice": "run12_last20_B64_eval0_inherited_cv0"
+    },
+    "run12_last20_B64_eval0_spectrum": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run12_last20_B64_eval0_spectrum.json",
+      "config_sha256": "191d3d3cb48f115e216886556a1abae2873df0098b16f61d61e0f26106b85505",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval0_spectrum_cv0.json",
+      "parent_choice": "run12_last20_B64_eval0_spectrum_cv0"
+    },
+    "run12_last20_B64_eval1_inherited": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run12_last20_B64_eval1_inherited.json",
+      "config_sha256": "5595fdb419a2a2c74066e1f06d1be5a02eb89c65f0a62169a4498cc956591823",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval1_inherited_cv0.json",
+      "parent_choice": "run12_last20_B64_eval1_inherited_cv0"
+    },
+    "run12_last20_B64_eval1_spectrum": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run12_last20_B64_eval1_spectrum.json",
+      "config_sha256": "4fc3bd0ca69f56b03479eac05904a6162d7a8f1180dea4750718ba7941a705ca",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run12_last20_B64_eval1_spectrum_cv0.json",
+      "parent_choice": "run12_last20_B64_eval1_spectrum_cv0"
+    },
+    "run12_last20_B128_eval0_inherited": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run12_last20_B128_eval0_inherited.json",
+      "config_sha256": "9e4a0bc861d4430d2d8164bfae8767bd1900767633686c5113fe7edc266ba1d0",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval0_inherited_cv0.json",
+      "parent_choice": "run12_last20_B128_eval0_inherited_cv0"
+    },
+    "run12_last20_B128_eval0_spectrum": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run12_last20_B128_eval0_spectrum.json",
+      "config_sha256": "28c0e570ac5b601950afceb640e2a6879e2d5e1517289235892dda4d74a825f7",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval0_spectrum_cv0.json",
+      "parent_choice": "run12_last20_B128_eval0_spectrum_cv0"
+    },
+    "run12_last20_B128_eval1_inherited": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run12_last20_B128_eval1_inherited.json",
+      "config_sha256": "23433f13ab517a668861f82c782e8d05916b72c14e9532feb80de379b9bf6e5a",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval1_inherited_cv1.json",
+      "parent_choice": "run12_last20_B128_eval1_inherited_cv1"
+    },
+    "run12_last20_B128_eval1_spectrum": {
+      "config": "simulation/results/mc_statistics_20261030/configs/run12_last20_B128_eval1_spectrum.json",
+      "config_sha256": "bb6fcbd1a58507829258e826f9ddc70414fbc8563beb8249cebc6aa79ed0edc1",
+      "parent_config": "simulation/results/rc_refinement_20261030/configs/run12_last20_B128_eval1_spectrum_cv1.json",
+      "parent_choice": "run12_last20_B128_eval1_spectrum_cv1"
+    }
+  },
+  "q_edges": [
+    201824.1125,
+    237975.62708333333,
+    274127.14166666666,
+    310278.65625,
+    346430.17083333334,
+    382581.6854166667,
+    418733.2
+  ],
+  "support_bins": {
+    "Co60": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "Am241": [
+      0,
+      1,
+      2
+    ]
+  },
+  "conditional_cuts": {
+    "Co60": {
+      "0": {
+        "q_quartiles": [
+          213530.25,
+          224292.25,
+          229674.75
+        ],
+        "rms_median": 3.2988738016745955,
+        "q2_target": [
+          0.4935064935064935,
+          0.5064935064935064
+        ],
+        "q4_target": [
+          0.24675324675324675,
+          0.24675324675324675,
+          0.24675324675324675,
+          0.2597402597402597
+        ],
+        "q2r2_target": [
+          0.2987012987012987,
+          0.19480519480519481,
+          0.19480519480519481,
+          0.3116883116883117
+        ],
+        "training_n": 77
+      },
+      "1": {
+        "q_quartiles": [
+          249471.75,
+          259007.75,
+          266566.0
+        ],
+        "rms_median": 3.4460121880225554,
+        "q2_target": [
+          0.49635036496350365,
+          0.5036496350364964
+        ],
+        "q4_target": [
+          0.24817518248175183,
+          0.24817518248175183,
+          0.24817518248175183,
+          0.25547445255474455
+        ],
+        "q2r2_target": [
+          0.24087591240875914,
+          0.25547445255474455,
+          0.25547445255474455,
+          0.24817518248175183
+        ],
+        "training_n": 137
+      },
+      "2": {
+        "q_quartiles": [
+          286112.1875,
+          295286.625,
+          303201.3125
+        ],
+        "rms_median": 3.33254145321797,
+        "q2_target": [
+          0.5,
+          0.5
+        ],
+        "q4_target": [
+          0.25177304964539005,
+          0.24822695035460993,
+          0.24822695035460993,
+          0.25177304964539005
+        ],
+        "q2r2_target": [
+          0.25886524822695034,
+          0.24113475177304963,
+          0.24113475177304963,
+          0.25886524822695034
+        ],
+        "training_n": 282
+      },
+      "3": {
+        "q_quartiles": [
+          321641.0,
+          331390.75,
+          339488.0
+        ],
+        "rms_median": 3.3481279750780137,
+        "q2_target": [
+          0.499054820415879,
+          0.500945179584121
+        ],
+        "q4_target": [
+          0.2495274102079395,
+          0.2495274102079395,
+          0.2495274102079395,
+          0.2514177693761815
+        ],
+        "q2r2_target": [
+          0.2589792060491493,
+          0.24007561436672967,
+          0.2381852551984877,
+          0.2627599243856333
+        ],
+        "training_n": 529
+      },
+      "4": {
+        "q_quartiles": [
+          356064.9375,
+          365870.875,
+          374653.1875
+        ],
+        "rms_median": 3.371290639761466,
+        "q2_target": [
+          0.5,
+          0.5
+        ],
+        "q4_target": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "q2r2_target": [
+          0.25523560209424084,
+          0.24476439790575916,
+          0.24476439790575916,
+          0.25523560209424084
+        ],
+        "training_n": 764
+      },
+      "5": {
+        "q_quartiles": [
+          390342.5,
+          396853.625,
+          405467.5
+        ],
+        "rms_median": 3.3285100984842035,
+        "q2_target": [
+          0.5,
+          0.5
+        ],
+        "q4_target": [
+          0.250788643533123,
+          0.24921135646687698,
+          0.24921135646687698,
+          0.250788643533123
+        ],
+        "q2r2_target": [
+          0.24605678233438485,
+          0.2539432176656151,
+          0.2539432176656151,
+          0.24605678233438485
+        ],
+        "training_n": 634
+      }
+    },
+    "Am241": {
+      "0": {
+        "q_quartiles": [
+          208701.5,
+          218005.5,
+          228342.5
+        ],
+        "rms_median": 3.1914421088866707,
+        "q2_target": [
+          0.4991023339317774,
+          0.5008976660682226
+        ],
+        "q4_target": [
+          0.2495511669658887,
+          0.2495511669658887,
+          0.2495511669658887,
+          0.2513464991023339
+        ],
+        "q2r2_target": [
+          0.24416517055655296,
+          0.25493716337522443,
+          0.25493716337522443,
+          0.2459605026929982
+        ],
+        "training_n": 557
+      },
+      "1": {
+        "q_quartiles": [
+          245954.5,
+          252571.5,
+          261583.5
+        ],
+        "rms_median": 3.1396142652203314,
+        "q2_target": [
+          0.4987146529562982,
+          0.5012853470437018
+        ],
+        "q4_target": [
+          0.2493573264781491,
+          0.2493573264781491,
+          0.2493573264781491,
+          0.2519280205655527
+        ],
+        "q2r2_target": [
+          0.2467866323907455,
+          0.2519280205655527,
+          0.2519280205655527,
+          0.2493573264781491
+        ],
+        "training_n": 389
+      },
+      "2": {
+        "q_quartiles": [
+          281622.8125,
+          290740.75,
+          299654.5
+        ],
+        "rms_median": 3.2348420752374967,
+        "q2_target": [
+          0.5,
+          0.5
+        ],
+        "q4_target": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "q2r2_target": [
+          0.23706896551724138,
+          0.2629310344827586,
+          0.2629310344827586,
+          0.23706896551724138
+        ],
+        "training_n": 232
+      }
+    }
+  },
+  "block_sizes": [
+    64,
+    128
+  ],
+  "variants": [
+    "frozen",
+    "inherited_CV_fit",
+    "spectrum_CV_fit"
+  ],
+  "metrics": [
+    "width50_QDC_ratio",
+    "width50_negative_mean_time_ratio",
+    "width50_PCA_ratio",
+    "width80_QDC_ratio",
+    "width80_negative_mean_time_ratio",
+    "width80_PCA_ratio",
+    "width90_QDC_ratio",
+    "width90_negative_mean_time_ratio",
+    "width90_PCA_ratio",
+    "width95_QDC_ratio",
+    "width95_negative_mean_time_ratio",
+    "width95_PCA_ratio",
+    "SD_QDC_ratio",
+    "SD_negative_mean_time_ratio",
+    "SD_PCA_ratio",
+    "core_over_SD_QDC_ratio",
+    "core_over_SD_negative_mean_time_ratio",
+    "core_over_SD_PCA_ratio",
+    "tail2_QDC_mass_delta_pp",
+    "tail2_negative_mean_time_mass_delta_pp",
+    "tail2_PCA_mass_delta_pp",
+    "tail3_QDC_mass_delta_pp",
+    "tail3_negative_mean_time_mass_delta_pp",
+    "tail3_PCA_mass_delta_pp",
+    "tail2_QDC_variance_share_delta_pp",
+    "tail2_negative_mean_time_variance_share_delta_pp",
+    "tail2_PCA_variance_share_delta_pp",
+    "tail3_QDC_variance_share_delta_pp",
+    "tail3_negative_mean_time_variance_share_delta_pp",
+    "tail3_PCA_variance_share_delta_pp",
+    "joint_tail2_mass_delta_pp",
+    "joint_tail3_mass_delta_pp",
+    "mean_time_delta_ns",
+    "mean_ratio_delta",
+    "mean_PCA_delta",
+    "F50_ratio",
+    "F102_ratio",
+    "F202_ratio",
+    "covariance_normalized_RMSE",
+    "mean_ADC_NRMSE",
+    "tail_fraction_delta",
+    "F50_SD_ratio",
+    "F102_SD_ratio",
+    "F202_SD_ratio",
+    "PC1_variance_ratio",
+    "PC2_variance_ratio",
+    "PC3_variance_ratio",
+    "rank3_variance_ratio",
+    "orthogonal_variance_ratio",
+    "full_shape_variance_ratio",
+    "rank3_fraction_delta_pp"
+  ],
+  "batches": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "events_per_batch": {
+    "Co60": 16000,
+    "Am241": 48000
+  },
+  "planned_new_independent_mothers": 256000,
+  "old_independent_mothers": {
+    "Co60": 8000,
+    "Am241": 24000
+  },
+  "transport": "Four independent seeds per source, same full Geant4 binary and byte-identical baseline configs as original joint candidate. No geometry/optical/sensor/gain fit. All mothers including zero deposits retained in ROOT. Native and replay programs are frozen existing binaries.",
+  "selection": "Apply inherited mc_wave_features quality with per-batch global baseline-RMS median, amplitude>=200 ADC, t10>=384 samples and same inclusive original common-Q interval to baseline ADC only. Freeze these IDs and baseline Q for every response. No truth/main-band/diagnostic-tail deletion or selection on refitted ADC. Report selection, unsupported bins, cell counts and ESS; no adaptive extra events.",
+  "responses_definition": "Original frozen plus two prior chosen RC/noise families, unchanged per segment/block/evaluation fold. Replay original native avalanches with C++ ReadoutSampling. Require phase0 original-config ADC identity for every selected new mother. Replays do not increase independent count.",
+  "fold_assignment": "Inherited method: full-parent Bernoulli assignments with probability equal to frozen measured Q2-weighted evaluation-fold mass. RNG seed731030700+1000*batch+100*segment_index+run+block. Same one assignment for all models/diagnostics; independent of outcomes. Existing mothers retain original assignments.",
+  "evaluation": "Original experimental IDs/Q/PCA, Q-half targets, PID robust references and rank3 waveform modes remain frozen. Report first60/middle20/last20, block128 primary/block64 sensitivity, each seed batch and pooled fresh only; never pool old with fresh. All51 declared metrics retain original definitions. Joint full covariance, unscaled mean ADC, F means/SD and all quantile widths retained.",
+  "uncertainty": "512 paired measured original-index block draws and stratified whole-parent bootstrap within each fresh seed batch. Selected counts sampled by exact multinomial marginal with one combined unselected category. Same counts across model variants. Independent original-cohort whole-parent draws for fresh-minus-old contrasts, sharing each measured draw. Report fresh joint, MC-only, data-only intervals/SD and paired response changes. Responses, assignment, modes, fences and Q targets fixed; no fit or model uncertainty/equivalence test.",
+  "bootstrap_seed": "731031900+run+100*segment_index+block",
+  "small_sample_check": "Secondary last20/block128 only:512 draws without replacement of8000 Co/24000 Am distinct full-parent IDs from the fresh pool, retaining only selected IDs, same frozen assignments/targets. Compare diagnostic95% ranges and empirical rank of old points, not independent new histories, predictive validation or calibrated p-values. Reject unestimable draws; require128 valid for interval. RNG731032500+run.",
+  "candidate_boundary": "No selection/refit/promotion based on these fresh results. If same residual direction persists, propose a separate future constrained model. Experimental segments remain previously explored internal comparisons. New simulation is statistical replication, not new experimental evidence.",
+  "new_experimental_events": 0,
+  "default_changed": false,
+  "official_PID_changed": false
+}

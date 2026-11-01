@@ -1,0 +1,11 @@
+{
+  "scope": "Failed early-readout preflight and missing pathlib.Path import repair.",
+  "old_code_sha256": "c4aab481194818456a46e8ee4c90b9c898d7b87b81a75045d90b984ee53f2d04",
+  "old_code_snapshot": "simulation/results/mc_statistics_20261030/diagnostics/pre_import_fix_run_mc_statistics.py",
+  "error": "NameError: Path is not defined at replay_one, before any replay command.",
+  "failed_attempt_new_mothers": 0,
+  "failed_attempt_replay_entries": 0,
+  "transport_impact": "Ongoing transport uses unchanged transport functions; Geant4 binaries/configurations, seeds, selection and evaluation definitions unaffected. Some execution code hashes are sampled from the file after execution; this snapshot preserves the original loaded coordinator version.",
+  "new_code_sha256": "2e729dad7c0a338f011f5031c4e27f366f44f3924c44a21ec4679bce6460c08b",
+  "transport_function_AST_unchanged": true
+}

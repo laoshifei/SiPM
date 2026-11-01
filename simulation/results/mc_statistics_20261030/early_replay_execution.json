@@ -1,0 +1,151 @@
+{
+  "scope": "Overlap unchanged readout processing of completed parents with remaining transport.",
+  "jobs": [
+    {
+      "key": "b01_run3",
+      "code_sha256": "2e729dad7c0a338f011f5031c4e27f366f44f3924c44a21ec4679bce6460c08b",
+      "steps": [
+        {
+          "label": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/rc_refinement_20261030/replay_readout_cached",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b01_run3.root",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/b01_run3_pending_jobs.json"
+          ],
+          "seconds": 461.1883511543274,
+          "log": "simulation/results/mc_statistics_20261030/logs/b01_run3_replay.log",
+          "exit": 0
+        },
+        {
+          "label": "extract_replay",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "/media/sf_works/SiPM/simulation/run_mc_statistics.py",
+            "extract-replay",
+            "--key",
+            "b01_run3"
+          ],
+          "seconds": 136.67710661888123,
+          "log": "simulation/results/mc_statistics_20261030/logs/b01_run3_extract_replay.log",
+          "exit": 0
+        }
+      ],
+      "new_independent_mothers": 0,
+      "replay_entries": 13075,
+      "distinct_selected_mothers": 523,
+      "extraction_sha256": "c344b455c49ded616d61a602e605f19fb4bdee115496948ea22c99abf5a04886",
+      "plan_sha256": "f59a1debe977d95afda1e5cd97c58327229b13e81c1aaa5e966dec0aedcd76a0"
+    },
+    {
+      "key": "b00_run3",
+      "code_sha256": "2e729dad7c0a338f011f5031c4e27f366f44f3924c44a21ec4679bce6460c08b",
+      "steps": [
+        {
+          "label": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/rc_refinement_20261030/replay_readout_cached",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b00_run3.root",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/b00_run3_pending_jobs.json"
+          ],
+          "seconds": 489.6596088409424,
+          "log": "simulation/results/mc_statistics_20261030/logs/b00_run3_replay.log",
+          "exit": 0
+        },
+        {
+          "label": "extract_replay",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "/media/sf_works/SiPM/simulation/run_mc_statistics.py",
+            "extract-replay",
+            "--key",
+            "b00_run3"
+          ],
+          "seconds": 138.70040798187256,
+          "log": "simulation/results/mc_statistics_20261030/logs/b00_run3_extract_replay.log",
+          "exit": 0
+        }
+      ],
+      "new_independent_mothers": 0,
+      "replay_entries": 14325,
+      "distinct_selected_mothers": 573,
+      "extraction_sha256": "00a500f4d3fbd7877e5917032a8f21f96f5c038477bf43d6439bfba4ab09f8bf",
+      "plan_sha256": "d95fda6d29e5c5e9107fbe66e26695b6ca36e2753bf85310b756463ad87a744a"
+    },
+    {
+      "key": "b00_run12",
+      "code_sha256": "2e729dad7c0a338f011f5031c4e27f366f44f3924c44a21ec4679bce6460c08b",
+      "steps": [
+        {
+          "label": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/rc_refinement_20261030/replay_readout_cached",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b00_run12.root",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/b00_run12_pending_jobs.json"
+          ],
+          "seconds": 281.04488015174866,
+          "log": "simulation/results/mc_statistics_20261030/logs/b00_run12_replay.log",
+          "exit": 0
+        },
+        {
+          "label": "extract_replay",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "/media/sf_works/SiPM/simulation/run_mc_statistics.py",
+            "extract-replay",
+            "--key",
+            "b00_run12"
+          ],
+          "seconds": 100.42623901367188,
+          "log": "simulation/results/mc_statistics_20261030/logs/b00_run12_extract_replay.log",
+          "exit": 0
+        }
+      ],
+      "new_independent_mothers": 0,
+      "replay_entries": 9300,
+      "distinct_selected_mothers": 372,
+      "extraction_sha256": "4ce707d2c4c249cae82e6463603e5e5bbaa2a324263954889d04b7b1cfbc2bce",
+      "plan_sha256": "e0e4a35dec9b411c07e01b008955f4652e67e549a763ad99395030642145a3ad"
+    },
+    {
+      "key": "b01_run12",
+      "code_sha256": "2e729dad7c0a338f011f5031c4e27f366f44f3924c44a21ec4679bce6460c08b",
+      "steps": [
+        {
+          "label": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/rc_refinement_20261030/replay_readout_cached",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b01_run12.root",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/b01_run12_pending_jobs.json"
+          ],
+          "seconds": 278.59586572647095,
+          "log": "simulation/results/mc_statistics_20261030/logs/b01_run12_replay.log",
+          "exit": 0
+        },
+        {
+          "label": "extract_replay",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "/media/sf_works/SiPM/simulation/run_mc_statistics.py",
+            "extract-replay",
+            "--key",
+            "b01_run12"
+          ],
+          "seconds": 105.53989601135254,
+          "log": "simulation/results/mc_statistics_20261030/logs/b01_run12_extract_replay.log",
+          "exit": 0
+        }
+      ],
+      "new_independent_mothers": 0,
+      "replay_entries": 9400,
+      "distinct_selected_mothers": 376,
+      "extraction_sha256": "f68dacb9dd8e1004576eee6f84ccdb7da3aea839398b1f00ac942cf3551560fb",
+      "plan_sha256": "d76ed7b1e7232780b134009e5ee5d990eb297f1ea957f9b450eb7292bd216df6"
+    }
+  ],
+  "protocol_sha256": "22e6a4b5544170d6e8f2e74321e34fa87ad13d9df2260b48c3a6f4eb7b5c4817",
+  "new_independent_mothers": 0
+}

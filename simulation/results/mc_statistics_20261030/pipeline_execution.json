@@ -1,0 +1,67 @@
+{
+  "code_sha256": "223846e16d56a1c5d6ce057baad748033a50214aedffcbc604190831ebfe08f4",
+  "steps": [
+    {
+      "stage": "replay_finalize",
+      "command": [
+        "/home/xc/software/jupyter/.venv/bin/python",
+        "-u",
+        "simulation/run_mc_statistics.py",
+        "replay",
+        "--workers",
+        "2"
+      ],
+      "monotonic_seconds": 22.92076572100632,
+      "log": "simulation/results/mc_statistics_20261030/logs/pipeline_replay_finalize.log",
+      "output_sha256": "c82b823c4e363e65eb4ed0735e226454a2fa34eee30c6b0dcca48af7c1107e56"
+    },
+    {
+      "stage": "analysis",
+      "command": [
+        "/home/xc/software/jupyter/.venv/bin/python",
+        "-u",
+        "simulation/analyze_mc_statistics.py",
+        "--workers",
+        "2"
+      ],
+      "monotonic_seconds": 728.2406635700027,
+      "log": "simulation/results/mc_statistics_20261030/logs/pipeline_analysis.log",
+      "output_sha256": "e8577c3cc84e26542f782d1b890ba29333611c6fd35df62eaed744c5282827fc"
+    },
+    {
+      "stage": "figures",
+      "command": [
+        "/home/xc/software/jupyter/.venv/bin/python",
+        "-u",
+        "simulation/plot_mc_statistics.py"
+      ],
+      "monotonic_seconds": 52.15192701399792,
+      "log": "simulation/results/mc_statistics_20261030/logs/pipeline_figures.log",
+      "output_sha256": "d92cb2888534edaf74330242a74d3a7ba915b9246b7cee287f245a7c99bf2460"
+    },
+    {
+      "stage": "summary",
+      "command": [
+        "/home/xc/software/jupyter/.venv/bin/python",
+        "-u",
+        "simulation/summarize_mc_statistics.py"
+      ],
+      "monotonic_seconds": 7.0820117149851285,
+      "log": "simulation/results/mc_statistics_20261030/logs/pipeline_summary.log",
+      "output_sha256": "b00aaa2161cb8ecdfd7efaad8bcc4fb0c33063d450687bf342deb4b6258400ad"
+    },
+    {
+      "stage": "notebook",
+      "command": [
+        "/home/xc/software/jupyter/.venv/bin/python",
+        "-u",
+        "jupyter/codex_0001_build_mc_statistics_notebook.py"
+      ],
+      "monotonic_seconds": 9.49074649400427,
+      "log": "simulation/results/mc_statistics_20261030/logs/pipeline_notebook.log",
+      "output_sha256": "6ea148ed40df8bccbaeb20890da3e626ae4ba34b29c259a83b4bdabf4e86e28f"
+    }
+  ],
+  "new_independent_mothers": 0,
+  "scope": "Coordinator only. Parent histories counted by transport_execution.json; no additional transport or fitting."
+}

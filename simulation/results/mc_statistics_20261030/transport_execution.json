@@ -1,0 +1,440 @@
+{
+  "scope": "Run independent full transport and unchanged C++ readout responses with resumable records.",
+  "code_sha256": "2e729dad7c0a338f011f5031c4e27f366f44f3924c44a21ec4679bce6460c08b",
+  "protocol_sha256": "22e6a4b5544170d6e8f2e74321e34fa87ad13d9df2260b48c3a6f4eb7b5c4817",
+  "jobs": [
+    {
+      "key": "b00_run12",
+      "code_sha256": "c4aab481194818456a46e8ee4c90b9c898d7b87b81a75045d90b984ee53f2d04",
+      "steps": [
+        {
+          "label": "native",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/run12_native.json",
+            "Am241",
+            "48000",
+            "731030012",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b00_run12.root"
+          ],
+          "seconds": 1080.4684035778046,
+          "log": "simulation/results/mc_statistics_20261030/logs/b00_run12_native.log",
+          "exit": 0
+        },
+        {
+          "label": "validate",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/validate.py",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b00_run12.root"
+          ],
+          "seconds": 4488.131594657898,
+          "log": "simulation/results/mc_statistics_20261030/logs/b00_run12_validate.log",
+          "exit": 0
+        },
+        {
+          "label": "extract_native",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "/media/sf_works/SiPM/simulation/run_mc_statistics.py",
+            "extract-native",
+            "--key",
+            "b00_run12"
+          ],
+          "seconds": 52.630077838897705,
+          "log": "simulation/results/mc_statistics_20261030/logs/b00_run12_extract_native.log",
+          "exit": 0
+        }
+      ],
+      "new_independent_mothers": 48000,
+      "outputs_sha256": {
+        "simulation/results/mc_statistics_20261030/native/b00_run12.root": "3532308853adb87180beb1e4519d2c01b75f96736f55ef62233b8fddf3e73020",
+        "simulation/results/mc_statistics_20261030/native/b00_run12_validation.json": "eacc8200f0867d8603b072ad76ac6d655e7bba8c65ed5feefbf20facead1e1ca",
+        "simulation/results/mc_statistics_20261030/transport/arrays/b00_run12.npz": "acfca23239ae0c020ae22f09e5cbe72cce719900675de8b3a4078cef2c86232a",
+        "simulation/results/mc_statistics_20261030/transport/extraction/b00_run12.json": "97e79022137b752242bbf9dd3e8ee14ead7022488d060069dd4c7b0cfc6ca49f",
+        "simulation/results/mc_statistics_20261030/arrays/b00_run12_frozen.npz": "ead0c2803fda71ba81f74666ee44bf98dfe4d35833914ff40c4604df41f19664"
+      }
+    },
+    {
+      "key": "b01_run12",
+      "code_sha256": "c4aab481194818456a46e8ee4c90b9c898d7b87b81a75045d90b984ee53f2d04",
+      "steps": [
+        {
+          "label": "native",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/run12_native.json",
+            "Am241",
+            "48000",
+            "731031012",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b01_run12.root"
+          ],
+          "seconds": 1132.3156468868256,
+          "log": "simulation/results/mc_statistics_20261030/logs/b01_run12_native.log",
+          "exit": 0
+        },
+        {
+          "label": "validate",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/validate.py",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b01_run12.root"
+          ],
+          "seconds": 4462.439362287521,
+          "log": "simulation/results/mc_statistics_20261030/logs/b01_run12_validate.log",
+          "exit": 0
+        },
+        {
+          "label": "extract_native",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "/media/sf_works/SiPM/simulation/run_mc_statistics.py",
+            "extract-native",
+            "--key",
+            "b01_run12"
+          ],
+          "seconds": 38.64844870567322,
+          "log": "simulation/results/mc_statistics_20261030/logs/b01_run12_extract_native.log",
+          "exit": 0
+        }
+      ],
+      "new_independent_mothers": 48000,
+      "outputs_sha256": {
+        "simulation/results/mc_statistics_20261030/native/b01_run12.root": "61116ac2d4a94797e334d48a93e24ccbdae319d65ebfd14e5bdb12f61af99739",
+        "simulation/results/mc_statistics_20261030/native/b01_run12_validation.json": "bb8407723cec3fcf3c0419373d0279582cd7e06409a553f5ab2c6ee616c75428",
+        "simulation/results/mc_statistics_20261030/transport/arrays/b01_run12.npz": "8cdd821239120a21fde3026773d0c87abd38dcf9c70f8f2b321d505a3f41ebf8",
+        "simulation/results/mc_statistics_20261030/transport/extraction/b01_run12.json": "58ebd91f5c5b268f17ca2af4cb128730d9b70f36a3b6d843bbab35c09db2ae3c",
+        "simulation/results/mc_statistics_20261030/arrays/b01_run12_frozen.npz": "2d92ca519747c969a001ecff9296affc89ddf859627f5a5f3475199f7d8bf377"
+      }
+    },
+    {
+      "key": "b01_run3",
+      "code_sha256": "c4aab481194818456a46e8ee4c90b9c898d7b87b81a75045d90b984ee53f2d04",
+      "steps": [
+        {
+          "label": "native",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/run3_native.json",
+            "Co60",
+            "16000",
+            "731031003",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b01_run3.root"
+          ],
+          "seconds": 5869.937178134918,
+          "log": "simulation/results/mc_statistics_20261030/logs/b01_run3_native.log",
+          "exit": 0
+        },
+        {
+          "label": "validate",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/validate.py",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b01_run3.root"
+          ],
+          "seconds": 40.14097762107849,
+          "log": "simulation/results/mc_statistics_20261030/logs/b01_run3_validate.log",
+          "exit": 0
+        },
+        {
+          "label": "extract_native",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "/media/sf_works/SiPM/simulation/run_mc_statistics.py",
+            "extract-native",
+            "--key",
+            "b01_run3"
+          ],
+          "seconds": 15.817392587661743,
+          "log": "simulation/results/mc_statistics_20261030/logs/b01_run3_extract_native.log",
+          "exit": 0
+        }
+      ],
+      "new_independent_mothers": 16000,
+      "outputs_sha256": {
+        "simulation/results/mc_statistics_20261030/native/b01_run3.root": "be17992a49c0e71b85e35cdc3fee9c84f1ff85bacf6329198d9a897dce38bea4",
+        "simulation/results/mc_statistics_20261030/native/b01_run3_validation.json": "71f7410a999cbec8cf21257acf59c7650cc0b8593dbb2718538b94f5aae5fb3d",
+        "simulation/results/mc_statistics_20261030/transport/arrays/b01_run3.npz": "946f4093b1ce10fe320e1392e4ef21ed76739b865ff6c368d4af2b1805f3d47a",
+        "simulation/results/mc_statistics_20261030/transport/extraction/b01_run3.json": "e956bcf1e498769d7cffd88ddbe7932e10809a3c48b6b3665c6ac409e0dd1f71",
+        "simulation/results/mc_statistics_20261030/arrays/b01_run3_frozen.npz": "eba87cb17f11f5b3ad1ea80b8751dc4198248c9fdd7e733204c7a2c741a0b58a"
+      }
+    },
+    {
+      "key": "b00_run3",
+      "code_sha256": "c4aab481194818456a46e8ee4c90b9c898d7b87b81a75045d90b984ee53f2d04",
+      "steps": [
+        {
+          "label": "native",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/run3_native.json",
+            "Co60",
+            "16000",
+            "731030003",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b00_run3.root"
+          ],
+          "seconds": 5881.533636808395,
+          "log": "simulation/results/mc_statistics_20261030/logs/b00_run3_native.log",
+          "exit": 0
+        },
+        {
+          "label": "validate",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/validate.py",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b00_run3.root"
+          ],
+          "seconds": 34.19653820991516,
+          "log": "simulation/results/mc_statistics_20261030/logs/b00_run3_validate.log",
+          "exit": 0
+        },
+        {
+          "label": "extract_native",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "/media/sf_works/SiPM/simulation/run_mc_statistics.py",
+            "extract-native",
+            "--key",
+            "b00_run3"
+          ],
+          "seconds": 23.289536476135254,
+          "log": "simulation/results/mc_statistics_20261030/logs/b00_run3_extract_native.log",
+          "exit": 0
+        }
+      ],
+      "new_independent_mothers": 16000,
+      "outputs_sha256": {
+        "simulation/results/mc_statistics_20261030/native/b00_run3.root": "7c2c37810f887082cc6c8bfd9e24b488111beda2ddc9ae474a8b95dfbba6c092",
+        "simulation/results/mc_statistics_20261030/native/b00_run3_validation.json": "c73a20659e998ac7c763c39efe12e6b55584edbc4523d75e0d8f7d712f49b277",
+        "simulation/results/mc_statistics_20261030/transport/arrays/b00_run3.npz": "a21812e70b2151e5d92fc82056332bf4cc0fb1a6cd749d748d1e42a24ae29a0e",
+        "simulation/results/mc_statistics_20261030/transport/extraction/b00_run3.json": "1ea2a69fc4e8814808d62c621863acb63602b77991faa5f4733b46983e8e1f40",
+        "simulation/results/mc_statistics_20261030/arrays/b00_run3_frozen.npz": "7b42b053c85388b68510e385b244d861f57d6751dbd531a731633d2e213fb915"
+      }
+    },
+    {
+      "key": "b02_run12",
+      "code_sha256": "2e729dad7c0a338f011f5031c4e27f366f44f3924c44a21ec4679bce6460c08b",
+      "steps": [
+        {
+          "label": "native",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/run12_native.json",
+            "Am241",
+            "48000",
+            "731032012",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b02_run12.root"
+          ],
+          "seconds": 1570.079835653305,
+          "log": "simulation/results/mc_statistics_20261030/logs/b02_run12_native.log",
+          "exit": 0
+        },
+        {
+          "label": "validate",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/validate.py",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b02_run12.root"
+          ],
+          "seconds": 405.30318689346313,
+          "log": "simulation/results/mc_statistics_20261030/logs/b02_run12_validate.log",
+          "exit": 0
+        },
+        {
+          "label": "extract_native",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "/media/sf_works/SiPM/simulation/run_mc_statistics.py",
+            "extract-native",
+            "--key",
+            "b02_run12"
+          ],
+          "seconds": 47.27324461936951,
+          "log": "simulation/results/mc_statistics_20261030/logs/b02_run12_extract_native.log",
+          "exit": 0
+        }
+      ],
+      "new_independent_mothers": 48000,
+      "outputs_sha256": {
+        "simulation/results/mc_statistics_20261030/native/b02_run12.root": "6e3fe318edf90d2d9ff07a47a0dbdefc6a09fda98cbe617d45c5ef9641f282fd",
+        "simulation/results/mc_statistics_20261030/native/b02_run12_validation.json": "456523a327291edb687f61bba97bfbb05455389e8b4d6a5f902619b3f9da0884",
+        "simulation/results/mc_statistics_20261030/transport/arrays/b02_run12.npz": "ce62822956bb5ec198b443d92dc7b766ef7b731b1a1d86a61ed2b245b5c1307f",
+        "simulation/results/mc_statistics_20261030/transport/extraction/b02_run12.json": "adb2992d20eaa0333b7d569408b6dd2220977c07a4fcc5ec90453f7187bb4bfb",
+        "simulation/results/mc_statistics_20261030/arrays/b02_run12_frozen.npz": "53ad2fe4437e640f4d784e8010979aeafd10fdf900512ea79eec116397e71442"
+      }
+    },
+    {
+      "key": "b02_run3",
+      "code_sha256": "2e729dad7c0a338f011f5031c4e27f366f44f3924c44a21ec4679bce6460c08b",
+      "steps": [
+        {
+          "label": "native",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/run3_native.json",
+            "Co60",
+            "16000",
+            "731032003",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b02_run3.root"
+          ],
+          "seconds": 2302.9928855895996,
+          "log": "simulation/results/mc_statistics_20261030/logs/b02_run3_native.log",
+          "exit": 0
+        },
+        {
+          "label": "validate",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/validate.py",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b02_run3.root"
+          ],
+          "seconds": 120.04524898529053,
+          "log": "simulation/results/mc_statistics_20261030/logs/b02_run3_validate.log",
+          "exit": 0
+        },
+        {
+          "label": "extract_native",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "/media/sf_works/SiPM/simulation/run_mc_statistics.py",
+            "extract-native",
+            "--key",
+            "b02_run3"
+          ],
+          "seconds": 56.523656606674194,
+          "log": "simulation/results/mc_statistics_20261030/logs/b02_run3_extract_native.log",
+          "exit": 0
+        }
+      ],
+      "new_independent_mothers": 16000,
+      "outputs_sha256": {
+        "simulation/results/mc_statistics_20261030/native/b02_run3.root": "992f0bf0613870669cea88575721512c33be2e93b6f3c3a03eac97657ec798bc",
+        "simulation/results/mc_statistics_20261030/native/b02_run3_validation.json": "0105882db60779b58f82a826f177ea3379f7a90a92548524ecea692d9c038cfe",
+        "simulation/results/mc_statistics_20261030/transport/arrays/b02_run3.npz": "e6ba30a35bb536fb37b649605b47510759b49526e9820aa33a4dba4e16e8f694",
+        "simulation/results/mc_statistics_20261030/transport/extraction/b02_run3.json": "187c0bb95227ef2ad05c88675f3f9625c67520dfa306dea0bba57fe7964386b2",
+        "simulation/results/mc_statistics_20261030/arrays/b02_run3_frozen.npz": "7c293e4de23c0dc259bc0736ca27b247e0c5f9adacbad916cb42bc1b6e6e8f9f"
+      }
+    },
+    {
+      "key": "b03_run12",
+      "code_sha256": "2e729dad7c0a338f011f5031c4e27f366f44f3924c44a21ec4679bce6460c08b",
+      "steps": [
+        {
+          "label": "native",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/run12_native.json",
+            "Am241",
+            "48000",
+            "731033012",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b03_run12.root"
+          ],
+          "seconds": 1879.8636679649353,
+          "log": "simulation/results/mc_statistics_20261030/logs/b03_run12_native.log",
+          "exit": 0
+        },
+        {
+          "label": "validate",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/validate.py",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b03_run12.root"
+          ],
+          "seconds": 207.07192707061768,
+          "log": "simulation/results/mc_statistics_20261030/logs/b03_run12_validate.log",
+          "exit": 0
+        },
+        {
+          "label": "extract_native",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "/media/sf_works/SiPM/simulation/run_mc_statistics.py",
+            "extract-native",
+            "--key",
+            "b03_run12"
+          ],
+          "seconds": 90.63997721672058,
+          "log": "simulation/results/mc_statistics_20261030/logs/b03_run12_extract_native.log",
+          "exit": 0
+        }
+      ],
+      "new_independent_mothers": 48000,
+      "outputs_sha256": {
+        "simulation/results/mc_statistics_20261030/native/b03_run12.root": "891bf90efd2dac596f96bb54fb7e6b87d843135d7b196865f28cfed4e99679e9",
+        "simulation/results/mc_statistics_20261030/native/b03_run12_validation.json": "0d836be71ab5e8957bb87bba4903803288592261992b5c458ca1b545a6e93cd4",
+        "simulation/results/mc_statistics_20261030/transport/arrays/b03_run12.npz": "fb3d3033c5a4cab6f0ed518275b36e7ee0df9299ee86e99e907edbb2653b604d",
+        "simulation/results/mc_statistics_20261030/transport/extraction/b03_run12.json": "e0f4f3fb9ad13584e0c2a9b745a56f69257bd20d1889a6a0d69d55d89c72adc3",
+        "simulation/results/mc_statistics_20261030/arrays/b03_run12_frozen.npz": "89a43d232342d54119340ae8a6f510d27ca746f3a0c161a7f094005e437a8b44"
+      }
+    },
+    {
+      "key": "b03_run3",
+      "code_sha256": "2e729dad7c0a338f011f5031c4e27f366f44f3924c44a21ec4679bce6460c08b",
+      "steps": [
+        {
+          "label": "native",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/run3_native.json",
+            "Co60",
+            "16000",
+            "731033003",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b03_run3.root"
+          ],
+          "seconds": 2467.4355566501617,
+          "log": "simulation/results/mc_statistics_20261030/logs/b03_run3_native.log",
+          "exit": 0
+        },
+        {
+          "label": "validate",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "simulation/validate.py",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b03_run3.root"
+          ],
+          "seconds": 106.49328374862671,
+          "log": "simulation/results/mc_statistics_20261030/logs/b03_run3_validate.log",
+          "exit": 0
+        },
+        {
+          "label": "extract_native",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "/media/sf_works/SiPM/simulation/run_mc_statistics.py",
+            "extract-native",
+            "--key",
+            "b03_run3"
+          ],
+          "seconds": 27.431020498275757,
+          "log": "simulation/results/mc_statistics_20261030/logs/b03_run3_extract_native.log",
+          "exit": 0
+        }
+      ],
+      "new_independent_mothers": 16000,
+      "outputs_sha256": {
+        "simulation/results/mc_statistics_20261030/native/b03_run3.root": "ae1995aeb2c59a39834a9da797556870cdc8a091ee38e5670644f4b2af4228b5",
+        "simulation/results/mc_statistics_20261030/native/b03_run3_validation.json": "ed35aaa7dbcf15f11eb49e6d7026bae2404697b60becf48bef4806b8a8991c75",
+        "simulation/results/mc_statistics_20261030/transport/arrays/b03_run3.npz": "3f4cd555d1912c3141ce752c2cf8342dc23a45535716ab1e97fb67eb69ffbfa7",
+        "simulation/results/mc_statistics_20261030/transport/extraction/b03_run3.json": "31ee765bb848e683a160b1761e03d8e7dd16d010713821475d2737da1ffdcd63",
+        "simulation/results/mc_statistics_20261030/arrays/b03_run3_frozen.npz": "234e49fc092fd89dae51cf01edb7dd9f3f114f9e1892a0607300bf46940e5f04"
+      }
+    }
+  ],
+  "new_independent_mothers": 256000
+}

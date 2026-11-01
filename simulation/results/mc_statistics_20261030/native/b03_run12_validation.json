@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "source": "Am241",
+  "events": 48000,
+  "zero_deposit_events": 47217,
+  "deposited_events": 783,
+  "alpha_deposit_events": 421,
+  "alpha_deposit_median_MeV": 0.9089133269269388,
+  "energy_deposit_p05_p50_p95_MeV": [
+    0.013948865083830227,
+    0.7213971271823015,
+    1.0863158576555336
+  ],
+  "decay_product_counts": {
+    "1000932371": 47695,
+    "1000020040": 48000,
+    "1000932370": 48000,
+    "22": 40318,
+    "11": 584597,
+    "1000932379": 18190,
+    "1000932373": 1,
+    "1000932372": 1
+  },
+  "max_relative_charge_balance_error": 5.246752990058741e-14,
+  "prompt_gamma_lines_counts": {
+    "0.05954": 17235,
+    "1.17323": 0,
+    "1.33249": 0
+  },
+  "ancestry_checks": true,
+  "scope": "Numerical and source-physics checks, not validation against experimental waveform",
+  "source_gap_mm": 30.0,
+  "transport_only": false,
+  "digitization_enabled": true
+}

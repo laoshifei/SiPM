@@ -1,0 +1,7 @@
+{
+  "cohorts": 36,
+  "metrics_per_cohort": 51,
+  "passed": true,
+  "common_code_sha256": "9d7ead4bb78ee3f4071b6ec31d9a17ccc21a3d5319632762a2cc1e162bf30f38",
+  "analysis_code_sha256": "558a79ce53405eac4f04c03d13b346897279e261673d6602a928646f8eaf50fd"
+}

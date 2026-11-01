@@ -1,0 +1,16 @@
+{
+  "scope": "Scientific figures for original ADC examples and frozen waveform diagnostics.",
+  "code_sha256": "73554df8e5dd451f6d8f182067d5f767b1dcd81f42b0bb85eca58a63b799fcf0",
+  "figures": [
+    "am_extreme_raw_ADC",
+    "co_extreme_raw_ADC",
+    "tail_estimator_width_controls",
+    "tail_baseline_anchor_observables",
+    "trained_waveform_modes"
+  ],
+  "inputs_sha256": {
+    "simulation/results/waveform_tail_20261030/protocol.json": "be6079387ff8c7dedbfd73251a79efc2bcb4c63cb1f0413ab94f52b24677b644",
+    "simulation/results/waveform_tail_20261030/examples.json": "6320dc970755dc0026005db94145ddd2651e206cfba09834cec45bc5b81bd1d6",
+    "simulation/results/waveform_tail_20261030/analysis.json": "d1f2fd90a82cd53408f08b4e28ebf7ca3aa9b86aab56e6473c8f8ace4fc4f8b9"
+  }
+}

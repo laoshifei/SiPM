@@ -1,0 +1,252 @@
+{
+  "scope": "Freeze raw-waveform inspection, estimator controls and rank-three shape diagnostics.",
+  "code_sha256": "87a84d9554b195dd2f5a82c773a7ac95bef45e57ec522316a7200c58e3ed9cb0",
+  "groups": {
+    "run3_first60": {
+      "n": 2423,
+      "exact_original_BIN_ADC": true,
+      "original_PID_shape_exact": true
+    },
+    "run3_first60_B64_frozen": {
+      "n": 276,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run3_first60_B64_inherited_CV_fit": {
+      "n": 276,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run3_first60_B64_spectrum_CV_fit": {
+      "n": 276,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run3_first60_B128_frozen": {
+      "n": 276,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run3_first60_B128_inherited_CV_fit": {
+      "n": 276,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run3_first60_B128_spectrum_CV_fit": {
+      "n": 276,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run3_middle20": {
+      "n": 843,
+      "exact_original_BIN_ADC": true,
+      "original_PID_shape_exact": true
+    },
+    "run3_middle20_B64_frozen": {
+      "n": 276,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run3_middle20_B64_inherited_CV_fit": {
+      "n": 276,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run3_middle20_B64_spectrum_CV_fit": {
+      "n": 276,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run3_middle20_B128_frozen": {
+      "n": 276,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run3_middle20_B128_inherited_CV_fit": {
+      "n": 276,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run3_middle20_B128_spectrum_CV_fit": {
+      "n": 276,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run3_last20": {
+      "n": 821,
+      "exact_original_BIN_ADC": true,
+      "original_PID_shape_exact": true
+    },
+    "run3_last20_B64_frozen": {
+      "n": 276,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run3_last20_B64_inherited_CV_fit": {
+      "n": 276,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run3_last20_B64_spectrum_CV_fit": {
+      "n": 276,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run3_last20_B128_frozen": {
+      "n": 276,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run3_last20_B128_inherited_CV_fit": {
+      "n": 276,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run3_last20_B128_spectrum_CV_fit": {
+      "n": 276,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run12_first60": {
+      "n": 1547,
+      "exact_original_BIN_ADC": true,
+      "original_PID_shape_exact": true
+    },
+    "run12_first60_B64_frozen": {
+      "n": 194,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run12_first60_B64_inherited_CV_fit": {
+      "n": 194,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run12_first60_B64_spectrum_CV_fit": {
+      "n": 194,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run12_first60_B128_frozen": {
+      "n": 194,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run12_first60_B128_inherited_CV_fit": {
+      "n": 194,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run12_first60_B128_spectrum_CV_fit": {
+      "n": 194,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run12_middle20": {
+      "n": 460,
+      "exact_original_BIN_ADC": true,
+      "original_PID_shape_exact": true
+    },
+    "run12_middle20_B64_frozen": {
+      "n": 194,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run12_middle20_B64_inherited_CV_fit": {
+      "n": 194,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run12_middle20_B64_spectrum_CV_fit": {
+      "n": 194,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run12_middle20_B128_frozen": {
+      "n": 194,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run12_middle20_B128_inherited_CV_fit": {
+      "n": 194,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run12_middle20_B128_spectrum_CV_fit": {
+      "n": 194,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run12_last20": {
+      "n": 407,
+      "exact_original_BIN_ADC": true,
+      "original_PID_shape_exact": true
+    },
+    "run12_last20_B64_frozen": {
+      "n": 194,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run12_last20_B64_inherited_CV_fit": {
+      "n": 194,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run12_last20_B64_spectrum_CV_fit": {
+      "n": 194,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run12_last20_B128_frozen": {
+      "n": 194,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run12_last20_B128_inherited_CV_fit": {
+      "n": 194,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    },
+    "run12_last20_B128_spectrum_CV_fit": {
+      "n": 194,
+      "original_PID_shape_exact": true,
+      "new_independent_mothers": 0,
+      "new_native_replays": 0
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "key": "b02_run12",
+  "code_sha256": "2e729dad7c0a338f011f5031c4e27f366f44f3924c44a21ec4679bce6460c08b",
+  "steps": [
+    {
+      "label": "native",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+        "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/run12_native.json",
+        "Am241",
+        "48000",
+        "731032012",
+        "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b02_run12.root"
+      ],
+      "seconds": 1570.079835653305,
+      "log": "simulation/results/mc_statistics_20261030/logs/b02_run12_native.log",
+      "exit": 0
+    },
+    {
+      "label": "validate",
+      "command": [
+        "/home/xc/software/jupyter/.venv/bin/python",
+        "-u",
+        "simulation/validate.py",
+        "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b02_run12.root"
+      ],
+      "seconds": 405.30318689346313,
+      "log": "simulation/results/mc_statistics_20261030/logs/b02_run12_validate.log",
+      "exit": 0
+    },
+    {
+      "label": "extract_native",
+      "command": [
+        "/home/xc/software/jupyter/.venv/bin/python",
+        "-u",
+        "/media/sf_works/SiPM/simulation/run_mc_statistics.py",
+        "extract-native",
+        "--key",
+        "b02_run12"
+      ],
+      "seconds": 47.27324461936951,
+      "log": "simulation/results/mc_statistics_20261030/logs/b02_run12_extract_native.log",
+      "exit": 0
+    }
+  ],
+  "new_independent_mothers": 48000,
+  "outputs_sha256": {
+    "simulation/results/mc_statistics_20261030/native/b02_run12.root": "6e3fe318edf90d2d9ff07a47a0dbdefc6a09fda98cbe617d45c5ef9641f282fd",
+    "simulation/results/mc_statistics_20261030/native/b02_run12_validation.json": "456523a327291edb687f61bba97bfbb05455389e8b4d6a5f902619b3f9da0884",
+    "simulation/results/mc_statistics_20261030/transport/arrays/b02_run12.npz": "ce62822956bb5ec198b443d92dc7b766ef7b731b1a1d86a61ed2b245b5c1307f",
+    "simulation/results/mc_statistics_20261030/transport/extraction/b02_run12.json": "adb2992d20eaa0333b7d569408b6dd2220977c07a4fcc5ec90453f7187bb4bfb",
+    "simulation/results/mc_statistics_20261030/arrays/b02_run12_frozen.npz": "53ad2fe4437e640f4d784e8010979aeafd10fdf900512ea79eec116397e71442"
+  }
+}

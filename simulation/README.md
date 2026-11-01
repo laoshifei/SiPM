@@ -2,7 +2,33 @@
 
 已实现并运行 **核衰变 → 能量沉积 → 闪烁光输运 → SiPM 雪崩 → 被动读出响应 → ADC → 实测对照**。只支持 `Am241` 和 `Co60`。本目录参考 GAGG_pileup 的 SiPM 数值内核，新建 CsI 几何、源、材料参数和本项目波形对照；未修改参考项目。
 
-最新的[连续RC与噪声分布联合校准笔记](../jupyter/codex_0001_csi_refined_rc.ipynb)细化96–160 ns范围内的读出响应，并同时约束均ADC、PID完整协方差、IQR、F50/102/202均值及事件间起伏。原生2 ns网格只用于插值汇总响应和提出参数，全部评价ADC仍由C++实际生成。**490项研究用原生任务共115150条重放，重复使用470个原Geant4母事件（支持Q箱内456个），新增独立母事件为0。**
+最新的[独立Geant4统计复现笔记](../jupyter/codex_0001_csi_independent_mc_statistics.ipynb)冻结此前的参数、筛选、Q目标和51项评价指标，完成四批新种子的 **256000个完整Geant4母衰变（64000 Co、192000 Am）**。固定Q支持内的不同母事件从Co276、Am180增加到 **2175、1406**。91525条下游原生读出重放来自3661个共同Q区间入选母事件，其中3581个位于固定支持箱内；重放不额外增加独立母事件。原冻结响应及两种条件响应全部报告，本轮没有重新拟合、选优或替换默认配置和正式PID。
+
+Am晚段扩展谱（块128）的平均时间95%分位宽度比由旧样本 **0.872变为0.980**，新条件95%区间为 **[0.914,1.120]**，新减旧配对区间为[−0.065,0.265]。新QDC/平均时间/PCA核心宽度比为 **1.014/0.941/1.005**。将新完整母事件池抽回旧的24000个Am母事件规模，512次平均时间95%宽度比的描述范围为 **[0.818,1.060]**，覆盖旧点。有限样本的分位估计偏移和起伏值得优先考虑；旧MC曾参与校准，不能把新旧差异唯一归为统计噪声。
+
+剩余偏差仍需处理。晚段扩展谱的QDC中央95%宽度比，Co为 **1.072 [1.011,1.177]**，Am为 **1.090 [1.002,1.227]**。F202均值比为 **1.000/1.010**，但事件间SD比为 **1.232 [1.168,1.326] / 1.201 [1.122,1.312]**，四批种子的SD点值均大于1；Co的F102事件间SD比也为 **1.157 [1.081,1.243]**。这些是未作多重比较校正的条件区间，不能单独识别物理原因。后续应按原Q箱、采集段和样本规模检查QDC外侧及F分布的共同残差，再提出受约束的波形模型变化。
+
+新Co/Am均ADC相对L2误差为 **3.00%/1.60%**，时间中心差为 **+0.77/+0.67 ns**。均波形图使用40 ns分箱，PID仍直接积分2 ns原ADC，未按实测单事件缩放模拟幅度。Am平均时间95%宽度比的仅MC/仅实验块抽样SD为 **0.0277/0.0465**，继续增加MC不能消除已有实验统计限制。这些条件区间固定拟合参数、模式、边界和Q目标；没有等效性证明，也没有新增实验验证或逐事件实验粒子真值。
+
+见[样本支持](results/mc_statistics_20261030/figures/independent_MC_support.png)、[PID分位宽度](results/mc_statistics_20261030/figures/independent_PID_quantiles.png)、[四批稳定性](results/mc_statistics_20261030/figures/independent_batch_stability.png)、[原生均ADC](results/mc_statistics_20261030/figures/independent_native_mean_ADC.png)、[形状方差与F](results/mc_statistics_20261030/figures/independent_modes_and_F.png)、[旧规模抽样](results/mc_statistics_20261030/figures/old_size_MC_subsamples.png)、[36行对照表](results/mc_statistics_20261030/comparison_table.csv)、[144行逐批表](results/mc_statistics_20261030/batch_table.csv)、[冻结方案](results/mc_statistics_20261030/protocol.json)和[结论](results/mc_statistics_20261030/decision.json)。流程为 `prepare_mc_statistics.py` → `run_mc_statistics.py transport` / `replay` → `analyze_mc_statistics.py`，随后绘图、总结、执行笔记和 `verify_mc_statistics.py` / `--archive`。核验包括完整输运来源、原生ADC逐点一致、独立积分、旧点定义复现、形状方差及配对区间。新MC若用于后续调参，就属于诊断数据；修改模型后的检查需另冻方案和新种子。
+
+此前的[原始波形尾部与基线/取时诊断笔记](../jupyter/codex_0001_csi_waveform_tail.ipynb)按预定Q箱及2.5/50/97.5%分位选出36条原ADC示例记录（32个不同组内事件），实验逐条回查原BIN，模拟沿用冻结原生响应。比较四种基线/定位定义，并仅用对折实验训练固定三维波形子空间。**新增Geant4母事件和原生重放均为0，未删除事件或替换正式PID及默认配置。**
+
+Am晚段扩展谱（块128）的平均时间95%分位宽度比由原定义 **0.872** 变为近期基线与平滑定位同时使用的 **0.822**；配对变化95%区间为 **[−0.161,0.082]**。前、中、后段变化方向不同，目前没有依据采用统一修正。30条实验联合PID尾部中，20条没有触发预定基线、锚点、后段台阶或晚电荷份额标记，不能简单归为坏事件并剔除；这些描述标记也不是堆积或噪声原因的分类器。
+
+三维形状子空间捕获Am晚段实验/MC方差的 **32.4%/33.3%**，三维、正交剩余和完整形状方差比分别为 **1.044/1.001/1.015**，条件区间均包含1。两折子空间最小奇异值为 **0.608**，提示部分方向不稳定；不能据整体二阶量接近宣称PID高阶分布一致或识别了三个物理噪声分量。本阶段提出的冻结候选、增加独立Geant4母事件和小样本诊断已在上方新笔记执行，两轮结果分别保存；新增模拟不产生新的实验验证数据。
+
+见[Am原始ADC](results/waveform_tail_20261030/figures/am_extreme_raw_ADC.png)、[Co原始ADC](results/waveform_tail_20261030/figures/co_extreme_raw_ADC.png)、[四种定义对照](results/waveform_tail_20261030/figures/tail_estimator_width_controls.png)、[基线与锚点观察量](results/waveform_tail_20261030/figures/tail_baseline_anchor_observables.png)、[波形模式](results/waveform_tail_20261030/figures/trained_waveform_modes.png)、[144行对照表](results/waveform_tail_20261030/control_table.csv)、[示例原ID表](results/waveform_tail_20261030/example_events.csv)、[冻结方案](results/waveform_tail_20261030/protocol.json)和[结论](results/waveform_tail_20261030/decision.json)。流程为 `prepare_waveform_tail.py` → `analyze_waveform_tail.py`，随后绘图、总结、执行笔记及 `verify_waveform_tail.py`；核查原ADC、四种定义的独立积分、对折隔离、精确方差分解和原宽度/SD区间沿用。全部实验已探索，区间固定响应、模式、边界和目标权重，不包括其拟合不确定度。
+
+上一轮的[PID核心、尾部与波形关联笔记](../jupyter/codex_0001_csi_pid_core_tail.ipynb)固定上一轮参数、原事件/Q/PCA和目标权重，比较50/80/90/95%分位宽度，并仅用对折实验定义诊断尾部。**新增Geant4母事件及原生重放均为0，未删除尾部事件或改变默认配置。**
+
+Am晚段扩展谱（块128）的QDC/PCA核心IQR比为 **1.160/1.148**，覆盖95%事件的宽度比则为 **1.024/1.024**；平均时间核心比为 **0.981**，覆盖80%/95%事件的宽度比为 **0.834/0.872**。点估计提示核心与外侧的分布形状需要分别检查，但上述宽度比的条件95%区间均包含1。预设两倍稳健尺度尾部的占比和方差贡献差异区间也均包含0，相关MC尾部只有个位数至十余条，不能确认某种稀有噪声机制。
+
+现有支持区276个Co母事件均为γ家族主导，180个Am母事件均为α家族主导；能量90%/95%和雪崩电荷90%标签一致。按这些类别分解的类间均值方差为0，因此这批已选择MC的粗粒子家族混合不能解释剩余差异；次要成分、类内涨落及实验混合仍未被排除，**实验Am主带不作为纯α真值**。波形协方差及F/基线相关只提供诊断线索，不单独指认因果。本阶段提出的极端分位原始ADC及低维波形形状诊断已在上方新笔记执行，两轮分别冻结。
+
+见[分位宽度](results/pid_core_tail_20261030/figures/core_tail_quantile_widths.png)、[尾部质量与方差](results/pid_core_tail_20261030/figures/core_tail_mass_and_variance.png)、[标准化分布](results/pid_core_tail_20261030/figures/core_tail_distributions.png)、[波形关联](results/pid_core_tail_20261030/figures/core_tail_waveform_covariance.png)、[噪声指标关联](results/pid_core_tail_20261030/figures/core_tail_noise_associations.png)、[60行数值表](results/pid_core_tail_20261030/validation_table.csv)、[冻结方案](results/pid_core_tail_20261030/protocol.json)和[结论](results/pid_core_tail_20261030/decision.json)。流程为 `prepare_pid_core_tail.py` → `analyze_pid_core_tail.py`，随后绘图、笔记及 `verify_pid_core_tail.py` 核验；原IQR/SD点估计和512次配对区间须与上一轮逐项一致。全部实验已探索，区间固定模型与尾部边界，不代表独立验证或已证明等效。
+
+上一轮的[连续RC与噪声分布联合校准笔记](../jupyter/codex_0001_csi_refined_rc.ipynb)细化96–160 ns范围内的读出响应，并同时约束均ADC、PID完整协方差、IQR、F50/102/202均值及事件间起伏。原生2 ns网格只用于插值汇总响应和提出参数，全部评价ADC仍由C++实际生成。**490项研究用原生任务共115150条重放，重复使用470个原Geant4母事件（支持Q箱内456个），新增独立母事件为0。**
 
 Am晚段扩展谱方案（原始块128）的MC−实测平均时间差由上一轮 **1.41变为0.68 ns**，固定拟合条件95%区间为[−6.64,7.18] ns；时间IQR比为 **0.981**，QDC/PCA为 **1.160/1.148**，绝对平均ADC波形NRMSE为 **1.40%**。块64/128的时间中心差距从 **4.40缩小到1.01 ns**，但时间IQR比的配对变化区间仍包含0。完整协方差误差点估计从0.138变为0.102，其变化区间也包含0。Co晚段中心从−0.44变为+1.41 ns，均ADC NRMSE从3.18%变为2.96%；多目标拟合存在权衡，不能称为全面改善或已证明一致。
 

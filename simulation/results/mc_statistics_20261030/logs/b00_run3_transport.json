@@ -1,0 +1,54 @@
+{
+  "key": "b00_run3",
+  "code_sha256": "c4aab481194818456a46e8ee4c90b9c898d7b87b81a75045d90b984ee53f2d04",
+  "steps": [
+    {
+      "label": "native",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+        "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/run3_native.json",
+        "Co60",
+        "16000",
+        "731030003",
+        "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b00_run3.root"
+      ],
+      "seconds": 5881.533636808395,
+      "log": "simulation/results/mc_statistics_20261030/logs/b00_run3_native.log",
+      "exit": 0
+    },
+    {
+      "label": "validate",
+      "command": [
+        "/home/xc/software/jupyter/.venv/bin/python",
+        "-u",
+        "simulation/validate.py",
+        "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b00_run3.root"
+      ],
+      "seconds": 34.19653820991516,
+      "log": "simulation/results/mc_statistics_20261030/logs/b00_run3_validate.log",
+      "exit": 0
+    },
+    {
+      "label": "extract_native",
+      "command": [
+        "/home/xc/software/jupyter/.venv/bin/python",
+        "-u",
+        "/media/sf_works/SiPM/simulation/run_mc_statistics.py",
+        "extract-native",
+        "--key",
+        "b00_run3"
+      ],
+      "seconds": 23.289536476135254,
+      "log": "simulation/results/mc_statistics_20261030/logs/b00_run3_extract_native.log",
+      "exit": 0
+    }
+  ],
+  "new_independent_mothers": 16000,
+  "outputs_sha256": {
+    "simulation/results/mc_statistics_20261030/native/b00_run3.root": "7c2c37810f887082cc6c8bfd9e24b488111beda2ddc9ae474a8b95dfbba6c092",
+    "simulation/results/mc_statistics_20261030/native/b00_run3_validation.json": "c73a20659e998ac7c763c39efe12e6b55584edbc4523d75e0d8f7d712f49b277",
+    "simulation/results/mc_statistics_20261030/transport/arrays/b00_run3.npz": "a21812e70b2151e5d92fc82056332bf4cc0fb1a6cd749d748d1e42a24ae29a0e",
+    "simulation/results/mc_statistics_20261030/transport/extraction/b00_run3.json": "1ea2a69fc4e8814808d62c621863acb63602b77991faa5f4733b46983e8e1f40",
+    "simulation/results/mc_statistics_20261030/arrays/b00_run3_frozen.npz": "7b42b053c85388b68510e385b244d861f57d6751dbd531a731633d2e213fb915"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "code_sha256": "ecb1a9b6cf694b18ec6888f9ea9abedcc15cf857dd5a2a2d94b6d1e0c5742137",
+  "figures": [
+    "independent_MC_support",
+    "independent_PID_quantiles",
+    "independent_batch_stability",
+    "independent_native_mean_ADC",
+    "independent_modes_and_F",
+    "old_size_MC_subsamples"
+  ],
+  "inputs_sha256": {
+    "simulation/results/mc_statistics_20261030/protocol.json": "22e6a4b5544170d6e8f2e74321e34fa87ad13d9df2260b48c3a6f4eb7b5c4817",
+    "simulation/results/mc_statistics_20261030/analysis.json": "e8577c3cc84e26542f782d1b890ba29333611c6fd35df62eaed744c5282827fc",
+    "simulation/results/rc_refinement_20261030/arrays/run3_last20_B128_frozen_evaluation.npz": "7d9b3b71877711f19775771e6dea880272b41231adbce5f8f1fd85819f29a3e7",
+    "simulation/results/mc_statistics_20261030/evaluation/run3_last20_B128_bootstrap.npz": "4582935989811eb33a3481e4d0b6347607447775a64ad81634b95f4cc305f79d",
+    "simulation/results/mc_statistics_20261030/arrays/b00_run3_frozen.npz": "7b42b053c85388b68510e385b244d861f57d6751dbd531a731633d2e213fb915",
+    "simulation/results/mc_statistics_20261030/arrays/b01_run3_frozen.npz": "eba87cb17f11f5b3ad1ea80b8751dc4198248c9fdd7e733204c7a2c741a0b58a",
+    "simulation/results/mc_statistics_20261030/arrays/b02_run3_frozen.npz": "7c293e4de23c0dc259bc0736ca27b247e0c5f9adacbad916cb42bc1b6e6e8f9f",
+    "simulation/results/mc_statistics_20261030/arrays/b03_run3_frozen.npz": "234e49fc092fd89dae51cf01edb7dd9f3f114f9e1892a0607300bf46940e5f04",
+    "simulation/results/rc_refinement_20261030/arrays/run12_last20_B128_frozen_evaluation.npz": "42ba8863f24ccdb1003df8265a13e2304ad35a7057eac84ac99ab6cf09970a2d",
+    "simulation/results/mc_statistics_20261030/evaluation/run12_last20_B128_bootstrap.npz": "bba05d5e41e33d3dc949575fab2464ae87302646d551d33c0b99ac38785f0f89",
+    "simulation/results/mc_statistics_20261030/arrays/b00_run12_frozen.npz": "ead0c2803fda71ba81f74666ee44bf98dfe4d35833914ff40c4604df41f19664",
+    "simulation/results/mc_statistics_20261030/arrays/b01_run12_frozen.npz": "2d92ca519747c969a001ecff9296affc89ddf859627f5a5f3475199f7d8bf377",
+    "simulation/results/mc_statistics_20261030/arrays/b02_run12_frozen.npz": "53ad2fe4437e640f4d784e8010979aeafd10fdf900512ea79eec116397e71442",
+    "simulation/results/mc_statistics_20261030/arrays/b03_run12_frozen.npz": "89a43d232342d54119340ae8a6f510d27ca746f3a0c161a7f094005e437a8b44"
+  }
+}

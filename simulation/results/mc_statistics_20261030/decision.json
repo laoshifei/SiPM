@@ -1,0 +1,44 @@
+{
+  "scope": "Record independent-batch results and limits without promoting or refitting a model.",
+  "code_sha256": "83fbf42387df36228ce7c970230f226045a1cc46275db1c1ba11d6937412c035",
+  "conclusion_zh": "完成256000个独立Geant4母衰变，固定Q支持内获得Co 2175、Am 1406个新母事件。冻结扩展谱在Am晚段（块128）的平均时间95%宽度比，从旧样本0.872变为新合并样本0.980，条件95%区间[0.914,1.120]；新减旧的配对区间为[-0.065,0.265]。两源核心及95%宽度的12项检查中，2项条件区间不含1。这些区间未包含拟合和模型不确定性，也未作多重比较校正或等效性检验；本轮不宣称全面一致，默认配置和正式PID保持原样。",
+  "findings_zh": [
+    "Co60晚段扩展谱：新QDC/平均时间/PCA核心宽度比为1.066/0.957/0.951，95%宽度比为1.072/1.006/1.038；均ADC相对L2误差从2.96%变为3.00%，时间中心MC−实测从1.41变为0.77 ns。所有固定模型、四批结果和两种块长均保留。",
+    "Am241晚段扩展谱：新QDC/平均时间/PCA核心宽度比为1.014/0.941/1.005，95%宽度比为1.090/0.980/1.034；均ADC相对L2误差从1.40%变为1.60%，时间中心MC−实测从0.68变为0.67 ns。所有固定模型、四批结果和两种块长均保留。",
+    "将新Am完整母事件池抽回24000个母事件时，平均时间95%宽度比的512次条件描述范围为[0.818,1.060]，旧点的经验位置为0.168。抽样共享同一新池且固定实测，不是512次独立输运，也不是校准后的p值或单一因果证明。",
+    "Am晚段同一指标的仅MC抽样SD为0.0277，仅实验块抽样SD为0.0465。两项用于判断有限统计来源；比值指标非线性，不能把两项方差机械相加当完整误差预算。",
+    "Am晚段三模式内、正交剩余及完整形状方差比分别为1.095/1.029/1.051。模式和边界沿用上一轮对折实验；即使部分二阶量接近，也不能据此认定尾部分布或微观噪声机制已一致。"
+  ],
+  "next_work_zh": "后续以这轮独立模拟复现结果为固定基准，按原Q箱和采集段列清仍存在的中心、核心/外侧宽度、协方差与F残差。只针对跨种子仍稳定的残差提出新的、受约束的波形变化机制，同时检查均ADC和完整PID分布；不再单独给某一个PID分数加宽。本轮新MC已用于诊断，后续若据此改模型，应另外冻结方案并用新种子检查，不能把同批再拟合结果称为独立验证。若误差主要受已有实验块统计限制，应保留这一边界，不靠无限增加MC或反复调参宣称一致。",
+  "primary_width_intervals_excluding_one": [
+    "Co60:width95_QDC_ratio",
+    "Am241:width95_QDC_ratio"
+  ],
+  "new_independent_mothers": 256000,
+  "replay_entries": 91525,
+  "new_supported_mothers": {
+    "Co60": 2175,
+    "Am241": 1406
+  },
+  "new_experimental_events": 0,
+  "default_changed": false,
+  "official_PID_changed": false,
+  "limitations_zh": [
+    "实验均已探索，响应按采集段条件化；新种子只提供模拟统计复现，不产生新的实验或跨装置验证。",
+    "旧MC曾参与拟合与模型选择；固定参数区间未包含拟合、选择、装置、源距、有效收光/PDE/增益退化等不确定性。",
+    "51项指标、多个段/块长/候选并列，无多重比较校正或预设等效性检验；区间包含1不证明等效，不包含1也不能单独识别噪声原因。",
+    "本轮固定基准ADC的选择及Q，评价候选不重新筛选；结论限于既定支持区，不是硬件触发效率、全谱性能或实验粒子鉴别效率。",
+    "Am源含α/γ/电子，实验主带没有逐事件真值；仿真祖先标签只用于仿真描述，不能转为实验纯度。",
+    "小样本诊断重复使用新模拟池，不能计成新增母事件或独立验证批；四批固定规模的条件bootstrap不代表全部模型不确定性。"
+  ],
+  "inputs_sha256": {
+    "simulation/results/mc_statistics_20261030/protocol.json": "22e6a4b5544170d6e8f2e74321e34fa87ad13d9df2260b48c3a6f4eb7b5c4817",
+    "simulation/results/mc_statistics_20261030/analysis.json": "e8577c3cc84e26542f782d1b890ba29333611c6fd35df62eaed744c5282827fc",
+    "simulation/results/mc_statistics_20261030/transport_execution.json": "9863af0cb9917fab96cb96b671290cc5032b1b3ad4e679e168de0f62c7f326ea",
+    "simulation/results/mc_statistics_20261030/replay_execution.json": "c82b823c4e363e65eb4ed0735e226454a2fa34eee30c6b0dcca48af7c1107e56"
+  },
+  "tables_sha256": {
+    "simulation/results/mc_statistics_20261030/comparison_table.csv": "b560545d874170e26944ed67299603a32e6f5667b7fa28689fff9d09ebbda066",
+    "simulation/results/mc_statistics_20261030/batch_table.csv": "3dabb9c6514afd982ca7c74af120924cb8b1e338f68979567eb7b0e13a40fd0d"
+  }
+}

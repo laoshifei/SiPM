@@ -1,0 +1,151 @@
+{
+  "scope": "Readout jobs on completed fresh parent files, overlapping remaining transport.",
+  "jobs": [
+    {
+      "key": "b02_run12",
+      "code_sha256": "2e729dad7c0a338f011f5031c4e27f366f44f3924c44a21ec4679bce6460c08b",
+      "steps": [
+        {
+          "label": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/rc_refinement_20261030/replay_readout_cached",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b02_run12.root",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/b02_run12_pending_jobs.json"
+          ],
+          "seconds": 51.162729024887085,
+          "log": "simulation/results/mc_statistics_20261030/logs/b02_run12_replay.log",
+          "exit": 0
+        },
+        {
+          "label": "extract_replay",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "/media/sf_works/SiPM/simulation/run_mc_statistics.py",
+            "extract-replay",
+            "--key",
+            "b02_run12"
+          ],
+          "seconds": 50.31886386871338,
+          "log": "simulation/results/mc_statistics_20261030/logs/b02_run12_extract_replay.log",
+          "exit": 0
+        }
+      ],
+      "new_independent_mothers": 0,
+      "replay_entries": 9150,
+      "distinct_selected_mothers": 366,
+      "extraction_sha256": "05e8f2ec11061812881e921990c82e87eb949e3c50033a9e8a6624c5b8b13235",
+      "plan_sha256": "665cd22a05bb20d727120c8d349935ef7fb2835efd7446a1c773aaf677c5b79a"
+    },
+    {
+      "key": "b02_run3",
+      "code_sha256": "2e729dad7c0a338f011f5031c4e27f366f44f3924c44a21ec4679bce6460c08b",
+      "steps": [
+        {
+          "label": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/rc_refinement_20261030/replay_readout_cached",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b02_run3.root",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/b02_run3_pending_jobs.json"
+          ],
+          "seconds": 165.2162265777588,
+          "log": "simulation/results/mc_statistics_20261030/logs/b02_run3_replay.log",
+          "exit": 0
+        },
+        {
+          "label": "extract_replay",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "/media/sf_works/SiPM/simulation/run_mc_statistics.py",
+            "extract-replay",
+            "--key",
+            "b02_run3"
+          ],
+          "seconds": 33.92170476913452,
+          "log": "simulation/results/mc_statistics_20261030/logs/b02_run3_extract_replay.log",
+          "exit": 0
+        }
+      ],
+      "new_independent_mothers": 0,
+      "replay_entries": 13800,
+      "distinct_selected_mothers": 552,
+      "extraction_sha256": "68cac29531cefbbf29f4fedf690d9280df5e65dcb193fc277ad55a931572b979",
+      "plan_sha256": "d61b24dbc6500812a7a46155783960783032f7cfc22cca9982bfed6fb0b10a4b"
+    },
+    {
+      "key": "b03_run12",
+      "code_sha256": "2e729dad7c0a338f011f5031c4e27f366f44f3924c44a21ec4679bce6460c08b",
+      "steps": [
+        {
+          "label": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/rc_refinement_20261030/replay_readout_cached",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b03_run12.root",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/b03_run12_pending_jobs.json"
+          ],
+          "seconds": 109.64864754676819,
+          "log": "simulation/results/mc_statistics_20261030/logs/b03_run12_replay.log",
+          "exit": 0
+        },
+        {
+          "label": "extract_replay",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "/media/sf_works/SiPM/simulation/run_mc_statistics.py",
+            "extract-replay",
+            "--key",
+            "b03_run12"
+          ],
+          "seconds": 73.96418142318726,
+          "log": "simulation/results/mc_statistics_20261030/logs/b03_run12_extract_replay.log",
+          "exit": 0
+        }
+      ],
+      "new_independent_mothers": 0,
+      "replay_entries": 9300,
+      "distinct_selected_mothers": 372,
+      "extraction_sha256": "439efee3267e81235777404c1fbfc12a106d27070cb9b1309e6b64392e3b2adc",
+      "plan_sha256": "66c15d83b10583cdd83719989864b3dd028c9c8c45d2a08cf4ef42021abf2ef7"
+    },
+    {
+      "key": "b03_run3",
+      "code_sha256": "2e729dad7c0a338f011f5031c4e27f366f44f3924c44a21ec4679bce6460c08b",
+      "steps": [
+        {
+          "label": "replay",
+          "command": [
+            "/media/sf_works/SiPM/simulation/build/rc_refinement_20261030/replay_readout_cached",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b03_run3.root",
+            "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/b03_run3_pending_jobs.json"
+          ],
+          "seconds": 304.7234916687012,
+          "log": "simulation/results/mc_statistics_20261030/logs/b03_run3_replay.log",
+          "exit": 0
+        },
+        {
+          "label": "extract_replay",
+          "command": [
+            "/home/xc/software/jupyter/.venv/bin/python",
+            "-u",
+            "/media/sf_works/SiPM/simulation/run_mc_statistics.py",
+            "extract-replay",
+            "--key",
+            "b03_run3"
+          ],
+          "seconds": 204.2529604434967,
+          "log": "simulation/results/mc_statistics_20261030/logs/b03_run3_extract_replay.log",
+          "exit": 0
+        }
+      ],
+      "new_independent_mothers": 0,
+      "replay_entries": 13175,
+      "distinct_selected_mothers": 527,
+      "extraction_sha256": "b6be7e7f74508663196a4da1f2081f26e8f04f0b5b5d4e653b42a34e99856662",
+      "plan_sha256": "a13511aab4d6e418ca0124bc1138c53c5a48008f254eeda3a535d9b443901030"
+    }
+  ],
+  "new_independent_mothers": 0,
+  "protocol_sha256": "22e6a4b5544170d6e8f2e74321e34fa87ad13d9df2260b48c3a6f4eb7b5c4817"
+}

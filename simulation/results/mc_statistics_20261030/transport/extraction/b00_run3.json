@@ -1,0 +1,30 @@
+{
+  "key": "b00_run3",
+  "n_parent": 16000,
+  "n_selected": 1399,
+  "n_common": 573,
+  "root_sha256": "7c2c37810f887082cc6c8bfd9e24b488111beda2ddc9ae474a8b95dfbba6c092",
+  "replay": null,
+  "source": "Co60",
+  "common_avalanches_p10_p50_p90": [
+    2041.4,
+    2810.0,
+    3654.6000000000004
+  ],
+  "common_truth_counts": [
+    0,
+    572,
+    1,
+    0,
+    0
+  ],
+  "common_Q_bins": [
+    90,
+    104,
+    97,
+    106,
+    80,
+    96
+  ],
+  "code_sha256": "b904cceab0aa8594ace28d1ad26dbcbcde1e69a53f31a21825b5754d5a35dd03"
+}

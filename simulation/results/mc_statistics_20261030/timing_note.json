@@ -1,0 +1,8 @@
+{
+  "scope": "Operational timing discrepancy; no physics, parameters, validator or sample-size changes.",
+  "standalone_first500_ancestry_check_perf_counter_seconds": {
+    "run3": 3.6819506589963567,
+    "run12": 2.1850641689961776
+  },
+  "interpretation": "Recorded time.time wall durations are inconsistent with the short monotonic-clock timing and progress rate. Possible runtime suspension or clock adjustment; exact cause unverified. Do not use execution wall durations as performance evidence. validate.py remains unchanged."
+}

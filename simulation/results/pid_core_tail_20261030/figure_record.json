@@ -1,0 +1,15 @@
+{
+  "scope": "Plot fixed-cohort core/tail evidence, retaining distribution and uncertainty limits.",
+  "code_sha256": "cce8fce23ea9f9cb2e3df86a85d171f504287a9ec361d1b769f0769bff89485b",
+  "figures": [
+    "core_tail_quantile_widths",
+    "core_tail_mass_and_variance",
+    "core_tail_distributions",
+    "core_tail_waveform_covariance",
+    "core_tail_noise_associations"
+  ],
+  "inputs_sha256": {
+    "simulation/results/pid_core_tail_20261030/protocol.json": "6e359a5a28d8959b89ed6bf2e68eabd80f1244a0c4a68f562b01047bbb87e304",
+    "simulation/results/pid_core_tail_20261030/diagnostics.json": "6805b169b48a9f1c8455347d8c33e432f6641cfd7d79cfc33b819a10919ae4c3"
+  }
+}

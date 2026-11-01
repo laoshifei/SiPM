@@ -1,0 +1,13 @@
+run3_first60 128 evaluated
+run3_first60 64 evaluated
+run3_middle20 64 evaluated
+run3_middle20 128 evaluated
+run3_last20 64 evaluated
+run3_last20 128 evaluated
+run12_first60 64 evaluated
+run12_first60 128 evaluated
+run12_middle20 64 evaluated
+run12_middle20 128 evaluated
+run12_last20 64 evaluated
+run12_last20 128 evaluated
+All independent-batch and pooled evaluations complete.

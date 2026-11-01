@@ -1,0 +1,13 @@
+{
+  "stage": "source inventory hashing after numerical and notebook checks",
+  "exception": "FileNotFoundError: simulation/refine_waveforms.py; actual path is analysis/paper_baseline/refine_waveforms.py",
+  "old_verifier_snapshot": "simulation/results/mc_statistics_20261030/diagnostics/pre_inventory_fix_verify_mc_statistics.py",
+  "old_verifier_sha256": "d75f6e89026361b719f30399f9bc8df237104c26a664a9ec63557dd29af30be9",
+  "analysis_sha256": "e8577c3cc84e26542f782d1b890ba29333611c6fd35df62eaed744c5282827fc",
+  "protocol_sha256": "22e6a4b5544170d6e8f2e74321e34fa87ad13d9df2260b48c3a6f4eb7b5c4817",
+  "numerical_analysis_changed": false,
+  "simulation_configuration_changed": false,
+  "new_mothers_due_to_retry": 0,
+  "new_verifier_sha256": "27e2fcd7f1d1b3c82bc445250e3a20d8ed3a1e217dcd7c01c468dd0aea44f0ca",
+  "fix": "Correct refine_waveforms.py directory, include extraction and loaded local dependencies, and preflight every source path before numerical verification."
+}
