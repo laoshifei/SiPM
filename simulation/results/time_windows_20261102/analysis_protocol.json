@@ -1,0 +1,12 @@
+{
+  "code_sha256": "5e9f6f5c716f0b711f4b5b13ceb6d0fa06d80ccf161c3ce98032b1b109b4c504",
+  "arrays_sha256": {
+    "simulation/results/time_windows_20261102/arrays/Am241_data.npz": "a824730fae402a5721f69da94fa048e12cea5efe9c87e7f55a7cd984eed4bc72",
+    "simulation/results/time_windows_20261102/arrays/Am241_split_r0.npz": "90a681177f67d991e58f9101fcb91dea793c6aa15baa1c6b72b33c5716b68d26",
+    "simulation/results/time_windows_20261102/arrays/Am241_split_r1.npz": "805f71b2ef819be7d1a80d18b23c61ca407de9e12858e8d76af9059d154b9be2",
+    "simulation/results/time_windows_20261102/arrays/Co60_data.npz": "0ca9e319c00158013a8519bdd155fcd14c0a1303c2d70b13f994f1d6ed177b8d",
+    "simulation/results/time_windows_20261102/arrays/Co60_split_r0.npz": "79131eaa55d8abfc24e4b8ccbd02a600c98fec6743bc4e7c86036378e0605f18",
+    "simulation/results/time_windows_20261102/arrays/Co60_split_r1.npz": "7de37113cb3721163dccafe19483490530dbd1357395ed62035f0f35f6b32536"
+  },
+  "protocol_sha256": "f909a2a65a32c9417248cfcf108c87dd758108bc40cd7a097bb93ebb2e0ce1b8"
+}

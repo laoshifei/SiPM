@@ -1,0 +1,17 @@
+{
+  "data": {
+    "array_sha256": "a824730fae402a5721f69da94fa048e12cea5efe9c87e7f55a7cd984eed4bc72",
+    "active": 316,
+    "nonpositive_local_mu": 0
+  },
+  "split_r0": {
+    "array_sha256": "90a681177f67d991e58f9101fcb91dea793c6aa15baa1c6b72b33c5716b68d26",
+    "active": 1399,
+    "nonpositive_local_mu": 0
+  },
+  "split_r1": {
+    "array_sha256": "805f71b2ef819be7d1a80d18b23c61ca407de9e12858e8d76af9059d154b9be2",
+    "active": 1411,
+    "nonpositive_local_mu": 0
+  }
+}

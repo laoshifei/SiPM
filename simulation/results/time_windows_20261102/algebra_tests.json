@@ -1,0 +1,7 @@
+{
+  "direct_filter_waveforms": 24,
+  "scales": 3,
+  "explicit_replica_draws": 3,
+  "exact_sum_and_covariance_checks": true,
+  "code_sha256": "38bb540c623c23b6d96ba728fd1d1aeddfae94207da658980125fdb61f98e2a8"
+}

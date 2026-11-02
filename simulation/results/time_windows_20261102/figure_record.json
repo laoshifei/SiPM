@@ -1,0 +1,9 @@
+{
+  "figures_sha256": {
+    "simulation/results/time_windows_20261102/figures/time_window_local_F202.png": "24f303c3d2db10efd53b10051b39455e974cae583938332fff7d44d9713d7303",
+    "simulation/results/time_windows_20261102/figures/time_window_excess_terms.png": "914f20cea971633e0b08fbb1e260d5e5388f5c8f671bc70a5883efa3581a36aa",
+    "simulation/results/time_windows_20261102/figures/time_window_cross_covariance.png": "0672c63d1ddd29e10dcc947c54a0f02dd75100112943db22caeccdb87c09dad6",
+    "simulation/results/time_windows_20261102/figures/time_window_denominator.png": "d26204463f99e4c9b2762fe30c42a6848bf104a7a23b06a4651fd38d4c132b11",
+    "simulation/results/time_windows_20261102/figures/time_window_pulse_means.png": "b26f89770464e975f2a660d2f2092c29113498d61b891ac3f544077361e5b2b5"
+  }
+}

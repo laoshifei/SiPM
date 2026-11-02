@@ -2,7 +2,22 @@
 
 已实现并运行 **核衰变 → 能量沉积 → 闪烁光输运 → SiPM 雪崩 → 被动读出响应 → ADC → 实测对照**。只支持 `Am241` 和 `Co60`。本目录参考 GAGG_pileup 的 SiPM 数值内核，新建 CsI 几何、源、材料参数和本项目波形对照；未修改参考项目。
 
-最新的[Am241低频噪声检查笔记](../jupyter/codex_0001_csi_low_frequency_noise.ipynb)在英文提交 **`72f47d5`**（`Test full-pool CsI selection and spectral variance splitting`）push并核对远端后开展。固定前轮成分方差CV和平均响应，对原FIR测试0.1/0.5/2 MHz转折频率、0.5/0.75/0.9目标DC幅度比的9组平滑衰减，另保留identity。实际有限FIR的功率和频谱单独记录，没有通过规范化补回已削弱的低频功率。
+最新的[时间分段波动诊断笔记](../jupyter/codex_0001_csi_time_resolved_fluctuations.ipynb)在英文提交 **`6f49b78`**（`Evaluate low-frequency noise tradeoffs in CsI SiPM readout`）push并核对远端后开展。直接检查现有实测BIN与完整池split原生ROOT，把t10后500–2500 ns分成四个相邻500 ns窗口。四段方差、段间均值、前触发和随机分母组成七项，逐事件精确还原原F；沿用原Q箱、半箱质量和全部512组配对计数。新增读出、独立母事件和实验事件均为0。
+
+**Am241的最大带符号方差差额落在500–1000 ns，分母耦合也有正贡献；本轮完成定位，尚未修正模型。** 下表SD比均为MC/实测，贡献以实测整体F202方差为单位。
+
+|源、读出|原F202 SD比|固定分母诊断SD比|500–1000 ns带符号贡献及条件95%范围|分母带符号贡献|
+|---|---|---|---|---|
+|Co60，r0|1.045|1.035|0.059 [-0.022, 0.190]|0.011|
+|Co60，r1|1.041|1.034|0.067 [-0.021, 0.187]|0.007|
+|Am241，r0|1.162|1.078|0.210 [0.118, 0.342]|0.081|
+|Am241，r1|1.176|1.102|0.262 [0.159, 0.402]|0.066|
+
+固定分母只作统计诊断，未替换原F或PID。七项的`Cov(term,F)`是含交叉协方差的带符号贡献，不能解释成独立物理噪声功率。Co整体宽度接近，但2000–2500 ns局部F202均值比仅约0.84–0.85；下一轮应联合约束各时段均值、宽度和段间协方差，再检验信号强度依赖的残差包络，同时保留平均ADC与PID约束。条件区间固定已有拟合与噪声实现，不含重拟合或系统误差；现有数据不构成新盲验证。
+
+见[局部F202](results/time_windows_20261102/figures/time_window_local_F202.png)、[七项贡献](results/time_windows_20261102/figures/time_window_excess_terms.png)、[段间协方差](results/time_windows_20261102/figures/time_window_cross_covariance.png)、[固定分母](results/time_windows_20261102/figures/time_window_denominator.png)、[冻结方案](results/time_windows_20261102/protocol.json)和[结论](results/time_windows_20261102/decision.json)。流程为 `prepare_time_windows.py` → `extract_time_windows.py` → `analyze_time_windows.py` → `report_time_windows.py` → 笔记生成器 → `verify_time_windows.py`及`--archive`。独立直接卷积与中心化加权矩用于核验原ADC分解和统计结果；默认配置与正式PID保持冻结。
+
+上一轮的[Am241低频噪声检查笔记](../jupyter/codex_0001_csi_low_frequency_noise.ipynb)在英文提交 **`72f47d5`**（`Test full-pool CsI selection and spectral variance splitting`）push并核对远端后开展。固定前轮成分方差CV和平均响应，对原FIR测试0.1/0.5/2 MHz转折频率、0.5/0.75/0.9目标DC幅度比的9组平滑衰减，另保留identity。实际有限FIR的功率和频谱单独记录，没有通过规范化补回已削弱的低频功率。
 
 **两折都选择identity，9组衰减均未改善预定联合校准目标。** 原1486个母事件、两个固定读出流共29720条C++原生读出，identity的2972条ADC逐样点复现前轮结果。联合目标同时包含三尺度F完整协方差、PID完整协方差、F均值、PID中心50%/95%宽度及平均ADC，不仅比较F202。
 

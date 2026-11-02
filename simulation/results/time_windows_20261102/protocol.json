@@ -1,0 +1,362 @@
+{
+  "checkpoint_commit": "6f49b781b2f636ee8b6bde81792677b6b2a2819a",
+  "q_edges": [
+    201824.1125,
+    237975.62708333333,
+    274127.14166666666,
+    310278.65625,
+    346430.17083333334,
+    382581.6854166667,
+    418733.2
+  ],
+  "support_bins": {
+    "Co60": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "Am241": [
+      0,
+      1,
+      2
+    ]
+  },
+  "conditional_cuts": {
+    "Co60": {
+      "0": {
+        "q_quartiles": [
+          213530.25,
+          224292.25,
+          229674.75
+        ],
+        "rms_median": 3.2988738016745955,
+        "q2_target": [
+          0.4935064935064935,
+          0.5064935064935064
+        ],
+        "q4_target": [
+          0.24675324675324675,
+          0.24675324675324675,
+          0.24675324675324675,
+          0.2597402597402597
+        ],
+        "q2r2_target": [
+          0.2987012987012987,
+          0.19480519480519481,
+          0.19480519480519481,
+          0.3116883116883117
+        ],
+        "training_n": 77
+      },
+      "1": {
+        "q_quartiles": [
+          249471.75,
+          259007.75,
+          266566.0
+        ],
+        "rms_median": 3.4460121880225554,
+        "q2_target": [
+          0.49635036496350365,
+          0.5036496350364964
+        ],
+        "q4_target": [
+          0.24817518248175183,
+          0.24817518248175183,
+          0.24817518248175183,
+          0.25547445255474455
+        ],
+        "q2r2_target": [
+          0.24087591240875914,
+          0.25547445255474455,
+          0.25547445255474455,
+          0.24817518248175183
+        ],
+        "training_n": 137
+      },
+      "2": {
+        "q_quartiles": [
+          286112.1875,
+          295286.625,
+          303201.3125
+        ],
+        "rms_median": 3.33254145321797,
+        "q2_target": [
+          0.5,
+          0.5
+        ],
+        "q4_target": [
+          0.25177304964539005,
+          0.24822695035460993,
+          0.24822695035460993,
+          0.25177304964539005
+        ],
+        "q2r2_target": [
+          0.25886524822695034,
+          0.24113475177304963,
+          0.24113475177304963,
+          0.25886524822695034
+        ],
+        "training_n": 282
+      },
+      "3": {
+        "q_quartiles": [
+          321641.0,
+          331390.75,
+          339488.0
+        ],
+        "rms_median": 3.3481279750780137,
+        "q2_target": [
+          0.499054820415879,
+          0.500945179584121
+        ],
+        "q4_target": [
+          0.2495274102079395,
+          0.2495274102079395,
+          0.2495274102079395,
+          0.2514177693761815
+        ],
+        "q2r2_target": [
+          0.2589792060491493,
+          0.24007561436672967,
+          0.2381852551984877,
+          0.2627599243856333
+        ],
+        "training_n": 529
+      },
+      "4": {
+        "q_quartiles": [
+          356064.9375,
+          365870.875,
+          374653.1875
+        ],
+        "rms_median": 3.371290639761466,
+        "q2_target": [
+          0.5,
+          0.5
+        ],
+        "q4_target": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "q2r2_target": [
+          0.25523560209424084,
+          0.24476439790575916,
+          0.24476439790575916,
+          0.25523560209424084
+        ],
+        "training_n": 764
+      },
+      "5": {
+        "q_quartiles": [
+          390342.5,
+          396853.625,
+          405467.5
+        ],
+        "rms_median": 3.3285100984842035,
+        "q2_target": [
+          0.5,
+          0.5
+        ],
+        "q4_target": [
+          0.250788643533123,
+          0.24921135646687698,
+          0.24921135646687698,
+          0.250788643533123
+        ],
+        "q2r2_target": [
+          0.24605678233438485,
+          0.2539432176656151,
+          0.2539432176656151,
+          0.24605678233438485
+        ],
+        "training_n": 634
+      }
+    },
+    "Am241": {
+      "0": {
+        "q_quartiles": [
+          208701.5,
+          218005.5,
+          228342.5
+        ],
+        "rms_median": 3.1914421088866707,
+        "q2_target": [
+          0.4991023339317774,
+          0.5008976660682226
+        ],
+        "q4_target": [
+          0.2495511669658887,
+          0.2495511669658887,
+          0.2495511669658887,
+          0.2513464991023339
+        ],
+        "q2r2_target": [
+          0.24416517055655296,
+          0.25493716337522443,
+          0.25493716337522443,
+          0.2459605026929982
+        ],
+        "training_n": 557
+      },
+      "1": {
+        "q_quartiles": [
+          245954.5,
+          252571.5,
+          261583.5
+        ],
+        "rms_median": 3.1396142652203314,
+        "q2_target": [
+          0.4987146529562982,
+          0.5012853470437018
+        ],
+        "q4_target": [
+          0.2493573264781491,
+          0.2493573264781491,
+          0.2493573264781491,
+          0.2519280205655527
+        ],
+        "q2r2_target": [
+          0.2467866323907455,
+          0.2519280205655527,
+          0.2519280205655527,
+          0.2493573264781491
+        ],
+        "training_n": 389
+      },
+      "2": {
+        "q_quartiles": [
+          281622.8125,
+          290740.75,
+          299654.5
+        ],
+        "rms_median": 3.2348420752374967,
+        "q2_target": [
+          0.5,
+          0.5
+        ],
+        "q4_target": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "q2r2_target": [
+          0.23706896551724138,
+          0.2629310344827586,
+          0.2629310344827586,
+          0.23706896551724138
+        ],
+        "training_n": 232
+      }
+    }
+  },
+  "scales_ns": [
+    50,
+    102,
+    202
+  ],
+  "terms": "Divide four within-window variance terms, between-window-mean variance, and negative pretrigger variance by inherited opposite-fold per-Q mu0. Add normalization term (Vpost-Vpre)*(1/mu-1/mu0); seven signed terms sum exactly to original F.",
+  "metrics": [
+    "global_SD_ratio",
+    "fixed_denominator_SD_ratio",
+    "global_variance_excess",
+    "local_mean_ratio_w0",
+    "local_mean_ratio_w1",
+    "local_mean_ratio_w2",
+    "local_mean_ratio_w3",
+    "local_SD_ratio_w0",
+    "local_SD_ratio_w1",
+    "local_SD_ratio_w2",
+    "local_SD_ratio_w3",
+    "excess_window_500_1000",
+    "excess_window_1000_1500",
+    "excess_window_1500_2000",
+    "excess_window_2000_2500",
+    "excess_between_window_means",
+    "excess_negative_pretrigger",
+    "excess_normalization",
+    "quarter_diagonal_excess",
+    "quarter_cross_covariance_excess",
+    "other_covariance_excess"
+  ],
+  "inputs_sha256": {
+    "data/DT5730_DPP_PHA/DAQ/run_12/UNFILTERED/Data_run_12.BIN": "aa778158a28560a2929b76038468e33875cd3a043ad80262661cd177f4e0044f",
+    "data/DT5730_DPP_PHA/DAQ/run_3/UNFILTERED/Data_run_3.BIN": "2afbb146fb8b79a7b133672b60cc6fffffa3b0e42b51f4ebb4f8e3b719676581",
+    "simulation/results/lowfreq_taper_20261102/decision.json": "d72c05f8bce3619459f0bd634a16138fc806246d43f32f2ba51986b22467769c",
+    "simulation/results/lowfreq_taper_20261102/record.json": "7f8dc8513a9551baecf08bc381ac185e3cc3ace688758d2e73c57e2f7223c647",
+    "simulation/results/noise_replay_20261102/point_arrays/run12_last20_B128_data.npz": "abe0384e913268b225097de42b21e421636ca6820d379a8c29150db9f7bacf68",
+    "simulation/results/noise_replay_20261102/point_arrays/run3_last20_B128_data.npz": "c53b091ccf0e9b52811a5e4bbe8fa3e70cdc422c19e49a3746afa050d008066c",
+    "simulation/results/qdc_fluctuation_20261101/references/run12_last20_B128.json": "f05a2303ef75a57120d0f271f895bd1a1a9cc743e1cfb561931e457b375ff6fb",
+    "simulation/results/qdc_fluctuation_20261101/references/run3_last20_B128.json": "556f8208133fc21bd3d3e6709ab4b1eb5eec32349e2abc2a88ce289c9faa2782",
+    "simulation/results/spectral_split_20261102/analysis.json": "3f820a93ad0ed3c4f858cd1e618ac3aeb4a95636f3e414840425f632cb50103e",
+    "simulation/results/spectral_split_20261102/evaluation/Am241_bootstrap.npz": "8ca1821c1228ddad992c48cf79843055d0f1e3918b8ae53d786d24ffb953bd31",
+    "simulation/results/spectral_split_20261102/evaluation/Am241_counts.npz": "3013cccc6d12842f443eee2198d318f606b512084ed9df72df5616152ce67136",
+    "simulation/results/spectral_split_20261102/evaluation/Am241_split_r0.npz": "149eed1f31ed44e82539b4d5542aaeb001e370b65964f30ae8d34ce29c8fde8f",
+    "simulation/results/spectral_split_20261102/evaluation/Am241_split_r1.npz": "61095409acba4b69354e0a9019cd9f1a858ff572ffb42152a03cf285d2b980dd",
+    "simulation/results/spectral_split_20261102/evaluation/Co60_bootstrap.npz": "b3c9417cf1da96cc9b61b5aa0ccf446380dc989a4a875bc0692d31c38c0c5c79",
+    "simulation/results/spectral_split_20261102/evaluation/Co60_counts.npz": "9e7ffc4902af14c0c057e7f92c6ccdd3945339da2e2a58e2362cc181de03c601",
+    "simulation/results/spectral_split_20261102/evaluation/Co60_split_r0.npz": "e16025d1828f41e7c7a814e178fbfd55916b4744b0222b0aac30f538cb87b952",
+    "simulation/results/spectral_split_20261102/evaluation/Co60_split_r1.npz": "6cf2b5aa757cb91c5ee8c5902bc37e50f19d1f370ba7990e8295e002fa48b01f",
+    "simulation/results/spectral_split_20261102/native/b00_run12.root": "145d3720522d1f55d58a746563fce49508bef100f531ac1495761a4b20de3117",
+    "simulation/results/spectral_split_20261102/native/b00_run3.root": "d367e454cf889b21473f3bc775c86602a7dee5e49b9583f94e62f50cd2b6f5bd",
+    "simulation/results/spectral_split_20261102/native/b01_run12.root": "fac02f96e8a42cad19e253ec1955287278265e3db66b42f9413e4f3bcd3bf395",
+    "simulation/results/spectral_split_20261102/native/b01_run3.root": "6cddfd828aa6a8f088fa64e531286831ef0b40975cb55f38bd46fe7e05b93ff9",
+    "simulation/results/spectral_split_20261102/native/b02_run12.root": "9f3b72a99cb42ff6faa1ad93f7e322ea9ad08ea21d8c24a6f78036670c04047d",
+    "simulation/results/spectral_split_20261102/native/b02_run3.root": "f3304eddb2c69364b0510cb2e892499612b291e44b8e88c2875c131872cca5f9",
+    "simulation/results/spectral_split_20261102/native/b03_run12.root": "ba7b3cf4c0a4af5bf200cd75547f9e38f2358fc4ab2b85f9c61bb6af6d359046",
+    "simulation/results/spectral_split_20261102/native/b03_run3.root": "42bbe6f297e2a0eb05ee14ff9f79cf1bd5cefaa5aefd72d699ae705970c639d3",
+    "simulation/results/spectral_split_20261102/protocol.json": "ec2eaaee60716cb10cb02cdc1e341c645c16067043eccab913fa9acd3ce30c16",
+    "simulation/results/spectral_split_20261102/record.json": "fac292dae6d3d119f67b977b80530a6d34f6a46b1e1c2fba14728f2ca8ca122f",
+    "simulation/results/spectral_split_20261102/verification.json": "3da2690d8c8e82d4194383e5cf2bfc017974cd638d79654804d0b6e790b674de"
+  },
+  "code_sha256": {
+    "simulation/time_window_common.py": "e47923bd4cb6682609e00df2b940c20c0a88fcd97e80e1cd91377a9c1923d7df",
+    "simulation/prepare_time_windows.py": "725ce07ede30259d7558fa830db4317570b769239a9686fb7e466866a3e20aec",
+    "simulation/extract_time_windows.py": "33b7286450d484094f5abcf75448e57b249c8df9fb2853a50f85f288f54c863f",
+    "simulation/analyze_time_windows.py": "5e9f6f5c716f0b711f4b5b13ceb6d0fa06d80ccf161c3ce98032b1b109b4c504",
+    "simulation/test_time_windows.py": "38bb540c623c23b6d96ba728fd1d1aeddfae94207da658980125fdb61f98e2a8"
+  },
+  "inherited_code_sha256": {
+    "simulation/state_response_common.py": "c8109f7b69b4006740eeb0edc3d8d6a9092dde58d42d69503df56f05730cb56f",
+    "simulation/charge_scale_common.py": "348be4e06ef6eb78180ae767d2a42ee266c80d754e7b7397dd91ded6937ee6f6",
+    "simulation/full_selection_common.py": "d6e407b13c9b1fa1a5c3dd45a435b1bc47dfe937dada383cabd1dd6d5401dd45",
+    "simulation/reference.py": "fe7ebd20af44ffc2ade2b758dd8fa6bde1d269cc8cb02e7a37bd591d4fe0d1bb",
+    "analysis/paper_baseline/prepare.py": "9ebe888c46f8964ecea7141f1c3da5095a0d5546bacb87d77e9874a156fab9c9"
+  },
+  "scope": "Time-resolved diagnosis of the previous split full-pool ADC and existing late measured segment; no parameter fitting, waveform modification or new readout.",
+  "windows_ns": [
+    [
+      500,
+      1000
+    ],
+    [
+      1000,
+      1500
+    ],
+    [
+      1500,
+      2000
+    ],
+    [
+      2000,
+      2500
+    ]
+  ],
+  "exact_ANOVA": "Use unchanged high-pass widths25/51/101 samples, pre200 and post1000 samples at ceil(t10-300)/ceil(t10+250). Split post into four contiguous250-sample windows. Vpost=sum(249*Vwindow)/999+250*sum((mean_window-mean_post)^2)/999, using ddof1 throughout.",
+  "variance_attribution": "Within each current-Q bin, preserve frozen half-bin masses. Cov(term,F) row sums add to Var(F). Compare MC-data contributions divided by measured F variance. Contributions may be negative; they are not independent physical noise powers.",
+  "cross_window": "Separately split fixed-denominator quarter terms into sum of four diagonal variances, twice all off-diagonal quarter covariances, and all remaining covariance terms. These three groups exactly sum to total variance; no causal attribution.",
+  "local_diagnostic": "Local F=(quarter residual variance-pre variance)/quarter pulse mean. Retain all events. Nonpositive local means produce NaN and are reported; do not silently drop or clip them. Local diagnostics are not official PID.",
+  "selection": "Reuse all previously supported mothers under complete-pool split r0/r1 current Q/QC. Experimental IDs, source Q support, half targets and folds unchanged. No truth selection. All three smoothing scales and both sources retained.",
+  "uncertainty": "Exactly inherit512 experimental-block and complete-mother multiplicities from spectral split. No new RNG, resampling of windows or refitting. Point and every global F SD draw must reproduce the previous complete-pool result. Fold results are point sensitivity checks, not independent validation.",
+  "limits": "Variance terms also contain deterministic pulse curvature, source mixtures, residual correlation, normalization and finite reference noise. No unique SiPM/electronics mechanism or experimental particle truth inferred. Existing data are explored; no blind or equivalence claim.",
+  "new_independent_mothers": 0,
+  "new_native_readouts": 0,
+  "new_experimental_events": 0,
+  "default_changed": false,
+  "official_PID_changed": false
+}

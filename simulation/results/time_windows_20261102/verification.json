@@ -1,0 +1,44 @@
+{
+  "inputs_verified": 28,
+  "events_exact_F_reconstructed": 8290,
+  "independent_raw_ADC_events": 452,
+  "explicit_weighted_moment_cells": 108,
+  "bootstrap_valid_draws": {
+    "Co60": {
+      "split_r0": {
+        "50": 512,
+        "102": 512,
+        "202": 512
+      },
+      "split_r1": {
+        "50": 512,
+        "102": 512,
+        "202": 512
+      }
+    },
+    "Am241": {
+      "split_r0": {
+        "50": 512,
+        "102": 512,
+        "202": 512
+      },
+      "split_r1": {
+        "50": 512,
+        "102": 512,
+        "202": 512
+      }
+    }
+  },
+  "table_rows": {
+    "attribution_table.csv": 12,
+    "local_window_table.csv": 48
+  },
+  "executed_code_cells": 5,
+  "embedded_PNG": 5,
+  "notebook_sha256": "779a698cb5291ebd151627c1e9608d5c21137da8dff5d272b1b33e2b89108de2",
+  "code_sha256": "e54cae5115f5adc0dc6517e9a8ef64c27fcb9762ebc3df8b95f3b65b098f5c50",
+  "new_native_readouts": 0,
+  "new_independent_mothers": 0,
+  "default_changed": false,
+  "official_PID_changed": false
+}
