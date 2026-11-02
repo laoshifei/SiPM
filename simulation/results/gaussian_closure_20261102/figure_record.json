@@ -1,0 +1,15 @@
+{
+  "figures": [
+    "gaussian_excess_decomposition",
+    "gaussian_normalization_controls",
+    "gaussian_charge_controls",
+    "gaussian_temporal_covariance",
+    "gaussian_segment_controls"
+  ],
+  "inputs_sha256": {
+    "simulation/results/gaussian_closure_20261102/protocol.json": "88b8de5cfd6c232015a1cc3d7448843ef852499b1fd5fa6aade5377c66a5348b",
+    "simulation/results/gaussian_closure_20261102/analysis.json": "4e98033c159dbd43c46c27e748626364ff5f23f04c34345263001a21b3bc2cf4",
+    "simulation/results/gaussian_closure_20261102/algebra_tests.json": "74211c91f99d49a196c222598edebd5765561000dc8f0626cd635ab923dfb2b5"
+  },
+  "code_sha256": "0a7e197c42bcda7837cf83b3a5dc915336ccb5dcd411059dd99b847a96f73561"
+}

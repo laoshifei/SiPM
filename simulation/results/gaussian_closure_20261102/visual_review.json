@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-02",
+  "review": "Visually inspected all five PNG figures; shortened temporal-covariance labels and expanded control axes so both unestimable fold annotations are visible. Numerical analysis and tables unchanged by layout edits.",
+  "figures_sha256": {
+    "simulation/results/gaussian_closure_20261102/figures/gaussian_charge_controls.png": "0d2bbd31d7923e07fdbf8f4752b967aadc1d535c164aa3ef54a824012915ce1e",
+    "simulation/results/gaussian_closure_20261102/figures/gaussian_excess_decomposition.png": "3534ab064fd80772341ff7e31e762ed29f53f3604be3855c0fa69d65842d61e0",
+    "simulation/results/gaussian_closure_20261102/figures/gaussian_normalization_controls.png": "3c40bb9ede1f7bc9cc0a26eb8cecc5d73d93a8f52bc78e4353248ac016061239",
+    "simulation/results/gaussian_closure_20261102/figures/gaussian_segment_controls.png": "066cd146fb5e52144cf7f9420a2d383ee3eeb4bc2af1e0add984ccf6e8b2df4a",
+    "simulation/results/gaussian_closure_20261102/figures/gaussian_temporal_covariance.png": "cb07c37ef9bd5c61786c72e399936f44da51584a4f7f43e946a842193b78caf8"
+  }
+}
