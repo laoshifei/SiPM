@@ -1,0 +1,9 @@
+{
+  "figures_sha256": {
+    "simulation/results/lowfreq_taper_20261102/figures/lowfreq_grid.png": "3ad41145543044dfcfa122b7d17c02cab73ea8f783ab547d622dd7247ac71e37",
+    "simulation/results/lowfreq_taper_20261102/figures/lowfreq_spectra.png": "0321838b79e03eb3447a3a07888aaaa0b7f44a6297afd89dd0915d5415b59735",
+    "simulation/results/lowfreq_taper_20261102/figures/lowfreq_scales.png": "d8ed96c156e8037fb9c92fb62539ebfda0afcf3d2d0ee5628daec03fbeb95dbd",
+    "simulation/results/lowfreq_taper_20261102/figures/lowfreq_pid.png": "4fbff39e6af862ef74199216bd7b643330600bd854846358e5a4c06986ddfcd6",
+    "simulation/results/lowfreq_taper_20261102/figures/lowfreq_mean_adc.png": "d8747a93a2ed127dcc8f74bc899579d85dec82206bd262a04e7d75ab42df121f"
+  }
+}

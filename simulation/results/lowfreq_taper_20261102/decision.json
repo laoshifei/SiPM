@@ -1,0 +1,43 @@
+{
+  "conclusion_zh": "两折均选择identity：本轮九组低频衰减参数都未改善预定联合目标；保留上一轮配置，Am241长尺度差异仍存在。",
+  "findings_zh": [
+    "评价折0选择identity，对折校准联合目标由0.877变为0.877。",
+    "评价折0的2MHz、目标DC幅度比0.5对照：校准F202 SD比为1.045，但QDC/平均时间/PCA SD比降至0.708/0.664/0.687。这些是原队列校准诊断，不是该对照的新完整池验证。",
+    "评价折1选择identity，对折校准联合目标由2.452变为2.452。",
+    "评价折1的2MHz、目标DC幅度比0.5对照：校准F202 SD比为1.124，但QDC/平均时间/PCA SD比降至0.752/0.653/0.735。这些是原队列校准诊断，不是该对照的新完整池验证。",
+    "r0沿用已核验完整池：F50/F102/F202 SD比0.961/1.027/1.162→0.961/1.027/1.162，F202条件95%范围[1.087,1.268]，平均ADC相对L2=0.0165。",
+    "r0联合门槛：未通过；F202_SD_ratio, F_covariance_improved。",
+    "r1沿用已核验完整池：F50/F102/F202 SD比0.965/1.069/1.176→0.965/1.069/1.176，F202条件95%范围[1.103,1.285]，平均ADC相对L2=0.0142。",
+    "r1联合门槛：未通过；F202_SD_ratio, F_covariance_improved。"
+  ],
+  "next_work_zh": "依据完整网格的PID与三尺度权衡，检验有限时间相关结构及随机分母耦合；保留本轮全部失败项，不继续扩大同一低频衰减网格来追逐单个指标。",
+  "joint_guard_passed": false,
+  "selected": [
+    "identity",
+    "identity"
+  ],
+  "limitations_zh": [
+    "全部实验段及原MC母事件均已探索；对折隔离新增校准层，不是盲验证。",
+    "参数网格比较两条已实现读出，拟合后仍用相同原母事件池复核；这不是新的噪声或输运验证。",
+    "低频传递函数只是经验读出敏感性，有限FIR截断会改变实际频率响应；报告实际系数频谱，不能当成已测量的电路。",
+    "条件512组区间固定拟合、参考、质量阈值及已实现噪声，不包含网格选择、拟合误差、系统误差或噪声平均。",
+    "校准原队列不能补回外部母事件，最终结果必须以全部192000个母事件的当前选择为准。",
+    "Am含alpha及gamma/电子；这里没有实验粒子真值，也未更新ROC或硬件触发效率。"
+  ],
+  "grid_native_readouts": 29720,
+  "grid_identity_readouts": 2972,
+  "full_parent_events": 192000,
+  "referenced_full_logical_readouts": 768000,
+  "new_full_pool_readouts": 0,
+  "full_pool_reused": true,
+  "inherited_legacy_control_readouts_bit_identical": 384000,
+  "new_independent_mothers": 0,
+  "default_changed": false,
+  "official_PID_changed": false,
+  "inputs_sha256": {
+    "simulation/results/lowfreq_taper_20261102/protocol.json": "63be9ede41c2464d0c163cf86415731627263ff7cdcd30dc2f93e000b97270e0",
+    "simulation/results/lowfreq_taper_20261102/fit.json": "5299b344deccdcbca8e167cbcf8e5f47383c8a83b998f9fe22960a36e130c07d",
+    "simulation/results/lowfreq_taper_20261102/analysis.json": "56ca2eaa86186dd7957065ec42ccbb0661e3f94eeb5d875eceffdc4810dacbe5"
+  },
+  "code_sha256": "22dbb80eeb961a571ef5582ef8f673c175ea20d96bcaf94729f56d2b8b7c383c"
+}

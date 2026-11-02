@@ -1,0 +1,29 @@
+{
+  "inputs_verified": 43,
+  "preserved_pre_resume_files": 129,
+  "incomplete_arrays_preserved_and_reextracted": 1,
+  "grid_jobs": 160,
+  "grid_readouts": 29720,
+  "grid_identity_ADC_readouts": 2972,
+  "joint_calibrations_recomputed": 20,
+  "full_parent_events": 192000,
+  "legacy_control_ADC_readouts_identical": 384000,
+  "candidate_ADC_QC_checks": 4009,
+  "all_candidate_common_features_recomputed": 2973,
+  "direct_weighted_moment_cells": 12,
+  "bootstrap_valid_draws": {
+    "previous_r0": 512,
+    "taper_r0": 512,
+    "previous_r1": 512,
+    "taper_r1": 512
+  },
+  "notebook_cells": 11,
+  "executed_code_cells": 5,
+  "embedded_PNG": 5,
+  "notebook_sha256": "e37f353e9628c8972ec8982e60ebf5a884c5158b6879a7cc967360f872000f69",
+  "code_sha256": "c216d9fc15b80b421014d43a64de5b1f65dca586ac3523e78db9fcb498f8a1b2",
+  "new_full_pool_readouts": 0,
+  "new_independent_mothers": 0,
+  "default_changed": false,
+  "official_PID_changed": false
+}

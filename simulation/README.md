@@ -2,7 +2,20 @@
 
 已实现并运行 **核衰变 → 能量沉积 → 闪烁光输运 → SiPM 雪崩 → 被动读出响应 → ADC → 实测对照**。只支持 `Am241` 和 `Co60`。本目录参考 GAGG_pileup 的 SiPM 数值内核，新建 CsI 几何、源、材料参数和本项目波形对照；未修改参考项目。
 
-最新的[互补成分方差与原生检验笔记](../jupyter/codex_0001_csi_spectral_variance_split.ipynb)实现了可选的 `SpectralVarianceSplit` 类，位于 `include/`、`src/`，经现有 `SignalDependentNoise` 接入 Geant4 应用和原生读出。将原高斯创新分成独立的和/差成分，只让差分成分额外产生均值为1的方差起伏，保留原平均协方差、FIR和读出响应。其频谱有旁瓣，不是互不重叠的物理频带；方差CV也不是实测SiPM增益。每折仅用另一实测折的三尺度完整协方差，在预定延迟1/4/16样点与固定边界内提出参数，随后冻结并检查全部 **256000个原Geant4母事件**。新增独立输运和实验事件均为0。
+最新的[Am241低频噪声检查笔记](../jupyter/codex_0001_csi_low_frequency_noise.ipynb)在英文提交 **`72f47d5`**（`Test full-pool CsI selection and spectral variance splitting`）push并核对远端后开展。固定前轮成分方差CV和平均响应，对原FIR测试0.1/0.5/2 MHz转折频率、0.5/0.75/0.9目标DC幅度比的9组平滑衰减，另保留identity。实际有限FIR的功率和频谱单独记录，没有通过规范化补回已削弱的低频功率。
+
+**两折都选择identity，9组衰减均未改善预定联合校准目标。** 原1486个母事件、两个固定读出流共29720条C++原生读出，identity的2972条ADC逐样点复现前轮结果。联合目标同时包含三尺度F完整协方差、PID完整协方差、F均值、PID中心50%/95%宽度及平均ADC，不仅比较F202。
+
+|评价折的对折校准|原F202 SD比|2 MHz、目标DC幅度比0.5的F202 SD比|该对照QDC / 平均时间 / PCA SD比|原 / 对照联合目标|
+|---|---|---|---|---|
+|折0|1.133|1.045|0.708 / 0.664 / 0.687|0.877 / 10.814|
+|折1|1.219|1.124|0.752 / 0.653 / 0.735|2.452 / 10.367|
+
+这些是固定原队列的校准诊断，未把未选中的对照当作完整池验证。强衰减虽然收窄F202，却明显破坏PID宽度。因最终两折配置与前轮split完全相同，本轮通过参数、种子和文件哈希核对后，**复用已封存的192000个Am241完整母事件结果及512组配对统计，新增完整池重放为0**。完整池F202 SD比仍为r0 **1.162**、r1 **1.176**，默认配置与正式PID不变。不能把本轮否定结果推广为所有噪声谱调整都无效；下一步应检验能保留PID协方差的有限时间相关结构及随机分母耦合。
+
+见[全部网格](results/lowfreq_taper_20261102/figures/lowfreq_grid.png)、[实际有限FIR谱](results/lowfreq_taper_20261102/figures/lowfreq_spectra.png)、[冻结方案](results/lowfreq_taper_20261102/protocol.json)、[完整池复用核对](results/lowfreq_taper_20261102/full_pool_reuse.json)和[结论](results/lowfreq_taper_20261102/decision.json)。实际流程为 `prepare_lowfreq.py` → `run_lowfreq_grid.py` → `fit_lowfreq.py` → `reuse_lowfreq_full.py` → `analyze_lowfreq.py` → `report_lowfreq.py` → 笔记生成器 → `verify_lowfreq.py`及`--archive`。中断产生的一份不完整NPZ已保留原字节并从完整ROOT重新提取；原方案、运行器、产物哈希及恢复记录均保留。新独立输运和实验事件均为0，所有实验和MC仍属已探索样本。
+
+上一轮的[互补成分方差与原生检验笔记](../jupyter/codex_0001_csi_spectral_variance_split.ipynb)实现了可选的 `SpectralVarianceSplit` 类，位于 `include/`、`src/`，经现有 `SignalDependentNoise` 接入 Geant4 应用和原生读出。将原高斯创新分成独立的和/差成分，只让差分成分额外产生均值为1的方差起伏，保留原平均协方差、FIR和读出响应。其频谱有旁瓣，不是互不重叠的物理频带；方差CV也不是实测SiPM增益。每折仅用另一实测折的三尺度完整协方差，在预定延迟1/4/16样点与固定边界内提出参数，随后冻结并检查全部 **256000个原Geant4母事件**。新增独立输运和实验事件均为0。
 
 Co60的长尺度过宽明显减轻，Am241仍未通过联合门槛。下表为完整池按实际ADC重新定位、质量切选和当前Q加权后的结果，宽度比为MC/实测：
 

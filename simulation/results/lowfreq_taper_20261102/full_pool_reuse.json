@@ -1,0 +1,60 @@
+{
+  "reason": "Both opposite-fold minima are identity; no new parameter candidate needs repeated native simulation.",
+  "reused_inputs_sha256": {
+    "simulation/results/spectral_split_20261102/native/b00_run12.root": "145d3720522d1f55d58a746563fce49508bef100f531ac1495761a4b20de3117",
+    "simulation/results/spectral_split_20261102/configs/b00_run12_jobs.json": "94151e353357a622ccc7c4570baf58816256e7db77ee9d945ffbdd87cd1ef2f3",
+    "simulation/results/spectral_split_20261102/logs/b00_run12_native.json": "59acaa66cf57e267c473c009c728e63829dc7a8dff648b6843b429750a447fbf",
+    "simulation/results/spectral_split_20261102/logs/b00_run12_extraction.json": "b5aa8c3fd9a3e37e1160e48c9359e4b720092e27a6a14f8ba47fe328a1bd5779",
+    "simulation/results/spectral_split_20261102/native/b01_run12.root": "fac02f96e8a42cad19e253ec1955287278265e3db66b42f9413e4f3bcd3bf395",
+    "simulation/results/spectral_split_20261102/configs/b01_run12_jobs.json": "069010543223828b65fe0e14780f3219399207975317720641ae4cb6eea800f0",
+    "simulation/results/spectral_split_20261102/logs/b01_run12_native.json": "4a3532c49c9cb265f23ff0f572dba71fdd66a7762cfeec2554b218bf4a24ad7c",
+    "simulation/results/spectral_split_20261102/logs/b01_run12_extraction.json": "e79f4d24969306df5e67317ce621434a2bb1e9fac211fca4b8be0b03a2dc15a2",
+    "simulation/results/spectral_split_20261102/native/b02_run12.root": "9f3b72a99cb42ff6faa1ad93f7e322ea9ad08ea21d8c24a6f78036670c04047d",
+    "simulation/results/spectral_split_20261102/configs/b02_run12_jobs.json": "6968735444e7e85b8bafaef4da3c186aeae009a98d6e9ce0ccd84a42dc485396",
+    "simulation/results/spectral_split_20261102/logs/b02_run12_native.json": "14a177a27ca9cd72fadbf3637bdbd7d5a830b612c71c68c08c780854da0902ed",
+    "simulation/results/spectral_split_20261102/logs/b02_run12_extraction.json": "73bdb472223196e46f01521bf73c039691915ed6014e97b5ec02cb2a36afc0d5",
+    "simulation/results/spectral_split_20261102/native/b03_run12.root": "ba7b3cf4c0a4af5bf200cd75547f9e38f2358fc4ab2b85f9c61bb6af6d359046",
+    "simulation/results/spectral_split_20261102/configs/b03_run12_jobs.json": "715014c143d795803a171b9a74c0f6a3b28bdc41532a113481b02a5211d95a13",
+    "simulation/results/spectral_split_20261102/logs/b03_run12_native.json": "064e983b38ed6219bac169044d37b446f9c2f0c59e1f01052ba2d70ca3f2b0ac",
+    "simulation/results/spectral_split_20261102/logs/b03_run12_extraction.json": "c416173d39154d8c85a63bb377490a12a6069a513a8770feb74f7b2ffd0d56da"
+  },
+  "copied_arrays": {
+    "simulation/results/lowfreq_taper_20261102/arrays/b00_run12_split_r0.npz": {
+      "source": "simulation/results/spectral_split_20261102/arrays/b00_run12_split_r0.npz",
+      "sha256": "d8c28000aa75ad0d52d7bdfc19a9e1d75c4878e06a2e03ee9d0cf172f44ca1cc"
+    },
+    "simulation/results/lowfreq_taper_20261102/arrays/b00_run12_split_r1.npz": {
+      "source": "simulation/results/spectral_split_20261102/arrays/b00_run12_split_r1.npz",
+      "sha256": "cf445178cd6cd4653d8ee3b77961b1a1ee920b49ece2b15b15f971c57a3e03f2"
+    },
+    "simulation/results/lowfreq_taper_20261102/arrays/b01_run12_split_r0.npz": {
+      "source": "simulation/results/spectral_split_20261102/arrays/b01_run12_split_r0.npz",
+      "sha256": "0daeea25b1f77f766097845f19a1520f567dd9caa54b8106c5622bd14e45bc7e"
+    },
+    "simulation/results/lowfreq_taper_20261102/arrays/b01_run12_split_r1.npz": {
+      "source": "simulation/results/spectral_split_20261102/arrays/b01_run12_split_r1.npz",
+      "sha256": "c039ef8c60b39c2f841f84af46f6ffaf2fe261c15553658f401205777ccaa05e"
+    },
+    "simulation/results/lowfreq_taper_20261102/arrays/b02_run12_split_r0.npz": {
+      "source": "simulation/results/spectral_split_20261102/arrays/b02_run12_split_r0.npz",
+      "sha256": "4c69abd15342d6d086934ec48a0cae2546089fbd731f06ecb525f263e6151206"
+    },
+    "simulation/results/lowfreq_taper_20261102/arrays/b02_run12_split_r1.npz": {
+      "source": "simulation/results/spectral_split_20261102/arrays/b02_run12_split_r1.npz",
+      "sha256": "052bd2e5119958af3e9259faca7168b13ab1c1b5594145965fd8e5217398c8e2"
+    },
+    "simulation/results/lowfreq_taper_20261102/arrays/b03_run12_split_r0.npz": {
+      "source": "simulation/results/spectral_split_20261102/arrays/b03_run12_split_r0.npz",
+      "sha256": "f492d963218d646258ebac82757e17e1b1b00a7fd012d2b4bfd0c89da0e71bb1"
+    },
+    "simulation/results/lowfreq_taper_20261102/arrays/b03_run12_split_r1.npz": {
+      "source": "simulation/results/spectral_split_20261102/arrays/b03_run12_split_r1.npz",
+      "sha256": "897e0901e46b0ce736345ac7891f254bd3ea6a10c082d75cfb0d36dd87dded97"
+    }
+  },
+  "fit_sha256": "5299b344deccdcbca8e167cbcf8e5f47383c8a83b998f9fe22960a36e130c07d",
+  "new_full_pool_readouts": 0,
+  "referenced_parent_events": 192000,
+  "referenced_logical_readouts": 768000,
+  "code_sha256": "90ea40c50c1e1b57cdf57a333f50f43ecea1d4e0d3ab8a1add5d6314779a8173"
+}

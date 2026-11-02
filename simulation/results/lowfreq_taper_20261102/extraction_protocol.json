@@ -1,0 +1,6 @@
+{
+  "adapter_sha256": "90ea40c50c1e1b57cdf57a333f50f43ecea1d4e0d3ab8a1add5d6314779a8173",
+  "extractor_sha256": "ba7b48c9822097fc90413289775a5a5287e0ae3e35c49676546145190a8692f5",
+  "native_protocol_sha256": "3fb420fb9bdd8d461010ac2fc6289c33f39c4aa93999406bac3257b9e9ae3f84",
+  "mode": "Byte-identical copies of previously verified full-pool extraction; no new extraction."
+}

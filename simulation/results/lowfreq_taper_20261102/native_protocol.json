@@ -1,0 +1,110 @@
+{
+  "entries": {
+    "b00_run12": {
+      "key": "b00_run12",
+      "batch": 0,
+      "run": 12,
+      "source": "Am241",
+      "events": 48000,
+      "seed": 731030012,
+      "config": "simulation/results/mc_statistics_20261030/configs/run12_native.json",
+      "config_sha256": "c65e4dbca4969ebdc1e93a4a4b1b95f5ad042bcb0d7dfdf23cce774a19580d43",
+      "path": "simulation/results/mc_statistics_20261030/native/b00_run12.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+        "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/run12_native.json",
+        "Am241",
+        "48000",
+        "731030012",
+        "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b00_run12.root"
+      ],
+      "plan": "simulation/results/spectral_split_20261102/configs/b00_run12_jobs.json",
+      "plan_sha256": "94151e353357a622ccc7c4570baf58816256e7db77ee9d945ffbdd87cd1ef2f3",
+      "output": "simulation/results/spectral_split_20261102/native/b00_run12.root",
+      "full_parent_sha256": "3532308853adb87180beb1e4519d2c01b75f96736f55ef62233b8fddf3e73020",
+      "reference": "simulation/results/full_selection_20261102/native/b00_run12.root",
+      "reference_sha256": "2bd6aceefe99b0c7a89b2f7b742bc492d91de9a477d19df712da05dbbd15dfa7"
+    },
+    "b01_run12": {
+      "key": "b01_run12",
+      "batch": 1,
+      "run": 12,
+      "source": "Am241",
+      "events": 48000,
+      "seed": 731031012,
+      "config": "simulation/results/mc_statistics_20261030/configs/run12_native.json",
+      "config_sha256": "c65e4dbca4969ebdc1e93a4a4b1b95f5ad042bcb0d7dfdf23cce774a19580d43",
+      "path": "simulation/results/mc_statistics_20261030/native/b01_run12.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+        "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/run12_native.json",
+        "Am241",
+        "48000",
+        "731031012",
+        "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b01_run12.root"
+      ],
+      "plan": "simulation/results/spectral_split_20261102/configs/b01_run12_jobs.json",
+      "plan_sha256": "069010543223828b65fe0e14780f3219399207975317720641ae4cb6eea800f0",
+      "output": "simulation/results/spectral_split_20261102/native/b01_run12.root",
+      "full_parent_sha256": "61116ac2d4a94797e334d48a93e24ccbdae319d65ebfd14e5bdb12f61af99739",
+      "reference": "simulation/results/full_selection_20261102/native/b01_run12.root",
+      "reference_sha256": "1766ae41123349bbcd0298d8d2a1a7a9b985c1eb83b9d2e8519a0c375b716753"
+    },
+    "b02_run12": {
+      "key": "b02_run12",
+      "batch": 2,
+      "run": 12,
+      "source": "Am241",
+      "events": 48000,
+      "seed": 731032012,
+      "config": "simulation/results/mc_statistics_20261030/configs/run12_native.json",
+      "config_sha256": "c65e4dbca4969ebdc1e93a4a4b1b95f5ad042bcb0d7dfdf23cce774a19580d43",
+      "path": "simulation/results/mc_statistics_20261030/native/b02_run12.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+        "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/run12_native.json",
+        "Am241",
+        "48000",
+        "731032012",
+        "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b02_run12.root"
+      ],
+      "plan": "simulation/results/spectral_split_20261102/configs/b02_run12_jobs.json",
+      "plan_sha256": "6968735444e7e85b8bafaef4da3c186aeae009a98d6e9ce0ccd84a42dc485396",
+      "output": "simulation/results/spectral_split_20261102/native/b02_run12.root",
+      "full_parent_sha256": "6e3fe318edf90d2d9ff07a47a0dbdefc6a09fda98cbe617d45c5ef9641f282fd",
+      "reference": "simulation/results/full_selection_20261102/native/b02_run12.root",
+      "reference_sha256": "670af8aeb7560247e6fa39d12e380299f7a1a87a93567a4f0cca971e04f186ff"
+    },
+    "b03_run12": {
+      "key": "b03_run12",
+      "batch": 3,
+      "run": 12,
+      "source": "Am241",
+      "events": 48000,
+      "seed": 731033012,
+      "config": "simulation/results/mc_statistics_20261030/configs/run12_native.json",
+      "config_sha256": "c65e4dbca4969ebdc1e93a4a4b1b95f5ad042bcb0d7dfdf23cce774a19580d43",
+      "path": "simulation/results/mc_statistics_20261030/native/b03_run12.root",
+      "command": [
+        "/media/sf_works/SiPM/simulation/build/npe_20261029/csi_sources",
+        "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/run12_native.json",
+        "Am241",
+        "48000",
+        "731033012",
+        "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b03_run12.root"
+      ],
+      "plan": "simulation/results/spectral_split_20261102/configs/b03_run12_jobs.json",
+      "plan_sha256": "715014c143d795803a171b9a74c0f6a3b28bdc41532a113481b02a5211d95a13",
+      "output": "simulation/results/spectral_split_20261102/native/b03_run12.root",
+      "full_parent_sha256": "891bf90efd2dac596f96bb54fb7e6b87d843135d7b196865f28cfed4e99679e9",
+      "reference": "simulation/results/full_selection_20261102/native/b03_run12.root",
+      "reference_sha256": "02b51c79e15f5af142ded690c6da550be8ac36afd3aaeb1e1bdef84da8241961"
+    }
+  },
+  "fit_sha256": "5299b344deccdcbca8e167cbcf8e5f47383c8a83b998f9fe22960a36e130c07d",
+  "protocol_sha256": "63be9ede41c2464d0c163cf86415731627263ff7cdcd30dc2f93e000b97270e0",
+  "binary_sha256": "e9729c34a97d7a4f4b1bd908c58240359a2e9e223ebacc3f0cb43fe4777d6ac4",
+  "code_sha256": "90ea40c50c1e1b57cdf57a333f50f43ecea1d4e0d3ab8a1add5d6314779a8173",
+  "new_native_execution": false,
+  "scope": "Both selected identity configurations exactly equal the sealed full-pool split configurations, including every numerical parameter. Reuse their existing full-pool ADC and feature arrays; no duplicate native execution."
+}

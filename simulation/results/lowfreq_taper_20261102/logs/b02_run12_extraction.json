@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "split_r0": {
+      "array_sha256": "4c69abd15342d6d086934ec48a0cae2546089fbd731f06ecb525f263e6151206",
+      "mothers": 48000,
+      "common": 365,
+      "supported": 344,
+      "global_baseline_RMS": 5.620994665373628,
+      "fold_baseline_RMS": [
+        5.548503281438211,
+        5.707511154372144
+      ],
+      "fold_QC_disagreement": 0,
+      "nonfinite_selected_features": 0
+    },
+    "split_r1": {
+      "array_sha256": "052bd2e5119958af3e9259faca7168b13ab1c1b5594145965fd8e5217398c8e2",
+      "mothers": 48000,
+      "common": 362,
+      "supported": 342,
+      "global_baseline_RMS": 5.630720831503179,
+      "fold_baseline_RMS": [
+        5.558809231803785,
+        5.71713550887789
+      ],
+      "fold_QC_disagreement": 0,
+      "nonfinite_selected_features": 0
+    }
+  },
+  "native_sha256": "9f3b72a99cb42ff6faa1ad93f7e322ea9ad08ea21d8c24a6f78036670c04047d",
+  "code_sha256": "ba7b48c9822097fc90413289775a5a5287e0ae3e35c49676546145190a8692f5",
+  "reused_from": "simulation/results/spectral_split_20261102/logs/b02_run12_extraction.json",
+  "new_native_execution": false
+}

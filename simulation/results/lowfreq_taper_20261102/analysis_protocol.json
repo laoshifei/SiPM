@@ -1,0 +1,51 @@
+{
+  "code_sha256": "d64d26f7cdfa75cb984234a31d763a7f69c6da85abae63bb58861982e451f5a6",
+  "inputs_sha256": {
+    "simulation/results/lowfreq_taper_20261102/fit.json": "5299b344deccdcbca8e167cbcf8e5f47383c8a83b998f9fe22960a36e130c07d",
+    "simulation/results/lowfreq_taper_20261102/native_protocol.json": "3fb420fb9bdd8d461010ac2fc6289c33f39c4aa93999406bac3257b9e9ae3f84",
+    "simulation/results/lowfreq_taper_20261102/extraction_protocol.json": "47bd47c682561c947c2db090ea32396d12117ebdea5970304768c52668392129",
+    "simulation/results/lowfreq_taper_20261102/arrays/b00_run12_split_r0.npz": "d8c28000aa75ad0d52d7bdfc19a9e1d75c4878e06a2e03ee9d0cf172f44ca1cc",
+    "simulation/results/lowfreq_taper_20261102/arrays/b00_run12_split_r1.npz": "cf445178cd6cd4653d8ee3b77961b1a1ee920b49ece2b15b15f971c57a3e03f2",
+    "simulation/results/lowfreq_taper_20261102/arrays/b01_run12_split_r0.npz": "0daeea25b1f77f766097845f19a1520f567dd9caa54b8106c5622bd14e45bc7e",
+    "simulation/results/lowfreq_taper_20261102/arrays/b01_run12_split_r1.npz": "c039ef8c60b39c2f841f84af46f6ffaf2fe261c15553658f401205777ccaa05e",
+    "simulation/results/lowfreq_taper_20261102/arrays/b02_run12_split_r0.npz": "4c69abd15342d6d086934ec48a0cae2546089fbd731f06ecb525f263e6151206",
+    "simulation/results/lowfreq_taper_20261102/arrays/b02_run12_split_r1.npz": "052bd2e5119958af3e9259faca7168b13ab1c1b5594145965fd8e5217398c8e2",
+    "simulation/results/lowfreq_taper_20261102/arrays/b03_run12_split_r0.npz": "f492d963218d646258ebac82757e17e1b1b00a7fd012d2b4bfd0c89da0e71bb1",
+    "simulation/results/lowfreq_taper_20261102/arrays/b03_run12_split_r1.npz": "897e0901e46b0ce736345ac7891f254bd3ea6a10c082d75cfb0d36dd87dded97"
+  },
+  "protocol_sha256": "63be9ede41c2464d0c163cf86415731627263ff7cdcd30dc2f93e000b97270e0",
+  "variants": [
+    "previous_r0",
+    "taper_r0",
+    "previous_r1",
+    "taper_r1"
+  ],
+  "metrics": [
+    "QDC_mean_delta",
+    "mean_time_delta_ns",
+    "F50_mean_ratio",
+    "F102_mean_ratio",
+    "F202_mean_ratio",
+    "QDC_SD_ratio",
+    "negative_mean_time_us_SD_ratio",
+    "PCA_SD_ratio",
+    "F50_SD_ratio",
+    "F102_SD_ratio",
+    "F202_SD_ratio",
+    "F_common_SD_ratio",
+    "F_short_long_SD_ratio",
+    "F_curvature_SD_ratio",
+    "QDC_width50_ratio",
+    "negative_mean_time_us_width50_ratio",
+    "PCA_width50_ratio",
+    "QDC_width95_ratio",
+    "negative_mean_time_us_width95_ratio",
+    "PCA_width95_ratio",
+    "F50_F102_corr_delta",
+    "F50_F202_corr_delta",
+    "F102_F202_corr_delta",
+    "F_covariance_relative_error",
+    "mean_ADC_relative_L2",
+    "PID_covariance_relative_error"
+  ]
+}

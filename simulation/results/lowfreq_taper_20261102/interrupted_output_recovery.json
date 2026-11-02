@@ -1,0 +1,9 @@
+{
+  "relocated_incomplete_outputs": {
+    "simulation/results/lowfreq_taper_20261102/grid_arrays/b00_run12_eval1_f200_r050_r1.npz": {
+      "preserved_path": "simulation/results/lowfreq_taper_20261102/interrupted_artifacts/b00_run12_eval1_f200_r050_r1.npz",
+      "sha256": "25f0ee79ea32df881bc17dd88f534e42d9299d42232bd08a6dddfeb28b2ef0f1",
+      "reason": "Interrupted NPZ has no ZIP central directory; never consumed by fitting. Re-extract this record from the complete native ROOT, preserving its original bytes here."
+    }
+  }
+}
