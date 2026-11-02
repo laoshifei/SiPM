@@ -1,0 +1,33 @@
+{
+  "reason": "Shorten the native decomposition y-axis labels to prevent vertical overlap between rows. Numerical definitions and results are unchanged.",
+  "old_report_sha256": "8cefe60f7cced4ba31e9f9a70a7045a75371a10957acc1dc494e2d26413aceaa",
+  "analysis_sha256": "08d94d83a2ce64ce39efb54372256730d6bcea6945f082d591db2a068e88e6d7",
+  "tables_sha256": {
+    "simulation/results/qdc_fluctuation_20261101/batch_table.csv": "f7c7d016d6e34593cf29ffdd0dff95e97b765b26a21dfe383821486cba6a4efe",
+    "simulation/results/qdc_fluctuation_20261101/comparison_table.csv": "e0a4a898586f10f81e6728f7d41a19dde33baee56726c35adb1952bfb0ae9d03",
+    "simulation/results/qdc_fluctuation_20261101/per_Q_table.csv": "001e19b0ec3f92e3995fdc3e4becceea07fc1880fac9a7050292d50738d67b74"
+  },
+  "moved_files": {
+    "simulation/results/qdc_fluctuation_20261101/decision.json": "eb67b645bd08fdea1b39db3fe51536fd094727a8aca5cf1b6fa37570e3beb52a",
+    "simulation/results/qdc_fluctuation_20261101/figure_record.json": "b2a2ac4ff5a768d79a3b7c573746315d6fec22ea67c888d5a967f647c101ad64",
+    "simulation/results/qdc_fluctuation_20261101/figures/fluctuation_by_charge.pdf": "9214a96fdb9d6bda642d7771692cf440b229e8d3cb6cb8e8a6055ff18ff442b9",
+    "simulation/results/qdc_fluctuation_20261101/figures/fluctuation_by_charge.png": "f89a362268ee7dc1fd3b6aaf57130e257cfd1026c91b4d17996f874258617f76",
+    "simulation/results/qdc_fluctuation_20261101/figures/fluctuation_by_charge.svg": "3219ff7ea5c105766caff68cef69a0cb1771f314183479c84737ff1a1424f5c4",
+    "simulation/results/qdc_fluctuation_20261101/figures/fluctuation_native_parts.pdf": "2612624978682a4177df8f47e7c4d61452f884df96f0054889754ba1f62ede42",
+    "simulation/results/qdc_fluctuation_20261101/figures/fluctuation_native_parts.png": "88d840a2f7cc2c8bca2a027db96a7d24c5aeb661e1d9238284c83b88317d4eb6",
+    "simulation/results/qdc_fluctuation_20261101/figures/fluctuation_native_parts.svg": "c61945a189d74f0ad2952a183c8f02920aaf1812f664af0dea39a78f6cfb45f7",
+    "simulation/results/qdc_fluctuation_20261101/figures/fluctuation_segment_controls.pdf": "31817a57e17fceb9870a81182a125f3c11f0d94669e945b280e1f2aad91070a9",
+    "simulation/results/qdc_fluctuation_20261101/figures/fluctuation_segment_controls.png": "72f0509905ff1dc805dc8313c241a1bf18eb5b180f08f2f6a8e7a8e311e44518",
+    "simulation/results/qdc_fluctuation_20261101/figures/fluctuation_segment_controls.svg": "524f50217a05bd94e5f2c7c5ef7ef66feeee97117e3b7bf7b916e2664a5093ae",
+    "simulation/results/qdc_fluctuation_20261101/figures/fluctuation_tail_overlap.pdf": "9bed4da338925db1861e040958343971e68a27c611b113694616901ff9130842",
+    "simulation/results/qdc_fluctuation_20261101/figures/fluctuation_tail_overlap.png": "337729aa02343e00df8a73569e21a03944896e42df041e15d3a9397b7192fcda",
+    "simulation/results/qdc_fluctuation_20261101/figures/fluctuation_tail_overlap.svg": "70e5d88a2bfd9d97c71ed4a8fb84f2f349b2f9ac1e79a1748877e31111da9c23",
+    "simulation/results/qdc_fluctuation_20261101/figures/fluctuation_term_controls.pdf": "3ab2be2424aac9a2b3db59b21fadfdbae27084b108f0a6d5fbc4cc1813c6616c",
+    "simulation/results/qdc_fluctuation_20261101/figures/fluctuation_term_controls.png": "47705ad72b3c8013b94dc7ddf798466c441dbb68fa24267ea4ecac0f0fd779bf",
+    "simulation/results/qdc_fluctuation_20261101/figures/fluctuation_term_controls.svg": "854c772fc00140a37b07ae16200f7e0a83c00434d4add038cb138be8c8c72f74",
+    "jupyter/codex_0001_csi_qdc_fluctuation_residuals.ipynb": "b1401eebcae96ef36c571fc6ab92e8d424f502592333bb8b9139e4e33468c2ec"
+  },
+  "new_report_sha256": "66077a36452dadad93391f0d1a89d43c43ac9bc141ebed123cc5d28418e55681",
+  "numerical_tables_unchanged": true,
+  "other_four_PNGs_unchanged": true
+}

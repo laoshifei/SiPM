@@ -1,0 +1,14 @@
+{
+  "code_sha256": "8cefe60f7cced4ba31e9f9a70a7045a75371a10957acc1dc494e2d26413aceaa",
+  "figures": [
+    "fluctuation_term_controls",
+    "fluctuation_by_charge",
+    "fluctuation_tail_overlap",
+    "fluctuation_native_parts",
+    "fluctuation_segment_controls"
+  ],
+  "inputs_sha256": {
+    "simulation/results/qdc_fluctuation_20261101/protocol.json": "4b175b31c8368b686bfff9d32c72625feb721877e891ba7f80769eb7ec5aa418",
+    "simulation/results/qdc_fluctuation_20261101/analysis.json": "08d94d83a2ce64ce39efb54372256730d6bcea6945f082d591db2a068e88e6d7"
+  }
+}
