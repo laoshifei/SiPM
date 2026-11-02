@@ -1,0 +1,17 @@
+{
+  "figures": [
+    "charge_migration",
+    "charge_width_controls",
+    "charge_scale_joint_modes",
+    "charge_variance_line",
+    "charge_segment_checks",
+    "charge_mean_waveforms"
+  ],
+  "inputs_sha256": {
+    "simulation/results/charge_scales_20261102/protocol.json": "4f12d9262d018a2f1eb47d3ca08c893ce2546828f43e87535101eec079a7f589",
+    "simulation/results/charge_scales_20261102/algebra_tests.json": "504e896eb71f7985c2b411f201ff414711121b42ce56e89780fd3ec1a90bd448",
+    "simulation/results/charge_scales_20261102/point_analysis.json": "953932dc9313b717a06f71d89cbbe939e03c647bd391d548e75a38e0abbd9f1d",
+    "simulation/results/charge_scales_20261102/repeat_analysis.json": "7103962aca9696dfaefc3de67adb7ae1a71492886cb55b8500eb486303d62045"
+  },
+  "code_sha256": "c9e9bcd6de8363c31614ba45abbdd78639b79190bd059f65ab953edd8897b98f"
+}

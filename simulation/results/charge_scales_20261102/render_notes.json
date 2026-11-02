@@ -1,0 +1,7 @@
+{
+  "scope": "Unarchived reporting draft fixes only; frozen numerical analysis was not modified.",
+  "fixes": [
+    "Display originally empty migration rows explicitly without dividing zero by zero.",
+    "A notebook draft was started before the report had produced decision.json; it failed before saving. Rebuild only after report completion, with an explicit dependency guard."
+  ]
+}

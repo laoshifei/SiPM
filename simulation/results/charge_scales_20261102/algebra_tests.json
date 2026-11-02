@@ -1,0 +1,9 @@
+{
+  "exact_integer_ADC_charge_examples": 100,
+  "boundary_cases": 7,
+  "orthonormal_rotation": true,
+  "independent_weighted_covariance_cells": 2,
+  "trace_preserved": true,
+  "missing_support_propagated": true,
+  "degenerate_interpolation_is_unestimable": true
+}
