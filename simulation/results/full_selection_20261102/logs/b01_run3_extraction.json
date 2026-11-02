@@ -1,0 +1,203 @@
+{
+  "entry": "b01_run3",
+  "variants": {
+    "original": {
+      "array_sha256": "9f669bc3b3e58840487058e7ed7c6209a5a1495b409d8d74dbb1dfd3c2fdee8d",
+      "all_mothers": 16000,
+      "quality": 1666,
+      "selected": 1371,
+      "common": 523,
+      "supported": 523,
+      "global_baseline_RMS": 3.3675318849409206,
+      "fold_baseline_RMS": [
+        3.3609916163938096,
+        3.374416724769101
+      ],
+      "fold_QC_disagreement": 0,
+      "invalid_wanted_features": 0,
+      "common_truth_counts": [
+        0,
+        521,
+        2,
+        0,
+        0
+      ],
+      "supported_truth_counts": [
+        0,
+        521,
+        2,
+        0,
+        0
+      ],
+      "common_bins": [
+        0,
+        98,
+        89,
+        77,
+        75,
+        97,
+        87,
+        0
+      ]
+    },
+    "current_r0": {
+      "array_sha256": "450e4e1987231170932b613f1c1c6ba7fe88db7cec51f440b27e2a89243826bb",
+      "all_mothers": 16000,
+      "quality": 1663,
+      "selected": 1369,
+      "common": 524,
+      "supported": 524,
+      "global_baseline_RMS": 3.316730603033739,
+      "fold_baseline_RMS": [
+        3.2976108107988917,
+        3.3353794176037903
+      ],
+      "fold_QC_disagreement": 0,
+      "invalid_wanted_features": 0,
+      "common_truth_counts": [
+        0,
+        522,
+        2,
+        0,
+        0
+      ],
+      "supported_truth_counts": [
+        0,
+        522,
+        2,
+        0,
+        0
+      ],
+      "common_bins": [
+        0,
+        98,
+        88,
+        79,
+        75,
+        96,
+        88,
+        0
+      ]
+    },
+    "zero_cv_r0": {
+      "array_sha256": "d0ffc0181865f66343a18383c4c53b498c23b88b855335371b3be230002456c6",
+      "all_mothers": 16000,
+      "quality": 1663,
+      "selected": 1368,
+      "common": 525,
+      "supported": 525,
+      "global_baseline_RMS": 3.316730603033739,
+      "fold_baseline_RMS": [
+        3.2976108107988917,
+        3.3353794176037903
+      ],
+      "fold_QC_disagreement": 0,
+      "invalid_wanted_features": 0,
+      "common_truth_counts": [
+        0,
+        523,
+        2,
+        0,
+        0
+      ],
+      "supported_truth_counts": [
+        0,
+        523,
+        2,
+        0,
+        0
+      ],
+      "common_bins": [
+        0,
+        98,
+        90,
+        77,
+        74,
+        97,
+        89,
+        0
+      ]
+    },
+    "current_r1": {
+      "array_sha256": "75d5a7f2992d50d2c5d25af9f945cabc9dcf40ff845342c68c6d44e47349ab27",
+      "all_mothers": 16000,
+      "quality": 1669,
+      "selected": 1363,
+      "common": 522,
+      "supported": 522,
+      "global_baseline_RMS": 3.308937316105881,
+      "fold_baseline_RMS": [
+        3.3018697354680726,
+        3.314263791915284
+      ],
+      "fold_QC_disagreement": 0,
+      "invalid_wanted_features": 0,
+      "common_truth_counts": [
+        0,
+        520,
+        2,
+        0,
+        0
+      ],
+      "supported_truth_counts": [
+        0,
+        520,
+        2,
+        0,
+        0
+      ],
+      "common_bins": [
+        0,
+        97,
+        88,
+        81,
+        76,
+        87,
+        93,
+        0
+      ]
+    },
+    "zero_cv_r1": {
+      "array_sha256": "2f25c13323b926121da81e08278bcfa96763d5f0282d0361df4269494299a08b",
+      "all_mothers": 16000,
+      "quality": 1668,
+      "selected": 1362,
+      "common": 524,
+      "supported": 524,
+      "global_baseline_RMS": 3.308937316105881,
+      "fold_baseline_RMS": [
+        3.3018697354680726,
+        3.314263791915284
+      ],
+      "fold_QC_disagreement": 0,
+      "invalid_wanted_features": 0,
+      "common_truth_counts": [
+        0,
+        522,
+        2,
+        0,
+        0
+      ],
+      "supported_truth_counts": [
+        0,
+        522,
+        2,
+        0,
+        0
+      ],
+      "common_bins": [
+        0,
+        97,
+        88,
+        79,
+        78,
+        87,
+        95,
+        0
+      ]
+    }
+  },
+  "native_sha256": "768150925a189240b767743845a1822833aa10fe0afe0b29775b81ef494467c2",
+  "code_sha256": "673cbd48c0010940d3c75e5eb0e5147b809928c06af1d039bb354a1cff1b6637",
+  "original_selection_closure": true
+}

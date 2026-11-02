@@ -1,0 +1,9 @@
+source,variant,mothers,old_common,current_common,old_supported,current_supported,enter_support,leave_support,new_beyond_old_common,fold_reference_QC_disagreement,exit_current_selection_failure,exit_current_charge_failure,old_quality_or_amplitude_or_time_failure,old_below_supported_Q,old_above_supported_Q
+Co60,current_r0,64000,2175,2172,2175,2172,9,12,9,0,0,12,0,7,2
+Co60,zero_cv_r0,64000,2175,2170,2175,2170,8,13,8,0,0,13,0,5,3
+Co60,current_r1,64000,2175,2176,2175,2176,60,59,60,0,0,59,0,21,39
+Co60,zero_cv_r1,64000,2175,2173,2175,2173,58,60,58,0,0,60,0,21,37
+Am241,current_r0,192000,1486,1483,1406,1399,21,28,11,0,0,28,0,11,10
+Am241,zero_cv_r0,192000,1486,1483,1406,1399,21,28,11,0,0,28,0,11,10
+Am241,current_r1,192000,1486,1489,1406,1412,87,81,54,0,0,81,0,54,33
+Am241,zero_cv_r1,192000,1486,1491,1406,1412,88,82,55,0,0,82,0,55,33

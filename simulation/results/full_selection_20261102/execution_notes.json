@@ -1,0 +1,9 @@
+{
+  "preparation": "First preparation found the old record uses selection_protocol.json, not protocol.json. No new ADC outcomes existed; corrected path and retained equal prepared plans.",
+  "build": "An early build invocation preceded CMake generation completion; reran successfully after completion. No science output from failed build.",
+  "pre_execution_protocol": "Full-pool NaN-safe cell selection and test source hashes were finalized before any native output; pre_execution_protocol_v1.json retained.",
+  "native_verifier": "First draft required equal descriptive status strings for old zero-CV configuration lookup and stopped before recording results. Comparison now ignores only that nonphysical status string; all other configuration fields and every selected ADC sample must match.",
+  "readout_replica_CTest": "fixed_history_noise_replicas passed in the new release build before full replay.",
+  "default_changed": false,
+  "native_verifier_path_fix": "The verification draft also stopped on a string passed to the existing Path-only relative helper, before any ADC validation result was saved. Converted the path explicitly; no readout, feature or inference changed."
+}

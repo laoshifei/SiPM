@@ -1,0 +1,139 @@
+Start testing: Nov 02 14:43 CST
+----------------------------------------------------------
+1/7 Testing: inherited_sensor_charge_recovery_rng
+1/7 Test: inherited_sensor_charge_recovery_rng
+Command: "/media/sf_works/SiPM/simulation/build/spectral_split_20261102/test_sipm" "/media/sf_works/SiPM/simulation/tests/vendor_fixture.json"
+Directory: /media/sf_works/SiPM/simulation/build/spectral_split_20261102
+"inherited_sensor_charge_recovery_rng" start time: Nov 02 14:43 CST
+Output:
+----------------------------------------------------------
+PASS cell boundaries
+PASS bilinear PDE and no extrapolation
+PASS recovery and trigger
+PASS single electron charge and fractional-bin integral
+PASS empty input still produces baseline ADC
+PASS gate uses avalanche charge and half-open endpoints
+PASS PDE binomial statistics
+PASS same-time cell saturation
+PASS dark count Poisson statistics
+PASS recursive secondary ancestry and charge
+PASS independent reproducible electronics RNG
+PASS ADC clipping explicitly marked
+PASS invalid config/input and candidate limit reject
+PASS readout time-step convergence
+14 tests passed
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"inherited_sensor_charge_recovery_rng" end time: Nov 02 14:43 CST
+"inherited_sensor_charge_recovery_rng" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/7 Testing: stationary_readout_noise
+2/7 Test: stationary_readout_noise
+Command: "/media/sf_works/SiPM/simulation/build/spectral_split_20261102/test_noise" "/media/sf_works/SiPM/simulation/tests/vendor_fixture.json"
+Directory: /media/sf_works/SiPM/simulation/build/spectral_split_20261102
+"stationary_readout_noise" start time: Nov 02 14:43 CST
+Output:
+----------------------------------------------------------
+PASS unit FIR / vendor noise RNG and ADC identity
+PASS stationary FIR variance / covariance / preserved signal
+PASS parameter rejection / requantization / clipping
+PASS event variance / baseline state moments / reproducibility
+PASS baseline-state mixture / covariance / weight validation
+5 tests passed
+<end of output>
+Test time =   0.49 sec
+----------------------------------------------------------
+Test Passed.
+"stationary_readout_noise" end time: Nov 02 14:43 CST
+"stationary_readout_noise" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/7 Testing: parallel_readout_response
+3/7 Test: parallel_readout_response
+Command: "/media/sf_works/SiPM/simulation/build/spectral_split_20261102/test_response" "/media/sf_works/SiPM/simulation/tests/vendor_fixture.json"
+Directory: /media/sf_works/SiPM/simulation/build/spectral_split_20261102
+"parallel_readout_response" start time: Nov 02 14:43 CST
+Output:
+----------------------------------------------------------
+Parallel paths and voltage transfer checks passed: legacy/unit replay, physical charge/current, downstream noise, mixture, bounds
+<end of output>
+Test time =   0.16 sec
+----------------------------------------------------------
+Test Passed.
+"parallel_readout_response" end time: Nov 02 14:43 CST
+"parallel_readout_response" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/7 Testing: signal_dependent_readout_noise
+4/7 Test: signal_dependent_readout_noise
+Command: "/media/sf_works/SiPM/simulation/build/spectral_split_20261102/test_signal_noise" "/media/sf_works/SiPM/simulation/tests/vendor_fixture.json"
+Directory: /media/sf_works/SiPM/simulation/build/spectral_split_20261102
+"signal_dependent_readout_noise" start time: Nov 02 14:43 CST
+Output:
+----------------------------------------------------------
+PASS disabled,zero strength and zero signal identities
+PASS mean,linear variance scaling,FIR covariance and preserved physical charge
+PASS deterministic independent seed stream
+PASS event-scatter mean and variance including finite-waveform statistics
+PASS invalid settings and clipping
+5 tests passed
+<end of output>
+Test time =   0.25 sec
+----------------------------------------------------------
+Test Passed.
+"signal_dependent_readout_noise" end time: Nov 02 14:43 CST
+"signal_dependent_readout_noise" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/7 Testing: complementary_spectral_variance
+5/7 Test: complementary_spectral_variance
+Command: "/media/sf_works/SiPM/simulation/build/spectral_split_20261102/test_spectral_split"
+Directory: /media/sf_works/SiPM/simulation/build/spectral_split_20261102
+"complementary_spectral_variance" start time: Nov 02 14:43 CST
+Output:
+----------------------------------------------------------
+PASS exact zero identity, independent complementary components, lag covariance, reproducible seeds, fixed mean power, quadratic mixture variance and invalid parameters
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"complementary_spectral_variance" end time: Nov 02 14:43 CST
+"complementary_spectral_variance" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/7 Testing: native_aperture_sampling
+6/7 Test: native_aperture_sampling
+Command: "/media/sf_works/SiPM/simulation/build/spectral_split_20261102/test_sampling" "/media/sf_works/SiPM/simulation/tests/vendor_fixture.json"
+Directory: /media/sf_works/SiPM/simulation/build/spectral_split_20261102
+"native_aperture_sampling" start time: Nov 02 14:43 CST
+Output:
+----------------------------------------------------------
+Sampling tests passed: exact native identity, analytic aperture, preserved avalanches, paired noise, bounds
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"native_aperture_sampling" end time: Nov 02 14:43 CST
+"native_aperture_sampling" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/7 Testing: fixed_history_noise_replicas
+7/7 Test: fixed_history_noise_replicas
+Command: "/media/sf_works/SiPM/simulation/build/spectral_split_20261102/test_replica" "/media/sf_works/SiPM/simulation/tests/vendor_fixture.json"
+Directory: /media/sf_works/SiPM/simulation/build/spectral_split_20261102
+"fixed_history_noise_replicas" start time: Nov 02 14:43 CST
+Output:
+----------------------------------------------------------
+Noise replicas passed: exact zero identity, reproducibility, unchanged signal/avalanches, isolated streams and cached fallback
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"fixed_history_noise_replicas" end time: Nov 02 14:43 CST
+"fixed_history_noise_replicas" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 02 14:43 CST

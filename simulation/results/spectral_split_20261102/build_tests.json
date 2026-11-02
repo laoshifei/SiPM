@@ -1,0 +1,11 @@
+{
+  "build_directory": "simulation/build/spectral_split_20261102",
+  "csi_sources_sha256": "f918297113d6407aab4061c0bc14b92ebfac48457fc1f102dc6d48b7e38c7ca5",
+  "replay_spectral_pool_sha256": "e9729c34a97d7a4f4b1bd908c58240359a2e9e223ebacc3f0cb43fe4777d6ac4",
+  "ctest_passed": 7,
+  "ctest_failed": 0,
+  "ctest_selection": "-E csi_application_workflow",
+  "ctest_log_sha256": "3d77f8e976aca06bd219a05fa936a4451585ed840ad3c0454b01ef1631889c75",
+  "math_tests_sha256": "28fe39940946af21a6c1493a03ffa0837206f017dcba7e3ac0e8974785813fa9",
+  "new_model_disabled_by_default": true
+}

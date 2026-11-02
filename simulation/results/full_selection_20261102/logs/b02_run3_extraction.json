@@ -1,0 +1,203 @@
+{
+  "entry": "b02_run3",
+  "variants": {
+    "original": {
+      "array_sha256": "4794a1f677912be188afc5c03f019c1d521f1e1d34ffadf2f6b9cd7bcd22876f",
+      "all_mothers": 16000,
+      "quality": 1668,
+      "selected": 1380,
+      "common": 552,
+      "supported": 552,
+      "global_baseline_RMS": 3.3715531426437444,
+      "fold_baseline_RMS": [
+        3.373697665396234,
+        3.3694616015581778
+      ],
+      "fold_QC_disagreement": 0,
+      "invalid_wanted_features": 0,
+      "common_truth_counts": [
+        0,
+        551,
+        1,
+        0,
+        0
+      ],
+      "supported_truth_counts": [
+        0,
+        551,
+        1,
+        0,
+        0
+      ],
+      "common_bins": [
+        0,
+        90,
+        99,
+        96,
+        80,
+        96,
+        91,
+        0
+      ]
+    },
+    "current_r0": {
+      "array_sha256": "d93afc7de580ceb11b15748ed8fe7167d6317709a522c69365f1a49dbca28af4",
+      "all_mothers": 16000,
+      "quality": 1662,
+      "selected": 1379,
+      "common": 551,
+      "supported": 551,
+      "global_baseline_RMS": 3.318354201916215,
+      "fold_baseline_RMS": [
+        3.3071522280316943,
+        3.3289593291062824
+      ],
+      "fold_QC_disagreement": 0,
+      "invalid_wanted_features": 0,
+      "common_truth_counts": [
+        0,
+        550,
+        1,
+        0,
+        0
+      ],
+      "supported_truth_counts": [
+        0,
+        550,
+        1,
+        0,
+        0
+      ],
+      "common_bins": [
+        0,
+        90,
+        96,
+        99,
+        81,
+        95,
+        90,
+        0
+      ]
+    },
+    "zero_cv_r0": {
+      "array_sha256": "86291ddd838b80cadffb3ec9e0798e2f53a5f6a70865873a4c0eee69c34bac3a",
+      "all_mothers": 16000,
+      "quality": 1662,
+      "selected": 1380,
+      "common": 551,
+      "supported": 551,
+      "global_baseline_RMS": 3.318354201916215,
+      "fold_baseline_RMS": [
+        3.3071522280316943,
+        3.3289593291062824
+      ],
+      "fold_QC_disagreement": 0,
+      "invalid_wanted_features": 0,
+      "common_truth_counts": [
+        0,
+        550,
+        1,
+        0,
+        0
+      ],
+      "supported_truth_counts": [
+        0,
+        550,
+        1,
+        0,
+        0
+      ],
+      "common_bins": [
+        0,
+        91,
+        93,
+        103,
+        79,
+        95,
+        90,
+        0
+      ]
+    },
+    "current_r1": {
+      "array_sha256": "253b0b7134315429cb7b82b14e2df4169b5fe55ad924615d23a31afbc3a8d88a",
+      "all_mothers": 16000,
+      "quality": 1665,
+      "selected": 1380,
+      "common": 551,
+      "supported": 551,
+      "global_baseline_RMS": 3.318625490463763,
+      "fold_baseline_RMS": [
+        3.3077427513902893,
+        3.328665962490642
+      ],
+      "fold_QC_disagreement": 0,
+      "invalid_wanted_features": 0,
+      "common_truth_counts": [
+        0,
+        550,
+        1,
+        0,
+        0
+      ],
+      "supported_truth_counts": [
+        0,
+        550,
+        1,
+        0,
+        0
+      ],
+      "common_bins": [
+        0,
+        91,
+        97,
+        104,
+        75,
+        86,
+        98,
+        0
+      ]
+    },
+    "zero_cv_r1": {
+      "array_sha256": "9272dfd55453ddebe719f6efd3b3cbf0140651766df766ea2b07778ff16b5e43",
+      "all_mothers": 16000,
+      "quality": 1665,
+      "selected": 1380,
+      "common": 550,
+      "supported": 550,
+      "global_baseline_RMS": 3.318625490463763,
+      "fold_baseline_RMS": [
+        3.3077427513902893,
+        3.328665962490642
+      ],
+      "fold_QC_disagreement": 0,
+      "invalid_wanted_features": 0,
+      "common_truth_counts": [
+        0,
+        549,
+        1,
+        0,
+        0
+      ],
+      "supported_truth_counts": [
+        0,
+        549,
+        1,
+        0,
+        0
+      ],
+      "common_bins": [
+        0,
+        91,
+        97,
+        104,
+        75,
+        87,
+        96,
+        0
+      ]
+    }
+  },
+  "native_sha256": "755f40f3f1818354676adc227796e6a523dab3fc8552925301261216713d2aad",
+  "code_sha256": "673cbd48c0010940d3c75e5eb0e5147b809928c06af1d039bb354a1cff1b6637",
+  "original_selection_closure": true
+}

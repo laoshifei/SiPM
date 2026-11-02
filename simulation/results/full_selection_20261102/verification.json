@@ -1,0 +1,123 @@
+{
+  "inputs_verified": 57,
+  "complete_parent_events": 256000,
+  "old_cohort_readouts_bit_identical": 14644,
+  "ADC_samples_bit_identical": 36551424,
+  "clipped_samples_by_batch": [
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "direct_weighted_moment_cells": 144,
+  "bootstrap_valid_draws": {
+    "Co60": {
+      "old_cohort_original_Q": {
+        "current_r0": 512,
+        "zero_cv_r0": 512,
+        "current_r1": 512,
+        "zero_cv_r1": 512
+      },
+      "old_cohort_current_Q": {
+        "current_r0": 512,
+        "zero_cv_r0": 512,
+        "current_r1": 512,
+        "zero_cv_r1": 512
+      },
+      "old_cohort_current_selection": {
+        "current_r0": 512,
+        "zero_cv_r0": 512,
+        "current_r1": 512,
+        "zero_cv_r1": 512
+      },
+      "full_pool_current_selection": {
+        "current_r0": 512,
+        "zero_cv_r0": 512,
+        "current_r1": 512,
+        "zero_cv_r1": 512
+      }
+    },
+    "Am241": {
+      "old_cohort_original_Q": {
+        "current_r0": 512,
+        "zero_cv_r0": 512,
+        "current_r1": 512,
+        "zero_cv_r1": 512
+      },
+      "old_cohort_current_Q": {
+        "current_r0": 512,
+        "zero_cv_r0": 512,
+        "current_r1": 512,
+        "zero_cv_r1": 512
+      },
+      "old_cohort_current_selection": {
+        "current_r0": 512,
+        "zero_cv_r0": 512,
+        "current_r1": 512,
+        "zero_cv_r1": 512
+      },
+      "full_pool_current_selection": {
+        "current_r0": 512,
+        "zero_cv_r0": 512,
+        "current_r1": 512,
+        "zero_cv_r1": 512
+      }
+    }
+  },
+  "notebook_cells": 10,
+  "executed_code_cells": 5,
+  "embedded_PNG": 5,
+  "table_rows": {
+    "comparison_table.csv": 32,
+    "selection_table.csv": 8
+  },
+  "notebook_sha256": "1effb4ae1b1116e6f5ecd24c73d4cf84d6f8ba94629a603c25ce76fd7a4f7dea",
+  "code_sha256": "7e1ae389a7fc9386d21a9a51185568dc38018271cc03824adadcc91a2af24ba6",
+  "new_independent_mothers": 0,
+  "default_changed": false,
+  "official_PID_changed": false
+}

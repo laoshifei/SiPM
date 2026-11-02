@@ -1,0 +1,41 @@
+{
+  "conclusion_zh": "已实现并完成保持平均谱的分成分方差候选原生检查。候选尚未在两个源、两条读出中同时通过联合门槛，不能宣布PID与波动全面一致或替换默认配置。",
+  "findings_zh": [
+    "Co60，r0：F50/F102/F202 SD比由0.975/1.158/1.235变为1.073/0.994/1.045；F202条件95%范围[0.995, 1.122]。当前支持2170个母事件，均ADC相对L2为0.0298。",
+    "Co60，r0联合门槛：通过预定数值门槛；仍需新输运验证。",
+    "Co60，r1：F50/F102/F202 SD比由0.956/1.187/1.245变为0.940/0.951/1.041；F202条件95%范围[0.990, 1.121]。当前支持2173个母事件，均ADC相对L2为0.0299。",
+    "Co60，r1联合门槛：通过预定数值门槛；仍需新输运验证。",
+    "Am241，r0：F50/F102/F202 SD比由0.938/1.050/1.188变为0.961/1.027/1.162；F202条件95%范围[1.087, 1.268]。当前支持1399个母事件，均ADC相对L2为0.0165。",
+    "Am241，r0联合门槛：未通过，失败项：F202_SD_ratio。",
+    "Am241，r1：F50/F102/F202 SD比由0.967/1.127/1.215变为0.965/1.069/1.176；F202条件95%范围[1.103, 1.285]。当前支持1411个母事件，均ADC相对L2为0.0142。",
+    "Am241，r1联合门槛：未通过，失败项：F202_SD_ratio。"
+  ],
+  "joint_guard_passed": {
+    "Co60": true,
+    "Am241": false
+  },
+  "next_work_zh": "保留本轮全部候选和失败项。对仍高于实测的零CV宽度下限，检验平均谱形状、有限时间相关结构及状态混合，而不是继续只增大成分CV；同时保留已得到的短尺度改善和原生均ADC/PID约束。",
+  "limitations_zh": [
+    "校准仅使用对折实测，但这些实验段和MC均已参与探索，不是新的盲验证。",
+    "矩预测固定原母事件队列、零CV r0锚点和无噪声分母；自身定位、随机分母与重新选择的影响只能由实际原生ADC检查。",
+    "差分成分具有频率旁瓣，不能称为独立的物理频带；方差CV描述经验状态，不是实测SiPM增益参数。",
+    "本轮保持平均谱。固定分母近似下增加任何非负成分CV都不能将预测方差压到零CV下限以下；原生结果可以因选择和估计量非线性偏离该预测。",
+    "仅两条预定读出流，不能视为噪声平均已经收敛。512组区间固定拟合和已实现噪声，不含重拟合、系统误差或新噪声积分。",
+    "Am含alpha及gamma/电子成分，MC真值标签不提供实验事件真值；不更新实验ROC或硬件触发效率。"
+  ],
+  "new_independent_mothers": 0,
+  "new_experimental_events": 0,
+  "logical_readout_records": 1024000,
+  "legacy_control_readouts_bit_identical": 512000,
+  "new_candidate_readouts": 512000,
+  "default_changed": false,
+  "official_PID_changed": false,
+  "inputs_sha256": {
+    "simulation/results/spectral_split_20261102/protocol.json": "ec2eaaee60716cb10cb02cdc1e341c645c16067043eccab913fa9acd3ce30c16",
+    "simulation/results/spectral_split_20261102/fit.json": "9dbf98cadceb44e5924bd2e38779557ba2c9cda6c5d021e6731bff72cb8d2612",
+    "simulation/results/spectral_split_20261102/analysis.json": "3f820a93ad0ed3c4f858cd1e618ac3aeb4a95636f3e414840425f632cb50103e",
+    "simulation/results/spectral_split_20261102/algebra_tests.json": "28fe39940946af21a6c1493a03ffa0837206f017dcba7e3ac0e8974785813fa9",
+    "simulation/results/spectral_split_20261102/build_tests.json": "a020f9a2b356641fb81b083f935a2362853899c4f5445a68c5a776887321a752"
+  },
+  "code_sha256": "19e15a253651d4658c1f5ead6ff289419583821aa96dd4ab69edd5dbcb9c748d"
+}

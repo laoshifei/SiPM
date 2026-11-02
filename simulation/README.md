@@ -2,7 +2,41 @@
 
 已实现并运行 **核衰变 → 能量沉积 → 闪烁光输运 → SiPM 雪崩 → 被动读出响应 → ADC → 实测对照**。只支持 `Am241` 和 `Co60`。本目录参考 GAGG_pileup 的 SiPM 数值内核，新建 CsI 几何、源、材料参数和本项目波形对照；未修改参考项目。
 
-最新的[电荷重新分箱与多尺度约束笔记](../jupyter/codex_0001_csi_charge_scale_constraints.ipynb)在英文提交 **`ddd6ca7`** 并push、核对远端后开展。复用上一轮封存的原生读出，比较原Q、仅保留当前Q仍在支持内的原Q队列、按当前Q重新分箱三种条件，并检查F50/F102/F202的联合协方差。**本轮新增Geant4母事件、读出重放和实验事件均为0，没有修改ADC或拟合参数。**
+最新的[互补成分方差与原生检验笔记](../jupyter/codex_0001_csi_spectral_variance_split.ipynb)实现了可选的 `SpectralVarianceSplit` 类，位于 `include/`、`src/`，经现有 `SignalDependentNoise` 接入 Geant4 应用和原生读出。将原高斯创新分成独立的和/差成分，只让差分成分额外产生均值为1的方差起伏，保留原平均协方差、FIR和读出响应。其频谱有旁瓣，不是互不重叠的物理频带；方差CV也不是实测SiPM增益。每折仅用另一实测折的三尺度完整协方差，在预定延迟1/4/16样点与固定边界内提出参数，随后冻结并检查全部 **256000个原Geant4母事件**。新增独立输运和实验事件均为0。
+
+Co60的长尺度过宽明显减轻，Am241仍未通过联合门槛。下表为完整池按实际ADC重新定位、质量切选和当前Q加权后的结果，宽度比为MC/实测：
+
+|源、读出|原F50 / F102 / F202 SD比|候选F50 / F102 / F202 SD比|候选F202条件95%范围|汇总联合门槛|
+|---|---|---|---|---|
+|Co60，r0|0.975 / 1.158 / 1.235|1.073 / 0.994 / 1.045|[0.995, 1.122]|通过|
+|Co60，r1|0.956 / 1.187 / 1.245|0.940 / 0.951 / 1.041|[0.990, 1.121]|通过|
+|Am241，r0|0.938 / 1.050 / 1.188|0.961 / 1.027 / 1.162|[1.087, 1.268]|F202 SD未通过|
+|Am241，r1|0.967 / 1.127 / 1.215|0.965 / 1.069 / 1.176|[1.103, 1.285]|F202 SD未通过|
+
+r0的平均ADC相对L2为Co **2.98%**、Am **1.65%**；QDC/平均时间/PCA的SD比为Co **0.996/0.961/0.985**、Am **1.049/0.973/1.028**。两条流的PID核心/95%宽度、平均ADC回退和协方差回退均满足预定检查。Co的F完整协方差误差由r0的0.319降至0.059，但汇总通过不代表每折稳定：候选Co F50的分折点估计范围为 **0.869–1.148**。仅两个读出流，不能当作已收敛的噪声平均或新的盲验证；512组条件区间固定拟合、参考、质量阈值和已实现噪声，不含重拟合或系统误差。
+
+本轮共1024000条逻辑读出，其中 **512000条旧参数/零CV控制与上一轮ADC逐样点相同**，其余512000条是候选r0/r1。7项原生测试和独立高斯矩模拟通过；全部候选共同范围事件从原ADC重算特征，旧512组统计逐项闭合。默认配置与正式PID未替换。Am的零CV长尺度下限仍偏宽，下一步应检验平均噪声谱形状、有限时间相关结构或状态混合，并保留平均波形与PID约束；继续只调成分CV不能在固定分母近似下突破该下限。
+
+见[三尺度原生结果](results/spectral_split_20261102/figures/spectral_native_scales.png)、[PID](results/spectral_split_20261102/figures/spectral_native_pid.png)、[平均ADC](results/spectral_split_20261102/figures/spectral_native_mean_adc.png)、[全部候选预测](results/spectral_split_20261102/figures/spectral_proposal.png)、[互补谱](results/spectral_split_20261102/figures/spectral_partition.png)、[冻结方案](results/spectral_split_20261102/protocol.json)和[结论](results/spectral_split_20261102/decision.json)。流程为 `prepare_spectral_split.py` → `fit_spectral_split.py` → `run_spectral_split.py` → `extract_spectral_split.py` → `analyze_spectral_split.py` → `report_spectral_split.py` → 笔记生成器 → `verify_spectral_split.py`及`--archive`。复现须使用新目录；两次字段/导出格式修正均保留旧方案和更改记录，未更改模型与门槛，导出修正前后的16个数值产物逐字节相同。
+
+上一轮的[完整母事件池选择核查笔记](../jupyter/codex_0001_csi_full_pool_selection.ipynb)在英文提交 **`4a00b1c`**（`Evaluate CsI charge selection and multiscale fluctuation constraints`）并push、核对远端后开展。对已有全部 **256000个Geant4母事件**（Co64000、Am192000）进行当前/零CV响应、r0/r1读出，共1024000条逻辑重放。新入口`replay_full_pool.cc`逐事件复用原雪崩历史，包含原质量和电荷范围外的事件；没有旧Q预筛选。**新增独立输运和实验事件均为0，响应参数、默认配置及正式PID不变。**
+
+完整重选仍未消除F202过宽。主读出r0中，Co支持2175→2172个，移入9、移出12；Am支持1406→1399个，移入21、移出28，其中11个来自原共同队列外。当前质量切选未改变这两个源的支持事件，进入/退出来自电荷边界；完整批次与分折基线参考的判定一致。第二读出流r1分别移入60/87、移出59/81个，但主要宽度结论保留。
+
+|源、读出|原队列按当前Q的F202 SD比|完整当前选择F202 SD比及条件95%范围|零CV完整选择F50 / F202 SD比|
+|---|---|---|---|
+|Co60，r0|1.233|1.235 [1.171, 1.330]|0.637 / 1.001|
+|Co60，r1|1.244|1.245 [1.186, 1.341]|0.630 / 1.010|
+|Am241，r0|1.185|1.188 [1.110, 1.298]|0.891 / 1.162|
+|Am241，r1|1.223|1.215 [1.135, 1.322]|0.898 / 1.180|
+
+原512组实验块及已选母事件计数逐项保留；对原未选母事件作完整多项分布的精确条件扩展，两条读出和两个模型共用母事件计数。原队列/原Q及当前Q统计闭合上一轮结果。r0完整选择的平均ADC相对L2为Co **2.98%**、Am **1.65%**；QDC/平均时间/PCA的SD比分别为Co **0.994/0.960/0.983**、Am **1.049/0.971/1.027**。F202是额外的波形波动诊断，不能将其偏差直接说成所有PID宽度的偏差。
+
+两个读出流不是收敛的噪声平均；区间固定响应、参考、已生成读出和质量阈值，不含重拟合或装置系统误差。这里验证的是MC软件选择，未完成硬件触发效率验证。Am源含alpha及gamma/电子成分，MC祖先标签不提供实测事件真值。**下一步在完整当前选择下检验能区分短、长尺度相关起伏的最小残差结构，同时约束平均ADC、PID核心/尾部和F三尺度协方差；联合检查通过后再冻结独立输运验证。**
+
+见[完整选择](results/full_selection_20261102/figures/full_pool_selection.png)、[三尺度宽度](results/full_selection_20261102/figures/full_pool_scales.png)、[PID宽度](results/full_selection_20261102/figures/full_pool_pid.png)、[协方差](results/full_selection_20261102/figures/full_pool_covariance.png)、[平均ADC](results/full_selection_20261102/figures/full_pool_mean_adc.png)、[冻结方案](results/full_selection_20261102/protocol.json)及[结论](results/full_selection_20261102/decision.json)。流程为`prepare_full_selection.py` → `run_full_selection.py` → `extract_full_selection.py` → `analyze_full_selection.py` → `report_full_selection.py` → 笔记生成器 → `verify_full_selection.py`及`--archive`。复现须使用新结果目录；`native_compatibility.json`记录14644条旧队列读出的逐样点ADC闭合，`verification.json`和`record.json`保存最终核验与封存。
+
+上一轮的[电荷重新分箱与多尺度约束笔记](../jupyter/codex_0001_csi_charge_scale_constraints.ipynb)在英文提交 **`ddd6ca7`** 并push、核对远端后开展。复用上一轮封存的原生读出，比较原Q、仅保留当前Q仍在支持内的原Q队列、按当前Q重新分箱三种条件，并检查F50/F102/F202的联合协方差。**该轮新增Geant4母事件、读出重放和实验事件均为0，没有修改ADC或拟合参数。**
 
 零号读出、晚段块128的当前响应中，Co重新分箱后F202 SD比由 **1.232变为1.233**，33个事件换箱、12个移出支持；Am由 **1.201变为1.185**，112个换箱、28个移出及10个已有事件移入支持。原队列外的事件不能补回，因此这只是原有限队列内的选择敏感性。16次重复分别重新加权后再平均协方差，结果及前8/后8敏感性另报，不能把重复摊平当成独立母事件。
 

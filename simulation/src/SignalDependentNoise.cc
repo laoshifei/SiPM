@@ -1,4 +1,5 @@
 #include "SignalDependentNoise.hh"
+#include "SpectralVarianceSplit.hh"
 #include <algorithm>
 #include <cmath>
 #include <random>
@@ -12,6 +13,7 @@ bool SignalDependentNoise::Enabled(const nlohmann::json& config) {
 void SignalDependentNoise::Validate(const nlohmann::json& config, const sipm::Readout& readout) {
   if (!Enabled(config)) return;
   const auto& model = config.at("signal_dependent_noise");
+  SpectralVarianceSplit::Validate(model);
   if (model.at("model") != "gaussian_fir_signal_variance")
     throw std::runtime_error("Unknown signal-dependent noise model");
   const double variance = model.at("variance_per_signal_adc");
@@ -56,6 +58,7 @@ void SignalDependentNoise::Apply(const nlohmann::json& config, const sipm::Reado
   std::normal_distribution<double> gaussian(0.,1.);
   std::vector<double> white(n+h.size()-1);
   for (double& x : white) x = gaussian(engine);
+  SpectralVarianceSplit::Apply(model,result.readout_seed,white);
   // A positive mean-one multiplier describes measured event-to-event residual
   // heterogeneity. Its stream is independent of the FIR innovations. It is
   // NOT a change to the physical SiPM gain or the avalanche charge.

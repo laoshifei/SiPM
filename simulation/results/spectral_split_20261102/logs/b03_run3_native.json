@@ -1,0 +1,18 @@
+{
+  "output_sha256": "42bbe6f297e2a0eb05ee14ff9f79cf1bd5cefaa5aefd72d699ae705970c639d3",
+  "binary_sha256": "e9729c34a97d7a4f4b1bd908c58240359a2e9e223ebacc3f0cb43fe4777d6ac4",
+  "plan_sha256": "409953ef6ce10bf0cfd088e741d1f1133ef5438453ee57da7ede8618856b04e7",
+  "command": [
+    "/media/sf_works/SiPM/simulation/build/spectral_split_20261102/replay_spectral_pool",
+    "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b03_run3.root",
+    "/media/sf_works/SiPM/simulation/results/spectral_split_20261102/configs/b03_run3_jobs.json"
+  ],
+  "seconds": 143.1907148361206,
+  "legacy_control_readouts_bit_identical": 32000,
+  "clipped_samples": [
+    0,
+    0,
+    0,
+    0
+  ]
+}

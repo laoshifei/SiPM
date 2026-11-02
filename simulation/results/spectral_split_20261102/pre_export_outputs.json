@@ -1,0 +1,21 @@
+{
+  "outputs_sha256": {
+    "simulation/results/spectral_split_20261102/evaluation/Am241_bootstrap.npz": "8ca1821c1228ddad992c48cf79843055d0f1e3918b8ae53d786d24ffb953bd31",
+    "simulation/results/spectral_split_20261102/evaluation/Am241_counts.npz": "3013cccc6d12842f443eee2198d318f606b512084ed9df72df5616152ce67136",
+    "simulation/results/spectral_split_20261102/evaluation/Am241_current_r0.npz": "ad329c68b932d7632495125a8f66ed98e112b5727690735bdc7e183c49669ecd",
+    "simulation/results/spectral_split_20261102/evaluation/Am241_current_r1.npz": "8cf322cd66edc1869df4001f9d2765a48df4dbff98ca5fe46437e365b4072970",
+    "simulation/results/spectral_split_20261102/evaluation/Am241_split_r0.npz": "149eed1f31ed44e82539b4d5542aaeb001e370b65964f30ae8d34ce29c8fde8f",
+    "simulation/results/spectral_split_20261102/evaluation/Am241_split_r1.npz": "61095409acba4b69354e0a9019cd9f1a858ff572ffb42152a03cf285d2b980dd",
+    "simulation/results/spectral_split_20261102/evaluation/Am241_zero_cv_r0.npz": "ee84bb427858aa65b293d55eb27b90114ad1a123a838098dd0f0739e67678e7b",
+    "simulation/results/spectral_split_20261102/evaluation/Am241_zero_cv_r1.npz": "d166118eb7e1b87342731d8f6316f81caec98de8d070caaf84441f46d2a035ff",
+    "simulation/results/spectral_split_20261102/evaluation/Co60_bootstrap.npz": "b3c9417cf1da96cc9b61b5aa0ccf446380dc989a4a875bc0692d31c38c0c5c79",
+    "simulation/results/spectral_split_20261102/evaluation/Co60_counts.npz": "9e7ffc4902af14c0c057e7f92c6ccdd3945339da2e2a58e2362cc181de03c601",
+    "simulation/results/spectral_split_20261102/evaluation/Co60_current_r0.npz": "d5edab0a608020af033ae050f0840850385b7ff6601422b0d167d1bab2c337ab",
+    "simulation/results/spectral_split_20261102/evaluation/Co60_current_r1.npz": "e1d090f99ae52d82732648d638e98102bb258ad032385944fb0d96c9e9a186b6",
+    "simulation/results/spectral_split_20261102/evaluation/Co60_split_r0.npz": "e16025d1828f41e7c7a814e178fbfd55916b4744b0222b0aac30f538cb87b952",
+    "simulation/results/spectral_split_20261102/evaluation/Co60_split_r1.npz": "6cf2b5aa757cb91c5ee8c5902bc37e50f19d1f370ba7990e8295e002fa48b01f",
+    "simulation/results/spectral_split_20261102/evaluation/Co60_zero_cv_r0.npz": "d760fa48a19103d75ce9a307c08fde35a3a536bb82a279762d5b46ce03a07ff6",
+    "simulation/results/spectral_split_20261102/evaluation/Co60_zero_cv_r1.npz": "965ad816d094389d2e85f052a408a46ee92455bc5f9145fd5f7194a29f36bbec"
+  },
+  "reason": "Analysis completed all paired draws and inherited closure, then failed exporting NumPy bool guards. Preserve numerical products before JSON type-only correction."
+}

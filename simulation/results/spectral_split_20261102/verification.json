@@ -1,0 +1,41 @@
+{
+  "inputs_verified": 114,
+  "complete_parent_events": 256000,
+  "legacy_readouts_bit_identical": 512000,
+  "legacy_ADC_samples_bit_identical": 1277952000,
+  "candidate_ADC_QC_checks": 11502,
+  "all_candidate_common_features_recomputed": 7316,
+  "bounded_proposals_verified": 12,
+  "numeric_outputs_unchanged_after_export_fix": 16,
+  "direct_weighted_moment_cells": 54,
+  "bootstrap_valid_draws": {
+    "Co60": {
+      "current_r0": 512,
+      "zero_cv_r0": 512,
+      "split_r0": 512,
+      "current_r1": 512,
+      "zero_cv_r1": 512,
+      "split_r1": 512
+    },
+    "Am241": {
+      "current_r0": 512,
+      "zero_cv_r0": 512,
+      "split_r0": 512,
+      "current_r1": 512,
+      "zero_cv_r1": 512,
+      "split_r1": 512
+    }
+  },
+  "notebook_cells": 11,
+  "executed_code_cells": 5,
+  "embedded_PNG": 5,
+  "table_rows": {
+    "proposal_table.csv": 12,
+    "comparison_table.csv": 12
+  },
+  "notebook_sha256": "d42426797c696b4e18a51c0502eff4642ac0930ee1bb98b36b527999b59108a3",
+  "code_sha256": "46faeed5f429e170da1b8385aa568d29e67b8b08266c8cb8795c2c10475b1b51",
+  "new_independent_mothers": 0,
+  "default_changed": false,
+  "official_PID_changed": false
+}

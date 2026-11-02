@@ -1,0 +1,32 @@
+{
+  "variants": {
+    "split_r0": {
+      "array_sha256": "d8c28000aa75ad0d52d7bdfc19a9e1d75c4878e06a2e03ee9d0cf172f44ca1cc",
+      "mothers": 48000,
+      "common": 372,
+      "supported": 351,
+      "global_baseline_RMS": 5.637440128242915,
+      "fold_baseline_RMS": [
+        5.549050518934523,
+        5.739362080488627
+      ],
+      "fold_QC_disagreement": 0,
+      "nonfinite_selected_features": 0
+    },
+    "split_r1": {
+      "array_sha256": "cf445178cd6cd4653d8ee3b77961b1a1ee920b49ece2b15b15f971c57a3e03f2",
+      "mothers": 48000,
+      "common": 367,
+      "supported": 345,
+      "global_baseline_RMS": 5.63779739980972,
+      "fold_baseline_RMS": [
+        5.548629784008368,
+        5.733616583768263
+      ],
+      "fold_QC_disagreement": 0,
+      "nonfinite_selected_features": 0
+    }
+  },
+  "native_sha256": "145d3720522d1f55d58a746563fce49508bef100f531ac1495761a4b20de3117",
+  "code_sha256": "ba7b48c9822097fc90413289775a5a5287e0ae3e35c49676546145190a8692f5"
+}

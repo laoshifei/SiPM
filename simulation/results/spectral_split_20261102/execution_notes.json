@@ -1,0 +1,9 @@
+{
+  "pre_fit_schema_fix": "Compact prior point arrays omit t10; use exact zero-CV r0 anchors from the already frozen complete-pool arrays. No calibration finished before this schema lookup fix; model, objective, bounds and seeds unchanged.",
+  "analysis_export_type_correction": {
+    "previous_protocol": "pre_export_analysis_protocol_v1.json",
+    "previous_source": "pre_export_analyze_spectral_split_v1.py",
+    "numerical_outputs": "pre_export_outputs.json",
+    "change": "Convert NumPy bool results to builtin bool for JSON only; all prior numeric output hashes retained in pre_export_outputs.json. No model, metric, data, RNG, fit, threshold or bootstrap changes."
+  }
+}

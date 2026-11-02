@@ -1,0 +1,9 @@
+{
+  "figures_sha256": {
+    "simulation/results/full_selection_20261102/figures/full_pool_selection.png": "86344bce3503964e530c0bfd4786731482fd5ecca4c6ef842043ecfeeca94c85",
+    "simulation/results/full_selection_20261102/figures/full_pool_scales.png": "1111b8ca0745abfd8ac81e1f444a9a47a2f23c23cd416b939f3a0a3d729de94a",
+    "simulation/results/full_selection_20261102/figures/full_pool_pid.png": "e0b67da82262644c566296790700843585b16f2e15fdbbbf04629dcb9bbebb79",
+    "simulation/results/full_selection_20261102/figures/full_pool_mean_adc.png": "69ffcf1bc8ce631c2ae8310e0f8aec8e8ab29614bab78c8b4b73a13976e94a54",
+    "simulation/results/full_selection_20261102/figures/full_pool_covariance.png": "f599bdd8e5e6b721d86e91d18af6d4e60517001aa86e7150ca76474ddce6f5a6"
+  }
+}

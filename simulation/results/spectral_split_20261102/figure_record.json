@@ -1,0 +1,9 @@
+{
+  "figures_sha256": {
+    "simulation/results/spectral_split_20261102/figures/spectral_proposal.png": "0232f33ee54c8e035c624088b333332b17089562de0daecd7a13e608d6c394d7",
+    "simulation/results/spectral_split_20261102/figures/spectral_partition.png": "168fddd403efcf9091f043425a4e11da51ca086f3b3a0965472cfe69c06eddf4",
+    "simulation/results/spectral_split_20261102/figures/spectral_native_scales.png": "4c105b3ea251b9a5f5f4695910b80802851d56867349cc996030b6f0f2e36401",
+    "simulation/results/spectral_split_20261102/figures/spectral_native_pid.png": "038fa46037a716efc9bd8aecd5a25cc2256da4132b06d0485f31365c185ceed1",
+    "simulation/results/spectral_split_20261102/figures/spectral_native_mean_adc.png": "ce25b5d3be275481bda547312913910cfda2c76c07b7117db3d6f33d2a282745"
+  }
+}

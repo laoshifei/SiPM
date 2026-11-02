@@ -1,0 +1,15 @@
+{
+  "comparisons": {
+    "Co60": {
+      "QC_events": 600,
+      "original_and_current_charge_statistics_identical": true
+    },
+    "Am241": {
+      "QC_events": 600,
+      "original_and_current_charge_statistics_identical": true
+    }
+  },
+  "conditional_multinomial_draws": 20000,
+  "excluded_invalid_waveform_not_used": true,
+  "code_sha256": "8a0f5b3144c027dedda1a5ffdce6ab7e423f95bb4cab55ad99385ac407e5a192"
+}

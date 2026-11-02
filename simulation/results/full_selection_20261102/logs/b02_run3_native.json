@@ -1,0 +1,24 @@
+{
+  "command": [
+    "/media/sf_works/SiPM/simulation/build/full_selection_20261102/replay_full_pool",
+    "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/native/b02_run3.root",
+    "/media/sf_works/SiPM/simulation/results/full_selection_20261102/configs/b02_run3.json"
+  ],
+  "seconds": 174.34166479110718,
+  "output_sha256": "755f40f3f1818354676adc227796e6a523dab3fc8552925301261216713d2aad",
+  "plan_sha256": "91ee5e280d95593b1858c12da4307115d906fa7fdd668e7c47b5ba728fb34ce2",
+  "binary_sha256": "4fa96b39e23784ef8982bfc472b07f23d9c52f657004fd9c70924101b1773ade",
+  "events": 16000,
+  "clipped_samples": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "equal_original_ADC": [
+    0,
+    0,
+    0,
+    0
+  ]
+}
