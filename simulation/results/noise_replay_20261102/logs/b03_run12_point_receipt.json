@@ -1,0 +1,52 @@
+{
+  "plan": "b03_run12_point",
+  "plan_sha256": "57c66d6de24c7bea2ec112d5d9b376906d02d60c855a966afb565afefcb06df2",
+  "protocol_sha256": "0fba7386cf8acd85f1511a1c6caf7bdfd2cbaecb5fc3d0a548b8312479b358ca",
+  "jobs": {
+    "b03_run12_point_j000": {
+      "root_sha256": "25ec1b2ee74275132a3d940da76242f28e94c80780b2cc2b625555617d13d965",
+      "array_sha256": null,
+      "config_sha256": "c65e4dbca4969ebdc1e93a4a4b1b95f5ad042bcb0d7dfdf23cce774a19580d43",
+      "entries": 372,
+      "noise_replica": 0,
+      "noise_scope": "all_readout",
+      "unchanged_noiseless_signal": true,
+      "signal_sha256": "774021fac81aefeb44255b4a507b5323976b757fb55be5cd88c530f0b63f7bad",
+      "clipped_samples": 0,
+      "new_independent_mothers": 0,
+      "native_identity": true
+    },
+    "b03_run12_point_j001": {
+      "root_sha256": "e9c15da703aa8d6f60666b463ce696c0cc9733dc5cb0ef6617902088e86ae075",
+      "array_sha256": "93d449181d7066c810dd98b58a7378888073f9cc45e425fa241dede37b6a3380",
+      "config_sha256": "14dace08f0a1ad066a4780eca7cc451d7602bfc8695bc30065918600037e2a6e",
+      "entries": 372,
+      "noise_replica": 0,
+      "noise_scope": "all_readout",
+      "unchanged_noiseless_signal": true,
+      "signal_sha256": "b11ac19f135f94d437baad9eff8c801c12fbbff3936130d08e137296a0b87a96",
+      "clipped_samples": 0,
+      "new_independent_mothers": 0,
+      "native_identity": false
+    },
+    "b03_run12_point_j002": {
+      "root_sha256": "9a7df86b990e23dc0057605376132f0096c5040fbabbf666f90431692b4ed70f",
+      "array_sha256": "d241925a1afdd9e43edbff7cf1e7482134db9f85e4803fea057ddda92c7d7b82",
+      "config_sha256": "5dbc0f08f66ebd0def4c5460b570249dd937274c567341bf96bb87c473735882",
+      "entries": 372,
+      "noise_replica": 0,
+      "noise_scope": "all_readout",
+      "unchanged_noiseless_signal": true,
+      "signal_sha256": "c95ccdbe29ea382f9f7614bb54d1104aca978ace8dbadd299c7c00ab8116f385",
+      "clipped_samples": 0,
+      "new_independent_mothers": 0,
+      "native_identity": false
+    }
+  },
+  "seconds": 28.60552430152893,
+  "new_independent_mothers": 0,
+  "outputs_sha256": {
+    "simulation/results/noise_replay_20261102/arrays/b03_run12_point_j001.npz": "93d449181d7066c810dd98b58a7378888073f9cc45e425fa241dede37b6a3380",
+    "simulation/results/noise_replay_20261102/arrays/b03_run12_point_j002.npz": "d241925a1afdd9e43edbff7cf1e7482134db9f85e4803fea057ddda92c7d7b82"
+  }
+}

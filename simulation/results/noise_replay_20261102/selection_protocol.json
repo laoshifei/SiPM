@@ -1,0 +1,429 @@
+{
+  "q_edges": [
+    201824.1125,
+    237975.62708333333,
+    274127.14166666666,
+    310278.65625,
+    346430.17083333334,
+    382581.6854166667,
+    418733.2
+  ],
+  "support_bins": {
+    "Co60": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "Am241": [
+      0,
+      1,
+      2
+    ]
+  },
+  "conditional_cuts": {
+    "Co60": {
+      "0": {
+        "q_quartiles": [
+          213530.25,
+          224292.25,
+          229674.75
+        ],
+        "rms_median": 3.2988738016745955,
+        "q2_target": [
+          0.4935064935064935,
+          0.5064935064935064
+        ],
+        "q4_target": [
+          0.24675324675324675,
+          0.24675324675324675,
+          0.24675324675324675,
+          0.2597402597402597
+        ],
+        "q2r2_target": [
+          0.2987012987012987,
+          0.19480519480519481,
+          0.19480519480519481,
+          0.3116883116883117
+        ],
+        "training_n": 77
+      },
+      "1": {
+        "q_quartiles": [
+          249471.75,
+          259007.75,
+          266566.0
+        ],
+        "rms_median": 3.4460121880225554,
+        "q2_target": [
+          0.49635036496350365,
+          0.5036496350364964
+        ],
+        "q4_target": [
+          0.24817518248175183,
+          0.24817518248175183,
+          0.24817518248175183,
+          0.25547445255474455
+        ],
+        "q2r2_target": [
+          0.24087591240875914,
+          0.25547445255474455,
+          0.25547445255474455,
+          0.24817518248175183
+        ],
+        "training_n": 137
+      },
+      "2": {
+        "q_quartiles": [
+          286112.1875,
+          295286.625,
+          303201.3125
+        ],
+        "rms_median": 3.33254145321797,
+        "q2_target": [
+          0.5,
+          0.5
+        ],
+        "q4_target": [
+          0.25177304964539005,
+          0.24822695035460993,
+          0.24822695035460993,
+          0.25177304964539005
+        ],
+        "q2r2_target": [
+          0.25886524822695034,
+          0.24113475177304963,
+          0.24113475177304963,
+          0.25886524822695034
+        ],
+        "training_n": 282
+      },
+      "3": {
+        "q_quartiles": [
+          321641.0,
+          331390.75,
+          339488.0
+        ],
+        "rms_median": 3.3481279750780137,
+        "q2_target": [
+          0.499054820415879,
+          0.500945179584121
+        ],
+        "q4_target": [
+          0.2495274102079395,
+          0.2495274102079395,
+          0.2495274102079395,
+          0.2514177693761815
+        ],
+        "q2r2_target": [
+          0.2589792060491493,
+          0.24007561436672967,
+          0.2381852551984877,
+          0.2627599243856333
+        ],
+        "training_n": 529
+      },
+      "4": {
+        "q_quartiles": [
+          356064.9375,
+          365870.875,
+          374653.1875
+        ],
+        "rms_median": 3.371290639761466,
+        "q2_target": [
+          0.5,
+          0.5
+        ],
+        "q4_target": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "q2r2_target": [
+          0.25523560209424084,
+          0.24476439790575916,
+          0.24476439790575916,
+          0.25523560209424084
+        ],
+        "training_n": 764
+      },
+      "5": {
+        "q_quartiles": [
+          390342.5,
+          396853.625,
+          405467.5
+        ],
+        "rms_median": 3.3285100984842035,
+        "q2_target": [
+          0.5,
+          0.5
+        ],
+        "q4_target": [
+          0.250788643533123,
+          0.24921135646687698,
+          0.24921135646687698,
+          0.250788643533123
+        ],
+        "q2r2_target": [
+          0.24605678233438485,
+          0.2539432176656151,
+          0.2539432176656151,
+          0.24605678233438485
+        ],
+        "training_n": 634
+      }
+    },
+    "Am241": {
+      "0": {
+        "q_quartiles": [
+          208701.5,
+          218005.5,
+          228342.5
+        ],
+        "rms_median": 3.1914421088866707,
+        "q2_target": [
+          0.4991023339317774,
+          0.5008976660682226
+        ],
+        "q4_target": [
+          0.2495511669658887,
+          0.2495511669658887,
+          0.2495511669658887,
+          0.2513464991023339
+        ],
+        "q2r2_target": [
+          0.24416517055655296,
+          0.25493716337522443,
+          0.25493716337522443,
+          0.2459605026929982
+        ],
+        "training_n": 557
+      },
+      "1": {
+        "q_quartiles": [
+          245954.5,
+          252571.5,
+          261583.5
+        ],
+        "rms_median": 3.1396142652203314,
+        "q2_target": [
+          0.4987146529562982,
+          0.5012853470437018
+        ],
+        "q4_target": [
+          0.2493573264781491,
+          0.2493573264781491,
+          0.2493573264781491,
+          0.2519280205655527
+        ],
+        "q2r2_target": [
+          0.2467866323907455,
+          0.2519280205655527,
+          0.2519280205655527,
+          0.2493573264781491
+        ],
+        "training_n": 389
+      },
+      "2": {
+        "q_quartiles": [
+          281622.8125,
+          290740.75,
+          299654.5
+        ],
+        "rms_median": 3.2348420752374967,
+        "q2_target": [
+          0.5,
+          0.5
+        ],
+        "q4_target": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "q2r2_target": [
+          0.23706896551724138,
+          0.2629310344827586,
+          0.2629310344827586,
+          0.23706896551724138
+        ],
+        "training_n": 232
+      }
+    }
+  },
+  "block_sizes": [
+    64,
+    128
+  ],
+  "variants": [
+    "frozen",
+    "inherited_CV_fit",
+    "spectrum_CV_fit"
+  ],
+  "scope": "Freeze the observable-band audit before examining its derived comparisons.",
+  "checkpoint_commit": "82d42f83927242306c72700b99a42c663d43d46c",
+  "inputs_sha256": {
+    "simulation/results/qdc_fluctuation_20261101/analysis.json": "08d94d83a2ce64ce39efb54372256730d6bcea6945f082d591db2a068e88e6d7",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run12_first60_B128_data.npz": "bfe3797e2fa635fe67806acd949753b71f19f151ac997bfc7cc7f42cd9d9efd7",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run12_first60_B128_frozen.npz": "627d6004a6b53a37b6be3345466b5b29c2393cdffde671bbba2281533f7199f8",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run12_first60_B128_inherited_CV_fit.npz": "439c5e9a92273b2de15034359758265a0508878e8dcff7731e8bebeadbaedb69",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run12_first60_B128_spectrum_CV_fit.npz": "2a6f62feed38a4d12a734a8812ec337c357822a23cd32821a325062eac4317de",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run12_first60_B64_data.npz": "2a67e1e694cc6b79f49af3f3d9661351e3afd594a503df9a2af8b8ee1a2fc8a2",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run12_first60_B64_frozen.npz": "ceddf52e29e9232eff322361cb7e943f541f49882dcc571462775cab50bcefcf",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run12_first60_B64_inherited_CV_fit.npz": "2e11aafa20bbad3c184b61e47034e6276912750eecf9268609ca8eb1061493fb",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run12_first60_B64_spectrum_CV_fit.npz": "07ce13df361f06b2c1cbef6dba4307d6cf8e8d1f9f8dfa8ec478e53e40c0b868",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run12_last20_B128_data.npz": "4e52aabf983e342b3940ba703e0db082c06da549729817ab3b89f837471ca733",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run12_last20_B128_frozen.npz": "8f984c7aeac22e7762c44ab033bf174450a22d60244288fd7fdb0504920a3f19",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run12_last20_B128_inherited_CV_fit.npz": "2a96bed70ee6fd57ffe95ee876b6bbac707a6ad4af1ad6a87450b016a8483513",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run12_last20_B128_spectrum_CV_fit.npz": "37873d35acd71900fe4fa2b89d1ebb7d6bab2c61ba35263dd074c6177ddf40e7",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run12_last20_B64_data.npz": "16d730e74612d170d94f14660466b0947edbbd0998b91d47da7f1b8a1761526b",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run12_last20_B64_frozen.npz": "69afee0dcbeec7d0c81ad142109d96af3721427fa4a36524ba4c309c02999700",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run12_last20_B64_inherited_CV_fit.npz": "68d0485df47994d924645454a1b3416d4f9ee6b8b8f4f089b36cf137d767e5ff",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run12_last20_B64_spectrum_CV_fit.npz": "ad443ea35af31fd6df06d452eb3c7d8545d1ff322603c8cc18dac83a12f41b49",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run12_middle20_B128_data.npz": "b258f23731e7cde36f6007c2732ffe9381f8bafbff3a78ace64efc3d0e3c615e",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run12_middle20_B128_frozen.npz": "0be0bf0c9e3b8b3b63fa38e5fc3bdaa9d28e5382621e972f47a708957e8394d7",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run12_middle20_B128_inherited_CV_fit.npz": "c0cddb75371cb21235bbbf1de89fc5819efe1346ac076af957312671c1fdf267",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run12_middle20_B128_spectrum_CV_fit.npz": "c0a4677cb70d38f4a3d3e18045108fdd44d05252af85330a33ef80b4c1f9622d",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run12_middle20_B64_data.npz": "35982f7532e824060f97fb7325daf67b9574199c01c645f38c0e638d62a97e8a",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run12_middle20_B64_frozen.npz": "9c63c38b0cc812357761475e0708f80a9ccc83d03fbe0d4951696028710e7603",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run12_middle20_B64_inherited_CV_fit.npz": "10e734ce73d9b2f600b20f35dfc89a0275cf1374a990c113c6ca6603ff33f4c2",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run12_middle20_B64_spectrum_CV_fit.npz": "e685c4adc1b0215a1824acecc0a3278a73a228bac02cb2a22a9111da5f2d1b6e",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run3_first60_B128_data.npz": "93cad396132e238225e96962dbbc8f955f8ddcdefc17c5c4fe5e1c52a5bbed25",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run3_first60_B128_frozen.npz": "7c4d3ffc6af577058104ab40d8f8a51706cc98b55a827f6c87fd873b695df942",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run3_first60_B128_inherited_CV_fit.npz": "26ecfe7f8dbd2e0160e984a51f391c507c4b909daa73f8c88d57607ca8ee07b1",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run3_first60_B128_spectrum_CV_fit.npz": "532b0ce7a3f832b379edffd59926bfce17fd5fc2d9501f680a4580ceccff06f5",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run3_first60_B64_data.npz": "5278fc881e4ef02ca723fc4f4692e81e6ac9d83326896e80a14664e18fd574b7",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run3_first60_B64_frozen.npz": "3e422e31ca03249c596550f8a45fc817ff8ef4f565881672c12012af3676510e",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run3_first60_B64_inherited_CV_fit.npz": "db9b87cbf2f9787cda6fe117dc8ff210a3870f383fdf943bb2e9af1aa4b3d8be",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run3_first60_B64_spectrum_CV_fit.npz": "d4ce2aaf02982e09cefb6257b2e1ead504e3bb6fb689876c1fb14499159cad99",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run3_last20_B128_data.npz": "937ac5efcf1d40eb75da54cc1db10062e95d2cbec09996bbfe8cbcd5ed60e3d4",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run3_last20_B128_frozen.npz": "efce7b323efc69777d6fb32267868c5a87971b5e0d6d2a100c05203051d356d5",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run3_last20_B128_inherited_CV_fit.npz": "963c7e7f637c59c3baa49eb7b21ac9a0fa89c00fc2fc93d30c4b3373567caf8a",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run3_last20_B128_spectrum_CV_fit.npz": "8d2d97a5e61aecd26e383531d682b8d218c408e038280678a4c2cf5fd39e0aa2",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run3_last20_B64_data.npz": "3601ed2317d6adf50a2cc48858222a3b13dce8bafdf7d8232a3a95cde0140fd7",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run3_last20_B64_frozen.npz": "d8421ec678941bda1c2198e12700f90e745e1dec78f8096cfe471c2e8edd7e4a",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run3_last20_B64_inherited_CV_fit.npz": "b74fc1ccbae5329d7c3a75dcedb05f07efef3e45c8502d294f71a62d744f6d51",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run3_last20_B64_spectrum_CV_fit.npz": "31e5ece73e30b0171a62dea69555937ef55b460d83c1282db46e7b2b24247c2f",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run3_middle20_B128_data.npz": "c67d75ba730d2ceddbd125b5177b00b9a970ec418aeace84946be03c1c741f4a",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run3_middle20_B128_frozen.npz": "8a889bc62ca799df5d0f900a8a5d07c612558d81ce85c2a505c59faa7b7f64cb",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run3_middle20_B128_inherited_CV_fit.npz": "d81638fe9679ac10b19f0cc4f629fb8d71aacf13a5c26bb04065833c732041b3",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run3_middle20_B128_spectrum_CV_fit.npz": "4f0beec56a76052bce6956512a06b8c6effc70f28064402b87582bee2312b539",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run3_middle20_B64_data.npz": "0dd8efd6c662f56fe8ecb6e956c7df2af678b1d9570e90d7b32f7d5fb1cc901a",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run3_middle20_B64_frozen.npz": "cbdfd7669461bd4d5bebdd73bbbdfeeb9d2f0115ed3f92acb1a47f9799812051",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run3_middle20_B64_inherited_CV_fit.npz": "2c4e6e26c8fadd8d13c00f75083e157ddd1d78dbbf5f6643dce0259e33677aae",
+    "simulation/results/qdc_fluctuation_20261101/arrays/run3_middle20_B64_spectrum_CV_fit.npz": "1d8731b58c1413c60d70da48a4222155d0bc6b830882e5ff5cb6fa9ae0c492f5",
+    "simulation/results/qdc_fluctuation_20261101/evaluation/run12_first60_B128.json": "35b8221c26558fb5a5a3b6f122d62e95799295babb0d5e3d902a5d18233eb2f6",
+    "simulation/results/qdc_fluctuation_20261101/evaluation/run12_first60_B128_bootstrap.npz": "434a985855058adde14b50bb0f11ee81c76508a87329f9157cf03099ed3b003b",
+    "simulation/results/qdc_fluctuation_20261101/evaluation/run12_first60_B64.json": "f3027357acd23e36342058593bcf650f338dcf2dd9edcf92664f52b3eb5fe294",
+    "simulation/results/qdc_fluctuation_20261101/evaluation/run12_first60_B64_bootstrap.npz": "8cb690965716088709d2034cf7c1e9bba68eb7a50da4aef1d8e8d1e31e6a058f",
+    "simulation/results/qdc_fluctuation_20261101/evaluation/run12_last20_B128.json": "6fbc7e386a47d58235b7cf59fcbd1dc3fef770dd9ce7ee39c53e1fb51f390e3d",
+    "simulation/results/qdc_fluctuation_20261101/evaluation/run12_last20_B128_bootstrap.npz": "6cd7925326c1411782201fd555d250f5b7a5e000efe0b77e352c232fcc7cdaa0",
+    "simulation/results/qdc_fluctuation_20261101/evaluation/run12_last20_B64.json": "9fcd692be572eaebe565215abb22f74a758e1dd537eccacbc395df6f1bda5a3d",
+    "simulation/results/qdc_fluctuation_20261101/evaluation/run12_last20_B64_bootstrap.npz": "18eeb56d877595b8b5601e30ea4ef714fe7bb6a884bbe3686890ebe80077e671",
+    "simulation/results/qdc_fluctuation_20261101/evaluation/run12_middle20_B128.json": "dbd7e9e380ce566eccf9ef17cfa833d905575085531ccd5b56f3b06dc72473b0",
+    "simulation/results/qdc_fluctuation_20261101/evaluation/run12_middle20_B128_bootstrap.npz": "82db3adf3f295f643e78a8de7e16b3456ae9bfd2a63fadd2a2817f955a97145e",
+    "simulation/results/qdc_fluctuation_20261101/evaluation/run12_middle20_B64.json": "f9249f41e7675c6b1584c120cdf039ffbcaeff981d6c1b8c7099251e64c22903",
+    "simulation/results/qdc_fluctuation_20261101/evaluation/run12_middle20_B64_bootstrap.npz": "b86658393a5154c8aa9a08c8f9609fd524876b21f45abe47f98101814cd09919",
+    "simulation/results/qdc_fluctuation_20261101/evaluation/run3_first60_B128.json": "84cd1904f58ca2ced774c3eac818020bd483b2e14d8dcc5c1cd9d1b77b4cbfbd",
+    "simulation/results/qdc_fluctuation_20261101/evaluation/run3_first60_B128_bootstrap.npz": "a906f64537ad19dac4e0ad89afa6f5672e1928a6a9a9208af56010ee1fab085f",
+    "simulation/results/qdc_fluctuation_20261101/evaluation/run3_first60_B64.json": "cf3926524253b14c48f26e10eeb4eef7345f133915d24be5552d5196bd0d0028",
+    "simulation/results/qdc_fluctuation_20261101/evaluation/run3_first60_B64_bootstrap.npz": "9ba9e9d95f8f822c77c61c6b6ffce148372872935187595146078cd8febc3339",
+    "simulation/results/qdc_fluctuation_20261101/evaluation/run3_last20_B128.json": "f6de82a54d9965ea17e1eafd7cd054ec1c368c386d9bece23f6a7303c52ac403",
+    "simulation/results/qdc_fluctuation_20261101/evaluation/run3_last20_B128_bootstrap.npz": "043a26b7fb6bfb872069bb0d62b9f462d151b8b20b89954f13175ea878ab6562",
+    "simulation/results/qdc_fluctuation_20261101/evaluation/run3_last20_B64.json": "855bcf5d161e65889f0d15cba27825fff4400123f33aff54e45f0af5533ba42a",
+    "simulation/results/qdc_fluctuation_20261101/evaluation/run3_last20_B64_bootstrap.npz": "44af524778f8261b0e3596fd7b20de7f65ce711b612b570816d95117abb34f3c",
+    "simulation/results/qdc_fluctuation_20261101/evaluation/run3_middle20_B128.json": "90ad39a73d7fe51360aa26f920dd423a23edff093dad07af97e0a7559eebb0fa",
+    "simulation/results/qdc_fluctuation_20261101/evaluation/run3_middle20_B128_bootstrap.npz": "7cf40ff97ba98ef266edfee680bf83882650343234520bed97da38690cea9767",
+    "simulation/results/qdc_fluctuation_20261101/evaluation/run3_middle20_B64.json": "a260890f0b6b189fd194ba1a983ff6122c42fc740c2f218edf6c6572b9f9dad1",
+    "simulation/results/qdc_fluctuation_20261101/evaluation/run3_middle20_B64_bootstrap.npz": "77cb82fcc0e4a9fb22b4ddc0b507d789d415a4a859778728c6acb1a972435a31",
+    "simulation/results/qdc_fluctuation_20261101/references/run12_first60_B128.json": "5a0f1e3a2c7b4f9f1ca34c8af19dca57969ddbaaa5df77bda1609e8d071d841f",
+    "simulation/results/qdc_fluctuation_20261101/references/run12_first60_B64.json": "8a9d6915f7cc958e7cfe4dc0b8358784180f86c8e8b31686223ec8b2f9d7bfc3",
+    "simulation/results/qdc_fluctuation_20261101/references/run12_last20_B128.json": "f05a2303ef75a57120d0f271f895bd1a1a9cc743e1cfb561931e457b375ff6fb",
+    "simulation/results/qdc_fluctuation_20261101/references/run12_last20_B64.json": "3fb255fb22ae21666a10aec250de45ec9494662baa96958726b178dceae8eb53",
+    "simulation/results/qdc_fluctuation_20261101/references/run12_middle20_B128.json": "d2c3b29b6260947a6881db79863e6d9ae871ccf1601753b90b55b17d9f718fb6",
+    "simulation/results/qdc_fluctuation_20261101/references/run12_middle20_B64.json": "1a7845a370d5ae13c0c3e9bbec8bd6bf29da1aa0579498c8d445e3e914fc78d9",
+    "simulation/results/qdc_fluctuation_20261101/references/run3_first60_B128.json": "f2a4f9bff098900f67d6593c3c1057c786036d408acc8103857cd3ee240ac31b",
+    "simulation/results/qdc_fluctuation_20261101/references/run3_first60_B64.json": "5178b2fb8395f701e6830192945c0bbb55221462f4c5c641a499eef17a99bf44",
+    "simulation/results/qdc_fluctuation_20261101/references/run3_last20_B128.json": "556f8208133fc21bd3d3e6709ab4b1eb5eec32349e2abc2a88ce289c9faa2782",
+    "simulation/results/qdc_fluctuation_20261101/references/run3_last20_B64.json": "2fa68878656168ae449ffeec08d140f7e3aa0eede010603b950f283c954b712e",
+    "simulation/results/qdc_fluctuation_20261101/references/run3_middle20_B128.json": "a906a9d207b09a54990e27142d40342b1fd9e2f7604447586642565638880c56",
+    "simulation/results/qdc_fluctuation_20261101/references/run3_middle20_B64.json": "db5e52c71fb1a63929fc845bf959316cab144dbe6274e165ccb83e4b68994719",
+    "simulation/results/qdc_fluctuation_20261101/record.json": "4c9e962c50342df0e16310f72f9689c5a44af09a22b024a0debdf97ba014f146",
+    "simulation/results/qdc_fluctuation_20261101/protocol.json": "4b175b31c8368b686bfff9d32c72625feb721877e891ba7f80769eb7ec5aa418",
+    "simulation/results/mc_statistics_20261030/record.json": "510e469e033d802f15d5f31673085a48ddc5a0b162acbbeca0489ab3e06494f1",
+    "simulation/results/mc_statistics_20261030/protocol.json": "22e6a4b5544170d6e8f2e74321e34fa87ad13d9df2260b48c3a6f4eb7b5c4817",
+    "simulation/results/signal_fluctuations_20261028/run3_first60.npz": "95462fa2ab57243fa669e1b4811469df40f2f3522e005db9dc3e64130865add3",
+    "simulation/results/pid_bandwidth_20261029/arrays/measured_run3_first60.npz": "3524db75f16934f8f2294c0081bd4e394c06d83151aa72285cf56ba6b76e3dcc",
+    "simulation/results/signal_fluctuations_20261028/run3_middle20.npz": "87d8ca246dd872e8e62f0b0083262b5e0386213340a0f021963e7f3d14cfd1aa",
+    "simulation/results/pid_bandwidth_20261029/arrays/measured_run3_middle20.npz": "5ca98d4e2304650ba788079478d29bc465e719dc9d51f80d2ab33a0d1e1351b1",
+    "simulation/results/signal_fluctuations_20261028/run3_last20.npz": "63873053f70e3cf4d8ff6d1b4d2b7af3b7aa15b24eaa75973740f443daa67033",
+    "simulation/results/pid_bandwidth_20261029/arrays/measured_run3_last20.npz": "fa8a7407568165fd17ef14f77246c8f25bd8df0dde5aa04e3d54b42db3a71579",
+    "simulation/results/signal_fluctuations_20261028/run12_first60.npz": "887ce1d2cec395f61ee1a196de2ca9b70d790403d60b83335c76df204816504b",
+    "simulation/results/pid_bandwidth_20261029/arrays/measured_run12_first60.npz": "9cc78ea936d98553e23ddd05b35664890f8b9029efae859c1f8592c8d2d25fdc",
+    "simulation/results/signal_fluctuations_20261028/run12_middle20.npz": "7ad68fb1e6b6e14fa63c3ac4b4c29333350fae03e7372efcb1a11a477684ade4",
+    "simulation/results/pid_bandwidth_20261029/arrays/measured_run12_middle20.npz": "6b9605543d541cdbcfdfb8cbec44e6fb088ca8e108cd85a355ba1aea3e17c9dc",
+    "simulation/results/signal_fluctuations_20261028/run12_last20.npz": "f016f8e88ff9c6d27ee6f568e3f12070e6b18c2902b1dc2a28ca57fe877c1237",
+    "simulation/results/pid_bandwidth_20261029/arrays/measured_run12_last20.npz": "e34e9bf77176d38bde499b2f5706aa152697e2fc1dc7e4e65f38eec33de453cc"
+  },
+  "code_sha256": {
+    "simulation/noise_replay_common.py": "05a59e0be21f06b02aa7d7db480d39a03d8de17496336cb2d0d808a7fd30dadc",
+    "simulation/prepare_noise_selection.py": "845aad9ac91bfe7700b7d47043f4002062691bb59622955260a409132a5ea4f7",
+    "simulation/audit_noise_selection.py": "d3423c0b2c3d96c8390b8e89369ce7148c8e840691a7cbaad718b5c33c3a415b"
+  },
+  "features": [
+    "QDC",
+    "negative_mean_time_us",
+    "PCA",
+    "F50",
+    "F102",
+    "F202",
+    "fixed_F50",
+    "fixed_F102",
+    "fixed_F202"
+  ],
+  "metrics": [
+    "QDC_mean_delta",
+    "mean_time_delta_ns",
+    "F50_mean_ratio",
+    "F102_mean_ratio",
+    "F202_mean_ratio",
+    "QDC_SD_ratio",
+    "negative_mean_time_us_SD_ratio",
+    "PCA_SD_ratio",
+    "F50_SD_ratio",
+    "F102_SD_ratio",
+    "F202_SD_ratio",
+    "fixed_F50_SD_ratio",
+    "fixed_F102_SD_ratio",
+    "fixed_F202_SD_ratio",
+    "QDC_width50_ratio",
+    "negative_mean_time_us_width50_ratio",
+    "PCA_width50_ratio",
+    "QDC_width95_ratio",
+    "negative_mean_time_us_width95_ratio",
+    "PCA_width95_ratio"
+  ],
+  "cases": [
+    "all_selected",
+    "inherited",
+    "matched_band",
+    "fixed_MC_band"
+  ],
+  "selection": "Existing quality/common-Q primary experiment before old main-band cut versus its exact old band IDs. Co QDC>=0.4; Am QDC<0.4. MC retains original quality/common-Q IDs and Q; compare all, own-response band and original-frozen-response band. Source names are not particle truth. No truth selection, no removal based on F or tails.",
+  "cases_definition": {
+    "all_selected": "Pre-band measured versus all original MC. Response remains trained on the prior main-band data; this is a population sensitivity, not a new fit.",
+    "inherited": "Prior main-band measured versus all MC; must reproduce prior F means/SDs and QDC widths.",
+    "matched_band": "Prior measured band versus same observable cut on each MC response ADC.",
+    "fixed_MC_band": "Prior measured band versus MC mask from frozen baseline ADC, shared across responses."
+  },
+  "weighting": "Original within-Q variances, equal Q-bin weights and original half-Q target masses. Reweight retained members within each half. Empty positive-mass cells are unestimable; retain all original support bins. Full-cohort survival masses also reported before renormalization.",
+  "uncertainty": "Same512 parent original-index measured block draws and full-mother MC multinomials; consume old-parent counts. Data pre-band and band use identical block draws; MC cuts use identical mother counts. Intervals conditional on frozen references/response/targets; no refit/systematic/multiplicity correction.",
+  "invalid_F": "Nonpositive pulse-window means make original F undefined; count such events and propagate nonfinite F summaries without silently removing events. Other finite PID quantities remain reportable.",
+  "new_independent_mothers": 0,
+  "new_native_replays": 0,
+  "default_changed": false,
+  "official_PID_changed": false
+}

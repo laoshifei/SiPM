@@ -1,0 +1,102 @@
+{
+  "ids": [
+    84,
+    9066,
+    19480,
+    28530,
+    38266,
+    47848
+  ],
+  "jobs": [
+    {
+      "key": "all_readout_0",
+      "config": "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/run12_native.json",
+      "phase_ns": 0.0,
+      "noise_scope": "all_readout",
+      "noise_replica": 0,
+      "require_identity": true,
+      "output": "/media/sf_works/SiPM/simulation/results/noise_replay_20261102/logs/api_test_run12/cached_all_readout_0.root"
+    },
+    {
+      "key": "all_readout_1",
+      "config": "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/run12_native.json",
+      "phase_ns": 0.0,
+      "noise_scope": "all_readout",
+      "noise_replica": 1,
+      "require_identity": false,
+      "output": "/media/sf_works/SiPM/simulation/results/noise_replay_20261102/logs/api_test_run12/cached_all_readout_1.root"
+    },
+    {
+      "key": "all_readout_2",
+      "config": "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/run12_native.json",
+      "phase_ns": 0.0,
+      "noise_scope": "all_readout",
+      "noise_replica": 2,
+      "require_identity": false,
+      "output": "/media/sf_works/SiPM/simulation/results/noise_replay_20261102/logs/api_test_run12/cached_all_readout_2.root"
+    },
+    {
+      "key": "signal_only_0",
+      "config": "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/run12_native.json",
+      "phase_ns": 0.0,
+      "noise_scope": "signal_only",
+      "noise_replica": 0,
+      "require_identity": true,
+      "output": "/media/sf_works/SiPM/simulation/results/noise_replay_20261102/logs/api_test_run12/cached_signal_only_0.root"
+    },
+    {
+      "key": "signal_only_1",
+      "config": "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/run12_native.json",
+      "phase_ns": 0.0,
+      "noise_scope": "signal_only",
+      "noise_replica": 1,
+      "require_identity": false,
+      "output": "/media/sf_works/SiPM/simulation/results/noise_replay_20261102/logs/api_test_run12/cached_signal_only_1.root"
+    },
+    {
+      "key": "signal_only_2",
+      "config": "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/run12_native.json",
+      "phase_ns": 0.0,
+      "noise_scope": "signal_only",
+      "noise_replica": 2,
+      "require_identity": false,
+      "output": "/media/sf_works/SiPM/simulation/results/noise_replay_20261102/logs/api_test_run12/cached_signal_only_2.root"
+    },
+    {
+      "key": "electronics_only_0",
+      "config": "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/run12_native.json",
+      "phase_ns": 0.0,
+      "noise_scope": "electronics_only",
+      "noise_replica": 0,
+      "require_identity": true,
+      "output": "/media/sf_works/SiPM/simulation/results/noise_replay_20261102/logs/api_test_run12/cached_electronics_only_0.root"
+    },
+    {
+      "key": "electronics_only_1",
+      "config": "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/run12_native.json",
+      "phase_ns": 0.0,
+      "noise_scope": "electronics_only",
+      "noise_replica": 1,
+      "require_identity": false,
+      "output": "/media/sf_works/SiPM/simulation/results/noise_replay_20261102/logs/api_test_run12/cached_electronics_only_1.root"
+    },
+    {
+      "key": "electronics_only_2",
+      "config": "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/run12_native.json",
+      "phase_ns": 0.0,
+      "noise_scope": "electronics_only",
+      "noise_replica": 2,
+      "require_identity": false,
+      "output": "/media/sf_works/SiPM/simulation/results/noise_replay_20261102/logs/api_test_run12/cached_electronics_only_2.root"
+    },
+    {
+      "key": "repeat_one",
+      "config": "/media/sf_works/SiPM/simulation/results/mc_statistics_20261030/configs/run12_native.json",
+      "phase_ns": 0.0,
+      "noise_scope": "all_readout",
+      "noise_replica": 1,
+      "require_identity": false,
+      "output": "/media/sf_works/SiPM/simulation/results/noise_replay_20261102/logs/api_test_run12/cached_repeat_one.root"
+    }
+  ]
+}

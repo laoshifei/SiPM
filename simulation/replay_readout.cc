@@ -1,8 +1,6 @@
 // Selected-cohort readout diagnostic, reusing physical avalanche histories.
 #include "ReadoutSampling.hh"
-#ifdef CSI_CACHE_READOUT_BASE
-#include "SignalDependentNoise.hh"
-#endif
+#include "ReadoutReplica.hh"
 #include <TFile.h>
 #include <TTree.h>
 #include <TObjString.h>
@@ -49,13 +47,15 @@ int main(int argc,char** argv) {
     if(seen!=wanted)throw std::runtime_error("Some selected IDs missing");
 #ifdef CSI_CACHE_READOUT_BASE
     // The last base response only: bounded memory across large parameter grids.
-    // Signal-dependent noise is always regenerated from its original RNG seed.
+    // Original base noise is cached. Replica controls regenerate only the
+    // requested downstream streams from the unchanged noiseless signal.
     json cached_key;std::vector<sipm::Result> cached_base;int base_generation=0;
 #endif
     for(const auto& job:plan.at("jobs")) {
       const std::string path=job.at("output"),cp=job.at("config");
       if(std::filesystem::exists(path))throw std::runtime_error("Refusing existing output: "+path);
       const auto c=read(cp);
+      const ReadoutReplica replica(job);
       for(auto key:{"geometry","optical","acquisition"})
         if(c.at(key)!=parent.at(key))throw std::runtime_error("Fixed-history diagnostic changed transport/acquisition");
       if(c.at("sipm").at("sensor")!=parent.at("sipm").at("sensor"))
@@ -79,31 +79,38 @@ int main(int argc,char** argv) {
       TFile file(path.c_str(),"CREATE");if(file.IsZombie())throw std::runtime_error("Cannot create output");
       TTree out("Readout","Selected original-mother readout diagnostic");
       int event_id=0;Long64_t parent_entry=0;std::vector<unsigned> adc;
+      ULong64_t baseline_seed=0,signal_seed=0;
       std::vector<double> signal,analog;
       out.Branch("event_id",&event_id);out.Branch("parent_entry",&parent_entry);
       out.Branch("adc",&adc);out.Branch("signal_mV",&signal);out.Branch("analog_mV",&analog);
+      out.Branch("baseline_readout_seed",&baseline_seed);out.Branch("signal_readout_seed",&signal_seed);
       int equal=0,clipped=0;
       for(const auto& item:cohort) {
 #ifdef CSI_CACHE_READOUT_BASE
-        auto r=cached_base.at(cached_index++);SignalDependentNoise::Apply(c,sensor.readout,r);
+        auto r=item.result;
+        replica.Build(c,sensor,duration,phase,r,&cached_base.at(cached_index++));
 #else
-        auto r=item.result;ReadoutSampling::Build(c,sensor,duration,phase,r);
+        auto r=item.result;replica.Build(c,sensor,duration,phase,r);
 #endif
         if(r.avalanche_time_ns!=item.result.avalanche_time_ns || r.avalanche_charge_C!=item.result.avalanche_charge_C)
           throw std::runtime_error("Readout changed physical avalanche history");
         if(r.adc_counts.size()!=c.at("acquisition").at("samples").get<std::size_t>())throw std::runtime_error("Sample count changed");
         equal+=r.adc_counts==item.adc;clipped+=r.n_clipped_samples;
         event_id=item.id;parent_entry=item.entry;adc=std::move(r.adc_counts);
+        baseline_seed=replica.BaselineSeed(item.result.readout_seed);
+        signal_seed=replica.SignalSeed(item.result.readout_seed);
         signal=std::move(r.signal_mV);analog=std::move(r.analog_mV);
         if(out.Fill()<0)throw std::runtime_error("Cannot write event");
       }
       json record={{"completed",true},{"config",c},{"phase_ns",phase},{"parent",std::filesystem::absolute(argv[1]).string()},
           {"n_selected_original_mothers",cohort.size()},{"new_independent_mothers",0},{"equal_parent_ADC",equal},
           {"clipped_samples",clipped},{"seed",seed},{"ids",wanted},
+          {"noise_replica",replica.Index()},{"noise_scope",replica.Scope()},
+          {"noise_replica_definition","Zero preserves original streams. Positive index hashes the original readout seed with a dedicated replica domain; scope selects electronics, signal residual or both. Repeated readouts are not independent Geant4 mothers."},
           {"scope","Fixed original avalanche histories, independent downstream streams. Phase diagnostics extend noiseless integration by one sample, without new avalanches; record-end region is censored and excluded from comparisons."}};
 #ifdef CSI_CACHE_READOUT_BASE
       record["base_response_cache"]={{"enabled",true},{"generation",base_generation},
-          {"scope","Exact reuse of the last deterministic plus electronics response; signal residual regenerated. No extra independent mothers."}};
+          {"scope","Cache original base response. Regenerate requested electronics from its noiseless signal and requested signal residual with recorded replica seeds. No extra independent mothers."}};
 #endif
       if(job.value("require_identity",false) && equal!=int(cohort.size()))throw std::runtime_error("Identity ADC closure failed");
       out.Write();TObjString(record.dump().c_str()).Write("RunInfo");

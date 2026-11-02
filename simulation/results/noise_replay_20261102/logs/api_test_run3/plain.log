@@ -1,0 +1,10 @@
+"all_readout_0" 6 original mothers, identity ADC=6
+"all_readout_1" 6 original mothers, identity ADC=0
+"all_readout_2" 6 original mothers, identity ADC=0
+"signal_only_0" 6 original mothers, identity ADC=6
+"signal_only_1" 6 original mothers, identity ADC=0
+"signal_only_2" 6 original mothers, identity ADC=0
+"electronics_only_0" 6 original mothers, identity ADC=6
+"electronics_only_1" 6 original mothers, identity ADC=0
+"electronics_only_2" 6 original mothers, identity ADC=0
+"repeat_one" 6 original mothers, identity ADC=0

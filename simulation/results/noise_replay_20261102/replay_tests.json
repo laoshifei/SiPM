@@ -1,0 +1,98 @@
+{
+  "native_tests": [
+    {
+      "source": "Co60",
+      "mothers": 6,
+      "cases": 10,
+      "cached_plain_bitwise": true,
+      "zero_identity": true,
+      "reproducibility": true,
+      "unchanged_signal": true
+    },
+    {
+      "source": "Am241",
+      "mothers": 6,
+      "cases": 10,
+      "cached_plain_bitwise": true,
+      "zero_identity": true,
+      "reproducibility": true,
+      "unchanged_signal": true
+    }
+  ],
+  "algebra": {
+    "trials": 2000,
+    "independent_flat_covariance_checks": 2000,
+    "expected": [
+      [
+        [
+          0.07,
+          0.07
+        ],
+        [
+          0.07,
+          0.07
+        ]
+      ],
+      [
+        [
+          0.71,
+          0.0
+        ],
+        [
+          0.0,
+          0.71
+        ]
+      ],
+      [
+        [
+          0.5943500000000002,
+          0.07
+        ],
+        [
+          0.07,
+          0.5943500000000002
+        ]
+      ]
+    ],
+    "estimated": [
+      [
+        [
+          0.06759548411894892,
+          0.06944424214545618
+        ],
+        [
+          0.06944424214545619,
+          0.0690628702169012
+        ]
+      ],
+      [
+        [
+          0.7093137035826287,
+          0.00033437927552303683
+        ],
+        [
+          0.00033437927552303683,
+          0.7129363925277008
+        ]
+      ],
+      [
+        [
+          0.5914735963244403,
+          0.06953099015071366
+        ],
+        [
+          0.06953099015071366,
+          0.5955378796961921
+        ]
+      ]
+    ],
+    "negative_between_correction_retained": -0.7750000000000001
+  },
+  "ctest_sha256": "800cdcbfbc70252997dc2090483b71a30df77d457dadea1216b4bd933e3d90e4",
+  "ctest_passed": 6,
+  "binary_sha256": {
+    "simulation/build/noise_replay_20261102/replay_readout": "9e1f2887c156bf1ac57324b1b0be459a9cfe45a67b5363ead66ecc0efcce4c90",
+    "simulation/build/noise_replay_20261102/replay_readout_cached": "db31eb1dd02b95fb2881c3e731e2c08f14a1df37da88977196fb0d3ef655739a"
+  },
+  "code_sha256": "d620b7f8ab74993297ae6c97890e2f371e5167985fc8debf56d383378f038592"
+}

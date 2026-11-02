@@ -1,0 +1,141 @@
+{
+  "conclusion_zh": "零CV对照未通过联合保护条件。保留当前默认参数；本轮明确检验了主带选择与随机读出贡献，并记录了降CV的收益和代价。",
+  "findings_zh": [
+    "主带审计：所有36个固定MC条件/响应都通过既定0.4条件，统一主带后各宽度指标完全不变；这排除了本次主带删除差别作为当前MC偏宽的解释。",
+    "**Co60 晚段块128：**零号配对对照的F202 SD比从1.232 [1.168, 1.326]变为0.997 [0.947, 1.069]；F50 SD比从0.976 [0.889, 1.051]变为0.636 [0.578, 0.685]。两种尺度同时报告，不只选择改善的一项。",
+    "**Co60 重复噪声：**当前响应F202的同一母事件内方差比例为0.933 [0.925, 0.941]，不同母事件间的修正比例为0.067 [0.059, 0.075]。这是固定已有样本、有限重复校正后的条件分解。",
+    "**Am241 晚段块128：**零号配对对照的F202 SD比从1.201 [1.122, 1.312]变为1.176 [1.098, 1.281]；F50 SD比从0.941 [0.884, 1.027]变为0.892 [0.833, 0.969]。两种尺度同时报告，不只选择改善的一项。",
+    "**Am241 重复噪声：**当前响应F202的同一母事件内方差比例为0.986 [0.980, 0.993]，不同母事件间的修正比例为0.014 [0.007, 0.020]。这是固定已有样本、有限重复校正后的条件分解。"
+  ],
+  "next_work_zh": "围绕明确恶化的尺度/指标构建有针对性的噪声波动模型，并核查当前ADC电荷条件对分布的影响。单一全事件方差乘子不足以由本轮结果自动升级；候选通过联合约束后再冻结新母事件验证。",
+  "limitations_zh": [
+    "实验只有来源标签。Am包含α、γ与电子贡献；主带和MC真实来源信息不能用来宣称实验粒子纯度。",
+    "母事件及原Q来自原ADC的质量/共同电荷选择，重复读出不重新选择。条件内机制诊断不等于完整触发、重新计算电荷选择或源人群效率的验证。",
+    "信号-only或电子学-only固定另一噪声在零号实现，其方差不能作为两个可相加的独立物理成分。",
+    "不同母事件间的项包含噪声条件均值、定位与归一化效应；有限重复校正可能为负，不能截零或当作独立闪烁方差。",
+    "512次区间按原实验块和完整母事件抽样，所有重复随母事件一起抽取；不把重复当作独立Geant4统计。区间固定参数/参考，不含拟合和系统误差。",
+    "保护条件中的多项区间只是保守的描述性警报，未作多重比较修正。所有实验及本MC池均已探索，不是盲验证。"
+  ],
+  "guard_metrics": [
+    "QDC_mean_delta",
+    "mean_time_delta_ns",
+    "F50_mean_ratio",
+    "F102_mean_ratio",
+    "F202_mean_ratio",
+    "QDC_SD_ratio",
+    "negative_mean_time_us_SD_ratio",
+    "PCA_SD_ratio",
+    "F50_SD_ratio",
+    "F102_SD_ratio",
+    "F202_SD_ratio",
+    "QDC_width50_ratio",
+    "negative_mean_time_us_width50_ratio",
+    "PCA_width50_ratio",
+    "QDC_width95_ratio",
+    "negative_mean_time_us_width95_ratio",
+    "PCA_width95_ratio",
+    "mean_ADC_relative_L2",
+    "PID_covariance_relative_error"
+  ],
+  "clear_loss_regressions": [
+    {
+      "context": "run3_first60_B64",
+      "metric": "F50_SD_ratio",
+      "loss_change": 0.42045282111504423,
+      "CI95": [
+        0.27997842222122915,
+        0.45839305201507613
+      ]
+    },
+    {
+      "context": "run3_first60_B128",
+      "metric": "F50_SD_ratio",
+      "loss_change": 0.41447760919702775,
+      "CI95": [
+        0.26562959527259017,
+        0.4635073062190351
+      ]
+    },
+    {
+      "context": "run3_middle20_B64",
+      "metric": "F50_SD_ratio",
+      "loss_change": 0.42000829149851393,
+      "CI95": [
+        0.30941593483463997,
+        0.45309080813290586
+      ]
+    },
+    {
+      "context": "run3_middle20_B128",
+      "metric": "F50_SD_ratio",
+      "loss_change": 0.42814632858319035,
+      "CI95": [
+        0.31067141300693757,
+        0.4607766919337754
+      ]
+    },
+    {
+      "context": "run3_last20_B64",
+      "metric": "F50_SD_ratio",
+      "loss_change": 0.42427935535467903,
+      "CI95": [
+        0.3279215453908918,
+        0.45506217956006334
+      ]
+    },
+    {
+      "context": "run3_last20_B128",
+      "metric": "F50_SD_ratio",
+      "loss_change": 0.4281397362301173,
+      "CI95": [
+        0.33189001999298695,
+        0.4572558401558406
+      ]
+    },
+    {
+      "context": "run12_first60_B64",
+      "metric": "F50_SD_ratio",
+      "loss_change": 0.09197165625563254,
+      "CI95": [
+        0.06784200782279803,
+        0.1165299958343585
+      ]
+    },
+    {
+      "context": "run12_middle20_B64",
+      "metric": "F50_SD_ratio",
+      "loss_change": 0.08229156349071948,
+      "CI95": [
+        0.029811419000212683,
+        0.10330317292918983
+      ]
+    },
+    {
+      "context": "run12_last20_B128",
+      "metric": "F50_SD_ratio",
+      "loss_change": 0.053559536860138146,
+      "CI95": [
+        0.009844578895316076,
+        0.07300151056068022
+      ]
+    }
+  ],
+  "primary_F202_benefits": [
+    true,
+    true
+  ],
+  "candidate_guard_passed": false,
+  "inputs_sha256": {
+    "simulation/results/noise_replay_20261102/selection_protocol.json": "abc4f3345ce563d95f2f56893fa1ea540f408d9dd23ab98eb79f1ddb2069ae6a",
+    "simulation/results/noise_replay_20261102/selection_analysis.json": "3f87b73fd4386a6e1d0ddc93bb600c70382bc6b51ae0f395a7092e1eac795f2d",
+    "simulation/results/noise_replay_20261102/replay_protocol.json": "0fba7386cf8acd85f1511a1c6caf7bdfd2cbaecb5fc3d0a548b8312479b358ca",
+    "simulation/results/noise_replay_20261102/analysis_protocol.json": "87a37359c08096fcaee65af9fac5e705a70768ae8d3153bcf430f1ddaf6c8b39",
+    "simulation/results/noise_replay_20261102/point_analysis.json": "6cdd192b4f6ecd375692e26bc7465bd9c92780ddc2daa7f259b91a310f0bfedd",
+    "simulation/results/noise_replay_20261102/repeat_analysis.json": "3161c89c1a877f1fb0a8ce511fef0eab854a4385326151257d78d473bd49b024",
+    "simulation/results/noise_replay_20261102/replay_tests.json": "7f09a039b7534a9e875f6fbc7f6187b31b12b80630d6d6c4aac17f2dce476686"
+  },
+  "code_sha256": "9c2bf4fc1692e3a01221284c5c3daea020cbe91ddded6f0c01e67a579bc949c6",
+  "default_changed": false,
+  "official_PID_changed": false,
+  "new_independent_mothers": 0
+}

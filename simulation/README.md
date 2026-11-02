@@ -2,7 +2,21 @@
 
 已实现并运行 **核衰变 → 能量沉积 → 闪烁光输运 → SiPM 雪崩 → 被动读出响应 → ADC → 实测对照**。只支持 `Am241` 和 `Co60`。本目录参考 GAGG_pileup 的 SiPM 数值内核，新建 CsI 几何、源、材料参数和本项目波形对照；未修改参考项目。
 
-最新的[时间协方差与Gaussian闭合笔记](../jupyter/codex_0001_csi_gaussian_closure.ipynb)将原F精确写成前/后窗带符号二次型，检验二阶时间协方差能否解释事件间离散度。前一轮已用英文提交并push为 `94aa3ba`；这轮固定全部参数、原ADC、事件、Q权重和正式PID，**新增Geant4母事件、读出重放和实验事件均为0**。
+最新的[固定雪崩历史与重复噪声笔记](../jupyter/codex_0001_csi_noise_replay.ipynb)承接已提交并push的 `82d42f8`，完成主带选择审计、独立噪声重放和事件方差CV置零的配对对照。复用原256000个Geant4母事件中的3661个已选事件（Co 2175、Am 1486），生成 **788个科学输出文件、198819条读出记录**；另有240条API测试记录。**新增独立Geant4母事件及实验事件均为0**。重复读出不增加输运统计量。
+
+全部36个既有条件/响应的MC都通过原0.4 QDC主带条件，统一主带后指标不变，因此这一步筛选差别不能解释当前MC偏宽。晚段块128、扩展谱的重复噪声分解显示，当前模型F202方差中约 **93.3% [92.5%,94.1%]（Co）/98.6% [98.0%,99.3%]（Am）** 来自同一固定信号的下游读出随机变化。这是固定母事件及原电荷选择下的模型条件量，不是实测噪声占比；雪崩内已有的光子统计、串扰及后脉冲没有重新抽样。单流重放固定另一条噪声流，不能把两条单流方差直接相加。
+
+仅将信号噪声的事件方差CV置零，零号配对对照的Co F202 SD比从 **1.232降到0.997**，但F50 SD比从 **0.976降到0.636**；Am F202从 **1.201降到1.176**，F50从 **0.941降到0.892**。16次全部噪声重复得到的预期F202 SD比为Co **1.250→1.026**、Am **1.210→1.178**，同样不能通过短尺度联合检查。12个条件中有9项F50退化警报；未把多项区间当作经过多重比较校正的检验。**不采用零CV对照，不替换默认配置和正式PID，也未对这个失败候选启动新输运。** 下一步应检验能分别约束短、长尺度波动的噪声模型，并核查当前ADC电荷分箱的影响。
+
+有限重复分解保留`B_raw−sum(w*(1−w)*S/R)`的母事件间校正（允许负值）；原一次读出经验方差的条件期望为`B+sum(w*(1−w)*S)`。512次抽样沿用原实验块与完整母事件计数，同一母事件的全部重复一起抽样，重复ID先合并权重。所有原ID和原Q固定，未按重放后的电荷重新筛选；区间不含重拟合和系统误差，已有实测及MC都不是盲验证。
+
+见[选择审计](results/noise_replay_20261102/figures/noise_selection_audit.png)、[噪声分解](results/noise_replay_20261102/figures/noise_repeat_decomposition.png)、[多尺度取舍](results/noise_replay_20261102/figures/noise_zero_cv_joint_checks.png)、[平均波形](results/noise_replay_20261102/figures/noise_mean_waveforms.png)、[重复敏感性](results/noise_replay_20261102/figures/noise_repeat_convergence.png)、[重放方案](results/noise_replay_20261102/replay_protocol.json)及[结论](results/noise_replay_20261102/decision.json)。原生ADC、随机种子与紧凑特征保留在该目录；四份CSV分别包含144/24/264/8行对比，完整条件协方差和512次计数另存。
+
+新增`include/ReadoutReplica.hh` / `src/ReadoutReplica.cc`，通过原`replay_readout`入口使用，不改变完整Geant4输运入口。每个jobs条目可加`"noise_replica": 1, "noise_scope": "all_readout"`；省略时编号为0，逐点复现原读出。正编号可复现；scope还支持`signal_only`及`electronics_only`，分别固定另一条流为零号。输出树记录`baseline_readout_seed`和`signal_readout_seed`，仍拒绝改变几何、光学或传感器物理。已有输出不得覆盖，计划格式见`results/noise_replay_20261102/configs/b00_run3_eval0_plan.json`。
+
+独立构建目录`simulation/build/noise_replay_20261102`中的6项CTest通过，另核验原生/缓存版一致性、零号ADC、独立种子、固定信号及2000组合成方差对照。流程为`prepare_noise_selection.py` → `audit_noise_selection.py` → 构建/`test_noise_replay.py` → `prepare_noise_replay.py` → `run_noise_replay.py --workers 4` → `analyze_noise_replay.py freeze/points/repeats` → `report_noise_replay.py` → 笔记生成器 → `verify_noise_replay.py`及`--archive`。本次分析协议在原生重放完成前冻结；完整重跑须使用新目录，不能覆盖已封存结果。
+
+上一轮的[时间协方差与Gaussian闭合笔记](../jupyter/codex_0001_csi_gaussian_closure.ipynb)将原F精确写成前/后窗带符号二次型，检验二阶时间协方差能否解释事件间离散度。该轮之前已用英文提交并push为 `94aa3ba`；该轮固定全部参数、原ADC、事件、Q权重和正式PID，**新增Geant4母事件、读出重放和实验事件均为0**。
 
 晚段扩展谱、块128、原分母的Co/Am直接F202 SD比仍为 **1.232/1.201**，而不同原事件U统计估计的Gaussian闭合SD比为 **0.998 [0.951,1.034] / 1.039 [0.985,1.100]**。以实测F202方差为单位，二阶闭合超额为 **−0.004/0.094**，闭合之外的余项超额为 **0.522 [0.377,0.729] / 0.348 [0.157,0.593]**；两者严格相加得到直接方差超额。固定对折分母后，余项超额仍为 **0.483 [0.338,0.689] / 0.227 [0.084,0.420]**。这说明应检验事件间方差异质性、信号/来源混合及选择条件，不能仅用一个噪声倍率修正带宽；也不能据此唯一归因为非Gaussian电子学噪声。
 

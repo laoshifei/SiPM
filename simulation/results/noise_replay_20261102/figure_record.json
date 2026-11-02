@@ -1,0 +1,20 @@
+{
+  "figures": [
+    "noise_selection_audit",
+    "noise_repeat_decomposition",
+    "noise_zero_cv_joint_checks",
+    "noise_cv_component_changes",
+    "noise_mean_waveforms",
+    "noise_repeat_convergence"
+  ],
+  "inputs_sha256": {
+    "simulation/results/noise_replay_20261102/selection_protocol.json": "abc4f3345ce563d95f2f56893fa1ea540f408d9dd23ab98eb79f1ddb2069ae6a",
+    "simulation/results/noise_replay_20261102/selection_analysis.json": "3f87b73fd4386a6e1d0ddc93bb600c70382bc6b51ae0f395a7092e1eac795f2d",
+    "simulation/results/noise_replay_20261102/replay_protocol.json": "0fba7386cf8acd85f1511a1c6caf7bdfd2cbaecb5fc3d0a548b8312479b358ca",
+    "simulation/results/noise_replay_20261102/analysis_protocol.json": "87a37359c08096fcaee65af9fac5e705a70768ae8d3153bcf430f1ddaf6c8b39",
+    "simulation/results/noise_replay_20261102/point_analysis.json": "6cdd192b4f6ecd375692e26bc7465bd9c92780ddc2daa7f259b91a310f0bfedd",
+    "simulation/results/noise_replay_20261102/repeat_analysis.json": "3161c89c1a877f1fb0a8ce511fef0eab854a4385326151257d78d473bd49b024",
+    "simulation/results/noise_replay_20261102/replay_tests.json": "7f09a039b7534a9e875f6fbc7f6187b31b12b80630d6d6c4aac17f2dce476686"
+  },
+  "code_sha256": "9c2bf4fc1692e3a01221284c5c3daea020cbe91ddded6f0c01e67a579bc949c6"
+}
