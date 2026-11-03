@@ -1,0 +1,11 @@
+{
+  "figures_sha256": {
+    "simulation/results/intensity_condition_20261102/figures/intensity_global_residuals.png": "0187c5dea747b59b805c7a3a9c15be3d4166947121f450672a67782749616b22",
+    "simulation/results/intensity_condition_20261102/figures/intensity_local_residuals.png": "26d492dfcaacfd1793181b7d100b0d567a2210927ac23417a4b13f66a76dbc69",
+    "simulation/results/intensity_condition_20261102/figures/intensity_local_slopes.png": "e98ce4b161fd81abb3f343c2d0877320990709c8baa08eb296e2324abb4fa663",
+    "simulation/results/intensity_condition_20261102/figures/intensity_range_overlap.png": "9d92242e732e79788f0ec50968ca863fbd9c30bcd812ec578ea09ab4fb0dc0d3",
+    "simulation/results/intensity_condition_20261102/figures/intensity_variance_partition.png": "532da172adcde38ba95d2551f5d67fea0597f5196824c6d54391624feb846591"
+  },
+  "review": "All five PNGs inspected at display resolution: axes, labels, available-draw counts, intervals and heatmap numbers are legible and unclipped. No plotted values adjusted during review.",
+  "interval_boundary": "Opposite-fold ranges use available draws only; Co60 has399/512 and Am241 has509/512 valid measured resamples."
+}

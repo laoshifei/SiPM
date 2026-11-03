@@ -1,0 +1,7 @@
+{
+  "synthetic_events": 120,
+  "multiplicity_patterns": 3,
+  "predictors": 5,
+  "direct_residual_covariance_checks": 30,
+  "passed": true
+}

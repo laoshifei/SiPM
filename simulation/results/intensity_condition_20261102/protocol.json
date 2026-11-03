@@ -1,0 +1,346 @@
+{
+  "checkpoint_commit": "75641c2a0f52056fd1bc4ae25271f063480715da",
+  "q_edges": [
+    201824.1125,
+    237975.62708333333,
+    274127.14166666666,
+    310278.65625,
+    346430.17083333334,
+    382581.6854166667,
+    418733.2
+  ],
+  "support_bins": {
+    "Co60": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "Am241": [
+      0,
+      1,
+      2
+    ]
+  },
+  "conditional_cuts": {
+    "Co60": {
+      "0": {
+        "q_quartiles": [
+          213530.25,
+          224292.25,
+          229674.75
+        ],
+        "rms_median": 3.2988738016745955,
+        "q2_target": [
+          0.4935064935064935,
+          0.5064935064935064
+        ],
+        "q4_target": [
+          0.24675324675324675,
+          0.24675324675324675,
+          0.24675324675324675,
+          0.2597402597402597
+        ],
+        "q2r2_target": [
+          0.2987012987012987,
+          0.19480519480519481,
+          0.19480519480519481,
+          0.3116883116883117
+        ],
+        "training_n": 77
+      },
+      "1": {
+        "q_quartiles": [
+          249471.75,
+          259007.75,
+          266566.0
+        ],
+        "rms_median": 3.4460121880225554,
+        "q2_target": [
+          0.49635036496350365,
+          0.5036496350364964
+        ],
+        "q4_target": [
+          0.24817518248175183,
+          0.24817518248175183,
+          0.24817518248175183,
+          0.25547445255474455
+        ],
+        "q2r2_target": [
+          0.24087591240875914,
+          0.25547445255474455,
+          0.25547445255474455,
+          0.24817518248175183
+        ],
+        "training_n": 137
+      },
+      "2": {
+        "q_quartiles": [
+          286112.1875,
+          295286.625,
+          303201.3125
+        ],
+        "rms_median": 3.33254145321797,
+        "q2_target": [
+          0.5,
+          0.5
+        ],
+        "q4_target": [
+          0.25177304964539005,
+          0.24822695035460993,
+          0.24822695035460993,
+          0.25177304964539005
+        ],
+        "q2r2_target": [
+          0.25886524822695034,
+          0.24113475177304963,
+          0.24113475177304963,
+          0.25886524822695034
+        ],
+        "training_n": 282
+      },
+      "3": {
+        "q_quartiles": [
+          321641.0,
+          331390.75,
+          339488.0
+        ],
+        "rms_median": 3.3481279750780137,
+        "q2_target": [
+          0.499054820415879,
+          0.500945179584121
+        ],
+        "q4_target": [
+          0.2495274102079395,
+          0.2495274102079395,
+          0.2495274102079395,
+          0.2514177693761815
+        ],
+        "q2r2_target": [
+          0.2589792060491493,
+          0.24007561436672967,
+          0.2381852551984877,
+          0.2627599243856333
+        ],
+        "training_n": 529
+      },
+      "4": {
+        "q_quartiles": [
+          356064.9375,
+          365870.875,
+          374653.1875
+        ],
+        "rms_median": 3.371290639761466,
+        "q2_target": [
+          0.5,
+          0.5
+        ],
+        "q4_target": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "q2r2_target": [
+          0.25523560209424084,
+          0.24476439790575916,
+          0.24476439790575916,
+          0.25523560209424084
+        ],
+        "training_n": 764
+      },
+      "5": {
+        "q_quartiles": [
+          390342.5,
+          396853.625,
+          405467.5
+        ],
+        "rms_median": 3.3285100984842035,
+        "q2_target": [
+          0.5,
+          0.5
+        ],
+        "q4_target": [
+          0.250788643533123,
+          0.24921135646687698,
+          0.24921135646687698,
+          0.250788643533123
+        ],
+        "q2r2_target": [
+          0.24605678233438485,
+          0.2539432176656151,
+          0.2539432176656151,
+          0.24605678233438485
+        ],
+        "training_n": 634
+      }
+    },
+    "Am241": {
+      "0": {
+        "q_quartiles": [
+          208701.5,
+          218005.5,
+          228342.5
+        ],
+        "rms_median": 3.1914421088866707,
+        "q2_target": [
+          0.4991023339317774,
+          0.5008976660682226
+        ],
+        "q4_target": [
+          0.2495511669658887,
+          0.2495511669658887,
+          0.2495511669658887,
+          0.2513464991023339
+        ],
+        "q2r2_target": [
+          0.24416517055655296,
+          0.25493716337522443,
+          0.25493716337522443,
+          0.2459605026929982
+        ],
+        "training_n": 557
+      },
+      "1": {
+        "q_quartiles": [
+          245954.5,
+          252571.5,
+          261583.5
+        ],
+        "rms_median": 3.1396142652203314,
+        "q2_target": [
+          0.4987146529562982,
+          0.5012853470437018
+        ],
+        "q4_target": [
+          0.2493573264781491,
+          0.2493573264781491,
+          0.2493573264781491,
+          0.2519280205655527
+        ],
+        "q2r2_target": [
+          0.2467866323907455,
+          0.2519280205655527,
+          0.2519280205655527,
+          0.2493573264781491
+        ],
+        "training_n": 389
+      },
+      "2": {
+        "q_quartiles": [
+          281622.8125,
+          290740.75,
+          299654.5
+        ],
+        "rms_median": 3.2348420752374967,
+        "q2_target": [
+          0.5,
+          0.5
+        ],
+        "q4_target": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "q2r2_target": [
+          0.23706896551724138,
+          0.2629310344827586,
+          0.2629310344827586,
+          0.23706896551724138
+        ],
+        "training_n": 232
+      }
+    }
+  },
+  "predictors": [
+    "mean_500_1000",
+    "mean_1000_1500",
+    "mean_1500_2000",
+    "mean_2000_2500",
+    "whole_mean"
+  ],
+  "scales_ns": [
+    50,
+    102,
+    202
+  ],
+  "global_metrics": [
+    "original_SD_ratio",
+    "residual_SD_ratio",
+    "crossfit_residual_SD_ratio",
+    "variance_excess",
+    "linear_excess",
+    "residual_excess",
+    "data_linear_fraction",
+    "MC_linear_fraction",
+    "data_crossfit_variance_fraction",
+    "MC_crossfit_variance_fraction",
+    "data_slope",
+    "MC_slope",
+    "data_x_SD",
+    "MC_x_SD",
+    "data_F_mean",
+    "MC_F_mean"
+  ],
+  "local_metrics": [
+    "original_SD_ratio",
+    "residual_SD_ratio",
+    "crossfit_residual_SD_ratio",
+    "variance_excess",
+    "linear_excess",
+    "residual_excess",
+    "data_linear_fraction",
+    "MC_linear_fraction",
+    "data_crossfit_variance_fraction",
+    "MC_crossfit_variance_fraction",
+    "data_slope",
+    "MC_slope",
+    "data_y_mean",
+    "MC_y_mean"
+  ],
+  "code_sha256": {
+    "simulation/intensity_condition_common.py": "f885134ba9d7371d1ef0b8236f3134b54fc89dec814e1a18786bec25cc2b7c91",
+    "simulation/analyze_intensity_condition.py": "a8c4bee3f93cd4698c39301f0f367b66532da60efb0645c15062a327a0dce0aa",
+    "simulation/test_intensity_condition.py": "f98f150ee82982463b1764ba1ed19e9832af60ff9344794f031e4a9386f00d4b"
+  },
+  "inherited_code_sha256": {
+    "simulation/time_window_common.py": "e47923bd4cb6682609e00df2b940c20c0a88fcd97e80e1cd91377a9c1923d7df",
+    "simulation/charge_scale_common.py": "348be4e06ef6eb78180ae767d2a42ee266c80d754e7b7397dd91ded6937ee6f6",
+    "simulation/spectral_split_common.py": "74580c0b5affe29004ef8351636ce2c18315a47db6ccc24df103ad8555dfd73c"
+  },
+  "inputs_sha256": {
+    "simulation/results/spectral_split_20261102/analysis_protocol.json": "fd71fcc62c8f3702d66a3a46b0ff257dda8b98b832bbde6d3b564930096d4da7",
+    "simulation/results/spectral_split_20261102/evaluation/Am241_counts.npz": "3013cccc6d12842f443eee2198d318f606b512084ed9df72df5616152ce67136",
+    "simulation/results/spectral_split_20261102/evaluation/Co60_counts.npz": "9e7ffc4902af14c0c057e7f92c6ccdd3945339da2e2a58e2362cc181de03c601",
+    "simulation/results/time_windows_20261102/analysis.json": "2acaa417a74cc158655f17ddae40a9a9350e1df40073b8775983a2e85da5af59",
+    "simulation/results/time_windows_20261102/arrays/Am241_data.npz": "a824730fae402a5721f69da94fa048e12cea5efe9c87e7f55a7cd984eed4bc72",
+    "simulation/results/time_windows_20261102/arrays/Am241_split_r0.npz": "90a681177f67d991e58f9101fcb91dea793c6aa15baa1c6b72b33c5716b68d26",
+    "simulation/results/time_windows_20261102/arrays/Am241_split_r1.npz": "805f71b2ef819be7d1a80d18b23c61ca407de9e12858e8d76af9059d154b9be2",
+    "simulation/results/time_windows_20261102/arrays/Co60_data.npz": "0ca9e319c00158013a8519bdd155fcd14c0a1303c2d70b13f994f1d6ed177b8d",
+    "simulation/results/time_windows_20261102/arrays/Co60_split_r0.npz": "79131eaa55d8abfc24e4b8ccbd02a600c98fec6743bc4e7c86036378e0605f18",
+    "simulation/results/time_windows_20261102/arrays/Co60_split_r1.npz": "7de37113cb3721163dccafe19483490530dbd1357395ed62035f0f35f6b32536",
+    "simulation/results/time_windows_20261102/evaluation/Am241_bootstrap.npz": "7901b400252e633d1da5775f6b91f355b719a5c4794822c7f233be3bc1ee14de",
+    "simulation/results/time_windows_20261102/evaluation/Co60_bootstrap.npz": "f012f264fcf7cd936f49c73bb638fc0cb3a3498e9b1e47dc05c608303e33e564",
+    "simulation/results/time_windows_20261102/protocol.json": "f909a2a65a32c9417248cfcf108c87dd758108bc40cd7a097bb93ebb2e0ce1b8",
+    "simulation/results/time_windows_20261102/record.json": "7d9d1aa16accd0c1fbee4f674c9530cb5e42ede71d66c2f19346b710bee0b69a",
+    "simulation/results/time_windows_20261102/verification.json": "67813c6b9bdd9ca34a906ec514f1923c0291dd4f547fa55133c724c81dd4f0ba"
+  },
+  "scope": "Describe how existing temporal variance relates to measured pulse intensity; no fit to a native noise model and no ADC, default, PID, or selection modification.",
+  "design": "Five separate one-dimensional linear regressions, one per four local pulse means and one whole post-window mean. All divided by the inherited opposite-fold per-Q mu0; no new amplitude scale fitted. Every regression predicts the same seven exact temporal terms at all three smoothing scales.",
+  "weights": "Fit within each original current-Q bin, retaining original half-bin masses. Each data/MC sample has its own descriptive coefficients. Aggregate the within-Q covariances with equal bin weight. No intensity cuts or intensity reweighting.",
+  "partition": "For each predictor x, c=Cov(T,x), vx=Var(x); beta=c/vx; Clinear=c*c.T/vx and Cres=C-Clinear. This in-sample algebraic partition is exact but does not identify physical noise.",
+  "crossfit": "Also fit intercept and slope on the opposite original fold within each Q bin and data/MC sample; apply to the evaluation fold. Recombine residuals under the original full-bin half weights, then center within Q. Between-fold residual mean differences remain included. No threshold tuning or parameter selection.",
+  "local": "For window k, report diagonal variance of Tk conditioned on its own local mean. Tk=(249/999)*Vwindow/mu0, not local F and not the sum of all original F terms.",
+  "validity": "Each original full bin needs at least5 multiplicity-weighted events and positive support in every target half. Linear fits additionally require all predictor variances above1e-14; cross-fold fits additionally require the same count/support conditions in each training fold. Invalidate the entire affected estimator draw, never drop bins. Preserve original unconditioned moments even when a new cross-fold fit is invalid.",
+  "uncertainty": "Reuse all512 paired block/mother multiplicities, re-estimating the new descriptive regressions within every draw. Previous physical/model fits, references, selections and realized noise remain fixed. No new independent data or blind-validation claim.",
+  "overlap": "Report point MC mass inside each measured weighted5th–95th predictor interval per Q bin, using cumulative-weight interpolation. This does not remove or reweight events.",
+  "limits": "Intensity and variance come from the same noisy ADC, and source mixtures, finite pulse curvature and reference uncertainty remain. Linear residuals are diagnostic statistics, not corrected ADC or independent noise measurements. Out-of-fold statistics are internal checks on already explored events; intervals lack multiplicity/systematics corrections.",
+  "new_native_readouts": 0,
+  "new_independent_mothers": 0,
+  "new_experimental_events": 0,
+  "default_changed": false,
+  "official_PID_changed": false
+}

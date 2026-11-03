@@ -1,0 +1,16 @@
+{
+  "reason": "The initial closure check rejected NaNs introduced by sparse training-fold bootstrap counts. Separate validity masks retain all original moments and explicitly mark unavailable new regressions. No cuts, regressions, thresholds, multiplicities, or model parameters changed.",
+  "prior_protocol_sha256": "b6e1f73fae5b7344893053ca63a53a099654155c1cc1d150a9abb418e3760ab0",
+  "revised_protocol_sha256": "629856f42a17874b42b6d8e7da0fcdb21ac1427d1bf457f56c45b573ff954ae6",
+  "prior_code_sha256": {
+    "simulation/intensity_condition_common.py": "2e72f81896f3f1ff46957c0ae74110b6671d27454d70173f756e03b9e8fe54a7",
+    "simulation/analyze_intensity_condition.py": "6bcec04f887f644da4eff5b06eb36bf8db12459360238bacff993876124a7e3f",
+    "simulation/test_intensity_condition.py": "f98f150ee82982463b1764ba1ed19e9832af60ff9344794f031e4a9386f00d4b"
+  },
+  "revised_code_sha256": {
+    "simulation/intensity_condition_common.py": "f885134ba9d7371d1ef0b8236f3134b54fc89dec814e1a18786bec25cc2b7c91",
+    "simulation/analyze_intensity_condition.py": "a8c4bee3f93cd4698c39301f0f367b66532da60efb0645c15062a327a0dce0aa",
+    "simulation/test_intensity_condition.py": "f98f150ee82982463b1764ba1ed19e9832af60ff9344794f031e4a9386f00d4b"
+  },
+  "prior_statistical_outputs": 0
+}

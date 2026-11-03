@@ -2,7 +2,22 @@
 
 已实现并运行 **核衰变 → 能量沉积 → 闪烁光输运 → SiPM 雪崩 → 被动读出响应 → ADC → 实测对照**。只支持 `Am241` 和 `Co60`。本目录参考 GAGG_pileup 的 SiPM 数值内核，新建 CsI 几何、源、材料参数和本项目波形对照；未修改参考项目。
 
-最新的[时间分段波动诊断笔记](../jupyter/codex_0001_csi_time_resolved_fluctuations.ipynb)在英文提交 **`6f49b78`**（`Evaluate low-frequency noise tradeoffs in CsI SiPM readout`）push并核对远端后开展。直接检查现有实测BIN与完整池split原生ROOT，把t10后500–2500 ns分成四个相邻500 ns窗口。四段方差、段间均值、前触发和随机分母组成七项，逐事件精确还原原F；沿用原Q箱、半箱质量和全部512组配对计数。新增读出、独立母事件和实验事件均为0。
+最新的[信号强度条件诊断笔记](../jupyter/codex_0001_csi_intensity_conditioning.ipynb)在英文提交 **`75641c2`**（`Diagnose time-resolved CsI SiPM fluctuation differences`）push并核对远端后开展。使用已有ADC分段数组，在原Q箱内分别以四个局部均值和整段均值拟合一维线性关系，再用原折做对折检查。全部三尺度、五个预测量及两条读出均保留，没有调整波形或原生参数。
+
+**简单线性强度变化没有解释Am241的过宽。** 下表为使用t10后500–1000 ns强度时的整体F202结果；残差只用于统计诊断，不是改进后的ADC或PID。
+
+|源、读出|原F202 SD比|同样本线性残差SD比|对折残差SD比|线性项 / 剩余项方差差额（以实测原方差为单位）|
+|---|---|---|---|---|
+|Co60，r0|1.045|1.056|0.965|-0.020 / 0.113|
+|Co60，r1|1.041|1.052|0.959|-0.020 / 0.105|
+|Am241，r0|1.162|1.171|1.138|-0.013 / 0.363|
+|Am241，r1|1.176|1.186|1.162|-0.015 / 0.399|
+
+强度与波动取自同一噪声ADC，关系可能含内生相关、脉冲曲率及源混合。对折残差也包含拟合误差，不能因比例接近1就声称改善。原统计及同样本分解均保留512组；实测对折有效数为Co **399/512**、Am **509/512**，支持不足的组明确记为不可估计，未补值或丢弃Q箱。对折区间只描述有效组分位，尤其Co不能当作完整bootstrap的95%置信区间。
+
+见[整体残差](results/intensity_condition_20261102/figures/intensity_global_residuals.png)、[精确方差分解](results/intensity_condition_20261102/figures/intensity_variance_partition.png)、[窗口残差](results/intensity_condition_20261102/figures/intensity_local_residuals.png)、[斜率](results/intensity_condition_20261102/figures/intensity_local_slopes.png)、[强度覆盖](results/intensity_condition_20261102/figures/intensity_range_overlap.png)、[方案](results/intensity_condition_20261102/protocol.json)和[结论](results/intensity_condition_20261102/decision.json)。下一步优先检验相近强度下的早期残余离散及其跨时段协方差，并通过原生有界候选共同约束平均ADC、局部均值、三尺度F和PID。新增读出、独立母事件和实验事件均为0，默认配置与正式PID保持冻结。
+
+上一轮的[时间分段波动诊断笔记](../jupyter/codex_0001_csi_time_resolved_fluctuations.ipynb)在英文提交 **`6f49b78`**（`Evaluate low-frequency noise tradeoffs in CsI SiPM readout`）push并核对远端后开展。直接检查现有实测BIN与完整池split原生ROOT，把t10后500–2500 ns分成四个相邻500 ns窗口。四段方差、段间均值、前触发和随机分母组成七项，逐事件精确还原原F；沿用原Q箱、半箱质量和全部512组配对计数。新增读出、独立母事件和实验事件均为0。
 
 **Am241的最大带符号方差差额落在500–1000 ns，分母耦合也有正贡献；本轮完成定位，尚未修正模型。** 下表SD比均为MC/实测，贡献以实测整体F202方差为单位。
 

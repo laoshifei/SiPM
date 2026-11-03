@@ -1,0 +1,75 @@
+{
+  "input_files_verified": 15,
+  "direct_weighted_regression_checks": 540,
+  "sampled_draws": [
+    "point",
+    0,
+    127,
+    511
+  ],
+  "bootstrap_draws": {
+    "Co60": {
+      "split_r0": {
+        "global": {
+          "original": 512,
+          "linear": 512,
+          "crossfit": 399
+        },
+        "local": {
+          "original": 512,
+          "linear": 512,
+          "crossfit": 399
+        }
+      },
+      "split_r1": {
+        "global": {
+          "original": 512,
+          "linear": 512,
+          "crossfit": 399
+        },
+        "local": {
+          "original": 512,
+          "linear": 512,
+          "crossfit": 399
+        }
+      }
+    },
+    "Am241": {
+      "split_r0": {
+        "global": {
+          "original": 512,
+          "linear": 512,
+          "crossfit": 509
+        },
+        "local": {
+          "original": 512,
+          "linear": 512,
+          "crossfit": 509
+        }
+      },
+      "split_r1": {
+        "global": {
+          "original": 512,
+          "linear": 512,
+          "crossfit": 509
+        },
+        "local": {
+          "original": 512,
+          "linear": 512,
+          "crossfit": 509
+        }
+      }
+    }
+  },
+  "table_rows": {
+    "global": 60,
+    "local": 48
+  },
+  "executed_code_cells": 5,
+  "embedded_PNG": 5,
+  "notebook_sha256": "eb268fcd1a08ea2eda40a4fa2e8de43fd053d10741027d84ac77432b0b2572ce",
+  "code_sha256": "6c815b0039b6e3dc1942183176b56c78daf5eea506df116afc1ed8f59b19fed4",
+  "new_native_readouts": 0,
+  "default_changed": false,
+  "official_PID_changed": false
+}
